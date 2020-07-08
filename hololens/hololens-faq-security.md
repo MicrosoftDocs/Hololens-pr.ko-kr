@@ -15,17 +15,14 @@ ms.custom:
 - CI 111456
 - CSSTroubleshooting
 manager: bradke
-appliesto:
-- HoloLens 1 (1st gen)
-- HoloLens 2
-ms.openlocfilehash: ab032ce747b4f70873eb400a50db9028f24bacc3
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: e6f8a2c579010b27f5336cb072727d12430c6e8a
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829308"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857846"
 ---
-# HoloLens 보안에 관한 FAQ
+# 보안에 대한 자주 묻는 질문
 
 ## HoloLens (1세대) 보안 질문
 
