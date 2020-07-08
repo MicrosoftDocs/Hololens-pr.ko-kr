@@ -17,12 +17,11 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0163e028756743922302b46f04309f3d7f738233
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
-ms.translationtype: MT
+ms.openlocfilehash: 7409865f63199dead1779fa183128b30445053aa
+ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829313"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10858002"
 ---
 # HoloLens를 키오스크로 설정
 
@@ -99,7 +98,8 @@ MDM (모바일 디바이스 관리) 시스템 또는 배포 패키지를 사용 
 |Calendar |windowscommunicationsapps \ _8wekyb3d8bbwe \! windowslive. 일정 |
 |카메라 <sup> 1, 2</sup> |HoloCamera _cw5n1h2txyewy \! HoloCamera |
 |Cortana <sup> 3</sup> |Microsoft 549981C3F5F10 _8wekyb3d8bbwe \! 내 |
-|장치 선택기 |HoloDevicesFlow _cw5n1h2txyewy \! HoloDevicesFlow |
+|HoloLens의 장치 선택기 (첫번째 gen) |HoloDevicesFlow _cw5n1h2txyewy \! HoloDevicesFlow |
+|HoloLens 2의 장치 선택기 |DevicesFlowHost \ _cw5n1h2txyewy \! Microsoft DevicesFlowHost |
 |Dynamics 365 Guides |Dynamics365 _8wekyb3d8bbwe \! MicrosoftGuides |
 |Dynamics 365 Remote Assist |Microsoft MicrosoftRemoteAssist _8wekyb3d8bbwe \! Microsoft. RemoteAssist |
 |피드백 &nbsp; 허브 |Microsoft WindowsFeedbackHub _8wekyb3d8bbwe \! 내 |
@@ -119,7 +119,7 @@ MDM (모바일 디바이스 관리) 시스템 또는 배포 패키지를 사용 
 > - 또한 그림을 조작 하거나 검색할 수 있는 앱 (예: 사진, 메일 또는 OneDrive)을 사용 하도록 설정 해야 합니다.  
 >  
 > <sup>3 </sup> Cortana를 키오스크 앱으로 사용 하지 않는 경우에도 기본 제공 음성 명령을 사용할 수 있습니다. 그러나 비활성 기능과 관련 된 명령은 아무런 효과가 없습니다.  
-> <sup>4 </sup> Miracast를 직접 사용할 수 없습니다. Kiosk 앱으로 Miracast를 사용 하도록 설정 하려면 카메라 앱 및 장치 선택기 앱을 사용 하도록 설정 합니다.
+> <sup>4 </sup> Miracast를 직접 사용할 수 없습니다. Miracast를 키오스크 앱으로 사용 하도록 설정 하려면 카메라 앱 및 장치 선택기 앱을 사용 하도록 설정 합니다.
 
 ### 사용자 및 장치 그룹 계획
 
@@ -358,7 +358,7 @@ OOBE 중에 다음 단계를 수행 합니다.
 
 #### <a id="start-layout-for-hololens"></a>HoloLens의 개체 틀 시작 레이아웃
 
-[배포 패키지](##use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) 를 사용 하 여 다중 앱 키오스크를 구성 하는 경우에는 절차에 시작 레이아웃이 필요 합니다. 시작 레이아웃 사용자 지정은 비즈니스용 Windows 홀로그램에서 지원 되지 않습니다. 따라서 자리 표시자 시작 레이아웃을 사용 해야 합니다.
+[배포 패키지](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) 를 사용 하 여 다중 앱 키오스크를 구성 하는 경우에는 절차에 시작 레이아웃이 필요 합니다. 시작 레이아웃 사용자 지정은 비즈니스용 Windows 홀로그램에서 지원 되지 않습니다. 따라서 자리 표시자 시작 레이아웃을 사용 해야 합니다.
 
 > [!NOTE]  
 > 단일 앱 키오스크는 사용자가 로그인 할 때 키오스크 앱을 시작 하므로 시작 메뉴를 사용 하지 않으며 시작 레이아웃을 사용할 필요가 없습니다.

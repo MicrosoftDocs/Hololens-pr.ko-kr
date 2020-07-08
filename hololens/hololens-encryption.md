@@ -1,5 +1,5 @@
 ---
-title: HoloLens에 대한 Bitlocker 암호화를 사용하도록 설정(HoloLens)
+title: HoloLens BitLocker 암호화
 description: HoloLens에 저장된 파일을 보호하기 위해 Bitlocker 디바이스 암호화를 사용하도록 설정
 ms.prod: hololens
 ms.mktglfcycl: manage
@@ -11,16 +11,13 @@ ms.localizationpriority: medium
 ms.date: 01/26/2019
 ms.reviewer: ''
 manager: laurawi
-appliesto:
-- HoloLens (1st gen)
-ms.openlocfilehash: 29b9ce346456019dad8e9bc6fd02b104ed4a821d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
-ms.translationtype: MT
+ms.openlocfilehash: a18d9e890b34f28ffcd8be7546dcdbe08e9934a6
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828688"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857816"
 ---
-# HoloLens에 대한 암호화를 사용하도록 설정
+# HoloLens BitLocker 암호화
 
 HoloLens (첫번째 gen) 및 HoloLens 2 모두 BitLocker를 사용 하 여 장치 암호화를 지원 하지만 HoloLens 2에서는 항상 BitLocker를 사용할 수 있습니다.
 
