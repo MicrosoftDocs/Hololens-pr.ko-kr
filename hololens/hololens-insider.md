@@ -16,11 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cd2b055679f5e1a9a529ad4947773e412211f9c4
-ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
+ms.openlocfilehash: b054b61b269522d673be104ffbda9abc1bc85415
+ms.sourcegitcommit: 168a7659420525e5f3e3088d7ce0b5e03c969029
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858012"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "10860608"
 ---
 # Microsoft HoloLens 참가자 미리 보기
 
@@ -28,7 +29,7 @@ HoloLens에 대 한 최신 참가자 Preview 빌드에 오신 것을 환영 합�
 
 이제 Windows 참가자가 채널로 이동 하 고 있습니다. **빠른** 링이 **개발자 채널이**되 고, **느린** 고리는 **베타 채널이**되며, **릴리스 미리 보기** 링은 **릴리스 미리 보기 채널이**됩니다. 매핑 결과는 다음과 같습니다.
 
-![Windows 참가자 채널 explination](images/WindowsInsiderChannels.png)
+![Windows 참가자 채널 설명](images/WindowsInsiderChannels.png)
 
 자세한 정보: [Windows 블로그 항목](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels)
 
@@ -58,7 +59,6 @@ HoloLens가 프로덕션 빌드를 실행 하 고 있는지 확인 하려면 다
 1. 지침에 따라 장치를 옵트아웃 합니다.
 
 
-
 ## 피드백 및 보고 문제 제공
 
 HoloLens에서 [피드백 허브 앱](hololens-feedback.md) 을 사용 하 여 피드백을 제공 하 고 문제를 보고 해 주십시오. 피드백 허브를 사용 하면 엔지니어가 신속 하 게 디버그 하 여 문제를 해결할 수 있도록 필요한 모든 진단 정보가 포함 됩니다.  HoloLens와 중국어 (일본) 버전의 문제는 같은 방식으로 보고 되어야 합니다.
@@ -73,9 +73,10 @@ HoloLens의 참가자 빌드를 사용 하 여 응용 프로그램 개발을 시
 
 ## Windows 참가자 릴리스 정보
 
-이전에 목록에 나열 되지 않은 것으로 표시 된 기능을 찾고 있다면, 일반적으로 사용할 수 있는 모든 기능을 보려면 [릴리스 노트](hololens-release-notes.md) 를 읽어 보세요. 최신 기능을 모두 얻으려면 [HoloLens를 업데이트](hololens-update-hololens.md) 해야 합니다.  
+[Windows 홀로그램에서 2020 업데이트](hololens-release-notes.md) 릴리스는 이제 모든 릴리스 미리 보기 기능을 일반적으로 사용할 수 있습니다! 최신 기능을 모두 얻으려면 [HoloLens를 업데이트](hololens-update-hololens.md) 해야 합니다.
 
-Windows 참가자 빌드에 새 기능을 릴리스할 때이 페이지를 다시 업데이트 하 게 됩니다. 
+이 페이지를 Windows 참가자 빌드에 릴리스할 때 새 기능으로 다시 업데이트 합니다.
+
 
 ### 자동 눈동자 위치 지원
 
@@ -101,6 +102,6 @@ Uncalibrated 사용자가 디바이스에 배치 하는 경우 자동 눈 위치
 비행 서명 된 ffu를 사용 하 여 테스트 하려면 먼저 디바이스의 잠금을 해제 한 후에는 비행 서명 된 ffu가 깜박입니다.
 1. PC
     1. PC에 ffu 다운로드:[https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload)
-    1. Microsoft Store에서 ARC (고급 복구 도우미) 설치:[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) 
+    1. Microsoft Store에서 ARC (고급 복구 도우미) 설치:[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
 1. HoloLens-비행 잠금 해제: **설정**  >  **업데이트 & 보안**  >  **Windows 참가자 프로그램** 을 열고, 장치를 다시 부팅 하세요.
-1. 플래시 FFU-이제 호를 사용 하 여 비행에 서명 된 FFU를 깜박일 수 있습니다. 
+1. 플래시 FFU-이제 호를 사용 하 여 비행에 서명 된 FFU를 깜박일 수 있습니다.

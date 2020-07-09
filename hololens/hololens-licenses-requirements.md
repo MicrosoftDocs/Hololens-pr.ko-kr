@@ -1,5 +1,5 @@
 ---
-title: Mixed Reality 배포를 위한 라이선스
+title: 라이선스 요구 사항
 description: ''
 ms.prod: hololens
 ms.sitesec: library
@@ -14,14 +14,14 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0da2a2337b3b1f361ffbb698607f304efbf6d193
-ms.sourcegitcommit: f3cda6c6b3bfb7ba4be5f4da66d8ed5b03ca807d
+ms.openlocfilehash: 18a583f407b19c5b86870a49b8182d45f46a45f5
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10830142"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857806"
 ---
-# 필요한 라이선스 결정
+# 라이선스 요구 사항
 
 ## MDM(모바일 장치 관리) 라이선스 지침
 

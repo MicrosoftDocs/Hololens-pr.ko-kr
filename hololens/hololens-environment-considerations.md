@@ -10,15 +10,12 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
-ms.openlocfilehash: d2bec32e118ee1c9307b56fad99b7e8859e2a94d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 0fa147eb2b1194dacdcabff4995f5141a1b25bde
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828683"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857856"
 ---
 # HoloLens 환경 고려 사항
 
@@ -120,7 +117,7 @@ Wi-Fi가 활성화되어 있는 한 지도 데이터는 실제 Wi-Fi 네트워�
 
 다른 사람이 HoloLens를 사용하려는 경우 먼저 보정 앱을 실행하여 그들에게 맞게 디바이스를 적절하게 설정해야 합니다.
 
-## 기타 참조
+## 참고 항목
 
 - [공간 매핑 디자인](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping)
 - [홀로그램스](https://docs.microsoft.com/windows/mixed-reality/hologram)

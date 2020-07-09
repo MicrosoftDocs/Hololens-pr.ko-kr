@@ -1,5 +1,5 @@
 ---
-title: 네트워크에 연결
+title: 네트워크에 HoloLens 연결
 description: HoloLens로 인터넷에 연결하는 방법 및 장치의 IP 주소를 식별하는 방법에 대한 지침입니다.
 ms.assetid: 0895606e-96c0-491e-8b1c-52e56b00365d
 author: mattzmsft
@@ -10,17 +10,14 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
-ms.openlocfilehash: 0bc5a5f7f3eaf3d811da055a7bda664fd3f0daff
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 734176dcf8a789f130aa8b010f5f3c9ec1d22c72
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829284"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857796"
 ---
-# 네트워크에 연결
+# 네트워크에 HoloLens 연결
 
 HoloLens에서 대부분의 작업을 수행하려면 네트워크에 연결되어 있어야 합니다. 이 가이드는 다음을 지원합니다.
 
