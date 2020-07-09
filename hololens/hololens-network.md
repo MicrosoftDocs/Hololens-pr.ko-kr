@@ -1,5 +1,5 @@
 ---
-title: 네트워크에 연결
+title: 네트워크에 HoloLens 연결
 description: HoloLens로 인터넷에 연결하는 방법 및 장치의 IP 주소를 식별하는 방법에 대한 지침입니다.
 ms.assetid: 0895606e-96c0-491e-8b1c-52e56b00365d
 author: mattzmsft
@@ -10,94 +10,91 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-appliesto:
-- HoloLens (1st gen)
-- HoloLens 2
-ms.openlocfilehash: 0bc5a5f7f3eaf3d811da055a7bda664fd3f0daff
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 734176dcf8a789f130aa8b010f5f3c9ec1d22c72
+ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829284"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "10857796"
 ---
-# <span data-ttu-id="4c9d0-104">네트워크에 연결</span><span class="sxs-lookup"><span data-stu-id="4c9d0-104">Connect to a network</span></span>
+# <span data-ttu-id="a1697-104">네트워크에 HoloLens 연결</span><span class="sxs-lookup"><span data-stu-id="a1697-104">Connect HoloLens to a network</span></span>
 
-<span data-ttu-id="4c9d0-105">HoloLens에서 대부분의 작업을 수행하려면 네트워크에 연결되어 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-105">To do most things on your HoloLens, you have to be connected to a network.</span></span> <span data-ttu-id="4c9d0-106">이 가이드는 다음을 지원합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-106">This guide will help you:</span></span>
+<span data-ttu-id="a1697-105">HoloLens에서 대부분의 작업을 수행하려면 네트워크에 연결되어 있어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-105">To do most things on your HoloLens, you have to be connected to a network.</span></span> <span data-ttu-id="a1697-106">이 가이드는 다음을 지원합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-106">This guide will help you:</span></span>
 
-- <span data-ttu-id="4c9d0-107">Wi-Fi 또는 USB-C에서 이더넷을 사용하여(HoloLens 2에만 해당) 네트워크에 연결</span><span class="sxs-lookup"><span data-stu-id="4c9d0-107">Connect to a network using Wi-Fi or (for HoloLens 2 only) Ethernet over USB-C</span></span>
-- <span data-ttu-id="4c9d0-108">Wi-Fi를 사용하지 않도록 설정하고 다시 사용하도록 설정</span><span class="sxs-lookup"><span data-stu-id="4c9d0-108">Disable and re-enable Wi-Fi</span></span>
+- <span data-ttu-id="a1697-107">Wi-Fi 또는 USB-C에서 이더넷을 사용하여(HoloLens 2에만 해당) 네트워크에 연결</span><span class="sxs-lookup"><span data-stu-id="a1697-107">Connect to a network using Wi-Fi or (for HoloLens 2 only) Ethernet over USB-C</span></span>
+- <span data-ttu-id="a1697-108">Wi-Fi를 사용하지 않도록 설정하고 다시 사용하도록 설정</span><span class="sxs-lookup"><span data-stu-id="a1697-108">Disable and re-enable Wi-Fi</span></span>
 
-<span data-ttu-id="4c9d0-109">[오프라인으로 HoloLens 사용](hololens-offline.md)에 대한 자세한 내용을 알아보세요.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-109">Read more about [using HoloLens offline](hololens-offline.md).</span></span>
+<span data-ttu-id="a1697-109">[오프라인으로 HoloLens 사용](hololens-offline.md)에 대한 자세한 내용을 알아보세요.</span><span class="sxs-lookup"><span data-stu-id="a1697-109">Read more about [using HoloLens offline](hololens-offline.md).</span></span>
 
-## <span data-ttu-id="4c9d0-110">처음 연결</span><span class="sxs-lookup"><span data-stu-id="4c9d0-110">Connecting for the first time</span></span>
+## <span data-ttu-id="a1697-110">처음 연결</span><span class="sxs-lookup"><span data-stu-id="a1697-110">Connecting for the first time</span></span>
 
-<span data-ttu-id="4c9d0-111">HoloLens를 처음 사용할 때 Wi-Fi 네트워크에 연결하는 방법에 대한 안내를 받습니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-111">The first time you use your HoloLens, you'll be guided through connecting to a Wi-Fi network.</span></span> <span data-ttu-id="4c9d0-112">설치하는 동안 Wi-Fi에 연결하는 데 문제가 있는 경우, 네트워크가 공개, 암호로 보호된 네트워크 또는 종속 포털 네트워크인지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-112">If you have trouble connecting to Wi-Fi during setup, make sure that your network is either an open, password-protected network or a captive portal network.</span></span> <span data-ttu-id="4c9d0-113">네트워크에 연결할 때 인증서를 사용할 필요가 없는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-113">Make sure that the network doesn't require you to use a certificate to connect.</span></span> <span data-ttu-id="4c9d0-114">설정 후, 다른 유형의 Wi-Fi 네트워크에 연결할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-114">After setup, you can connect to other types of Wi-Fi networks.</span></span>
+<span data-ttu-id="a1697-111">HoloLens를 처음 사용할 때 Wi-Fi 네트워크에 연결하는 방법에 대한 안내를 받습니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-111">The first time you use your HoloLens, you'll be guided through connecting to a Wi-Fi network.</span></span> <span data-ttu-id="a1697-112">설치하는 동안 Wi-Fi에 연결하는 데 문제가 있는 경우, 네트워크가 공개, 암호로 보호된 네트워크 또는 종속 포털 네트워크인지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-112">If you have trouble connecting to Wi-Fi during setup, make sure that your network is either an open, password-protected network or a captive portal network.</span></span> <span data-ttu-id="a1697-113">네트워크에 연결할 때 인증서를 사용할 필요가 없는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-113">Make sure that the network doesn't require you to use a certificate to connect.</span></span> <span data-ttu-id="a1697-114">설정 후, 다른 유형의 Wi-Fi 네트워크에 연결할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-114">After setup, you can connect to other types of Wi-Fi networks.</span></span>
 
-## <span data-ttu-id="4c9d0-115">설치 후 Wi-Fi에 연결</span><span class="sxs-lookup"><span data-stu-id="4c9d0-115">Connecting to Wi-Fi after setup</span></span>
+## <span data-ttu-id="a1697-115">설치 후 Wi-Fi에 연결</span><span class="sxs-lookup"><span data-stu-id="a1697-115">Connecting to Wi-Fi after setup</span></span>
 
-1. <span data-ttu-id="4c9d0-116">**시작** > **설정**을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-116">Select **Start** > **Settings**.</span></span>
-   - <span data-ttu-id="4c9d0-117">*HoloLens(1세대)에만 해당*: 응시를 사용하여 설정 앱을 배치하고 에어 탭하여 배치하거나 "배치"라고 말합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-117">*HoloLens (1st gen) only*: Use your gaze to position the Settings app, then air tap to place it, or say "Place."</span></span>
-1. <span data-ttu-id="4c9d0-118">**네트워크 및 인터넷** > **Wi-Fi**를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-118">Select **Network & Internet** > **Wi-Fi**.</span></span> <span data-ttu-id="4c9d0-119">네트워크에 표시되지 않으면 목록을 아래로 스크롤합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-119">If you don't see your network, scroll down the list.</span></span>
-1. <span data-ttu-id="4c9d0-120">네트워크를 선택하고 **연결**을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-120">Select a network, then select **Connect**.</span></span>
-1. <span data-ttu-id="4c9d0-121">네트워크 암호를 묻는 메시지가 표시되면 입력하고 **다음**을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-121">If you are prompted for a network password type it and then select **Next**.</span></span>
+1. <span data-ttu-id="a1697-116">**시작** > **설정**을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-116">Select **Start** > **Settings**.</span></span>
+   - <span data-ttu-id="a1697-117">*HoloLens(1세대)에만 해당*: 응시를 사용하여 설정 앱을 배치하고 에어 탭하여 배치하거나 "배치"라고 말합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-117">*HoloLens (1st gen) only*: Use your gaze to position the Settings app, then air tap to place it, or say "Place."</span></span>
+1. <span data-ttu-id="a1697-118">**네트워크 및 인터넷** > **Wi-Fi**를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-118">Select **Network & Internet** > **Wi-Fi**.</span></span> <span data-ttu-id="a1697-119">네트워크에 표시되지 않으면 목록을 아래로 스크롤합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-119">If you don't see your network, scroll down the list.</span></span>
+1. <span data-ttu-id="a1697-120">네트워크를 선택하고 **연결**을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-120">Select a network, then select **Connect**.</span></span>
+1. <span data-ttu-id="a1697-121">네트워크 암호를 묻는 메시지가 표시되면 입력하고 **다음**을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-121">If you are prompted for a network password type it and then select **Next**.</span></span>
 
-## <span data-ttu-id="4c9d0-122">HoloLens(1세대)에서 Wi-Fi에 연결</span><span class="sxs-lookup"><span data-stu-id="4c9d0-122">Connecting to Wi-Fi on HoloLens (1st gen)</span></span>
+## <span data-ttu-id="a1697-122">HoloLens(1세대)에서 Wi-Fi에 연결</span><span class="sxs-lookup"><span data-stu-id="a1697-122">Connecting to Wi-Fi on HoloLens (1st gen)</span></span>
 
-<span data-ttu-id="4c9d0-123">HoloLens에는 802.11ac 가능, 2x2 Wi-Fi 무선 송수신 장치가 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-123">HoloLens contains a 802.11ac-capable, 2x2 Wi-Fi radio.</span></span> <span data-ttu-id="4c9d0-124">HoloLens를 Wi-Fi 네트워크에 연결하는 것은 Windows 10 데스크톱 또는 모바일 장치를 Wi-Fi 네트워크에 연결하는 것과 유사합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-124">Connecting HoloLens to a Wi-Fi network is similar to connecting a Windows 10 Desktop or Mobile device to a Wi-Fi network.</span></span>
+<span data-ttu-id="a1697-123">HoloLens에는 802.11ac 가능, 2x2 Wi-Fi 무선 송수신 장치가 포함되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-123">HoloLens contains a 802.11ac-capable, 2x2 Wi-Fi radio.</span></span> <span data-ttu-id="a1697-124">HoloLens를 Wi-Fi 네트워크에 연결하는 것은 Windows 10 데스크톱 또는 모바일 장치를 Wi-Fi 네트워크에 연결하는 것과 유사합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-124">Connecting HoloLens to a Wi-Fi network is similar to connecting a Windows 10 Desktop or Mobile device to a Wi-Fi network.</span></span>
 
 ![HoloLens Wi-Fi 설정](./images/wifi-hololens-600px.jpg)
 
-1. <span data-ttu-id="4c9d0-126">**시작** 메뉴를 엽니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-126">Open the **Start** menu.</span></span>
-1. <span data-ttu-id="4c9d0-127">**시작** 또는 **시작** 메뉴의 오른쪽에 있는 **모든 앱** 목록에 있는 설정 앱을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-127">Select the Settings app from **Start** or from the **All Apps** list on the right of the **Start** menu.</span></span> <span data-ttu-id="4c9d0-128">설정 앱이 자동 배치됩니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-128">The Settings app will be auto-placed in front of you.</span></span>
-1. <span data-ttu-id="4c9d0-129">**네트워크 및 인터넷**을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-129">Select **Network & Internet**.</span></span>
-1. <span data-ttu-id="4c9d0-130">Wi-Fi가 켜져 있는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-130">Make sure Wi-Fi is turned on.</span></span>
-1. <span data-ttu-id="4c9d0-131">목록에서 Wi-Fi 네트워크를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-131">Select a Wi-Fi network from the list.</span></span>
-1. <span data-ttu-id="4c9d0-132">필요한 경우 Wi-Fi 네트워크 암호를 입력합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-132">If needed, type in the Wi-Fi network password.</span></span>
+1. <span data-ttu-id="a1697-126">**시작** 메뉴를 엽니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-126">Open the **Start** menu.</span></span>
+1. <span data-ttu-id="a1697-127">**시작** 또는 **시작** 메뉴의 오른쪽에 있는 **모든 앱** 목록에 있는 설정 앱을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-127">Select the Settings app from **Start** or from the **All Apps** list on the right of the **Start** menu.</span></span> <span data-ttu-id="a1697-128">설정 앱이 자동 배치됩니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-128">The Settings app will be auto-placed in front of you.</span></span>
+1. <span data-ttu-id="a1697-129">**네트워크 및 인터넷**을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-129">Select **Network & Internet**.</span></span>
+1. <span data-ttu-id="a1697-130">Wi-Fi가 켜져 있는지 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-130">Make sure Wi-Fi is turned on.</span></span>
+1. <span data-ttu-id="a1697-131">목록에서 Wi-Fi 네트워크를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-131">Select a Wi-Fi network from the list.</span></span>
+1. <span data-ttu-id="a1697-132">필요한 경우 Wi-Fi 네트워크 암호를 입력합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-132">If needed, type in the Wi-Fi network password.</span></span>
 
-<span data-ttu-id="4c9d0-133">**시작** 메뉴에서 Wi-Fi 상태를 확인하여 Wi-Fi 네트워크에 연결되어 있는지 확인할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-133">You can also confirm you are connected to a Wi-Fi network by checking the Wi-Fi status in the **Start** menu:</span></span>
+<span data-ttu-id="a1697-133">**시작** 메뉴에서 Wi-Fi 상태를 확인하여 Wi-Fi 네트워크에 연결되어 있는지 확인할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-133">You can also confirm you are connected to a Wi-Fi network by checking the Wi-Fi status in the **Start** menu:</span></span>
 
-1. <span data-ttu-id="4c9d0-134">**시작** 메뉴를 엽니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-134">Open the **Start** menu.</span></span>
-1. <span data-ttu-id="4c9d0-135">**시작** 메뉴의 왼쪽 위에 있는 Wi-Fi 상태를 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-135">Look at the top left of the **Start** menu for Wi-Fi status.</span></span> <span data-ttu-id="4c9d0-136">Wi-Fi의 상태와 연결된 네트워크의 SSID가 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-136">The state of Wi-Fi and the SSID of the connected network will be shown.</span></span>
+1. <span data-ttu-id="a1697-134">**시작** 메뉴를 엽니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-134">Open the **Start** menu.</span></span>
+1. <span data-ttu-id="a1697-135">**시작** 메뉴의 왼쪽 위에 있는 Wi-Fi 상태를 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-135">Look at the top left of the **Start** menu for Wi-Fi status.</span></span> <span data-ttu-id="a1697-136">Wi-Fi의 상태와 연결된 네트워크의 SSID가 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-136">The state of Wi-Fi and the SSID of the connected network will be shown.</span></span>
 
-## <span data-ttu-id="4c9d0-137">Wi-Fi에 대한 연결 문제 해결</span><span class="sxs-lookup"><span data-stu-id="4c9d0-137">Troubleshooting your connection to Wi-Fi</span></span>
+## <span data-ttu-id="a1697-137">Wi-Fi에 대한 연결 문제 해결</span><span class="sxs-lookup"><span data-stu-id="a1697-137">Troubleshooting your connection to Wi-Fi</span></span>
 
-<span data-ttu-id="4c9d0-138">Wi-Fi에 연결하는 데 문제가 있는 경우 [Wi-Fi에 연결할 수 없음](./hololens-faq.md#i-cant-connect-to-wi-fi)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-138">If you experience problems connecting to Wi-Fi, see [I can't connect to Wi-Fi](./hololens-faq.md#i-cant-connect-to-wi-fi).</span></span>
+<span data-ttu-id="a1697-138">Wi-Fi에 연결하는 데 문제가 있는 경우 [Wi-Fi에 연결할 수 없음](./hololens-faq.md#i-cant-connect-to-wi-fi)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="a1697-138">If you experience problems connecting to Wi-Fi, see [I can't connect to Wi-Fi](./hololens-faq.md#i-cant-connect-to-wi-fi).</span></span>
 
-<span data-ttu-id="4c9d0-139">장치에서 엔터프라이즈 또는 조직 계정에 로그인하는 경우 IT 관리자가 정책을 구성한다면 MDM(모바일 장치 관리) 정책을 적용할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-139">When you sign into an enterprise or organizational account on the device, it may also apply Mobile Device Management (MDM) policy, if the policy is configured by your IT administrator.</span></span>
+<span data-ttu-id="a1697-139">장치에서 엔터프라이즈 또는 조직 계정에 로그인하는 경우 IT 관리자가 정책을 구성한다면 MDM(모바일 장치 관리) 정책을 적용할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-139">When you sign into an enterprise or organizational account on the device, it may also apply Mobile Device Management (MDM) policy, if the policy is configured by your IT administrator.</span></span>
 
-## <span data-ttu-id="4c9d0-140">HoloLens(1세대)에서 Wi-Fi 사용 안 함</span><span class="sxs-lookup"><span data-stu-id="4c9d0-140">Disabling Wi-Fi on HoloLens (1st gen)</span></span>
+## <span data-ttu-id="a1697-140">HoloLens(1세대)에서 Wi-Fi 사용 안 함</span><span class="sxs-lookup"><span data-stu-id="a1697-140">Disabling Wi-Fi on HoloLens (1st gen)</span></span>
 
-### <span data-ttu-id="4c9d0-141">HoloLens에서 설정 앱 사용</span><span class="sxs-lookup"><span data-stu-id="4c9d0-141">Using the Settings app on HoloLens</span></span>
+### <span data-ttu-id="a1697-141">HoloLens에서 설정 앱 사용</span><span class="sxs-lookup"><span data-stu-id="a1697-141">Using the Settings app on HoloLens</span></span>
 
-1. <span data-ttu-id="4c9d0-142">**시작** 메뉴를 엽니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-142">Open the **Start** menu.</span></span>
-1. <span data-ttu-id="4c9d0-143">**시작** 또는 **시작** 메뉴의 오른쪽에 있는 **모든 앱** 목록에 있는 **설정** 앱을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-143">Select the **Settings** app from **Start** or from the **All Apps** list on the right of the **Start** menu.</span></span> <span data-ttu-id="4c9d0-144">**설정** 앱이 자동 배치됩니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-144">The **Settings** app will be auto-placed in front of you.</span></span>
-1. <span data-ttu-id="4c9d0-145">**네트워크 및 인터넷**을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-145">Select **Network & Internet**.</span></span>
-1. <span data-ttu-id="4c9d0-146">Wi-Fi 슬라이더 스위치를 선택하여 **끄기** 위치로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-146">Select the Wi-Fi slider switch to move it to the **Off** position.</span></span> <span data-ttu-id="4c9d0-147">이는 Wi-Fi 무선 송수신 장치의 RF 구성 요소를 끄고 HoloLens에서 모든 Wi-Fi 기능을 사용하지 않도록 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-147">This will turn off the RF components of the Wi-Fi radio and disable all Wi-Fi functionality on HoloLens.</span></span>
+1. <span data-ttu-id="a1697-142">**시작** 메뉴를 엽니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-142">Open the **Start** menu.</span></span>
+1. <span data-ttu-id="a1697-143">**시작** 또는 **시작** 메뉴의 오른쪽에 있는 **모든 앱** 목록에 있는 **설정** 앱을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-143">Select the **Settings** app from **Start** or from the **All Apps** list on the right of the **Start** menu.</span></span> <span data-ttu-id="a1697-144">**설정** 앱이 자동 배치됩니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-144">The **Settings** app will be auto-placed in front of you.</span></span>
+1. <span data-ttu-id="a1697-145">**네트워크 및 인터넷**을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-145">Select **Network & Internet**.</span></span>
+1. <span data-ttu-id="a1697-146">Wi-Fi 슬라이더 스위치를 선택하여 **끄기** 위치로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-146">Select the Wi-Fi slider switch to move it to the **Off** position.</span></span> <span data-ttu-id="a1697-147">이는 Wi-Fi 무선 송수신 장치의 RF 구성 요소를 끄고 HoloLens에서 모든 Wi-Fi 기능을 사용하지 않도록 설정합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-147">This will turn off the RF components of the Wi-Fi radio and disable all Wi-Fi functionality on HoloLens.</span></span>
 
     > [!WARNING]
-    > <span data-ttu-id="4c9d0-148">Wi-Fi 무선 송수신 장치를 사용하지 않도록 설정하면 HoloLens에서 자동으로 [공백을](hololens-spaces.md)로드할 수 없게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-148">When the Wi-Fi radio is disabled, HoloLens will not be able to automatically load your [spaces](hololens-spaces.md).</span></span>
+    > <span data-ttu-id="a1697-148">Wi-Fi 무선 송수신 장치를 사용하지 않도록 설정하면 HoloLens에서 자동으로 [공백을](hololens-spaces.md)로드할 수 없게 됩니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-148">When the Wi-Fi radio is disabled, HoloLens will not be able to automatically load your [spaces](hololens-spaces.md).</span></span>
 
-1. <span data-ttu-id="4c9d0-149">슬라이더 스위치를 **켜기** 위치로 이동하여 Wi-Fi 무선 송수신 장치를 켜고 Microsoft HoloLens에서 Wi-Fi 기능을 복원합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-149">Move the slider switch to the **On** position to turn on the Wi-Fi radio and restore Wi-Fi functionality on Microsoft HoloLens.</span></span> <span data-ttu-id="4c9d0-150">선택한 Wi-Fi 무선 송수신 장치 상태(**켜기** 또는 **끄기**)는 다시 부팅하는 동안 유지됩니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-150">The selected Wi-Fi radio state (**On** or **Off**) will persist across reboots.</span></span>
+1. <span data-ttu-id="a1697-149">슬라이더 스위치를 **켜기** 위치로 이동하여 Wi-Fi 무선 송수신 장치를 켜고 Microsoft HoloLens에서 Wi-Fi 기능을 복원합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-149">Move the slider switch to the **On** position to turn on the Wi-Fi radio and restore Wi-Fi functionality on Microsoft HoloLens.</span></span> <span data-ttu-id="a1697-150">선택한 Wi-Fi 무선 송수신 장치 상태(**켜기** 또는 **끄기**)는 다시 부팅하는 동안 유지됩니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-150">The selected Wi-Fi radio state (**On** or **Off**) will persist across reboots.</span></span>
 
-## <span data-ttu-id="4c9d0-151">Wi-Fi 네트워크에서 HoloLens의 IP 주소 식별</span><span class="sxs-lookup"><span data-stu-id="4c9d0-151">Identifying the IP Address of your HoloLens on the Wi-Fi network</span></span>
+## <span data-ttu-id="a1697-151">Wi-Fi 네트워크에서 HoloLens의 IP 주소 식별</span><span class="sxs-lookup"><span data-stu-id="a1697-151">Identifying the IP Address of your HoloLens on the Wi-Fi network</span></span>
 
-### <span data-ttu-id="4c9d0-152">설정 앱 사용</span><span class="sxs-lookup"><span data-stu-id="4c9d0-152">By using the Settings app</span></span>
+### <span data-ttu-id="a1697-152">설정 앱 사용</span><span class="sxs-lookup"><span data-stu-id="a1697-152">By using the Settings app</span></span>
 
-1. <span data-ttu-id="4c9d0-153">**시작** 메뉴를 엽니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-153">Open the **Start** menu.</span></span>
-1. <span data-ttu-id="4c9d0-154">**시작** 또는 **시작** 메뉴의 오른쪽에 있는 **모든 앱** 목록에 있는 **설정** 앱을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-154">Select the **Settings** app from **Start** or from the **All Apps** list on the right of the **Start** menu.</span></span> <span data-ttu-id="4c9d0-155">**설정** 앱이 자동 배치됩니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-155">The **Settings** app will be auto-placed in front of you.</span></span>
-1. <span data-ttu-id="4c9d0-156">**네트워크 및 인터넷**을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-156">Select **Network & Internet**.</span></span>
-1. <span data-ttu-id="4c9d0-157">사용할 수 있는 Wi-Fi 네트워크 목록 아래까지 아래로 스크롤하고 **하드웨어 속성**을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-157">Scroll down to beneath the list of available Wi-Fi networks and select **Hardware properties**.</span></span>
+1. <span data-ttu-id="a1697-153">**시작** 메뉴를 엽니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-153">Open the **Start** menu.</span></span>
+1. <span data-ttu-id="a1697-154">**시작** 또는 **시작** 메뉴의 오른쪽에 있는 **모든 앱** 목록에 있는 **설정** 앱을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-154">Select the **Settings** app from **Start** or from the **All Apps** list on the right of the **Start** menu.</span></span> <span data-ttu-id="a1697-155">**설정** 앱이 자동 배치됩니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-155">The **Settings** app will be auto-placed in front of you.</span></span>
+1. <span data-ttu-id="a1697-156">**네트워크 및 인터넷**을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-156">Select **Network & Internet**.</span></span>
+1. <span data-ttu-id="a1697-157">사용할 수 있는 Wi-Fi 네트워크 목록 아래까지 아래로 스크롤하고 **하드웨어 속성**을 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-157">Scroll down to beneath the list of available Wi-Fi networks and select **Hardware properties**.</span></span>
 
     ![Wi-Fi 설정의 하드웨어 속성](./images/wifi-hololens-hwdetails.jpg)
 
-   <span data-ttu-id="4c9d0-159">IP 주소는 **IPv4 주소**옆에 나타납니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-159">The IP address appears next to **IPv4 address**.</span></span>
+   <span data-ttu-id="a1697-159">IP 주소는 **IPv4 주소**옆에 나타납니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-159">The IP address appears next to **IPv4 address**.</span></span>
 
-### <span data-ttu-id="4c9d0-160">Cortana 사용</span><span class="sxs-lookup"><span data-stu-id="4c9d0-160">By using Cortana</span></span>
+### <span data-ttu-id="a1697-160">Cortana 사용</span><span class="sxs-lookup"><span data-stu-id="a1697-160">By using Cortana</span></span>
 
-<span data-ttu-id="4c9d0-161">"안녕 코타나, 내 IP 주소는?"이라고 말합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-161">Say "Hey Cortana, What's my IP address?"</span></span> <span data-ttu-id="4c9d0-162">Cortana가 IP 주소를 표시하고 읽습니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-162">and Cortana will display and read out your IP address.</span></span>
+<span data-ttu-id="a1697-161">"안녕 코타나, 내 IP 주소는?"이라고 말합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-161">Say "Hey Cortana, What's my IP address?"</span></span> <span data-ttu-id="a1697-162">Cortana가 IP 주소를 표시하고 읽습니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-162">and Cortana will display and read out your IP address.</span></span>
 
-### <span data-ttu-id="4c9d0-163">Windows 장치 포털 사용</span><span class="sxs-lookup"><span data-stu-id="4c9d0-163">By using Windows Device Portal</span></span>
+### <span data-ttu-id="a1697-163">Windows 장치 포털 사용</span><span class="sxs-lookup"><span data-stu-id="a1697-163">By using Windows Device Portal</span></span>
 
-1. <span data-ttu-id="4c9d0-164">PC의 웹 브라우저에서 [장치 포털](/windows/mixed-reality/using-the-windows-device-portal.md#networking)을 엽니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-164">In a web browser on your PC, open the [device portal](/windows/mixed-reality/using-the-windows-device-portal.md#networking).</span></span>
-1. <span data-ttu-id="4c9d0-165">**네트워킹** 섹션으로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-165">Navigate to the **Networking** section.</span></span>  
-   <span data-ttu-id="4c9d0-166">이 섹션에는 IP 주소와 기타 네트워크 정보가 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-166">This section displays your IP address and other network information.</span></span> <span data-ttu-id="4c9d0-167">이 방법을 사용하여 개발 PC에서 IP 주소를 복사하여 붙여 넣을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="4c9d0-167">By using this method, you can copy and paste of the IP address on your development PC.</span></span>
+1. <span data-ttu-id="a1697-164">PC의 웹 브라우저에서 [장치 포털](/windows/mixed-reality/using-the-windows-device-portal.md#networking)을 엽니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-164">In a web browser on your PC, open the [device portal](/windows/mixed-reality/using-the-windows-device-portal.md#networking).</span></span>
+1. <span data-ttu-id="a1697-165">**네트워킹** 섹션으로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-165">Navigate to the **Networking** section.</span></span>  
+   <span data-ttu-id="a1697-166">이 섹션에는 IP 주소와 기타 네트워크 정보가 표시됩니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-166">This section displays your IP address and other network information.</span></span> <span data-ttu-id="a1697-167">이 방법을 사용하여 개발 PC에서 IP 주소를 복사하여 붙여 넣을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a1697-167">By using this method, you can copy and paste of the IP address on your development PC.</span></span>
