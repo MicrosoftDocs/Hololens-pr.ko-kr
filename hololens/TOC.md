@@ -66,12 +66,12 @@
 ## 응용 프로그램
 ### [애플리케이션 관리 개요](app-deploy-overview.md)
 ### [인투네 & 컴퍼니 포털](app-deploy-intune.md)
-### [Microsoft Store for Business](app-deploy-store-business.md)
+### [비즈니스용 Microsoft Store](app-deploy-store-business.md)
 ### [프로비저닝 패키지](app-deploy-provisioning-package.md)
 
-# 유지하다
+# 유지 관리
 ## [HoloLens 업데이트 관리](hololens-updates.md)
-## HoloLens 문제 수정
+## HoloLens 문제 해결
 ### [문제 해결](hololens-troubleshooting.md)
 ### [다시 시작, 재설정 또는 복구HoloLens 2](hololens-recovery.md)
 ### [HoloLens 2(1세대) 다시 시작, 초기화 또는 복구 ](hololens1-recovery.md)
