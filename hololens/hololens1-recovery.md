@@ -16,14 +16,14 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 837a019f110a58c490618d3d5c47e83e58231d18
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: a52e8e5bae49973d92efa6ea75391dc44d8b8ddb
+ms.sourcegitcommit: 357094acfd39f7c59a0a62f1dd7918b58c209ef7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828583"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "10861163"
 ---
-# HoloLens 1세대 다시 시작, 초기화 또는 복구
+# HoloLens 2(1세대) 다시 시작, 초기화 또는 복구
 
 HoloLens에 문제가 발생한 경우 장치 복구를 사용하여 다시 시작하거나 초기화 또는 리플래시하는 것이 좋습니다.
 
