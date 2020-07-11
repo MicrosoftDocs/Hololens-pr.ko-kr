@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: cb9234556d0b5c654747e0f404d1d10d8a2cd539
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 51cbef57cc3384b7026ae5d0b1ea98fdd942291f
+ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828838"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "10865577"
 ---
 # HoloLens 장치 및 홀로그램에 대한 질문과 대답
 
@@ -281,7 +281,8 @@ HoloLens를 Wi-Fi 네트워크에 연결할 수 없는 경우 다음 몇 가지�
 
 ## HoloLens 장치 보안에 대한 질문
 
-[HoloLens 장치 보안에 대한 질문과 대답](hololens-faq-security.md)을 참조하세요.
+[HoloLens 2 보안 정보](security-overview.md)를 참조 하세요.
+HoloLens 1 Gen 디바이스의 경우 [이 FAQ](hololens1-faq-security.md)를 검토 하세요.
 
 [목록으로 돌아가기](#list)
 

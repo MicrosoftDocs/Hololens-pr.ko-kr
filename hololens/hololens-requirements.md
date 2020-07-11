@@ -10,18 +10,21 @@ audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/15/2019
-ms.openlocfilehash: 8aa8e0f679ad18a2e47f34c5f1233435a502dc0c
-ms.sourcegitcommit: f3cda6c6b3bfb7ba4be5f4da66d8ed5b03ca807d
+ms.openlocfilehash: e53e6575ef688e01ce2d1f6124f3214b18b05c95
+ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10830132"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "10865567"
 ---
 # 상용 환경에서 HoloLens 배포
 
 상업용 설정의 배율에서 HoloLens를 배포 하 고 구성할 수 있습니다. 이 문서에서는 상업적 환경에서 HoloLens 장치를 배포 하는 방법에 대 한 지침을 제공 합니다. 이 가이드에서는 HoloLens에 대 한 기초적인 지식이 있다고 가정 합니다. [시작 가이드](hololens1-setup.md) 의 지침에 따라 처음으로 HoloLens를 설정 합니다.
 
-이 문서는 또한 해킹을 회사 네트워크에서 안전 하 게 사용 하는 보안 팀이 평가한 것으로 가정 합니다. 자주 묻는 보안 질문은 [여기](hololens-faq-security.md) 에 나와 있습니다.
+이 문서는 또한 해킹을 회사 네트워크에서 안전 하 게 사용 하는 보안 팀이 평가한 것으로 가정 합니다.  
+> [!Tip]
+> [HoloLens 보안](security-overview.md)에 대해 자세히 알아보세요.
+> HoloLens (첫번째 Gen) 보안의 경우 [이 FAQ](hololens1-faq-security.md)를 검토 하세요.
 
 ## 배포 단계 개요
 
@@ -32,11 +35,11 @@ ms.locfileid: "10830132"
 1. ) [배포 패키지를 사용 하 여 HoloLens 구성](hololens-provisioning.md)
 1. [장치 등록](hololens-enroll-mdm.md)
 1. [HoloLens에 대한 링 기반 업데이트 설정](hololens-updates.md)
-1. [HoloLens에서 BitLocker 디바이스 암호화 사용](hololens-encryption.md)
+1. [HoloLens에서 BitLocker 디바이스 암호화 사용](security-encryption-data-protection.md)
 
 ## 1단계. 필요 사항 결정
 
-환경에서 HoloLens를 배포 하기 전에 먼저 필요한 기능, 앱 및 id 유형을 결정 하는 것이 중요 합니다. 또한 보안 팀이 회사 네트워크에서 HoloLens 사용을 승인 했는지 확인 하는 것이 중요 합니다. 추가 보안 정보는 [자주 묻는 보안 질문](hololens-faq-security.md) 을 참조 하세요.
+환경에서 HoloLens를 배포 하기 전에 먼저 필요한 기능, 앱 및 id 유형을 결정 하는 것이 중요 합니다. 또한 보안 팀이 회사 네트워크에서 HoloLens 사용을 승인 했는지 확인 하는 것이 중요 합니다. 추가 보안에 대 한 자세한 내용은 [HoloLens2 보안](security-overview.md) 을 참조 하세요.
 
 ### Id 유형
 
