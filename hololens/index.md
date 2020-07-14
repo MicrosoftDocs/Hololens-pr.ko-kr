@@ -16,12 +16,12 @@ ms.custom:
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ca4256fc38253f6f1618da73f804ab3d4c0e66df
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 977f6b86e545e834bc9f7d5060b55755243531ac
+ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10827523"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "10865547"
 ---
 # Microsoft HoloLens
 
@@ -56,7 +56,7 @@ ms.locfileid: "10827523"
 | [HoloLens 업데이트 관리](hololens-updates.md) | MDM(모바일 장치 관리) 정책을 사용하여 업데이트 설정을 구성합니다. |
 | [HoloLens 사용자 관리](hololens-multiple-users.md) | 여러 사용자가 각자의 Azure Active Directory 계정을 사용하여 HoloLens 장치를 공유할 수 있습니다. |
 | [HoloLens 응용 프로그램 액세스 관리](hololens-kiosk.md) | 다른 사용자 그룹의 응용 프로그램 액세스를 관리합니다.  |
-| [HoloLens 복구 및 문제 해결](https://support.microsoft.com/products/hololens) |  HoloLens에서 로그를 모으고, 오작동 장치를 복구하거나, 필요한 경우 HoloLens를 재설정하는 방법을 알아봅니다. |
+| [HoloLens 복구 및 문제 해결](hololens-recovery.md) |  필요한 경우 오동작 장치를 재시작하거나 HoloLens 2를 재설정하는 방법을 알아봅니다. |
 | [고객 지원](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f) | 비즈니스 지원팀에 대 한 새 지원 요청을 생성합니다. | 
 | [추가 지원 옵션](https://support.microsoft.com/products/hololens) | 회사의 HoloLens용 Microsoft 지원 리소스에 연결합니다. |
 

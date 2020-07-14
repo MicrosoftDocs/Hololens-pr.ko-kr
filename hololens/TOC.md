@@ -38,12 +38,27 @@
 ## HoloLens 2 엔터프라이즈 배포 계획
 ### [상용 환경에서 HoloLens 배포](hololens-requirements.md)
 ### [공통 인프라 구축 시나리오](common-scenarios.md)
+## 보안
+### [보안 개요](security-overview.md)
+### [Architecture](security-architecture.md)
+### [상태 구분 및 격리](security-state-separation-isolation.md)
+### [관리자가 없는 운영 체제 ](security-adminless-os.md)
+### [암호 사용 제한](security-limiting-password-use.md)
+### [하드웨어 기반 보안 및 런타임 증명](security-hardware-backed-integrity.md)
+### [데이터 암호화 및 보호](security-encryption-data-protection.md)
+### [네트워크 보안](security-network-security.md)
+### [무선 및 Wi-Fi](security-wireless-wifi.md)
+### [보안 엔지니어링 ](security-engineering.md)
+### HoloLens 1세대 보안
+#### [HoloLens(1세대)의 보안에 대한 자주 묻는 질문](hololens1-faq-security.md)
+#### [HoloLens(1세대) BitLocker 암호화](hololens1-encryption.md)
 ## [라이선스 요구 사항](hololens-licenses-requirements.md)
 ## 환경
 ### [HoloLens 환경 고려 사항](hololens-environment-considerations.md)
 ### [HoloLens를 사용하여 물리적 공간 매핑](hololens-spaces.md)
 ## [상업용 기능](hololens-commercial-features.md)
 ## [Windows Holographic for Business 기능 잠금 해제](hololens1-upgrade-enterprise.md)
+
 # 구성
 ## ID
 ### [HoloLens에 대한 사용자 ID 및 로그인 관리](hololens-identity.md)
@@ -53,9 +68,8 @@
 ### [네트워크에 HoloLens 연결](hololens-network.md)
 ### [HoloLens에 대한 연결 엔드포인트 관리](hololens-offline.md)
 ### [Bluetooth 및 USB-C 장치에 연결](hololens-connect-devices.md)
-## 보안
-### [보안에 대한 자주 묻는 질문](hololens-faq-security.md)
-### [HoloLens BitLocker 암호화](hololens-encryption.md)
+
+
 ## 정책
 ### [프로비저닝 패키지를 사용하여 HoloLens 구성](hololens-provisioning.md)
 ### [HoloLens를 키오스크로 설정](hololens-kiosk.md)
