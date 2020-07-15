@@ -15,18 +15,37 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 25a1bc21638090cc5d22bc4482299f3931641dea
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: cb4296413fdf31376ff0d11f1fa807c190af81f4
+ms.sourcegitcommit: 563797405f7470f979a27718c604df920efbb368
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829043"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10881238"
 ---
 # HoloLens 2 릴리스 정보
 
-HoloLens 장치를 능숙 하 게 사용할 수 있도록 기능, 버그, 보안 업데이트를 계속 릴리스 합니다. 이 페이지에서는 매달 HoloLens의 새로운 기능에 대해 알아볼 수 있습니다. 최신 HoloLens 2 FFU를 다운로드 하 여 [고급 복구 도우미](hololens-recovery.md#clean-reflash-the-device) 를 통해 장치를 플래시 하려면 [여기](https://aka.ms/hololens2download)에서 다운로드할 수 있습니다. 이는 최신 상태로 유지 되며 일반적으로 사용할 수 있는 최신 빌드와 일치 하 게 됩니다. 
+HoloLens 장치를 능숙 하 게 사용할 수 있도록 기능, 버그, 보안 업데이트를 계속 릴리스 합니다. 이 페이지에서는 매달 HoloLens의 새로운 기능에 대해 알아볼 수 있습니다. 최신 HoloLens 2 FFU를 다운로드 하 여 [고급 복구 도우미](hololens-recovery.md#clean-reflash-the-device) 를 통해 장치를 플래시 하려면 [여기](https://aka.ms/hololens2download)에서 다운로드할 수 있습니다. 이 기능은 최신 상태로 유지되며 일반적으로 사용할 수 있는 최신 빌드와 일치합니다. 
 
 HoloLens 에뮬레이터 릴리스 정보는 [여기](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)에서 찾을 수 있습니다.
+
+## Windows 홀로그램 버전 2004-2020 업데이트
+- 빌드 19041.1109
+
+업데이트의 개선 사항 및 수정 사항:
+
+- 개발자는 보안 연결이 필요한 디바이스 포털을 사용 하거나 사용 하지 않도록 선택할 수 있습니다.
+- OS 업데이트 후 응용 프로그램 시작의 안정성을 개선 합니다.
+- 기본 받은 편지함 밝기를 100%로 변경 합니다.
+- HoloLens 2에서 Windows Device Portal에 대 한 HTTPS 전달 문제를 해결 했습니다.
+
+## Windows 홀로그램 버전 1903-2020 업데이트
+- 빌드 18362.1071
+
+업데이트의 개선 사항 및 수정 사항:
+
+- 추적을 잃거나 regaining 하는 경우 Unity 응용 프로그램에서 홀로그램가 사라질 수 있는 문제를 해결 합니다.
+- 특정 장치에서 하드웨어 가속으로 Hololens 에뮬레이터를 사용 하는 동안 독점 Hololens 앱이 셸로 다시 작동 하는 문제를 해결 했습니다.
+- HoloLens 2에서 Windows Device Portal에 대 한 HTTPS 전달 문제를 해결 했습니다.
 
 ## Windows 홀로그램 버전 2004-2020 업데이트
 - 빌드 19041.1106
