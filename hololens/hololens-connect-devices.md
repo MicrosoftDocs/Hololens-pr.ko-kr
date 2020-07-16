@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d4c5441c1df198ae1c85be5d8f4fe38f10f0be4b
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 53d426b4319dafd0dd976e67111992020507f719
+ms.sourcegitcommit: 563797405f7470f979a27718c604df920efbb368
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828713"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10881248"
 ---
 # Bluetooth 및 USB-C 장치에 연결
 
@@ -29,6 +29,9 @@ HoloLens 2는 다음 Bluetooth 장치 클래스를 지원합니다.
 - 마우스
 - 키보드
 - A2DP(Bluetooth 오디오 출력) 장치
+
+> [!NOTE]
+> 외부 마이크를 사용할 수 없습니다. HoloLens 2는 기본 제공 [마이크 배열](hololens2-hardware.md#audio-and-speech)을 사용합니다.
 
 HoloLens 2(1세대)는 다음 Bluetooth 장치 클래스를 지원합니다.
 
@@ -44,7 +47,9 @@ HoloLens 2(1세대)는 다음 Bluetooth 장치 클래스를 지원합니다.
 1. 키보드 또는 마우스를 켜고 검색 가능하도록 합니다. 장치를 검색 가능하게 하는 방법에 대한 자세한 내용은 장치(또는 해당 문서) 정보를 참고하거나 제조 업체의 웹 사이트를 방문하세요.
 
 1. 피어오르는 제스처(HoloLens(1세대)) 또는 시작 제스처(HoloLens 2)를 사용하여 **시작**으로 이동한 다음 **설정**을 선택합니다.
+
 1. **장치**를 선택하고 Bluetooth가 켜져 있는지 확인합니다.  
+
 1. 장치 이름이 표시되면 **연결**을 선택하고 지침을 따릅니다.
 
 ### HoloLens(1세대): 클리커 연결
@@ -74,7 +79,7 @@ HoloLens 2는 다음 USB-C 장치 클래스를 지원합니다.
 - 콤비네이션 PD 허브(USB A 및 PD 충전)
 
 > [!NOTE]
-> HoloLens가 USB-C 연결을 사용하는 일부 모바일 장치를 이더넷 어댑터로 인식 하기 때문에 Windows Holographic 버전 2004부터 테더링 구성에서 사용할 수 있습니다. 별도의 드라이버가 필요한 USB LTE 모뎀 및/또는 구성 응용 프로그램을 설치 하는 것은 지원 하지 않습니다.
+> HoloLens가 USB-C 연결을 사용하는 일부 모바일 장치를 이더넷 어댑터로 인식 하기 때문에 Windows Holographic 버전 2004부터 테더링 구성에서 사용할 수 있습니다. 별도의 드라이버 및/또는 구성을 위해 설치된 응용 프로그램이 필요한 USB LTE 모뎀은 지원되지 않습니다.
 
 ## Miracast에 연결
 
@@ -86,6 +91,7 @@ Miracst를 사용 하려면 다음 단계를 따릅니다.
    - **시작** 메뉴를 응시하며 "연결" 이라고 말합니다.  
 
 1. 나타나는 장치 목록에서 사용 가능한 장치를 선택합니다.
+
 1. 페어링이 완료되면 프로젝션을 시작합니다.
 
 ## Bluetooth 해제
@@ -93,4 +99,5 @@ Miracst를 사용 하려면 다음 단계를 따릅니다.
 이 절차는 Bluetooth 라디오의 RF 구성 요소를 해제하고 Microsoft HoloLens에서 모든 Bluetooth 기능을 사용 하지 않도록 설정합니다.
 
 1. 피어오르는 제스처(HoloLens(1세대)) 또는 시작 제스처(HoloLens 2)를 사용하여 **시작**으로 이동한 다음 **설정** > **장치**를 선택합니다.
+
 1. **Bluetooth** 슬라이더 스위치를 **해제** 위치로 이동 합니다.
