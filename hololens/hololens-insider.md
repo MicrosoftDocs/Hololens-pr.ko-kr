@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b054b61b269522d673be104ffbda9abc1bc85415
-ms.sourcegitcommit: 168a7659420525e5f3e3088d7ce0b5e03c969029
+ms.openlocfilehash: 5cdb7302aec5b37a5071f2192f7c8bc5df760ac7
+ms.sourcegitcommit: 3db43bc4a007b10901d8edb045f66e1e299c57a9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "10860608"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "10882430"
 ---
 # Microsoft HoloLens 참가자 미리 보기
 
@@ -51,11 +51,13 @@ Windows 홀로그램의 참가자 빌드를 더 이상 수신 하지 않으려�
 HoloLens가 프로덕션 빌드를 실행 하 고 있는지 확인 하려면 다음을 수행 합니다.
 
 1. **설정 > 시스템 >에 대 한 정보**로 이동 하 여 빌드 번호를 찾습니다.
-1. [프로덕션 빌드 번호에 대 한 릴리스 정보를 참조 하세요.](hololens-release-notes.md)
+
+1. [프로덕션 빌드 번호에 대 한 릴리스 정보를 참조](hololens-release-notes.md)하세요.
 
 참가자 빌드를 옵트아웃 하려면 다음을 수행 합니다.
 
 1. 프로덕션 빌드를 실행 하는 HoloLens에서 > 설정으로 이동 하 **& 보안 > Windows 참가자 프로그램을 업데이트**한 다음 **참가자 빌드 중지**를 선택 합니다.
+
 1. 지침에 따라 장치를 옵트아웃 합니다.
 
 
@@ -73,10 +75,15 @@ HoloLens의 참가자 빌드를 사용 하 여 응용 프로그램 개발을 시
 
 ## Windows 참가자 릴리스 정보
 
-[Windows 홀로그램에서 2020 업데이트](hololens-release-notes.md) 릴리스는 이제 모든 릴리스 미리 보기 기능을 일반적으로 사용할 수 있습니다! 최신 기능을 모두 얻으려면 [HoloLens를 업데이트](hololens-update-hololens.md) 해야 합니다.
+더 이상 여기에 나열 되지 않는 기능을 찾고 있다면 이제 일반적으로 사용할 수 있습니다. 기대 하는 기능이 어떤 빌드에 있는지 확인 하려면 [릴리스 노트](hololens-release-notes.md) 를 검토 하세요. 최신 기능을 모두 얻으려면 [HoloLens를 업데이트](hololens-update-hololens.md) 해야 합니다.
 
-이 페이지를 Windows 참가자 빌드에 릴리스할 때 새 기능으로 다시 업데이트 합니다.
+Windows 참가자 빌드에이를 릴리스할 때 새 기능으로이 페이지를 다시 업데이트 합니다.
 
+| 기능                               | 설명                                                                                   | 참가자 빌드에서 사용 가능 |
+|---------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+| 자동 눈동자 위치 지원             | 현재 위치를 찾고 정확한 홀로그램 포지셔닝을 가능 하 게 합니다.                       | 19041.1339 +                 |
+| 전역 할당 된 액세스                | 시스템 수준에서 적용 되는 여러 앱 키오스크 모드에 대해 HoloLens 2 장치를 구성 합니다.  | 19041.1346 +                 |
+| 다중 앱 키오스크에서 앱 자동 실행 | 여러 앱 키오스크 모드로 로그인 할 때 응용 프로그램이 자동으로 실행 되도록 설정 합니다. | 19041.1346 +                 |
 
 ### 자동 눈동자 위치 지원
 
@@ -96,12 +103,29 @@ Uncalibrated 사용자가 디바이스에 배치 하는 경우 자동 눈 위치
 아이 응시 데이터 나 매우 정밀한 홀로그램 위치가 필요한 환경에서는 사용자가 눈 추적 보정 프롬프트에서 눈 추적 보정을 실행 하거나 시작 메뉴에서 설정 앱을 시작한 다음 **시스템 > 보정 > 눈동자 보정 > 실행**을 선택 하는 것이 좋습니다.
 
 **알려진 문제**
-1.  이는 메모리가 과도 하 게 로드 되는 동안 아이 트래커 드라이버 호스트 프로세스가 충돌할 수 있는 문제를 조사 하는 중입니다. 아이 추적 드라이버 호스트 프로세스는 자동으로 복구 되어야 합니다.
+ - 이는 메모리가 과도 하 게 로드 되는 동안 아이 트래커 드라이버 호스트 프로세스가 충돌할 수 있는 문제를 조사 하는 중입니다. 아이 추적 드라이버 호스트 프로세스는 자동으로 복구 되어야 합니다.
+
+### 전역 할당 액세스 – 키오스크 모드
+이 새로운 기능을 사용 하면 IT 관리자가 시스템에서 사용할 수 있는 여러 앱 키오스크 모드에 대해 HoloLens 2 장치를 구성 하 고 시스템의 모든 id와 관련 된 선호도가 없으며 장치에 로그인 하는 모든 사용자에 게 적용 됩니다. 이 새로운 기능에 대 한 자세한 내용은 [여기](hololens-global-assigned-access-kiosk.md)를 참조 하세요.
+
+### 다중 앱 키오스크 모드에서 응용 프로그램 자동 실행 
+이 속성은 여러 앱 키오스크 모드에만 적용 되며 지정 된 액세스 구성에서 아래의 강조 표시 되는 특성을 사용 하 여 자동 시작 하도록 지정할 수 있습니다. 
+
+사용자가 로그인 하면 응용 프로그램이 자동으로 시작 됩니다. 
+
+```xml
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
 
 ## FFU 다운로드 및 플래시 방향
 비행 서명 된 ffu를 사용 하 여 테스트 하려면 먼저 디바이스의 잠금을 해제 한 후에는 비행 서명 된 ffu가 깜박입니다.
-1. PC
-    1. PC에 ffu 다운로드:[https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload)
+1. PC:
+
+    1. PC에 ffu를 다운로드 [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) 합니다.
+    
     1. Microsoft Store에서 ARC (고급 복구 도우미) 설치:[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
-1. HoloLens-비행 잠금 해제: **설정**  >  **업데이트 & 보안**  >  **Windows 참가자 프로그램** 을 열고, 장치를 다시 부팅 하세요.
+    
+1. HoloLens 비행 잠금 해제: **설정**  >  **업데이트 & 보안**  >  **Windows 참가자 프로그램** 을 열고, 장치를 다시 부팅 합니다.
+
 1. 플래시 FFU-이제 호를 사용 하 여 비행에 서명 된 FFU를 깜박일 수 있습니다.

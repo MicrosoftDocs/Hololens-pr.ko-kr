@@ -15,12 +15,12 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 - HoloLens 2
-ms.openlocfilehash: 330a7fd549a2b847f77715ca90d69f1d4df1fb1d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: db95edfbadb271b7fc47cf5798e80d9b2cad3c90
+ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829297"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "10881331"
 ---
 # HoloLens에 대해 알려진 문제
 
@@ -47,6 +47,14 @@ ms.locfileid: "10829297"
 - Mixed Reality 캡처의 실시간 미리 보기 기능에 몇 초의 대기 시간이 발생할 수 있습니다.
 - 가상 제스처 섹션 아래의 제스처 및 스크롤 컨트롤이 작동 하지 않습니다. 이 기능을 사용 해도 아무 효과가 없습니다. 같은 페이지의 가상 키보드가 올바르게 작동 합니다.
 - 설정에서 개발자 모드를 사용 하도록 설정한 후 디바이스 포털을 켜기 위한 스위치가 활성화 되기까지 몇 초 정도 걸릴 수 있습니다.
+
+### OneDrive 카메라 업로드
+
+HoloLens 용 OneDrive 앱은 회사 또는 학교 계정에 대 한 자동 카메라 업로드를 지원 하지 않습니다.
+
+방법
+- 비즈니스에 적합 한 경우 자동 카메라 업로드가 소비자 Microsoft 계정에서 지원 됩니다. 회사 또는 학교 계정 외에 Microsoft 계정에 로그인 할 수 있습니다 (OneDrive 앱이 이중 로그인을 지원 합니다). OneDrive 내 Microsoft 계정 프로필에서 자동, 백그라운드 카메라 앨범 업로드를 사용 하도록 설정할 수 있습니다.
+- 자동으로 사진을 업로드 하는 데 소비자 Microsoft 계정을 안전 하 게 사용할 수 없는 경우에는 OneDrive 앱에서 회사 또는 학교 계정에 수동으로 사진을 업로드할 수 있습니다. 이렇게 하려면 OneDrive 앱에서 회사 또는 학교 계정에 로그인 되어 있는지 확인 하세요. 단추를 선택 **+** 하 고 **업로드**를 선택 합니다. **사진 > 카메라 앨범**으로 이동 하 여 업로드 하려는 사진 또는 비디오를 찾습니다. 업로드할 사진이 나 비디오를 선택 하 고 **열기** 단추를 선택 합니다.
 
 ## HoloLens 2 장치에 대 한 알려진 문제점
 
