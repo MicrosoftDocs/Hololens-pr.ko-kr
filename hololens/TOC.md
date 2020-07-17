@@ -97,5 +97,6 @@
 # HoloLens 릴리스 정보
 ## [HoloLens 2 릴리스 정보](hololens-release-notes.md)
 ## [Microsoft HoloLens 참가자 미리 보기](hololens-insider.md)
+### [전역 할당된 액세스 - 키오스크](hololens-global-assigned-access-kiosk.md)
 ## [HoloLens(1세대) 릴리스 정보](hololens1-release-notes.md)
 # [피드백을 보내 주세요.](hololens-feedback.md)

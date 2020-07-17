@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 28898c5c0cbc2a4f66cea13665e5ef63447db382
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 254c1048d2a1c7b63dfe87ead4585c21153fa8bb
+ms.sourcegitcommit: fc2ce4d843229bcc9ae6c7a42da559c0f6f558b7
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828758"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "10882988"
 ---
 # 상업용 기능
 
@@ -75,11 +75,11 @@ HoloLens(1세대)에는 개발자 라이선스 및 상용 라이선스 등 두 �
 
 ## 상업용 기능 사용
 
-조직의 IT 관리자는 비즈니스용 Microsoft Store, 키오스크 모드, 엔터프라이즈 Wi-Fi 액세스 등의 상업용 기능을 설정할 수 있습니다. [Microsoft HoloLens](index.md) 설명서는 장치를 등록하고 비즈니스용 Microsoft Store에서 앱을 설치하기 위한 단계별 지침을 제공합니다.
+조직의 IT 관리자는 비즈니스용 Microsoft Store, 키오스크 모드, 엔터프라이즈 Wi-Fi 액세스 등의 상업용 기능을 설정할 수 있습니다. [Microsoft HoloLens](index.yml) 설명서는 장치를 등록하고 비즈니스용 Microsoft Store에서 앱을 설치하기 위한 단계별 지침을 제공합니다.
 
 ## 기타 참조
 
-- [Microsoft HoloLens](index.md)
+- [Microsoft HoloLens](index.yml)
 - [키오스크 모드](hololens-kiosk.md)
 - [HoloLens 장치에서 지원되는 CSP](/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)
 - [비즈니스용 Microsoft Store 및 LOB(기간 업무) 응용 프로그램](https://blogs.technet.microsoft.com/sbucci/2016/04/13/windows-store-for-business-and-line-of-business-applications/)
