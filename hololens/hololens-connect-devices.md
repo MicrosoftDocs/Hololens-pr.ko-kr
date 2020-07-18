@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 53d426b4319dafd0dd976e67111992020507f719
-ms.sourcegitcommit: 563797405f7470f979a27718c604df920efbb368
+ms.openlocfilehash: fef69ee4cd148b82721472436da8dfd627f86ff1
+ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881248"
+ms.locfileid: "10881341"
 ---
 # Bluetooth 및 USB-C 장치에 연결
 
@@ -80,6 +80,8 @@ HoloLens 2는 다음 USB-C 장치 클래스를 지원합니다.
 
 > [!NOTE]
 > HoloLens가 USB-C 연결을 사용하는 일부 모바일 장치를 이더넷 어댑터로 인식 하기 때문에 Windows Holographic 버전 2004부터 테더링 구성에서 사용할 수 있습니다. 별도의 드라이버 및/또는 구성을 위해 설치된 응용 프로그램이 필요한 USB LTE 모뎀은 지원되지 않습니다.
+
+고객 의견에 따라 USB-C를 통해 HoloLens에 직접 테더링된 휴대폰 연결에 대한 제한적 지원을 설정했습니다.  테더링 연결은 일반 Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) 드라이버 구현을 지원하고 추가 드라이버나 응용 프로그램 설치가 필요하지 않은 장치에만 사용할 수 있습니다.  이러한 장치를 연결하면 HoloLens 2 네트워크 설정 UI에서 자동으로 새 이더넷 연결로 표시됩니다. 해당 장치 제조업체에 일반 Microsoft RNDIS 드라이버 지원 여부에 대한 자세한 정보를 확인하세요.
 
 ## Miracast에 연결
 
