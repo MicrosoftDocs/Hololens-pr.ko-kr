@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 6/29/2020
+ms.date: 7/17/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5cdb7302aec5b37a5071f2192f7c8bc5df760ac7
-ms.sourcegitcommit: 3db43bc4a007b10901d8edb045f66e1e299c57a9
+ms.openlocfilehash: 879ff13b30fdce77d823b66035cd59fa0e217c5f
+ms.sourcegitcommit: 209247c83eff5cbabbbdecb8cf6e974eabcb36ff
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882430"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "10883377"
 ---
 # Microsoft HoloLens 참가자 미리 보기
 
@@ -84,6 +84,8 @@ Windows 참가자 빌드에이를 릴리스할 때 새 기능으로이 페이지
 | 자동 눈동자 위치 지원             | 현재 위치를 찾고 정확한 홀로그램 포지셔닝을 가능 하 게 합니다.                       | 19041.1339 +                 |
 | 전역 할당 된 액세스                | 시스템 수준에서 적용 되는 여러 앱 키오스크 모드에 대해 HoloLens 2 장치를 구성 합니다.  | 19041.1346 +                 |
 | 다중 앱 키오스크에서 앱 자동 실행 | 여러 앱 키오스크 모드로 로그인 할 때 응용 프로그램이 자동으로 실행 되도록 설정 합니다. | 19041.1346 +                 |
+| Hololens 2에 대 한 새 전원 정책     | 전원 시간 제한 설정에 대해 새로 지원 되는 정책입니다.                                          | 19041.1349 +                 |
+| 인증서 뷰어                    | 설정 앱에서 사용자 및 장치 인증서를 봅니다.                                        | 19041.1346 +                 |
 
 ### 자동 눈동자 위치 지원
 
@@ -117,6 +119,33 @@ Uncalibrated 사용자가 디바이스에 배치 하는 경우 자동 눈 위치
 <AllowedApps>                     
     <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
+
+### Hololens 2에 대 한 새 전원 정책
+관리자는 이러한 새로 추가 된 정책을 통해 유휴 시간 제한 등의 전원 상태를 제어할 수 있습니다. 각 개별 정책에 대 한 자세한 내용을 보려면 해당 정책의 링크를 클릭 하세요.
+
+|     정책 설명서 링크                |     참고                                                                                                                                       |
+|----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|     [DisplayOffTimeoutOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutonbattery)               |     Windows 구성 디자이너에서 사용할 예제 값입니다 (예:  `<enabled/><data   id="EnterVideoDCPowerDownTimeOut" value="100"/>`     |
+|     [DisplayOffTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-displayofftimeoutpluggedin)               |     Windows 구성 디자이너에서 사용할 예제 값입니다 (예:  `<enabled/><data   id="EnterVideoACPowerDownTimeOut" value="100"/>`     |
+|     [EnergySaverBatteryThresholdOnBattery](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)     |  Windows 구성 디자이너에서 사용할 예제 값입니다 (예: 100).                                                                             |
+|     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Windows 구성 디자이너에서 사용할 예제 값입니다 (예: 100).                                                                          |
+|     [소모 되는 Bytimeout배터리](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Windows 구성 디자이너에서 사용할 예제 값입니다 (예:   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
+|     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Windows 구성 디자이너에서 사용할 예제 값입니다 (예:  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+
+### 인증서 뷰어
+
+Windows 참가자 빌드 19041.1346 + HoloLens 2 설정 앱에서 인증서 뷰어를 추가 하는 중입니다. 이 기능은 디바이스에서 인증서를 확인 하는 간단 하 고 사용자에 게 친숙 한 방법을 제공 합니다. 특정 인증서를 빠르게 찾으려면 이름, 저장 또는 만료 날짜별로 정렬 하는 옵션이 있습니다. 사용자가 직접 인증서를 검색할 수도 있습니다. 새 인증서 뷰어를 통해 관리자와 사용자는 향상 된 감사, 진단 및 유효성 검사 도구를 사용 하 여 디바이스를 안전 하 고 준수 하도록 유지할 수 있습니다.  개별 인증서에 대 한 자세한 내용을 보려면 인증서를 선택 하 고 정보를 클릭 합니다.
+
+> [!NOTE]
+> 미국 이외의 언어 지역화에 대 한 알려진 제한 사항은 이후 Windows 참가자 릴리스에서 해결 하는 데 사용 됩니다.
+
+-   **감사:** 인증서가 올바르게 배포 되었는지 확인 하거나 적절 하 게 제거 되었는지 확인 하는 기능. 
+-   **진단:** 문제가 발생 하면 장치에 적절 한 인증서가 있는지 확인 하 여 시간을 절약 하 고 문제를 해결 하는 데 도움이 됩니다. 
+-   **유효성 검사:** 인증서가 의도 한 목적을 제공 하 고 작동 하는지 확인 하는 것은 중요 한 기간으로 인증서를 배포 하기 전에 상업적 환경에서 시간을 절약할 수 있습니다.
+
+인증서를 보려면 **& 보안 > 인증서를 업데이트 > 설정**으로 이동 합니다.
+
+![설정 앱의 인증서 뷰어](images/hololens-certificate-viewer.png)
 
 ## FFU 다운로드 및 플래시 방향
 비행 서명 된 ffu를 사용 하 여 테스트 하려면 먼저 디바이스의 잠금을 해제 한 후에는 비행 서명 된 ffu가 깜박입니다.
