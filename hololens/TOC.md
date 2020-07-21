@@ -47,7 +47,6 @@
 ### [하드웨어 기반 보안 및 런타임 증명](security-hardware-backed-integrity.md)
 ### [데이터 암호화 및 보호](security-encryption-data-protection.md)
 ### [네트워크 보안](security-network-security.md)
-### [무선 및 Wi-Fi](security-wireless-wifi.md)
 ### [보안 엔지니어링 ](security-engineering.md)
 ### HoloLens 1세대 보안
 #### [HoloLens(1세대)의 보안에 대한 자주 묻는 질문](hololens1-faq-security.md)
