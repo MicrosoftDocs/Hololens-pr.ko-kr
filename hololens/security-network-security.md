@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c88a9af7369a6a9d6fb115fb820c0a4da13eafdc
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: 147401331cb6da732a6fe37e57964d61a10dce99
+ms.sourcegitcommit: 47bc3b696936dd7011b3f9dd683deb872ed25b90
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865843"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "10883142"
 ---
 # 네트워크 보안
 
@@ -26,8 +26,6 @@ ms.locfileid: "10865843"
 오래된 NetBIOS(네트워크 기본 입출력 시스템)는 과거에는 종종 컴퓨터와 공유 폴더에 이름 확인을 제공하는 용도로 주로 LAN 시나리오에서 사용되었습니다. 하지만 시간이 지나면서 NetBIOS가 여러 공격에 취약한 것으로 입증되고 다른 더 보안성 있는 프로토콜을 선호하면서 이것의 타당성이 줄었습니다. 이 취약점 문제를 제거하기 위해 HoloLens 2에서 운영 체제의 NetBIOS 관련 코드를 제거했습니다.
 
 TLS(전송 계층 보안) 프로토콜은 꾸준히 진화하고 있습니다. 이 영역에서 발견된 다양한 보안 악용을 방지하기 위해 컴퓨팅 업계는 더 최신 버전 및 보다 효과적인 버전으로 변화되었습니다. 모든 서버 배포에서 새 TLS 프로토콜 버전을 채택하는데 필요한 시간 때문에 다른 기본 프로토콜 버전의 클라이언트와 서버에서 전환 기간 동안 계속 통신할 수 있도록 하는 대체 메커니즘을 구현할 수 있습니다.
-
-그러나 그러한 대체 메커니즘은 보안 위험을 증가시킵니다. 이 문제를 알고 있기 때문에 HoloLens 2에서 TLS 1.2에서 TLS 1.1 또는 1.0으로의 대체는 사용할 수 없습니다. 이 기능을 사용하는 사용자 인터페이스는 없습니다. 또한, TLS 핸드셰이크 중에 클라이언트는 TLS 1.2를 요청하고 서버를 하위 버전으로 다운그레이드하는 것을 허용하지 않습니다.
 
 ## 보안 연결 
 
