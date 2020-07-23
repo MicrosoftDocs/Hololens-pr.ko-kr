@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 879ff13b30fdce77d823b66035cd59fa0e217c5f
-ms.sourcegitcommit: 209247c83eff5cbabbbdecb8cf6e974eabcb36ff
+ms.openlocfilehash: 4f09a383f20c5c4f2d21ee9367a1b3c5afd62f9f
+ms.sourcegitcommit: c0c8b57bb03a2fc724c051ad42ea5a3fb911ba71
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "10883377"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "10894071"
 ---
 # Microsoft HoloLens 참가자 미리 보기
 
@@ -31,47 +31,7 @@ HoloLens에 대 한 최신 참가자 Preview 빌드에 오신 것을 환영 합�
 
 ![Windows 참가자 채널 설명](images/WindowsInsiderChannels.png)
 
-자세한 정보: [Windows 블로그 항목](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels)
-
-## 참가자 빌드 받기 시작
-
-HoloLens 2 장치에서 **설정**  ->  **업데이트 & 보안**  ->  **Windows 참가자 프로그램** 으로 이동 하 고 **시작**을 선택 합니다. Windows 참가자로 등록 하는 데 사용한 계정을 연결 합니다.
-
-그런 다음 **Windows의 활성 개발**을 선택 하 고 **개발자 채널** 및 **베타 채널** 빌드를 받을지 여부를 선택한 다음 프로그램 약관을 검토 합니다.
-
-**확인-> 지금 다시 시작** 을 선택 하 여 완료 합니다. 장치를 다시 부팅 한 후 **설정-> & 보안 업데이트-> 업데이트를 확인** 하 여 최신 빌드를 가져옵니다.
-
-## 참가자 빌드 수신 중지
-
-Windows 홀로그램의 참가자 빌드를 더 이상 수신 하지 않으려는 경우 HoloLens에서 프로덕션 빌드를 실행 하 고 있는지 확인 하거나 고급 복구 도우미를 사용 하 여 디바이스를 [복구](hololens-recovery.md) 하 여 비 참가자 버전의 Windows 홀로그램에서 장치를 복구할 수 있습니다.
-
-> [!CAUTION]
-> 새 preview 빌드를 수동으로 다시 설치한 후에는 참가자 미리 보기 빌드에서 등록을 취소 하는 알려진 문제가 파란색 화면으로 나타날 수 있습니다. 나중에 장치를 수동으로 복구 해야 합니다. 이에 대 한 자세한 내용은이 [알려진 문제](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)를 참조 하세요.
-
-HoloLens가 프로덕션 빌드를 실행 하 고 있는지 확인 하려면 다음을 수행 합니다.
-
-1. **설정 > 시스템 >에 대 한 정보**로 이동 하 여 빌드 번호를 찾습니다.
-
-1. [프로덕션 빌드 번호에 대 한 릴리스 정보를 참조](hololens-release-notes.md)하세요.
-
-참가자 빌드를 옵트아웃 하려면 다음을 수행 합니다.
-
-1. 프로덕션 빌드를 실행 하는 HoloLens에서 > 설정으로 이동 하 **& 보안 > Windows 참가자 프로그램을 업데이트**한 다음 **참가자 빌드 중지**를 선택 합니다.
-
-1. 지침에 따라 장치를 옵트아웃 합니다.
-
-
-## 피드백 및 보고 문제 제공
-
-HoloLens에서 [피드백 허브 앱](hololens-feedback.md) 을 사용 하 여 피드백을 제공 하 고 문제를 보고 해 주십시오. 피드백 허브를 사용 하면 엔지니어가 신속 하 게 디버그 하 여 문제를 해결할 수 있도록 필요한 모든 진단 정보가 포함 됩니다.  HoloLens와 중국어 (일본) 버전의 문제는 같은 방식으로 보고 되어야 합니다.
-
-> [!NOTE]
-> 문서 폴더에 대 한 피드백 허브가 있는지를 묻는 메시지를 수락 하세요 (메시지가 표시 되 면 **예** 를 선택).
-
-## 개발자를 위한 참고 사항
-
-HoloLens의 참가자 빌드를 사용 하 여 응용 프로그램 개발을 시도 하는 것이 좋습니다.  시작 하려면 [HoloLens 개발자 설명서](https://developer.microsoft.com/windows/mixed-reality/development) 를 참조 하세요. 이 동일한 명령은 HoloLens의 참가자 빌드와 작동 합니다.  HoloLens 개발에 이미 사용 중인 Unity 및 Visual Studio의 동일한 빌드를 사용할 수 있습니다.
-
+자세한 내용은 Windows 블로그에서 [Windows 참가자 채널 소개](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) 를 참조 하세요.
 
 ## Windows 참가자 릴리스 정보
 
@@ -79,13 +39,16 @@ HoloLens의 참가자 빌드를 사용 하 여 응용 프로그램 개발을 시
 
 Windows 참가자 빌드에이를 릴리스할 때 새 기능으로이 페이지를 다시 업데이트 합니다.
 
-| 기능                               | 설명                                                                                   | 참가자 빌드에서 사용 가능 |
-|---------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
-| 자동 눈동자 위치 지원             | 현재 위치를 찾고 정확한 홀로그램 포지셔닝을 가능 하 게 합니다.                       | 19041.1339 +                 |
-| 전역 할당 된 액세스                | 시스템 수준에서 적용 되는 여러 앱 키오스크 모드에 대해 HoloLens 2 장치를 구성 합니다.  | 19041.1346 +                 |
-| 다중 앱 키오스크에서 앱 자동 실행 | 여러 앱 키오스크 모드로 로그인 할 때 응용 프로그램이 자동으로 실행 되도록 설정 합니다. | 19041.1346 +                 |
-| Hololens 2에 대 한 새 전원 정책     | 전원 시간 제한 설정에 대해 새로 지원 되는 정책입니다.                                          | 19041.1349 +                 |
-| 인증서 뷰어                    | 설정 앱에서 사용자 및 장치 인증서를 봅니다.                                        | 19041.1346 +                 |
+| 기능                                         | 설명                                                                                   | 참가자 빌드에서 사용 가능 |
+|-------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
+| 자동 눈동자 위치 지원                       | 현재 위치를 찾고 정확한 홀로그램 포지셔닝을 가능 하 게 합니다.                       | 19041.1339 +                 |
+| 전체 할당된 액세스                          | 시스템 수준에서 적용 되는 여러 앱 키오스크 모드에 대해 HoloLens 2 장치를 구성 합니다.  | 19041.1346 +                 |
+| 다중 앱 키오스크에서 앱 자동 실행           | 여러 앱 키오스크 모드로 로그인 할 때 응용 프로그램이 자동으로 실행 되도록 설정 합니다. | 19041.1346 +                 |
+| Hololens 2에 대 한 새 전원 정책               | 전원 시간 제한 설정에 대해 새로 지원 되는 정책입니다.                                          | 19041.1349 +                 |
+| 인증서 뷰어                              | 설정 앱에서 사용자 및 장치 인증서를 봅니다.                                        | 19041.1346 +                 |
+| HoloLens 2에 대 한 새 장치 제한 정책  | 장치 관리 정책을 HoloLens 2에 대해 새로 사용 하도록 설정 했습니다.                              | 19041.1349 +                 |
+| HoloLens 2에 대 한 사용 설정 페이지 표시 여부 | 설정 앱에 표시 되는 페이지를 선택 하는 정책입니다.                                          | 19041.1349 +                 |
+| HoloLens 정책                               | 혼합 현실 장치에 대 한 새로운 정책.                                                       | 19041.1349 +                 |
 
 ### 자동 눈동자 위치 지원
 
@@ -147,6 +110,38 @@ Windows 참가자 빌드 19041.1346 + HoloLens 2 설정 앱에서 인증서 뷰�
 
 ![설정 앱의 인증서 뷰어](images/hololens-certificate-viewer.png)
 
+### HoloLens 2에 대 한 새 장치 제한 정책
+HoloLens 2 장치의 추가 관리 옵션을 허용 하는 새로 사용할 수 있는 정책 
+- [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
+- [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
+- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone) 
+
+### HoloLens 2에 대 한 사용 설정 페이지 표시 여부
+이제 IT 관리자가 시스템 설정 앱의 특정 페이지를 표시 하거나 액세스할 수 없도록 하거나 지정 된 모든 페이지를 제외 하 고,이 정책을 사용 하도록 설정 했습니다. 이 기능을 완전히 사용자 지정 하는 방법에 대 한 자세한 내용을 보려면 아래 링크를 클릭 하세요.
+ 
+- [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
+ 
+![설정 앱에서 수정 되는 활성 시간 스크린샷](images/hololens-page-visibility-list.jpg)
+
+### HoloLens 정책
+빌드 19041.1349 +의 HoloLens 2 장치에 대 한 새 혼합 현실 정책이 생성 되었습니다. 제어 가능한 새 설정에는 밝기 설정, 볼륨 설정, 혼합 현실 캡처에서 오디오 녹음 사용 안 함, 진단 프로그램 수집 시 설정 등이 포함 됩니다.  
+
+|     새 HoloLens 정책                   |     설명                                                                            |     참고                                                                |
+|-------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+|     MixedReality\BrightnessButtonDisabled |     밝기 단추를 눌러도 밝기가 변경 되지 않도록 할 수 있습니다.    |     1 예, 0 아니요 (기본값)                                                |
+|     MixedReality\VolumeButtonDisabled     |     볼륨 단추를 눌러도 볼륨이 변경 되지 않도록 할 수 있습니다.            |     1 예, 0 아니요 (기본값)                                                |
+|     MixedReality\MicrophoneDisabled       |     HoloLens 2에서 오디오 녹음을 할 수 없도록 마이크를 사용 하지 않도록 설정 합니다.                   |     1 예, 0 아니요 (기본값)                                                |
+|     MixedReality\FallbackDiagnostics      |     진단 로그를 수집할 수 있는 동작을 제어 합니다.                            |     0 사용 안 함, 장치 소유자에 대해 1 개 사용, 2에 모두 사용 (기본값) |
+|     MixedReality\HeadTrackingMode         |     나중에 사용 하기 위해 예약 되어 있습니다.                                                               |                                                                          |
+
+## 참가자 빌드 받기 시작
+
+HoloLens 2 장치에서 **설정**  >  **업데이트 & 보안**  >  **Windows 참가자 프로그램** 으로 이동 하 고 **시작**을 선택 합니다. Windows 참가자로 등록 하는 데 사용한 계정을 연결 합니다.
+
+그런 다음 **Windows의 활성 개발**을 선택 하 고 **개발자 채널** 및 **베타 채널** 빌드를 받을지 여부를 선택한 다음 프로그램 약관을 검토 합니다.
+
+**확인 > 지금 다시 시작** 을 선택 하 여 완료 합니다. 장치를 다시 부팅 한 후 **설정 > 업데이트 & 보안** 으로 이동 하 여 최신 빌드를 다운로드 > 업데이트를 확인 합니다.
+
 ## FFU 다운로드 및 플래시 방향
 비행 서명 된 ffu를 사용 하 여 테스트 하려면 먼저 디바이스의 잠금을 해제 한 후에는 비행 서명 된 ffu가 깜박입니다.
 1. PC:
@@ -158,3 +153,33 @@ Windows 참가자 빌드 19041.1346 + HoloLens 2 설정 앱에서 인증서 뷰�
 1. HoloLens 비행 잠금 해제: **설정**  >  **업데이트 & 보안**  >  **Windows 참가자 프로그램** 을 열고, 장치를 다시 부팅 합니다.
 
 1. 플래시 FFU-이제 호를 사용 하 여 비행에 서명 된 FFU를 깜박일 수 있습니다.
+
+## 피드백 및 보고 문제 제공
+
+HoloLens에서 [피드백 허브 앱](hololens-feedback.md) 을 사용 하 여 피드백을 제공 하 고 문제를 보고 해 주십시오. 피드백 허브를 사용 하면 엔지니어가 신속 하 게 디버그 하 여 문제를 해결할 수 있도록 필요한 모든 진단 정보가 포함 됩니다.  HoloLens와 중국어 (일본) 버전의 문제는 같은 방식으로 보고 되어야 합니다.
+
+> [!NOTE]
+> 문서 폴더에 대 한 피드백 허브가 있는지를 묻는 메시지를 수락 하세요 (메시지가 표시 되 면 **예** 를 선택).
+
+## 개발자를 위한 참고 사항
+
+HoloLens의 참가자 빌드를 사용 하 여 응용 프로그램 개발을 시도 하는 것이 좋습니다.  시작 하려면 [HoloLens 개발자 설명서](https://developer.microsoft.com/windows/mixed-reality/development) 를 참조 하세요. 이 동일한 명령은 HoloLens의 참가자 빌드와 작동 합니다.  HoloLens 개발에 이미 사용 중인 Unity 및 Visual Studio의 동일한 빌드를 사용할 수 있습니다.
+
+## 참가자 빌드 수신 중지
+
+Windows 홀로그램의 참가자 빌드를 더 이상 수신 하지 않으려는 경우 HoloLens에서 프로덕션 빌드를 실행 하 고 있는지 확인 하거나 고급 복구 도우미를 사용 하 여 디바이스를 [복구](hololens-recovery.md) 하 여 비 참가자 버전의 Windows 홀로그램에서 장치를 복구할 수 있습니다.
+
+> [!CAUTION]
+> 새 preview 빌드를 수동으로 다시 설치한 후에는 참가자 미리 보기 빌드에서 등록을 취소 하는 알려진 문제가 파란색 화면으로 나타날 수 있습니다. 나중에 장치를 수동으로 복구 해야 합니다. 이에 대 한 자세한 내용은이 [알려진 문제](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)를 참조 하세요.
+
+HoloLens가 프로덕션 빌드를 실행 하 고 있는지 확인 하려면 다음을 수행 합니다.
+
+1. **설정 > 시스템 >에 대 한 정보**로 이동 하 여 빌드 번호를 찾습니다.
+
+1. [프로덕션 빌드 번호에 대 한 릴리스 정보를 참조](hololens-release-notes.md)하세요.
+
+참가자 빌드를 옵트아웃 하려면 다음을 수행 합니다.
+
+1. 프로덕션 빌드를 실행 하는 HoloLens에서 > 설정으로 이동 하 **& 보안 > Windows 참가자 프로그램을 업데이트**한 다음 **참가자 빌드 중지**를 선택 합니다.
+
+1. 지침에 따라 장치를 옵트아웃 합니다.
