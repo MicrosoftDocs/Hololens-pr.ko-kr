@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e41dc6c9d12ee57bb306ebca7e2eeac0b3478014
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 477693dd0d4a3ce63bfe29df166e171b9292aea4
+ms.sourcegitcommit: c0c8b57bb03a2fc724c051ad42ea5a3fb911ba71
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857726"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "10894054"
 ---
 # HoloLens 2 하드웨어
 
@@ -143,7 +143,7 @@ Microsoft HoloLens 2는 테더링되지 않은 홀로그램 컴퓨터입니다. 
 * 시력 안전: HoloLens 2는 ANSI Z87.1, CSA Z94.3 및 EN 166의 기본 충격 보호 요건을 준수하며 테스트를 완료했습니다.
 
 ### 규제 정보
-[HoloLens 규제](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information)
+[HoloLens 규제](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): 온도, 처분, 라디오 및 TV 간섭 등에 대한 정보를 포함합니다.
 
 ## 다음 단계
 
