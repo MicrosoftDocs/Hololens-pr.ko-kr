@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2f2c8afffdc24eedf9cb6b462448f5ed6ffc8d5d
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: a4a5478f396dff9eef84540286e0fa9672172076
+ms.sourcegitcommit: 9197b9d507d8b9b195bdf512d1b832888b53162d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828773"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899100"
 ---
 # 시각적 품질과 편안함 개선
 
@@ -89,6 +89,8 @@ HoloLens 2는 사용자에게 다음과 같은 상황에서 장치를 보정하�
 - 방에 불을 켜거나 직사광선을 피해 이동
 
 모든 지침을 따랐지만 계속해서 보정에 실패하면 설정에서 보정 프롬프트를 사용하지 않도록 설정할 수 있습니다. [피드백 허브](hololens-feedback.md)에 피드백을 입력하여 알려주시기 바랍니다.
+
+[이미지 색상 또는 밝기 문제 해결](hololens2-fit-comfort-faq.md#hologram-image-color-or-brightness-does-not-look-right) 관련 정보를 참조하세요.
 
 IPD 설정은 시스템에서 눈 위치를 계산하므로 Hololens 2에 적용되지 않습니다. 
 

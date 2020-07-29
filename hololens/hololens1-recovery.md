@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: a52e8e5bae49973d92efa6ea75391dc44d8b8ddb
-ms.sourcegitcommit: 357094acfd39f7c59a0a62f1dd7918b58c209ef7
+ms.openlocfilehash: de53f8f2cccfe3ece8900c88c5379adf2fb55a7b
+ms.sourcegitcommit: 5d38af8d17dfcc028e7e0b2bb888c6c9d1e40524
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "10861163"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899181"
 ---
 # HoloLens 2(1세대) 다시 시작, 초기화 또는 복구
 
@@ -91,7 +91,7 @@ HoloLens를 다시 시작하는 가장 안전한 방법은 Cortana를 사용하�
 
 장치를 초기화하면 TPM 초기화를 포함한 모든 개인 데이터, 앱 및 설정 내용이 지워집니다. 초기화하면 최신 설치된 버전의 Windows Holographic만 설치되며 모든 초기화 단계(보정, Wi-Fi 연결, 사용자 계정 만들기, 앱 다운로드 등)를 다시 실행해야 합니다.
 
-1. 설정 앱을 시작하고 **업데이트** > **재설정**을 선택합니다.
+1. 설정 앱을 시작하고 **업데이트** > **복구**를 선택합니다.
 1. **장치 초기화** 옵션을 선택하고 확인 메시지를 읽습니다.
 1. 장치 초기화 동의하면 장치가 다시 시작되고 진행률 표시줄과 함께 회전하는 톱니바퀴가 표시됩니다.
 1. 프로세스가 완료될 때까지 30분 정도 기다립니다.
