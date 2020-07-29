@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f11128c66845f0e062a006855fd75ca66ffc4e5e
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 4c17ac2bf68076978c233db2f2b7156fee447f01
+ms.sourcegitcommit: 5d38af8d17dfcc028e7e0b2bb888c6c9d1e40524
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829265"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10899171"
 ---
 # HoloLens 장치에서 진단 정보 수집 및 사용
 
@@ -43,6 +43,7 @@ HoloLens 사용자와 관리자는 다음 네 가지 방법 중 하나를 선택
 |[피드백 허브](#feedback-hub) |네트워크 및 인터넷 연결<br /><br />피드백 허브 앱<br /><br />Microsoft 클라우드에 파일을 업로드할 수 있는 권한 |Microsoft 클라우드<br /><br />HoloLens 장치 (선택 사항) |사용자가 도움을 요청 하 고, 사용 약관에 동의 하 고, 데이터를 업로드 합니다.<br /><br />Microsoft 직원 들이 사용 약관에 일치 하는 데이터 보기 |클라우드의 데이터는 NGP (차세대 개인 정보 취급 방침)에 의해 정의 된 기간 동안 보존 됩니다. 그러면 데이터가 자동으로 삭제 됩니다.<br /><br />장치 **소유자** 또는 **관리자** 권한이 있는 사용자가 언제 든 지 장치의 데이터를 삭제할 수 있습니다. |
 |[설정 문제 해결사](#settings-troubleshooter) |설정 앱 |HoloLens 장치<br /><br />연결 된 컴퓨터 (선택 사항) |사용자가 데이터를 저장 하 고 사용자가 특정 데이터를 다른 사용자와 공유 하지 않는 경우에만 데이터에 액세스 합니다. |데이터는 사용자가 삭제할 때까지 유지 됩니다. * |
 |[DiagnosticLog CSP](#diagnosticlog-csp) |네트워크 연결<br /><br />DiagnosticLog CSP를 지 원하는 MDM 환경 |관리자가 저장소 위치를 구성 합니다. |관리 환경에서는 사용자가 데이터에 대 한 관리자 액세스 권한을 암시적으로 동의.<br /><br />관리자가 액세스 역할 및 사용 권한을 구성 합니다. | 관리자가 보존 정책을 구성 합니다. |
+|[오프 라인 진단](#offline-diagnostics) |장치 구성:<ul><li>전원을 켜고 컴퓨터에 연결</li><li>전원 및 볼륨 단추가 작동</li></ul> |HoloLens 장치<br /><br />연결 된 컴퓨터 |사용자가 데이터를 저장 하 고 사용자가 특정 데이터를 다른 사용자와 공유 하지 않는 경우에만 데이터에 액세스 합니다. |데이터는 사용자가 삭제할 때까지 유지 됩니다. | 
 
 
 -   최종 사용자는 다른 사람과 로그를 공유할 책임이 있습니다. 이러한 파일은 고객 서비스 및 지원에 문의 하는 데 주로 유용 합니다.  
@@ -116,4 +117,22 @@ IT 관리자는 DiagnosticLog CSP를 사용 하 여 다음을 제어 하는 정�
 - 진단 정보의 보존 기간입니다.
 - 진단 정보에 대 한 액세스를 제어 하는 사용 권한입니다.
 
+## 오프 라인 진단
+장치에서 피드백 허브 또는 설정 문제 해결사를 통해 진단 유틸리티를 수집할 수 없는 경우에는 진단을 수동으로 수집할 수 있습니다. 이 기능이 필요한 한 가지 시나리오는 장치가 Wi-fi에 연결할 수 없는 경우입니다. 진단 유틸리티는 Microsoft 지원 엔지니어가 문제를 격리 하는 데 도움이 되는 장치에서 크래시 덤프와 로그를 수집 합니다.
+
+이는 장치가 USB 케이블로 PC에 연결한 후 파일 탐색기에 표시 되는 경우에 적용 됩니다. 
+
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
+
+진단 유틸리티를 수집 하려면 다음 단계를 따르세요.
+1.  USB 케이블을 사용 하 여 장치를 PC에 연결 합니다.
+2.  PC의 파일 탐색기에서 **'이 PC \<hololens-device> \ 내부 저장소 '** 로 이동 합니다.
+3.  **내부 저장소** 폴더가 표시 되지 않으면 사용자가 로그인 할 때까지 장치가 대기 하 고 있는 것입니다. 전원 단추를 10 초 동안 눌러 장치를 로그인 하거나 전원을 껐다가 켭니다.
+4.  바로 **전원 + 볼륨 아래로** 단추를 눌렀다가 놓습니다.
+5.  장치가 zip 보관 파일을 준비 하는 데 몇 분 정도 기다립니다.
+6.  파일 탐색기를 새로 고치고 **' \Documents '** 폴더로 이동 합니다.
+7.  진단 ZIP 파일을 복사 하 여 Microsoft 지원 팀과 공유 합니다.
+
+일부 진단 ZIP 파일에는 개인 식별 가능 정보가 포함 될 수 있습니다.
 
