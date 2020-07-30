@@ -13,11 +13,12 @@ manager: jarrettr
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 15998fe11de1e7be4f12087a2724bec7e22337b0
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: e00226852f92cf5b3137d8d41cfde0f01394f5bc
+ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857746"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "10902293"
 ---
 # 문제 해결
 
@@ -45,13 +46,15 @@ HoloLens가 고정 또는 응답 하지 않는 경우:
 - HoloLens가 더 완벽 하 게 스캔 될 수 있도록 주변을 탐색 하 고 검토 합니다.
 - 눈을 위해 HoloLens를 보정 합니다. **설정**  >  **시스템**  >  **유틸리티로**이동 합니다. **보정**에서**보정 열기**를 선택합니다.
 
-## HoloLens가 제스처에 응답 하지 않습니다.
+## HoloLens가 직접 입력에 응답 하지 않습니다.
 
-HoloLens가 제스처를 볼 수 있도록 합니다.  제스처 프레임에 손을 들고, HoloLens가 손을 볼 수 있도록 커서를 점에서 링으로 변경 합니다.
+HoloLens가 손을 볼 수 있도록 하려면이를 제스처 프레임에 유지 해야 합니다.  Mixed Reality 홈은 손을 추적 하는 시기를 알 수 있는 피드백을 제공 합니다.  피드백은 여러 버전의 HoloLens에 따라 다릅니다.
+- HoloLens (1 회 gen)에서 응시 커서는 점에서 링으로 바뀝니다.
+- HoloLens 2에서 손가락 끝 커서는 손으로 가까이에 있을 때 표시 되며, slates 더 멀리 있으면 손 모양으로 표시 됩니다.
 
-[Hololens (첫번째 gen)](hololens1-basic-usage.md#use-hololens-with-your-hands) 또는 [hololens 2](hololens2-basic-usage.md#the-hand-tracking-frame)에서 제스처를 사용 하는 방법에 대해 자세히 알아보세요.
+많은 몰입 형 앱은 Mixed Reality Home과 유사한 입력 패턴을 따릅니다.  [Hololens (첫번째 gen)](hololens1-basic-usage.md#use-hololens-with-your-hands) 및 [hololens 2](hololens2-basic-usage.md#the-hand-tracking-frame)에서 직접 입력 하는 방법에 대해 자세히 알아보세요.
 
-환경이 너무 어둡거나 HoloLens에 손을 표시 되지 않을 수 있으므로 충분 한 빛이 있는지 확인 하세요.
+장갑을 착용 하 고 있다면 일부 유형의 장갑이 손으로 추적 하는 것이 아니라는 것을 참고 하세요.  일반적으로 검정색 고무 장갑으로 적외선을 흡수 하는 경향이 있으며 깊이 카메라에 의해 선택 되지 않습니다.  작업에 고무 장갑이 포함 되어 있는 경우 파란색 또는 회색 등 밝은 색을 사용해 보는 것이 좋습니다.  또 다른 예는 손 모양을 더 많이 숨기는 큰 baggy 장갑입니다. 최상의 결과를 위해 가능한 한 양식 피팅으로 장갑을 사용 하는 것이 좋습니다.
 
 센터에 지문 또는 얼룩이 있는 경우 HoloLens와 함께 제공 되는 마이크로 파이버 클리닝 천을 사용 하 여 센터를 천천히 정리 합니다.
 
