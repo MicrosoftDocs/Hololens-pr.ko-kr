@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ad7f75ccfcae9fb42974abb43d87f2f1ce1571f8
-ms.sourcegitcommit: 3db43bc4a007b10901d8edb045f66e1e299c57a9
+ms.openlocfilehash: 1a0a3eb8ef3d21b34e13711bcc890af57e5ae2c2
+ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "10882454"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "10902303"
 ---
 # 전체 할당된 액세스 - 키오스크
 
@@ -36,46 +36,7 @@ ms.locfileid: "10882454"
 
 2.  값을 업데이트하고 다음 콘텐츠를 붙여넣습니다. 
 
-    ```xml
-    <?xml version="1.0" encoding="utf-8" ?> 
-    <AssignedAccessConfiguration 
-        xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" 
-        xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config" 
-        xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config" 
-        xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config" 
-    > 
-        <Profiles> 
-            <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
-                <AllAppsList> 
-                    <AllowedApps>                     
-                        <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch=”true” /> --> 
-                         <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.settingn_8wekyb3d8bbwe!MicrosoftEdge" /> --> 
-                     </AllowedApps> 
-                </AllAppsList> 
-                <StartLayout> 
-                    <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"> 
-                          <LayoutOptions StartTileGroupCellWidth="6" /> 
-                          <DefaultLayoutOverride> 
-                            <StartLayoutCollection> 
-                              <defaultlayout:StartLayout GroupCellWidth="6"> 
-                                <start:Group Name="Life at a glance"> 
-                                  <!—This AUMID can be of any app and is not used on Hololens but is required for parity, so you can leave it as is. --> 
-                                  <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />                               
-                                </start:Group> 
-                              </defaultlayout:StartLayout> 
-                            </StartLayoutCollection> 
-                          </DefaultLayoutOverride> 
-                        </LayoutModificationTemplate> 
-                    ]]> 
-                </StartLayout> 
-                <Taskbar ShowTaskbar="true"/> 
-            </Profile> 
-        </Profiles> 
-        <Configs> 
-            <v3:GlobalProfile Id="{8739C257-184F-45DD-8657-C235819172A3}"/> 
-        </Configs> 
-    </AssignedAccessConfiguration> 
-    ```
+    :::code language="xml" source="samples/global-assigned-access.xml" highlight="12-13,23":::
 
 ## Windows 구성 디자이너에서 이 기능을 사용하는 방법 
  
@@ -88,28 +49,13 @@ ms.locfileid: "10882454"
 예. 아래의 XML BLOB 예제를 참조하세요. 로그인한 사용자의 특정 프로필을 찾을 수 없는 경우 전체 할당된 액세스 프로필이 HoloLens에 적용되어 로그인한 사용자에 대한 기본 키오스크 모드 구성으로 됩니다. 다음은 사용할 XML BLOB의 예입니다. 
 
 > [!NOTE]
-> <!- 표시된 영역에 유의하세요. 이러한 영역을 사용하려면 기본 설정에 따라 수정해야 합니다. 
+> <!- 강조 표시된 영역에 유의하세요. 이러한 영역을 사용하려면 기본 설정에 따라 수정해야 합니다. 
 
-```xml
-<?xml version="1.0" encoding="utf-8" ?> 
-<AssignedAccessConfiguration xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config" 
-    xmlns:v2="http://schemas.microsoft.com/AssignedAccess/201810/config" 
-    xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config" 
-    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"> 
-    <Profiles> 
-        <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"> 
-            <!—specify AUMIDs and other nodes as used in example above --> 
-        </Profile> 
-        <Profile Id="{8739C257-184F-45DD-8657-C235819172A3}"> 
-            <!—specify AUMIDs and other nodes as used in example above --> 
-        </Profile> 
-    </Profiles> 
-    <Configs> 
-        <v3:GlobalProfile Id="{8739C257-184F-45DD-8657-C235819172A3}"/> 
-        <Config> 
-           <Account>AzureAD\<!-fully qualified AAD account name></Account> 
-           <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/> 
-        </Config> 
-    </Configs> 
-</AssignedAccessConfiguration> 
-```
+ :::code language="xml" source="samples/exclude-one-aad-user-or-group.xml" highlight="8,11,17":::
+
+## 전역 할당 된 액세스 프로필에서 DeviceOwners 제외
+
+이 기능을 사용하면 Hololens에서 "[장치 소유자](security-adminless-os.md)"로 간주되는 사용자를 전역 할당 액세스에서 제외할 수 있습니다. 이 기능을 이용하려면 다중 앱 키오스크 구성용 XML BLOB에서 강조 표시된 줄이 추가되었는지 확인합니다. 
+
+ :::code language="xml" source="samples/exclude-device-owners-from-global.xml" highlight="6,16-18":::
+ 
