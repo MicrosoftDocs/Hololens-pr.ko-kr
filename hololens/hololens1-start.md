@@ -11,12 +11,12 @@ manager: jarrettr
 ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 042856de2b89395fa0168d90515a7700298087f1
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 9a20a2ddd52c08a2b44dad452aac07ad9e69de85
+ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829467"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "10903234"
 ---
 # HoloLens(1세대) 설정
 
@@ -48,12 +48,12 @@ HoloLens를 처음 시작할 때 첫 번째 작업은 장치에 Windows Holograp
 1. 인터넷에 연결합니다(HoloLens에서는 Wi-Fi 네트워크를 선택하도록 안내합니다).
 
 1. 사용자 계정에 로그인합니다. **회사 또는 학교 소유** 또는 **내 소유** 중에서 선택합니다.
-    - **회사 또는 학교 소유**를 선택하면 Azure AD 계정을 사용하여 로그인합니다. 조직에서 Azure AD Premium을 사용하고 자동 MDM 등록을 구성한 경우 HoloLens가 MDM에 자동으로 등록됩니다. 조직에서 Azure AD Premium을 사용하지 않는 경우에는 자동 MDM 등록을 사용할 수 없으므로 [장치 관리에서 HoloLens를 수동으로 등록](hololens-enroll-mdm.md#enroll-through-settings-app)해야 합니다. 회사 또는 학교 계정을 사용하여 처음으로 장치에 로그인하려면 다음 단계를 수행합니다.
+    - **회사 또는 학교 소유**를 선택하면 Azure AD 계정을 사용하여 로그인합니다. 조직에서 Azure AD Premium을 사용하고 자동 MDM 등록을 구성한 경우 HoloLens가 MDM에 자동으로 등록됩니다. 조직에서 Azure AD Premium을 사용하지 않는 경우에는 자동 MDM 등록을 사용할 수 없으므로 [장치 관리에서 HoloLens를 수동으로 등록](hololens-enroll-mdm.md#different-ways-to-enroll)해야 합니다. 회사 또는 학교 계정을 사용하여 처음으로 장치에 로그인하려면 다음 단계를 수행합니다.
         1. 조직 계정 정보를 입력합니다.
         1. 개인정보처리방침에 동의합니다.
         1. Azure AD 자격 증명을 사용하여 로그인합니다. 조직의 로그인 페이지로 다시 이동하게 될 수 있습니다.
         1. 장치 설정을 계속합니다.
-    - **내 소유**를 선택하면 Microsoft 계정을 사용하여 로그인합니다. 설정이 완료되면 [장치 관리에서 HoloLens를 수동으로 등록](hololens-enroll-mdm.md#enroll-through-settings-app)할 수 있습니다.
+    - **내 소유**를 선택하면 Microsoft 계정을 사용하여 로그인합니다. 설정이 완료되면 [장치 관리에서 HoloLens를 수동으로 등록](hololens-enroll-mdm.md#different-ways-to-enroll)할 수 있습니다.
         1. Microsoft 계정 정보를 입력합니다.
         1. 암호를 입력합니다. Microsoft 계정에 [2FA(2단계 인증)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/)가 필요한 경우 인증 프로세스를 완료합니다.
 

@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 054c4ded7496957671c055e3161a1297de7abc1a
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 1dd6c2e6cde980b86ac810f82d27b3b88f20f336
+ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828693"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "10903224"
 ---
 # MDM에 HoloLens 등록
 
@@ -31,6 +31,21 @@ ms.locfileid: "10828693"
 ## 요구 사항
 
  조직에서는 HoloLens 장치를 관리 하기 위해 MDM (모바일 디바이스 관리)을 설정 해야 합니다. MDM 공급자는 Microsoft Intune 또는 Microsoft MDM API를 사용하는 타사 공급자일 수 있습니다.
+ 
+## 다양 한 등록 방법
+
+OOBE 또는 post 로그인 중에 선택한 id 유형에 따라 다양 한 등록 방법이 있습니다. HoloLens의 각 Id 유형에 대 한 자세한 내용을 보려면 [이 페이지](hololens-identity.md)를 방문 하세요.
+
+- Id가 AAD 이면 OOBE 또는 **설정 앱**  ->  **액세스 작업 또는 학교**  ->  **연결** 단추 중 하나입니다.
+    - AAD의 경우 자동 MDM 등록은 AAD가 등록 Url로 구성 된 경우에만 발생 합니다.
+- Id가 AAD이 고 장치가 지정 된 특정 구성 프로필이 있는 Intune MDM 서버에 미리 등록 된 경우 OOBE 중에 AAD 조인과 등록이 자동으로 수행 됩니다.
+    - [19041.1103 + 빌드에서](hololens-release-notes.md#windows-holographic-version-2004)사용할 수 있는 [Autopilot 흐름이](hololens2-autopilot.md) 라고도 합니다.
+- Id가 MSA 인 경우 **설정 앱**  ->  **액세스 회사 또는 학교**  ->  **연결** 단추를 사용 합니다.
+    - AWA (작업 계정 추가) 흐름이 라고도 합니다.
+- Id가 로컬 사용자 인 경우 **설정 앱**  ->  **액세스 회사 또는 학교**  ->  **등록을 장치 관리 링크 에서만** 사용 합니다.
+    - 순수한 MDM 등록 흐름이 라고도 합니다.
+
+디바이스를 MDM 서버에 등록 한 후에는 설정 앱이 장치 관리에 디바이스를 등록 했음을 반영 합니다.
 
 ## MDM에 자동 등록
 
@@ -38,16 +53,6 @@ ms.locfileid: "10828693"
 
 자동 등록을 활성화하는 경우 수동 등록이 추가로 필요하지 않습니다. 사용자가 Azure AD 계정으로 로그인하면 장치는 첫 실행 경험이 완료된 후 MDM에 등록됩니다.
 
-## 설정 앱을 통해 등록
-
- 첫 실행 경험 동안 장치가 MDM에 등록되지 않는 경우 사용자는 설정 앱을 사용하여 조직의 MDM 서버를 통해 장치를 수동으로 등록할 수 있습니다.
-
-1. **설정** > **계정** > **회사 액세스**로 이동합니다.
-1. **장치 관리에 등록**을 선택하고 조직 계정을 입력합니다. 조직의 로그인 페이지로 다시 이동하게 됩니다.
-1. MDM 서버에 대한 인증이 성공하면 성공 메시지가 표시됩니다.
-
-이제 장치가 MDM 서버에 등록되었습니다. 이제 설정 앱에서 장치 관리에 장치가 등록되었음을 확인할 수 있습니다.
-
 ## Intune의 HoloLens 등록 해제
 
-Intune에서 원격으로 HoloLens를 [등록 해제](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows)할 수 없습니다. 관리자가 MDM을 사용하여 장치 등록을 해제할 경우 장치는 Intune 대시보드에서 삭제됩니다.
+장치 unenrolling에 대해 자세히 알아보려면 [이 페이지](https://docs.microsoft.com/windows/client-management/mdm/disconnecting-from-mdm-unenrollment)를 방문 하세요. 

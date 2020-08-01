@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8c3d9a10533432b3e8489ffa297c16061abb9eaf
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: a0ba32e3caff7695cd284ee3752bb91d80da2194
+ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828973"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "10903244"
 ---
 # HoloLens 2 설정
 
@@ -69,12 +69,12 @@ HoloLens 2는 다음 단계를 안내 합니다.
 > 또한 HoloLens 설정 중에 2분의 자격 증명 제한 시간이 있습니다. 사용자 이름/암호를 2분 이내에 입력해야 합니다. 그렇지 않으면 사용자 이름 필드가 자동으로 지워집니다.
 
 1. 사용자 계정에 로그인합니다. **회사 또는 학교 소유** 또는 **내 소유** 중에서 선택합니다.
-    - **회사 또는 학교 소유**를 선택하면 Azure AD 계정을 사용하여 로그인합니다. 조직에서 Azure AD Premium을 사용하고 자동 MDM 등록을 구성한 경우 HoloLens가 MDM에 자동으로 등록됩니다. 조직에서 Azure AD Premium을 사용 하지 않는 경우 자동 MDM 등록을 사용할 수 없습니다. 이 경우 [장치 관리에서 HoloLens를 수동으로 등록](hololens-enroll-mdm.md#enroll-through-settings-app)해야 합니다.
+    - **회사 또는 학교 소유**를 선택하면 Azure AD 계정을 사용하여 로그인합니다. 조직에서 Azure AD Premium을 사용하고 자동 MDM 등록을 구성한 경우 HoloLens가 MDM에 자동으로 등록됩니다. 조직에서 Azure AD Premium을 사용 하지 않는 경우 자동 MDM 등록을 사용할 수 없습니다. 이 경우 [장치 관리에서 HoloLens를 수동으로 등록](hololens-enroll-mdm.md#different-ways-to-enroll)해야 합니다.
         1. 조직 계정 정보를 입력합니다.
         1. 개인정보처리방침 및 최종 사용자 라이선스 계약에 동의합니다.
         1. Azure AD 자격 증명을 사용하여 로그인합니다. 조직의 로그인 페이지로 다시 이동하게 될 수 있습니다.
         1. 장치 설정을 계속합니다.
-    - **내 소유**를 선택하면 Microsoft 계정으로 로그인합니다. 설정이 완료되면 [장치 관리에서 HoloLens를 수동으로 등록](hololens-enroll-mdm.md#enroll-through-settings-app)할 수 있습니다.
+    - **내 소유**를 선택하면 Microsoft 계정으로 로그인합니다. 설정이 완료되면 [장치 관리에서 HoloLens를 수동으로 등록](hololens-enroll-mdm.md#different-ways-to-enroll)할 수 있습니다.
         1. Microsoft 계정 정보를 입력합니다.
         2. 암호를 입력합니다. Microsoft 계정에 [2FA(2단계 인증)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/)가 필요한 경우 인증 프로세스를 완료합니다.
 
