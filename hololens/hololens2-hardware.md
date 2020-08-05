@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 477693dd0d4a3ce63bfe29df166e171b9292aea4
-ms.sourcegitcommit: c0c8b57bb03a2fc724c051ad42ea5a3fb911ba71
+ms.openlocfilehash: 5b1df54ea5112109a175f6d7172635042262ca14
+ms.sourcegitcommit: e85a55c110e729a4836b8a59aa29d786c74ed6bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "10894054"
+ms.lasthandoff: 08/03/2020
+ms.locfileid: "10903333"
 ---
 # HoloLens 2 하드웨어
 
@@ -144,6 +144,23 @@ Microsoft HoloLens 2는 테더링되지 않은 홀로그램 컴퓨터입니다. 
 
 ### 규제 정보
 [HoloLens 규제](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): 온도, 처분, 라디오 및 TV 간섭 등에 대한 정보를 포함합니다.
+
+## 패키지 치수
+
+|      치수               |      미터법     |      야드파운드법     |
+|--------------------------------|-----------------------|-------------------------|
+|     단위 길이                |     378.97mm          |     14.920인치       |
+|     단위 너비                 |     247.90mm          |     9.760인치        |
+|     단위 깊이                 |     163.07mm          |     6.420인치        |
+|     단위 가중치                |     2.878kg           |     6.344lbs           |
+|     외부 포장 길이    |     446.00mm          |     17.559인치       |
+|     외부 포장 너비     |     257.99mm          |     10.157인치       |
+|     외부 포장 깊이     |     172.01mm          |     6.772인치        |
+|     외부 포장 중량    |     3.284kg           |     7.240lbs           |
+
+참고:
+- 유닛: 검은색 소매 스타일 상자 HoloLens 2가 판매됩니다.
+- 외부 포장: 장치를 감싼 보호 배송 포장
 
 ## 다음 단계
 

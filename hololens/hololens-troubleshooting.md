@@ -13,12 +13,12 @@ manager: jarrettr
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: e00226852f92cf5b3137d8d41cfde0f01394f5bc
-ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
+ms.openlocfilehash: 469848cf306675fcfb99247b5c91b159c204a5fe
+ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "10902293"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "10915960"
 ---
 # 문제 해결
 
@@ -28,7 +28,7 @@ ms.locfileid: "10902293"
 
 HoloLens가 시작 되지 않는 경우:
 
-- 전원 단추 옆에 있는 Led가 켜지 지 않거나 LED 중 하나만 잠시 깜박이는 경우 [HoloLens를 충전](hololens-recovery.md#charging-the-device) 해야 할 수 있습니다.
+- 전원 단추 옆에 있는 Led가 켜지 지 않거나 LED 중 하나만 잠시 깜박이는 경우 [HoloLens를 충전](hololens-recovery.md#charge-the-device) 해야 할 수 있습니다.
 - 전원 단추를 눌러도 Led가 켜지 지만 디스플레이에 아무것도 표시 되지 않으면 [디바이스의 하드 리셋을 preform](hololens-recovery.md#hard-reset-procedure).
 
 HoloLens가 고정 또는 응답 하지 않는 경우:
