@@ -1,7 +1,7 @@
 ---
 title: 새로운 HoloLens 2 준비
 description: 이 가이드는 처음 설정 및 하드웨어 가이드를 안내합니다.
-keywords: HoloLens
+keywords: hololens, 라이트, 맞춤, 편안함, 부품
 ms.assetid: 02692dcf-aa22-4d1e-bd00-f89f51048e32
 ms.date: 9/17/2019
 ms.prod: hololens
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b8803183382e3235c540c3bc175277ffdc7d04f2
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 943cc5af8f5be337a9cfcc0d3e4a4640aa307e72
+ms.sourcegitcommit: 14c30f412cd17058d0316444215f878ba1ee422f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829217"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "10905625"
 ---
 # HoloLens 2 사용 준비
 
@@ -119,6 +119,8 @@ HoloLens의 표시등이 무엇을 의미하는지 확실하지 않습니까? �
 ### 편안하게 유지
 
 HoloLens와 처음 몇 번의 세션을 짧게 하고 반드시 휴식을 취하세요. 불편함을 느낀다면, 멈추고 나아질 때까지 휴식을 취합니다. 여기에는 일시적인 메스꺼움, 멀미, 현기증, 방향 감각 상실, 두통, 피로, 눈의 피로, 또는 건조한 눈 등이 해당합니다.
+
+[제품 안전 경고 및 지침](https://support.microsoft.com/help/4558037/product-safety-warnings-and-instructions)을 참조하세요.
 
 > [!div class="nextstepaction"]
 > [HoloLens 2 시작 및 구성](hololens2-start.md)
