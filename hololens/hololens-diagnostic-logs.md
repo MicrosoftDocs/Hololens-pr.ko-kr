@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 4c17ac2bf68076978c233db2f2b7156fee447f01
-ms.sourcegitcommit: 5d38af8d17dfcc028e7e0b2bb888c6c9d1e40524
+ms.openlocfilehash: d14c397c4783acd88dcd922a92b0ffe6437a6473
+ms.sourcegitcommit: c2040b967f2f884a22f4b93a173224163e37da1f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "10899171"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "10918599"
 ---
 # HoloLens 장치에서 진단 정보 수집 및 사용
 
@@ -130,7 +130,7 @@ IT 관리자는 DiagnosticLog CSP를 사용 하 여 다음을 제어 하는 정�
 2.  PC의 파일 탐색기에서 **'이 PC \<hololens-device> \ 내부 저장소 '** 로 이동 합니다.
 3.  **내부 저장소** 폴더가 표시 되지 않으면 사용자가 로그인 할 때까지 장치가 대기 하 고 있는 것입니다. 전원 단추를 10 초 동안 눌러 장치를 로그인 하거나 전원을 껐다가 켭니다.
 4.  바로 **전원 + 볼륨 아래로** 단추를 눌렀다가 놓습니다.
-5.  장치가 zip 보관 파일을 준비 하는 데 몇 분 정도 기다립니다.
+5.  장치가 zip 보관 파일을 준비 하는 데 몇 분 정도 기다립니다. (HololensDiagnostics 이라는 임시 파일은 장치가 zip 보관 함을 생성 하는 동안 표시 될 수 있습니다. 해당 파일에 액세스 하거나 저장 하지 마세요. 프로세스가 완료 되 면 zip 보관 함으로 대체 됩니다.
 6.  파일 탐색기를 새로 고치고 **' \Documents '** 폴더로 이동 합니다.
 7.  진단 ZIP 파일을 복사 하 여 Microsoft 지원 팀과 공유 합니다.
 
