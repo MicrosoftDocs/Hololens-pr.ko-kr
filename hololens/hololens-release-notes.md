@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: fa2c4b5562c27e8d80b765c4acce0191de54a545
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: deddd753c22095532c1a4e3f8e896e2e881a1ad5
+ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915968"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "10924260"
 ---
 # HoloLens 2 릴리스 정보
 
@@ -28,6 +28,20 @@ HoloLens 장치를 능숙 하 게 사용할 수 있도록 기능, 버그, 보안
 
 >[!NOTE]
 > HoloLens 에뮬레이터 릴리스 노트를 읽으려면 [보관 파일을 방문](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)하세요.
+
+## Windows 홀로그램 버전 2004-2020 업데이트 8 월
+- 빌드 19041.1113
+
+업데이트의 개선 사항 및 수정 사항:
+
+- 설정 앱은 더 이상 사용자를 팔 로우 하는 조리개 등록 또는 눈동자 추적 보정 환경을 제공 하지 않습니다.
+- OOBE 중에 프로 비전 패키지를 적용 하 여 디바이스 이름을 바꾸고 다른 작업 (예: 네트워크에 연결)을 수행 하는 버그가 해결 되 면 장치를 다시 부팅 한 후 다른 작업을 수행 하지 못할 수 있습니다.
+- 시각적 품질을 향상 시키기 위해 초기 디바이스 설정 흐름의 수정 된 색 구성표입니다.
+
+## Windows 홀로그램 버전 1903-2020 업데이트 8 월
+- 빌드 18362.1074
+
+이 월 품질 업데이트에는 중요 한 변경 사항이 포함 되어 있지 않으므로 Windows 홀로그램 버전 2004에 대 한 최신 빌드를 사용 하는 것이 좋습니다.
 
 ## Windows 홀로그램 버전 2004-2020 업데이트
 - 빌드 19041.1109

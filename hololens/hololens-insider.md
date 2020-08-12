@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5394e56882c0847333186cbbe25670231293ba4f
-ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
+ms.openlocfilehash: 3a9f44c6210dd6a60b0ee60cf42ab068bac7ebc8
+ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919149"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "10924250"
 ---
 # Microsoft HoloLens 참가자 미리 보기
 
@@ -43,6 +43,7 @@ Windows 참가자 빌드에이를 릴리스할 때 새 기능으로이 페이지
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
 | 자동 눈동자 위치 지원                            | 현재 위치를 찾고 정확한 홀로그램 포지셔닝을 가능 하 게 합니다.                       | 19041.1339 +                 |
 | 인증서 뷰어                                   | 설정 앱에서 사용자 및 장치 인증서를 봅니다.                                        | 19041.1346 +                 |
+| Wi-fi 연결 및 Autopilot 사용                 | 이더넷 어댑터가 필요 없이 device Wi-fi의 autopilot를 사용 합니다.                            | 19041.1364 +                 |
 | HoloLens 정책                                    | 혼합 현실 장치에 대 한 새로운 정책.                                                       | 19041.1349 +                 |
 | 오프 라인 키오스크에 대 한 AAD 그룹 구성원 캐시         | 키오스크 모드에 사용할 수 있는 기간 (일) AAD 그룹 구성원 캐시에 대 한 정책입니다.     | 19041.1356 +                 |
 | HoloLens 2에 대 한 새 장치 제한 정책       | 장치 관리 정책을 HoloLens 2에 대해 새로 사용 하도록 설정 했습니다.                              | 19041.1349 +                 |
@@ -87,6 +88,9 @@ Windows 참가자 빌드 19041.1346 + HoloLens 2 설정 앱에서 인증서 뷰�
 인증서를 보려면 **& 보안 > 인증서를 업데이트 > 설정**으로 이동 합니다.
 
 ![설정 앱의 인증서 뷰어](images/hololens-certificate-viewer.png)
+
+### Wi-fi 연결 및 Autopilot 사용
+현재 OOBE 중에 HoloLens 2를 Wifi에 연결 하면 OOBE에서 디바이스에 대 한 autopilot 프로필을 확인 합니다. 하나가 발견 되 면 나머지 AAD 조인과 등록 흐름을 완료 하는 데 사용 됩니다. 즉, 이더넷을 USB C 또는 USB C 어댑터에 사용 하는 것은 필요 하지 않지만, OOBE 시작 부분에 제공 되는 경우 계속 작동 합니다. [HoloLens 2 장치에 대 한 Autopilot](hololens2-autopilot.md)에 대해 자세히 알아보세요.
 
 ### HoloLens 정책
 빌드 19041.1349 +의 HoloLens 2 장치에 대 한 새 혼합 현실 정책이 생성 되었습니다. 제어 가능한 새 설정에는 밝기 설정, 볼륨 설정, 혼합 현실 캡처에서 오디오 녹음 사용 안 함, 진단 프로그램 수집 시 설정, AAD 그룹 구성원 캐시 등이 포함 됩니다.  
