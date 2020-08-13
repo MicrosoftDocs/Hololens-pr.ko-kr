@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: deddd753c22095532c1a4e3f8e896e2e881a1ad5
-ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
+ms.openlocfilehash: 3e2bb1a6f8de93faa1a1157b3d05ff671d0b0a45
+ms.sourcegitcommit: 5799ce0f3d8f1d231823cff6c9c013ce933b8f3b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "10924260"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926331"
 ---
 # HoloLens 2 릴리스 정보
 
@@ -35,7 +35,7 @@ HoloLens 장치를 능숙 하 게 사용할 수 있도록 기능, 버그, 보안
 업데이트의 개선 사항 및 수정 사항:
 
 - 설정 앱은 더 이상 사용자를 팔 로우 하는 조리개 등록 또는 눈동자 추적 보정 환경을 제공 하지 않습니다.
-- OOBE 중에 프로 비전 패키지를 적용 하 여 디바이스 이름을 바꾸고 다른 작업 (예: 네트워크에 연결)을 수행 하는 버그가 해결 되 면 장치를 다시 부팅 한 후 다른 작업을 수행 하지 못할 수 있습니다.
+- OOBE 중에 프로비저닝 패키지를 적용 하 여 디바이스 이름을 바꾸고 다른 작업 (예: 네트워크 연결)을 수행 하는 버그가 해결 되 면 장치를 다시 부팅 한 후 다른 작업을 수행할 수 없습니다.
 - 시각적 품질을 향상 시키기 위해 초기 디바이스 설정 흐름의 수정 된 색 구성표입니다.
 
 ## Windows 홀로그램 버전 1903-2020 업데이트 8 월

@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3a9f44c6210dd6a60b0ee60cf42ab068bac7ebc8
-ms.sourcegitcommit: 763896af822b247ee8ee981c2dec3b1abf61bf6f
+ms.openlocfilehash: 0ca085cfcf96a07b5c022b308a513c895795e945
+ms.sourcegitcommit: 81ea187bfd244fb8f489cd8b37c0cc7f6a8bc1cb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "10924250"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "10926603"
 ---
 # Microsoft HoloLens 참가자 미리 보기
 
@@ -178,6 +178,13 @@ HoloLens 2 장치의 추가 관리 옵션을 허용 하는 새로 사용할 수 
 ![오류가 발생 했을 때 표시 되는 키오스크 모드의 이미지입니다.](images/hololens-kiosk-failure-behavior.png )
 
 ## 참가자 빌드 받기 시작
+
+> [!NOTE]
+> 최근에 업데이트 하지 않은 경우 장치를 다시 부팅 하 여 상태를 업데이트 하 고 최신 빌드를 다운로드 하세요.
+> - "장치 재부팅" 음성 명령은 제대로 작동 합니다. 
+> - 설정/Windows 참가자 프로그램에서 다시 시작 단추를 선택할 수도 있습니다.
+>
+> 백 엔드에 버그가 있는데,이는 사용자가 직면 했을 때 다시 추적 하 게 됩니다.
 
 HoloLens 2 장치에서 **설정**  >  **업데이트 & 보안**  >  **Windows 참가자 프로그램** 으로 이동 하 고 **시작**을 선택 합니다. Windows 참가자로 등록 하는 데 사용한 계정을 연결 합니다.
 
