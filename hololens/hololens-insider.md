@@ -16,22 +16,16 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0ca085cfcf96a07b5c022b308a513c895795e945
-ms.sourcegitcommit: 81ea187bfd244fb8f489cd8b37c0cc7f6a8bc1cb
+ms.openlocfilehash: cb7c60ed8a381c0ce8c7f6a28bc8274d5ea20f30
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926603"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929881"
 ---
 # Microsoft HoloLens 참가자 미리 보기
 
-HoloLens에 대 한 최신 참가자 Preview 빌드에 오신 것을 환영 합니다!  이 작업을 간단 하 게 시작 하 고 HoloLens에 대 한 다음 주요 운영 체제 업데이트에 대 한 소중한 의견을 제공 하세요.
-
-이제 Windows 참가자가 채널로 이동 하 고 있습니다. **빠른** 링이 **개발자 채널이**되 고, **느린** 고리는 **베타 채널이**되며, **릴리스 미리 보기** 링은 **릴리스 미리 보기 채널이**됩니다. 매핑 결과는 다음과 같습니다.
-
-![Windows 참가자 채널 설명](images/WindowsInsiderChannels.png)
-
-자세한 내용은 Windows 블로그에서 [Windows 참가자 채널 소개](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) 를 참조 하세요.
+HoloLens에 대 한 최신 참가자 Preview 빌드에 오신 것을 환영 합니다! 이 작업을 간단 하 게 [시작](hololens-insider.md#start-receiving-insider-builds) 하 고 HoloLens에 대 한 다음 주요 운영 체제 업데이트에 대 한 소중한 의견을 제공 하세요.
 
 ## Windows 참가자 릴리스 정보
 
@@ -43,6 +37,9 @@ Windows 참가자 빌드에이를 릴리스할 때 새 기능으로이 페이지
 |------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
 | 자동 눈동자 위치 지원                            | 현재 위치를 찾고 정확한 홀로그램 포지셔닝을 가능 하 게 합니다.                       | 19041.1339 +                 |
 | 인증서 뷰어                                   | 설정 앱에서 사용자 및 장치 인증서를 봅니다.                                        | 19041.1346 +                 |
+| 인증서 설치 및 제거                      | 사용자는 인증서 뷰어를 사용 하 여 인증서를 설치 하 고 제거할 수 있습니다.                       | 19041.1361 +                 |
+| USB에서 자동 시작 프로 비전                    | OOBE 자동으로 USB 드라이브의 프로비저닝 패키지를 감지 합니다.                                 | 19041.1361 +                 |
+| OOBE에서 자동으로 패키지 프로 비전 확인           | OOBE에서 자동으로 프로비저닝 패키지를 적용 합니다.                                            | 19041.1361 +                 |
 | Wi-fi 연결 및 Autopilot 사용                 | 이더넷 어댑터가 필요 없이 device Wi-fi의 autopilot를 사용 합니다.                            | 19041.1364 +                 |
 | HoloLens 정책                                    | 혼합 현실 장치에 대 한 새로운 정책.                                                       | 19041.1349 +                 |
 | 오프 라인 키오스크에 대 한 AAD 그룹 구성원 캐시         | 키오스크 모드에 사용할 수 있는 기간 (일) AAD 그룹 구성원 캐시에 대 한 정책입니다.     | 19041.1356 +                 |
@@ -52,7 +49,9 @@ Windows 참가자 빌드에이를 릴리스할 때 새 기능으로이 페이지
 | HoloLens 2에 대 한 사용 설정 페이지 표시 여부      | 설정 앱에 표시 되는 페이지를 선택 하는 정책입니다.                                          | 19041.1349 +                 |
 | 전체 할당된 액세스                               | 시스템 수준에서 적용 되는 여러 앱 키오스크 모드에 대해 HoloLens 2 장치를 구성 합니다.  | 19041.1356 +                 |
 | 다중 앱 키오스크에서 앱 자동 실행                | 여러 앱 키오스크 모드로 로그인 할 때 응용 프로그램이 자동으로 실행 되도록 설정 합니다. | 19041.1346 +                 |
+| 키오스크 용 방문자 자동 로그온                        | 키오스크 모드에 사용할 방문자 계정에 대 한 자동 로그온을 사용 하도록 설정 합니다.                        | 19041.1361 +                 |
 | 오류 처리에 대 한 키오스크 모드 동작 변경 | 키오스크 모드 오류가 이제 처리 되는 방식에 대 한 변경                                             | 19041.1356 +                 |
+| 업데이트의 개선 사항 및 수정                 | 업데이트의 추가 수정 사항.                                                               | 19041.1361 +                 |
 
 ### 자동 눈동자 위치 지원
 
@@ -76,10 +75,7 @@ Uncalibrated 사용자가 디바이스에 배치 하는 경우 자동 눈 위치
 
 ### 인증서 뷰어
 
-Windows 참가자 빌드 19041.1346 + HoloLens 2 설정 앱에서 인증서 뷰어를 추가 하는 중입니다. 이 기능은 디바이스에서 인증서를 확인 하는 간단 하 고 사용자에 게 친숙 한 방법을 제공 합니다. 특정 인증서를 빠르게 찾으려면 이름, 저장 또는 만료 날짜별로 정렬 하는 옵션이 있습니다. 사용자가 직접 인증서를 검색할 수도 있습니다. 새 인증서 뷰어를 통해 관리자와 사용자는 향상 된 감사, 진단 및 유효성 검사 도구를 사용 하 여 디바이스를 안전 하 고 준수 하도록 유지할 수 있습니다.  개별 인증서에 대 한 자세한 내용을 보려면 인증서를 선택 하 고 정보를 클릭 합니다.
-
-> [!NOTE]
-> 미국 이외의 언어 지역화에 대 한 알려진 제한 사항은 이후 Windows 참가자 릴리스에서 해결 하는 데 사용 됩니다.
+Windows 참가자 빌드 19041.1346 + HoloLens 2 설정 앱에서 인증서 뷰어를 추가 하는 중입니다. 인증서 설치는 현재 .cer 및 .crt 파일을 지원 합니다. 장치 소유자는 로컬 컴퓨터와 현재 사용자에 인증서를 설치할 수 있습니다.  다른 모든 사용자는 현재 사용자 에게만 설치할 수 있습니다. 사용자는 설정 UI에서 직접 설치한 인증서만 제거할 수 있습니다. 다른 수단을 통해 인증서를 설치한 경우 동일한 메커니즘을 통해서도이를 제거 해야 합니다.
 
 -   **감사:** 인증서가 올바르게 배포 되었는지 확인 하거나 적절 하 게 제거 되었는지 확인 하는 기능. 
 -   **진단:** 문제가 발생 하면 장치에 적절 한 인증서가 있는지 확인 하 여 시간을 절약 하 고 문제를 해결 하는 데 도움이 됩니다. 
@@ -88,6 +84,56 @@ Windows 참가자 빌드 19041.1346 + HoloLens 2 설정 앱에서 인증서 뷰�
 인증서를 보려면 **& 보안 > 인증서를 업데이트 > 설정**으로 이동 합니다.
 
 ![설정 앱의 인증서 뷰어](images/hololens-certificate-viewer.png)
+
+### 인증서 설치 및 제거
+Windows 참가자 릴리스 19041.1361 + 시작: HoloLens 2에서 설정 앱을 통해 직접 인증서를 설치 하 고 제거할 수 있습니다. 인증서 설치는 현재 .cer 및 .crt 파일을 지원 합니다. 장치 소유자는 로컬 컴퓨터와 현재 사용자에 인증서를 설치할 수 있습니다.  다른 모든 사용자는 현재 사용자 에게만 설치할 수 있습니다. 사용자는 설정 UI에서 직접 설치한 인증서만 제거할 수 있습니다. 다른 수단을 통해 인증서를 설치한 경우 동일한 메커니즘을 통해서도이를 제거 해야 합니다.
+
+#### 인증서 뷰어를 사용 하 여 인증서를 설치 하려면 다음을 수행 합니다. 
+1. **설정 앱**  ->  **업데이트 및 보안**  ->  **인증서**로 이동한 다음 **인증서 설치**를 선택 합니다. 
+1. 파일 선택기 환경에서 .cer 파일을 선택 합니다.
+1. 로컬 컴퓨터 (또는 인증서를가지고 있는 위치)를 선택 합니다.
+1. **루트** 를 인증서 저장소로 선택 합니다 (또는 인증서를 배치할 저장소). 
+1. **설치**를 클릭합니다.
+
+이제 인증서가 장치에 설치 되어 있어야 합니다.
+
+#### 인증서 뷰어를 사용 하 여 인증서를 제거 하려면 다음을 수행 합니다. 
+1. **설정 앱**  ->  **업데이트 및 보안**  ->  **인증서**로 이동 합니다.
+1. 검색 상자에서 이름으로 인증서를 검색 합니다.
+1. 인증서를 선택 합니다.
+1. **제거** 클릭
+1. 메시지가 표시 되 면 예를 선택 하 고 확인을 요청 합니다.
+
+![인증서 UI를 사용 하 여 인증서를 설치 하는 방법을 보여 주는 그림](images/hololens-install-certificate.jpg)
+
+#### 알려진 문제 
+설치 흐름 중에 파일 선택기에서 인증서를 선택한 후 설치 대화 상자 UI가 선택 된 인증서 파일을 선택 했지만 표시 하지 않는 문제를 조사 하 고 있습니다. 파일을 선택한 후에는 대화 상자에 파일이 표시 되지 않는 경우에도 설치를 진행할 수 있습니다. 
+
+### USB에서 자동 시작 프로 비전
+이 빌드 사용자는 OOBE 중에 단추 조합을 사용 하 여 프로 비전 할 때 수동으로 프로비저닝 화면을 실행 해야 합니다. 이제 사용자는 USB 저장소 드라이브의 프로비저닝 패키지를 사용 하 여 단추 조합을 건너뛸 수 있습니다. 
+
+1. OOBE의 첫 번째 감 순간에 프로비저닝 패키지와 함께 USB 드라이브 연결
+1. 디바이스를 프로 비전 할 준비가 되 면 프로 비전 페이지로 메시지가 자동으로 열립니다. 
+
+참고: 장치를 부팅 하는 동안 USB 드라이브가 연결 된 상태에서, OOBE는 기존 USB 저장 디바이스를 열거 하 고 추가 연결을 감시할 수도 있습니다.
+
+OOBE 중에는 프로비저닝 패키지를 적용 하는 방법에 대 한 자세한 내용은 [여기](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)를 계속 읽으십시오.
+
+### OOBE에서 프로 비전 패키지 자동 확인
+프로 비전 주 화면이 나타나면 OOBE는 자동으로 모든 프로 비전 패키지 적용을 시작 하기 전에 10 초 동안 횟수를 계산 합니다. 사용자는 예상 되는 패키지를 확인 한 후 10 초 내에 계속 확인 하거나 취소할 수 있습니다.
+
+### UI를 사용 하지 않고 자동 프로 비전
+USB 장치에서 프로 비전의 자동 실행을 결합 하 고 프로 비전 패키지의 자동 확인을 통해 디바이스의 UI를 사용 하지 않거나 장치를 착용 하지 않고 HoloLens 2 장치를 자동으로 프로 비전 할 수 있습니다. 동일한 USB 드라이브와 여러 장치에 대 한 프로비저닝 패키지를 계속 사용할 수 있습니다. 이 기능은 같은 영역에 여러 장치를 동시에 배포 하는 데 유용 합니다. 
+
+1. [Windows 구성 디자이너](https://www.microsoft.com/store/productId/9NBLGGH4TX22)를 사용 하 여 [프로비저닝 패키지를 만듭니다](hololens-provisioning.md) . 
+1. 패키지를 USB 저장소 드라이브에 복사 합니다.
+1. [HoloLens 2](hololens-insider.md#ffu-download-and-flash-directions) 에서 [19041.1361 이상 빌드](https://aka.ms/hololens2previewdownload)를 플래시 합니다. 
+1. [고급 복구 도우미가](https://www.microsoft.com/store/productId/9P74Z35SFRS8) 장치를 깜박이는 경우 USB-C 케이블을 뽑습니다. 
+1. USB 드라이브를 장치에 연결 합니다.
+1. HoloLens 2 장치가 OOBE로 부팅 되 면 USB 드라이브에서 자동으로 프로비저닝 패키지를 감지 하 고 프로비저닝 페이지를 실행 합니다.
+1. 10 초 후에 장치가 프로비저닝 패키지를 자동으로 적용 합니다. 
+
+디바이스가 이제 구성 되 고 프로 비전 성공 화면이 표시 됩니다.
 
 ### Wi-fi 연결 및 Autopilot 사용
 현재 OOBE 중에 HoloLens 2를 Wifi에 연결 하면 OOBE에서 디바이스에 대 한 autopilot 프로필을 확인 합니다. 하나가 발견 되 면 나머지 AAD 조인과 등록 흐름을 완료 하는 데 사용 됩니다. 즉, 이더넷을 USB C 또는 USB C 어댑터에 사용 하는 것은 필요 하지 않지만, OOBE 시작 부분에 제공 되는 경우 계속 작동 합니다. [HoloLens 2 장치에 대 한 Autopilot](hololens2-autopilot.md)에 대해 자세히 알아보세요.
@@ -130,7 +176,8 @@ Name: AADGroupMembershipCacheValidityInDays URI 값:./Vendor/MSFT/Policy/Config/
 HoloLens 2 장치의 추가 관리 옵션을 허용 하는 새로 사용할 수 있는 정책 
 - [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 - [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
-- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone) 
+- [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
+- [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
 
 ### Hololens 2에 대 한 새 전원 정책
 관리자는 이러한 새로 추가 된 정책을 통해 유휴 시간 제한 등의 전원 상태를 제어할 수 있습니다. 각 개별 정책에 대 한 자세한 내용을 보려면 해당 정책의 링크를 클릭 하세요.
@@ -171,11 +218,29 @@ HoloLens 2 장치의 추가 관리 옵션을 허용 하는 새로 사용할 수 
     <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
 
+### 키오스크 용 방문자 자동 로그온
+이 새로운 기능을 통해 방문자 계정에 대 한 자동 로그온을 키오스크 모드에 사용할 수 있습니다. 
+
+비 AAD 구성의 경우 방문자 자동 로그온에 맞게 장치를 구성 하려면 다음을 수행 합니다.
+1.  다음과 같은 프로비저닝 패키지를 만듭니다.
+    1.  방문자 계정을 허용 하도록 **런타임 설정/AssignedAccess** 를 구성 합니다.
+    1.  필요에 따라 MDM **(런타임 설정/작업 공간/Enrollments)** 에 디바이스를 등록 하 여 나중에 관리할 수 있도록 합니다.
+    1.  로컬 계정 만들기 안 함
+1.  [배포 패키지를 적용](hololens-provisioning.md)합니다.
+
+AAD 구성의 경우 사용자는이 변경 없이 오늘 이와 비슷한 내용을 얻을 수 있습니다. 키오스크 모드용으로 구성 된 AAD 연결 디바이스는 로그인 화면에서 단추를 한 번 탭 하 여 방문자 계정에 로그인 할 수 있습니다. 방문자 계정에 로그인 한 후에는 방문자가 시작 메뉴에서 명시적으로 로그 아웃 되거나 장치가 다시 시작 될 때까지 장치에서 다시 로그인 하 라는 메시지가 표시 되지 않습니다.
+
 ### 오류 처리에 대 한 키오스크 모드 동작 변경
 
 이전에는 키오스크 모드 적용 중 오류가 발생 하 여 시작 메뉴의 모든 응용 프로그램을 표시 하는 데 사용 되는 HoloLens가 있습니다. 이 Windows 참가자 빌드부터 오류가 발생 하는 경우 다음과 같이 시작 메뉴에 앱이 표시 되지 않습니다. 
 
 ![오류가 발생 했을 때 표시 되는 키오스크 모드의 이미지입니다.](images/hololens-kiosk-failure-behavior.png )
+
+### 업데이트의 개선 사항 및 수정 사항:
+- Allow: NCM 연결에 대 한 MDM을 통해 USB 기능 열거를 사용 하지 않도록 정책을 업데이트 했습니다.
+- 현재 OOBE의 다른 화면은 어둡게 모드입니다.
+- 자세한 내용은 온라인의 최신 개인 정보 취급 방침을 참고 하세요.
+- 사용자가 프로 비전 패키지를 통해 VPN 프로필을 프로 비전 할 수 없는 문제를 해결 했습니다.
 
 ## 참가자 빌드 받기 시작
 
@@ -188,6 +253,12 @@ HoloLens 2 장치의 추가 관리 옵션을 허용 하는 새로 사용할 수 
 
 HoloLens 2 장치에서 **설정**  >  **업데이트 & 보안**  >  **Windows 참가자 프로그램** 으로 이동 하 고 **시작**을 선택 합니다. Windows 참가자로 등록 하는 데 사용한 계정을 연결 합니다.
 
+이제 Windows 참가자가 채널로 이동 하 고 있습니다. **빠른** 링이 **개발자 채널이**되 고, **느린** 고리는 **베타 채널이**되며, **릴리스 미리 보기** 링은 **릴리스 미리 보기 채널이**됩니다. 매핑 결과는 다음과 같습니다.
+
+![Windows 참가자 채널 설명](images/WindowsInsiderChannels.png)
+
+자세한 내용은 Windows 블로그에서 [Windows 참가자 채널 소개](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) 를 참조 하세요.
+
 그런 다음 **Windows의 활성 개발**을 선택 하 고 **개발자 채널** 및 **베타 채널** 빌드를 받을지 여부를 선택한 다음 프로그램 약관을 검토 합니다.
 
 **확인 > 지금 다시 시작** 을 선택 하 여 완료 합니다. 장치를 다시 부팅 한 후 **설정 > 업데이트 & 보안** 으로 이동 하 여 최신 빌드를 다운로드 > 업데이트를 확인 합니다.
@@ -198,7 +269,7 @@ HoloLens 2 장치에서 **설정**  >  **업데이트 & 보안**  >  **Windows �
 
     1. PC에 ffu를 다운로드 [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) 합니다.
     
-    1. Microsoft Store에서 ARC (고급 복구 도우미) 설치:[https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
+    1. Microsoft Store에서 ARC (고급 복구 도우미) 설치: [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
     
 1. HoloLens 비행 잠금 해제: **설정**  >  **업데이트 & 보안**  >  **Windows 참가자 프로그램** 을 열고, 장치를 다시 부팅 합니다.
 

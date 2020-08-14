@@ -17,11 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7409865f63199dead1779fa183128b30445053aa
-ms.sourcegitcommit: 2b1518675b9962518e08b13c12b43b6d9827fe17
+ms.openlocfilehash: f5c45477ab33064afe30e275f8b0003bc6022eac
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10858002"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929854"
 ---
 # HoloLens를 키오스크로 설정
 
@@ -251,7 +252,7 @@ Microsoft Intune 또는 다른 MDM 시스템을 사용 하 여 키오스크 모�
 
 키오스크 구성 프로필을 만드는 방법에 대 한 자세한 내용은 Intune을 [사용 하 여 전용 키오스크로 실행 하기 위한 windows 10 및 Windows 홀로그램 비즈니스 장치 설정을](https://docs.microsoft.com/intune/configuration/kiosk-settings)참조 하세요.
 
-### <a id="mdmconfigsingle"></a>MDM, 3 단계 (단일 앱) &ndash; 단일 앱 키오스크에 대 한 설정 구성
+### <a id="mdmconfigsingle"></a>MDM, 3 단계 (단일 앱) &ndash;  단일 앱 키오스크에 대 한 설정 구성
 
 이 섹션에서는 단일 앱 키오스크에 필요한 설정을 요약 합니다. 자세한 내용은 다음 문서를 참조 하세요.
 
@@ -445,7 +446,7 @@ OOBE 중에 다음 단계를 수행 합니다.
 
 - [설치 하는 동안 처음으로 HoloLens에 프로비저닝 패키지를 적용할](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)수 있습니다.
 
-- [설치 후에 HoloLens에 제공 패키지를 적용할](hololens-provisioning.md#4-apply-a-provisioning-package-to-hololens-after-setup)수도 있습니다.
+- [설치 후에 HoloLens에 제공 패키지를 적용할](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-after-setup)수도 있습니다.
 
 ## Windows Device Portal을 사용 하 여 단일 앱 키오스크 설정
 

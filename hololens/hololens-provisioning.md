@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2b34cc642aa08adf5bb875588c9e4458df0034e1
-ms.sourcegitcommit: f3cda6c6b3bfb7ba4be5f4da66d8ed5b03ca807d
+ms.openlocfilehash: 0a2edd0c516234a433a93c0cff806153726678fd
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10830162"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929864"
 ---
 # 배포 패키지를 사용 하 여 HoloLens 구성
 
@@ -152,7 +152,9 @@ Windows 구성 디자이너 도구를 사용하여 프로비전 패키지를 만
 
 ## 설치 하는 동안 HoloLens에 프로비저닝 패키지 적용
 
-1. USB 케이블을 사용 하 여 PC에 장치를 연결한 다음 장치를 시작 합니다. OOBE의 **첫 번째 감 순간** 페이지를 지나서 진행 하지 마세요.   
+HoloLens 2 빌드 [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) 이상에서 USB 드라이브를 사용 하 여 프로비저닝 패키지를 적용할 수 있습니다. USB 드라이브의 루트에는. a. a kg 파일을 복사 하면 됩니다. 프로 비전 패키지는 USB 드라이브의 루트에 있는 경우에만 적용 됩니다. 제공 된 여러 프로비저닝 패키지가 순차적으로 적용 됩니다.
+
+1. USB 케이블을 사용 하 여 장치를 PC (또는 위에 언급 된 HoloLens 2 용 USB 드라이브)에 연결한 다음 장치를 시작 합니다. OOBE의 **첫 번째 감 순간** 페이지를 지나서 진행 하지 마세요.   
     - HoloLens (첫번째 gen)에서이 페이지는 파란색 상자를 포함 하 고 있습니다. 
     - HoloLens 2에서이 페이지에는 hummingbird 포함 되어 있습니다.
 
@@ -162,7 +164,7 @@ Windows 구성 디자이너 도구를 사용하여 프로비전 패키지를 만
 
 4. 파일 탐색기에서 프로비저닝 패키지(.ppkg)를 장치 저장소로 끌어 놓습니다.
 
-5. **맞춤** 페이지에 있는 동안 다시 **볼륨 작게** 단추 및 **전원** 단추를 동시에 잠시 누르고 놓습니다.
+5. OOBE의 **첫 번째 감 순간** 페이지에 있는 동안 **볼륨 작게** 및 **전원** 단추를 다시 한 번 길게 눌러 해제 합니다.
 
 6. 패키지를 신뢰 하 고 적용 하 고 싶은 경우 장치에서 사용자에 게 요청 합니다. 패키지를 신뢰한다고 확인합니다.
 
@@ -171,7 +173,7 @@ Windows 구성 디자이너 도구를 사용하여 프로비전 패키지를 만
 > [!NOTE]
 > 8 월 2016 이전에 장치를 구매한 경우 Microsoft 계정을 사용 하 여 장치에 로그인 하 고 최신 운영 체제 업데이트를 다운로드 한 다음 운영 체제를 초기화 하 여 프로비저닝 패키지를 적용 해야 합니다.
 
-### 4. 설치 후 HoloLens에 프로비저닝 패키지 적용
+### 설치 후 HoloLens에 프로비저닝 패키지 적용
 
 > [!NOTE]
 > 이 단계는 toWindows 10 버전 1809만 적용 됩니다.
