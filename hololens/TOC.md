@@ -7,6 +7,7 @@
 ### [HoloLens 2 사용 준비](hololens2-setup.md)
 ### [HoloLens 2 설정](hololens2-start.md)
 ### [HoloLens 2 핏 및 편안함 FAQ](hololens2-fit-comfort-faq.md)
+### [HoloLens 2 디스플레이](hololens2-display.md)
 ### [HoloLens 2 정리 FAQ](hololens2-maintenance.md)
 ### [HoloLens 2에 지원되는 언어](hololens2-language-support.md)
 ### [HoloLens 2 둘러보기](hololens2-basic-usage.md)

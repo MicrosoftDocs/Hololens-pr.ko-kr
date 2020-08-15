@@ -10,12 +10,12 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-ms.openlocfilehash: 0fa147eb2b1194dacdcabff4995f5141a1b25bde
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 2632c5bfd82feab4e21ee9c393f8c22efda28c42
+ms.sourcegitcommit: 458e07c0dcad66616fa98cfef125eb217713d89c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857856"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "10927842"
 ---
 # HoloLens 환경 고려 사항
 
@@ -116,6 +116,9 @@ Wi-Fi가 활성화되어 있는 한 지도 데이터는 실제 Wi-Fi 네트워�
 보정 앱에 액세스하려면 **설정** > **시스템** > **유틸리티**로 이동하세요. **보정 열기**를 선택하고 지침을 따릅니다.
 
 다른 사람이 HoloLens를 사용하려는 경우 먼저 보정 앱을 실행하여 그들에게 맞게 디바이스를 적절하게 설정해야 합니다.
+
+### 기온 및 규정 정보
+[HoloLens 규제](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): 온도, 처분, 라디오 및 TV 간섭 등에 대한 정보를 포함합니다.
 
 ## 참고 항목
 

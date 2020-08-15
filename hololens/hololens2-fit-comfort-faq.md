@@ -13,12 +13,12 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 594f51897502847251adcbe8c32beb0c55d71098
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 17b55ef165cbb9df47f822f742141f4460cd9c6b
+ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829412"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "10929844"
 ---
 # HoloLens 2 핏 및 편안함 자주 묻는 질문
 
@@ -50,12 +50,7 @@ ms.locfileid: "10829412"
 
 ## 홀로그램 이미지 색상이나 밝기가 제대로 보이지 않음
 
-HoloLens 2의 경우 디스플레이에 표시되는 홀로그램의 최고 시각적 품질을 보장하기 위해 다음 단계를 수행하십시오.
-
-- **디스플레이 밝기를 늘립니다.** 홀로그램은 디스플레이가 가장 밝은 수준에 있을 때 가장 잘 보입니다.
-- **바이저를 눈에 더 가까이 댑니다.** 바이저를 눈에 가장 가까운 위치로 스윙합니다.
-- **바이저를 아래로 이동합니다.** 눈썹 패드를 이마에서 아래로 이동하여 바이저가 코에 더 가깝게 이동하게 합니다.
-- **시각 보정을 실행합니다.** 디스플레이는 IPD 및 시선을 사용하여 디스플레이의 이미지를 최적화합니다. 시각 보정을 실행하지 않으면 이미지 품질이 악화될 수 있습니다.
+HoloLens 2 [디스플레이 문제 해결 단계](hololens2-display.md)를 참조하세요.
 
 ## 디바이스 슬라이드를 사용하고 있을 때 아래로 밀거나, 더 안전하게 유지하기 위해 헤드밴드를 너무 조여야 함
 

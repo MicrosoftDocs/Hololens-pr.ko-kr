@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cb7c60ed8a381c0ce8c7f6a28bc8274d5ea20f30
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 728e0d33863a3d8b70c471c97c97a75569b7ba95
+ms.sourcegitcommit: 1221a9b33c4fcd0eb6dd9e544e85a7c58efd47df
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929881"
+ms.locfileid: "10930865"
 ---
 # Microsoft HoloLens 참가자 미리 보기
 
@@ -33,25 +33,25 @@ HoloLens에 대 한 최신 참가자 Preview 빌드에 오신 것을 환영 합�
 
 Windows 참가자 빌드에이를 릴리스할 때 새 기능으로이 페이지를 다시 업데이트 합니다.
 
-| 기능                                              | 설명                                                                                   | 참가자 빌드에서 사용 가능 |
-|------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------|
-| 자동 눈동자 위치 지원                            | 현재 위치를 찾고 정확한 홀로그램 포지셔닝을 가능 하 게 합니다.                       | 19041.1339 +                 |
-| 인증서 뷰어                                   | 설정 앱에서 사용자 및 장치 인증서를 봅니다.                                        | 19041.1346 +                 |
-| 인증서 설치 및 제거                      | 사용자는 인증서 뷰어를 사용 하 여 인증서를 설치 하 고 제거할 수 있습니다.                       | 19041.1361 +                 |
-| USB에서 자동 시작 프로 비전                    | OOBE 자동으로 USB 드라이브의 프로비저닝 패키지를 감지 합니다.                                 | 19041.1361 +                 |
-| OOBE에서 자동으로 패키지 프로 비전 확인           | OOBE에서 자동으로 프로비저닝 패키지를 적용 합니다.                                            | 19041.1361 +                 |
-| Wi-fi 연결 및 Autopilot 사용                 | 이더넷 어댑터가 필요 없이 device Wi-fi의 autopilot를 사용 합니다.                            | 19041.1364 +                 |
-| HoloLens 정책                                    | 혼합 현실 장치에 대 한 새로운 정책.                                                       | 19041.1349 +                 |
-| 오프 라인 키오스크에 대 한 AAD 그룹 구성원 캐시         | 키오스크 모드에 사용할 수 있는 기간 (일) AAD 그룹 구성원 캐시에 대 한 정책입니다.     | 19041.1356 +                 |
-| HoloLens 2에 대 한 새 장치 제한 정책       | 장치 관리 정책을 HoloLens 2에 대해 새로 사용 하도록 설정 했습니다.                              | 19041.1349 +                 |
-| HoloLens 2에 대 한 새 전원 정책                    | 전원 시간 제한 설정에 대해 새로 지원 되는 정책입니다.                                          | 19041.1349 +                 |
-| 업데이트 정책                                      | 업데이트 제어를 허용 하는 새로 사용할 수 있는 정책                                           | 19041.1352 +                 |
-| HoloLens 2에 대 한 사용 설정 페이지 표시 여부      | 설정 앱에 표시 되는 페이지를 선택 하는 정책입니다.                                          | 19041.1349 +                 |
-| 전체 할당된 액세스                               | 시스템 수준에서 적용 되는 여러 앱 키오스크 모드에 대해 HoloLens 2 장치를 구성 합니다.  | 19041.1356 +                 |
-| 다중 앱 키오스크에서 앱 자동 실행                | 여러 앱 키오스크 모드로 로그인 할 때 응용 프로그램이 자동으로 실행 되도록 설정 합니다. | 19041.1346 +                 |
-| 키오스크 용 방문자 자동 로그온                        | 키오스크 모드에 사용할 방문자 계정에 대 한 자동 로그온을 사용 하도록 설정 합니다.                        | 19041.1361 +                 |
-| 오류 처리에 대 한 키오스크 모드 동작 변경 | 키오스크 모드 오류가 이제 처리 되는 방식에 대 한 변경                                             | 19041.1356 +                 |
-| 업데이트의 개선 사항 및 수정                 | 업데이트의 추가 수정 사항.                                                               | 19041.1361 +                 |
+| 기능                                                | 설명                                                                                    | 참가자 빌드에서 사용 가능 |
+|--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
+| [자동 눈동자 위치 지원](hololens-insider.md#auto-eye-position-support)                              | 현재 위치를 찾고 정확한 홀로그램 포지셔닝을 가능 하 게 합니다.                        | 19041.1339 +                 |
+| [인증서 뷰어](hololens-insider.md#certificate-viewer)                                     | 설정 앱에서 사용자 및 장치 인증서를 봅니다.                                         | 19041.1346 +                 |
+| [인증서 설치 및 제거](hololens-insider.md#install-and-remove-certificates)                        | 사용자는 인증서 뷰어를 사용 하 여 인증서를 설치 하 고 제거할 수 있습니다.                        | 19041.1361 +                 |
+| [USB에서 자동 시작 프로 비전](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE는 USB 드라이브에서 프로 비전 패키지를 자동으로 검색 합니다.                                | 19041.1361 +                 |
+| [OOBE에서 프로 비전 패키지 자동 확인](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | OOBE에서 자동으로 프로비저닝 패키지를 적용 합니다.                                             | 19041.1361 +                 |
+| [Wi-fi 연결에 Autopilot 사용](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | 이더넷 어댑터가 필요 없이 device Wi-fi의 autopilot를 사용 합니다.                             | 19041.1364 +                 |
+| [전체 할당된 액세스](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | 시스템 수준에서 적용 되는 여러 앱 키오스크 모드에 대해 HoloLens 2 장치를 구성 합니다. | 19041.1356 +                 |
+| [다중 앱 키오스크에서 앱 자동 실행](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | 여러 앱 키오스크 모드에 로그인 할 때 응용 프로그램이 자동으로 실행 되도록 설정 합니다.     | 19041.1346 +                 |
+| [키오스크 용 방문자 자동 로그온](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | 키오스크 모드에 사용할 방문자 계정에 대 한 자동 로그온을 사용 하도록 설정 합니다.                         | 19041.1361 +                 |
+| [오류 처리에 대 한 키오스크 모드 동작 변경](hololens-insider.md#kiosk-mode-behavior-changes-for-handling-of-failures) | 키오스크 모드 오류가 이제 처리 되는 방식에 대 한 변경                                              | 19041.1356 +                 |
+| [HoloLens 정책](hololens-insider.md#hololens-policies)                                      | 혼합 현실 장치에 대 한 새로운 정책.                                                        | 19041.1349 +                 |
+| [오프 라인 키오스크에 대 한 AAD 그룹 구성원 캐시](hololens-insider.md#cache-aad-group-membership-for-offline-kiosk)           | 키오스크 모드에 사용할 수 있는 기간 (일) AAD 그룹 구성원 캐시에 대 한 정책입니다.    | 19041.1356 +                 |
+| [HoloLens 2에 대 한 새 장치 제한 정책](hololens-insider.md#new-device-restriction-policies-for-hololens-2)         | 장치 관리 정책을 HoloLens 2에 대해 새로 사용 하도록 설정 했습니다.                               | 19041.1349 +                 |
+| [HoloLens 2에 대 한 새 전원 정책](hololens-insider.md#new-power-policies-for-hololens-2)                      | 전원 시간 제한 설정에 대해 새로 지원 되는 정책입니다.                                           | 19041.1349 +                 |
+| [업데이트 정책](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | 업데이트 제어를 허용 하는 새로 사용할 수 있는 정책                                            | 19041.1352 +                 |
+| [HoloLens 2에 대 한 사용 설정 페이지 표시 여부](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | 설정 앱에 표시 되는 페이지를 선택 하는 정책입니다.                                           | 19041.1349 +                 |
+| [업데이트의 개선 사항 및 수정](hololens-insider.md#improvements-and-fixes-in-the-update)                   | 업데이트의 추가 수정 사항.                                                                | 19041.1361 +                 |
 
 ### 자동 눈동자 위치 지원
 
@@ -135,8 +135,39 @@ USB 장치에서 프로 비전의 자동 실행을 결합 하 고 프로 비전 
 
 디바이스가 이제 구성 되 고 프로 비전 성공 화면이 표시 됩니다.
 
-### Wi-fi 연결 및 Autopilot 사용
+### Wi-fi 연결에 Autopilot 사용
 현재 OOBE 중에 HoloLens 2를 Wifi에 연결 하면 OOBE에서 디바이스에 대 한 autopilot 프로필을 확인 합니다. 하나가 발견 되 면 나머지 AAD 조인과 등록 흐름을 완료 하는 데 사용 됩니다. 즉, 이더넷을 USB C 또는 USB C 어댑터에 사용 하는 것은 필요 하지 않지만, OOBE 시작 부분에 제공 되는 경우 계속 작동 합니다. [HoloLens 2 장치에 대 한 Autopilot](hololens2-autopilot.md)에 대해 자세히 알아보세요.
+
+### 전역 할당 액세스 – 키오스크 모드
+이 새로운 기능을 사용 하면 IT 관리자가 시스템에서 사용할 수 있는 여러 앱 키오스크 모드에 대해 HoloLens 2 장치를 구성 하 고 시스템의 모든 id와 관련 된 선호도가 없으며 장치에 로그인 하는 모든 사용자에 게 적용 됩니다. 이 새로운 기능에 대 한 자세한 내용은 [여기](hololens-global-assigned-access-kiosk.md)를 참조 하세요.
+
+### 다중 앱 키오스크 모드에서 응용 프로그램 자동 실행 
+이 속성은 여러 앱 키오스크 모드에만 적용 되며 지정 된 액세스 구성에서 아래의 강조 표시 되는 특성을 사용 하 여 자동 시작 하도록 지정할 수 있습니다. 
+
+사용자가 로그인 하면 응용 프로그램이 자동으로 시작 됩니다. 
+
+```xml
+<AllowedApps>                     
+    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+```
+
+### 키오스크 용 방문자 자동 로그온
+이 새로운 기능을 통해 방문자 계정에 대 한 자동 로그온을 키오스크 모드에 사용할 수 있습니다. 
+
+비 AAD 구성의 경우 방문자 자동 로그온에 맞게 장치를 구성 하려면 다음을 수행 합니다.
+1.  다음과 같은 프로비저닝 패키지를 만듭니다.
+    1.  방문자 계정을 허용 하도록 **런타임 설정/AssignedAccess** 를 구성 합니다.
+    1.  필요에 따라 MDM **(런타임 설정/작업 공간/Enrollments)** 에 디바이스를 등록 하 여 나중에 관리할 수 있도록 합니다.
+    1.  로컬 계정 만들기 안 함
+1.  [배포 패키지를 적용](hololens-provisioning.md)합니다.
+
+AAD 구성의 경우 사용자는이 변경 없이 오늘 이와 비슷한 내용을 얻을 수 있습니다. 키오스크 모드용으로 구성 된 AAD 연결 디바이스는 로그인 화면에서 단추를 한 번 탭 하 여 방문자 계정에 로그인 할 수 있습니다. 방문자 계정에 로그인 한 후에는 방문자가 시작 메뉴에서 명시적으로 로그 아웃 되거나 장치가 다시 시작 될 때까지 장치에서 다시 로그인 하 라는 메시지가 표시 되지 않습니다.
+
+### 오류 처리에 대 한 키오스크 모드 동작 변경
+
+이전에는 키오스크 모드 적용 중 오류가 발생 하 여 시작 메뉴의 모든 응용 프로그램을 표시 하는 데 사용 되는 HoloLens가 있습니다. 이 Windows 참가자 빌드부터 오류가 발생 하는 경우 다음과 같이 시작 메뉴에 앱이 표시 되지 않습니다. 
+
+![오류가 발생 했을 때 표시 되는 키오스크 모드의 이미지입니다.](images/hololens-kiosk-failure-behavior.png )
 
 ### HoloLens 정책
 빌드 19041.1349 +의 HoloLens 2 장치에 대 한 새 혼합 현실 정책이 생성 되었습니다. 제어 가능한 새 설정에는 밝기 설정, 볼륨 설정, 혼합 현실 캡처에서 오디오 녹음 사용 안 함, 진단 프로그램 수집 시 설정, AAD 그룹 구성원 캐시 등이 포함 됩니다.  
@@ -204,37 +235,6 @@ HoloLens 2 장치의 추가 관리 옵션을 허용 하는 새로 사용할 수 
 - [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
  
 ![설정 앱에서 수정 되는 활성 시간 스크린샷](images/hololens-page-visibility-list.jpg)
-
-### 전역 할당 액세스 – 키오스크 모드
-이 새로운 기능을 사용 하면 IT 관리자가 시스템에서 사용할 수 있는 여러 앱 키오스크 모드에 대해 HoloLens 2 장치를 구성 하 고 시스템의 모든 id와 관련 된 선호도가 없으며 장치에 로그인 하는 모든 사용자에 게 적용 됩니다. 이 새로운 기능에 대 한 자세한 내용은 [여기](hololens-global-assigned-access-kiosk.md)를 참조 하세요.
-
-### 다중 앱 키오스크 모드에서 응용 프로그램 자동 실행 
-이 속성은 여러 앱 키오스크 모드에만 적용 되며 지정 된 액세스 구성에서 아래의 강조 표시 되는 특성을 사용 하 여 자동 시작 하도록 지정할 수 있습니다. 
-
-사용자가 로그인 하면 응용 프로그램이 자동으로 시작 됩니다. 
-
-```xml
-<AllowedApps>                     
-    <!—TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
-```
-
-### 키오스크 용 방문자 자동 로그온
-이 새로운 기능을 통해 방문자 계정에 대 한 자동 로그온을 키오스크 모드에 사용할 수 있습니다. 
-
-비 AAD 구성의 경우 방문자 자동 로그온에 맞게 장치를 구성 하려면 다음을 수행 합니다.
-1.  다음과 같은 프로비저닝 패키지를 만듭니다.
-    1.  방문자 계정을 허용 하도록 **런타임 설정/AssignedAccess** 를 구성 합니다.
-    1.  필요에 따라 MDM **(런타임 설정/작업 공간/Enrollments)** 에 디바이스를 등록 하 여 나중에 관리할 수 있도록 합니다.
-    1.  로컬 계정 만들기 안 함
-1.  [배포 패키지를 적용](hololens-provisioning.md)합니다.
-
-AAD 구성의 경우 사용자는이 변경 없이 오늘 이와 비슷한 내용을 얻을 수 있습니다. 키오스크 모드용으로 구성 된 AAD 연결 디바이스는 로그인 화면에서 단추를 한 번 탭 하 여 방문자 계정에 로그인 할 수 있습니다. 방문자 계정에 로그인 한 후에는 방문자가 시작 메뉴에서 명시적으로 로그 아웃 되거나 장치가 다시 시작 될 때까지 장치에서 다시 로그인 하 라는 메시지가 표시 되지 않습니다.
-
-### 오류 처리에 대 한 키오스크 모드 동작 변경
-
-이전에는 키오스크 모드 적용 중 오류가 발생 하 여 시작 메뉴의 모든 응용 프로그램을 표시 하는 데 사용 되는 HoloLens가 있습니다. 이 Windows 참가자 빌드부터 오류가 발생 하는 경우 다음과 같이 시작 메뉴에 앱이 표시 되지 않습니다. 
-
-![오류가 발생 했을 때 표시 되는 키오스크 모드의 이미지입니다.](images/hololens-kiosk-failure-behavior.png )
 
 ### 업데이트의 개선 사항 및 수정 사항:
 - Allow: NCM 연결에 대 한 MDM을 통해 USB 기능 열거를 사용 하지 않도록 정책을 업데이트 했습니다.
