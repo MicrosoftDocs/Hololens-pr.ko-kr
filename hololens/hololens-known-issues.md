@@ -15,12 +15,12 @@ ms.prod: hololens
 appliesto:
 - HoloLens (1st Gen)
 - HoloLens 2
-ms.openlocfilehash: db95edfbadb271b7fc47cf5798e80d9b2cad3c90
-ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
+ms.openlocfilehash: 6947fe2232701fb9451291bd07e1c896979861d5
+ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881331"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "10940198"
 ---
 # HoloLens에 대해 알려진 문제
 
@@ -28,7 +28,7 @@ ms.locfileid: "10881331"
 
 >[!NOTE]
 > - 차단 하지 않는 문제를 발견 한 경우 [피드백 허브](hololens-feedback.md)를 통해 HoloLens 장치에서 보고 하세요.
-> - 직면 하는 문제로 인해 사용자가 차단 하는 경우 피드백을 제공 하는 addtion에서 [지원 요청](https://aka.ms/hlsupport)을 확인 하세요.
+> - 직면 하는 문제로 인해 사용자가 차단 하는 경우 피드백을 제공 하는 addtion에서  [지원 요청](https://aka.ms/hlsupport)을 확인 하세요.
 
 - [모든 HoloLens 생성에 대해 알려진 문제](#known-issues-for-all-hololens-generations)
 - [HoloLens 2 장치에 대 한 알려진 문제점](#known-issues-for-hololens-2-devices)
@@ -57,6 +57,20 @@ HoloLens 용 OneDrive 앱은 회사 또는 학교 계정에 대 한 자동 카�
 - 자동으로 사진을 업로드 하는 데 소비자 Microsoft 계정을 안전 하 게 사용할 수 없는 경우에는 OneDrive 앱에서 회사 또는 학교 계정에 수동으로 사진을 업로드할 수 있습니다. 이렇게 하려면 OneDrive 앱에서 회사 또는 학교 계정에 로그인 되어 있는지 확인 하세요. 단추를 선택 **+** 하 고 **업로드**를 선택 합니다. **사진 > 카메라 앨범**으로 이동 하 여 업로드 하려는 사진 또는 비디오를 찾습니다. 업로드할 사진이 나 비디오를 선택 하 고 **열기** 단추를 선택 합니다.
 
 ## HoloLens 2 장치에 대 한 알려진 문제점
+
+### 키보드가 특수 문자로 전환 되지 않음
+
+사용자가 회사 또는 학교 계정을 선택 하 고 암호를 입력 하는 경우, &123 단추를 탭 하 여 키보드의 특수 문자로 전환 하려고 하면 OOBE 중에 문제가 발생 하는 경우 특수 문자로 변경 되지 않습니다. 
+
+해결 방법:
+-   키보드를 닫은 후 텍스트 필드를 눌러 다시 엽니다.
+-   비밀 번호를 잘못 입력 했습니다. 다음 번에 키보드가 relaunched 경우 정상적으로 작동 하 게 됩니다.
+- 웹 인증, 키보드를 닫고 **다른 장치에서 로그인**을 선택 합니다. 
+-   숫자만 입력 하는 경우 사용자는 특정 키를 눌러 확장 된 메뉴를 열 수 있습니다.
+-   USB 키보드 사용
+
+이는 영향을 받지 않습니다.
+- 개인 계정을 사용 하기로 선택 하는 사용자
 
 ### 참가자 빌드를 사용 하 여 디바이스 reflashed에서 참가자 미리 보기 빌드의 unenrolling 후 파란색 화면이 표시 됨
 
@@ -98,7 +112,7 @@ Visual Studio에는이 문제에 대 한 수정 사항이 포함 된 VS 2019 버
 1. 프로젝트 이름 (예: "HoloLensDeploymentFix")을 지정 하 고 프레임 워크가 최소 .NET Framework 4.5로 설정 되어 있는지 확인 한 다음 **확인**을 선택 합니다.
 1. 솔루션 탐색기에서 **참조** 노드를 마우스 오른쪽 단추로 클릭 하 고 다음 참조를 추가 합니다 ( **찾아보기** 섹션을 선택 하 고 **찾아보기**선택).
 
-    ```CMD
+    ```console
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Deploy.dll
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\Microsoft.Tools.Connectivity.dll
     C:\Program Files (x86)\Windows Kits\10\bin\10.0.18362.0\x86\SirepInterop.dll
@@ -113,7 +127,7 @@ Visual Studio에는이 문제에 대 한 수정 사항이 포함 된 VS 2019 버
 1. 솔루션 탐색기에서 두 파일을 찾아 선택 하 고 (파일 목록의 맨 아래에 있어야 함) **속성** 창에서 **출력 디렉터리로 복사** 를 **항상 복사**로 변경 합니다.
 1. 파일의 맨 위에 있는 기존 문 목록에 다음을 추가 합니다 `using` .
 
-    ```CMD
+    ```console
     using Microsoft.Tools.Deploy;
     using System.Net;
     ```
