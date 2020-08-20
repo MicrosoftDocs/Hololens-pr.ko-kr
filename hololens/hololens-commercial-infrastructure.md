@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 65403589fa3d612290fdd59a4843da27c12a956c
-ms.sourcegitcommit: f3cda6c6b3bfb7ba4be5f4da66d8ed5b03ca807d
+ms.openlocfilehash: 1031eaeaf2767f8aa982d74bb282bc1fb086051b
+ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "10830152"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "10940218"
 ---
 # HoloLens 네트워크 구성
 
@@ -62,6 +62,9 @@ HoloLens는 제한된 클라우드 연결 해제 환경을 지원합니다.
 1. 원격 지원에서 최적의 성능을 내도록 권장되는 대역폭은 1.5 Mbps입니다. 자세한 네트워크 요구 사항과 추가 정보는 [여기](https://docs.microsoft.com/MicrosoftTeams/prepare-network)에서 볼 수 있습니다.
 **(네트워크 속도가 1.5Mbps 이상인 네트워크가 아닌 경우에도 Remote Assist는 계속 작동합니다. 그러나 품질이 저하될 수 있습니다.)**
 1. 이러한 포트와 URL이 네트워크 방화벽에서 허용되는지 확인합니다. 이를 통해 Microsoft Teams가 실행하게 됩니다. 최신 목록은[여기](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)에서 볼 수 있습니다.
+
+- [원격 지원의 특정 네트워크 요구 사항](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#network-requirements)에 대해 자세히 알아보세요. 
+- [Microsoft Teams에 맞게 조직의 네트워크를 준비](https://docs.microsoft.com/MicrosoftTeams/prepare-network)하는 방법에 대해 알아보세요.
 
 ### 특정 네트워크 요구 사항 가이드
 

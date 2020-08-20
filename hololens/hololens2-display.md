@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: bf0f293fac531045e50bee9a9dd153eb9dd2b377
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 80ac6348dd2cba932316b690cafc4c5dc0331353
+ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929917"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "10940208"
 ---
 # HoloLens 2 디스플레이
 
@@ -30,7 +30,7 @@ HoloLens 2의 경우 디스플레이에 표시되는 홀로그램의 최고 시�
 * **디스플레이 밝기를 늘립니다.** 홀로그램은 디스플레이가 가장 밝은 수준에 있을 때 가장 잘 보입니다.
 * **바이저를 눈에 더 가까이 댑니다.** 바이저를 눈에 가장 가까운 위치로 스윙합니다.
 * **바이저를 아래로 이동합니다.** 눈썹 패드를 이마에서 아래로 이동하여 바이저가 코에 더 가깝게 이동하게 합니다.
-* **시각 보정을 실행합니다.** 디스플레이는 IPD(Interpuperial distance)와 아이 시어즈를 사용하여 디스플레이의 이미지를 최적화합니다. 시각 보정을 실행하지 않으면 이미지 품질이 악화될 수 있습니다. 눈동자 보정을 실행 하려면 **설정** ➔ **시스템** ➔ **보정** ➔ **눈 보정을 실행**합니다.
+* **시각 보정을 실행합니다.** 디스플레이는 IPD(Interpuperial distance)와 아이 시어즈를 사용하여 디스플레이의 이미지를 최적화합니다. 시각 보정을 실행하지 않으면 이미지 품질이 악화될 수 있습니다. 눈 보정을 실행하려면 **설정** > **시스템** > **보정** > **눈 보정 실행**으로 이동하세요.
 
 ## FAQ
 
@@ -77,11 +77,14 @@ HoloLens 1을 경험한 후 고객이 Microsoft에 가장 많이 요청한 사�
 
 ### 개발자가 다크 모드 설계 원칙을 적용하기 위해 사용할 수 있는 지침은 무엇입니까?
 
-Microsoft는 다크 모드 설계 원리에 대한 개발자 지침을 준비하고 있습니다. 이 지침은 곧 [개발자 설명서](https://docs.microsoft.com/windows/mixed-reality/)에서 확인할 수 있습니다. 요약한 정보는 다음과 같습니다.
+흰색 배경을 피하는 경우 최상의 환경을 제공합니다. 어둡게 모드는 앱에서 검정색이나 어두운 색상의 배경을 사용하는 데 사용하는 디자인 원칙입니다. 시스템 설정은 기본적으로 어둡게 모드로 설정되며 **설정** > **시스템** > **색**으로 이동하여 조정할 수 있습니다.
 
-* UI 배경에 어두운 색상을 사용합니다.
-* 세미볼드 또는 굵게 표시된 글꼴 가중치를 사용합니다.
-* Mixed Reality Toolkit의 홀로그래픽 백플레이트 재료를 사용합니다.
+개발자는 어둡게 모드 디자인 가이드를 따르는 것이 좋습니다.
+
+* [HoloLens 디스플레이용 개발자 디자인 가이드](https://docs.microsoft.com/windows/mixed-reality/designing-content-for-holographic-display#design-guidelines)
+* [권장 글꼴 크기](https://docs.microsoft.com/windows/mixed-reality/typography#recommended-font-size)
+
+홀로그램에 흰색 배경이 필요한 경우 표시 되는 디스플레이의 전체 보기 필드보다 홀로그램 크기를 작게 유지합니다. 이 크기를 사용하여 홀로그램을 디스플레이 가운데에 배치할 수 있습니다.
 
 ### HoloLens 2 디스플레이는 어떻게 청소합니까?
 
