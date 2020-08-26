@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 18a583f407b19c5b86870a49b8182d45f46a45f5
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 3ac86512755620ebb6159dd4d845b488e203dbad
+ms.sourcegitcommit: 238d41844116ab94d347a2ffd0fbfa18b8a81947
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857806"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "10956764"
 ---
 # 라이선스 요구 사항
 
@@ -31,9 +31,9 @@ Intune을 MDM으로 사용하는 경우 [다음](https://docs.microsoft.com/intu
 
 ## 시나리오 및 제품에 필요한 라이선스 식별
 
-### HoloLens 라이선스 요구 사항
+### HoloLens(1세대) 라이선스 요구 사항
 
-HoloLens 1 Gen 장치를 비즈니스용 Windows Holographic으로 업그레이드해야 할 수 있습니다. (업그레이드해야 하는지 여부를 결정하기 위해 [HoloLens 상업용 기능](holoLens-commercial-features.md#feature-comparison-between-editions)을 참조하세요.)
+HoloLens(1세대) 장치를 비즈니스용 Windows Holographic으로 업그레이드해야 할 수 있습니다. (업그레이드해야 하는지 여부를 결정하기 위해 [HoloLens 상업용 기능](holoLens-commercial-features.md#feature-comparison-between-editions)을 참조하세요.)
 
  업그레이드가 필요한 경우 다음을 수행해야 합니다.
 
@@ -45,6 +45,7 @@ HoloLens 1 Gen 장치를 비즈니스용 Windows Holographic으로 업그레이�
 필수 라이선싱 및 장치를 사용하고 있는지 확인합니다. 업데이트된 라이선스 및 제품 요구 사항은 [여기](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements)에서 찾을 수 있습니다.
 
 1. [원격 지원 라이선스](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)
+    1. 또는 [원격 지원 평가판을 사용해 보세요](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
 1. [Teams Freemium/Teams](https://products.office.com/microsoft-teams/free)
 1. [Azure AD(Azure Active Directory) 라이선스](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 
