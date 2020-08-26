@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d51616f23a63c1f45fe5ed7da88be4b5429c36eb
-ms.sourcegitcommit: 238d41844116ab94d347a2ffd0fbfa18b8a81947
+ms.openlocfilehash: e819dfb95a6735d0eae6287d97f5856856a33526
+ms.sourcegitcommit: 7f48e7103f869a22a0d20a54dc8f9b708b22484c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "10956774"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "10963680"
 ---
 # Microsoft HoloLens 참가자 미리 보기
 
@@ -261,8 +261,10 @@ HoloLens 2 장치의 추가 관리 옵션을 허용 하는 새로 사용할 수 
 
 ### HoloLens 2에 대 한 사용 설정 페이지 표시 여부
 이제 IT 관리자가 시스템 설정 앱의 특정 페이지를 표시 하거나 액세스할 수 없도록 하거나 지정 된 모든 페이지를 제외 하 고,이 정책을 사용 하도록 설정 했습니다. 이 기능을 완전히 사용자 지정 하는 방법에 대 한 자세한 내용을 보려면 아래 링크를 클릭 하세요.
- 
+
 - [PageVisibilityList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)
+
+HoloLens 2에서 사용자 지정할 수 있는 페이지 설정을 알아보려면 [설정 uri 페이지](settings-uri-list.md)를 방문 하세요. 
  
 ![설정 앱에서 수정 되는 활성 시간 스크린샷](images/hololens-page-visibility-list.jpg)
 
@@ -271,6 +273,7 @@ HoloLens 2 장치의 추가 관리 옵션을 허용 하는 새로 사용할 수 
 - 현재 OOBE의 다른 화면은 어둡게 모드입니다.
 - 자세한 내용은 온라인의 최신 개인 정보 취급 방침을 참고 하세요.
 - 사용자가 프로 비전 패키지를 통해 VPN 프로필을 프로 비전 할 수 없는 문제를 해결 했습니다.
+- 장치를 [단일 앱 키오스크](hololens-kiosk.md)로 설정 하는 경우 MTP (미디어 전송 프로토콜)를 통해 HoloLens 장치가 파일 탐색기에 표시 되지 않도록 하는 문제를 해결 했습니다. MTP (일반의 경우 USB 연결)는 [Allowe 연결](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) 정책을 사용 하 여 계속 사용할 수 있습니다.
 
 ## 참가자 빌드 받기 시작
 
