@@ -11,70 +11,124 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 10588713cc7670fb8e7f9601b504e327c3462aed
-  ms.sourcegitcommit: 5e9c558ff1c9c12eb17a7343a7571f710993e386
+  ms.openlocfilehash: 544582762cb950d319f96647fc41a75507389059
+  ms.sourcegitcommit: e17e3449d22e770ce45e9e7b9ad55396a1c7360c
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 08/17/2020
-  ms.locfileid: "10932121"
+  ms.lasthandoff: 08/28/2020
+  ms.locfileid: "10978635"
 landingContent:
-- title: 배포 및 관리
+- title: HoloLens 개요
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: HoloLens 2 하드웨어
+      url: hololens2-hardware.md
+    - text: HoloLens(1세대) 하드웨어
+      url: hololens1-hardware.md
+    - text: 시작 메뉴 및 혼합 현실 홈 사용
+      url: holographic-home.md
+    - text: 응용 프로그램 찾기, 설치 및 제거
+      url: holographic-store-apps.md
+    - text: 시각적 품질과 편안함 개선
+      url: hololens-calibration.md
+    - text: HoloLens 업데이트하는 법
+      url: hololens-update-hololens.md
+- title: 준비
   linkLists:
   - linkListType: get-started
     links:
     - text: 상용 환경에서 HoloLens 배포
       url: hololens-requirements.md
-    - text: '앱 관리: 개요'
-      url: app-deploy-overview.md
+    - text: 보안 개요
+      url: security-overview.md
+    - text: 라이선스 요구 사항
+      url: hololens-licenses-requirements.md
+    - text: HoloLens 환경 고려 사항
+      url: hololens-environment-considerations.md
+    - text: 상업용 기능
+      url: hololens-commercial-features.md
+- title: 구성
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: HoloLens에 대한 사용자 ID 및 로그인 관리
+      url: hololens-identity.md
+    - text: HoloLens 네트워크 구성
+      url: hololens-commercial-infrastructure.md
+    - text: 네트워크에 HoloLens 연결
+      url: hololens-network.md
+    - text: HoloLens에 대한 연결 엔드포인트 관리
+      url: hololens-offline.md
+    - text: 프로비저닝 패키지를 사용하여 HoloLens 구성
+      url: hololens-provisioning.md
     - text: HoloLens를 키오스크로 설정
       url: hololens-kiosk.md
+- title: 배포
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: MDM에 HoloLens 등록
+      url: hololens-enroll-mdm.md
+    - text: HoloLens용 Windows 자동 실행 2
+      url: hololens2-autopilot.md
+    - text: 애플리케이션 관리 개요
+      url: app-deploy-overview.md
+    - text: 비즈니스용 Microsoft Store
+      url: app-deploy-intune.md
+    - text: 비즈니스용 Microsoft Store
+      url: app-deploy-store-business.md
+    - text: 프로비저닝 패키지
+      url: app-deploy-provisioning-package.md
+- title: 유지 관리
+  linkLists:
+  - linkListType: how-to-guide
+    links:
     - text: HoloLens 업데이트 관리
       url: hololens-updates.md
-- title: Dynamics 365
-  linkLists:
-  - linkListType: reference
-    links:
-    - text: Microsoft Dynamics 365 혼합 현실 설명서
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/
-    - text: HoloLens에서 원격 지원 사용
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens
-    - text: HoloLens에서 가이드 사용
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
-    - text: 원격 지원 학습 모듈
-      url: https://docs.microsoft.com/en-us/learn/browse/?products=dynamics-remote-assist
-- title: 관련 리소스
-  linkLists:
-  - linkListType: reference
-    links:
-    - text: 혼합 현실 개발자 설명서
-      url: https://developer.microsoft.com/windows/mixed-reality/development
-    - text: HoloLens 가격 및 옵션
-      url: https://www.microsoft.com/hololens/buy
-- title: 문제 해결
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: HoloLens 2 다시 시작, 초기화 또는 복구
-      url: hololens-recovery.md
     - text: HoloLens 문제 해결
       url: hololens-troubleshooting.md
+    - text: HoloLens 2 다시 시작, 초기화 또는 복구
+      url: hololens-recovery.md
+    - text: HoloLens 2(1세대) 다시 시작, 초기화 또는 복구
+      url: hololens1-recovery.md
+    - text: HoloLens의 알려진 문제
+      url: hololens-known-issues.md
     - text: HoloLens 장치에서 진단 정보 수집 및 사용
       url: hololens-diagnostic-logs.md
-- title: 지원
+- title: 릴리스 정보 및 피드백
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: HoloLens 2 릴리스 정보
+      url: hololens-release-notes.md
+    - text: Microsoft HoloLens 참가자 미리 보기
+      url: hololens-insider.md
+    - text: 피드백을 보내 주세요.
+      url: hololens-feedback.md
+- title: 추가 서비스
   linkLists:
   - linkListType: reference
     links:
-    - text: HoloLens 2 릴리스 정보
-      url: https://docs.microsoft.com/hololens/hololens-release-notes
-    - text: 고객 지원
-      url: https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f
-- title: 혼합 현실
+    - text: Dynamics 365 Remote Assist 문서
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview
+    - text: Dynamics 365 Remote Assist에 대해 알아보기
+      url: https://docs.microsoft.com/learn/browse/?products=dynamics-remote-assist
+    - text: Dynamics 365 Guides
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
+    - text: Microsoft Dynamics 365 혼합 현실
+      url: https://docs.microsoft.com/dynamics365/mixed-reality/
+    - text: 클라우드 서비스 개요
+      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
+- title: 기타 참고 자료
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 혼합 현실 시작
-      url: https://docs.microsoft.com/windows/mixed-reality/
+    - text: 혼합 현실이란 무엇인가요?
+      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality
     - text: 디자인 및 프로토타입 생성 시작
       url: https://docs.microsoft.com/windows/mixed-reality/design
-    - text: 도구 및 아키텍처 알아보기
-      url: https://docs.microsoft.com/windows/mixed-reality/development
+    - text: 혼합 현실 개발 소개
+      url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
+    - text: 고객 지원
+      url: https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f
