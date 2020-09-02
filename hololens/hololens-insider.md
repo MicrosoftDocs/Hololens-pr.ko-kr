@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 7/17/2020
+ms.date: 8/21/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 843e0ecf393a922be80d4a0c9d9c8be84bd8c553
-ms.sourcegitcommit: 98d6c4e63636c5d8707011d0044014fbc4b84495
+ms.openlocfilehash: 1ade83e263a8dcf7fbf0a6723f14e09befbd49f9
+ms.sourcegitcommit: 2b1de9c8f8a212a797fb0cb6056856dd4ff716a1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "10965072"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "10985864"
 ---
 # Microsoft HoloLens 참가자 미리 보기
 
@@ -149,16 +149,27 @@ RequireNetworkInOOBE는 HoloLens 2에서 TenantLockdown Csp의 a 노드가 true�
 
 #### Intune을 사용 하 여 설정 하는 방법은 무엇 인가요? 
 1. 사용자 지정 OMA URI 장치 구성 프로필을 만들고 아래와 같이 RequireNetworkInOOBE 노드에 true를 지정 합니다.
-OMA-URI 값은/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE 설정 해야 합니다. ![ oma-uri를 통해 tennant 잠금](images/hololens-tenant-lockdown.png)
+OMA URI 값은/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE 이어야 합니다.
+
+   > [!div class="mx-imgBorder"]
+   > ![OMA-URI를 통해 tennant 잠금 설정](images/hololens-tenant-lockdown.png)
+
 1. 그룹을 만들고 장치 구성 프로필을 해당 장치 그룹에 할당 합니다. 
+
 1. 이전 단계에서 만든 그룹의 HoloLens 2 장치 구성원을 만들고 동기화를 시작 합니다.  
 
 장치 구성이 성공적으로 적용 되었는지 Intune 포털에서 확인 합니다. 이 장치 구성이 Hololens 2 장치에 성공적으로 적용 되 면 TenantLockdown 효과가 활성화 됩니다.
 
 #### Intune을 사용 하 여 HoloLens 2에서 TenantLockdown RequireNetworkInOOBE 설정 해제 하는 방법 
 1. 위에서 만든 장치 구성이 이전에 할당 된 장치 그룹에서 HoloLens 2를 제거 합니다. 
-1. 사용자 지정 OMA URI 기반 장치 구성 프로필을 만들고 아래와 같이 RequireNetworkInOOBE에 대해 false를 지정 합니다. OMA URI 값은 ![ Intune에서 OMA uri를 통해 RequireNetworkInOOBE를 false로 설정 하는/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE 스크린샷](images/hololens-tenant-lockdown-false.png)
+
+1. 사용자 지정 OMA URI 기반 장치 구성 프로필을 만들고 아래와 같이 RequireNetworkInOOBE에 대해 false를 지정 합니다. OMA URI 값은/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE 이어야 합니다.
+
+   > [!div class="mx-imgBorder"]
+   > ![Intune에서 OMA URI를 통해 RequireNetworkInOOBE를 false로 설정 하는 스크린샷](images/hololens-tenant-lockdown-false.png)
+
 1. 그룹을 만들고 장치 구성 프로필을 해당 장치 그룹에 할당 합니다. 
+
 1. 이전 단계에서 만든 그룹의 HoloLens 2 장치 구성원을 만들고 동기화를 시작 합니다.
 
 장치 구성이 성공적으로 적용 되었는지 Intune 포털에서 확인 합니다. 이 장치 구성이 Hololens 2 장치에 성공적으로 적용 되 면 TenantLockdown 효과가 비활성화 됩니다. 
