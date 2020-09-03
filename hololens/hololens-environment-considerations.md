@@ -10,12 +10,12 @@ ms.prod: hololens
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: high
-ms.openlocfilehash: 2632c5bfd82feab4e21ee9c393f8c22efda28c42
-ms.sourcegitcommit: 458e07c0dcad66616fa98cfef125eb217713d89c
+ms.openlocfilehash: dc8182d04a8cdc8a8ec3775a8e453a41d29486d3
+ms.sourcegitcommit: 0abe53295191e22299d5be49f2cef4e85744d0fd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "10927842"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10993648"
 ---
 # HoloLens 환경 고려 사항
 
@@ -117,8 +117,17 @@ Wi-Fi가 활성화되어 있는 한 지도 데이터는 실제 Wi-Fi 네트워�
 
 다른 사람이 HoloLens를 사용하려는 경우 먼저 보정 앱을 실행하여 그들에게 맞게 디바이스를 적절하게 설정해야 합니다.
 
-### 기온 및 규정 정보
-[HoloLens 규제](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): 온도, 처분, 라디오 및 TV 간섭 등에 대한 정보를 포함합니다.
+## 기온 및 규정 정보
+
+[HoloLens 규제 정보](https://support.microsoft.com/en-us/help/13761/hololens-regulatory-information): 온도 범위, 해제, 라디오 및 TV 간섭 등에 대한 정보를 포함합니다.
+
+다음은 장치를 사용할 때 따라야 하는 몇 가지 지침입니다.
+
+1. 장치를 사용하기 전에 1시간 동안 온도 범위 내의 환경에 대기 모드나 꺼진 상태에서 장치를 보관합니다.
+1. 온도 범위 내의 환경에서 장치를 사용합니다.
+1. 실내에서 장치를 사용합니다.
+1. 실내에서도 창문이나 천창을 통한 직사광선을 피하여 장치를 그늘에서 사용하세요.
+1. 위의 지침을 따랐지만, 예기치 않은 과열 문제가 발생한 경우 [피드백](hololens-feedback.md)을 제출하기 전에 전체 원격 측정 기능이 활성화되어 있는지 확인합니다.
 
 ## 참고 항목
 
