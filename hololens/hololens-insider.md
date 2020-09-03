@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1ade83e263a8dcf7fbf0a6723f14e09befbd49f9
-ms.sourcegitcommit: 2b1de9c8f8a212a797fb0cb6056856dd4ff716a1
+ms.openlocfilehash: 1f7e2be19f525863a64ec7652e2418029a98cdca
+ms.sourcegitcommit: f79d8a6e863cebf18270d33a26548ba4ffdcf6b5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10985864"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "10994431"
 ---
 # Microsoft HoloLens 참가자 미리 보기
 
@@ -38,7 +38,7 @@ HoloLens에 대 한 최신 참가자 Preview 빌드에 오신 것을 환영 합�
 | [USB에서 자동 시작 프로 비전](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE는 USB 드라이브에서 프로 비전 패키지를 자동으로 검색 합니다.                                | 19041.1361 +                 |
 | [OOBE에서 프로 비전 패키지 자동 확인](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | OOBE에서 자동으로 프로비저닝 패키지를 적용 합니다.                                             | 19041.1361 +                 |
 | [Wi-fi 연결에 Autopilot 사용](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | 이더넷 어댑터가 필요 없이 device Wi-fi의 autopilot를 사용 합니다.                             | 19041.1364 +                 |
-|[Tenantlockdown CSP 및 Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | 테 넌 트 등록 및 policiy 적용 된 후 장치를 다시 설정 하거나 다시 사용할 때 해당 테 넌 트에만 장치를 등록할 수 있습니다. | 19041.1366 +|
+|[Tenantlockdown CSP 및 Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | 테 넌 트 등록 및 정책이 적용 된 후 장치를 다시 설정 하거나 다시 사용할 때 해당 테 넌 트에만 장치를 등록할 수 있습니다. | 19041.1366 +|
 | [전체 할당된 액세스](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | 시스템 수준에서 적용 되는 여러 앱 키오스크 모드에 대해 HoloLens 2 장치를 구성 합니다. | 19041.1356 +                 |
 | [다중 앱 키오스크에서 앱 자동 실행](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | 여러 앱 키오스크 모드에 로그인 할 때 응용 프로그램이 자동으로 실행 되도록 설정 합니다.     | 19041.1346 +                 |
 | [키오스크 용 방문자 자동 로그온](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | 키오스크 모드에 사용할 방문자 계정에 대 한 자동 로그온을 사용 하도록 설정 합니다.                         | 19041.1361 +                 |
