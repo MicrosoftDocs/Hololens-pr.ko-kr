@@ -14,18 +14,18 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 9c9dd12b596d8fafdfe575797193f18e7b96919c
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: 8c028ed39cf0925ebff18ca69889de2d87f1e7eb
+ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915972"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "10996416"
 ---
 # HoloLens 2 다시 시작, 초기화 또는 복구
 
 ## 장치 충전
 
-문제 해결 절차를 시작하기 전에 가능한 경우 장치의 배터리 용량이 20~40%정도 충전되어 있는지 확인합니다. HoloLens 2 장치와 함께 제공되는 충전기와 USB 유형 C 케이블을 사용하세요. 해당 액세서리를 사용할 수 없는 경우 사용할 수 있는 충전기가 최소 15W의 전원을 지원할 수 있는지 확인하세요.
+문제 해결 절차를 시작하기 전에 가능한 경우 장치의 배터리 용량이 20~40%정도 충전되어 있는지 확인합니다. HoloLens 2 장치와 함께 제공되는 충전기와 USB 유형 C 케이블을 사용하세요. 디바이스와 함께 제공되는 전원 공급 장치와 USB-C-to-C 케이블이 HoloLens 2를 충전하는 가장 좋은 방법입니다. 충전기는 18W의 전력을 공급합니다(2A에서 9V). 해당 액세서리를 사용할 수 없는 경우 사용할 수 있는 충전기가 최소 15W의 전원을 지원할 수 있는지 확인하세요.
 
 > [!NOTE]
 > 가능하면 PC에 USB를 연결해 장치를 충전하지 마세요. 속도가 느립니다.
@@ -34,11 +34,15 @@ ms.locfileid: "10915972"
 
 - HoloLens 장치 UI의 주 메뉴에서 확인
 - 전원 버튼 가까이 있는 LED로 확인(40%에서는 LED가 최소 2개 켜진 것을 볼 수 있습니다.)
-- 호스트 PC에서 파일 탐색기를 열고 **이 PC** 아래의 왼쪽에서 HoloLens 2 장치를 찾아서 확인 장치를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. 대화 상자에 배터리 충전 수준이 표시됩니다.
+    - 디바이스가 충전 중일 때 배터리 표시등이 켜지면서 현재 충전 수준을 나타냅니다.  마지막 표시등은 활성 충전을 나타내기 위해 안 페이드 인/페이드 아웃합니다.
+    - HoloLens가 켜져 있으면 배터리 표시등에 배터리 수준이 5단계로 표시됩니다.
+    - 5개의 표시등 중 하나만 켜져 있으면 배터리 잔량이 20% 미만입니다.
+    - 배터리 잔량이 매우 낮은 상태에서 장치를 켜려고 하면 한 개의 표시등이 잠깐 깜박인 다음 꺼집니다.
+- 호스트 PC에서 **파일 탐색기**를 열고 **이 PC** 아래의 왼쪽에서 HoloLens 2 장치를 찾습니다. 장치를 마우스 오른쪽 단추로 클릭하고 **속성**을 선택합니다. 대화 상자에 배터리 충전 수준이 표시됩니다.
 
    ![HoloLens 2 속성 화면에 배터리 충전 수준이 표시됩니다.](images/ResetRecovery2.png)
 
-장치가 시작 메뉴로 부팅할 수 없는 경우 호스트 PC에 LED 모양과 장치 열거형을 기록해 둡니다. 그런 다음 [문제 해결 가이드](https://docs.microsoft.com/hololens/hololens-troubleshooting)를 따릅니다. 장치 상태가 문제 해결 가이드에 나열된 상태에 해당하지 않으면 장치를 호스트 PC가 아닌 전원 공급 장치에 연결하고 *하드 초기화 절차*를 실행합니다. 장치가 충전될 때까지 1시간 이상 기다립니다.
+장치가 시작 메뉴로 부팅할 수 없는 경우 호스트 PC에 LED 모양과 장치 열거형을 기록해 둡니다. 그런 다음 [문제 해결 가이드](https://docs.microsoft.com/hololens/hololens-troubleshooting)를 따릅니다. 장치 상태가 문제 해결 가이드에 나열된 상태에 해당하지 않으면 장치를 호스트 PC가 아닌 전원 공급 장치에 연결하고 [하드 초기화 절차](hololens-recovery.md#hard-reset-procedure)를 실행합니다. 장치가 충전될 때까지 1시간 이상 기다립니다.
 
 ## 장치 초기화
 
@@ -70,7 +74,14 @@ ms.locfileid: "10915972"
 
 ## 장치 클린 리플래시
 
-드물게 일부 상황에서 HoloLens 2를 ‘클린 플래시’해야 할 수 있습니다. 장치를 리플래시하는 두 가지 방법이 있습니다. 두 가지 방법 모두 [Windows 스토어에서 고급 복구 도우미](https://www.microsoft.com/store/productId/9P74Z35SFRS8)를 먼저 설치해야 합니다. 
+드물게 일부 상황에서 HoloLens 2를 ‘클린 플래시’해야 할 수 있습니다. 클린 리플래시는 다음 문제에 영향을 주지 않을 것으로 예상됩니다.
+- [색상 균일성 표시](hololens2-display.md)
+- 부팅시 소리가 나지만 디스플레이 출력이 없음
+- [1-3-5-LED 패턴](hololens2-setup.md#lights-to-indicate-problems)
+- [과열](hololens-environment-considerations.md#temperature-and-regulatory-information) 
+- OS 충돌(응용 프로그램 충돌과는 다름)
+
+장치를 리플래시하는 두 가지 방법이 있습니다. 두 가지 방법 모두 [Windows 스토어에서 고급 복구 도우미](https://www.microsoft.com/store/productId/9P74Z35SFRS8)를 먼저 설치해야 합니다. 
 
 >[!WARNING]
 >장치를 리플래시하면 TPM 초기화 정보를 포함한 모든 개인 데이터, 앱 및 설정 내용이 지워집니다.

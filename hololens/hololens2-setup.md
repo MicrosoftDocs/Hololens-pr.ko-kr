@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 943cc5af8f5be337a9cfcc0d3e4a4640aa307e72
-ms.sourcegitcommit: 14c30f412cd17058d0316444215f878ba1ee422f
+ms.openlocfilehash: b2d95839ff394d61eec8f5c76baf9a151855794a
+ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "10905625"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "10996406"
 ---
 # HoloLens 2 사용 준비
 
@@ -33,6 +33,8 @@ USB-C 케이블(포함)을 사용하여 전원 공급 장치를 충전 포트에
 - HoloLens가 켜져 있으면 배터리 표시등에 배터리 잔량이 점진적으로 표시됩니다.
 - 5개의 표시등 중 하나만 켜져 있으면 배터리 잔량이 20% 미만입니다.
 - 배터리 잔량이 매우 낮은 상태에서 장치를 켜려고 하면 한 개의 표시등이 잠깐 깜박인 다음 꺼집니다.
+
+추가 정보가 필요한 경우 [여기에서 장치 충전에 대한 세부 내용](hololens-recovery.md#charge-the-device)을 읽을 수 있습니다. 
 
 ## 핏 조정
 
@@ -108,7 +110,7 @@ HoloLens의 표시등이 무엇을 의미하는지 확실하지 않습니까? �
 | - | - | - |
 | 전원 단추를 누릅니다. | 한 표시등이 다섯 번 깜박이고 꺼집니다. | HoloLens 배터리가 매우 부족합니다. HoloLens를 충전합니다. |
 | 전원 단추를 누릅니다. | 다섯 개의 표시등이 다섯 번 깜박이고 꺼집니다. |  HoloLens를 제대로 시작할 수 없으며 오류 상태입니다. 디바이스를 복구하려면 [운영 체제를 다시 설치](hololens-recovery.md)합니다. |
-| 전원 단추를 누릅니다. | 1번째, 3번째 및 5번째 표시등이 연속적으로 깜박입니다. |  HoloLens에 하드웨어 오류가 있을 수 있습니다. 확인하려면 [OS를 다시 설치](hololens-recovery.md)하고 다시 시도하세요. OS를 다시 설치한 후에 표시등 깜박이 패턴이 계속되면 [지원 담당자](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb)에게 문의하세요. |
+| 전원 단추를 누릅니다. | 1번째, 3번째 및 5번째 표시등이 연속적으로 깜박입니다. |  HoloLens에 하드웨어 오류가 있을 수 있습니다. [지원 사이트](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapid=3ec35c62-022f-466b-3a1e-dbbb7b9a55fb)에 문의하세요. |
 
 ## 안전 및 편안함
 
