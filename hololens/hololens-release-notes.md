@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 릴리스 정보
-description: 새로운 HoloLens 릴리스의 업데이트에 대해 자세히 알아보세요.
+description: 각각의 새 HoloLens 2 릴리스의 업데이트에 대해 알아봅니다.
 author: scooley
 ms.author: scooley
 manager: laurawi
@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3e2bb1a6f8de93faa1a1157b3d05ff671d0b0a45
-ms.sourcegitcommit: 5799ce0f3d8f1d231823cff6c9c013ce933b8f3b
+ms.openlocfilehash: 0fe78d4b668523de4faa66a64f54c14760a81b12
+ms.sourcegitcommit: bddd470ac475dd8fc7b69e8904d18082a83f39e0
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "10926331"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "10997219"
 ---
 # HoloLens 2 릴리스 정보
 
@@ -28,6 +28,25 @@ HoloLens 장치를 능숙 하 게 사용할 수 있도록 기능, 버그, 보안
 
 >[!NOTE]
 > HoloLens 에뮬레이터 릴리스 노트를 읽으려면 [보관 파일을 방문](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)하세요.
+
+## Windows 홀로그램 버전 2004-2020 업데이트-09 월
+- 빌드 19041.1117
+
+업데이트의 개선 사항 및 수정 사항:
+
+- SupportsMultipleInstances = "true"가 appxmanifest에 있을 때 Visual Studio에서 응용 프로그램을 디버그할 수 없도록 하는 문제를 해결 합니다.
+- 이 릴리스에는 네트워크 프록시를 통해 실패 한 인터넷 검색을 처리 하는 NCSI 프록시 검색 수정 사항이 포함 되어 있습니다. NCSI는 인터넷 연결 검색을 위해 컴퓨터 프록시와 프로필 단위 프록시를 사용할 수 있습니다. 사용자 당 프록시는 향후 릴리스에서 NCSI를 통해 지원 됩니다.
+- 대부분의 Windows Mixed Reality 장치에서 전방 방향 벡터는 사용자의 헤드가 중립 위치에 있을 때 지상에 평행한 것입니다. 그러나 이전 버전의 HoloLens 2에서는 벡터를 디스플레이 패널과 수직이 되도록 맞춥니다 (가장 적합 한 방향을 기준으로 몇도 아래로 기울어짐). 최신 버전의 HoloLens 2는 폼 팩터 간의 의미 일관성을 보장 하기 위해이를 수정 했습니다.
+- 특정 시나리오에서 추적 손실의 감소를 초래 하는 향상 된 수동 추적 견고성.
+- 이 릴리스에는 비디오 캡처 문제에 참가 한 오디오 타임 스탬프 품질을 개선 하는 수정 사항이 포함 되어 있습니다.
+
+## Windows 홀로그램 버전 1903-2020 업데이트-09 월
+- 빌드 18362.1079
+
+업데이트의 개선 사항 및 수정 사항:
+
+- 대부분의 Windows Mixed Reality 장치에서 전방 방향 벡터는 사용자의 헤드가 중립 위치에 있을 때 지상에 평행한 것입니다. 그러나 이전 버전의 HoloLens 2에서는 벡터를 디스플레이 패널과 수직이 되도록 맞춥니다 (가장 적합 한 방향을 기준으로 몇도 아래로 기울어짐). 최신 버전의 HoloLens 2는 폼 팩터 간의 의미 일관성을 보장 하기 위해이를 수정 했습니다.
+- 특정 시나리오에서 추적 손실의 감소를 초래 하는 향상 된 수동 추적 견고성.
 
 ## Windows 홀로그램 버전 2004-2020 업데이트 8 월
 - 빌드 19041.1113
