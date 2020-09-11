@@ -1,23 +1,24 @@
 ---
 title: 상태 구분 및 격리
 description: 상태 구분 및 격리
-author: jbennett
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: 보안, Hololens, 상태 구분 및 격리, Hololens 2, Hololens2, 보안, 보안 개요, 보안 아키텍처, 아키텍처, Hololens 2 아키텍처
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: ''
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e92e2fcbc13ad5c9e5748b1d619e387ae9a4d147
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: 702b713b7a930a2e4909dffaa895856d918d11c9
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865881"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009416"
 ---
 # 상태 구분 및 격리
 

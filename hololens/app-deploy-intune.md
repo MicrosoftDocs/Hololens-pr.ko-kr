@@ -2,7 +2,9 @@
 title: Intune 및 회사 포털
 description: intune, app management, 앱, 회사 포털, 포털
 keywords: intune, app management, 앱, 회사 포털, 포털, hololens
-author: v-jodben
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/22/2020
 ms.prod: hololens
 ms.custom:
@@ -12,17 +14,18 @@ ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: HoloLens
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f6a79224d02b4251a76f97f0463d4a11f6496670
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 5fc369caa2e5e26c91c07f9270c3984177507dbd
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857938"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009466"
 ---
-# Intune & 회사 포털
+# 인투네 & 컴퍼니 포털
 
 MDM (모바일 디바이스 관리)을 사용 하 여 사용자 지정 앱을 [Intune (Microsoft Endpoint Manager)](https://docs.microsoft.com/intune/windows-holographic-for-business) 을 통해 직접 HoloLens 장치에 배포할 수 있습니다. Microsoft Intune은 MDM (모바일 디바이스 관리) 및 MAM (모바일 응용 프로그램 관리)에 중점을 둔 클라우드 기반 서비스입니다. Intune은 Microsoft의[엔터프라이즈 Mobility + Security (EMS) 제품군](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)에 포함 되어 있으며, 사용자는 조직 데이터를 보호 하면서 생산성을 높일 수 있습니다. Intune에 대 한 자세한 내용은 [intune의 기능](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)을 참조 하세요.
 

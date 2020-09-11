@@ -2,25 +2,29 @@
 title: 비즈니스용 Microsoft Store
 description: 비즈니스용 Microsoft 스토어, msfb,
 keywords: 비즈니스용 Microsoft 스토어, msfb, app deployment, 스토어
-author: v-jodben
+author: evmill
+ms.author: v-evmill
 ms.date: 6/22/2020
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: HoloLens
-manager: yannisl
-ms.openlocfilehash: 57f2c75fd8b9f1295fd7380792bb8154888abb07
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+manager: yannisle
+ms.openlocfilehash: 82748301ccb6306c61e8a6f32ee126629221646a
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857935"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009496"
 ---
 # 비즈니스용 Microsoft Store
 
 비즈니스용 Microsoft 스토어는 비즈니스 또는 조직의 IT 의사 결정권자 및 관리자를 위해 기본적으로 설계 되어 있으며, 선택 해 서 구입한 지역에서 Windows 10 장치에 대 한 무료 및 유료 앱을 찾고, 관리 하 고, 배포 하는 유연한 방법입니다. 
 
 Microsoft Store 앱과 사설 비즈니스 기간 앱을 한 인벤토리에서 관리 하 고 필요에 따라 라이선스를 할당 하 고 다시 사용 합니다. 또한 개인 및 팀에 앱을 직접 할당 하거나, Microsoft Store의 비공개 페이지에 앱을 게시 하거나, 관리 솔루션에 연결 하 여 더 많은 옵션을 사용 하도록 조직에 가장 적합 한 배포 방법을 선택할 수 있습니다.
+
+최종 사용자가 비즈니스용 Microsoft Store를 사용 하는 경우 Microsoft 스토어 앱을 시작 합니다. 시작 된 사용자는 조직 이름을 가진 탭을 선택할 수 있으며, 그 다음에는 해당 장치에서 사용할 수 있는 앱이 표시 됩니다.
 
 > [!Note] 
 > 비즈니스용 Microsoft 스토어에서 앱이 자동으로 장치에 다운로드 되지 않습니다. 그러나 비즈니스용 Microsoft 스토어의 앱을 장치 관리 (MDM) 서버와 연결 하 여 앱을 대상으로 지정 하 고 장치에 동기화 할 수 있습니다.

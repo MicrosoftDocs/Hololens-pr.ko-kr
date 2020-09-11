@@ -1,8 +1,9 @@
 ---
-title: 패키지 프로비저닝
+title: 프로비저닝 패키지
 description: 앱, 앱 배포, 엔터프라이즈 앱 demployment, 프로비저닝
 keywords: 앱, 앱 배포, 엔터프라이즈 앱 demployment, 프로비저닝
-author: v-jodben
+author: evmill
+ms.author: v-evmill
 ms.date: 6/22/2020
 ms.prod: hololens
 ms.sitesec: library
@@ -13,13 +14,14 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7417f9e8cf1921d9fdb57dbd96fff094e21c44f9
-ms.sourcegitcommit: 29755f5af0086a43c532fb5a9a4ae65c36bc82de
+ms.openlocfilehash: 6daf99fbb60e0daf892d5d02e86492061a665070
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "10857951"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009506"
 ---
-# 패키지 프로비저닝
+# 프로비저닝 패키지
 
 프로 비전 패키지를 사용 하 여 끝점 관리에 대 한 액세스 권한이 없는 환경에서 디바이스를 준비 하 고 구성할 수 있습니다. 또한 사용자의 id, 등록 상태 (OOBE) 중, [설치 중에 프로비저닝 패키지를 적용](https://docs.microsoft.com/hololens/hololens-provisioning##apply-a-provisioning-package-to-hololens-during-setup)하 여 장치에 배포할 수 있습니다.
 

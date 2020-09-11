@@ -1,23 +1,24 @@
 ---
 title: 하드웨어 기반 무결성 및 런타임 증명
-description: HoloLens에 대한 암호 사용 제한
-author: jbennett
+description: 하드웨어 기반 무결성 및 런타임 증명
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: 보안, HoloLens, 하드웨어 기반 무결성, 런타임 증명, UEFI, UEFI 보안 부팅, 보안 부팅, TPM, 위협 방지, Windows 지속성 방지 보장, 코드 무결성, 코드 보호
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: ''
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d1a3fe02b64ce1566806119e5309fd262667b181
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: b3986d7310650c2fac20204488ae5f882754deab
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865803"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009476"
 ---
 # 하드웨어 기반 무결성 및 런타임 증명
 

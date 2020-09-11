@@ -1,24 +1,25 @@
 ---
 title: 암호 사용 제한
 description: HoloLens에 대한 암호 사용 제한
-author: jbennett
+author: evmill
+ms.author: v-evmill
+ms.reviewer: tagran
 ms.date: 6/30/2020
 ms.topic: article
 keywords: 보안, HoloLens, 암호 사용 제한, 암호, HoloLens 암호, 로그인, 로그인, Windows Hello, Hello, Windows 계정 관리자, FIDO2 로그인, FIDO2, WEBAUTHN, 로컬 계정, HoloLens 보안
 ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
-ms.reviewer: ''
-manager: yannisl
+manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 61330e77bc3aca5b0b21b58f18d087f7d5c06f3b
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: d577bc23089650e47159a8a77004a984059b095e
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865838"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009516"
 ---
 # 암호 사용 제한
 
