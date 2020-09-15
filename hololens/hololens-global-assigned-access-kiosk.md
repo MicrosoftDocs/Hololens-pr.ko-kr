@@ -53,9 +53,9 @@ ms.locfileid: "10902303"
 
  :::code language="xml" source="samples/exclude-one-aad-user-or-group.xml" highlight="8,11,17":::
 
-## 전역 할당 된 액세스 프로필에서 DeviceOwners 제외
+## 전체 할당된 액세스 프로필에서 DeviceOwners 제외
 
-이 기능을 사용하면 Hololens에서 "[장치 소유자](security-adminless-os.md)"로 간주되는 사용자를 전역 할당 액세스에서 제외할 수 있습니다. 이 기능을 이용하려면 다중 앱 키오스크 구성용 XML BLOB에서 강조 표시된 줄이 추가되었는지 확인합니다. 
+이 기능을 사용하면 Hololens에서 "[장치 소유자](security-adminless-os.md)"로 간주되는 사용자를 전체 할당된 액세스에서 제외할 수 있습니다. 이 기능을 이용하려면 다중 앱 키오스크 구성용 XML BLOB에서 강조 표시된 줄이 추가되었는지 확인합니다. 
 
  :::code language="xml" source="samples/exclude-device-owners-from-global.xml" highlight="6,16-18":::
  
