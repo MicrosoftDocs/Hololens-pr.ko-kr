@@ -72,6 +72,7 @@
 
 ## 정책
 ### [프로비저닝 패키지를 사용하여 HoloLens 구성](hololens-provisioning.md)
+### [MDM을 사용하여 HoloLens 장치 관리](hololens-mdm-configure.md)
 ### [HoloLens를 키오스크로 설정](hololens-kiosk.md)
 # 배포
 ## 등록

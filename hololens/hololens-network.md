@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: 0f46ff4a1bef95d153d9fa93c746c8977dc49771
-ms.sourcegitcommit: 47bc3b696936dd7011b3f9dd683deb872ed25b90
+ms.openlocfilehash: 0db64ffb4113ff948651c708c28b91da535cb09b
+ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "10883152"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "11009526"
 ---
 # 네트워크에 HoloLens 연결
 
@@ -29,6 +29,8 @@ HoloLens에서 대부분의 작업을 수행하려면 네트워크에 연결되�
 ## 처음 연결
 
 HoloLens를 처음 사용할 때 Wi-Fi 네트워크에 연결하는 방법에 대한 안내를 받습니다. 설치하는 동안 Wi-Fi에 연결하는 데 문제가 있는 경우, 네트워크가 공개, 암호로 보호된 네트워크 또는 종속 포털 네트워크인지 확인합니다. 네트워크에 연결할 때 인증서를 사용할 필요가 없는지 확인합니다. 설정 후, 다른 유형의 Wi-Fi 네트워크에 연결할 수 있습니다.
+
+HoloLens 2 장치의 경우 사용자가 [USB 타입 C에서 이더넷 어댑터](hololens-connect-devices.md#hololens-2-connect-usb-c-devices)를 사용하여 Wi-Fi에 직접 연결하여 장치 설정을 지원할 수도 있습니다. 장치가 설정되면 사용자가 어댑터를 계속 사용할 수도 있고 설정 후 장치와 어댑터의 연결을 끊고 [Wi-Fi에 연결](hololens-network.md#connecting-to-wi-fi-after-setup)할 수도 있습니다. 
 
 ## 설치 후 Wi-Fi에 연결
 
