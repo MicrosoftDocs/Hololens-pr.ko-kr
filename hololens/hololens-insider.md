@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1f7e2be19f525863a64ec7652e2418029a98cdca
-ms.sourcegitcommit: f79d8a6e863cebf18270d33a26548ba4ffdcf6b5
+ms.openlocfilehash: ef292e72eaf476a63df58a70865369790f88197a
+ms.sourcegitcommit: 1b19b0eb552189d7c50617bbdf3a102d3c85ee0e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "10994431"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "11016299"
 ---
 # Microsoft HoloLens 참가자 미리 보기
 
@@ -49,7 +49,9 @@ HoloLens에 대 한 최신 참가자 Preview 빌드에 오신 것을 환영 합�
 | [HoloLens 2에 대 한 새 전원 정책](hololens-insider.md#new-power-policies-for-hololens-2)                      | 전원 시간 제한 설정에 대해 새로 지원 되는 정책입니다.                                           | 19041.1349 +                 |
 | [업데이트 정책](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | 업데이트 제어를 허용 하는 새로 사용할 수 있는 정책                                            | 19041.1352 +                 |
 | [HoloLens 2에 대 한 사용 설정 페이지 표시 여부](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | 설정 앱에 표시 되는 페이지를 선택 하는 정책입니다.                                           | 19041.1349 +                 |
+|  [리서치 모드](hololens-insider.md#research-mode) | HoloLens 2에서 리서치 모드 사용 | 19041.1375 + |
 | [업데이트의 개선 사항 및 수정](hololens-insider.md#improvements-and-fixes-in-the-update)                   | 업데이트의 추가 수정 사항.                                                                | 19041.1361 +                 |
+
 
 ### 자동 눈동자 위치 지원
 
@@ -278,6 +280,15 @@ HoloLens 2 장치의 추가 관리 옵션을 허용 하는 새로 사용할 수 
 HoloLens 2에서 사용자 지정할 수 있는 페이지 설정을 알아보려면 [설정 uri 페이지](settings-uri-list.md)를 방문 하세요. 
  
 ![설정 앱에서 수정 되는 활성 시간 스크린샷](images/hololens-page-visibility-list.jpg)
+
+### 리서치 모드
+리서치 모드에서 HoloLens 2는 컴퓨터 비전 조사에 대 한 potent 도구가 됩니다. 이전 버전에 비해 HoloLens 2의 연구 모드에는 다음과 같은 이점이 있습니다.
+-   HoloLens (첫번째 gen) 연구 모드에서 제공 되는 센서 외에도 이제가 속도계, gyroscope, 자력 계 등의 IMU 센서 액세스를 제공 합니다.
+-   HoloLens 2는 연구 모드와 함께 사용할 수 있는 새로운 기능을 제공 합니다. 특히, 다양 한 실험을 제공할 수 있는 트레일러 추적 및 아이 추적 Api에 액세스 합니다.
+
+현재 연구원은 이러한 모든 외부의 raw 이미지 센서 스트림에 액세스할 수 있도록 HoloLens 장치에서 리서치 모드를 사용 하도록 설정 하는 옵션을 사용할 수 있습니다. HoloLens 2에 대 한 연구 모드는가 속도계, gyroscope 및 자력 계 판독값에 대 한 액세스도 제공 합니다. 사용자의 개인 정보를 보호 하기 위해 원시 아이 추적 카메라 이미지는 리서치 모드를 통해 사용할 수 없지만 기존 Api를 통해 눈 응시 방향을 사용할 수 있습니다.
+
+자세한 기술 정보는 [리서치 모드 설명서](https://docs.microsoft.com/windows/mixed-reality/research-mode) 를 확인 하세요.
 
 ### 업데이트의 개선 사항 및 수정 사항:
 - Allow: NCM 연결에 대 한 MDM을 통해 USB 기능 열거를 사용 하지 않도록 정책을 업데이트 했습니다.
