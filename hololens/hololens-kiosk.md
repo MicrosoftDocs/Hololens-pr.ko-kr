@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f5c45477ab33064afe30e275f8b0003bc6022eac
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: c6b2bf3d48da642e91b8709cfdf35d03a7913ac4
+ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929854"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016692"
 ---
 # HoloLens를 키오스크로 설정
 
@@ -31,7 +31,9 @@ ms.locfileid: "10929854"
 이 문서에서는 HoloLens 디바이스와 관련 된 키오스크 구성의 측면에 대 한 정보를 제공 합니다. 다양 한 유형의 Windows 기반 키오스크 및이를 구성 하는 방법에 대 한 일반적인 내용은 [windows 데스크톱 버전에서 키오스크 및 디지털 서명 구성을](https://docs.microsoft.com/windows/configuration/kiosk-methods)참조 하세요.  
 
 > [!IMPORTANT]  
-> 키오스크 모드는 사용자가 장치에 로그인 할 때 사용할 수 있는 앱을 결정 합니다. 그러나 키오스크 모드는 보안 방법이 아닙니다. "허용" 된 앱이 허용 되지 않는 다른 앱을 여는 것은 중지 되지 않습니다. 앱 또는 프로세스를 열지 못하도록 차단 하려면 [Windows Defender Application Control (WDAC) CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) 를 사용 하 여 적절 한 정책을 만듭니다.  
+> 키오스크 모드는 사용자가 장치에 로그인 할 때 사용할 수 있는 앱을 결정 합니다. 그러나 키오스크 모드는 보안 방법이 아닙니다. "허용" 된 앱이 허용 되지 않는 다른 앱을 여는 것은 중지 되지 않습니다. 앱 또는 프로세스를 열지 못하도록 차단 하려면 [Windows Defender Application Control (WDAC) CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) 를 사용 하 여 적절 한 정책을 만듭니다.
+>
+> Microsoft 서비스에 대 한 자세한 내용은 HoloLens 2 사용에 대 한 고급 보안 수준을 사용자에 게 제공 하 고 [상태 분리 및 격리-Defender 보호](security-state-separation-isolation.md#defender-protections)에 대해 자세히 알아보세요. 또는 [Windows PowerShell을 사용 하 여 HoloLens 2 장치에서 앱을 허용 하거나 차단](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens)하는 방법에 대해 알아봅니다.
 
 단일 앱 또는 다중 앱 구성에서 키오스크 모드를 사용할 수 있으며, 세 가지 프로세스 중 하나를 사용 하 여 키오스크 구성을 설정 하 고 배포할 수 있습니다.
 
