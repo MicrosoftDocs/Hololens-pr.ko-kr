@@ -5,20 +5,20 @@ author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
 ms.date: 6/30/2020
+ms.prod: hololens
 ms.topic: article
 keywords: 보안, HoloLens, 하드웨어 기반 무결성, 런타임 증명, UEFI, UEFI 보안 부팅, 보안 부팅, TPM, 위협 방지, Windows 지속성 방지 보장, 코드 무결성, 코드 보호
-ms.prod: hololens
 ms.sitesec: library
 ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b3986d7310650c2fac20204488ae5f882754deab
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: befd2d892403b7b6c7050f48ba9beffb45b241fe
+ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009476"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016682"
 ---
 # <span data-ttu-id="75118-104">하드웨어 기반 무결성 및 런타임 증명</span><span class="sxs-lookup"><span data-stu-id="75118-104">Hardware-backed integrity and runtime attestation</span></span>
 

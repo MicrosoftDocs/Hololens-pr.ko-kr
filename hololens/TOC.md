@@ -66,6 +66,7 @@
 ## 네트워크 & 연결
 ### [HoloLens 네트워크 구성](hololens-commercial-infrastructure.md)
 ### [네트워크에 HoloLens 연결](hololens-network.md)
+### [HoloLens 2용 인증서 및 네트워크 프로필 준비](hololens-certificates-network.md)
 ### [HoloLens에 대한 연결 엔드포인트 관리](hololens-offline.md)
 ### [Bluetooth 및 USB-C 장치에 연결](hololens-connect-devices.md)
 
