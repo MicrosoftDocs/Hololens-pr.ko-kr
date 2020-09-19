@@ -71,10 +71,16 @@
 ### [Bluetooth 및 USB-C 장치에 연결](hololens-connect-devices.md)
 
 
-## 정책
+## 장치 관리
+### [CSP 및 장치 관리 구성 개요](hololens-csp-policy-overview.md)
 ### [프로비저닝 패키지를 사용하여 HoloLens 구성](hololens-provisioning.md)
 ### [MDM을 사용하여 HoloLens 장치 관리](hololens-mdm-configure.md)
+### [공통 장치 제한](hololens-common-device-restrictions.md)
 ### [HoloLens를 키오스크로 설정](hololens-kiosk.md)
+### [Windows Defender Application Control](windows-defender-application-control-wdac.md)
+
+
+
 # 배포
 ## 등록
 ### [MDM에 HoloLens 등록](hololens-enroll-mdm.md)
