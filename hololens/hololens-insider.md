@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ef292e72eaf476a63df58a70865369790f88197a
-ms.sourcegitcommit: 1b19b0eb552189d7c50617bbdf3a102d3c85ee0e
+ms.openlocfilehash: 604e1e54999f7fb76a3a6a31223c3d59b7e4161f
+ms.sourcegitcommit: 4ad9b6c73913808175b1a448d2be9e33592f65af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "11016299"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "11027447"
 ---
 # Microsoft HoloLens 참가자 미리 보기
 
@@ -35,6 +35,8 @@ HoloLens에 대 한 최신 참가자 Preview 빌드에 오신 것을 환영 합�
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [자동 눈동자 위치 지원](hololens-insider.md#auto-eye-position-support)                              | 현재 위치를 찾고 정확한 홀로그램 포지셔닝을 가능 하 게 합니다.                        | 19041.1339 +                 |
 | [인증서 관리자](hololens-insider.md#certificate-manager)                                     | 사용자는 설정 앱에서 인증서를 보고, 설치 및 제거 하 고, 현재 사용자 및 로컬 컴퓨터 인증서를 제거할 수 있습니다.                                         | 19041.1361 +                 |
+| [앱 설치 관리자](hololens-insider.md#install-apps-on-hololens-2-via-app-installer) | 장치 UI에서 appx 파일의 앱을 설치 합니다. | 19041.1377 + |
+| [웹 페이지에서 앱 설치](hololens-insider.md#installing-apps-from-a-web-page) | 브라우저에서 앱을 다운로드 하 고 설치할 수 있도록 설정 합니다. | 19041.1366 + | 
 | [USB에서 자동 시작 프로 비전](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE는 USB 드라이브에서 프로 비전 패키지를 자동으로 검색 합니다.                                | 19041.1361 +                 |
 | [OOBE에서 프로 비전 패키지 자동 확인](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | OOBE에서 자동으로 프로비저닝 패키지를 적용 합니다.                                             | 19041.1361 +                 |
 | [Wi-fi 연결에 Autopilot 사용](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | 이더넷 어댑터가 필요 없이 device Wi-fi의 autopilot를 사용 합니다.                             | 19041.1364 +                 |
@@ -108,13 +110,30 @@ Windows 참가자 빌드 19041.1361 + HoloLens 2 설정 앱에서 인증서 관�
 
 ![인증서 UI를 사용 하 여 인증서를 설치 하는 방법을 보여 주는 그림](images/certificate-device-install.jpg)
 
+### 앱 설치 관리자를 통해 HoloLens 2에 앱 설치
+이제 개발자 모드를 사용 하도록 설정 하거나 Device Portal을 사용할 필요 없이 이제 Appx 번들을 통해 앱을 설치할 수 있습니다. 이 환경은 로컬 장치에 앱을 설치 하거나 HoloLens의 다른 앱 설치 방법에 익숙하지 않은 다른 사용자와 앱을 공유 하는 것을 간단 하 게 수행할 수 있습니다.
+
+이 방법은 완전히 빌드된 앱을 배포 하는 간단한 방법입니다. HoloLens를 사용 하 여 다른 사용자에 게 앱을 시연 하 고 싶으신가요, 또는 스케일에 앱을 배포 하 고 싶은 경우에 관계 없이이 메서드는 둘 다에 대해 작동 합니다.
+
+[앱 설치 관리자를 사용 하 여 HoloLens 2에 앱을 설치 하](app-deploy-app-installer.md)는 전체 프로세스에 대해 알아봅니다.  
+
+![앱 설치 관리자를 통해 MRTK 예제 설치](images/hololens-app-installer-picture.jpg)
+
+### 웹 페이지에서 앱 설치
+이제 Windows 참가자 빌드 19041.1366 + 사용자는 웹 서버에서 바로 앱을 설치할 수 있습니다. 
+
+지금 생성 되는 Appx 패키지를 웹 페이지에서 호스팅할 수 있습니다. 이 앱 배포 방법은 인증서 배포와 함께 사용할 경우 앱 배포에 매우 유용할 수 있습니다.
+
+[웹 페이지에서 HoloLens 2에 앱을 설치](app-deploy-web-installer.md) 하는 모든 프로세스에 대해 자세히 알아보세요.
+
 ### USB에서 자동 시작 프로 비전
 이 빌드 사용자는 OOBE 중에 단추 조합을 사용 하 여 프로 비전 할 때 수동으로 프로비저닝 화면을 실행 해야 합니다. 이제 사용자는 USB 저장소 드라이브의 프로비저닝 패키지를 사용 하 여 단추 조합을 건너뛸 수 있습니다. 
 
 1. OOBE의 첫 번째 감 순간에 프로비저닝 패키지와 함께 USB 드라이브 연결
 1. 디바이스를 프로 비전 할 준비가 되 면 프로 비전 페이지로 메시지가 자동으로 열립니다. 
 
-참고: 장치를 부팅 하는 동안 USB 드라이브가 연결 된 상태에서, OOBE는 기존 USB 저장 디바이스를 열거 하 고 추가 연결을 감시할 수도 있습니다.
+> [!NOTE]
+> 장치가 부팅 되는 동안 USB 드라이브가 연결 된 상태에서, OOBE는 기존 USB 저장 디바이스를 열거 하 고 추가 연결을 감시할 수도 있습니다.
 
 OOBE 중에는 프로비저닝 패키지를 적용 하는 방법에 대 한 자세한 내용은 [여기](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)를 계속 읽으십시오.
 
@@ -211,6 +230,9 @@ AAD 구성의 경우 사용자는이 변경 없이 오늘 이와 비슷한 내�
 이전에는 키오스크 모드 적용 중 오류가 발생 하 여 시작 메뉴의 모든 응용 프로그램을 표시 하는 데 사용 되는 HoloLens가 있습니다. 이 Windows 참가자 빌드부터 오류가 발생 하는 경우 다음과 같이 시작 메뉴에 앱이 표시 되지 않습니다. 
 
 ![오류가 발생 했을 때 표시 되는 키오스크 모드의 이미지입니다.](images/hololens-kiosk-failure-behavior.png )
+
+#### 업데이트
+이 방법에 대해서도 업데이트를 구성할 수 있으므로 사용자가 Microsoft Store를 통해 설치 되지 않더라도 업데이트를 계속 받을 수 있습니다. 업데이트는 앱 시작를 기반으로 하도록 구성할 수 있으며 예약 되어 있습니다. 설정 방법에 대 한 자세한 내용을 보려면 [이 페이지를 방문](https://docs.microsoft.com/windows/msix/app-installer/update-settings)하세요. 
 
 ### HoloLens 정책
 빌드 19041.1349 +의 HoloLens 2 장치에 대 한 새 혼합 현실 정책이 생성 되었습니다. 제어 가능한 새 설정에는 밝기 설정, 볼륨 설정, 혼합 현실 캡처에서 오디오 녹음 사용 안 함, 진단 프로그램 수집 시 설정, AAD 그룹 구성원 캐시 등이 포함 됩니다.  

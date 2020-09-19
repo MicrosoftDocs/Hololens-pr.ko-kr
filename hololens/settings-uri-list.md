@@ -3,7 +3,7 @@ title: URI 설정
 description: PageVisibilityList에 대해 지원되는 HoloLens 목록입니다.
 author: evmill
 ms.author: v-evmill
-ms.date: 8/1/2020
+ms.date: 09/16/2020
 ms.topic: article
 keywords: Holollens, Holollens 2, 액세스 할당, 키오스크, 설정 페이지입니다.
 ms.prod: hololens
@@ -13,30 +13,60 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6b506b36915c8f34b90c455410db67e55a2cca09
-ms.sourcegitcommit: 7f48e7103f869a22a0d20a54dc8f9b708b22484c
+ms.openlocfilehash: 17959fa25763d2c6b89d0956f29b9999b3012e60
+ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "10963720"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "11016702"
 ---
 # URI 설정
 
-HoloLens 디바이스의 관리 가능한 기능 중 하나는 [Settings/PageVisibilityList 정책](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)을(를) 사용하여 설정 앱에 표시되는 페이지를 제한합니다. HoloLens 장치와 Windows 10 장치는 설정 앱 내에서 서로 다른 페이지 선택을 합니다. 이 페이지에서는 HoloLens에 존재하는 설정만 볼 수 있습니다. 
+HoloLens 디바이스의 관리 가능한 기능 중 하나는 [Settings/PageVisibilityList 정책](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)을(를) 사용하여 설정 앱에 표시되는 페이지를 제한합니다. PageVisibilityList는 IT 관리자가 시스템 설정 앱의 특정 페이지를 표시 하거나 액세스 하지 못하도록 방지 하거나 지정 된 페이지를 제외한 모든 페이지에 대한 작업을 수행하는 데 사용 하는 정책입니다. 
 
-## 계정
+> [!IMPORTANT]
+> 이 기능은 현재 [Windows 참가자 빌드](hololens-insider.md)에서만 사용할 수 있습니다. 이를 사용 하려는 장치가 빌드 19041.1349 +에 있는지 확인 하세요.
+
+다음 예제에서는 URI "ms-설정: network-wifi" 및 "ms-설정: Bluetooth"를 각각 포함 하는 정보 및 블루투스 페이지에만 액세스를 허용하는 정책을 보여줍니다.
+- showonly:network-wifi;network-proxy;bluetooth
+
+프로비저닝 패키지를 통해 설정 하려면: 
+1. Windows 구성 디자이너에서 패키지를 만드는 동안 **정책 > 설정 > PageVisibilityList**로 이동합니다.
+1. 문자열 입력: **showonly:network-wifi;network-proxy;bluetooth**
+1. 프로비저닝 패키지를 내보냅니다.
+1. 장치에 패키지를 적용합니다. 프로비저닝 패키지를 만들고 적용 하는 방법에 대한 자세한 내용은 [이 페이지](hololens-provisioning.md)를 방문하세요. 
+
+이 작업은 OMA-URI를 사용하여 Intune을 통해 수행할 수 있습니다.
+1. **사용자 지정 정책**을 사용합니다.
+1. OMA-URI이 문자열을 사용하도록 설정: **./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList**
+1. 데이터 선택을 선택할 때: **문자열**
+1. 값을 입력 할 때 사용: **showonly:network-wifi;network-proxy;bluetooth**
+1. 장치가 있는 그룹에 사용자 지정 장치 구성을 할당 해야 합니다.
+Intune 그룹과 장치 구성에 대 한 자세한 내용은 [여기를 참조 하세요](hololens-mdm-configure.md).
+
+장치가 선택한 방법에 상관 없이 이제 변경을 수신 받을 것이고 사용자에게는 다음 설정 앱이 표시됩니다. 
+
+![설정 앱에서 수정 중인 활성 시간의 스크린샷](images/hololens-page-visibility-list.jpg)
+
+사용자가 선택한 페이지를 표시 하거나 숨기도록 설정 앱 페이지를 구성 하려면 HoloLens에서 사용 가능한 설정 URI를 확인하세요. 
+
+## URI 설정
+
+HoloLens 장치와 Windows 10 장치는 설정 앱 내에서 서로 다른 페이지 선택을 합니다. 이 페이지에서는 HoloLens에 존재하는 설정만 볼 수 있습니다. 
+
+### 계정
 | 설정 페이지           | URI                                            |
 |-------------------------|------------------------------------------------|
 | 로그인 옵션         | ms-settings:signinoptions                      |
 | Iris 등록       | ms-settings:signinoptions-launchirisenrollment |
 | 회사 또는 학교 계정에 액세스 | ms-settings:workplace                          |
 
-## 장치
+### 장치
 | 설정 페이지 | URI                          |
 |---------------|------------------------------|
 | Bluetooth     | ms-settings:bluetooth <br> ms-settings:connecteddevices |
 
-## 개인 정보
+### 개인 정보
 | 설정 페이지            | URI                                             |
 |--------------------------|-------------------------------------------------|
 | 계정 정보             | ms-settings:privacy-accountinfo                 |
@@ -63,14 +93,14 @@ HoloLens 디바이스의 관리 가능한 기능 중 하나는 [Settings/PageVis
 | 음성 활성화       | ms-settings:privacy-voiceactivation             |
 | 카메라                   | ms-settings:privacy-webcam                      |
 
-## 네트워크 및 인터넷
+### 네트워크 및 인터넷
 | 설정 페이지 | URI                              |
 |---------------|----------------------------------|
 | Wi-Fi  | ms-settings:network-wifi<br>ms-settings:network-wifisettings<br>ms-settings:network-status<br>ms-settings:wifi-provisioning    |
 | VPN   | ms-settings:network-vpn          |
 | Proxy (프록시) | ms-settings:network-proxy        |
 
-## System
+### System
 | 설정 페이지      | URI                                |
 |--------------------|------------------------------------|
 | 공유 환경 | ms-settings:crossdevice            |
@@ -78,13 +108,13 @@ HoloLens 디바이스의 관리 가능한 기능 중 하나는 [Settings/PageVis
 | 알림 및 동작  | ms-settings:notifications          |
 | 저장 공간            | ms-settings:storagesense           |
 
-## 시간 및 언어
+### 시간 및 언어
 | 설정 페이지 | URI                                           |
 |---------------|-----------------------------------------------|
 | Region        | ms-settings:regionformatting                  |
 | 외국어      | ms-settings:regionlanguage<br>ms-settings:regionlanguage-adddisplaylanguage<br>ms-settings:regionlanguage-setdisplaylanguage |
 
-## 업데이트 및 보안
+### 업데이트 및 보안
 | 설정 페이지                         | URI                                       |
 |---------------------------------------|-------------------------------------------|
 | Windows 참가자 프로그램               | ms-settings:windowsinsider <br>ms-settings:windowsinsider-optin          |
