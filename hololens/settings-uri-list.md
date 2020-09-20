@@ -1,6 +1,6 @@
 ---
-title: URI 설정
-description: PageVisibilityList에 대해 지원되는 HoloLens 목록입니다.
+title: 페이지 설정 표시 여부
+description: PageVisibilityList에 대해 지원되는 HoloLens 목록 및 가이드입니다.
 author: evmill
 ms.author: v-evmill
 ms.date: 09/16/2020
@@ -13,14 +13,14 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 17959fa25763d2c6b89d0956f29b9999b3012e60
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 7a24d64b0b60be9f922260b7145d04c2c13951ed
+ms.sourcegitcommit: 8b5e349990ba5566bcc6a2a72ff83d1a21b099b8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016702"
+ms.locfileid: "11026941"
 ---
-# URI 설정
+# 페이지 설정 표시 여부
 
 HoloLens 디바이스의 관리 가능한 기능 중 하나는 [Settings/PageVisibilityList 정책](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)을(를) 사용하여 설정 앱에 표시되는 페이지를 제한합니다. PageVisibilityList는 IT 관리자가 시스템 설정 앱의 특정 페이지를 표시 하거나 액세스 하지 못하도록 방지 하거나 지정 된 페이지를 제외한 모든 페이지에 대한 작업을 수행하는 데 사용 하는 정책입니다. 
 
@@ -122,8 +122,7 @@ HoloLens 장치와 Windows 10 장치는 설정 앱 내에서 서로 다른 페�
 | Windows 업데이트-업데이트 확인 | ms-settings:windowsupdate-action          |
 | 고급 옵션                    | ms-settings:windowsupdate-options         |
 
-> [!NOTE]
->  1 다음 두 URI는 실제로 고급 옵션 또는 옵션 페이지로 이동하지 않고 기본 Windows Update 페이지만 차단/표시합니다. 
+>  <sup>1</sup> 다음 두 URI는 실제로 **고급 옵션** 또는 **옵션** 페이지로 이동하지 않고 기본 Windows Update 페이지만 차단 또는 표시합니다. 
 > - ms-settings:windowsupdate-options
 > - ms-settings:windowsupdate-restartoptions 
 
