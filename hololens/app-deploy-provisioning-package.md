@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 6daf99fbb60e0daf892d5d02e86492061a665070
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 0803b5f1b77ac7f123d534d101cd24903b87094c
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009506"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052585"
 ---
 # 프로비저닝 패키지
 
@@ -32,6 +32,9 @@ ms.locfileid: "11009506"
 
 > [!NOTE] 
 > HoloLens 장치용 프로비저닝 패키지를 만드는 방법에 대 한 기본 사항을 알아보려면 [Hololens 프로비저닝](https://docs.microsoft.com/hololens/hololens-provisioning)을 방문 하세요. 앱을 배포 하려면 고급 프로 비전으로 시작 해야 합니다. 
+
+> [!NOTE] 
+> HoloLens (첫번째 gen)는 프로비저닝 패키지를 사용 하 여 앱 (**UniversalAppInstall**)을 제한적으로 설치 하도록 지원 합니다. HoloLens (1 gen) 장치는 OOBE 중에만 PPKG을 사용 하 여 앱을 설치 하 고 사용자 컨텍스트 설치만을 지원 합니다.
 
 ## Setup
 

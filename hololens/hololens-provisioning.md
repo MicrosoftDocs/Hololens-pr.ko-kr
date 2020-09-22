@@ -16,12 +16,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: da783756c271c589f67efca0c229ad0f777857e2
-ms.sourcegitcommit: ccdd628cdbb5b89741f5dbc971143cb2fd2e451b
+ms.openlocfilehash: c10f07a6caeae6f2e8ace41d345c3ad11901621a
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10990912"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052647"
 ---
 # 배포 패키지를 사용 하 여 HoloLens 구성
 
@@ -210,4 +210,4 @@ Windows 구성 디자이너에서는 Windows Holographic용 프로비저닝 패�
 HoloLens 2 장치의 프로비저닝 패키지를 통해 앱을 설치할 수 있습니다. 이를 통해 앱을 배포 하는 데 사용할 수 있는 간편 하 게 재사용할 수 있는 패키지가 가능 합니다. [프로 비전 패키지를 통해 앱을 배포](app-deploy-provisioning-package.md)하는 데 필요한 전체 지침을 읽으십시오.  
 
 > [!NOTE]
-> HoloLens (첫번째 gen)는 프로비저닝 패키지를 사용 하 여 앱 (**UniversalAppInstall**)을 설치 하는 것을 지원 하지 않습니다.
+> HoloLens (첫번째 gen)는 프로비저닝 패키지를 사용 하 여 앱 (**UniversalAppInstall**)을 제한적으로 설치 하도록 지원 합니다. HoloLens (1 gen) 장치는 OOBE 중에만 PPKG을 사용 하 여 앱을 설치 하 고 사용자 컨텍스트 설치만을 지원 합니다.

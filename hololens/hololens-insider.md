@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 604e1e54999f7fb76a3a6a31223c3d59b7e4161f
-ms.sourcegitcommit: 4ad9b6c73913808175b1a448d2be9e33592f65af
+ms.openlocfilehash: 64e31a03eb3c8cf1c0e6112fd0605aaebb26ba64
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "11027447"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052637"
 ---
 # Microsoft HoloLens 참가자 미리 보기
 
@@ -43,7 +43,6 @@ HoloLens에 대 한 최신 참가자 Preview 빌드에 오신 것을 환영 합�
 |[Tenantlockdown CSP 및 Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | 테 넌 트 등록 및 정책이 적용 된 후 장치를 다시 설정 하거나 다시 사용할 때 해당 테 넌 트에만 장치를 등록할 수 있습니다. | 19041.1366 +|
 | [전체 할당된 액세스](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | 시스템 수준에서 적용 되는 여러 앱 키오스크 모드에 대해 HoloLens 2 장치를 구성 합니다. | 19041.1356 +                 |
 | [다중 앱 키오스크에서 앱 자동 실행](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | 여러 앱 키오스크 모드에 로그인 할 때 응용 프로그램이 자동으로 실행 되도록 설정 합니다.     | 19041.1346 +                 |
-| [키오스크 용 방문자 자동 로그온](hololens-insider.md#visitor-auto-logon-for-kiosks)                          | 키오스크 모드에 사용할 방문자 계정에 대 한 자동 로그온을 사용 하도록 설정 합니다.                         | 19041.1361 +                 |
 | [오류 처리에 대 한 키오스크 모드 동작 변경](hololens-insider.md#kiosk-mode-behavior-changes-for-handling-of-failures) | 키오스크 모드 오류가 이제 처리 되는 방식에 대 한 변경                                              | 19041.1356 +                 |
 | [HoloLens 정책](hololens-insider.md#hololens-policies)                                      | 혼합 현실 장치에 대 한 새로운 정책.                                                        | 19041.1349 +                 |
 | [오프 라인 키오스크에 대 한 AAD 그룹 구성원 캐시](hololens-insider.md#cache-aad-group-membership-for-offline-kiosk)           | 키오스크 모드에 사용할 수 있는 기간 (일) AAD 그룹 구성원 캐시에 대 한 정책입니다.    | 19041.1356 +                 |
@@ -213,18 +212,6 @@ OOBE는 Autopilot 프로필이 다운로드 될 때까지 무기한 대기 하 �
     <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
 ```
 
-### 키오스크 용 방문자 자동 로그온
-이 새로운 기능을 통해 방문자 계정에 대 한 자동 로그온을 키오스크 모드에 사용할 수 있습니다. 
-
-비 AAD 구성의 경우 방문자 자동 로그온에 맞게 장치를 구성 하려면 다음을 수행 합니다.
-1.  다음과 같은 프로비저닝 패키지를 만듭니다.
-    1.  방문자 계정을 허용 하도록 **런타임 설정/AssignedAccess** 를 구성 합니다.
-    1.  필요에 따라 MDM **(런타임 설정/작업 공간/Enrollments)** 에 디바이스를 등록 하 여 나중에 관리할 수 있도록 합니다.
-    1.  로컬 계정 만들기 안 함
-1.  [배포 패키지를 적용](hololens-provisioning.md)합니다.
-
-AAD 구성의 경우 사용자는이 변경 없이 오늘 이와 비슷한 내용을 얻을 수 있습니다. 키오스크 모드용으로 구성 된 AAD 연결 디바이스는 로그인 화면에서 단추를 한 번 탭 하 여 방문자 계정에 로그인 할 수 있습니다. 방문자 계정에 로그인 한 후에는 방문자가 시작 메뉴에서 명시적으로 로그 아웃 되거나 장치가 다시 시작 될 때까지 장치에서 다시 로그인 하 라는 메시지가 표시 되지 않습니다.
-
 ### 오류 처리에 대 한 키오스크 모드 동작 변경
 
 이전에는 키오스크 모드 적용 중 오류가 발생 하 여 시작 메뉴의 모든 응용 프로그램을 표시 하는 데 사용 되는 HoloLens가 있습니다. 이 Windows 참가자 빌드부터 오류가 발생 하는 경우 다음과 같이 시작 메뉴에 앱이 표시 되지 않습니다. 
@@ -301,7 +288,7 @@ HoloLens 2 장치의 추가 관리 옵션을 허용 하는 새로 사용할 수 
 
 HoloLens 2에서 사용자 지정할 수 있는 페이지 설정을 알아보려면 [설정 uri 페이지](settings-uri-list.md)를 방문 하세요. 
  
-![설정 앱에서 수정 되는 활성 시간 스크린샷](images/hololens-page-visibility-list.jpg)
+![설정 앱에서 수정 중인 활성 시간의 스크린샷](images/hololens-page-visibility-list.jpg)
 
 ### 리서치 모드
 리서치 모드에서 HoloLens 2는 컴퓨터 비전 조사에 대 한 potent 도구가 됩니다. 이전 버전에 비해 HoloLens 2의 연구 모드에는 다음과 같은 이점이 있습니다.
