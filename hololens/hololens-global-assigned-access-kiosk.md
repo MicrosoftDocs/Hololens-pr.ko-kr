@@ -3,7 +3,7 @@ title: 전체 할당된 액세스
 description: 전체 할당된 액세스 키오스크에 OMA-URI를 사용하는 방법 안내
 author: evmill
 ms.author: v-evmill
-ms.date: 7/13/2020
+ms.date: 9/21/2020
 ms.topic: article
 keywords: hololens, hololens 2, 할당된 액세스, 키오스크
 ms.prod: hololens
@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1a0a3eb8ef3d21b34e13711bcc890af57e5ae2c2
-ms.sourcegitcommit: 7c16570839893f4a4432286b13ae6d84c665d376
+ms.openlocfilehash: c2be1123d0e8a09d6955fb6e5da782daebc96bcf
+ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "10902303"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11052627"
 ---
 # 전체 할당된 액세스 - 키오스크
 
@@ -44,7 +44,7 @@ ms.locfileid: "10902303"
 
 2.  [프로비전 패키지를 사용하여 단일 앱 또는 복수 앱 키오스크 설정](https://docs.microsoft.com/hololens/hololens-kiosk#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)의 단계, 특히 "프로비전 패키지 2단계 - 프로비전 패키지에 키오스크 구성 XML 파일 추가" 부분을 따르고 이전 단계에서 저장한 XML 파일을 참조합니다. 
 
-## AAD 계정 또는 AAD 그룹 한 개를 제외한 모든 사용자에게 전역 할당이 적용되는 구성을 만들 수 있나요? 
+## 전역이 모든 사용자에게 적용되고 별도의 구성이 하나의 AAD 계정 또는 AAD 그룹에 적용되는 구성을 만들 수 있습니까? 
 
 예. 아래의 XML BLOB 예제를 참조하세요. 로그인한 사용자의 특정 프로필을 찾을 수 없는 경우 전체 할당된 액세스 프로필이 HoloLens에 적용되어 로그인한 사용자에 대한 기본 키오스크 모드 구성으로 됩니다. 다음은 사용할 XML BLOB의 예입니다. 
 
