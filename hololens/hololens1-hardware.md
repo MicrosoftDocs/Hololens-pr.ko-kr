@@ -13,12 +13,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 1ef464e03bfc17d15e2b776768223b3889cdb4e9
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 6183a478a9eee8a5ab6212443ea2955605754a21
+ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829013"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "11072785"
 ---
 # HoloLens(1세대) 하드웨어
 
@@ -139,7 +139,7 @@ HoloLens 상자에는 다음 항목이 포함 됩니다.
 
 ## 사전 설치된 소프트웨어
 
-- Windows 10
+- Windows10
 - Windows 스토어
 - 홀로그램스
 - Microsoft Edge
@@ -154,6 +154,7 @@ HoloLens 상자에는 다음 항목이 포함 됩니다.
 ### 안전
 
 HoloLens가 테스트 되어 ANSI Z 87.1, CSA Z 94.3 및 EN 166의 기본 영향 보호 요구 사항을 준수 하는 것으로 검색 되었습니다.
+- [특별 행정구 정보](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ## 관리 및 청소
 
