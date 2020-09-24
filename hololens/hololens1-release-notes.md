@@ -1,5 +1,5 @@
 ---
-title: HoloLens 1 (Gen) 릴리스 정보
+title: HoloLens 1 (gen) 릴리스 정보
 description: 새로운 HoloLens 릴리스의 업데이트에 대해 자세히 알아보세요.
 author: evmill
 ms.author: v-evmill
@@ -15,14 +15,17 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 1
-ms.openlocfilehash: a3761fc383b991743c20c09ce430e8988af789fb
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: f610de413c9990bd3f8bc4df63fa8c7ed821e32b
+ms.sourcegitcommit: 8c036f12a341a063eb7827ee7b70784402dad57f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828563"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "11077675"
 ---
-# HoloLens 1 (Gen) 릴리스 정보
+# HoloLens 1 (gen) 릴리스 정보
+
+## HoloLens (첫번째 gen) 장기 서비스
+HoloLens (첫번째 gen)에서 장기간 서비스 (LTS) 상태를 입력 했습니다. 향후 업데이트에는 Windows 10 홀로그램, HoloLens 용 버전 1809 release (첫번째 gen)의 기능 패리티가 유지 되면서 문제 및 보안 픽스에 집중 하 게 됩니다.
 
 ### Windows 10 홀로그램, 버전 1809
 
