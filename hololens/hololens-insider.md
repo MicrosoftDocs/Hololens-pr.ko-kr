@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c5e050fefc9a6a0717dea2258ada39df302f2e45
-ms.sourcegitcommit: 8c036f12a341a063eb7827ee7b70784402dad57f
+ms.openlocfilehash: caf860ad5926c03d1e87e829f04838531510df51
+ms.sourcegitcommit: 44de31c6d3534b6e0b73ddc2a9336147daf7a41d
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "11077695"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "11078386"
 ---
 # Microsoft HoloLens 참가자 미리 보기
 
@@ -258,6 +258,9 @@ HoloLens 2 장치의 추가 관리 옵션을 허용 하는 새로 사용할 수 
 |     [EnergySaverBatteryThresholdPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)     |     Windows 구성 디자이너에서 사용할 예제 값입니다 (예: 100).                                                                          |
 |     [소모 되는 Bytimeout배터리](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutonbattery)                  |     Windows 구성 디자이너에서 사용할 예제 값입니다 (예:   `<enabled/><data   id="EnterDCStandbyTimeOut" value="100"/>`          |
 |     [StandbyTimeoutPluggedIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-standbytimeoutpluggedin)                  |     Windows 구성 디자이너에서 사용할 예제 값입니다 (예:  `<enabled/><data   id="EnterACStandbyTimeOut" value="100"/>`           |
+
+> [!NOTE]
+> HoloLens 2에서 일관 된 환경을 유지 하기 위해 DisplayOffTimeoutOnBattery와 a Bytimeouton배터리 모두의 값이 동일한 값으로 설정 되어 있는지 확인 하세요. DisplayOffTimeoutPluggedIn 및 StandbyTimeoutPluggedIn에도 마찬가지입니다. 최신 대기 상태에 대 한 자세한 내용은 [표시, 절전 및 최대 절전 모드 유휴 타이머](https://docs.microsoft.com/windows-hardware/design/device-experiences/display--sleep--and-hibernate-idle-timers) 를 참조 하세요.
 
 ### HoloLens에 대해 새로 설정 된 업데이트 정책
 이 업데이트 정책은 이제 HoloLens 2 장치에서 사용할 수 있습니다.
