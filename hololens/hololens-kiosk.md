@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 8844f691ec5395f9c69bce7df44125da9c838f14
-ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
+ms.openlocfilehash: 920ba7e84b1bb4818aef4efdee60be004d8a3300
+ms.sourcegitcommit: e6885d03c980b33dd0bab5c418cbd1892d5ff123
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072795"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "11080447"
 ---
 # HoloLens를 키오스크로 설정
 
@@ -90,8 +90,10 @@ Windows Device Portal을 사용 하 여 단일 앱 키오스크를 구성 하는
 
 MDM (모바일 디바이스 관리) 시스템 또는 배포 패키지를 사용 하 여 키오스크 모드를 구성 하는 경우 [ASSIGNEDACCESS CSP (구성 서비스 공급자)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) 를 사용 하 여 응용 프로그램을 지정 합니다. CSP는 [응용 프로그램 사용자 모델 id (AUMIDs)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) 를 사용 하 여 응용 프로그램을 식별 합니다. 다음 표에는 다중 앱 키오스크에서 사용할 수 있는 일부 응용 프로그램의 AUMIDs가 나열 되어 있습니다.
 
-> [!CAUTION]
-> 셸 앱을 키오스크 앱으로 선택할 수 없습니다. 또한 Microsoft Edge, Microsoft Store 또는 파일 탐색기를 키오스크 앱으로 선택 **하지** 않는 것이 좋습니다.  
+> [!IMPORTANT]
+> 키오스크 모드는 사용자가 장치에 로그인 할 때 사용할 수 있는 앱을 결정 합니다. 그러나 키오스크 모드는 보안 방법이 아닙니다. "허용" 된 앱이 허용 되지 않는 다른 앱을 여는 것은 중지 되지 않습니다. 이 동작을 제한 하지 않기 때문에 Edge, 파일 탐색기 및 Microsoft 스토어 앱에서 앱을 시작할 수 있습니다. 키오스크에서 시작 하지 않으려는 특정 앱이 있는 경우 [Windows Defender Application Control (WDAC) CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) 를 사용 하 여 적절 한 정책을 만듭니다. 
+> 
+> 또한 혼합 현실 홈은 키오스크 앱으로 설정할 수 없습니다.
 
 <a id="aumids"></a>
 
