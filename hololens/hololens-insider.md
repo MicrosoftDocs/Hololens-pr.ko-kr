@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: caf860ad5926c03d1e87e829f04838531510df51
-ms.sourcegitcommit: 44de31c6d3534b6e0b73ddc2a9336147daf7a41d
+ms.openlocfilehash: 439ae9ddfbc6e7a83807e85c445f3d9f4cd2e182
+ms.sourcegitcommit: fa2e551e3294ee49677035f5461b28861b20170f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "11078386"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "11088612"
 ---
 # Microsoft HoloLens 참가자 미리 보기
 
@@ -33,7 +33,7 @@ HoloLens에 대 한 최신 참가자 Preview 빌드에 오신 것을 환영 합�
 
 | 기능                                                | 설명                                                                                    | 참가자 빌드에서 사용 가능 |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
-| [자동 눈동자 위치 지원](hololens-insider.md#auto-eye-position-support)                              | 현재 위치를 찾고 정확한 홀로그램 포지셔닝을 가능 하 게 합니다.                        | 19041.1339 +                 |
+| [자동 눈동자 위치 지원](hololens-insider.md#auto-eye-position-support)                              | 눈 위치를 적극적으로 계산 하 고 정확한 홀로그램 위치를 사용 하도록 설정 합니다.                        | 19041.1339 +                 |
 | [인증서 관리자](hololens-insider.md#certificate-manager)                                     | 사용자는 설정 앱에서 인증서를 보고, 설치 및 제거 하 고, 현재 사용자 및 로컬 컴퓨터 인증서를 제거할 수 있습니다.                                         | 19041.1361 +                 |
 | [USB에서 자동 시작 프로 비전](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE는 USB 드라이브에서 프로 비전 패키지를 자동으로 검색 합니다.                                | 19041.1361 +                 |
 | [OOBE에서 프로 비전 패키지 자동 확인](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | OOBE에서 자동으로 프로비저닝 패키지를 적용 합니다.                                             | 19041.1361 +                 |
@@ -68,9 +68,6 @@ Uncalibrated 사용자가 디바이스에 배치 하는 경우 자동 눈 위치
  사용자가 비 응시 사용 응용 프로그램에서 응시 데이터에 액세스 하는 앱으로 전환 하는 경우 보정 메시지가 표시 됩니다. 경험 치를 다 활용 해도 변경 되지 않습니다. 
  
 아이 응시 데이터 나 매우 정밀한 홀로그램 위치가 필요한 환경에서는 사용자가 눈 추적 보정 프롬프트에서 눈 추적 보정을 실행 하거나 시작 메뉴에서 설정 앱을 시작한 다음 **시스템 > 보정 > 눈동자 보정 > 실행**을 선택 하는 것이 좋습니다.
-
-**알려진 문제**
- - 이는 메모리가 과도 하 게 로드 되는 동안 아이 트래커 드라이버 호스트 프로세스가 충돌할 수 있는 문제를 조사 하는 중입니다. 아이 추적 드라이버 호스트 프로세스는 자동으로 복구 되어야 합니다.
 
 ### 인증서 관리자
 
