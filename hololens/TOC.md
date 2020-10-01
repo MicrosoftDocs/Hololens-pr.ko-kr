@@ -39,6 +39,8 @@
 ## HoloLens 2 엔터프라이즈 배포 계획
 ### [상용 환경에서 HoloLens 배포](hololens-requirements.md)
 ### [공통 인프라 구축 시나리오](common-scenarios.md)
+## 일반적인 시나리오
+### [오프라인 보안](hololens-common-scenarios-offline-secure.md)
 ## 보안
 ### [보안 개요](security-overview.md)
 ### [Architecture](security-architecture.md)
