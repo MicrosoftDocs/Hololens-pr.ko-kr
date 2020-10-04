@@ -87,6 +87,7 @@
 ## 등록
 ### [MDM에 HoloLens 등록](hololens-enroll-mdm.md)
 ### [HoloLens용 Windows 자동 실행 2](hololens2-autopilot.md) 
+### [MAC 주소 제한 된 Wi-fi 환경에 등록](mac-address-options.md)
 ## 응용 프로그램
 ### [애플리케이션 관리 개요](app-deploy-overview.md)
 ### [인투네 & 컴퍼니 포털](app-deploy-intune.md)
