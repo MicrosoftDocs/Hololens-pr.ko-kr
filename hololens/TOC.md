@@ -62,6 +62,13 @@
 ## [Windows Holographic for Business 기능 잠금 해제](hololens1-upgrade-enterprise.md)
 
 # 구성
+## 장치 관리
+### [CSP 및 장치 관리 구성 개요](hololens-csp-policy-overview.md)
+### [프로비저닝 패키지를 사용하여 HoloLens 구성](hololens-provisioning.md)
+### [MDM을 사용하여 HoloLens 장치 관리](hololens-mdm-configure.md)
+### [공통 장치 제한](hololens-common-device-restrictions.md)
+### [HoloLens를 키오스크로 설정](hololens-kiosk.md)
+### [Windows Defender Application Control](windows-defender-application-control-wdac.md)
 ## ID
 ### [HoloLens에 대한 사용자 ID 및 로그인 관리](hololens-identity.md)
 ### [여러 사용자와 HoloLens 공유](hololens-multiple-users.md)
@@ -71,16 +78,6 @@
 ### [HoloLens 2용 인증서 및 네트워크 프로필 준비](hololens-certificates-network.md)
 ### [HoloLens에 대한 연결 엔드포인트 관리](hololens-offline.md)
 ### [Bluetooth 및 USB-C 장치에 연결](hololens-connect-devices.md)
-
-
-## 장치 관리
-### [CSP 및 장치 관리 구성 개요](hololens-csp-policy-overview.md)
-### [프로비저닝 패키지를 사용하여 HoloLens 구성](hololens-provisioning.md)
-### [MDM을 사용하여 HoloLens 장치 관리](hololens-mdm-configure.md)
-### [공통 장치 제한](hololens-common-device-restrictions.md)
-### [HoloLens를 키오스크로 설정](hololens-kiosk.md)
-### [Windows Defender Application Control](windows-defender-application-control-wdac.md)
-
 
 
 # 배포
