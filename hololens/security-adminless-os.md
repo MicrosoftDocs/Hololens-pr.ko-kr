@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: ea35012e63f4c0d8868f9604809c1552c3212e72
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: c7c54c624fe2e1c48eee468e2d30fe3460f7e786
+ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016642"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "11102317"
 ---
 # 관리자가 없는 운영 체제
 
@@ -29,6 +29,8 @@ HoloLens 2는 관리자 그룹에 대한 지원을 사용하지 않고 모든 �
   * Windows
 
 Windows 구성 요소는 또한 시스템 UWP를 통해 AppContainer 샌드박스를 활용할 수 있습니다. UWP(유니버설 Windows 플랫폼)에 대한 자세한 정보는 [UWP 설명서](https://docs.microsoft.com/windows/uwp/)를 참조하세요. 또한 더 큰 권한 축소 요구 사항(예: 브라우저 콘텐츠 페이지, 파서)을 포함하는 Windows 구성 요소는 모든 AppContainers에 액세스 가능한 리소스 집합에 대한 액세스를 잘라내는 LPAC(낮은 권한 수준의 AppContainer) 샌드박스를 사용합니다.
+
+## 장치 소유자
 
 마지막으로 장치를 테넌트 또는 사용자 관리에 연결하는 것과 같은 특정 장치 차원의 작업 실행은 "장치 소유자"에만 허용됩니다. 장치의 사용자는 다음 단계 중 하나를 통해 이 그룹을 채웁니다.
   * 장치의 첫 사용자는 항상 소유자로 지정됩니다. 

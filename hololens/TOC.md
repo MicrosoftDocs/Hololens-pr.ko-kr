@@ -3,6 +3,7 @@
 # 개요
 
 ## HoloLens 2 시작하기
+### [HoloLens 2 개요](hololens2-options.md)
 ### [HoloLens 2 하드웨어](hololens2-hardware.md)
 ### [HoloLens 2 사용 준비](hololens2-setup.md)
 ### [HoloLens 2 설정](hololens2-start.md)

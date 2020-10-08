@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 33463685818c3e864c698160776c76ec7d8cbefd
-ms.sourcegitcommit: 9197b9d507d8b9b195bdf512d1b832888b53162d
+ms.openlocfilehash: 68e7b86259d4837be5bfa634c6ada4aa5b8006a1
+ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "10899110"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "11102347"
 ---
 # HoloLens용 Windows 자동 실행 2
 
@@ -199,6 +199,9 @@ Windows Autopilot 프로그램에 HoloLens 2 장치를 설정할 때 사용자�
 ## HoloLens 2용 Windows Autopilot 사용자 환경
 
 위의 지침이 완료되면 HoloLens 2 사용자는 다음과 같은 환경을 통해 HoloLens 장치를 프로비저닝할 수 있습니다.  
+
+> [!NOTE]
+> Autopilot를 사용 하면 [장치 소유자](security-adminless-os.md#device-owner)에게 영향을 줍니다.
 
 1. 앞서 언급한 바와 같이 현재 릴리스에서는 HoloLens를 켜고 Autopilot 프로비저닝 프로세스를 시작하기 전에 장치를 인터넷에 연결해야 합니다. 유선 인터넷 연결을 위한 "이더넷 연결 USB C" 어댑터나 무선 인터넷 연결을 위한 "Wi-Fi 연결 USB C" 어댑터를 사용해 장치를 연결할 수 있습니다.
    

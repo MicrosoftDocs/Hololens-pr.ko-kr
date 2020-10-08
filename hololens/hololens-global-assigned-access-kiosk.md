@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9c7e4e37b54e6dd81341a64165e1e742a2242d00
-ms.sourcegitcommit: a0f6ff5c36aab0ed94e16e136728e4b8753203db
+ms.openlocfilehash: 9c411811376d34b4399db76c76364cd1254910c4
+ms.sourcegitcommit: a59ce1cf68785c8e08c5ea94046ba04291ee1a55
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "11093938"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "11094976"
 ---
 # 전체 할당된 액세스 - 키오스크
 
@@ -34,7 +34,7 @@ ms.locfileid: "11093938"
 
 1.  다음과 같은 방법으로 사용자 지정 OMA URI 장치 구성 프로필을 만들어 HoloLens 장치 그룹에 적용합니다. 
 
-    URI 값: .Device/Vendor/MSFT/AssignedAccess/Configuration
+    URI 값: ./Device/Vendor/MSFT/AssignedAccess/Configuration
    
     > [!div class="mx-imgBorder"]
     > ![Intune에서 전역으로 할당된 액세스 OMA-URI](images/global-assigned-access-omauri.png)
