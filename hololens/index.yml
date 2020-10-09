@@ -11,17 +11,19 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 7afce81a15745b6ece3707972e6f8b5d82ba17ff
-  ms.sourcegitcommit: 44de31c6d3534b6e0b73ddc2a9336147daf7a41d
+  ms.openlocfilehash: 23cac991786c5540d7dadfcaae7ba2fe1d84dc64
+  ms.sourcegitcommit: 58812149a9795b46799845e89f98d4cfd72ded42
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 09/25/2020
-  ms.locfileid: "11078376"
+  ms.lasthandoff: 10/08/2020
+  ms.locfileid: "11105399"
 landingContent:
 - title: HoloLens 개요
   linkLists:
   - linkListType: overview
     links:
+    - text: HoloLens 2 개요
+      url: hololens2-options.md
     - text: HoloLens 2 하드웨어
       url: hololens2-hardware.md
     - text: HoloLens(1세대) 하드웨어
@@ -80,12 +82,10 @@ landingContent:
       url: app-deploy-store-business.md
     - text: 프로비저닝 패키지
       url: app-deploy-provisioning-package.md
-- title: 유지 관리
+- title: 유지 관리 및 문제 해결 가이드
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: HoloLens 업데이트 관리
-      url: hololens-updates.md
     - text: HoloLens 문제 해결
       url: hololens-troubleshooting.md
     - text: HoloLens 2 다시 시작, 초기화 또는 복구
@@ -96,6 +96,8 @@ landingContent:
       url: hololens-known-issues.md
     - text: HoloLens 장치에서 진단 정보 수집 및 사용
       url: hololens-diagnostic-logs.md
+    - text: HoloLens 업데이트 관리
+      url: hololens-updates.md
 - title: 릴리스 정보 및 피드백
   linkLists:
   - linkListType: whats-new
@@ -118,10 +120,6 @@ landingContent:
       url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
     - text: Microsoft Dynamics 365 혼합 현실
       url: https://docs.microsoft.com/dynamics365/mixed-reality/
-    - text: 클라우드 서비스 개요
-      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
-- title: 기타 참고 자료
-  linkLists:
   - linkListType: how-to-guide
     links:
     - text: 혼합 현실이란 무엇인가요?
@@ -130,5 +128,15 @@ landingContent:
       url: https://docs.microsoft.com/windows/mixed-reality/design
     - text: 혼합 현실 개발 소개
       url: https://docs.microsoft.com/windows/mixed-reality/development?tabs=unity
+    - text: 클라우드 서비스 개요
+      url: https://docs.microsoft.com/windows/mixed-reality/mixed-reality-cloud-services#overview
+- title: 지원
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: HoloLens 구입
+      url: https://www.microsoft.com/hololens/buy
+    - text: 커뮤니티 지원
+      url: https://holodevelopersslack.azurewebsites.net/
     - text: 고객 지원
       url: https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f
