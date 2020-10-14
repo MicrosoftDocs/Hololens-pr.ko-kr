@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0fe78d4b668523de4faa66a64f54c14760a81b12
-ms.sourcegitcommit: bddd470ac475dd8fc7b69e8904d18082a83f39e0
+ms.openlocfilehash: 23ec5478c35977d1fd1fa20a33827e441d4b5c12
+ms.sourcegitcommit: 264c8ff6726f702c3770525d774e0c1d263a2705
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "10997219"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "11117773"
 ---
 # HoloLens 2 릴리스 정보
 
@@ -28,6 +28,18 @@ HoloLens 장치를 능숙 하 게 사용할 수 있도록 기능, 버그, 보안
 
 >[!NOTE]
 > HoloLens 에뮬레이터 릴리스 노트를 읽으려면 [보관 파일을 방문](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)하세요.
+
+## Windows 홀로그램 버전 2004 ~ 10 월 2020 업데이트
+- 빌드 19041.1124
+ 
+업데이트의 개선 사항 및 수정 사항:
+
+- 런타임 시스템 오류를 일으킨 불필요 한 검사를 제거 했습니다.
+
+## Windows 홀로그램 버전 1903 ~ 10 월 2020 업데이트
+- 빌드 18362.1081
+
+이 월 품질 업데이트에는 중요 한 변경 사항이 포함 되어 있지 않으므로 Windows 홀로그램 버전 2004에 대 한 최신 빌드를 사용 하는 것이 좋습니다.
 
 ## Windows 홀로그램 버전 2004-2020 업데이트-09 월
 - 빌드 19041.1117
@@ -97,7 +109,7 @@ HoloLens 장치를 능숙 하 게 사용할 수 있도록 기능, 버그, 보안
 - 녹화 된 비디오의 홀로그램 안정성이 개선 되었습니다.
 - 장치가 여러 일 동안 대기 상태로 남겨진 경우 mixed reality 캡처가 비디오를 녹화할 수 없는 문제를 해결 했습니다.
 - 일반적으로 Unity 응용 프로그램에서는 HolographicSpace 현재 상태 API를 사용할 수 없습니다. 이 동작은 "백그라운드에서 실행" 설정을 사용 하는 경우에도, 센터를 대칭 이동 했을 때 일부 앱이 일시 중지 되는 문제를 방지 합니다. 이제 API를 Unity 버전 2018.4.18 이상 및 2019.3.4 이상에서 사용할 수 있습니다.
-- Wi-fi 연결을 통해 디바이스 포털에 액세스 하면 웹 브라우저가 유효 하지 않은 인증서로 인해 액세스 하지 못할 수 있습니다. 브라우저는 장치 인증서가 이전에 신뢰 된 경우에도 "ERR_SSL_PROTOCOL_ERROR"와 같은 오류를 보고할 수 있습니다. 이 경우에는 보안 경고를 무시 하는 옵션이 없기 때문에 Device Portal로 진행할 수 없습니다. 이 업데이트로 문제를 해결 했습니다. 장치 인증서가 이전에 PC에서 다운로드 되 고 신뢰 되어 브라우저 보안 경고가 표시 되는 경우 SSL 오류가 발생 하는 경우 새 인증서를 다운로드 하 여 브라우저 보안 경고가 표시 되도록 신뢰 해야 합니다.
+- Wi-Fi 연결을 통해 디바이스 포털에 액세스 하면 웹 브라우저가 유효 하지 않은 인증서로 인해 액세스 하지 못할 수 있습니다. 브라우저는 장치 인증서가 이전에 신뢰 된 경우에도 "ERR_SSL_PROTOCOL_ERROR"와 같은 오류를 보고할 수 있습니다. 이 경우에는 보안 경고를 무시 하는 옵션이 없기 때문에 Device Portal로 진행할 수 없습니다. 이 업데이트로 문제를 해결 했습니다. 장치 인증서가 이전에 PC에서 다운로드 되 고 신뢰 되어 브라우저 보안 경고가 표시 되는 경우 SSL 오류가 발생 하는 경우 새 인증서를 다운로드 하 여 브라우저 보안 경고가 표시 되도록 신뢰 해야 합니다.
 - MSIX 패키지를 사용 하 여 앱을 설치할 수 있는 런타임 프로비저닝 패키지를 만드는 기능을 사용 하도록 설정 했습니다.
 - **Settings**  >  **System**  >  장치를 종료할 때 사용자가 혼합 현실 집에서 모든 홀로그램을 자동으로 제거할 수 있도록 설정 시스템**홀로그램** 에 설정이 추가 되었습니다.
 - HoloLens 에뮬레이터에서 픽셀 형식을 변경 하는 HoloLens 앱이 검정색을 렌더링 하는 문제를 해결 했습니다.
@@ -208,7 +220,7 @@ NetworkQoSPolicy 구성 서비스 공급자는 네트워크 QoS (서비스 품�
 
 ### 5G/LTE tethered 장치에 대 한 확장 된 USB 이더넷 지원
 
-USB를 통해 HoloLens 2로 tethered 때 5G/LTE 전화기와 Wi-fi hotpots 같은 특정 모바일 광대역 장치를 사용 하기 위해 지원이 추가 되었습니다. 이러한 디바이스는 이제 다른 이더넷 연결로 **네트워크 설정** 에 표시 됩니다. 외부 드라이버를 필요로 하는 모바일 광대역 장치는 지원 되지 않습니다. 이 기능은 Wi-fi를 사용할 수 없는 경우 고대역폭 연결을 가능 하 게 하며 Wi-fi 테더 링이 충분 하지 않습니다. 지원 되는 USB 장치에 대 한 자세한 내용은 [Bluetooth 및 USB-C 장치에 연결](https://docs.microsoft.com/hololens/hololens-connect-devices)을 참조 하세요.  
+USB를 통해 HoloLens 2 tethered 하는 경우 5G/LTE 전화기와 Wi-Fi hotpots 같은 특정 모바일 광대역 장치를 사용 하기 위한 지원이 추가 되었습니다. 이러한 디바이스는 이제 다른 이더넷 연결로 **네트워크 설정** 에 표시 됩니다. 외부 드라이버를 필요로 하는 모바일 광대역 장치는 지원 되지 않습니다. 이 기능은 Wi-Fi을 사용할 수 없고 Wi-Fi 테더 링이 충분 하지 않은 경우 고대역폭 연결을 가능 하 게 합니다. 지원 되는 USB 장치에 대 한 자세한 내용은 [Bluetooth 및 USB-C 장치에 연결](https://docs.microsoft.com/hololens/hololens-connect-devices)을 참조 하세요.  
 
 ### 향상 된 수동 추적
 
@@ -245,13 +257,13 @@ USB를 통해 HoloLens 2로 tethered 때 5G/LTE 전화기와 Wi-fi hotpots 같�
 
 ### Cortana 업데이트
 
-업데이트 된 앱이 Microsoft 365와 통합 되어 디바이스에서 더 많은 작업을 수행할 수 있습니다 (현재 미국-영어 전용). HoloLens 2에서 Cortana는 더 이상 볼륨 조정과 같은 특정 디바이스 특정 명령을 지원 하지 않습니다. 이러한 옵션은 이제 새 시스템 음성 명령으로 지원 됩니다. [블로그의](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/)새 Cortana 앱에 대해 자세히 알아보세요.
+업데이트 된 앱이 Microsoft 365와 통합 되어 장치에서 더 많은 작업을 수행할 수 있습니다 (현재 US-English에만 해당). HoloLens 2에서 Cortana는 더 이상 볼륨 조정과 같은 특정 디바이스 특정 명령을 지원 하지 않습니다. 이러한 옵션은 이제 새 시스템 음성 명령으로 지원 됩니다. [블로그의](https://blogs.windows.com/windowsexperience/2020/02/28/cortana-in-the-upcoming-windows-10-release-focused-on-your-productivity-with-enhanced-security-and-privacy/)새 Cortana 앱에 대해 자세히 알아보세요.
 
 ### 품질 개선 및 수정
 
 업데이트에도 향상 된 기능과 수정 사항이 있습니다.  
 - 활성 디스플레이 보정 시스템을 도입 했습니다. 이 기능은 홀로그램의 안정성과 맞춤을 개선 합니다. 이제 머리를 나란히 이동할 때 해당 위치가 그대로 유지 됩니다.
-- HoloLens로의 Wi-fi 스트리밍이 주기적으로 중단 되는 버그가 해결 되었습니다. 응용 프로그램에서 대기 시간이 짧은 스트리밍이 필요 하다 고 표시 되는 경우 [SetSocketMediaStreamingMode 함수](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode)를 호출 하 여 수정을 구현 합니다.
+- HoloLens로 스트리밍할 Wi-Fi 주기적으로 중단 되는 버그가 해결 되었습니다. 응용 프로그램에서 대기 시간이 짧은 스트리밍이 필요 하다 고 표시 되는 경우 [SetSocketMediaStreamingMode 함수](https://docs.microsoft.com/windows/win32/api/socketapi/nf-socketapi-setsocketmediastreamingmode)를 호출 하 여 수정을 구현 합니다.
 - 리서치 모드에서 스트리밍 중에 발생 한 디바이스 중단 문제를 해결 했습니다.
 - 세션을 다시 시작할 때 올바른 사용자가 로그인 화면에 표시 되지 않는 경우에는 버그가 해결 되었습니다.
 - 사용자가 **설정을**통해 MDM 로그를 내보낼 수 없는 문제를 해결 했습니다.
