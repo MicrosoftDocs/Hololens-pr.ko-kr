@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 9/23/2020
+ms.date: 10/15/2020
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 439ae9ddfbc6e7a83807e85c445f3d9f4cd2e182
-ms.sourcegitcommit: fa2e551e3294ee49677035f5461b28861b20170f
+ms.openlocfilehash: 408bf94b4cec49b91198917c16f83012fa9ab644
+ms.sourcegitcommit: a81d48d362f8511960e74d38c7c8f0cff19b67c3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "11088612"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "11119301"
 ---
 # Microsoft HoloLens 참가자 미리 보기
 
@@ -37,7 +37,7 @@ HoloLens에 대 한 최신 참가자 Preview 빌드에 오신 것을 환영 합�
 | [인증서 관리자](hololens-insider.md#certificate-manager)                                     | 사용자는 설정 앱에서 인증서를 보고, 설치 및 제거 하 고, 현재 사용자 및 로컬 컴퓨터 인증서를 제거할 수 있습니다.                                         | 19041.1361 +                 |
 | [USB에서 자동 시작 프로 비전](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE는 USB 드라이브에서 프로 비전 패키지를 자동으로 검색 합니다.                                | 19041.1361 +                 |
 | [OOBE에서 프로 비전 패키지 자동 확인](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | OOBE에서 자동으로 프로비저닝 패키지를 적용 합니다.                                             | 19041.1361 +                 |
-| [Wi-fi 연결에 Autopilot 사용](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | 이더넷 어댑터가 필요 없이 device Wi-fi의 autopilot를 사용 합니다.                             | 19041.1364 +                 |
+| [Wi-Fi 연결에 Autopilot 사용](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Wi-Fi 장치에서 이더넷 어댑터가 필요 없이 autopilot를 사용 합니다.                             | 19041.1364 +                 |
 |[Tenantlockdown CSP 및 Autopilot](hololens-insider.md#tenantlockdown-csp-and-autopilot) | 테 넌 트 등록 및 정책이 적용 된 후 장치를 다시 설정 하거나 다시 사용할 때 해당 테 넌 트에만 장치를 등록할 수 있습니다. | 19041.1366 +|
 | [전체 할당된 액세스](hololens-insider.md#global-assigned-access--kiosk-mode)                                 | 시스템 수준에서 적용 되는 여러 앱 키오스크 모드에 대해 HoloLens 2 장치를 구성 합니다. | 19041.1356 +                 |
 | [다중 앱 키오스크에서 앱 자동 실행](hololens-insider.md#automatic-launch-of-an-application-in-multiple-app-kiosk-mode)                  | 여러 앱 키오스크 모드에 로그인 할 때 응용 프로그램이 자동으로 실행 되도록 설정 합니다.     | 19041.1346 +                 |
@@ -49,6 +49,7 @@ HoloLens에 대 한 최신 참가자 Preview 빌드에 오신 것을 환영 합�
 | [업데이트 정책](hololens-insider.md#newly-enabled-update-policies-for-hololens)                                        | 업데이트 제어를 허용 하는 새로 사용할 수 있는 정책                                            | 19041.1352 +                 |
 | [HoloLens 2에 대 한 사용 설정 페이지 표시 여부](hololens-insider.md#enabled-settings-page-visibility-for-hololens-2)        | 설정 앱에 표시 되는 페이지를 선택 하는 정책입니다.                                           | 19041.1349 +                 |
 |  [리서치 모드](hololens-insider.md#research-mode) | HoloLens 2에서 리서치 모드 사용 | 19041.1375 + |
+| [기록 길이 증가](hololens-insider.md#recording-length-increased) | MRC 기록은 5 분 이상으로 중단 되지 않습니다. | 19041.1387 + |
 | [업데이트의 개선 사항 및 수정](hololens-insider.md#improvements-and-fixes-in-the-update)                   | 업데이트의 추가 수정 사항.                                                                | 19041.1361 +                 |
 
 
@@ -131,7 +132,7 @@ USB 장치에서 프로 비전의 자동 실행을 결합 하 고 프로 비전 
 
 디바이스가 이제 구성 되 고 프로 비전 성공 화면이 표시 됩니다.
 
-### Wi-fi 연결에 Autopilot 사용
+### Wi-Fi 연결에 Autopilot 사용
 현재 OOBE 중에 HoloLens 2를 Wifi에 연결 하면 OOBE에서 디바이스에 대 한 autopilot 프로필을 확인 합니다. 하나가 발견 되 면 나머지 AAD 조인과 등록 흐름을 완료 하는 데 사용 됩니다. 즉, 이더넷을 USB C 또는 USB C 어댑터에 사용 하는 것은 필요 하지 않지만, OOBE 시작 부분에 제공 되는 경우 계속 작동 합니다. [HoloLens 2 장치에 대 한 Autopilot](hololens2-autopilot.md)에 대해 자세히 알아보세요.
 
 ### Tenantlockdown CSP 및 Autopilot
@@ -283,6 +284,15 @@ HoloLens 2에서 사용자 지정할 수 있는 페이지 설정을 알아보려
 현재 연구원은 이러한 모든 외부의 raw 이미지 센서 스트림에 액세스할 수 있도록 HoloLens 장치에서 리서치 모드를 사용 하도록 설정 하는 옵션을 사용할 수 있습니다. HoloLens 2에 대 한 연구 모드는가 속도계, gyroscope 및 자력 계 판독값에 대 한 액세스도 제공 합니다. 사용자의 개인 정보를 보호 하기 위해 원시 아이 추적 카메라 이미지는 리서치 모드를 통해 사용할 수 없지만 기존 Api를 통해 눈 응시 방향을 사용할 수 있습니다.
 
 자세한 기술 정보는 [리서치 모드 설명서](https://docs.microsoft.com/windows/mixed-reality/research-mode) 를 확인 하세요.
+
+### 기록 길이 증가
+고객 의견 때문에 [혼합 현실 캡처](holographic-photos-and-videos.md)의 기록 길이를 높였습니다. 혼합 현실 캡처는 기본적으로 5 분으로 제한 되지 않으며, 대신 사용 가능한 디스크 공간을 기준으로 최대 기록 길이를 계산 하 게 됩니다. 장치는 총 디스크 공간에 대 한 최대 80% 까지의 사용 가능한 디스크 공간을 기준으로 최대 비디오 녹화 기간을 계산 합니다.
+
+> [!NOTE]
+> 다음 중 하나가 발생 하는 경우 HoloLens에서 기본 비디오 녹화 길이 (5 분)를 사용 합니다.
+> - 예상 최대 기록 기간이 기본 5 분 보다 작습니다.
+> - 사용 가능한 디스크 공간이 총 디스크 공간의 20% 미만입니다.
+
 
 ### 업데이트의 개선 사항 및 수정 사항:
 - Allow: NCM 연결에 대 한 MDM을 통해 USB 기능 열거를 사용 하지 않도록 정책을 업데이트 했습니다.

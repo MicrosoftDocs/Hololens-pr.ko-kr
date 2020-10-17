@@ -1,9 +1,9 @@
 ---
 title: HoloLens 장치에서 진단 정보 수집 및 사용
-description: ''
+description: HoloLens 장치에서 진단 정보 수집 및 사용
 author: Teresa-Motiv
 ms.author: v-tea
-ms.date: 03/23/2020
+ms.date: 10/15/2020
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b3071c2c66bf1e9c07ba2481b3e22a0d5125bc6d
-ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
+ms.openlocfilehash: 8e72bef1ad82faeb734123828050de5273bc6505
+ms.sourcegitcommit: fba9bdbb9b9326f522d5078e776b68ac6c94b6a9
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919139"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "11119948"
 ---
 # HoloLens 장치에서 진단 정보 수집 및 사용
 
@@ -122,6 +122,12 @@ IT 관리자는 DiagnosticLog CSP를 사용 하 여 다음을 제어 하는 정�
 
 이는 장치가 USB 케이블로 PC에 연결한 후 파일 탐색기에 표시 되는 경우에 적용 됩니다. 
 
+> [!NOTE]
+> 오프 라인 진단은 사용자가 OOBE를 통과 하거나 [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) 정책 값이 Full로 설정 된 경우에만 사용할 수 있습니다 (기본적으로 Hololens의 기본 값인 경우). 
+>
+> 오프 라인 진단 기능을 사용 하지 않으려면 **설정 앱 > 개인 정보** 페이지로 이동 하 고 **진단 데이터**에서 **기본** 을 선택 합니다.
+
+자세한 내용은이 비디오를 시청 하세요. 
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Gathering-Diagnostic-Files-on-HoloLens2/player]
 
@@ -134,5 +140,8 @@ IT 관리자는 DiagnosticLog CSP를 사용 하 여 다음을 제어 하는 정�
 6.  파일 탐색기를 새로 고치고 **' \Documents '** 폴더로 이동 합니다.
 7.  진단 ZIP 파일을 복사 하 여 Microsoft 지원 팀과 공유 합니다.
 
-일부 진단 ZIP 파일에는 개인 식별 가능 정보가 포함 될 수 있습니다.
+> [!NOTE]
+> 일부 진단 ZIP 파일에는 개인 식별 가능 정보가 포함 될 수 있습니다.
+
+
 
