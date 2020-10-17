@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 8e72bef1ad82faeb734123828050de5273bc6505
-ms.sourcegitcommit: fba9bdbb9b9326f522d5078e776b68ac6c94b6a9
+ms.openlocfilehash: e1302a3d482648b1ebbf7fee71ceec3ca4261d23
+ms.sourcegitcommit: 87d503434339fc6c9b41aa9473e35ddfde845cac
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "11119948"
+ms.locfileid: "11120149"
 ---
 # HoloLens 장치에서 진단 정보 수집 및 사용
 
@@ -124,8 +124,8 @@ IT 관리자는 DiagnosticLog CSP를 사용 하 여 다음을 제어 하는 정�
 
 > [!NOTE]
 > 오프 라인 진단은 사용자가 OOBE를 통과 하거나 [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) 정책 값이 Full로 설정 된 경우에만 사용할 수 있습니다 (기본적으로 Hololens의 기본 값인 경우). 
->
-> 오프 라인 진단 기능을 사용 하지 않으려면 **설정 앱 > 개인 정보** 페이지로 이동 하 고 **진단 데이터**에서 **기본** 을 선택 합니다.
+
+장치가 잠겨 있으면 로그가 나타나지 않습니다. 오프 라인 진단 기능을 사용 하지 않으려면 **설정 앱 > 개인 정보** 페이지로 이동 하 고 **진단 데이터**에서 **기본** 을 선택 합니다. 오프 라인 진단이 원격 분석 설정에 종속 된 빌드에서는 로그가 수집 되었는지 여부에만 영향을 줍니다. 수집 되는 파일에는 영향을 주지 않습니다.
 
 자세한 내용은이 비디오를 시청 하세요. 
 
