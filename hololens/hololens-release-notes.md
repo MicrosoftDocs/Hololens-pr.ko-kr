@@ -15,12 +15,12 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 23ec5478c35977d1fd1fa20a33827e441d4b5c12
-ms.sourcegitcommit: 264c8ff6726f702c3770525d774e0c1d263a2705
+ms.openlocfilehash: 85bba3c955c26bcfdb7e80a24be0befa1e06289e
+ms.sourcegitcommit: 8fb914cf6512c67444e0ead2050cf1c82bd5decc
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "11117773"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "11134427"
 ---
 # HoloLens 2 릴리스 정보
 
@@ -155,7 +155,7 @@ HoloLens 장치를 능숙 하 게 사용할 수 있도록 기능, 버그, 보안
 
 ### Windows Autopilot에 대 한 지원
 
-HoloLens 2 용 Windows Autopilot에서는 device sales 채널의 HoloLens를 Intune 테 넌 트에 미리 등록할 수 있습니다. 장치가 도착 하면 테 넌 트에서 공유 장치로 자체 배포할 준비가 된 것입니다. 자체 배포를 활용 하려면 USB-C ~ 이더넷 또는 USB-C-LTE 동글을 사용 하 여 설치 프로그램의 첫 화면에서 장치가 네트워크에 연결 되어야 합니다.
+HoloLens 2 용 Windows Autopilot에서는 device sales 채널의 HoloLens를 Intune 테 넌 트에 미리 등록할 수 있습니다. 장치가 도착 하면 테 넌 트에서 공유 장치로 자체 배포할 준비가 된 것입니다. 자체 배포를 활용 하려면 USB-C ~ 이더넷을 사용 하 여 설치 프로그램의 첫 화면에서 장치가 네트워크에 연결 되어야 합니다.
 
 사용자가 Autopilot 자동 배포 프로세스를 시작 하면 프로세스는 다음 단계를 완료 합니다.
 
