@@ -13,12 +13,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 6183a478a9eee8a5ab6212443ea2955605754a21
-ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
+ms.openlocfilehash: 8eef05c3d9f47fbbc86647ccf22c7de88bacc687
+ms.sourcegitcommit: b33dd8accef641578142e5234b9ad2d0222694ec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072785"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "11134682"
 ---
 # HoloLens(1세대) 하드웨어
 
@@ -94,7 +94,7 @@ HoloLens 상자에는 다음 항목이 포함 됩니다.
 - 밝기 크게/아래로
 - 전원 단추
 - 배터리 상태 Led
-- Wi-fi 802.11 ac
+- Wi-Fi 802.11 ac
 - 마이크로 USB 2.0
 - Bluetooth 4.1 LE
 
@@ -139,7 +139,7 @@ HoloLens 상자에는 다음 항목이 포함 됩니다.
 
 ## 사전 설치된 소프트웨어
 
-- Windows10
+- Windows 10
 - Windows 스토어
 - 홀로그램스
 - Microsoft Edge
@@ -154,7 +154,7 @@ HoloLens 상자에는 다음 항목이 포함 됩니다.
 ### 안전
 
 HoloLens가 테스트 되어 ANSI Z 87.1, CSA Z 94.3 및 EN 166의 기본 영향 보호 요구 사항을 준수 하는 것으로 검색 되었습니다.
-- [특별 행정구 정보](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
+- [SAR 정보](https://support.microsoft.com/help/12673/mobile-devices-sar-information)
 
 ## 관리 및 청소
 
@@ -167,6 +167,22 @@ HoloLens에 세척제나 용제를 사용하지 말고, 물에 담그거나 직�
 수채화 밴드 및 디바이스 암을 비롯 한 나머지 장치를 청소 하려면 가벼운 비눗물을 사용 하 여 보풀이 없는 천으로 moistened를 사용해 보세요. HoloLens를 완전히 마른 후 다시 사용 하세요.
 
 ![바이저를 청소하는 방법을 보여 주는 이미지](images/hololens-cleaning-visor.png)
+
+## 일련 번호 찾기
+
+HoloLens (첫번째 gen) 장치에 대 한 일련 번호가 오른쪽 렌즈 아래에 인쇄 됩니다.
+1. 디바이스를 착용 하 고 있는 것 처럼 여러분의 앞에 놓습니다.
+1. 렌즈를 계속 향한 후에는 아래쪽을 표시 하도록 deivce를 거꾸로 대칭 이동 합니다.
+1. 이제 오른쪽 렌즈가 왼쪽에 있으며, 밴드의 렌즈 아래에 일련 번호를 인쇄 합니다. 
+
+일련 번호는 연결 PC를 통해서도 찾을 수 있습니다.
+
+1. 장치 연결
+1. 파일 탐색기에서 **이 PC** 로 이동
+1. HoloLens 디바이스의 **속성** 을 마우스 오른쪽 단추로 클릭 하 고 선택
+1. 장치의 일련 번호가 표시 됩니다. 이 스크린샷은 다음과 같습니다.
+
+<img src="images/hl1-serial-number.png" width="400" height="600" />
 
 > [!div class="nextstepaction"]
 > [HoloLens 설정 및 시작 (첫번째 gen)](hololens1-setup.md)
