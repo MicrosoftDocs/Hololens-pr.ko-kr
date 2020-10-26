@@ -2,7 +2,7 @@
 title: HoloLens 2 하드웨어
 description: Microsoft HoloLens 2를 구성하는 구성 요소의 개요이며, Windows 10을 실행하는 Microsoft의 완전히 테더링되지 않은 홀로그램 컴퓨터의 최신 버전입니다.
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
-ms.date: 9/17/2019
+ms.date: 10/20/2020
 keywords: HoloLens
 ms.prod: hololens
 ms.sitesec: library
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 74afa9c39b66437e94aaf8f777ddc0347144b974
-ms.sourcegitcommit: 7bf0f92aaf1683c7c39ed6b17ac47231c5088365
+ms.openlocfilehash: 5299f56429adb6212074c16b67d2f10d418129f4
+ms.sourcegitcommit: b33dd8accef641578142e5234b9ad2d0222694ec
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11072775"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "11134660"
 ---
 # HoloLens 2 하드웨어
 
@@ -170,6 +170,25 @@ Microsoft HoloLens 2는 테더링되지 않은 홀로그램 컴퓨터입니다. 
 참고:
 - 유닛: 검은색 소매 스타일 상자 HoloLens 2가 판매됩니다.
 - 외부 포장: 장치를 감싼 보호 배송 포장
+
+## 일련 번호 찾기
+
+HoloLens 2 장치의 일련 번호는 바이저 아래에 적혀 있습니다.
+1. 장치의 바이저를 들어 올립니다.
+1. 브로우 패드 근처를 살펴보세요.
+1. 힌지 근처에 일련 번호를 찾을 수 있을 것입니다. 
+
+
+<img src="images/serial-number-diagram-hl2.png" width="625" height="903" />
+
+일련 번호는 연결된 PC를 통해 찾을 수도 있습니다.
+
+1. 장치 연결
+1. 파일 탐색기에서 **이 PC**로 이동
+1. 마우스 오른쪽 단추를 클릭한 후 HoloLens 장치의 **속성**을 선택
+1. 장치의 일련 번호가 표시될 것입니다. 아래 스크린샷을 참조하세요.
+
+<img src="images/ResetRecovery2.png" width="400" height="600" />
 
 ## 다음 단계
 
