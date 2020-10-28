@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 408bf94b4cec49b91198917c16f83012fa9ab644
-ms.sourcegitcommit: a81d48d362f8511960e74d38c7c8f0cff19b67c3
+ms.openlocfilehash: 63350230a680bc5a6185a3f3f334180962602442
+ms.sourcegitcommit: 72ae5a270f869393872eac160e43076eaa35fe4c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "11119301"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "11135559"
 ---
 # Microsoft HoloLens 참가자 미리 보기
 
@@ -35,6 +35,7 @@ HoloLens에 대 한 최신 참가자 Preview 빌드에 오신 것을 환영 합�
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------|
 | [자동 눈동자 위치 지원](hololens-insider.md#auto-eye-position-support)                              | 눈 위치를 적극적으로 계산 하 고 정확한 홀로그램 위치를 사용 하도록 설정 합니다.                        | 19041.1339 +                 |
 | [인증서 관리자](hololens-insider.md#certificate-manager)                                     | 사용자는 설정 앱에서 인증서를 보고, 설치 및 제거 하 고, 현재 사용자 및 로컬 컴퓨터 인증서를 제거할 수 있습니다.                                         | 19041.1361 +                 |
+| [앱 설치 관리자](hololens-insider.md#install-apps-on-hololens-2-via-app-installer) | 장치 UI에서 appx 파일의 앱을 설치 합니다. | 19041.1377 + |
 | [USB에서 자동 시작 프로 비전](hololens-insider.md#auto-launch-provisioning-from-usb)                      | OOBE는 USB 드라이브에서 프로 비전 패키지를 자동으로 검색 합니다.                                | 19041.1361 +                 |
 | [OOBE에서 프로 비전 패키지 자동 확인](hololens-insider.md#auto-confirm-provisioning-packages-in-oobe)             | OOBE에서 자동으로 프로비저닝 패키지를 적용 합니다.                                             | 19041.1361 +                 |
 | [Wi-Fi 연결에 Autopilot 사용](hololens-insider.md#using-autopilot-with-wi-fi-connection)                  | Wi-Fi 장치에서 이더넷 어댑터가 필요 없이 autopilot를 사용 합니다.                             | 19041.1364 +                 |
@@ -104,6 +105,26 @@ Windows 참가자 빌드 19041.1361 + HoloLens 2 설정 앱에서 인증서 관�
 ![설정 앱의 인증서 뷰어](images/certificate-viewer-device.jpg)
 
 ![인증서 UI를 사용 하 여 인증서를 설치 하는 방법을 보여 주는 그림](images/certificate-device-install.jpg)
+
+### 앱 설치 관리자를 통해 HoloLens 2에 앱 설치
+Windows 참가자 릴리스에서 HoloLens 2 장치에 **응용 프로그램을 더욱 원활 하 게 설치할 수 있도록 새 기능 (앱 설치 관리자)을 추가** 합니다.  이제 개발자 모드를 사용 하거나 디바이스 포털을 사용할 필요 없이 앱을 설치할 수 있습니다.  장치에 Appx 번들을 다운로드 하 고 파일 탐색기에서 Appx 번들로 이동 하 여 설치를 시작 하 라는 메시지가 표시 되도록 합니다.  또는 [웹 페이지에서 설치를 시작](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)합니다.  MDM의 LOB 앱 배포 기능을 사용 하 여 Microsoft Store 또는 테스트용으로 로드에서 설치 하는 앱과 마찬가지로 앱을 배포 하려면 [서명 도구로](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) 디지털 서명 하 고 [서명에 사용 되는 인증서](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) 를 HoloLens 장치에서 신뢰 해야 합니다. 참고: [Windows Defender Application control – WDAC CSP](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens), 블로킹 Microsoft.DesktopAppInstaller_8wekyb3d8bbwe를 사용 하 여 앱 설치 관리자를 비활성화 하면이 새 앱의 경로를 사용 하지 않도록 설정할 수 있는 모든 권한이 있습니다.
+
+**응용 프로그램 설치 지침**
+
+1.  HoloLens 2 디바이스의 전원이 켜져 있고 PC에 연결 되어 있는지 확인
+2.  HoloLens 2 장치에 로그인 되어 있는지 확인
+3.  PC에서 사용자 지정 앱으로 이동 하 고 yourapp를 yourdevicename\Internal Storage\Downloads.에 복사 합니다.   파일 복사가 완료 되 면 장치 연결을 끊을 수 있습니다.
+4.  HoloLens 2 장치에서 시작 메뉴를 열고 모든 앱을 선택 하 고 파일 탐색기 앱을 실행 합니다.
+5.  다운로드 폴더로 이동 합니다. 앱의 왼쪽 창에서이 장치를 먼저 선택한 다음 다운로드로 이동 해야 할 수 있습니다.
+6.  Yourapp 파일을 선택 합니다.
+7.  앱 설치 관리자가 실행 됩니다. 설치 단추를 선택 하 여 앱을 설치 합니다.
+설치가 완료 되 면 설치 된 앱이 자동으로 시작 됩니다.
+
+이 흐름을 테스트 하기 위해 [Windows 유니버설 샘플 GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) 에 대 한 샘플 앱을 찾을 수 있습니다.
+
+[앱 설치 관리자를 사용 하 여 HoloLens 2에 앱을 설치 하](app-deploy-app-installer.md)는 전체 프로세스에 대해 알아봅니다.  
+
+![앱 설치 관리자를 통해 MRTK 예제 설치](images/hololens-app-installer-picture.jpg)
 
 ### USB에서 자동 시작 프로 비전
 이 빌드 사용자는 OOBE 중에 단추 조합을 사용 하 여 프로 비전 할 때 수동으로 프로비저닝 화면을 실행 해야 합니다. 이제 사용자는 USB 저장소 드라이브의 프로비저닝 패키지를 사용 하 여 단추 조합을 건너뛸 수 있습니다. 
