@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 68e7b86259d4837be5bfa634c6ada4aa5b8006a1
-ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
+ms.openlocfilehash: 6851249ab9ed79e7dcdea6afc853fee66fdddf19
+ms.sourcegitcommit: a51f2e409f0207fc7457e97403b5298f1e0ad7dc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11102347"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "11145659"
 ---
 # HoloLens용 Windows 자동 실행 2
 
@@ -62,12 +62,12 @@ Windows Autopilot 프로그램에 HoloLens 2 장치를 설정할 때 사용자�
 **Windows Autopilot 자체 배포 모드 문서의 "[요구 사항](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying#requirements)" 섹션을 검토하세요.** 사용자 환경은 표준 Windows Autopilot 요구 사항뿐만 아니라 이러한 요구 사항도 충족해야 합니다. 문서의 "단계별 안내” 및 "유효성 검사" 섹션은 검토할 필요가 없습니다. 이 문서의 뒷부분에 나오는 절차는 HoloLens에 특정하여 해당되는 단계를 제공합니다. 장치를 등록하고 프로필을 구성하는 방법에 대한 자세한 내용은 이 문서의 [4. Windows Autopilot에서 장치 등록](#4-register-devices-in-windows-autopilot) 및 [6. 배포 프로필 만들기](#6-create-a-deployment-profile)를 참조하세요. 이 섹션에서는 HoloLens에 특정된 단계를 제공합니다.
 
 > [!IMPORTANT]  
-> 다른 Windows Autopilot 프로그램과 달리 HoloLens 2용 Windows Autopilot에는 특정 운영 체제 요구 사항이 있습니다. Autopilot은 HoloLens 장치에 미리 설치되어 있는 Windows Holoraphic 버전 2004(빌드 19041.1103 이상)를 사용합니다. 2020년 8월 말까지 제공되는 장치에는 Windows Holographic 버전 1903이 설치되어 있습니다. Autopilot 지원 장치 배송 기간은 대리점에 문의하시기 바랍니다. 비공개 미리 보기에 참여하려면 아래 지침 및 요구 사항을 검토하세요.
+> HoloLens 2용 Windows 자동 실행에는 특정 운영 체제 요구 사항이 있습니다. 오토파일럿은 HoloLens 장치에 사전 설치된 Windows 홀로그래픽 버전 2004(빌드 19041.1103 이상)에 의존합니다. 2020년 9월 말까지 제공되는 장치에는 Windows Holographic 버전 1903이 미리 설치되어 있습니다. Autopilot 지원 장치 배송 기간은 대리점에 문의하시기 바랍니다. 비공개 미리 보기에 참여하려면 아래 지침 및 요구 사항을 검토하세요.
 
 **Autopilot 미리 보기를 시도하려면 OOBE 및 프로비저닝 프로세스를 시작하기 전에 HoloLens 장치가 다음 요구 사항을 충족하는지 확인합니다.**
 
-- [ARC(고급 복구 도우미)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab)를 사용하여 최신 OS(Windows Holographic 버전 2004(빌드 19041.1103 이상)를 수동으로 설치해야 합니다. [여기](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device)에서 지침을 확인할 수 있습니다. 
-- Windows Autopilot에서 장치를 등록해야 합니다. 장치를 등록하는 방법에 대한 자세한 내용은 [4. Windows Autopilot에서 장치 등록](#4-register-devices-in-windows-autopilot)을 참조하세요. 
+- 장치가 Windows 홀로그래픽 버전 2004에 있는지 확인합니다(빌드 19041.1103 이상). 최신 OS가 미리 설치되어 있지 않으면 [ARC(Advanced Recovery Companion)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab)을(를) 사용하여 수동으로 업데이트해야 합니다. [여기](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device)에서 지침을 확인할 수 있습니다. 
+- Windows Autopilot에서 장치를 등록해야 합니다. 장치를 등록하는 방법에 대한 자세한 내용은 [4. Windows Autopilot에서 장치 등록](#4-register-devices-in-windows-autopilot)을 참조하세요. 권장 경로는 대리점 또는 대리점이 사용자를 위해 장치를 등록하는 것입니다.     
 - 현재 릴리스에서는 HoloLens를 켜고 Autopilot 프로비저닝 프로세스를 시작하기 전에 장치를 인터넷에 연결해야 합니다. 유선 인터넷 연결의 "USB-C에서 이더넷" 어댑터를 사용하여 장치를 이더넷에 연결합니다. 
 - 장치가 아직 Azure AD에 속하지 않으며 Intune(또는 다른 MDM 시스템)에 등록되어 있지 않습니다. Autopilot 자체 배포 프로세스가 이러한 단계를 완료합니다. 모든 장치 관련 정보를 정리하려면 Azure AD 및 Intune 포털 모두에서 **장치** 페이지를 확인하세요.
 - Autopilot 자체 배포 모드 프로필을 구성하고 관리하려면 [Microsoft 엔드포인트 관리자 관리 센터](https://endpoint.microsoft.com)에 액세스할 수 있는지 확인합니다.
@@ -75,9 +75,11 @@ Windows Autopilot 프로그램에 HoloLens 2 장치를 설정할 때 사용자�
 
 ### 2. HoloLens 2용 Windows Autopilot 프로그램 등록
 
-**프로그램에 참여하려면 테넌트가 개인 미리 보기 프로그램에 등록되어 있어야 Autopilot에 대한 HoloLens별 Intune UI 컨트롤을 가져올 수 있습니다.** 이렇게 하려면 [HoloLens용 Windows Autopilot 비공개 미리 보기 요청](https://aka.ms/APHoloLensTAP)으로 이동하거나 다음 QR 코드를 사용하여 요청을 제출합니다.  
+**프로그램에 참여하려면 테넌트가 개인 미리보기 프로그램에 등록되어 있어야 합니다. 이렇게 하면 자동 조종에 대한 HoloLens별 Intune(MEM) UI 컨트롤이 활성화됩니다.** 이렇게 하려면 [HoloLens용 Windows Autopilot 비공개 미리 보기 요청](https://aka.ms/APHoloLensTAP)으로 이동하거나 다음 QR 코드를 사용하여 요청을 제출합니다.  
 
 ![Autopilot QR 코드](./images/hololens-ap-qrcode.png)  
+
+Microsoft는 일주일에 한 번 테넌트를 비행합니다. 비행이 완료되면 전자 메일 알림을 받게 됩니다. 
 
 이 요청에서 다음 정보를 제공합니다.
 

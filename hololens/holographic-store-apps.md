@@ -3,7 +3,7 @@ title: 응용 프로그램 찾기, 설치 및 제거
 description: Microsoft Store는 HoloLens와 작동하는 앱과 게임의 출처입니다.  홀로그램 앱을 찾고, 설치하고 제거하는 방법에 대해 자세히 알아보세요.
 ms.assetid: cbe9aa3a-884f-4a92-bf54-8d4917bc3435
 ms.reviewer: v-miegge
-ms.date: 08/31/2020
+ms.date: 10/27/2020
 manager: jarrettr
 keywords: Hololens, 스토어, uwp, 앱, 설치
 ms.prod: hololens
@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: fd818054fbe692363d411373a6a12ad1057d1be7
-ms.sourcegitcommit: 2b1de9c8f8a212a797fb0cb6056856dd4ff716a1
+ms.openlocfilehash: d64d0a18fbbf6570173c4bd80bc4f036f4408e08
+ms.sourcegitcommit: a51f2e409f0207fc7457e97403b5298f1e0ad7dc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "10985848"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "11145639"
 ---
 # Microsoft Store에서 앱을 찾고, 설치하고 제거
 
@@ -35,6 +35,15 @@ HoloLens는 Microsoft Store 뿐만 아니라 HoloLens를 위해 특별히 만들
 ## 앱 찾기
 
 **시작** 메뉴에서 Microsoft Store 열기 앱과 게임을 찾습니다. [음성 명령](hololens-cortana.md)을 사용하여 "검색"이라고 말하면 검색 창이 열리고 창이 열리면 " 받아쓰기 시작"이라고 말한 다음 메시지가 나타나면 검색어를 말하기 시작합니다.
+
+> [!NOTE]
+> 2021년 1월 12일에 다음 앱이 HoloLens 장치에 대한 지원 종료에 도달합니다. 장치의 다음 링크를 사용하여 앱의 웹 버전을 사용하는 것이 좋습니다.
+
+| 앱        | Link                                          |
+|------------|-----------------------------------------------|
+| Excel Mobile      | https://office.live.com/start/Excel.aspx      |
+| Word Mobile       | https://office.live.com/start/Word.aspx       |
+| PowerPoint Mobile | https://office.live.com/start/PowerPoint.aspx |
 
 ## 앱 설치
 
