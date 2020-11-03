@@ -14,29 +14,26 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 4e2256f1086c92cdf0e788ba9dddf5b74a733116
-ms.sourcegitcommit: 72ae5a270f869393872eac160e43076eaa35fe4c
+ms.openlocfilehash: 415733bb2809b7ae2808edc097423f8928910c57
+ms.sourcegitcommit: c4fd9a87bb7c728c73418f95a1b15dd93b0af7c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11135529"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "11150919"
 ---
 # 앱 설치 관리자를 통해 HoloLens 2에 앱 설치
-
-Windows 참가자 릴리스에서 HoloLens 2 장치에 **응용 프로그램을 더욱 원활 하 게 설치할 수 있도록 새 기능 (앱 설치 관리자)을 추가** 합니다.  이제 개발자 모드를 사용 하거나 디바이스 포털을 사용할 필요 없이 앱을 설치할 수 있습니다.  장치에 Appx 번들을 다운로드 하 고 파일 탐색기에서 Appx 번들로 이동 하 여 설치를 시작 하 라는 메시지가 표시 되도록 합니다.  또는 [웹 페이지에서 설치를 시작](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)합니다.  MDM의 LOB 앱 배포 기능을 사용 하 여 Microsoft Store 또는 테스트용으로 로드에서 설치 하는 앱과 마찬가지로 앱을 배포 하려면 [서명 도구로](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) 디지털 서명 하 고 [서명에 사용 되는 인증서](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) 를 HoloLens 장치에서 신뢰 해야 합니다.   
-
-이 업데이트 [는 기본적으로 테스트용 로드를 사용 하는](https://blogs.windows.com/windows-insider/2019/08/07/announcing-windows-10-insider-preview-build-18956/) 데스크톱에 맞게 정렬 됩니다.
 
 > [!IMPORTANT]
 > 이 기능은 현재 Windows 참가자 빌드 19041.1377 +에만 avalible 있습니다. [Windows 참가자 빌드에 등록 하는 방법에 대해 자세히 알아보세요](hololens-insider.md).
 
-> [!NOTE]
-> 이 기능을 사용 하지 않도록 설정 하려는 IT 관리자의 경우 [WDAC 정책의](windows-defender-application-control-wdac.md)일부로 다음 패키지 패밀리 이름을 사용 하세요. 앱 설치 관리자 앱만 차단 되며 Microsoft Store 또는 MDM 솔루션 등의 다른 원본에서 설치 된 앱이 아닙니다.
-```
-Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
-```
-> [!NOTE]
-> 앱을 제어 하는 데 [WDAC 정책을](windows-defender-application-control-wdac.md) 사용 하는 것이 좋지만, microsoft store 앱만 허용 하려는 경우 [Applicationmanagement/AllowAllTrustedApps](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) policy를 명시적으로 "허용 안 함"으로 설정 하도록 구성 된 장치에서 microsoft store에서 앱만 설치할 수 있도록 허용 하는 것이 좋습니다. 
+Windows 참가자 릴리스에서 HoloLens 2 장치에 **응용 프로그램을 더욱 원활 하 게 설치할 수 있도록 새 기능 (앱 설치 관리자)을 추가** 합니다. **관리 되지 않는 장치에 대 한 기능은 기본적으로 설정**됩니다. 엔터프라이즈에 대 한 혼란을 방지 하기 위해 지금은 **관리 장치에** 앱 설치 관리자를 사용할 수 없게 됩니다.  
+
+다음과 **같은 경우에** 는 장치가 "관리"로 간주 됩니다.
+- MDM [등록](hololens-enroll-mdm.md) 됨
+- [배포 패키지](hololens-provisioning.md) 를 사용 하 여 구성
+- 사용자 [id](hololens-identity.md) 가 AAD입니다.
+
+이제 개발자 모드를 사용 하거나 디바이스 포털을 사용할 필요 없이 앱을 설치할 수 있습니다.  장치에 Appx 번들을 다운로드 하 고 파일 탐색기에서 Appx 번들로 이동 하 여 설치를 시작 하 라는 메시지가 표시 되도록 합니다.  또는 [웹 페이지에서 설치를 시작](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)합니다.  MDM의 LOB 앱 배포 기능을 사용 하 여 Microsoft Store 또는 테스트용으로 로드에서 설치 하는 앱과 마찬가지로 앱을 배포 하려면 [서명 도구로](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) 디지털 서명 하 고 [서명에 사용 되는 인증서](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) 를 HoloLens 장치에서 신뢰 해야 합니다.   
 
 ## 요구 사항
 
@@ -60,6 +57,7 @@ Microsoft.DesktopAppInstaller_8wekyb3d8bbwe
 
 ## 설치 방법
 
+1.  장치가 관리 되는 것으로 간주 되지 않는지 확인 합니다.
 1.  HoloLens 2 디바이스의 전원이 켜져 있고 로그인 되어 있는지 확인 합니다.
 1.  PC에서 사용자 지정 앱으로 이동 하 고 yourapp를 yourdevicename\Internal Storage\Downloads.에 복사 합니다. 
     파일 복사가 완료 되 면 장치 연결을 끊고 나중에 설치를 완료할 수 있습니다.

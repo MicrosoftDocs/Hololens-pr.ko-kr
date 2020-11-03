@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 63350230a680bc5a6185a3f3f334180962602442
-ms.sourcegitcommit: 72ae5a270f869393872eac160e43076eaa35fe4c
+ms.openlocfilehash: d054628ec53fdc00560d628299058ce4c8d56185
+ms.sourcegitcommit: c4fd9a87bb7c728c73418f95a1b15dd93b0af7c6
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "11135559"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "11150959"
 ---
 # Microsoft HoloLens 참가자 미리 보기
 
@@ -107,17 +107,25 @@ Windows 참가자 빌드 19041.1361 + HoloLens 2 설정 앱에서 인증서 관�
 ![인증서 UI를 사용 하 여 인증서를 설치 하는 방법을 보여 주는 그림](images/certificate-device-install.jpg)
 
 ### 앱 설치 관리자를 통해 HoloLens 2에 앱 설치
-Windows 참가자 릴리스에서 HoloLens 2 장치에 **응용 프로그램을 더욱 원활 하 게 설치할 수 있도록 새 기능 (앱 설치 관리자)을 추가** 합니다.  이제 개발자 모드를 사용 하거나 디바이스 포털을 사용할 필요 없이 앱을 설치할 수 있습니다.  장치에 Appx 번들을 다운로드 하 고 파일 탐색기에서 Appx 번들로 이동 하 여 설치를 시작 하 라는 메시지가 표시 되도록 합니다.  또는 [웹 페이지에서 설치를 시작](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)합니다.  MDM의 LOB 앱 배포 기능을 사용 하 여 Microsoft Store 또는 테스트용으로 로드에서 설치 하는 앱과 마찬가지로 앱을 배포 하려면 [서명 도구로](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) 디지털 서명 하 고 [서명에 사용 되는 인증서](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) 를 HoloLens 장치에서 신뢰 해야 합니다. 참고: [Windows Defender Application control – WDAC CSP](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens), 블로킹 Microsoft.DesktopAppInstaller_8wekyb3d8bbwe를 사용 하 여 앱 설치 관리자를 비활성화 하면이 새 앱의 경로를 사용 하지 않도록 설정할 수 있는 모든 권한이 있습니다.
+앱 설치 관리자 기능은 다음 기능 업데이트 후에 바로 제공 됩니다. HoloLens 2 장치에 **응용 프로그램을 더욱 원활 하 게 설치할 수 있도록 새 접근 권한 (앱 설치 관리자)을 추가** 합니다. **관리 되지 않는 장치에 대 한 기능은 기본적으로 설정**됩니다. 엔터프라이즈에 대 한 혼란을 방지 하기 위해 지금은 **관리 장치에** 앱 설치 관리자를 사용할 수 없게 됩니다.  
+
+다음과 **같은 경우에** 는 장치가 "관리"로 간주 됩니다.
+- MDM [등록](hololens-enroll-mdm.md) 됨
+- [배포 패키지](hololens-provisioning.md) 를 사용 하 여 구성
+- 사용자 [id](hololens-identity.md) 가 AAD입니다.
+
+이제 개발자 모드를 사용 하거나 디바이스 포털을 사용할 필요 없이 앱을 설치할 수 있습니다.  장치에 Appx 번들을 다운로드 하 고 파일 탐색기에서 Appx 번들로 이동 하 여 설치를 시작 하 라는 메시지가 표시 되도록 합니다.  또는 [웹 페이지에서 설치를 시작](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)합니다.  MDM의 LOB 앱 배포 기능을 사용 하 여 Microsoft Store 또는 테스트용으로 로드에서 설치 하는 앱과 마찬가지로 앱을 배포 하려면 [서명 도구로](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) 디지털 서명 하 고 [서명에 사용 되는 인증서](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) 를 HoloLens 장치에서 신뢰 해야 합니다.
 
 **응용 프로그램 설치 지침**
 
+1.  장치가 관리 되는 것으로 간주 되지 않는지 확인
 1.  HoloLens 2 디바이스의 전원이 켜져 있고 PC에 연결 되어 있는지 확인
-2.  HoloLens 2 장치에 로그인 되어 있는지 확인
-3.  PC에서 사용자 지정 앱으로 이동 하 고 yourapp를 yourdevicename\Internal Storage\Downloads.에 복사 합니다.   파일 복사가 완료 되 면 장치 연결을 끊을 수 있습니다.
-4.  HoloLens 2 장치에서 시작 메뉴를 열고 모든 앱을 선택 하 고 파일 탐색기 앱을 실행 합니다.
-5.  다운로드 폴더로 이동 합니다. 앱의 왼쪽 창에서이 장치를 먼저 선택한 다음 다운로드로 이동 해야 할 수 있습니다.
-6.  Yourapp 파일을 선택 합니다.
-7.  앱 설치 관리자가 실행 됩니다. 설치 단추를 선택 하 여 앱을 설치 합니다.
+1.  HoloLens 2 장치에 로그인 되어 있는지 확인
+1.  PC에서 사용자 지정 앱으로 이동 하 고 yourapp를 yourdevicename\Internal Storage\Downloads.에 복사 합니다.   파일 복사가 완료 되 면 장치 연결을 끊을 수 있습니다.
+1.  HoloLens 2 장치에서 시작 메뉴를 열고 모든 앱을 선택 하 고 파일 탐색기 앱을 실행 합니다.
+1.  다운로드 폴더로 이동 합니다. 앱의 왼쪽 창에서이 장치를 먼저 선택한 다음 다운로드로 이동 해야 할 수 있습니다.
+1.  Yourapp 파일을 선택 합니다.
+1.  앱 설치 관리자가 실행 됩니다. 설치 단추를 선택 하 여 앱을 설치 합니다.
 설치가 완료 되 면 설치 된 앱이 자동으로 시작 됩니다.
 
 이 흐름을 테스트 하기 위해 [Windows 유니버설 샘플 GitHub](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples) 에 대 한 샘플 앱을 찾을 수 있습니다.
