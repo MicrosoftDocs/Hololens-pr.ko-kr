@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 327e2411f497ff01723b42e9c2d00d26f8c89c7a
-ms.sourcegitcommit: d4eee928a39492b2d2d37e3ebf3a65e7b6f7cb63
+ms.openlocfilehash: 7d9568e6498c9b73fdee7110248a51253540a7eb
+ms.sourcegitcommit: ef25b0470ad789fbf41591be64d737ff7ea43d1f
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "11146179"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "11151120"
 ---
 # HoloLens 개발 에디션 FAQ
 
@@ -41,6 +41,10 @@ HoloLens 2 개발 에디션에는 HoloLens 2, $500, Azure 크레딧, 3 개월 Un
 
 귀하의 할인 크레딧이 나 평가판은 제품 배송 기간 2 일 이내에 구매에 사용 되는 이메일에 전송 됩니다.
 
+### 체험 크레딧을 얻으려면 "내 HoloLens 2 (장치 전용) 장치를 HoloLens 2 개발 판으로" 업그레이드 "할 수 있나요?
+
+아니요, 장치 전송 계획을 제공 하지 않습니다. 모든 버전에서 다른 버전으로 전송할 수 있는 기능은 없습니다. 
+
 ### Unity Pro는 무엇 인가요? 
 
 Unity Pro는 중소 규모의 스튜디오/기업에 대 한 실시간 3D 플랫폼입니다. 기술 및 비기술적 기술이 혼합 되어 있는 팀을 위해 설계 되었습니다. [자세히 알아보기](https://store.unity.com/products/unity-pro)
@@ -61,13 +65,17 @@ Pixyz 플러그 인은 거의 모든 형식을 읽고 변환 하 고, 최적화 
 
 이 장치는 mixed reality 솔루션을 빌드하는 개발자를 위한 것입니다. 고객 거래 당 구매 1 개를 제한 합니다. 회사에서 여러 개발 에디션 장치를 구입 하려는 경우 회사를 대신 하 여 HoloLens 2 개발 에디션 장치를 구입 하는 별도의 트랜잭션이 필요 합니다. 
 
+### 내 HoloLens 2 개발 에디션 장치를 고객에 게 표시할 수 있나요? 
+
+예,이 장치는 mixed reality 솔루션을 프로토타입 작성 및 테스트 하는 데 사용 됩니다.
+
 ### HoloLens 2 개발 에디션을 어디에서 구입할 수 있나요? 
 
 HoloLens 2 개발 에디션은 Microsoft Store에 독점적으로 판매 됩니다.  
 
 ### 내 HoloLens 2 개발 에디션을 반환할 수 있나요?  
 
-아니요.
+모든 판매가 최종 이며, HoloLens 2 개발 판에 사용할 수 있는 환불 없습니다.
 
 ### 개발자 에디션에는 HoloLens 2와는 다른 하드웨어 요구 사항이 달라 집니다.
 
