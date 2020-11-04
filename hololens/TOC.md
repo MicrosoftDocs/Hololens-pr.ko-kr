@@ -12,6 +12,8 @@
 ### [HoloLens 2 정리 FAQ](hololens2-maintenance.md)
 ### [HoloLens 2에 지원되는 언어](hololens2-language-support.md)
 ### [HoloLens 2 둘러보기](hololens2-basic-usage.md)
+### [HoloLens 개발 에디션 FAQ](hololens2-development-edition-faq.md)
+
 
 ## HoloLens(1세대) 시작하기
 ### [HoloLens(1세대) 하드웨어](hololens1-hardware.md)
@@ -108,6 +110,7 @@
 ## [Microsoft HoloLens 참가자 미리 보기](hololens-insider.md)
 ### [전역 할당된 액세스 - 키오스크](hololens-global-assigned-access-kiosk.md)
 ### [HoloLens에 대 한 페이지 설정 URI](settings-uri-list.md)
+### [앱 설치 관리자](app-deploy-app-installer.md)
 
 ## [HoloLens(1세대) 릴리스 정보](hololens1-release-notes.md)
 # [피드백을 보내 주세요.](hololens-feedback.md)
