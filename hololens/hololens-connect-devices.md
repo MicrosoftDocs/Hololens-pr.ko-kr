@@ -13,14 +13,17 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: fef69ee4cd148b82721472436da8dfd627f86ff1
-ms.sourcegitcommit: 708da7b390fed1fd3aea1a2b2e50461851052683
+ms.openlocfilehash: 0a2bda0c0beb1d8dd42281ecb016f21c08cfdc1f
+ms.sourcegitcommit: 17d55772e03a870a9db2fb792d429817626b9579
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "10881341"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "11155394"
 ---
 # Bluetooth 및 USB-C 장치에 연결
+
+> [!NOTE]
+> 외부 마이크를 사용할 수 없습니다. HoloLens 2는 기본 제공 [마이크 배열](hololens2-hardware.md#audio-and-speech)을 사용합니다.
 
 ## Bluetooth 장치 페어링
 
@@ -29,9 +32,6 @@ HoloLens 2는 다음 Bluetooth 장치 클래스를 지원합니다.
 - 마우스
 - 키보드
 - A2DP(Bluetooth 오디오 출력) 장치
-
-> [!NOTE]
-> 외부 마이크를 사용할 수 없습니다. HoloLens 2는 기본 제공 [마이크 배열](hololens2-hardware.md#audio-and-speech)을 사용합니다.
 
 HoloLens 2(1세대)는 다음 Bluetooth 장치 클래스를 지원합니다.
 
