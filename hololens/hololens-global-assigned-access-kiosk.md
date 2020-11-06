@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9c411811376d34b4399db76c76364cd1254910c4
-ms.sourcegitcommit: a59ce1cf68785c8e08c5ea94046ba04291ee1a55
+ms.openlocfilehash: 8777c64b4d4ca08bf3b103d7d92bbb99d6978bdc
+ms.sourcegitcommit: 4e168380c23e8463438aa8a1388baf8d5ac1a1ab
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "11094976"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "11154199"
 ---
 # 전체 할당된 액세스 - 키오스크
 
@@ -64,3 +64,14 @@ ms.locfileid: "11094976"
 
  :::code language="xml" source="samples/exclude-device-owners-from-global.xml" highlight="6,16-18":::
  
+## 추가 글로벌 할당 액세스 예시
+
+이 키오스크는 사용자가 로그인할 때 설정 앱, 피드백 허브 및 Edge가 포함된 멀티앱 키오스크를 사용하는 Global Assigned Access 키오스크입니다.
+
+:::code language="xml" source="samples/kiosk-sample-global-assigned-access.xml":::
+
+이것은 다른 AAD 사용자가 로그인 할 때 장치 소유자를 제외하는 전역 할당 액세스 키오스크이며 설정 앱, 피드백 허브 및 Edge와 함께 다중 앱 키오스크를 갖게됩니다. 또한 이 키오스크에는 방문자 계정에 대한 보조 키오스크 구성이 포함되어 있으며, 잠금 화면에서 누구나 로그인할 수 있습니다. 사용자가 방문자 계정에 로그인하면 피드백 허브 앱만 있는 멀티앱 키오스크가 제공됩니다.
+
+:::code language="xml" source="samples/kiosk-sample-global-assigned-access-visitor-exclude.xml":::
+
+
