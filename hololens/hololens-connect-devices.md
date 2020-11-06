@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0a2bda0c0beb1d8dd42281ecb016f21c08cfdc1f
-ms.sourcegitcommit: 17d55772e03a870a9db2fb792d429817626b9579
+ms.openlocfilehash: 2f2de4d776a0fdb99555687a96719d111ffb6460
+ms.sourcegitcommit: 8bf8e9196c4ea89297f210b5c1d41b31f9edd407
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 11/05/2020
-ms.locfileid: "11155394"
+ms.locfileid: "11156295"
 ---
 # Bluetooth 및 USB-C 장치에 연결
 
@@ -66,6 +66,14 @@ HoloLens 2(1세대)는 다음 Bluetooth 장치 클래스를 지원합니다.
    
 1. 페어링 화면에서 **클리커** > **연결**을 선택합니다.
 
+## Bluetooth 해제
+
+이 절차는 Bluetooth 라디오의 RF 구성 요소를 해제하고 Microsoft HoloLens에서 모든 Bluetooth 기능을 사용 하지 않도록 설정합니다.
+
+1. 피어오르는 제스처(HoloLens(1세대)) 또는 시작 제스처(HoloLens 2)를 사용하여 **시작**으로 이동한 다음 **설정** > **장치**를 선택합니다.
+
+1. **Bluetooth** 슬라이더 스위치를 **해제** 위치로 이동 합니다.
+
 ## HoloLens 2: USB-C 장치 연결
 
 HoloLens 2는 다음 USB-C 장치 클래스를 지원합니다.
@@ -95,11 +103,3 @@ Miracst를 사용 하려면 다음 단계를 따릅니다.
 1. 나타나는 장치 목록에서 사용 가능한 장치를 선택합니다.
 
 1. 페어링이 완료되면 프로젝션을 시작합니다.
-
-## Bluetooth 해제
-
-이 절차는 Bluetooth 라디오의 RF 구성 요소를 해제하고 Microsoft HoloLens에서 모든 Bluetooth 기능을 사용 하지 않도록 설정합니다.
-
-1. 피어오르는 제스처(HoloLens(1세대)) 또는 시작 제스처(HoloLens 2)를 사용하여 **시작**으로 이동한 다음 **설정** > **장치**를 선택합니다.
-
-1. **Bluetooth** 슬라이더 스위치를 **해제** 위치로 이동 합니다.
