@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 4da70e73cd5949c77bc77a73f57f788ed51eff90
-ms.sourcegitcommit: 973b0e71ebceeb2c614aea3dd3a1fbb90d7daed9
+ms.openlocfilehash: 452164caaad09f2caecf7c4a51cda6242d805d7f
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "11100273"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163114"
 ---
 # 혼합 현실 사진 및 비디오 만들기
 
@@ -155,21 +155,31 @@ HoloLens에 연결 된 PC에서 혼합 현실 사진과 비디오를 보고/또�
 ## Mixed reality 캡처의 제한 사항
 
 - Mixed reality 캡처를 사용 하는 동안 HoloLens의 프레임 속도는 halved로 최대 30hz입니다.
-- 비디오의 최대 길이는 5 분입니다.
 - 사진/비디오 카메라가 이미 다른 응용 프로그램에서 사용 중이거나 라이브 스트리밍 중 이거나 시스템 리소스가 부족 한 경우 사진 및 비디오의 해상도를 줄일 수 있습니다.
+
+### 최대 기록 길이
+
+Windows 홀로그램 전에 HoloLens 2 장치에서 장치에 기록 된 버전 20H2 비디오의 최대 길이는 5 분으로 제한 됩니다.
+
+고객 의견 때문에 [혼합 현실 캡처](holographic-photos-and-videos.md)의 기록 길이를 높였습니다. 혼합 현실 캡처는 기본적으로 5 분으로 제한 되지 않으며, 대신 사용 가능한 디스크 공간을 기준으로 최대 기록 길이를 계산 하 게 됩니다. 장치는 총 디스크 공간에 대 한 최대 80% 까지의 사용 가능한 디스크 공간을 기준으로 최대 비디오 녹화 기간을 계산 합니다.
+
+> [!NOTE]
+> 다음 중 하나가 발생 하는 경우 HoloLens에서 기본 비디오 녹화 길이 (5 분)를 사용 합니다.
+> - 예상 최대 기록 기간이 기본 5 분 보다 작습니다.
+> - 사용 가능한 디스크 공간이 총 디스크 공간의 20% 미만입니다.
 
 ## 기본 파일 형식 및 해상도
 
 ### 기본 사진 형식 및 해상도
 
-|  Device  |  형식  |  확장  |  해상도  |
+|  장치  |  형식  |  확장  |  해상도  |
 |----------|----------|----------|----------|
 | HoloLens 2 | [JPEG](https://en.wikipedia.org/wiki/JPEG) | .jpg | 3904x2196px |
 | HoloLens (첫번째 gen) | [JPEG](https://en.wikipedia.org/wiki/JPEG) | .jpg | 1408x792px |
 
 ### 녹화 된 비디오 형식 및 해상도
 
-| Device | 형식 | 확장 | 해상도 | 속력과 | Audio |
+| 장치 | 형식 | 확장 | 해상도 | 속력과 | Audio |
 |----------|----------|----------|----------|----------|----------|
 | HoloLens 2 | [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1920x1080px | 30fps | 48kHz 스테레오 |
 | HoloLens (첫번째 gen) |  [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1216x684px | 24fps | 48kHz 스테레오 |

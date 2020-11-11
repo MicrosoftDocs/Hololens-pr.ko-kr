@@ -10,18 +10,18 @@ ms.custom:
 - CI 115190
 - CSSTroubleshooting
 ms.localizationpriority: medium
-ms.date: 03/10/2020
+ms.date: 10/13/2020
 ms.reviewer: Teresa-Motiv
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c10f07a6caeae6f2e8ace41d345c3ad11901621a
-ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
+ms.openlocfilehash: f6b715a6a43a403ec56119188db0121e0731af37
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052647"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162995"
 ---
 # 배포 패키지를 사용 하 여 HoloLens 구성
 
@@ -46,7 +46,7 @@ HoloLens 마법사는 프로비저닝 패키지에서 다음 설정을 구성 �
     > 이는 HoloLens 1 gen 장치에만 사용 해야 합니다. 프로비저닝 패키지의 설정은 프로 비전 패키지에 비즈니스용 Windows 홀로그램에 대 한 버전 업그레이드 라이선스가 포함 되어 있거나 [장치가 이미 Windows 홀로그램 비즈니스용으로 업그레이드](hololens1-upgrade-enterprise.md)한 경우에만 적용 됩니다.
 
 - OOBE (HoloLens first experience) 구성
-- Wi-fi 네트워크 구성
+- Wi-Fi 네트워크 구성
 - Azure Active Directory에서 장치 등록 또는 로컬 계정 만들기
 - 인증서 추가
 - 개발자 모드 사용
@@ -88,12 +88,12 @@ Windows 구성 디자이너 도구를 사용하여 프로비전 패키지를 만
 ### 설정 구성
 
 <table>
-<tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>엔터프라이즈 라이선스 파일을 찾아 선택 하 여 HoloLens 에디션을 업그레이드 합니다.</br></br><strong>예 </strong> 또는 <strong> 아니요를 전환 하 여 </strong> 첫 번째 환경의 일부를 숨길 수도 있습니다.</br></br>Wi-fi 네트워크에 연결할 필요 없이 장치를 설정 하려면 <strong> wi-fi 설정 건너뛰기를 설정 </strong> 으로 전환 <strong> </strong> 합니다.</br></br>장치를 사용할 지역 및 표준 시간대를 선택 합니다. </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="two"></a><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br>이 섹션에서는 디바이스가 자동으로 연결 하는 Wi-fi 무선 네트워크의 세부 정보를 입력할 수 있습니다. 이렇게 하려면 <strong> 설정 </strong> , SSID, 네트워크 유형 ( <strong> 개방 </strong> 또는 <strong> wpa2-개인 </strong> ) 및 <strong> </strong> 무선 네트워크에 대 한 비밀 번호 (wpa2-개인 경우)를 입력 합니다.</td><td><img src="images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="one"></a><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>엔터프라이즈 라이선스 파일을 찾아 선택 하 여 HoloLens 에디션을 업그레이드 합니다.</br></br><strong>예 </strong> 또는 <strong> 아니요를 전환 하 여 </strong> 첫 번째 환경의 일부를 숨길 수도 있습니다.</br></br>Wi-Fi 네트워크에 연결할 필요 없이 장치를 설정 하려면 Wi-Fi 설정 건너뛰기를 설정으로 전환 <strong> </strong> <strong> </strong> 합니다.</br></br>장치를 사용할 지역 및 표준 시간대를 선택 합니다. </td><td><img src="images/set-up-device-details.png" alt="Select enterprise licence file and configure OOBE"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="two"></a><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br>이 섹션에서는 디바이스가 자동으로 연결 해야 하는 Wi-Fi 무선 네트워크의 세부 정보를 입력할 수 있습니다. 이렇게 하려면 <strong> 설정 </strong> , SSID, 네트워크 유형 ( <strong> 개방 </strong> 또는 <strong> wpa2-개인 </strong> ) 및 <strong> </strong> 무선 네트워크에 대 한 비밀 번호 (wpa2-개인 경우)를 입력 합니다.</td><td><img src="images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
 <tr><td style="width:45%" valign="top"><a id="three"></a><img src="images/three.png" alt="step three"/>  <img src="images/account-management.png" alt="account management"/></br></br>Azure Active Directory에서 장치를 등록 하거나 장치에서 로컬 계정을 만들 수 있습니다.</br></br>Windows 구성 디자이너 마법사를 사용하여 대량 Azure AD 등록을 구성하려면 먼저 <a href="https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](https://docs.microsoft.com/azure/active-directory/active-directory-azureadjoin-setup)">조직에서 Azure AD 가입을 설정</a>합니다. Azure AD 테넌트의 <strong>사용자당 최대 장치 수</strong>는 마법사에서 얻은 대량 토큰을 사용할 수 있는 횟수를 결정합니다. Azure AD에 디바이스를 등록하려면 해당 옵션을 선택하고 마법사를 사용하여 가져올 대량 토큰의 이름을 입력합니다. 토큰의 만료 날짜를 설정합니다(토큰을 가져온 날로부터 최대 30일). <strong>대량 토큰 가져오기를 선택 </strong> 합니다. <strong>S에 로그인&#39;허용 창에서 장치를 </strong> Azure AD에 참가 시킬 수 있는 권한이 있는 계정을 입력 한 다음 암호를 입력 합니다. <strong>동의 </strong> 를 선택 하 여 Windows 구성 디자이너에 필요한 사용 권한을 부여 합니다. </br></br>로컬 계정을 만들려면 해당 옵션을 선택 하 고 사용자 이름 및 암호를 입력 합니다. </br></br><strong>중요:</strong> <br />(Windows 10의 버전 1607에만 해당) 배포 패키지에서 로컬 계정을 만드는 경우 <strong> 42 일 마다 설정 앱을 사용 하 여 암호를 변경 해야 합니다 </strong> . 기간 내에 암호를 변경하지 않는 경우 계정이 잠겨 로그인하지 못하게 될 수 있습니다.  </td><td><img src="images/account-management-details.png" alt="join  Azure AD or create a local  account"/></td></tr>
 <tr><td style="width:45%" valign="top"><a id="four"></a><img src="images/four.png" alt="step four"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br>인증서를 사용하여 디바이스를 프로비전하려면 <strong>인증서 추가</strong>를 클릭합니다. 인증서 이름을 입력하고 사용할 인증서를 찾아서 선택합니다.</td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
 <tr><td style="width:45%" valign="top"><a id="five"></a><img src="images/five.png" alt="step five"/> <img src="images/developer-setup.png" alt="Developer Setup"/></br></br><strong> </strong> <strong> </strong> HoloLens에서 개발자 모드를 사용 하도록 설정 하려면 예 또는 아니요를 전환 합니다. <a href="https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode" data-raw-source="[Learn more about Developer Mode.](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)">개발자 모드에 대해 자세히 알아보세요.</a></td><td><img src="images/developer-setup-details.png" alt="Enable Developer Mode"/></td></tr>
-<tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finish"/></br></br>프로 비전 패키지를 보호 하기 위해 암호를 설정 하지 마세요. 프로 비전 패키지를 암호로 보호 하는 경우 HoloLens 장치를 프로 비전 할 수 없습니다.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
+<tr><td style="width:45%" valign="top"><a id="six"></a><img src="images/six.png" alt="step six"/> <img src="images/finish.png" alt="finished"/></br></br>프로 비전 패키지를 보호 하기 위해 암호를 설정 하지 마세요. 프로 비전 패키지를 암호로 보호 하는 경우 HoloLens 장치를 프로 비전 할 수 없습니다.</td><td><img src="images/finish-details.png" alt="Protect your package"/></td></tr>
 </table>
 
 완료 한 후 **만들기**를 선택 합니다. 몇 초 정도 걸립니다. 패키지가 빌드되면 패키지가 저장된 위치가 페이지 맨 위에 하이퍼링크로 표시됩니다.
@@ -152,7 +152,13 @@ Windows 구성 디자이너 도구를 사용하여 프로비전 패키지를 만
 
 ## 설치 하는 동안 HoloLens에 프로비저닝 패키지 적용
 
-HoloLens 2 빌드 [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) 이상에서 USB 드라이브를 사용 하 여 프로비저닝 패키지를 적용할 수 있습니다. USB 드라이브의 루트에는. a. a kg 파일을 복사 하면 됩니다. 프로 비전 패키지는 USB 드라이브의 루트에 있는 경우에만 적용 됩니다. 제공 된 여러 프로비저닝 패키지가 순차적으로 적용 됩니다.
+Windows 홀로그램 버전 2004 또는 빌드 [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) 이상에서 HoloLens 2 장치는 USB 드라이브를 사용 하 여 프로비저닝 패키지를 적용할 수 있습니다. USB 드라이브의 루트에는. a. a kg 파일을 복사 하면 됩니다. 프로 비전 패키지는 USB 드라이브의 루트에 있는 경우에만 적용 됩니다. 제공 된 여러 프로비저닝 패키지가 순차적으로 적용 됩니다.
+
+[Windows 홀로그램 버전 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 이상에 있는 HoloLens 2 장치에서는이 프로세스를 간소화 하 고 간소화 하는 데 도움이 되는 최신 기능을 제공 합니다. 다음 섹션을 검토 하세요.
+
+- [USB에서 자동 시작 프로 비전](hololens-provisioning.md#auto-launch-provisioning-from-usb)
+- [OOBE에서 프로 비전 패키지 자동 확인](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
+- [UI를 사용 하지 않고 자동 프로 비전](hololens-provisioning.md#automatic-provisioning-without-using-ui)
 
 1. USB 케이블을 사용 하 여 장치를 PC (또는 위에 언급 된 HoloLens 2 용 USB 드라이브)에 연결한 다음 장치를 시작 합니다. OOBE의 **첫 번째 감 순간** 페이지를 지나서 진행 하지 마세요.   
     - HoloLens (첫번째 gen)에서이 페이지는 파란색 상자를 포함 하 고 있습니다. 
@@ -172,6 +178,39 @@ HoloLens 2 빌드 [19041.1103](hololens-release-notes.md#windows-holographic-ver
 
 > [!NOTE]
 > 8 월 2016 이전에 장치를 구매한 경우 Microsoft 계정을 사용 하 여 장치에 로그인 하 고 최신 운영 체제 업데이트를 다운로드 한 다음 운영 체제를 초기화 하 여 프로비저닝 패키지를 적용 해야 합니다.
+
+### USB에서 자동 시작 프로 비전
+
+- OOBE 중에 제공 되는 프로비저닝 패키지가 있는 USB 드라이브를 사용 하는 경우 더 적은 사용자 조작을 허용 하는 자동화 된 프로세스
+
+이 릴리스 사용자는 OOBE가 단추 조합을 사용 하 여 프로 비전 할 때 수동으로 프로비저닝 화면을 실행 해야 합니다. 이제 사용자는 USB 저장소 드라이브의 프로비저닝 패키지를 사용 하 여 단추 조합을 건너뛸 수 있습니다. 
+
+1. OOBE의 첫 번째 감 순간에 프로비저닝 패키지와 함께 USB 드라이브 연결
+1. 디바이스를 프로 비전 할 준비가 되 면 프로 비전 페이지로 메시지가 자동으로 열립니다. 
+
+참고: 장치를 부팅 하는 동안 USB 드라이브가 연결 된 상태에서, OOBE는 기존 USB 저장 디바이스를 열거 하 고 추가 연결을 감시할 수도 있습니다.
+
+OOBE 중에는 프로비저닝 패키지를 적용 하는 방법에 대 한 자세한 내용은 [여기](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)를 계속 읽으십시오.
+
+### OOBE에서 프로 비전 패키지 자동 확인
+- 자동화 프로세스를 통해 사용자 조작을 덜 수행할 수 있으며, 프로비저닝 패키지 페이지가 표시 되 면 나열 된 모든 패키지가 자동으로 적용 됩니다.
+
+프로 비전 주 화면이 나타나면 OOBE는 자동으로 모든 프로 비전 패키지 적용을 시작 하기 전에 10 초 동안 횟수를 계산 합니다. 사용자는 예상 되는 패키지를 확인 한 후 10 초 내에 계속 확인 하거나 취소할 수 있습니다.
+
+### UI를 사용 하지 않고 자동 프로 비전
+- 프로 비전을 위한 감소 된 장치 조작에 대 한 자동 프로세스가 결합 되었습니다. 
+
+USB 장치에서 프로 비전의 자동 실행을 결합 하 고 프로 비전 패키지의 자동 확인을 통해 디바이스의 UI를 사용 하지 않거나 장치를 착용 하지 않고 HoloLens 2 장치를 자동으로 프로 비전 할 수 있습니다. 동일한 USB 드라이브와 여러 장치에 대 한 프로비저닝 패키지를 계속 사용할 수 있습니다. 이 기능은 같은 영역에 여러 장치를 동시에 배포 하는 데 유용 합니다. 
+
+1. [Windows 구성 디자이너](https://www.microsoft.com/store/productId/9NBLGGH4TX22)를 사용 하 여 [프로비저닝 패키지를 만듭니다](hololens-provisioning.md) . 
+1. 패키지를 USB 저장소 드라이브에 복사 합니다.
+1. [HoloLens 2](hololens-insider.md#ffu-download-and-flash-directions) 에서 [19041.1361 이상 빌드](https://aka.ms/hololens2previewdownload)를 플래시 합니다. 
+1. [고급 복구 도우미가](https://www.microsoft.com/store/productId/9P74Z35SFRS8) 장치를 깜박이는 경우 USB-C 케이블을 뽑습니다. 
+1. USB 드라이브를 장치에 연결 합니다.
+1. HoloLens 2 장치가 OOBE로 부팅 되 면 USB 드라이브에서 자동으로 프로비저닝 패키지를 감지 하 고 프로비저닝 페이지를 실행 합니다.
+1. 10 초 후에 장치가 프로비저닝 패키지를 자동으로 적용 합니다. 
+
+디바이스가 이제 구성 되 고 프로 비전 성공 화면이 표시 됩니다.
 
 ## 설치 후 HoloLens에 프로비저닝 패키지 적용
 

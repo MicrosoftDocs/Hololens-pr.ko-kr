@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b0b7609f1caac20ff0c47251b1f85a26d7fe1de8
-ms.sourcegitcommit: 785ac6f05aecffc0f3980960891617d161711a70
+ms.openlocfilehash: 36d86e24cc10d6b8457cfb415528398a8d43aa27
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11016652"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162860"
 ---
 # 앱 관리: 개요
 
@@ -65,7 +65,18 @@ Microsoft Store는 비즈니스에서 공용 앱을 찾고, 가져오고, 관리
 [배포 패키지](app-deploy-provisioning-package.md) 를 사용 하 여 사용자 지정 또는 lob 앱을 설치할 수 있으며, IT 전문가와 관리자는 USB를 통해 로컬 장치에 앱을 빠르게 설치할 수 있습니다. 이 작업은 인터넷에 연결 되지 않고 모든 id 유형에 사용할 수 있습니다.
     
 다음과 같은 경우에는 프로비저닝 패키지를 통해 설치할 수 있습니다. 
-* 앱 라인 (비 공용)
+* 앱 라인 (자체 개발 됨) (비 공용)
 * 공용 앱 (오프 라인 설치 관리자를 사용할 수 있는 경우)
 * USB 쪽만 로드
 * 자동 업데이트 없음 (프로비저닝 패키지를 통해 수동 업데이트 필요)
+
+## 앱 설치 관리자를 통해 HoloLens 2에 앱 설치
+[앱 설치 관리자](app-deploy-app-installer.md) 사용자는 로컬 장치에 앱을 설치 하거나 HoloLens의 다른 앱 설치 방법에 익숙하지 않은 다른 사용자와 앱을 공유 하는 환경을 간단 하 게 사용할 수 있습니다. 이 작업은 개발자 모드를 사용 하거나 디바이스 포털을 사용 하지 않고도 수행할 수 있습니다. 이 방법은 완전히 빌드된 앱을 배포 하는 간단한 방법입니다. HoloLens를 사용 하 여 다른 사용자에 게 앱을 시연 하 고 싶으신가요, 아니면 앱을 배포 하는 것과 관계 없이이 메서드는 쉽게 사용할 수 있습니다.
+
+앱 설치 관리자를 통해 설치 하는 데 다음이 적용 됩니다. 
+* 앱 라인 (자체 개발 됨) (비 공용)
+* 쪽만 로드
+* 개발자 모드 또는 장치 포털 필요 없음
+* 최종 사용자가 간편 하 게 설치할 수 있습니다.
+
+

@@ -5,7 +5,7 @@ keywords: 앱 관리, 앱, hololens, 앱 설치 관리자
 author: evmill
 ms.author: v-evmill
 ms.reviewer: qizho
-ms.date: 10/26/2020
+ms.date: 11/10/2020
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -14,17 +14,20 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 415733bb2809b7ae2808edc097423f8928910c57
-ms.sourcegitcommit: c4fd9a87bb7c728c73418f95a1b15dd93b0af7c6
+ms.openlocfilehash: eba1fd00215ef197f9e32949e958bdbded089d6d
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "11150919"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162893"
 ---
 # 앱 설치 관리자를 통해 HoloLens 2에 앱 설치
 
+
+Windows 홀로그램, 버전 20H2 업데이트 직후에 앱 설치 관리자 기능을 제공 합니다. HoloLens 2 장치에 **응용 프로그램을 더욱 원활 하 게 설치할 수 있도록 새 접근 권한 (앱 설치 관리자)을 추가** 합니다. **관리 되지 않는 장치에 대 한 기능은 기본적으로 설정**됩니다. 엔터프라이즈에 대 한 혼란을 방지 하기 위해 지금은 **관리 장치에** 앱 설치 관리자를 사용할 수 없게 됩니다.  
+
 > [!IMPORTANT]
-> 이 기능은 현재 Windows 참가자 빌드 19041.1377 +에만 avalible 있습니다. [Windows 참가자 빌드에 등록 하는 방법에 대해 자세히 알아보세요](hololens-insider.md).
+> 이 기능은 현재 Windows 참가자 빌드에서만 사용할 수 있습니다. [Windows 참가자 빌드에 등록 하는 방법에 대해 자세히 알아보세요](hololens-insider.md).
 
 Windows 참가자 릴리스에서 HoloLens 2 장치에 **응용 프로그램을 더욱 원활 하 게 설치할 수 있도록 새 기능 (앱 설치 관리자)을 추가** 합니다. **관리 되지 않는 장치에 대 한 기능은 기본적으로 설정**됩니다. 엔터프라이즈에 대 한 혼란을 방지 하기 위해 지금은 **관리 장치에** 앱 설치 관리자를 사용할 수 없게 됩니다.  
 
@@ -38,8 +41,7 @@ Windows 참가자 릴리스에서 HoloLens 2 장치에 **응용 프로그램을 
 ## 요구 사항
 
 ### 장치: 
-> [!NOTE]
-> 이 기능은 현재 Windows 참가자 빌드 19041.1377 +에만 avalible 있습니다. [Windows 참가자 빌드에 등록 하는 방법에 대해 자세히 알아보세요](hololens-insider.md).
+현재이는 HoloLens 2 장치에 대 한 [Windows 참가자 빌드](hololens-insider.md) 에 avalible입니다. 이 방법을 사용 하는 모든 장치가 [업데이트](hololens-update-hololens.md)되었는지 확인 하세요. 
 
 ### 앱: 
 앱 설치 관리자가 스토어의 종속성을 사용 하므로 앱의 솔루션 구성이 **Master** 또는 **Release** 여야 합니다. [앱 패키지 만들기](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)에 대 한 자세한 내용을 확인 하세요.
@@ -53,7 +55,7 @@ Windows 참가자 릴리스에서 HoloLens 2 장치에 **응용 프로그램을 
 **인증서 배포 방법을 선택 합니다.** 
 - [배포 패키지](hololens-provisioning.md) 는 로컬 장치에 적용 될 수 있습니다.
 - [장치 구성으로 인증서를 적용](https://docs.microsoft.com/mem/intune/protect/certificates-configure)하는 데 MDM을 사용할 수 있습니다.
-- 장치 [인증서 관리자](hololens-insider.md#certificate-manager)를 사용 합니다. 
+- 장치 [인증서 관리자](certificate-manager.md)를 사용 합니다. 
 
 ## 설치 방법
 

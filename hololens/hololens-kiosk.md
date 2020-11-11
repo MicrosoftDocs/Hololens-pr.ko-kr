@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c4c4b533538ab7998f8438d7cc0c2f3d88143ec6
-ms.sourcegitcommit: 4e168380c23e8463438aa8a1388baf8d5ac1a1ab
+ms.openlocfilehash: b4730029755c71cab5dc00b37ac69cd6ed54be58
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "11154191"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162973"
 ---
 # HoloLens를 키오스크로 설정
 
@@ -445,8 +445,59 @@ Windows Device Portal을 사용 하 여 키오스크 모드를 설정 하려면 
 
 ## 추가 정보
 
-배포 패키지를 사용 하 여 키오스크를 구성 하는 방법을 시청 하세요.  
+### 배포 패키지를 사용 하 여 키오스크를 구성 하는 방법을 시청 하세요.  
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
+
+### 전역 할당 액세스 – 키오스크 모드
+- 시스템 수준에서 키오스크 모드를 적용 하는 새 키오스크 방법을 활성화 하 여 키오스크에 대 한 Id 관리를 줄입니다.
+
+이 새로운 기능을 사용 하면 IT 관리자가 시스템에서 사용할 수 있는 여러 앱 키오스크 모드에 대해 HoloLens 2 장치를 구성 하 고 시스템의 모든 id와 관련 된 선호도가 없으며 장치에 로그인 하는 모든 사용자에 게 적용 됩니다. 이 새로운 기능에 대 한 자세한 내용은 [여기](hololens-global-assigned-access-kiosk.md)를 참조 하세요.
+
+### 다중 앱 키오스크 모드에서 응용 프로그램 자동 실행 
+- 자동 앱 시작 기능을 통해 키오스크 모드 환경에 맞게 선택한 UI 및 앱 선택이 더욱 향상 되었습니다.
+
+이 속성은 여러 앱 키오스크 모드에만 적용 되며 지정 된 액세스 구성에서 아래의 강조 표시 되는 특성을 사용 하 여 자동 시작 하도록 지정할 수 있습니다. 
+
+사용자가 로그인 하면 응용 프로그램이 자동으로 시작 됩니다. 
+
+```xml
+<AllowedApps>                     
+      <!--TODO: Add AUMIDs of apps you want to be shown here, e.g. <App AppUserModelId="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" rs5:AutoLaunch="true"/> --> 
+</AllowedApps>
+```
+
+
+### 오류 처리에 대 한 키오스크 모드 동작 변경
+- 키오스크 모드 오류에서 사용 가능한 앱을 제거 하 여 더욱 안전한 키오스크 모드. 
+
+이전에는 키오스크 모드 적용 중 오류가 발생 하 여 시작 메뉴의 모든 응용 프로그램을 표시 하는 데 사용 되는 HoloLens가 있습니다. 이제 Windows 홀로그램 버전 20H2에서 실패가 발생 하는 경우 시작 메뉴에 아래와 같이 앱이 표시 되지 않습니다. 
+
+![오류가 발생 했을 때 표시 되는 키오스크 모드의 이미지입니다.](images/hololens-kiosk-failure-behavior.png )
+
+### 오프 라인 키오스크에 대 한 AAD 그룹 구성원 캐시
+- 최대 60 일간 AAD 그룹과 사용할 오프 라인 키오스크를 사용할 수 있습니다.
+
+이 정책은 로그인 한 사용자에 대해 AAD 그룹을 대상으로 하는 할당 된 액세스 구성에 사용할 수 있는 시간 (일 수)에 대 한 AAD 그룹 구성원 캐시를 제어 합니다. 이 정책 값을 0 보다 큰 값으로 설정한 후에는 캐시를 사용 하지 않을 수 있습니다.  
+
+Name: AADGroupMembershipCacheValidityInDays URI 값:./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+
+최소-0 일  
+최대 60 일 
+
+이 정책을 올바르게 사용 하는 단계: 
+1. 키오스크 대상 AAD 그룹에 대 한 장치 구성 프로필을 만들어 HoloLens 장치에 할당 합니다. 
+1. 이 정책 값을 원하는 일 수 (> 0)로 설정 하 고 HoloLens 장치에 할당 하는 사용자 지정 OMA URI 기반 장치 구성을 만듭니다. 
+    1. URI 값은/Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays로 OMA URI 텍스트 상자에 입력 해야 합니다.
+    1. 값은 허용 되는 최소값/최대값 일 수 있습니다.
+1. HoloLens 디바이스를 등록 하 고 두 구성이 장치에 적용 되었는지 확인 합니다. 
+1. AAD 사용자 1 로그인 허용 인터넷을 사용할 수 있게 되 면 사용자 로그인 및 AAD 그룹 구성원 자격이 성공적으로 확인 되 면 캐시를 만듭니다. 
+1. 정책 값이 X 일 수를 허용 하는 경우, 이제 AAD 사용자 1이 오프 라인 상태에서 사용할 수 있으며 키오스크 모드에 사용 됩니다. 
+1. 다른 AAD 사용자 N에 대해 4-5 단계를 반복할 수 있습니다. 주요 요점 여기서는 모든 AAD 사용자가 키오스크 구성을 대상으로 하는 AAD 그룹의 구성원 인지 확인할 수 있도록 먼저 인터넷을 사용 하 여 디바이스에 로그인 해야 합니다. 
+ 
+> [!NOTE]
+> AAD 사용자에 대해 4 단계를 수행할 때까지 "연결이 끊긴" 환경에서 발생 하는 실패 동작이 발생 합니다. 
+
 
 ## HoloLens 용 XML 키오스크 코드 샘플
 

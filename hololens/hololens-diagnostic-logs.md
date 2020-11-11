@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e1302a3d482648b1ebbf7fee71ceec3ca4261d23
-ms.sourcegitcommit: 87d503434339fc6c9b41aa9473e35ddfde845cac
+ms.openlocfilehash: b0a068bb50d033544b4bf44100d005dfedc1d94d
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "11120149"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162943"
 ---
 # HoloLens 장치에서 진단 정보 수집 및 사용
 
@@ -41,9 +41,9 @@ HoloLens 사용자와 관리자는 다음 네 가지 방법 중 하나를 선택
 |메서드 |필수 구성 요소 |데이터 위치 |데이터 액세스 및 사용 |데이터 보존 |
 | --- | --- | --- | --- | --- |
 |[피드백 허브](#feedback-hub) |네트워크 및 인터넷 연결<br /><br />피드백 허브 앱<br /><br />Microsoft 클라우드에 파일을 업로드할 수 있는 권한 |Microsoft 클라우드<br /><br />HoloLens 장치 (선택 사항) |사용자가 도움을 요청 하 고, 사용 약관에 동의 하 고, 데이터를 업로드 합니다.<br /><br />Microsoft 직원 들이 사용 약관에 일치 하는 데이터 보기 |클라우드의 데이터는 NGP (차세대 개인 정보 취급 방침)에 의해 정의 된 기간 동안 보존 됩니다. 그러면 데이터가 자동으로 삭제 됩니다.<br /><br />장치 **소유자** 또는 **관리자** 권한이 있는 사용자가 언제 든 지 장치의 데이터를 삭제할 수 있습니다. |
-|[설정 문제 해결사](#settings-troubleshooter) |설정 앱 |HoloLens 장치<br /><br />연결 된 컴퓨터 (선택 사항) |사용자가 데이터를 저장 하 고 사용자가 특정 데이터를 다른 사용자와 공유 하지 않는 경우에만 데이터에 액세스 합니다. |데이터는 사용자가 삭제할 때까지 유지 됩니다. * |
+|[설정 문제 해결사](#settings-troubleshooter) |설정 앱 |HoloLens 디바이스<br /><br />연결 된 컴퓨터 (선택 사항) |사용자가 데이터를 저장 하 고 사용자가 특정 데이터를 다른 사용자와 공유 하지 않는 경우에만 데이터에 액세스 합니다. |데이터는 사용자가 삭제할 때까지 유지 됩니다. * |
 |[DiagnosticLog CSP](#diagnosticlog-csp) |네트워크 연결<br /><br />DiagnosticLog CSP를 지 원하는 MDM 환경 |관리자가 저장소 위치를 구성 합니다. |관리 환경에서는 사용자가 데이터에 대 한 관리자 액세스 권한을 암시적으로 동의.<br /><br />관리자가 액세스 역할 및 사용 권한을 구성 합니다. | 관리자가 보존 정책을 구성 합니다. |
-|[오프 라인 진단](#offline-diagnostics) |장치 구성:<ul><li>전원을 켜고 컴퓨터에 연결</li><li>전원 및 볼륨 단추가 작동</li></ul> |HoloLens 장치<br /><br />연결 된 컴퓨터 |사용자가 데이터를 저장 하 고 사용자가 특정 데이터를 다른 사용자와 공유 하지 않는 경우에만 데이터에 액세스 합니다. |데이터는 사용자가 삭제할 때까지 유지 됩니다. | 
+|[오프 라인 진단](#offline-diagnostics) |장치 구성:<ul><li>전원을 켜고 컴퓨터에 연결</li><li>전원 및 볼륨 단추가 작동</li></ul> |HoloLens 디바이스<br /><br />연결 된 컴퓨터 |사용자가 데이터를 저장 하 고 사용자가 특정 데이터를 다른 사용자와 공유 하지 않는 경우에만 데이터에 액세스 합니다. |데이터는 사용자가 삭제할 때까지 유지 됩니다. | 
 
 
 -   최종 사용자는 다른 사람과 로그를 공유할 책임이 있습니다. 이러한 파일은 고객 서비스 및 지원에 문의 하는 데 주로 유용 합니다.  
@@ -123,9 +123,17 @@ IT 관리자는 DiagnosticLog CSP를 사용 하 여 다음을 제어 하는 정�
 이는 장치가 USB 케이블로 PC에 연결한 후 파일 탐색기에 표시 되는 경우에 적용 됩니다. 
 
 > [!NOTE]
-> 오프 라인 진단은 사용자가 OOBE를 통과 하거나 [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) 정책 값이 Full로 설정 된 경우에만 사용할 수 있습니다 (기본적으로 Hololens의 기본 값인 경우). 
+> 오프 라인 진단 생성 및 관리는 OS 버전에 따라 다르게 제어 됩니다. 이전에는 원격 분석 설정으로 제어 되었지만 이제 정책을 통해 직접 제어 합니다. 
 
-장치가 잠겨 있으면 로그가 나타나지 않습니다. 오프 라인 진단 기능을 사용 하지 않으려면 **설정 앱 > 개인 정보** 페이지로 이동 하 고 **진단 데이터**에서 **기본** 을 선택 합니다. 오프 라인 진단이 원격 분석 설정에 종속 된 빌드에서는 로그가 수집 되었는지 여부에만 영향을 줍니다. 수집 되는 파일에는 영향을 주지 않습니다.
+[Windows 홀로그램 이전 동작, Verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2):
+ - 오프 라인 진단은 사용자가 OOBE를 통과 하거나 [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) 정책 값이 Full로 설정 된 경우에만 사용할 수 있습니다 (기본적으로 HoloLens의 기본 값인 경우). 
+- 오프 라인 진단 기능을 사용 하지 않으려면 **설정 앱 > 개인 정보** 페이지로 이동 하 고 **진단 데이터**에서 **기본** 을 선택 합니다. 오프 라인 진단이 원격 분석 설정에 종속 된 빌드에서는 로그가 수집 되었는지 여부에만 영향을 줍니다. 수집 되는 파일에는 영향을 주지 않습니다.
+- 장치가 잠겨 있으면 로그가 나타나지 않습니다.
+
+빌드 [창 홀로그램, Verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 및 그 이상:
+- Fallback 진단 기능을 사용 하는 경우 해당 설정인 [MixedReality/FallbackDiagnostics](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics) 를 사용 하 여 특정 MDM 정책에 의해 제어 됩니다.
+- 장치가 잠겨 있으면 로그가 나타나지 않습니다.
+
 
 자세한 내용은이 비디오를 시청 하세요. 
 
