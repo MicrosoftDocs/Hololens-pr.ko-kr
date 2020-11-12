@@ -8,23 +8,23 @@ ms.prod: hololens
 ms.sitesec: library
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/13/2020
+ms.date: 11/10/2020
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0825e3fd2d0a4e6328eaa617e4233639f481e8cb
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: df8d6e2c00bd8ff8507be4a2fd58c773d8833c11
+ms.sourcegitcommit: 20ff249e3570c74f62cdf6339c8be76c401d9f4a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163153"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165975"
 ---
 # HoloLens 2 릴리스 정보
 
-HoloLens 장치를 능숙 하 게 사용할 수 있도록 기능, 버그, 보안 업데이트를 계속 릴리스 합니다. 이 페이지에서는 매달 HoloLens에 대 한 새로운 기능을 확인할 수 있습니다. [고급 복구 도우미를 통해 장치를 플래시](hololens-recovery.md#clean-reflash-the-device)하기 위해 최신 HoloLens 2 Full Flash 업데이트 (ffu)를 얻으려면 [여기서 다운로드](https://aka.ms/hololens2download)하세요. 다운로드는 최신 상태로 유지 되며 일반적으로 사용할 수 있는 최신 빌드를 제공 합니다.
+HoloLens 장치를 능숙 하 게 사용할 수 있도록 기능, 버그, 보안 업데이트를 계속 릴리스 합니다. 이 페이지에서는 매달 HoloLens에 대 한 새로운 기능을 확인할 수 있습니다. 최신 HoloLens 2 업데이트를 얻으려면 [업데이트를 확인 하 고 수동으로 업데이트](hololens-update-hololens.md#check-for-updates-and-manually-update) 하거나 전체 플래시 업데이트 (ffu)를 다운로드 하 여 [고급 복구 도우미를 통해 장치를 플래시](hololens-recovery.md#clean-reflash-the-device)하 고 [여기](https://aka.ms/hololens2download)에서 설치 하세요. 다운로드는 최신 상태로 유지 되며 일반적으로 사용할 수 있는 최신 빌드를 제공 합니다.
 
 >[!NOTE]
 > HoloLens 에뮬레이터 릴리스 노트를 읽으려면 [보관 파일을 방문](https://docs.microsoft.com/windows/mixed-reality/hololens-emulator-archive)하세요.
@@ -40,7 +40,7 @@ HoloLens 장치를 능숙 하 게 사용할 수 있도록 기능, 버그, 보안
 
 | 기능                                              | 설명                                                                                                                                     |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [자동 눈동자 위치 지원](hololens-release-notes.md#auto-eye-position-support) | 사용자가 활성 보정을 진행 하지 않고 눈 위치를 적극적으로 계산 합니다.   |
+| [자동 눈동자 위치 지원](hololens-release-notes.md#auto-eye-position-support) | 사용자가 시각 추적 보정을 거치지 않고 눈 위치를 적극적으로 계산 합니다.   |
 | [인증서 관리자](hololens-release-notes.md#certificate-manager)   | 더 간단한 새 방법으로 설정 앱에서 인증서를 설치 및 제거할 수 있습니다.     |
 | [USB에서 자동 시작 프로 비전](hololens-release-notes.md#auto-launch-provisioning-from-usb)                    | USB 드라이브의 제공 패키지는 자동으로 OOBE의 프로 비전 페이지에 표시 됩니다.                                                         |
 | [OOBE에서 프로 비전 패키지 자동 확인](hololens-release-notes.md#auto-confirm-provisioning-packages-in-oobe)           | 프로 비전 패키지는 제공 페이지에서 OOBE 중에 자동으로 적용 됩니다.                                                         |
@@ -62,22 +62,22 @@ HoloLens 장치를 능숙 하 게 사용할 수 있도록 기능, 버그, 보안
 
 ### 자동 눈동자 위치 지원
 
-- 이제 향상 된 편안 하 게 시청 하 고 디스플레이 품질을 향상 시키기 위해 자동 눈 위치 지원을 통해 홀로그램을 더 정확 하 게 배치할 수 있습니다. 
+HoloLens 2에서 눈 위치는 적절 한 홀로그램 위치 지정, 편안한 시청 경험 및 향상 된 디스플레이 품질을 가능 하 게 합니다. 눈동자 위치는 눈 추적 계산의 일부로 내부적으로 계산 됩니다. 그러나이를 위해서는 각 사용자가 눈 응시 입력이 필요 하지 않은 경우에도 시각 추적 보정을 진행 해야 합니다.
 
-HoloLens 2에서 눈 위치는 적절 한 홀로그램 위치 지정, 편안한 시청 경험 및 향상 된 디스플레이 품질을 가능 하 게 합니다. 눈동자 위치는 시각 추적 결과의 일부로 계산 됩니다. 그러나이를 위해서는 각 사용자가 눈 응시 입력이 필요 하지 않은 경우에도 시각 추적 보정을 거쳐야 합니다.
+**자동 눈동자 (AEP)** 를 사용 하면 이러한 시나리오를 조작 없이 사용자에 대 한 눈 위치를 계산할 수 있습니다. 자동 눈동자 위치는 사용자가 장치를 전환 하는 순간부터 자동으로 백그라운드에서 작업을 시작 합니다. 사용자에 게 이전 시각 추적 보정을 설치 하지 않은 경우, 자동 눈동자 위치는 처리 시간이 20-30 초인 후 디스플레이 시스템에 대 한 사용자의 눈 위치를 제공 하기 시작 합니다. 사용자 데이터는 장치에 유지 되지 않으므로 사용자가 장치를 종료 하 고 다시 시작 하거나 절전 모드에서 부팅 또는 절전 모드를 전환 하는 경우이 프로세스가 반복 됩니다.
 
-**자동 눈동자 (AEP)** 를 사용 하면 이러한 시나리오를 조작 없이 사용자에 대 한 눈 위치를 계산할 수 있습니다.  자동 눈동자 위치는 사용자가 장치를 전환 하는 순간부터 자동으로 백그라운드에서 작업을 시작 합니다. 사용자가 이전 시각 추적 보정을 보유 하 고 있지 않은 경우, 자동 눈동자 위치는 처리 시간이 적은 후 디스플레이 시스템에 대 한 사용자의 눈 위치를 제공 하기 시작 합니다. 일반적으로이 처리 시간은 20-60 초입니다. 사용자 데이터는 장치에 유지 되지 않으므로 사용자가 장치를 종료 하 고 다시 시작 하거나 절전 모드에서 부팅 또는 절전 모드를 전환 하는 경우이 프로세스가 반복 됩니다.  
+Uncalibrated 사용자가 디바이스에 배치 하는 경우 자동 눈 위치 기능을 사용 하 여 몇 가지 시스템 동작 변화가 변경 되었습니다. 이 컨텍스트에서 uncalibrated 사용자는 이전에 장치에서 눈 추적 보정 프로세스를 거치지 않은 사람을 참조 합니다.
 
-Uncalibrated 사용자가 디바이스에 배치 하는 경우 자동 눈 위치 기능을 사용 하 여 몇 가지 시스템 동작 변화가 변경 되었습니다. Uncalibrated 사용자는 이전에 장치에서 눈 추적 보정 프로세스를 거치지 않은 사람을 참조 합니다.
+| 활성 응용 프로그램 | 이전 동작 | Windows 홀로그램의 동작, 버전 20H2 업데이트 |
+|:-------------------|:-----------------|:-----------------------------------|
+| 비 응시 사용 앱 또는 홀로그램 셸 |눈동자 추적 보정 프롬프트 대화 상자가 표시 됩니다. | 메시지가 표시 되지 않습니다. |
+| 응시 사용 앱 | 눈동자 추적 보정 프롬프트 대화 상자가 표시 됩니다. | 응용 프로그램이 아이 응시 스트림에 액세스 하는 경우에만 눈동자 추적 보정 프롬프트가 표시 됩니다. |
 
-|     활성 응용 프로그램                           |     이전 동작                                   |     Windows 홀로그램 버전 20H2의 동작                                                     |
-|--------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-|     비 응시 사용 앱 또는 홀로그램 셸    |     눈동자 추적 보정 프롬프트가 표시 됩니다.    |     메시지가 표시 되지 않습니다.                                                                                |
-|     응시 사용 앱                             |     눈동자 추적 보정 프롬프트가 표시 됩니다.    |     응용 프로그램이 아이 응시 스트림에 액세스 하는 경우에만 눈동자 추적 보정 프롬프트가 표시 됩니다.     |
+사용자가 비 응시 사용 응용 프로그램에서 응시 데이터에 액세스 하는 앱으로 전환 하는 경우 보정 메시지가 표시 됩니다. 
 
- 사용자가 비 응시 사용 응용 프로그램에서 응시 데이터에 액세스 하는 앱으로 전환 하는 경우 보정 메시지가 표시 됩니다. 경험 치를 다 활용 해도 변경 되지 않습니다. 
- 
-아이 응시 데이터 나 매우 정밀한 홀로그램 위치가 필요한 환경에서는 사용자가 눈 추적 보정 프롬프트에서 눈 추적 보정을 실행 하거나 시작 메뉴에서 설정 앱을 시작한 다음 **시스템 > 보정 > 눈동자 보정 > 실행**을 선택 하는 것이 좋습니다.
+다른 모든 시스템 동작은 현재 사용자에 게 활성 눈동자 추적 보정이 없는 경우와 유사 합니다. 예를 들어 일회성 시작 제스처는 사용할 수 없습니다. 초기 설정에 대 한 최신 정보는 변경 되지 않습니다.
+
+눈동자 응시 데이터 나 매우 정밀한 홀로그램 위치가 필요한 환경에서는 사용자가 눈 추적 보정을 실행 하도록 uncalibrated 것을 권장 합니다. 눈동자 추적 보정 프롬프트에서 액세스 하거나 시작 메뉴에서 설정 앱을 실행 한 다음 **시스템 > 보정 > 눈동자 보정 > 실행**보정을 선택 합니다.
 
 이 정보는 나중에 [다른 보정 정보](hololens-calibration.md#auto-eye-position-support)를 사용 하 여 찾을 수 있습니다. 
 
@@ -165,50 +165,50 @@ USB 장치에서 프로 비전의 자동 실행을 결합 하 고 프로 비전 
 현재 OOBE 중에 HoloLens 2를 Wifi에 연결 하면 OOBE에서 디바이스에 대 한 Autopilot 프로필을 확인 합니다. 하나가 발견 되 면 나머지 AAD 조인과 등록 흐름을 완료 하는 데 사용 됩니다. 즉, 이더넷을 USB-C에 사용 하거나 USB-C 어댑터에 Wi-Fi 하는 것은 요구 사항이 더 이상 필요 하지 않지만, OOBE 시작 부분에 제공 되는 경우 계속 작동 합니다. [HoloLens 2 장치에 대 한 Autopilot](hololens2-autopilot.md)에 대해 자세히 알아보세요.
 
 ### Tenantlockdown CSP 및 Autopilot
-- 장치 재설정이 나 reflash를 통해 장치를 테 넌 트로 잠가서 조직의 테 넌 트에 디바이스를 유지 합니다. 프로 비전을 통해 계정 생성을 허용 하지 않도록 하 여 추가 보안을 사용 합니다. 
+- 장치 재설정이나 reflash를 통해 장치를 테넌트로 잠가 조직의 테넌트에 디바이스를 유지합니다. 프로비저닝을 통해 계정 생성을 허용하지 않도록 하여 추가 보안을 사용합니다. 
 
 HoloLens 2 장치는 이제 [Windows 홀로그램 버전 20H2](hololens-release-notes.md#windows-holographic-version-20h2)로 TENANTLOCKDOWN CSP를 지원 합니다. 
 
-[Tenantlockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP는 Autopilot만 사용 하 여 HoloLens 2를 MDM 등록에 연결할 수 있습니다. TenantLockdown CSP의 RequireNetworkInOOBE 노드는 HoloLens 2에서 true 또는 false (초기 설정) 값으로 설정 되 고, 다시 깜박이는 경우, OS 업데이트 등의 장치에도 해당 값이 남아 있습니다. 
+[Tenantlockdown](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp) CSP는 Autopilot만 사용하여 HoloLens 2를 MDM 등록에 연결할 수 있습니다. TenantLockdown CSP의 RequireNetworkInOOBE 노드는 HoloLens 2에서 true 또는 false (초기 설정) 값으로 설정되고, 다시 깜박이는 경우, OS 업데이트 등의 장치에도 해당 값이 남아 있습니다. 
 
-HoloLens 2에서 TenantLockdown Csp의 RequireNetworkInOOBE 노드가 true로 설정 되 면, OOBE는 네트워크 연결 후에 Autopilot 프로필이 성공적으로 다운로드 되 고 적용 될 때까지 무기한 대기 합니다. 
+HoloLens 2에서 TenantLockdown Csp의 RequireNetworkInOOBE 노드가 true로 설정되면, OOBE는 네트워크 연결 후에 Autopilot 프로필이 성공적으로 다운로드되고 적용될 때까지 무기한 대기합니다. 
 
-RequireNetworkInOOBE는 HoloLens 2에서 TenantLockdown Csp의 a 노드가 true로 설정 되 면 OOBE에서 다음 작업을 허용 하지 않습니다. 
-- 런타임 프로 비전을 사용 하 여 로컬 사용자 만들기 
-- 런타임 프로 비전을 통해 AAD 조인 작업 수행 
-- OOBE 환경에서 장치를 소유 하는 사용자 선택 
+RequireNetworkInOOBE는 HoloLens 2에서 TenantLockdown Csp의 a 노드가 true로 설정되 면 OOBE에서 다음 작업을 허용하지 않습니다. 
+- 런타임 프로비저닝을 사용하여 로컬 사용자 만들기 
+- 런타임 프로비저닝을 통해 AAD 참여 작업 수행 
+- OOBE 환경에서 장치를 소유하는 사용자 선택 
 
-#### Intune을 사용 하 여 설정 하는 방법은 무엇 인가요? 
-1. 사용자 지정 OMA URI 장치 구성 프로필을 만들고 아래와 같이 RequireNetworkInOOBE 노드에 true를 지정 합니다.
-OMA URI 값은/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE 이어야 합니다.
+#### Intune을 사용하여 설정하는 방법은 무엇인가요? 
+1. 사용자 지정 OMA URI 장치 구성 프로필을 만들고 아래와 같이 RequireNetworkInOOBE 노드에 true를 지정합니다.
+OMA URI 값은/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE이어야 합니다.
 
    > [!div class="mx-imgBorder"]
    > ![OMA-URI를 통해 tennant 잠금 설정](images/hololens-tenant-lockdown.png)
 
-1. 그룹을 만들고 장치 구성 프로필을 해당 장치 그룹에 할당 합니다. 
+1. 그룹을 만들고 장치 구성 프로필을 해당 장치 그룹에 할당합니다. 
 
-1. 이전 단계에서 만든 그룹의 HoloLens 2 장치 구성원을 만들고 동기화를 시작 합니다.  
+1. 이전 단계에서 만든 그룹의 HoloLens 2 장치 구성원을 만들고 동기화를 시작합니다.  
 
-장치 구성이 성공적으로 적용 되었는지 Intune 포털에서 확인 합니다. 이 장치 구성이 Hololens 2 장치에 성공적으로 적용 되 면 TenantLockdown 효과가 활성화 됩니다.
+장치 구성이 성공적으로 적용되었는지 Intune 포털에서 확인합니다. 이 장치 구성이 HoloLens 2 장치에 성공적으로 적용 되 면 TenantLockdown 효과가 활성화 됩니다.
 
-#### Intune을 사용 하 여 HoloLens 2에서 TenantLockdown RequireNetworkInOOBE 설정 해제 하는 방법 
-1. 위에서 만든 장치 구성이 이전에 할당 된 장치 그룹에서 HoloLens 2를 제거 합니다. 
+#### Intune을 사용하여 HoloLens 2에서 TenantLockdown RequireNetworkInOOBE 설정 해제하는 방법 
+1. 위에서 만든 장치 구성이 이전에 할당된 장치 그룹에서 HoloLens 2를 제거합니다. 
 
-1. 사용자 지정 OMA URI 기반 장치 구성 프로필을 만들고 아래와 같이 RequireNetworkInOOBE에 대해 false를 지정 합니다. OMA URI 값은/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE 이어야 합니다.
+1. 사용자 지정 OMA URI 기반 장치 구성 프로필을 만들고 아래와 같이 RequireNetworkInOOBE에 대해 false를 지정합니다. OMA URI 값은 /Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE이어야 합니다.
 
    > [!div class="mx-imgBorder"]
-   > ![Intune에서 OMA URI를 통해 RequireNetworkInOOBE를 false로 설정 하는 스크린샷](images/hololens-tenant-lockdown-false.png)
+   > ![Intune에서 OMA URI를 통해 RequireNetworkInOOBE를 false로 설정하는 스크린샷](images/hololens-tenant-lockdown-false.png)
 
-1. 그룹을 만들고 장치 구성 프로필을 해당 장치 그룹에 할당 합니다. 
+1. 그룹을 만들고 장치 구성 프로필을 해당 장치 그룹에 할당합니다. 
 
-1. 이전 단계에서 만든 그룹의 HoloLens 2 장치 구성원을 만들고 동기화를 시작 합니다.
+1. 이전 단계에서 만든 그룹의 HoloLens 2 장치 구성원을 만들고 동기화를 시작합니다.
 
-장치 구성이 성공적으로 적용 되었는지 Intune 포털에서 확인 합니다. 이 장치 구성이 Hololens 2 장치에 성공적으로 적용 되 면 TenantLockdown 효과가 비활성화 됩니다. 
+장치 구성이 성공적으로 적용되었는지 Intune 포털에서 확인합니다. 이 장치 구성이 HoloLens 2 장치에 성공적으로 적용 되 면 TenantLockdown 효과가 비활성화 됩니다. 
 
-#### TenantLockdown true로 설정 된 후 HoloLens에서 Autopilot 프로필이 할당 되지 않은 경우 OOBE 중에 발생 하는 작업은 무엇 인가요? 
-OOBE는 Autopilot 프로필이 다운로드 될 때까지 무기한 대기 하 고 대화 상자가 표시 됩니다. TenantLockdown 효과를 제거 하려면 장치를 원래 테 넌 트만 사용 하 여 먼저 등록 해야 하며, 이전 단계에서 설명한 대로 Autopilot를 설정 하지 않아야 합니다. TenantLockdown CSP에서 도입 된 제한이 제거 됩니다. 
+#### TenantLockdown true로 설정된 후 HoloLens에서 Autopilot 프로필이 할당되지 않은 경우 OOBE 중에 무슨 문제가 발생하나요? 
+OOBE는 Autopilot 프로필이 다운로드될 때까지 무기한 대기하고 대화 상자가 표시됩니다. TenantLockdown 효과를 제거하려면 장치를 원래 테넌트만 사용하여 먼저 등록해야 하며, 이전 단계에서 설명한 대로 Autopilot를 설정하지 않아야 합니다. TenantLockdown CSP에서 도입된 제한이 제거됩니다. 
 
-![장치에서 정책이 적용 되는 시기에 대 한 장치 내 보기입니다.](images/hololens-autopilot-lockdown.png)
+![장치에서 정책이 적용되는 시기에 대한 장치 내 보기입니다.](images/hololens-autopilot-lockdown.png)
 
 이 정보는 이제 [Tenantlockdown CSP 및 Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot)에 있는 Autopilot의 나머지와 함께 찾을 수 있습니다.
 
@@ -284,7 +284,7 @@ HoloLens 2 장치의 추가 관리 옵션을 허용 하는 새로 사용할 수 
 
 AllowAddProvisioningPackage 및 AllowRemoveProvisioningPackage에 대 한 이러한 두 가지 새로운 정책은 [일반적인 디바이스 제한](hololens-common-device-restrictions.md)에 추가 됩니다.
 
-### Hololens 2에 대 한 새 전원 정책
+### HoloLens 2에 대 한 새 전원 정책
 - HoloLens 절전 또는 전원 정책으로 잠금에 대 한 추가 옵션 
 
 관리자는 이러한 새로 추가 된 정책을 통해 유휴 시간 제한 등의 전원 상태를 제어할 수 있습니다. 각 개별 정책에 대 한 자세한 내용을 보려면 해당 정책의 링크를 클릭 하세요.

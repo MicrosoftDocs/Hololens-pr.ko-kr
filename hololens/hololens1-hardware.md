@@ -13,12 +13,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 8eef05c3d9f47fbbc86647ccf22c7de88bacc687
-ms.sourcegitcommit: b33dd8accef641578142e5234b9ad2d0222694ec
+ms.openlocfilehash: e3821cf7945b101abd2ffa5b261802bea125fe8e
+ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "11134682"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165013"
 ---
 # HoloLens(1세대) 하드웨어
 
@@ -125,7 +125,7 @@ HoloLens 상자에는 다음 항목이 포함 됩니다.
 | 크기 조정 | 조절 가능한 밴드가 있는 단일 사이즈. 나의 대 여에 맞추기 |
 | 무게 | 579 그램 |
 
-## 장치 접근 권한 값
+## 디바이스 기능
 
 사용자 작업을 이해 하려면 다음을 사용 합니다.
 
@@ -171,16 +171,16 @@ HoloLens에 세척제나 용제를 사용하지 말고, 물에 담그거나 직�
 ## 일련 번호 찾기
 
 HoloLens (첫번째 gen) 장치에 대 한 일련 번호가 오른쪽 렌즈 아래에 인쇄 됩니다.
-1. 디바이스를 착용 하 고 있는 것 처럼 여러분의 앞에 놓습니다.
+1. 장치를 여러분의 머리에 착용 해 주세요. 디바이스를 앞으로 및 똑바로 마주 보세요.
 1. 렌즈를 계속 향한 후에는 아래쪽을 표시 하도록 deivce를 거꾸로 대칭 이동 합니다.
 1. 이제 오른쪽 렌즈가 왼쪽에 있으며, 밴드의 렌즈 아래에 일련 번호를 인쇄 합니다. 
 
-일련 번호는 연결 PC를 통해서도 찾을 수 있습니다.
+일련 번호는 연결된 PC를 통해 찾을 수도 있습니다.
 
 1. 장치 연결
-1. 파일 탐색기에서 **이 PC** 로 이동
-1. HoloLens 디바이스의 **속성** 을 마우스 오른쪽 단추로 클릭 하 고 선택
-1. 장치의 일련 번호가 표시 됩니다. 이 스크린샷은 다음과 같습니다.
+1. 파일 탐색기에서 **이 PC**로 이동
+1. 마우스 오른쪽 단추를 클릭한 후 HoloLens 장치의 **속성**을 선택
+1. 장치의 일련 번호가 표시될 것입니다. 아래 스크린샷을 참조하세요.
 
 <img src="images/hl1-serial-number.png" width="400" height="600" />
 

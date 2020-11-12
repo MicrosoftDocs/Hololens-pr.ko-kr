@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 452164caaad09f2caecf7c4a51cda6242d805d7f
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: df67fe8c5b29eea317a0d00a1ebdcf7331fb0936
+ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163114"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "11165006"
 ---
 # 혼합 현실 사진 및 비디오 만들기
 
@@ -140,7 +140,7 @@ HoloLens에 연결 된 PC에서 혼합 현실 사진과 비디오를 보고/또�
 팁:
 - 파일이 표시 되지 않으면 HoloLens에 로그인 하 여 데이터에 액세스할 수 있도록 합니다.
 - 다른 폴더 (예: 문서 폴더의 [진단 파일](hololens-diagnostic-logs.md#offline-diagnostics) )에 있는 다른 파일을 가져올 수 있습니다.
-- PC의 파일 탐색기에서 장치 속성을 선택 하 여 Windows 홀로그램 OS 버전 번호 (펌웨어 버전), 장치 일련 번호 및 배터리 백분율을 볼 수 있습니다.
+- PC의 파일 탐색기에서 장치 속성을 선택 하 여 Windows 홀로그램 OS 버전 번호 (펌웨어 버전), 디바이스 일련 번호 및 배터리 백분율을 볼 수 있습니다.
 - 조직에서 MDM을 사용 하 여 [연결/Allow\ 연결](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) 을 사용 하지 않도록 설정한 경우 장치에 연결할 수 없습니다.
 
 ## 혼합 현실 사진 및 동영상 공유
