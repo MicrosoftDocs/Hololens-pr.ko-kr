@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 80ac6348dd2cba932316b690cafc4c5dc0331353
-ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
+ms.openlocfilehash: 0001ff627b150a9ba79e76f8d995231186c46917
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "10940208"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163017"
 ---
 # HoloLens 2 디스플레이
 
@@ -59,9 +59,9 @@ HoloLens 2 디스플레이는 사람의 눈으로 볼 수 있도록 설계되었
 
 HoloLens 2 디스플레이는 사용자의 눈 위치를 기준으로 이미지를 능동적으로 보정합니다. [눈 보정](hololens-calibration.md)은(는) 두 가지 중요한 입력을 제공합니다. (1) 사용자의 IPD(Interpherial 거리)와 (2) 각 눈이 보고 있는 방향. 눈 보정을 사용하지 않으면 시스템은 기본적으로 눈 움직임이 없는 공칭 눈 위치로 설정됩니다. 활성 색상 보정과 무보정 간의 차이는 사용자의 생리학에 따라 다릅니다. 예를 들어 시스템 기본값과 IPD가 동일한 사용자는 색상 보정이 더 적게 개선됩니다. IPD가 시스템 기본값보다 훨씬 좁거나 넓은 사용자는 디스플레이 이미지에 더 많은 변경 사항을 볼 수 있습니다.
 
-향후 운영 체제 업데이트 시 새로운 기능이 [(자동 감지 눈 위치](hololens-insider.md#auto-eye-position-support))로 시작됩니다. 사용자는 [참가자 미리 보기](hololens-insider.md)에 등록하여 지금 이 기능을 사용해 볼 수 있습니다.
+[Windows 홀로그램 버전 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 의 새로운 기능이 [자동으로 눈 위치를 감지](hololens-calibration.md#auto-eye-position-support)하기 시작합니다. 
 
-### HoloLens(1세대)와 HoloLens 2의 디스플레이 차이는 무엇입니까?
+### HoloLens(1세대)와 HoloLens 2의 디스플레이 관련 차이는 무엇입니까?
 
 HoloLens 1을 경험한 후 고객이 Microsoft에 가장 많이 요청한 사항 중 하나는 (1) 시야를 넓히고 (2) 밝기를 높입니다. 기술 개발로 마이크로소프트는 시야 영역을 두 배로 넓히는 도파관을 제작하고 최대 3배 더 밝은 디스플레이로 라이트 프로젝터를 제작할 수 있었습니다. 하드웨어는 디스플레이 이미지 품질에 대한 트레이드오프 3중(예: (1) 시야 범위, (2) 밝기 및 (3) 색상 균일성)에 대한 기준을 설정합니다. 지속적인 기술 발전으로 다른 영역을 희생하지 않고도 모든 영역에서 개선할 수 있습니다. 그 사이에 기존 기술은 이러한 절충에 사용할 수 있는 한계를 설정합니다.
 

@@ -71,7 +71,9 @@
 ### [MDM을 사용하여 HoloLens 장치 관리](hololens-mdm-configure.md)
 ### [공통 장치 제한](hololens-common-device-restrictions.md)
 ### [HoloLens를 키오스크로 설정](hololens-kiosk.md)
-### [Windows Defender Application Control](windows-defender-application-control-wdac.md)
+### [전역 할당된 액세스 - 키오스크](hololens-global-assigned-access-kiosk.md)
+### [Windows Defender 응용 프로그램 제어 - WDAC](windows-defender-application-control-wdac.md)
+### [페이지 설정 CSP 및 HoloLens 용 URI](settings-uri-list.md)
 ## ID
 ### [HoloLens에 대한 사용자 ID 및 로그인 관리](hololens-identity.md)
 ### [여러 사용자와 HoloLens 공유](hololens-multiple-users.md)
@@ -81,7 +83,7 @@
 ### [HoloLens 2용 인증서 및 네트워크 프로필 준비](hololens-certificates-network.md)
 ### [HoloLens에 대한 연결 엔드포인트 관리](hololens-offline.md)
 ### [Bluetooth 및 USB-C 장치에 연결](hololens-connect-devices.md)
-
+## [인증서 관리자](certificate-manager.md)
 
 # 배포
 ## 등록
@@ -108,9 +110,7 @@
 # HoloLens 릴리스 정보
 ## [HoloLens 2 릴리스 정보](hololens-release-notes.md)
 ## [Microsoft HoloLens 참가자 미리 보기](hololens-insider.md)
-### [전역 할당된 액세스 - 키오스크](hololens-global-assigned-access-kiosk.md)
-### [HoloLens에 대 한 페이지 설정 URI](settings-uri-list.md)
 ### [앱 설치 관리자](app-deploy-app-installer.md)
-
 ## [HoloLens(1세대) 릴리스 정보](hololens1-release-notes.md)
+
 # [피드백을 보내 주세요.](hololens-feedback.md)

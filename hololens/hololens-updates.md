@@ -8,7 +8,7 @@ ms.author: v-tea
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 07/09/2020
+ms.date: 10/13/2020
 ms.reviewer: jarrettr
 manager: jarrettr
 ms.custom:
@@ -16,12 +16,12 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 384d33e72effd298e1874e5723e9c418061c3287
-ms.sourcegitcommit: 0d4e67d8e21d34885e0eaee08646e28426c4f641
+ms.openlocfilehash: 3a2246296c5ab8aa86dfaa419ed02aa5a961dbfc
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "10861911"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163132"
 ---
 # HoloLens 업데이트 관리
 
@@ -76,7 +76,22 @@ Intune을 사용하여 비즈니스용 Windows 업데이트를 구성 하는 방
   - 값: 0~23 (0 = 자정, 23 = 오후 11시)
   - 기본값: 오후 3시
 
-#### Windows 10에서 실행되는 장치에는 버전 1607만 해당
+#### 사용 시간 구성
+[Windows 홀로그램 버전 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 시작, IT 관리자는 HoloLens 2 장치에 대한 사용 시간 범위를 지정할 수 있습니다.
+
+사용 시간은 장치가 사용 중일 것으로 예상되는 시간을 나타냅니다. 업데이트 이후의 자동 다시 시작은 사용 시간 이외에서 수행됩니다. 지정된 범위는 사용 시간 시작 시간부터 계산됩니다. [MDM을 사용하여 사용 시간 구성](https://docs.microsoft.com/windows/deployment/update/waas-restart#configuring-active-hours-with-mdm)에서 설명된 대로 MDM을 사용할 수 있습니다. MDM은 정책 CSP의 Update/ActiveHoursStart, Update/ActiveHoursEnd 및 Update/ActiveHoursMaxRange 설정을 사용하여 사용 시간을 구성합니다.
+
+-   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend) - 이 값은 종료 시간을 설정합니다. 시작 시간으로부터 최대 12시간까지 설정할 수 있습니다.
+    -   0~23의 값이 지원되며 여기서 0은 오전 12시, 1은 오전 1시를 의미합니다.
+    -   기본값은 17(오후 5시)입니다.
+-   [Update/ActiveHoursMaxRange](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursmaxrange) - 이 값은 시작 시간으로부터 최대 사용 시간을 설정합니다.
+    -   8~18의 값을 지원합니다.
+    -   기본값은 18(시간)입니다.
+-   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart) - 이 값은 시작 시간을 설정합니다. 종료 시간으로부터 최대 12시간입니다.
+    -   0~23의 값이 지원되며 여기서 0은 오전 12시, 1은 오전 1시를 의미합니다.
+    -   기본값은 8(오전 8시)입니다.
+
+#### Windows 10, 버전 1607만 실행하는 장치의 경우
 
 다음 업데이트 정책을 사용하여 Windows 업데이트 대신 WSUS(Windows Server Update Service)에서 업데이트를 받을 장치를 구성할 수 있습니다.
 
@@ -116,6 +131,15 @@ HoloLens 2는 HoloLens(1세대)보다 더 많은 업데이트 자동화 기능�
 | --- | --- | --- |
 |기능 업데이트 |DeferFeatureUpdatesPeriodInDays |365일 |
 |품질 업데이트 |DeferQualityUpdatesPeriodInDays |30일 |
+
+#### 장치를 통해 업데이트 일시 중지
+
+사용자가 MDM에 액세스할 수 없는 경우 빌드 [Windows 홀로그램, 버전 2004](hololens-release-notes.md#windows-holographic-version-2004) 이상의 HoloLens 2 장치에서 최대 35일 동안 수동으로 업데이트를 각각 일시 중지할 수 있습니다. 사용자는 **설정-> 업데이트 및 보안 -> 고급 옵션**을 탐색하여 해당 설정으로 이동할 수 있습니다. **업데이트 일시 중지**까지 아래로 스크롤하고 업데이트를 일시 중지하려는 기간을 선택합니다. 사용자가 일시 중지 제한에 도달하면 다시 일시 중지할 수 있으므로 장치에 새 업데이트가 필요합니다. 
+
+[Windows 홀로그램, 버전 20H2](hololens-release-notes.md#windows-holographic-version-20h2)부터 이 일시 중지 업데이트 기능을 HoloLens 2 장치에 대해 관리할 수 있습니다. 
+- [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess).
+    - 0(기본값) – 사용
+    - 1 – 사용 안 함
 
 #### HoloLens에서 지원하는 Intune 업데이트 관리 기능
 

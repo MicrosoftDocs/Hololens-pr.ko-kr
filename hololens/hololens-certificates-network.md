@@ -13,12 +13,12 @@ audience: ITPro
 manager: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 460b6f42de7413e77eaec041a5ab6141ed959cf4
-ms.sourcegitcommit: 9944fd2040fc1267ace1da1bd62ef36b68c7f318
+ms.openlocfilehash: b5fe64a1843db5ba8dc31f3c17776f0717264fe1
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "11015527"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11162979"
 ---
 # HoloLens 2용 인증서 및 네트워크 프로필 준비
 
@@ -45,18 +45,20 @@ SCEP 또는 PKCS 인프라가 이미 존재하지 않는 경우 이를 준비해
 1.  각 루트와 중간 인증서에 대한 프로필을 만듭니다. ([신뢰할 수 있는 인증서 프로필 만들기](https://docs.microsoft.com/intune/protect/certificates-configure#create-trusted-certificate-profiles)를 참조하세요.) 각 프로필에는 YYYY/MM/DD 형식의 만료 날짜를 포함하는 설명이 있어야 합니다. **만료 날짜 없이 인증서 프로필은 배포되지 않습니다.**
 1.  각 SCEP와 PKCS 인증서에 대한 프로필을 만듭니다. ([SCEP 인증서 프로필 만들기 또는 PKCS 인증서 프로필 만들기](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)를 참조하세요.) 각 프로필에는 YYYY/MM/DD 형식의 만료 날짜를 포함하는 설명이 있어야 합니다. **만료 날짜 없이 인증서 프로필은 배포되지 않습니다.**
 
-> [!NOTE]
-> HoloLens 2는 많은 사용자에게 공유 장치로 간주되기 때문에 장치별 여러 사용자는 가능한 경우 Wi-Fi 인증을 위해 사용자 인증서 대신 장치 인증서를 배포하는 것이 좋습니다.
+    > [!NOTE]
+    > HoloLens 2는 많은 사용자에게 공유 장치로 간주되기 때문에 장치별 여러 사용자는 가능한 경우 Wi-Fi 인증을 위해 사용자 인증서 대신 장치 인증서를 배포하는 것이 좋습니다.
 
 3.  각 회사 Wi-Fi 네트워크에 대한 프로필을 만듭니다. ([Windows 10 이상의 장치에 대한 Wi-Fi 설정](https://docs.microsoft.com/intune/wi-fi-settings-windows)을 참조하세요.) 
-> [!NOTE]
-> 가능한 경우 사용자 그룹이 아니라 장치 그룹에 대해 Wi-Fi 프로필을 [할당](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign)하는 것이 좋습니다. 
+    > [!NOTE]
+    > 가능한 경우 사용자 그룹이 아니라 장치 그룹에 대해 Wi-Fi 프로필을 [할당](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign)하는 것이 좋습니다. 
 
-> [!TIP]
-> 회사 네트워크의 Windows 10 PC에서 작업 중인 Wi-Fi 프로필을 내보낼 수도 있습니다. 이 내보내기에서 현재 모든 설정을 포함하는 XML 파일을 만듭니다. 그런 다음 해당 파일을 HoloLens 2 장치에 대한 Wi-Fi 프로필로 사용하여 Intune으로 가져옵니다. [Windows 장치에 대한 Wi-Fi 설정 내보내기 및 가져오기](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1)를 참조하세요.
+    > [!TIP]
+    > 회사 네트워크의 Windows 10 PC에서 작업 중인 Wi-Fi 프로필을 내보낼 수도 있습니다. 이 내보내기에서 현재 모든 설정을 포함하는 XML 파일을 만듭니다. 그런 다음 해당 파일을 HoloLens 2 장치에 대한 Wi-Fi 프로필로 사용하여 Intune으로 가져옵니다. [Windows 장치에 대한 Wi-Fi 설정 내보내기 및 가져오기](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1)를 참조하세요.
 
 4.  각 회사 VPN에 대한 프로필을 만듭니다. ([Intune을 사용하여 VPN 연결을 추가하려면 Windows 10 및 Windows Holographic 장치 설정](https://docs.microsoft.com/intune/vpn-settings-windows-10)을 참조하세요.)
 
+## 인증서 문제 해결
 
+인증서가 올바르게 배포 되었는지 확인해야 하는 경우 장치의 [인증서 관리자](certificate-manager.md)를 사용하여 인증서가 있는지 확인하세요.  
 
 

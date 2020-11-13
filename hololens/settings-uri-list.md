@@ -3,7 +3,7 @@ title: 페이지 설정 표시 여부
 description: PageVisibilityList에 대해 지원되는 HoloLens 목록 및 가이드입니다.
 author: evmill
 ms.author: v-evmill
-ms.date: 09/16/2020
+ms.date: 10/13/2020
 ms.topic: article
 keywords: Holollens, Holollens 2, 액세스 할당, 키오스크, 설정 페이지입니다.
 ms.prod: hololens
@@ -13,19 +13,19 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7a24d64b0b60be9f922260b7145d04c2c13951ed
-ms.sourcegitcommit: 8b5e349990ba5566bcc6a2a72ff83d1a21b099b8
+ms.openlocfilehash: 8cd336ce64cf7d4549b031a7977f592ca82dd6e4
+ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "11026941"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "11163146"
 ---
 # 페이지 설정 표시 여부
 
 HoloLens 디바이스의 관리 가능한 기능 중 하나는 [Settings/PageVisibilityList 정책](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings#settings-pagevisibilitylist)을(를) 사용하여 설정 앱에 표시되는 페이지를 제한합니다. PageVisibilityList는 IT 관리자가 시스템 설정 앱의 특정 페이지를 표시 하거나 액세스 하지 못하도록 방지 하거나 지정 된 페이지를 제외한 모든 페이지에 대한 작업을 수행하는 데 사용 하는 정책입니다. 
 
-> [!IMPORTANT]
-> 이 기능은 현재 [Windows 참가자 빌드](hololens-insider.md)에서만 사용할 수 있습니다. 이를 사용 하려는 장치가 빌드 19041.1349 +에 있는지 확인 하세요.
+> [!NOTE]
+> 이 기능은 HoloLens 2 장치용 [Windows 홀로그램, 버전 20H2](hololens-release-notes.md#windows-holographic-version-20h2)에서만 사용 가능합니다. 사용하려는 장치가 업데이트되었는지 확인하세요.
 
 다음 예제에서는 URI "ms-설정: network-wifi" 및 "ms-설정: Bluetooth"를 각각 포함 하는 정보 및 블루투스 페이지에만 액세스를 허용하는 정책을 보여줍니다.
 - showonly:network-wifi;network-proxy;bluetooth
