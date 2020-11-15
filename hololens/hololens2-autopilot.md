@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 5f887d7321c391ea9d67833373b39b3c9feeaf2c
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: be9da0ec2f301705a0691bcfc9dcf9d75eac8922
+ms.sourcegitcommit: cfbcdf562f949eef9cd797bbb08dfdf9f29e8fcd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163093"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "11168545"
 ---
 # HoloLens용 Windows 자동 실행 2
 
@@ -29,25 +29,38 @@ Windows Autopilot 프로그램에 HoloLens 2 장치를 설정할 때 사용자�
 사용자가 Autopilot 자체 배포 프로세스를 시작하면 프로세스에서 다음 단계를 완료합니다.
 
 1. 장치를 Azure AD(Azure Active Directory)에 가입시킵니다.
+
    > [!NOTE]  
    > HoloLens용 Autopilot은 Active Directory 가입 또는 하이브리드 Azure AD 가입을 지원하지 않습니다.
+   
 1. Azure AD를 사용하여 Microsoft Intune(또는 다른 MDM 서비스)에 장치를 등록합니다.
+
 1. 장치 대상 정책, 사용자 대상 앱, 인증서, 네트워킹 프로필을 다운로드합니다.
+
 1. 장치를 프로비전합니다.
+
 1. 사용자에게 로그인 화면을 표시합니다.
 
 ## HoloLens2 용 Windows Autopilot(비공개 미리 보기)
 
 비공개 미리 보기를 위한 환경을 설정하려면 아래 단계를 수행하세요.
 
-1. HoloLens2용 Windows Autopilot의 요구 사항을 충족하는지 확인
-1. HoloLens 2용 Windows Autopilot 비공개 미리 보기 프로그램 등록
+1. HoloLens 2용 Windows Autopilot 요구 사항을 충족 하는지 확인 합니다.
+
+1. Windows Autopilot에서 HoloLens 2 전용 미리 보기 프로그램을 등록 합니다.
+
 1. 테넌트가 플라이트 중인지(프로그램 참여를 위해 등록되어 있는지) 확인
-1. Windows Autopilot에서 장치 등록
+
+1. Windows Autopilot에서 장치를 등록 합니다.
+
 1. 장치 그룹 만들기
+
 1. 배포 프로필 만들기
+
 1. ESP 구성 확인
+
 1. HoloLens 장치에 대한 사용자 지정 구성 프로필 구성(알려진 문제)
+
 1. HoloLens 장치의 프로필 상태 확인
 
 
@@ -66,7 +79,9 @@ Windows Autopilot 프로그램에 HoloLens 2 장치를 설정할 때 사용자�
 
 HoloLens OS 릴리스당 Autopilot 특정 정보
 - Autopilot를 사용하려면 장치에 [Windows Holographic, 버전 2004](hololens-release-notes.md#windows-holographic-version-2004) 릴리스 이상이 있어야 합니다.
+
 - Wi-Fi를 사용하여 Autopilot를 사용하려면 장치에 [Windows Holographic, 버전 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 릴리스 이상이 있어야 합니다. 그러나 이러한 빌드는 여전히 이더넷 어댑터를 사용할 수 있습니다. 
+
 - 빌드 [Windows Holographic의 경우 버전 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 에서 새 장치 관리 옵션 [tenantlockdown CSP 및 Autopilot](hololens2-autopilot.md#tenantlockdown-csp-and-autopilot)을 사용할 수 있습니다.  
 
 장치에서 빌드 버전을 확인하거나 업데이트하려면 Windows 10 PC에 연결하고 [고급 복구 도우미](https://www.microsoft.com/store/productId/9P74Z35SFRS8)를 실행하세요. 
@@ -74,10 +89,15 @@ HoloLens OS 릴리스당 Autopilot 특정 정보
 **Autopilot 미리 보기를 시도하려면 OOBE 및 프로비저닝 프로세스를 시작하기 전에 HoloLens 장치가 다음 요구 사항을 충족하는지 확인합니다.**
 
 - 장치가 Windows 홀로그래픽 버전 2004에 있는지 확인합니다(빌드 19041.1103 이상). 최신 OS가 미리 설치되어 있지 않으면 [ARC(Advanced Recovery Companion)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab)을(를) 사용하여 수동으로 업데이트해야 합니다. [여기](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device)에서 지침을 확인할 수 있습니다. 
+
 - Windows Autopilot에서 장치를 등록해야 합니다. 장치를 등록하는 방법에 대한 자세한 내용은 [4. Windows Autopilot에서 장치 등록](#4-register-devices-in-windows-autopilot)을 참조하세요. 권장 경로는 대리점 또는 대리점이 사용자를 위해 장치를 등록하는 것입니다.  
+
 - [Windows Holographic 버전 2004](hololens-release-notes.md#windows-holographic-version-2004) 릴리스에서는 HoloLens를 켜고 Autopilot 프로비저닝 프로세스를 시작하기 전에 장치가 인터넷에 연결되어 있어야 합니다. 유선 인터넷 연결의 "USB-C에서 이더넷" 어댑터를 사용하여 장치를 이더넷에 연결합니다.
+
 - [Windows Holographic, 버전 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 릴리스의 장치는 OOBE에서 Wi-Fi에 연결하여 Autopilot을 검색할 수 있습니다. 
+
 - 장치가 아직 Azure AD에 속하지 않으며 Intune(또는 다른 MDM 시스템)에 등록되어 있지 않습니다. Autopilot 자체 배포 프로세스가 이러한 단계를 완료합니다. 모든 장치 관련 정보를 정리하려면 Azure AD 및 Intune 포털 모두에서 **장치** 페이지를 확인하세요.
+
 - Autopilot 자체 배포 모드 프로필을 구성하고 관리하려면 [Microsoft 엔드포인트 관리자 관리 센터](https://endpoint.microsoft.com)에 액세스할 수 있는지 확인합니다.
 
 
@@ -101,17 +121,22 @@ Microsoft는 일주일에 한 번 테넌트를 비행합니다. 비행이 완료
 요청을 제출한 후 테넌트가 Autopilot 프로그램에서 플라이트 중인지 확인하려면 다음 단계를 수행합니다.
 
 1. [Microsoft 엔드포인트 관리자 관리 센터](https://endpoint.microsoft.com)에 로그인합니다.
+
 1. **장치** > **Windows** > **Windows 등록** > **Windows Autopilot 배포 프로필** > **프로필 만들기**를 선택합니다.  
    
    ![프로필 만들기 드롭다운에는 HoloLens 항목이 포함됩니다.](./images/hololens-ap-enrollment-profiles.png)
-  **HoloLens**를 포함하는 목록이 표시됩니다. 이 옵션이 표시되지 않는 경우 [피드백](hololens2-autopilot.md#feedback-for-autopilot) 옵션 중 하나를 사용하여 문의하세요.
+   
+   **HoloLens**를 포함하는 목록이 표시됩니다. 이 옵션이 표시되지 않는 경우 [피드백](hololens2-autopilot.md#feedback-for-autopilot) 옵션 중 하나를 사용하여 문의하세요.
 
 ### 4. Windows Autopilot에서 장치 등록
 
 준비 단계에서는 Windows Autopilot에 장치를 등록할 수 있는 두 가지 기본 방법이 있습니다. 
 
-1. **장치를 등록하거나 주문한 배포자나 대리점에 문의**하거나
-2. **하드웨어 해시(하드웨어 ID라고도 함)를 검색하고 장치를 수동으로 등록할 수 있습니다.** 
+1. **디바이스를 등록하기 위해 배포자 또는 대리점에 문의 하세요**.
+
+   또는
+   
+2. **하드웨어 해시(하드웨어 ID 라고도 함)를 검색하고 수동으로 장치를 등록합니다**. 
 
 장치 등록에 대한 자세한 내용은 [Autopilot에 장치 추가](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices) 설명서를 확인하세요.  
 
@@ -120,16 +145,22 @@ Microsoft는 일주일에 한 번 테넌트를 비행합니다. 비행이 완료
 장치는 OOBE 프로세스가 진행되는 동안 또는 나중에 장치 소유자가 진단 로그 수집 프로세스(다음 절차에 설명)를 시작할 때 CSV 파일에서 하드웨어 해시를 기록할 수 있습니다. 일반적으로 장치 소유자는 처음에 장치에 로그인하는 사용자입니다.
 
 1. HoloLens 2 장치 시작
+
 1. 장치에서 전원 및 볼륨 작게 단추를 동시에 눌렀다 놓습니다. 장치에서 진단 로그와 하드웨어 해시를 수집하여 .zip 파일 집합에 저장합니다. 
+
    1. 이 기능을 수행하는 방법에 대한 자세한 내용과 교육 비디오를 보려면 [오프라인 진단](hololens-diagnostic-logs.md#offline-diagnostics)정보를 참조하세요. 
+   
 1. USB-C 케이블을 사용하여 장치를 컴퓨터에 연결합니다.
+
 1. 컴퓨터에서 파일 탐색기를 엽니다. **내 PC\\\<*HoloLens device name*>\\내부 저장소\\문서**를 열고, AutopilotDiagnostics.zip 파일을 찾습니다.  
 
    > [!NOTE]  
    > .zip 파일을 즉시 사용하지 못할 수도 있습니다. 파일이 아직 준비되지 않은 경우 문서 폴더에 HoloLensDiagnostics.temp 파일이 표시될 수 있습니다. 파일 목록을 업데이트하려면 창을 새로 고칩니다.
 
 1. AutopilotDiagnostics.zip 파일의 콘텐츠를 추출합니다.
+
 1. 추출된 파일에서 파일 이름 접두사가 "DeviceHash"인 CSV 파일을 찾습니다. 해당 파일을 컴퓨터의 드라이브에 복사하여 나중에 액세스할 수 있도록 합니다.  
+
    > [!IMPORTANT]  
    > CSV 파일의 데이터는 다음 헤더 및 줄 형식을 사용해야 합니다.
    > ```
@@ -143,6 +174,7 @@ Microsoft는 일주일에 한 번 테넌트를 비행합니다. 비행이 완료
 1. **Windows Autopilot 장치 추가** 아래에서 DeviceHash CSV 파일을 선택하고 **열기**를 선택한 다음 **가져오기**를 선택합니다.  
    
    ![가져오기 명령을 사용하여 하드웨어 해시를 가져옵니다.](./images/hololens-ap-hash-import.png)
+   
 1. 가져오기가 완료되면 **장치** > **Windows** > **Windows 등록** > **장치** > **동기화**를 선택합니다. 동기화되는 장치 수에 따라 프로세스를 완료하는 데 몇 분 정도 걸릴 수 있습니다. 등록된 장치를 보려면 **새로 고침**을 선택합니다.  
    
    ![동기화 및 새로 고침 명령을 사용하여 장치 목록을 표시합니다.](./images/hololens-ap-devices-sync.png)  
@@ -150,8 +182,11 @@ Microsoft는 일주일에 한 번 테넌트를 비행합니다. 비행이 완료
 ### 5. 장치 그룹 만들기
 
 1. Microsoft 엔드포인트 관리자 관리 센터에서 **그룹** > **새 그룹**을 선택합니다.
+
 1. **그룹 유형**에 대해 **보안**을 선택한 다음 그룹 이름 및 설명을 입력합니다.
+
 1. **구성원 자격 유형**에 대해 **할당됨** 또는 **동적 장치**중 하나를 선택합니다.
+
 1. 다음 중 하나를 수행합니다.  
    
    - 이전 단계에서 **구성원 자격 유형**에 대해 **할당됨**을 선택한 경우 **구성원**을 선택한 다음 그룹에 Autopilot 장치를 추가합니다. 아직 등록되지 않은 Autopilot 장치는 장치 일련 번호를 장치 이름으로 사용하여 목록에 추가됩니다.
@@ -188,6 +223,7 @@ Microsoft는 일주일에 한 번 테넌트를 비행합니다. 비행이 완료
    그룹을 제외하려면 **제외할 그룹 선택**을 선택하고 제외하려는 그룹을 선택합니다.
 
    ![장치 그룹을 프로필에 할당합니다.](./images/hololens-ap-profile-assign-devicegroup.png)
+   
 1. **검토 + 만들기** 페이지에서 설정을 검토한 후 **만들기**를 선택하여 프로필을 생성합니다.  
    
    ![검토 + 만들기](./images/hololens-ap-profile-summ.png)
@@ -196,24 +232,31 @@ Microsoft는 일주일에 한 번 테넌트를 비행합니다. 비행이 완료
 
 등록 상태 페이지(ESP)는 MDM 관리 사용자가 처음으로 장치에 로그인할 때 실행되는 전체 장치 구성 프로세스의 상태를 표시합니다. ESP 구성이 다음과 유사한지 확인하고 할당이 올바른지 확인합니다.  
 
-![ESP 구성](./images/hololens-ap-profile-settings.png)
+> [!div class="mx-imgBorder"]
+> ![ESP 구성](./images/hololens-ap-profile-settings.png)
 
 ### 8. HoloLens 장치의 프로필 상태 확인
 
 1. Microsoft 엔드포인트 관리자 관리 센터에서 **장치** > **Windows** > **Windows 등록** > **장치**를 선택합니다.
+
 1. HoloLens 장치가 나열되어 있고 프로필 상태가 **할당됨**인지 확인합니다.  
+
    > [!NOTE]  
    > 프로필이 장치에 할당되는 데 몇 분 정도 걸릴 수 있습니다.  
-   
-   ![장치 및 프로필 할당](./images/hololens-ap-devices-assignments.png)
+
+   > [!div class="mx-imgBorder"]   
+   > ![장치 및 프로필 할당](./images/hololens-ap-devices-assignments.png)
 
 ## HoloLens 2용 Windows Autopilot 사용자 환경
 
 위의 지침이 완료되면 HoloLens 2 사용자는 다음과 같은 환경을 통해 HoloLens 장치를 프로비저닝할 수 있습니다.  
 
 1. Autopilot 환경에는 인터넷 액세스가 필요합니다. 다음 옵션 중 하나를 사용하여 인터넷 액세스를 제공하세요.
+
     - OOBE의 Wi-Fi 네트워크에 장치를 연결한 다음 자동으로 Autopilot 환경을 감지하도록 합니다. 이는 Autopilot 경험이 자체적으로 완료될 때까지 OOBE와 상호 작용해야 할 때만 필요합니다. 기본적으로 HoloLens 2는 인터넷 검색 후 Autopilot를 감지하기 위해 10초 동안 기다립니다. 10초 내에 autopilot 프로필이 검색되지 않으면 OOBE에 EULA가 표시됩니다. 이 문제가 발생하는 경우 장치를 다시 부팅하여 다시 Autopilot를 검색해 보세요. 또한 Autopilot에는 TenantLockdown 정책이 장치에 설정된 경우에만 OOBE가 무한정 대기할 수 있다는 점에 유의하세요.
+    
     - 유선 인터넷 연결에 "USB-C to Ethernet" 어댑터를 사용하여 디바이스를 이더넷에 연결하고 HoloLens 2 완전 Autopilot 환경을 자동으로 사용하도록 합니다.
+    
     - 무선 인터넷 연결을 위한 "USB-C to Wifi" 어댑터를 사용하여 장치를 연결하고 HoloLens 2 완전 Autopilot 환경을 자동으로 사용하도록 합니다.
 
        > [!NOTE]
@@ -226,18 +269,13 @@ Microsoft는 일주일에 한 번 테넌트를 비행합니다. 비행이 완료
 
 1. 장치가 자동으로 OOBE를 시작할 것입니다. OOBE는 신경쓰지 마세요. 그 대신 잠시 기다려 주세요. HoloLens 2에서 네트워크 연결을 검색하여 OOBE를 자동으로 완료할 수 있도록 합니다. OOBE가 진행되는 동안 장치가 다시 시작될 수 있습니다. OOBE 화면은 다음과 유사 합니다.
    
-   ![OOBE 1단계](./images/hololens-ap-uex-1.png)
-   ![OOBE 2단계](./images/hololens-ap-uex-2.png)
-   ![OOBE 3단계](./images/hololens-ap-uex-3.png)
-   ![OOBE 4단계](./images/hololens-ap-uex-4.png)
+   ![OOBE 단계 1](./images/autopilot-welcome.jpg)
+   ![OOBE 단계 2](./images/autopilot-step-complete.jpg)
+   ![OOBE 단계 3](./images/autopilot-device-setup.jpg)
 
-1. OOBE가 끝나면 사용자 이름과 암호를 사용하여 장치에 로그인할 수 있습니다.
+1. OOBE가 끝나면 사용자 이름과 암호를 사용하여 장치에 로그인 할 수 있습니다.
 
-   ![OOBE 5단계](./images/hololens-ap-uex-5.png)
-
-## 알려진 문제
-
-- 장치 보안 컨텍스트를 사용하는 응용 프로그램을 설치할 수 없습니다.
+   <br/><img src="./images/other-user.jpg" width="450" height="700" />
 
 ## Tenantlockdown CSP 및 Autopilot
 - 장치 재설정이나 reflash를 통해 장치를 테넌트로 잠가 조직의 테넌트에 디바이스를 유지합니다. 프로비저닝을 통해 계정 생성을 허용하지 않도록 하여 추가 보안을 사용합니다. 
@@ -264,7 +302,7 @@ OMA URI 값은/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE이어야 합니�
 
 1. 이전 단계에서 만든 그룹의 HoloLens 2 장치 구성원을 만들고 동기화를 시작합니다.  
 
-장치 구성이 성공적으로 적용되었는지 Intune 포털에서 확인합니다. 이 장치 구성이 Hololens 2 장치에 성공적으로 적용되면 TenantLockdown 효과가 활성화됩니다.
+장치 구성이 성공적으로 적용되었는지 Intune 포털에서 확인합니다. 이 장치 구성이 HoloLens 2 장치에 성공적으로 적용되면 TenantLockdown 효과가 활성화 됩니다.
 
 ### Intune을 사용하여 HoloLens 2에서 TenantLockdown RequireNetworkInOOBE 설정 해제하는 방법 
 1. 위에서 만든 장치 구성이 이전에 할당된 장치 그룹에서 HoloLens 2를 제거합니다. 
@@ -278,20 +316,31 @@ OMA URI 값은/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE이어야 합니�
 
 1. 이전 단계에서 만든 그룹의 HoloLens 2 장치 구성원을 만들고 동기화를 시작합니다.
 
-장치 구성이 성공적으로 적용되었는지 Intune 포털에서 확인합니다. 이 장치 구성이 Hololens 2 장치에 성공적으로 적용되면 TenantLockdown 효과가 비활성화됩니다. 
+장치 구성이 성공적으로 적용되었는지 Intune 포털에서 확인합니다. 이 장치 구성이 HoloLens 2 장치에 성공적으로 적용되면 TenantLockdown 효과가 비활성화 됩니다. 
 
 ### TenantLockdown true로 설정된 후 HoloLens에서 Autopilot 프로필이 할당되지 않은 경우 OOBE 중에 무슨 문제가 발생하나요? 
 OOBE는 Autopilot 프로필이 다운로드될 때까지 무기한 대기하고 대화 상자가 표시됩니다. TenantLockdown 효과를 제거하려면 장치를 원래 테넌트만 사용하여 먼저 등록해야 하며, 이전 단계에서 설명한 대로 Autopilot를 설정하지 않아야 합니다. TenantLockdown CSP에서 도입된 제한이 제거됩니다. 
 
 ![장치에서 정책이 적용되는 시기에 대한 장치 내 보기입니다.](images/hololens-autopilot-lockdown.png)
 
+## 알려진 문제
+
+- Intune에서 구성 된 디바이스 컨텍스트 기반 응용 프로그램 설치가 아직 작동 하지 않습니다.
+- Wi-Fi를 통해 Autopilot를 설정하는 동안 인터넷 연결이 처음 설정 되고 최종 사용자 사용권 계약(EULA)이 표시되고 사용자가 비 Autopilot 설치 환경을 진행할 수 있는 옵션이 있는 경우 Autopilot 프로필이 다운로드 되지 않는 경우가 있을 수 있습니다. Autopilot를 사용하여 설정을 다시 시도 하려면 장치를 절전 모드로 전환한 다음 전원을 켜고 장치를 다시 부팅하여 다시 시도 합니다.
+
+### 문제 해결
+
+다음 문서는 자세한 정보를 알아보고 Autopilot 문제를 해결 하는 데 유용한 리소스가 될 수 있지만, 이러한 문서는 Windows 10 데스크톱을 기반으로 하며 모든 정보가 HoloLens에 적용 되는 것이 아니라는 점에 유의 하세요.
+- [Windows Autopilot-알려진 문제](https://docs.microsoft.com/mem/autopilot/known-issues)
+- [Microsoft Intune에서 Windows 장치 등록 문제 해결](https://docs.microsoft.com/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
+- [Windows Autopilot-정책 충돌](https://docs.microsoft.com/mem/autopilot/policy-conflicts)
+
 ## Autopilot에 대한 피드백
 
 피드백을 제공하거나 문제를 신고하려면 다음 방법 중 하나를 사용합니다.
 
-- 피드백 허브 앱 사용 HoloLens에 연결된 컴퓨터에서 이 앱을 찾을 수 있습니다. 피드백 허브에서 **엔터프라이즈 관리** > **장치** 범주를 선택합니다.  
-
-  피드백을 제공하거나 문제를 신고할 때 자세한 설명을 제공합니다. 해당하는 경우 스크린샷 및 로그를 포함합니다.
-- [hlappreview@microsoft.com](mailto:hlappreview@microsoft.com)으로 전자 메일 메시지를 보냅니다. 전자 메일 제목으로 **\<*Tenant*> HoloLens 2용 Autopilot 평가 피드백**(여기에서 \<*Tenant*>은(는) 사용자의 Intune 테넌트 이름)을 입력합니다.
+- 피드백 허브 앱 사용 HoloLens에 연결된 컴퓨터에서 이 앱을 찾을 수 있습니다. 피드백 허브에서 **엔터프라이즈 관리** > **장치** 범주를 선택합니다. 피드백을 제공하거나 문제를 신고할 때 자세한 설명을 제공합니다. 해당하는 경우 스크린샷 및 로그를 포함합니다.
+- 디바이스를 등록 하는 동안 Intune에서 문제가 발생 하거나 Autopilot 프로필이 할당 되지 않은 경우 [https://aka.ms/apsupport](https://aka.ms/apsupport)에서 지원 티켓을 여세요.
+- Autopilot 환경에서 HoloLens 장치에 문제가 발생 하는 경우 [https://aka.ms/hlsupport](https://aka.ms/hlsupport)에서 [오프라인 진단 로그](hololens-diagnostic-logs.md#offline-diagnostics)를 사용하여 지원 티켓을 여세요.
 
   메시지에 자세한 설명을 제공합니다. 그러나 지원 담당자가 특별히 요청하지 않는 한 스크린샷이나 로그와 같은 데이터는 포함하지 않습니다. 이러한 데이터에는 개인 또는 개인 식별 정보(PII)가 포함될 수 있습니다.
