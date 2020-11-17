@@ -45,13 +45,13 @@ Windows Autopilot 프로그램에 HoloLens 2 장치를 설정할 때 사용자�
 
 비공개 미리 보기를 위한 환경을 설정하려면 아래 단계를 수행하세요.
 
-1. HoloLens 2용 Windows Autopilot 요구 사항을 충족 하는지 확인 합니다.
+1. HoloLens 2용 Windows Autopilot 요구 사항을 충족하는지 확인합니다.
 
-1. Windows Autopilot에서 HoloLens 2 전용 미리 보기 프로그램을 등록 합니다.
+1. Windows Autopilot에서 HoloLens 2 전용 미리 보기 프로그램에 등록합니다.
 
-1. 테넌트가 플라이트 중인지(프로그램 참여를 위해 등록되어 있는지) 확인
+1. 테넌트가 플라이트되었는지(프로그램 참여를 위해 등록되었는지) 확인
 
-1. Windows Autopilot에서 장치를 등록 합니다.
+1. Windows Autopilot에서 장치를 등록합니다.
 
 1. 장치 그룹 만들기
 
@@ -132,7 +132,7 @@ Microsoft는 일주일에 한 번 테넌트를 비행합니다. 비행이 완료
 
 준비 단계에서는 Windows Autopilot에 장치를 등록할 수 있는 두 가지 기본 방법이 있습니다. 
 
-1. **디바이스를 등록하기 위해 배포자 또는 대리점에 문의 하세요**.
+1. **디바이스를 등록하기 위해서는 배포자 또는 대리점에 문의합니다**.
 
    또는
    
@@ -267,13 +267,13 @@ Microsoft는 일주일에 한 번 테넌트를 비행합니다. 비행이 완료
        >
        > 이더넷 어댑터를 사용하는 디바이스의 경우 OOBE(사용자 환경)가 시작되기 전에 디바이스를 네트워크에 연결해야 합니다. 첫 번째 OOBE 화면에서 장치는 Autopilot 장치로 프로비전 중인지 여부를 결정합니다. 장치를 네트워크에 연결할 수 없거나 장치를 Autopilot 장치로 프로비전하지 않도록 선택하는 경우 나중에 Autopilot 프로비전으로 변경할 수 없습니다. 대신 장치를 Autopilot 장치로 프로비전하려면 이 절차를 다시 시작해야 합니다.
 
-1. 장치가 자동으로 OOBE를 시작할 것입니다. OOBE는 신경쓰지 마세요. 그 대신 잠시 기다려 주세요. HoloLens 2에서 네트워크 연결을 검색하여 OOBE를 자동으로 완료할 수 있도록 합니다. OOBE가 진행되는 동안 장치가 다시 시작될 수 있습니다. OOBE 화면은 다음과 유사 합니다.
+1. 장치가 자동으로 OOBE를 시작할 것입니다. OOBE는 신경쓰지 마세요. 그 대신 잠시 기다려 주세요. HoloLens 2에서 네트워크 연결을 검색하여 OOBE를 자동으로 완료할 수 있도록 합니다. OOBE가 진행되는 동안 장치가 다시 시작될 수 있습니다. OOBE 화면은 다음과 유사합니다.
    
    ![OOBE 단계 1](./images/autopilot-welcome.jpg)
    ![OOBE 단계 2](./images/autopilot-step-complete.jpg)
    ![OOBE 단계 3](./images/autopilot-device-setup.jpg)
 
-1. OOBE가 끝나면 사용자 이름과 암호를 사용하여 장치에 로그인 할 수 있습니다.
+1. OOBE가 끝나면 사용자 이름과 암호를 사용하여 장치에 로그인할 수 있습니다.
 
    <br/><img src="./images/other-user.jpg" width="450" height="700" />
 
@@ -302,7 +302,7 @@ OMA URI 값은/Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE이어야 합니�
 
 1. 이전 단계에서 만든 그룹의 HoloLens 2 장치 구성원을 만들고 동기화를 시작합니다.  
 
-장치 구성이 성공적으로 적용되었는지 Intune 포털에서 확인합니다. 이 장치 구성이 HoloLens 2 장치에 성공적으로 적용되면 TenantLockdown 효과가 활성화 됩니다.
+장치 구성이 성공적으로 적용되었는지 Intune 포털에서 확인합니다. 이 장치 구성이 HoloLens 2 장치에 성공적으로 적용되면 TenantLockdown 효과가 활성화됩니다.
 
 ### Intune을 사용하여 HoloLens 2에서 TenantLockdown RequireNetworkInOOBE 설정 해제하는 방법 
 1. 위에서 만든 장치 구성이 이전에 할당된 장치 그룹에서 HoloLens 2를 제거합니다. 
@@ -325,22 +325,22 @@ OOBE는 Autopilot 프로필이 다운로드될 때까지 무기한 대기하고 
 
 ## 알려진 문제
 
-- Intune에서 구성 된 디바이스 컨텍스트 기반 응용 프로그램 설치가 아직 작동 하지 않습니다.
-- Wi-Fi를 통해 Autopilot를 설정하는 동안 인터넷 연결이 처음 설정 되고 최종 사용자 사용권 계약(EULA)이 표시되고 사용자가 비 Autopilot 설치 환경을 진행할 수 있는 옵션이 있는 경우 Autopilot 프로필이 다운로드 되지 않는 경우가 있을 수 있습니다. Autopilot를 사용하여 설정을 다시 시도 하려면 장치를 절전 모드로 전환한 다음 전원을 켜고 장치를 다시 부팅하여 다시 시도 합니다.
+- Intune에서 구성된 디바이스 컨텍스트 기반 응용 프로그램 설치가 아직 작동하지 않습니다.
+- Wi-Fi를 통해 Autopilot를 설정하는 동안 인터넷 연결이 처음 설정 되고 최종 사용자 사용권 계약(EULA)이 표시되고 사용자가 비 Autopilot 설치 환경을 진행할 수 있는 옵션이 있는 경우 Autopilot 프로필이 다운로드되지 않는 경우가 있을 수 있습니다. Autopilot를 사용하여 설정을 다시 시도하려면, 장치를 절전 모드로 전환한 다음 전원을 켜고 장치를 재부팅하여 다시 시도합니다.
 
 ### 문제 해결
 
-다음 문서는 자세한 정보를 알아보고 Autopilot 문제를 해결 하는 데 유용한 리소스가 될 수 있지만, 이러한 문서는 Windows 10 데스크톱을 기반으로 하며 모든 정보가 HoloLens에 적용 되는 것이 아니라는 점에 유의 하세요.
-- [Windows Autopilot-알려진 문제](https://docs.microsoft.com/mem/autopilot/known-issues)
+다음 문서는 자세한 정보를 알아보고 Autopilot 문제를 해결 하는 데 유용한 리소스가 될 수 있지만, 이러한 문서는 Windows 10 데스크톱을 기반으로 하며 모든 정보가 HoloLens에 적용되는 것이 아니라는 점에 유의하세요.
+- [Windows Autopilot - 알려진 문제](https://docs.microsoft.com/mem/autopilot/known-issues)
 - [Microsoft Intune에서 Windows 장치 등록 문제 해결](https://docs.microsoft.com/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
-- [Windows Autopilot-정책 충돌](https://docs.microsoft.com/mem/autopilot/policy-conflicts)
+- [Windows Autopilot - 정책 충돌](https://docs.microsoft.com/mem/autopilot/policy-conflicts)
 
 ## Autopilot에 대한 피드백
 
 피드백을 제공하거나 문제를 신고하려면 다음 방법 중 하나를 사용합니다.
 
 - 피드백 허브 앱 사용 HoloLens에 연결된 컴퓨터에서 이 앱을 찾을 수 있습니다. 피드백 허브에서 **엔터프라이즈 관리** > **장치** 범주를 선택합니다. 피드백을 제공하거나 문제를 신고할 때 자세한 설명을 제공합니다. 해당하는 경우 스크린샷 및 로그를 포함합니다.
-- 디바이스를 등록 하는 동안 Intune에서 문제가 발생 하거나 Autopilot 프로필이 할당 되지 않은 경우 [https://aka.ms/apsupport](https://aka.ms/apsupport)에서 지원 티켓을 여세요.
-- Autopilot 환경에서 HoloLens 장치에 문제가 발생 하는 경우 [https://aka.ms/hlsupport](https://aka.ms/hlsupport)에서 [오프라인 진단 로그](hololens-diagnostic-logs.md#offline-diagnostics)를 사용하여 지원 티켓을 여세요.
+- 디바이스를 등록 하는 동안 Intune에서 문제가 발생하거나 Autopilot 프로필이 할당되지 않은 경우 [https://aka.ms/apsupport](https://aka.ms/apsupport)에서 지원 티켓을 여세요.
+- Autopilot 환경에서 HoloLens 장치에 문제가 발생하는 경우 [https://aka.ms/hlsupport](https://aka.ms/hlsupport)에서 [오프라인 진단 로그](hololens-diagnostic-logs.md#offline-diagnostics)를 사용하여 지원 티켓을 여세요.
 
   메시지에 자세한 설명을 제공합니다. 그러나 지원 담당자가 특별히 요청하지 않는 한 스크린샷이나 로그와 같은 데이터는 포함하지 않습니다. 이러한 데이터에는 개인 또는 개인 식별 정보(PII)가 포함될 수 있습니다.
