@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: be9da0ec2f301705a0691bcfc9dcf9d75eac8922
-ms.sourcegitcommit: cfbcdf562f949eef9cd797bbb08dfdf9f29e8fcd
+ms.openlocfilehash: 429f955777eae5cbe94c710ca4c17e03091fb99e
+ms.sourcegitcommit: 307e313f05243b6d94f9bfc0cb4e316a00a8005c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "11168545"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "11176900"
 ---
 # HoloLens용 Windows 자동 실행 2
 
@@ -325,8 +325,8 @@ OOBE는 Autopilot 프로필이 다운로드될 때까지 무기한 대기하고 
 
 ## 알려진 문제
 
-- Intune에서 구성된 디바이스 컨텍스트 기반 응용 프로그램 설치가 아직 작동하지 않습니다.
-- Wi-Fi를 통해 Autopilot를 설정하는 동안 인터넷 연결이 처음 설정 되고 최종 사용자 사용권 계약(EULA)이 표시되고 사용자가 비 Autopilot 설치 환경을 진행할 수 있는 옵션이 있는 경우 Autopilot 프로필이 다운로드되지 않는 경우가 있을 수 있습니다. Autopilot를 사용하여 설정을 다시 시도하려면, 장치를 절전 모드로 전환한 다음 전원을 켜고 장치를 재부팅하여 다시 시도합니다.
+- Intune에서 구성된 디바이스 컨텍스트 기반 응용 프로그램 설치가 아직 작동하지 않습니다. [디바이스 컨텍스트 및 사용자 컨텍스트 설치에 대해 자세히 알아보세요.](https://docs.microsoft.com/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
+-   Wi-Fi를 통해 Autopilot를 설정하는 동안 인터넷 연결이 처음 설정될 때 Autopilot 프로필이 다운로드되지 않는 인스턴스가 있을 수 있습니다. 이 경우 EULA(최종 사용자 사용권 계약)이 표시되며 사용자는 Autopilot이 아닌 설치 환경을 진행할 수 있는 옵션이 있습니다. Autopilot를 사용하여 설정을 다시 시도하려면, 장치를 절전 모드로 전환한 다음 전원을 켜고 장치를 재부팅하여 다시 시도합니다.
 
 ### 문제 해결
 
