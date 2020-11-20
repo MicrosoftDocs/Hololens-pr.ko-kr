@@ -12,7 +12,7 @@
 ### [HoloLens 2 정리 FAQ](hololens2-maintenance.md)
 ### [HoloLens 2에 지원되는 언어](hololens2-language-support.md)
 ### [HoloLens 2 둘러보기](hololens2-basic-usage.md)
-### [HoloLens 개발 에디션 FAQ](hololens2-development-edition-faq.md)
+### [HoloLens 2 개발 에디션 FAQ](hololens2-development-edition-faq.md)
 
 
 ## HoloLens(1세대) 시작하기
