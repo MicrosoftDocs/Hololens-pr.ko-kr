@@ -17,12 +17,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b4730029755c71cab5dc00b37ac69cd6ed54be58
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: f560dae725cbce8658bdf2a135c5061b5332f797
+ms.sourcegitcommit: 456a88907d606f4c4532b153d5a848e214b6b8e1
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162973"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "11182009"
 ---
 # HoloLens를 키오스크로 설정
 
@@ -53,7 +53,10 @@ ms.locfileid: "11162973"
 
 키오스크 모드를 사용 하도록 HoloLens 2 장치를 구성할 수 있습니다.
 
-키오스크 모드를 사용 하도록 HoloLens (첫번째 gen) 장치를 구성 하려면 먼저 장치가 Windows 10, 버전 1803 또는 이후 버전을 실행 하는지 확인 해야 합니다. Windows 장치 복구 도구를 사용 하 여 HoloLens (첫번째 gen) 장치를 기본 빌드로 복구 하거나 최신 업데이트를 설치한 경우 장치를 구성할 준비가 된 것입니다.
+> [!IMPORTANT]
+> 키오스크 모드는 장치에 비즈니스용 Windows 홀로그램 있는 경우에만 사용할 수 있습니다. 모든 HoloLens 2 장치는 비즈니스용 Windows 홀로그램와 함께 제공 되며 다른 버전은 없습니다. 모든 HoloLens 2 장치는 키오스크 모드를 상자 밖으로 실행할 수 있습니다.
+>
+> HoloLens (첫번째 gen) 장치는 OS 빌드 및 OS 에디션의 두 가지 측면에서 모두 업그레이드 해야 합니다. 다음은 [Windows 홀로그램 For Business](hololens1-upgrade-enterprise.md) Edition으로 HoloLens (1 gen)를 업데이트 하는 방법에 대 한 자세한 내용입니다. 키오스크 모드를 사용 하도록 HoloLens (첫번째 gen) 장치를 업데이트 하려면 먼저 장치가 Windows 10, 버전 1803 또는 이후 버전을 실행 하는지 확인 해야 합니다. Windows 장치 복구 도구를 사용 하 여 HoloLens (첫번째 gen) 장치를 기본 빌드로 복구 하거나 최신 업데이트를 설치한 경우 장치를 구성할 준비가 된 것입니다.
 
 > [!IMPORTANT]  
 > 키오스크 모드에서 실행 되는 장치를 보호 하기 위해 USB 연결과 같은 기능을 해제 하는 장치 관리 정책을 추가 하는 것이 좋습니다. 또한 업데이트 링 설정을 확인 하 여 업무 시간 동안 자동 업데이트가 발생 하지 않는지 확인 합니다.
@@ -415,9 +418,6 @@ OOBE 중에 다음 단계를 수행 합니다.
 ## Windows Device Portal을 사용 하 여 단일 앱 키오스크 설정
 
 Windows Device Portal을 사용 하 여 키오스크 모드를 설정 하려면 다음 단계를 따르세요.
-
-> [!IMPORTANT]
-> 키오스크 모드는 장치에 [비즈니스용 Windows 홀로그램](hololens1-upgrade-enterprise.md) 설치 되어 있는 경우에만 사용할 수 있습니다.
 
 1. [Windows Device Portal을 사용 하도록 HoloLens 장치를 설정](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal)합니다. Device Portal은 PC의 웹 브라우저에서 연결 가능한 HoloLens에 있는 웹 서버입니다.
 
