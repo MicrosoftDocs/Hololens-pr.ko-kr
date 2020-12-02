@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 5090a433b3d06e92cd36bdadbfbae3758432bb41
-ms.sourcegitcommit: 8656379a4871e118b9e06e72eab1dbcc8eb3cd42
+ms.openlocfilehash: f5405e0ae5096d23b791f18f04b842b2a577a9d5
+ms.sourcegitcommit: c77b2704e87f13b8513d198ce7df7dc0da6075b5
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "11182449"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "11192448"
 ---
 # HoloLens용 Windows 자동 실행 2
 
@@ -223,11 +223,8 @@ HoloLens 장치를 등록하는 기본 방법은 두 가지가 있습니다.
     
     - 무선 인터넷 연결을 위한 "USB-C to Wifi" 어댑터를 사용하여 장치를 연결하고 HoloLens 2 완전 Autopilot 환경을 자동으로 사용하도록 합니다.
 
-       > [!NOTE]
-       > Autopilot를 사용 하면 [장치 소유자](security-adminless-os.md#device-owner)에게 영향을 줍니다.
-   
-       > [!IMPORTANT]  
-       > Autopilot 용 OOBE에서 Wi-Fi 네트워크를 사용 하려고 하는 장치 [는 Windows Holographic, Verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2)에 있어야 합니다.
+        > [!IMPORTANT]  
+       > Autopilot용 OOBE에서 Wi-Fi 네트워크를 사용하려고 하는 장치가 [Windows Holographic, Verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2)에 있어야 합니다.
        >
        > 이더넷 어댑터를 사용하는 디바이스의 경우 OOBE(사용자 환경)가 시작되기 전에 디바이스를 네트워크에 연결해야 합니다. 첫 번째 OOBE 화면에서 장치는 Autopilot 장치로 프로비전 중인지 여부를 결정합니다. 장치를 네트워크에 연결할 수 없거나 장치를 Autopilot 장치로 프로비전하지 않도록 선택하는 경우 나중에 Autopilot 프로비전으로 변경할 수 없습니다. 대신 장치를 Autopilot 장치로 프로비전하려면 이 절차를 다시 시작해야 합니다.
 
