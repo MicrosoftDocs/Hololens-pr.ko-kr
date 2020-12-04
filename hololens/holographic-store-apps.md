@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d64d0a18fbbf6570173c4bd80bc4f036f4408e08
-ms.sourcegitcommit: a51f2e409f0207fc7457e97403b5298f1e0ad7dc
+ms.openlocfilehash: 06768203459827a83d8b6e891dfc8c46e33c3da2
+ms.sourcegitcommit: 1f37a06cde037f3acdc4ef3767a9384953d97c33
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "11145639"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "11194868"
 ---
 # Microsoft Store에서 앱을 찾고, 설치하고 제거
 
@@ -35,6 +35,11 @@ HoloLens는 Microsoft Store 뿐만 아니라 HoloLens를 위해 특별히 만들
 ## 앱 찾기
 
 **시작** 메뉴에서 Microsoft Store 열기 앱과 게임을 찾습니다. [음성 명령](hololens-cortana.md)을 사용하여 "검색"이라고 말하면 검색 창이 열리고 창이 열리면 " 받아쓰기 시작"이라고 말한 다음 메시지가 나타나면 검색어를 말하기 시작합니다.
+
+> [!NOTE]
+> HoloLens 장치에 대한 시스템 요구 사항은 앱 빌드의 아키텍처를 기반으로 합니다. HoloLens에 대한 앱 빌드(1세대)가 매장에서 ARM 아키텍처 패키지를 포함하도록 최신 UWP로 업데이트 되지 않은 경우 HoloLens 2 장치에서 사용할 수 없게 됩니다. 마찬가지로, HoloLens 2 앱에 x86 아키텍처 패키지가 포함되어 있지 않은 경우 HoloLens(1세대) 장치에는 사용할 수 없습니다. HoloLens 장치 아키텍처:
+> - x86 = HoloLens (1세대)
+> - ARM = HoloLens 2
 
 > [!NOTE]
 > 2021년 1월 12일에 다음 앱이 HoloLens 장치에 대한 지원 종료에 도달합니다. 장치의 다음 링크를 사용하여 앱의 웹 버전을 사용하는 것이 좋습니다.
