@@ -39,10 +39,15 @@
 ## [HoloLens 업데이트하는 법](hololens-update-hololens.md)
 
 # 준비
-## HoloLens 2 엔터프라이즈 배포 계획
-### [상용 환경에서 HoloLens 배포](hololens-requirements.md)
-### [공통 인프라 구축 시나리오](common-scenarios.md)
-## 일반적인 시나리오
+## [상용 환경에서 HoloLens 배포](hololens-requirements.md)
+## 일반적인 배포 시나리오
+### [인프라 배포 시나리오](common-scenarios.md)
+### 원격 지원을 사용하여 클라우드 연결 HoloLens 2 배포
+#### [클라우드 연결 - 배포 개요](hololens2-cloud-connected-overview.md)
+#### [클라우드 연결 - 준비](hololens2-cloud-connected-prepare.md)
+#### [클라우드 연결 - 구성](hololens2-cloud-connected-configure.md)
+#### [클라우드 연결 - 배포](hololens2-cloud-connected-deploy.md)
+#### [클라우드 연결 - 유지 관리](hololens2-cloud-connected-maintain.md)
 ### [오프라인 보안](hololens-common-scenarios-offline-secure.md)
 ## 보안
 ### [보안 개요](security-overview.md)

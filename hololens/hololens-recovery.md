@@ -14,12 +14,12 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 8c028ed39cf0925ebff18ca69889de2d87f1e7eb
-ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
+ms.openlocfilehash: 872e9d3445df2601579ae81f4190458289fa2eea
+ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "10996416"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "11195601"
 ---
 # HoloLens 2 다시 시작, 초기화 또는 복구
 
@@ -57,7 +57,7 @@ ms.locfileid: "10996416"
 
 4. 호스트 PC에 장치를 연결한 다음 장치 관리자를 엽니다. (Windows 10에서는 **Windows** 키를 누른 후 **X** 키를 누른 다음 **장치 관리자**를 클릭) 아래 이미지에 표시된 것처럼 장치가 *Microsoft HoloLens*로 제대로 열거되는지 확인합니다.
 
-   ![HoloLens 2 MicrosoftHoloLens복구](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery 장치 관리자](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### 하드 초기화 절차
 
@@ -70,7 +70,7 @@ ms.locfileid: "10996416"
 4. 장치를 호스트 PC에 연결합니다.
 5. 장치 관리자를 엽니다.(Windows 10에서는 ** Windows** 키를 누른 다음 **X** 키를 누르고 **장치 관리자**를 선택) 아래 이미지에 표시된 것처럼 장치에서 *Microsoft HoloLens*로 제대로 열거 되는지 확인 합니다.
 
-   ![HoloLens 2 MicrosoftHoloLens복구](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery 장치 관리자 2](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## 장치 클린 리플래시
 
@@ -81,12 +81,12 @@ ms.locfileid: "10996416"
 - [과열](hololens-environment-considerations.md#temperature-and-regulatory-information) 
 - OS 충돌(응용 프로그램 충돌과는 다름)
 
-장치를 리플래시하는 두 가지 방법이 있습니다. 두 가지 방법 모두 [Windows 스토어에서 고급 복구 도우미](https://www.microsoft.com/store/productId/9P74Z35SFRS8)를 먼저 설치해야 합니다. 
+장치를 리플래시하는 두 가지 방법이 있습니다. 둘 다 Windows 스토어에서 고급 복구 도우미를 먼저 [설치해야 합니다.](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
 
 >[!WARNING]
 >장치를 리플래시하면 TPM 초기화 정보를 포함한 모든 개인 데이터, 앱 및 설정 내용이 지워집니다.
 
-현재 고급 복구 도우미는 [Windows Holographic 2004](hololens-release-notes.md#windows-holographic-version-2004)에 대한 기능 릴리스 빌드를 다운로드하도록 설정되어 있습니다. 최신 HoloLens 2 FFU(Full Flash Update) 패키지를 다운로드하여 고급 복구 도우미를 통해 장치를 리플래시하려면 [여기에서 패키지를 다운로드하세요](https://aka.ms/hololens2download). 이 버전은 일반적으로 사용할 수 있는 최신 빌드입니다.
+기본적으로 고급 복구 도우미는 최신 기능 릴리스 빌드를 다운로드할 수 있도록 설정되어 있습니다. 여기를 체크표시하여 [릴리스 노트](hololens-release-notes.md#)를 읽어보고 최신 기능 릴리스에 대해 알아보세요. 최신 HoloLens 2 FFU(Full Flash Update) 패키지를 다운로드하여 고급 복구 도우미를 통해 장치를 리플래시하려면 [여기를 클릭하여 최신 월간 HoloLens 2 이미지를 다운로드하세요](https://aka.ms/hololens2download). 이 버전은 일반적으로 사용할 수 있는 최신 빌드입니다.
 
 리플래시 절차를 시작하기 전에 앱이 Windows 10 PC에 설치되어 실행 중인지 확인하고 장치를 감지할 준비가 되었는지 확인합니다.
 
@@ -134,8 +134,8 @@ IT 환경에서 Windows 스토어 앱을 사용하지 못하도록 하거나 소
 1. [비즈니스용 Microsoft 스토어](https://businessstore.microsoft.com)로 이동하고 Azure Active Directory ID를 사용하여 로그인합니다.
 
 1. **관리 – 설정**으로 이동합니다. **장바구니**에서 **오프라인 앱 표시**를 켭니다. 
-1. **내 그룹샵**으로 이동하여 [***고급 복구 도우미***](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8)를 검색합니다.
-1. **라이선스 유형**을 ***오프라인***으로 변경하고 **관리**를 클릭합니다.
+1. **내 그룹샵**으로 이동하여 [**_고급 복구 도우미_*_](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8)를 검색합니다.
+1. _*라이선스 유형**을 **_오프라인_*_ 으로 변경하고 _*관리**를 선택합니다.
 1. **오프라인으로 사용하기 위해 패키지 다운로드**에서 두 번째 파란색 **다운로드** 버튼을 클릭합니다. 파일 확장명이 *.appxbundle*인지 확인합니다.
 
     - 이 단계에서 데스크톱 PC에서 인터넷에 액세스할 수 있으면 패키지를 두 번 클릭하여 앱을 설치합니다.
