@@ -11,12 +11,12 @@ metadata:
   ms.author: v-todmc
   ms.date: 5/22/2020
   ms.assetid: 0947f5b3-8f0f-42f0-aa27-6d2cad51d040
-  ms.openlocfilehash: 23cac991786c5540d7dadfcaae7ba2fe1d84dc64
-  ms.sourcegitcommit: 58812149a9795b46799845e89f98d4cfd72ded42
+  ms.openlocfilehash: d985c89a3352f1fcd8967970a1211315403dca15
+  ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
   ms.translationtype: HT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 10/08/2020
-  ms.locfileid: "11105399"
+  ms.lasthandoff: 12/04/2020
+  ms.locfileid: "11195611"
 landingContent:
 - title: HoloLens 개요
   linkLists:
@@ -36,6 +36,16 @@ landingContent:
       url: hololens-calibration.md
     - text: HoloLens 업데이트하는 법
       url: hololens-update-hololens.md
+- title: 배포 가이드
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: 일반적인 배포 시나리오
+      url: common-scenarios.md
+    - text: 원격 지원을 사용하여 규모에 따라 클라우드에 연결된 HoloLens 2 배포
+      url: hololens2-cloud-connected-overview.md
+    - text: 오프라인 보안 배포
+      url: hololens-common-scenarios-offline-secure.md
 - title: 준비
   linkLists:
   - linkListType: get-started
