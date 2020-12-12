@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: f5405e0ae5096d23b791f18f04b842b2a577a9d5
-ms.sourcegitcommit: c77b2704e87f13b8513d198ce7df7dc0da6075b5
+ms.openlocfilehash: 95f187b2a4b6a86b59e05f3b12414c84ca0f6460
+ms.sourcegitcommit: fac3e62c1fd4dd531c2c8620870213cd570980dc
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "11192448"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "11205770"
 ---
 # HoloLens용 Windows 자동 실행 2
 
@@ -93,13 +93,12 @@ Surface 디바이스와 마찬가지로 고객은 Microsoft [Cloud Solution Prov
 
 HoloLens 장치를 등록하는 기본 방법은 두 가지가 있습니다. 
 
-1. **리셀러는 사용자가 주문을 할 때 파트너 센터에 장치를 등록할 수 있습니다.** 
- > [!NOTE]  
-   > Autopilot 서비스에 장치를 추가하는 데 권장되는 경로입니다. [자세한 내용을 알아보세요](https://docs.microsoft.com/mem/autopilot/add-devices#reseller-distributor-or-partner-registration).  
+ - **리셀러는 사용자가 주문을 할 때 파트너 센터에 장치를 등록할 수 있습니다.** 
 
-   또는, 어떤 것이든 상관하지 않습니다.
+   > [!NOTE]  
+   > Autopilot 서비스에 장치를 추가하는 데 권장되는 경로입니다. [자세한 내용을 알아보세요](https://docs.microsoft.com/mem/autopilot/add-devices#reseller-distributor-or-partner-registration).  
    
-2. **하드웨어 해시(하드웨어 ID라고도 함)를 검색**하고 MEM 관리 센터에 디바이스를 수동으로 등록합니다. 
+ - **하드웨어 해시(하드웨어 ID라고도 함)를 검색**하고 MEM 관리 센터에 디바이스를 수동으로 등록합니다. 
 
 **하드웨어 해시를 검색합니다.**
 
@@ -134,11 +133,13 @@ HoloLens 장치를 등록하는 기본 방법은 두 가지가 있습니다.
 
 1. **Windows Autopilot 장치 추가** 아래에서 DeviceHash CSV 파일을 선택하고 **열기**를 선택한 다음 **가져오기**를 선택합니다.  
    
-   ![가져오기 명령을 사용하여 하드웨어 해시를 가져옵니다.](./images/hololens-ap-hash-import.png)
+   > [!div class="mx-imgBorder"]
+   > ![가져오기 명령을 사용하여 하드웨어 해시를 가져옵니다.](./images/hololens-ap-hash-import.png)
    
 1. 가져오기가 완료되면 **장치** > **Windows** > **Windows 등록** > **장치** > **동기화**를 선택합니다. 동기화되는 장치 수에 따라 프로세스를 완료하는 데 몇 분 정도 걸릴 수 있습니다. 등록된 장치를 보려면 **새로 고침**을 선택합니다.  
    
-   ![동기화 및 새로 고침 명령을 사용하여 장치 목록을 표시합니다.](./images/hololens-ap-devices-sync.png)  
+   > [!div class="mx-imgBorder"]
+   > ![동기화 및 새로 고침 명령을 사용하여 장치 목록을 표시합니다.](./images/hololens-ap-devices-sync.png)  
 
 ### 3. 장치 그룹 만들기
 
@@ -168,7 +169,9 @@ HoloLens 장치를 등록하는 기본 방법은 두 가지가 있습니다.
 1. 프로필 이름과 설명을 입력하고 **다음**을 선택합니다.  
    **HoloLens**를 포함하는 목록이 표시됩니다. 이 옵션이 표시되지 않는 경우 [피드백](hololens2-autopilot.md#feedback-and-support-for-autopilot) 옵션 중 하나를 사용하여 문의하세요.
 
-   ![프로필 이름 및 설명 추가](./images/hololens-ap-profile-name.png)
+   > [!div class="mx-imgBorder"]
+   > ![프로필 이름 및 설명 추가](./images/hololens-ap-profile-name.png)
+   
 1. **첫 실행 경험(OOBE)** 페이지에서 대부분의 설정이 이 평가에 대한 OOBE를 간소화하도록 사전 구성되어 있습니다. 선택적으로 구성할 수 있는 설정은 다음과 같습니다.  
 
    - **언어(지역)**: OOBE의 언어를 선택합니다. [HoloLens 2에 지원되는 언어](hololens2-language-support.md) 목록에서 언어를 선택하는 것이 좋습니다.
@@ -177,7 +180,9 @@ HoloLens 장치를 등록하는 기본 방법은 두 가지가 있습니다.
      > [!NOTE]  
      > 장치 이름 템플릿을 사용하는 경우 OOBE 프로세스는 장치 이름을 적용한 후 장치를 Azure AD에 가입시키기 전에 한 번 더 장치를 다시 시작합니다. 다시 시작하면 새 이름이 적용됩니다.  
 
-   ![OOBE 설정 구성](./images/hololens-ap-profile-oobe.png)
+   > [!div class="mx-imgBorder"]
+   > ![OOBE 설정 구성](./images/hololens-ap-profile-oobe.png)
+   
 1. 설정을 구성한 후 **다음**을 선택합니다.
 1. **범위 태그** 페이지에서 이 프로필에 적용하려는 범위 태그를 선택적으로 추가합니다. 범위 태그에 대한 자세한 내용은 [분산 IT에 역할 기반 액세스 제어 및 범위 태그 사용](https://docs.microsoft.com/mem/intune/fundamentals/scope-tags.md)을 참조하세요. 작업이 완료되면 **다음**을 선택합니다.
 1. **할당** 페이지에서 **할당 대상**으로 **선택된 그룹**을 선택합니다.
@@ -186,11 +191,13 @@ HoloLens 장치를 등록하는 기본 방법은 두 가지가 있습니다.
   
    그룹을 제외하려면 **제외할 그룹 선택**을 선택하고 제외하려는 그룹을 선택합니다.
 
-   ![장치 그룹을 프로필에 할당합니다.](./images/hololens-ap-profile-assign-devicegroup.png)
+   > [!div class="mx-imgBorder"]
+   > ![장치 그룹을 프로필에 할당합니다.](./images/hololens-ap-profile-assign-devicegroup.png)
    
 1. **검토 + 만들기** 페이지에서 설정을 검토한 후 **만들기**를 선택하여 프로필을 생성합니다.  
    
-   ![검토 + 만들기](./images/hololens-ap-profile-summ.png)
+   > [!div class="mx-imgBorder"]
+   > ![검토 + 만들기](./images/hololens-ap-profile-summ.png)
 
 ### 5. ESP 구성 확인
 
