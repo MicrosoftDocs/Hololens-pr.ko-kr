@@ -99,7 +99,8 @@
 ### [애플리케이션 관리 개요](app-deploy-overview.md)
 ### [인투네 & 컴퍼니 포털](app-deploy-intune.md)
 ### [비즈니스용 Microsoft Store](app-deploy-store-business.md)
-### [프로비저닝 패키지](app-deploy-provisioning-package.md)
+### [프로비전 패키지](app-deploy-provisioning-package.md)
+### [앱 설치 관리자](app-deploy-app-installer.md)
 
 # 유지 관리
 ## [HoloLens 업데이트 관리](hololens-updates.md)
@@ -115,7 +116,6 @@
 # HoloLens 릴리스 정보
 ## [HoloLens 2 릴리스 정보](hololens-release-notes.md)
 ## [Microsoft HoloLens 참가자 미리 보기](hololens-insider.md)
-### [앱 설치 관리자](app-deploy-app-installer.md)
 ## [HoloLens(1세대) 릴리스 정보](hololens1-release-notes.md)
 
 # [피드백을 보내 주세요.](hololens-feedback.md)
