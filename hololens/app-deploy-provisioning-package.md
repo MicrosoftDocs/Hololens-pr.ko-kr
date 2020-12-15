@@ -1,7 +1,7 @@
 ---
-title: 프로비저닝 패키지
-description: 앱, 앱 배포, 엔터프라이즈 앱 demployment, 프로비저닝
-keywords: 앱, 앱 배포, 엔터프라이즈 앱 demployment, 프로비저닝
+title: 프로비전 패키지
+description: 앱, 앱 배포, 엔터프라이즈 앱 실무, 프로비저닝
+keywords: 앱, 앱 배포, 엔터프라이즈 앱 실무, 프로비저닝
 author: evmill
 ms.author: v-evmill
 ms.date: 6/22/2020
@@ -14,40 +14,46 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 0803b5f1b77ac7f123d534d101cd24903b87094c
-ms.sourcegitcommit: 89ce6cdc0fc6d70a88217791c5f6d613778af614
+ms.openlocfilehash: 60efc454f9e1221372279401da9f8ee918e061e7
+ms.sourcegitcommit: efa3fb7e353c5e56ee467cc7fd94ffdfaf46e2e5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "11052585"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "11219225"
 ---
-# 프로비저닝 패키지
+# 프로비전 패키지
 
-프로 비전 패키지를 사용 하 여 끝점 관리에 대 한 액세스 권한이 없는 환경에서 디바이스를 준비 하 고 구성할 수 있습니다. 또한 사용자의 id, 등록 상태 (OOBE) 중, [설치 중에 프로비저닝 패키지를 적용](https://docs.microsoft.com/hololens/hololens-provisioning##apply-a-provisioning-package-to-hololens-during-setup)하 여 장치에 배포할 수 있습니다.
+프로비저닝 패키지를 사용하여 끝점 관리에 액세스하지 않고도 환경에서 장치를 준비하고 구성할 수 있습니다. 또한 사용자의 ID, 등록 상태, OOBE(첫 실행 경험) 중 또는 설치 중에 프로비저닝 패키지를 적용하여 장치에 배포할 [수도 있습니다.](https://docs.microsoft.com/hololens/hololens-provisioning##apply-a-provisioning-package-to-hololens-during-setup)
 
-## 패키지 제공 고려 사항:
-* Public이 아닌 앱
-* USB 쪽만 로드
-* 자동 업데이트 없음 (PPKGs를 통한 수동 업데이트 필요)
+## 프로비저닝 패키지 고려 사항:
+* 비공용 앱
+* USB 테스트용 로드만
+* 자동 업데이트 없음(PPKG를 통한 수동 업데이트 필요)
 
-> [!NOTE] 
-> HoloLens 장치용 프로비저닝 패키지를 만드는 방법에 대 한 기본 사항을 알아보려면 [Hololens 프로비저닝](https://docs.microsoft.com/hololens/hololens-provisioning)을 방문 하세요. 앱을 배포 하려면 고급 프로 비전으로 시작 해야 합니다. 
+프로비저닝 패키지를 통해 설치된 앱은 로컬 컴퓨터 저장소의 인증서로 서명해야 합니다. 프로비저닝 패키지는 장치(로컬 컴퓨터) 저장소에만 인증서를 설치할 수 있으므로 동일한 프로비저닝 패키지를 통해 앱과 인증서를 설치할 수 있습니다. MDM에서 인증서를 배포하거나 인증서 관리자를 [](certificate-manager.md)통해 설치하는 경우 로컬 컴퓨터 저장소에 인증서를 배포하여 이러한 방식으로 설치된 앱에 서명해야 합니다.
 
-> [!NOTE] 
-> HoloLens (첫번째 gen)는 프로비저닝 패키지를 사용 하 여 앱 (**UniversalAppInstall**)을 제한적으로 설치 하도록 지원 합니다. HoloLens (1 gen) 장치는 OOBE 중에만 PPKG을 사용 하 여 앱을 설치 하 고 사용자 컨텍스트 설치만을 지원 합니다.
+HoloLens 장치에 대한 프로비저닝 패키지를 만드는 기본 방법을 알아보고 [HoloLens 프로비전을 방문합니다.](https://docs.microsoft.com/hololens/hololens-provisioning) 앱을 배포하려면 고급 프로비전으로 시작해야 합니다.
+
+> [!NOTE]
+> HoloLens(1세대)는 프로비저닝 패키지를 사용하여 앱**설치(UniversalAppInstall)를**제한적으로 지원하고 있습니다. HoloLens(1세대) 장치는 OOBE 중에만 PPKG를 통해 앱 설치를 지원하며 사용자 컨텍스트 설치만 지원합니다.
 
 ## Setup
 
-[Windows 구성 디자이너](https://www.microsoft.com/store/productId/9NBLGGH4TX22) 내에서 4 단계를 수행 합니다.
+[Windows 구성 디자이너 내에서는](https://www.microsoft.com/store/productId/9NBLGGH4TX22) 4단계를 수행합니다.
 
-1. ApplicationManagement/AllowAllTrustedApps를 "Yes"로 설정 합니다. [Applicationmanagement/AllowAllTrustedApps](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps)을 참조 하세요.
-2. **UniversalAppInstall**  >  **UserContextAppLicense** 에서 **PackageFamilyName**를 입력 하십시오. [UniversalAppInstall](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall)을 참조 하세요. 참고 항목: [UserContextAppLicense](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
-    - 이 방법을 모를 경우 앱을 이미 설치한 장치에서 디바이스 포털을 사용할 수 있습니다. 앱 페이지를 방문 하 여 PackageRelativeID 줄을 살펴보고 "!" 앞에 있는 모든 정보 **PackageFamilyName**.
-3. 그러면 새 섹션 **Applicationfile**이 있다는 것을 알 수 있습니다. 이 영역을 사용 하 여 appx 번들을 업로드 합니다. 
-4. 앱을 구입 했거나 고유한 LOB 앱을 빌드 했는지에 따라 라이선스 파일 또는 보안 인증서를 업로드 해야 합니다.
-    - 라이선스 파일: **UniversalAppInstall**  >  **UserContextAppLience** 에서 라이선스의 위치로 이동 하 여 업로드 합니다. 
-    - 보안 파일의 경우 **인증서** 로 이동한 다음 인증서를 선택 하 여 .appx 번들과 함께 설치 합니다. 
+1. ApplicationManagement/AllowAllTrustedApps를 "예"로 설정 See: [ApplicationManagement/AllowAllTrustedApps.](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps)
 
-프로젝트를 안전한 위치에 저장 해야 합니다. 그런 다음이를 **프로비저닝 패키지로** **내보냅니다** .  
+2. **UniversalAppInstall**  >  **UserContextAppLicense** 아래에 **PackageFamilyName을 입력하십시오.** [UniversalAppInstall을 참조합니다.](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall) See also: [UserContextAppLicense](https://docs.microsoft.com/windows/configuration/wcd/wcd-universalappinstall#usercontextapplicense).
+
+   이미 앱을 설치한 디바이스에서 Device Portal을 사용할 수 있습니다. 앱 페이지를 방문하고 PackageRelativeID 줄에서 "!" 앞에 있는 모든 정보를 살펴 봐야 합니다. **PackageFamilyName인 경우.**
     
-또한 [HoloLens에 provisiong 패키지 적용을](https://docs.microsoft.com/hololens/hololens-provisioning#apply-a-provisioning-package-to-hololens-during-setup)참조 하세요.
+3. 그러면 새 섹션 **ApplicationFile이 표시됩니다.** 이 영역을 사용하여 appx 번들을 업로드합니다.
+
+4. 앱을 구매하거나 LOB 앱을 직접 구축한 경우 라이선스 파일 또는 보안 인증서를 업로드해야 합니다.
+
+    - 라이선스 파일의 경우: **UniversalAppInstall**  >  **UserContextAppLience에서** 라이선스 위치를 찾아 업로드합니다. 
+    - 보안 파일이 **인증서로** 이동하고 .appx 번들과 함께 설치할 인증서를 선택합니다.
+
+프로젝트를 안전한 위치에 저장해야 합니다. 그런 **다음 프로비저닝** **패키지로 내보낼 수 있습니다.**  
+    
+참조: [HoloLens에 프로비저닝](https://docs.microsoft.com/hololens/hololens-provisioning#apply-a-provisioning-package-to-hololens-during-setup)패키지 적용
