@@ -14,12 +14,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d14d33ea01a3fe649f7125e050dd1b0a16426e6c
-ms.sourcegitcommit: 681e8e03e1a0250368f1f50cef6fbc3c99bac3af
+ms.openlocfilehash: 748475cb3e3c51e36904109ecfe03e65bdad6c1e
+ms.sourcegitcommit: 6446a80bece77d67077f36a390f13b8ce59af26e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "11165039"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252528"
 ---
 # 시각적 품질과 편안함 개선
 
@@ -42,7 +42,7 @@ HoloLens 2는 사용자에게 다음과 같은 상황에서 장치를 보정하�
 
 ![눈으로 조정할 수 있는 보정 프롬프트.](./images/07-et-adjust-for-your-eyes.png)
 
-이 프로세스 중에 대상(보석)의 집합을 볼 수 있습니다. 보정을 하는 동안 눈을 깜빡여도 괜찮지만 방에 있는 다른 물체보다는 보석을 응시하도록 합니다.  이렇게 하면 HoloLens가 홀로그램 세계를 렌더링하기 위해 눈 위치를 학습할 수 있습니다.
+이 프로세스 중에 대상(보석)의 집합을 볼 수 있습니다. 보정을 하는 동안 눈을 깜빡여도 괜찮지만 방에 있는 다른 물체보다는 보석을 응시하도록 합니다.  보석에 초점을 맞추면 홀로그램 세계를 렌더링하기 위해 HoloLens가 눈 위치에 대해 학습할 수 있습니다.
 
 ![머리를 움직이지 말고 눈으로 점을 따라오라는 보정 프롬프트.](./images/07-et-hold-head-still.png)
 
