@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 51cbef57cc3384b7026ae5d0b1ea98fdd942291f
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: 72b976560664c89b7ae3cd9270c57ead438679cd
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865577"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253125"
 ---
 # HoloLens 장치 및 홀로그램에 대한 질문과 대답
 
@@ -256,7 +256,7 @@ HoloLens를 Wi-Fi 네트워크에 연결할 수 없는 경우 다음 몇 가지�
 
 ### AD DS(Active Directory 도메인 서비스)를 사용하여 HoloLens 사용자 계정을 관리할 수 있나요?
 
-아니요. HoloLens 장치에 대한 사용자 계정을 관리하려면 AAD(Azure Active Directory)를 사용해야 합니다.
+아니요. HoloLens 장치의 사용자 계정을 관리하기 위해 Azure AD(Azure Active Directory)를 사용해야 합니다.
 
 ### HoloLens는 ADCS(Automated Data Capture Systems) 자동 등록이 가능한가요?
 
@@ -271,7 +271,7 @@ HoloLens를 Wi-Fi 네트워크에 연결할 수 없는 경우 다음 몇 가지�
 아니요. 그러나 다음 방법 중 하나를 사용하여 이 문제를 해결할 수 있습니다.
 
 - 사용자 지정 앱을 만든 다음 [키오스크 모드를 사용하도록 설정](hololens-kiosk.md)합니다. 사용자 지정 앱에는 브랜딩을 포함할 수 있으며 다른 앱(예: 원격 지원)을 시작할 수 있습니다.  
-- AAD에서 모든 사용자 프로필 사진을 회사 로고로 변경합니다. 그러나 일부 시나리오에는 이 방법이 바람직하지 않을 수 있습니다.
+- Azure AD의 모든 사용자 프로필 사진을 회사 로고로 변경합니다. 그러나 일부 시나리오에는 이 방법이 바람직하지 않을 수 있습니다.
 
 ### HoloLens(1세대) 및 HoloLens 2는 어떤 로깅 기능을 제안하나요?
 
@@ -281,8 +281,8 @@ HoloLens를 Wi-Fi 네트워크에 연결할 수 없는 경우 다음 몇 가지�
 
 ## HoloLens 장치 보안에 대한 질문
 
-[HoloLens 2 보안 정보](security-overview.md)를 참조 하세요.
-HoloLens 1 Gen 디바이스의 경우 [이 FAQ](hololens1-faq-security.md)를 검토 하세요.
+[HoloLens 2 보안 정보를 참조하세요.](security-overview.md)
+HoloLens 1세대 장치의 경우 이 [FAQ를 검토하십시오.](hololens1-faq-security.md)
 
 [목록으로 돌아가기](#list)
 

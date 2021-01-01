@@ -1,6 +1,6 @@
 ---
 title: Intune 및 회사 포털
-description: intune, 앱 관리, 앱, 회사 포털, 포털
+description: Intune, 앱 관리, 앱, 회사 포털, 포털
 keywords: intune, 앱 관리, 앱, 회사 포털, 포털, hololens
 author: evmill
 ms.author: v-evmill
@@ -17,12 +17,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7fcd65d5e49fa9cdd771828401749a0a41e50238
-ms.sourcegitcommit: d319ac257b9ace484acf5dcfb16c9d4e19ea50a9
+ms.openlocfilehash: 7871d5113b6803a3f702bf8d64f16fabc1c5a9bb
+ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "11247220"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "11252659"
 ---
 # 인투네 & 컴퍼니 포털
 
@@ -30,30 +30,31 @@ MDM(모바일 장치 관리)을 사용하면 Microsoft [Endpoint Manager(Intune)
 
 ## Setup
 
-1. 비즈니스용 앱을 업로드하거나 사용자 지정 앱을 Intune 테넌트에 업로드합니다. 엔터프라이즈 앱 [관리도 참조하세요.](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management)
+1. 앱을 비즈니스용 라인에 업로드하거나 사용자 지정 앱을 Intune 테넌트에 업로드합니다. 엔터프라이즈 앱 [관리도 참조하세요.](https://docs.microsoft.com/windows/client-management/mdm/enterprise-app-management)
 
-2. [그룹에 앱을 할당합니다.](https://docs.microsoft.com/mem/intune/apps/apps-deploy) 선택한 할당 유형에 따라 앱을 자동으로 제공하거나, 선택한 앱이 있는 경우 앱을 쉽게 끌어오게 할 수 있습니다. 
+2. [그룹에 앱을 할당합니다.](https://docs.microsoft.com/mem/intune/apps/apps-deploy) 선택한 할당 유형에 따라 앱을 자동으로 전달하거나, 선택한 앱이 있는 경우 앱을 쉽게 끌어서 내릴 수 있습니다.
 
-> [!NOTE] 
+> [!NOTE]
 > appx 번들을 구축할 때 배포하는 디바이스의 아키텍처를 포함해야 합니다. HoloLens 2는 ARM64, HoloLens(1세대)는 x86입니다. 장치 환경이 혼합된 환경을 계획하는 경우 단일 appx 번들에 둘 다 포함할 수 있습니다.
 
 ## 배정 유형
 
 등록 후 장치에 앱을 자동으로 설치하려면 해당 그룹에 대해 **** 필수를 선택해야 합니다.
-회사 포털을 통해 등록된 앱에 앱을 다운로드할 수 있도록 설정하려면 등록된 장치에 대해 사용 **가능을 선택합니다.**
+회사 포털을 통해 등록된 디바이스에 앱을 다운로드할 수 있도록 설정하려면 등록된 장치에 대해 사용 **가능을 선택합니다.**
 
+## End-User 환경
 
-## 최종 사용자 환경
-
-Intune에서 구성을 설정한 후 최종 사용자가 선택한 앱을 받을 준비가 된 것입니다.
+Intune에서 구성을 설정한 후 최종 사용자가 선택한 앱을 받을 준비가 됩니다.
 
 다음 단계에 따라 앱을 자동으로 다운로드합니다.
-1. 테넌트에 디바이스를 등록합니다. 
-2. 디바이스가 등록을 완료하면 디바이스에서 앱을 수신해야 합니다. 
-3. 즉시 앱이 표시되지 않는 경우 설정 **** 계정 작업 또는 학교  >  ****  >  ****  >  **사용자account** 정보로 이동한 다음 아래로 스크롤하여 설치된 앱 상태에 대한 정보를 확인합니다.
+
+1. 테넌트에 디바이스를 등록합니다.
+2. 디바이스가 등록을 완료하면 디바이스에서 앱을 수신해야 합니다.
+3. 즉시 앱이 표시되지 않는 경우 설정 **** 계정 작업 또는 학교 계정 정보로 이동한 다음 아래로 스크롤하여 설치된 앱 상태에 대한  >  ****  >  ****  >  ** 정보를 확인합니다.
 
 회사 포털을 통해 앱에 액세스하는 방법:
-1. 시작 **메뉴를 열고** **Microsoft Store를 선택합니다.** 
+
+1. 시작 **메뉴를 열고** **Microsoft Store를 선택합니다.**
 2. 회사 **포털을 검색하고** 앱을 다운로드합니다.
 3. 계정에 로그인합니다.
 4. 수신할 앱을 선택하고 다운로드합니다.

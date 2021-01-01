@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ba3f826360f999a72e671166af7a19d19ce9c567
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: 7d954347c7c274b844d436c0d6fc96e8bbc59f10
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11196356"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253185"
 ---
 # 배포 가이드 - 원격 지원이 있는 클라우드 연결 HoloLens 2 - 개요
 
@@ -35,17 +35,17 @@ ms.locfileid: "11196356"
 
 - Wi-Fi 네트워크는 일반적으로 인터넷 및 클라우드 서비스에 완전히 열려 있습니다.
 - MDM 자동 등록을 사용하여 Azure AD 가입 -- MDM(Intune) 관리
-- 사용자가 자신의 회사 계정(AAD)으로 로그인합니다.
+- 사용자가 자신의 회사 계정(Azure AD)으로 로그인합니다.
   - 지원되는 장치당 사용자 한명 또는 여러명
-- 장치 잠금 구성의 다양한 수준은 특정 사용 사례에 따라 완전히 열기에서 단일 앱 키오스크까지 적용됩니다.
+- 완전히 열기에서 단일 앱 키오스크까지 특정 사용 사례에 따라 다양한 수준의 장치 잠금 구성이 적용됩니다.
 
 ![클라우드 연결 시나리오](./images/cloud-connected-deployment-chart.png)
 
-이 가이드에서는 추가 장치 제한 또는 구성이 적용되지는 않습니다. 그러나 완료 후 이러한 옵션을 살펴보는 것이 좋습니다.
+이 가이드에서는 다른 장치 제한 또는 구성이 적용되지는 않습니다. 그러나 완료 후 이러한 옵션을 살펴보는 것이 좋습니다.
 
 ## 원격 지원에 대해 자세히
 
-원격 도우미를 사용하면 공동 유지 관리 및 복구, 원격 검사뿐만 아니라 지식 공유 및 교육을 사용할 수 있습니다. 원격 지원을 사용하여 다른 역할 및 위치에 있는 사람을 연결하면 기술자가 Microsoft Teams의 원격 공동 작업자와 연결할 수 있습니다. 비디오, 스크린샷 및 주석을 결합하여 동일한 위치에 있지 않은 경우에도 실시간으로 문제를&#39;수 있습니다. 원격 공동 작업자는 HoloLens에서 머리를 업고 핸즈&#39;동안 도형을 참조할 수 있도록 기술자가 실제 공간을 참조할 수 있도록 참조 이미지, schematics 및 기타 유용한 정보를 삽입할 수 있습니다.
+원격 도우미를 사용하면 공동 유지 관리 및 복구, 원격 검사뿐만 아니라 지식 공유 및 교육을 사용할 수 있습니다. 원격 지원을 사용하여 다른 역할 및 위치에 있는 사람을 연결하면 기술자가 Microsoft Teams의 원격 공동 작업자와 연결할 수 있습니다. 비디오, 스크린샷 및 주석을 결합하여 동일한 위치에 있지 않은 경우에도 실시간으로 문제를&#39;수 있습니다. 원격 공동 작업자는 HoloLens에서 헤드업 및 핸즈&#39;동안에는 기술자가 물리적 공간을 참조할 수 있도록 참조 이미지, 도형 및 기타 유용한 정보를 삽입할 수 있습니다.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -55,8 +55,8 @@ ms.locfileid: "11196356"
 
 > [!div class="checklist"]
 > - [HoloLens 2 디바이스의 인프라 필수 요소에 대해 자세히 알아보고,](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
-> - [AAD에 대해 자세히 알아보고 설정하지 않은 경우&#39;합니다.](hololens2-cloud-connected-prepare.md#azure-active-directory)
-> - [ID 관리 및 AAD 계정을 가장 잘 설정하는 방법에 대해 자세히 알아보습니다.](hololens2-cloud-connected-prepare.md#identity-management)
+> - [Azure AD에 대해 자세히 알아보고, 없는 경우 azure AD를&#39;설정하세요.](hololens2-cloud-connected-prepare.md#azure-active-directory)
+> - [ID 관리 및 Azure AD 계정을 가장 잘 설정하는 방법을 설명합니다.](hololens2-cloud-connected-prepare.md#identity-management)
 > - [MDM에 대해 자세히 알아보고, 아직 준비되지 않은 경우 Intune을&#39;수 있습니다.](hololens2-cloud-connected-prepare.md#mobile-device-management)
 > - [원격 지원의 네트워킹 요구 사항에 대해 자세히 알아보습니다.](hololens2-cloud-connected-prepare.md#network)
 > - [선택 사항: 조직 리소스에 연결하기 위한 VPN](/hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
@@ -65,7 +65,7 @@ ms.locfileid: "11196356"
 
 > [!div class="checklist"]
 > - [사용자 및 그룹을 만드는 방법](hololens2-cloud-connected-configure.md#azure-users-and-groups)
-> - [AAD 내에서 자동 등록을 설정하는 방법](hololens2-cloud-connected-configure.md#auto-enrollment-on-hololens-2)
+> - [Azure AD 내에서 자동 등록을 설정하는 방법](hololens2-cloud-connected-configure.md#auto-enrollment-on-hololens-2)
 > - [응용 프로그램 라이선스를 할당하는 방법](hololens2-cloud-connected-configure.md#application-licenses)
 
 배포:

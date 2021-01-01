@@ -1,6 +1,6 @@
 ---
 title: HoloLens를 키오스크로 설정
-description: 키오스크 구성을 사용 하 여 HoloLens에서 앱을 잠급니다.
+description: 키오스크 구성을 사용하여 HoloLens에서 앱을 잠글 수 있습니다.
 ms.prod: hololens
 ms.sitesec: library
 author: dansimp
@@ -17,91 +17,91 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f560dae725cbce8658bdf2a135c5061b5332f797
-ms.sourcegitcommit: 456a88907d606f4c4532b153d5a848e214b6b8e1
+ms.openlocfilehash: 777c90c4be397e176281ee72cb684a561ba78cfa
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "11182009"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253035"
 ---
 # HoloLens를 키오스크로 설정
 
-장치를 키오스크 모드로 실행 하도록 구성 하 여 HoloLens 장치가 고정 용도의 디바이스 ( *키오스크*이 라고도 함)로 작동 하도록 구성할 수 있습니다. 키오스크 모드는 장치에서 사용할 수 있는 응용 프로그램 (또는 사용자)을 제한 합니다. 키오스크 모드는 HoloLens 장치를 비즈니스 앱으로 전용 또는 앱 데모에서 HoloLens 장치를 사용 하는 데 사용할 수 있는 편리한 기능입니다.
+키오스크 모드에서 실행하도록 디바이스를 구성하여 HoloLens 장치가 ** 키오스크라고도 하는 고정 용도의 장치로 작동하도록 구성할 수 있습니다. 키오스크 모드는 장치에서 사용할 수 있는 응용 프로그램(또는 사용자)을 제한합니다. 키오스크 모드는 비즈니스 앱에 HoloLens 장치를 전담하거나 앱 데모에서 HoloLens 장치를 사용하는 데 사용할 수 있는 편리한 기능입니다.
 
-이 문서에서는 HoloLens 디바이스와 관련 된 키오스크 구성의 측면에 대 한 정보를 제공 합니다. 다양 한 유형의 Windows 기반 키오스크 및이를 구성 하는 방법에 대 한 일반적인 내용은 [windows 데스크톱 버전에서 키오스크 및 디지털 서명 구성을](https://docs.microsoft.com/windows/configuration/kiosk-methods)참조 하세요.  
+이 문서에서는 HoloLens 장치와 관련이 있는 키오스크 구성의 측면에 대한 정보를 제공합니다. 다양한 유형의 Windows 기반 키오스크 및 키오스크를 구성하는 방법에 대한 일반 정보는 Windows 데스크톱 버전에서 키오스크 및 디지털 서명 구성을 [참조하세요.](https://docs.microsoft.com/windows/configuration/kiosk-methods)  
 
 > [!IMPORTANT]  
-> 키오스크 모드는 사용자가 장치에 로그인 할 때 사용할 수 있는 앱을 결정 합니다. 그러나 키오스크 모드는 보안 방법이 아닙니다. "허용" 된 앱이 허용 되지 않는 다른 앱을 여는 것은 중지 되지 않습니다. 앱 또는 프로세스를 열지 못하도록 차단 하려면 [Windows Defender Application Control (WDAC) CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) 를 사용 하 여 적절 한 정책을 만듭니다.
+> 키오스크 모드는 사용자가 장치에 로그인할 때 사용할 수 있는 앱을 확인합니다. 그러나 키오스크 모드는 보안 방법이 아니며, "허용" 앱이 허용되지 않는 다른 앱을 열지 못하도록 중지하지는 않습니다. 앱 또는 프로세스가 열리지 못하도록 차단하기 위해 [WDAC(Windows Defender 응용 프로그램 제어) CSP를](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) 사용하여 적절한 정책을 만드십시오.
 >
-> Microsoft 서비스에 대 한 자세한 내용은 HoloLens 2 사용에 대 한 고급 보안 수준을 사용자에 게 제공 하 고 [상태 분리 및 격리-Defender 보호](security-state-separation-isolation.md#defender-protections)에 대해 자세히 알아보세요. 또는 [Windows PowerShell을 사용 하 여 HoloLens 2 장치에서 앱을 허용 하거나 차단](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens)하는 방법에 대해 알아봅니다.
+> HoloLens 2에서 사용하는 고급 수준의 보안을 사용자에게 제공하는 Microsoft 서비스에 대해 자세히 알아보고 상태 분리 및 분리 [- Defender 보호에 대해 자세히 알아보고 있습니다.](security-state-separation-isolation.md#defender-protections) 또는 WDAC 및 Windows PowerShell [사용하여 Microsoft Intune을 사용하여 HoloLens 2](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens)장치에서 앱을 허용하거나 차단하는 방법을 배워야 합니다.
 
-단일 앱 또는 다중 앱 구성에서 키오스크 모드를 사용할 수 있으며, 세 가지 프로세스 중 하나를 사용 하 여 키오스크 구성을 설정 하 고 배포할 수 있습니다.
+단일 앱 또는 다중 앱 구성에서 키오스크 모드를 사용할 수 있으며, 세 가지 프로세스 중 하나를 사용하여 키오스크 구성을 설정하고 배포할 수 있습니다.
 
 > [!IMPORTANT]  
-> 다중 앱 구성을 삭제 하면 할당 된 액세스 기능에서 만든 사용자 잠금 프로필이 제거 됩니다. 그러나 모든 정책 변경 사항은 되돌리지 않습니다. 이러한 정책을 되돌리려면 디바이스를 공장 설정으로 다시 설정 해야 합니다.
+> 다중 앱 구성을 삭제하면 할당된 액세스 기능이 만든 사용자 잠금 프로필이 제거됩니다. 그러나 모든 정책 변경 내용을 되버리진 않습니다. 이러한 정책을 되전하려면 장치를 공장 설정으로 다시 설정해야 합니다.
 
 ## 키오스크 배포 계획
 
-키오스크 계획을 수립할 때에는 다음 질문에 대답할 수 있어야 합니다. 이 페이지를 읽는 동안 고려해 야 할 사항과 이러한 질문에 대 한 몇 가지 고려 사항입니다.
-1. **키오스크를 사용 하는 사용자 및 사용할 [계정 종류](hololens-identity.md) 를 선택 합니다.** 이는 이미 작성 했 고, 키오스크의 편의를 위해 조정할 수 없는 것이 고, 나중에 키오스크에 할당 되는 방법에 영향을 주는 결정입니다.
-1. **사용자/그룹 당 다른 키오스크 또는 일부 키오스크 기능을 사용할 수 없도록 설정 해야 하나요?** 그렇다면 XML을 통해 키오스크를 만들어야 합니다. 
-1. **Kiosk에는 몇 개의 앱이 있나요?** 1 개 이상의 앱을 사용 하는 경우 다중 앱 키오스크이 필요 합니다. 
-1. **Kiosk에는 어떤 앱이 있나요?** 아래에 나와 있는 내 Umid 목록을 사용 하 여 자신의 In-Box 앱 외에도 추가 하세요.
-1. **키오스크 배포를 계획 하는 방법은 무엇 인가요?** MDM에서 디바이스를 등록 하는 경우 MDM을 사용 하 여 키오스크를 배포 하는 것이 좋습니다. MDM을 사용 하지 않는 경우에는 배포 패키지를 사용 하는 배포가 제공 됩니다.  
+키오스크를 계획할 때 다음 질문에 답변할 수 있습니다. 다음은 이 페이지를 읽는 동안 고려할 몇 가지 결정 사항과 이러한 질문에 대한 몇 가지 고려 사항입니다.
+1. **키오스크를 사용할 사용자와 어떤 [](hololens-identity.md) 유형의 계정을 사용하나요?** 이는 이미 결정했기 때문에 키오스크를 위해 조정하면 안 되지만 나중에 키오스크가 할당되는 방식에 영향을 줄 수 있습니다.
+1. **사용자/그룹당 다른 키오스크 또는 일부 키오스크를 사용할 수 없는 키오스크가 필요한가요?** 그렇다면 XML을 통해 키오스크를 만들 수 있습니다. 
+1. **Kiosk에 있을 앱의 수** 앱이 1개 이상 있는 경우 다중 앱 키오스크가 필요합니다. 
+1. **키오스크에 어떤 앱이 있나요?** 아래 AUMID 목록을 사용하여 자체 앱과 In-Box 앱을 추가하세요.
+1. **키오스크 배포는 어떻게 계획하나요?** MDM에 장치를 등록하는 경우 MDM을 사용하여 키오스크를 배포하는 것이 제안됩니다. MDM을 사용하지 않는 경우 프로비저닝 패키지를 사용한 배포를 사용할 수 있습니다.  
 
 ### 키오스크 모드 요구 사항
 
-키오스크 모드를 사용 하도록 HoloLens 2 장치를 구성할 수 있습니다.
+키오스크 모드를 사용하도록 HoloLens 2 장치를 구성할 수 있습니다.
 
 > [!IMPORTANT]
-> 키오스크 모드는 장치에 비즈니스용 Windows 홀로그램 있는 경우에만 사용할 수 있습니다. 모든 HoloLens 2 장치는 비즈니스용 Windows 홀로그램와 함께 제공 되며 다른 버전은 없습니다. 모든 HoloLens 2 장치는 키오스크 모드를 상자 밖으로 실행할 수 있습니다.
+> 키오스크 모드는 장치에 비즈니스용 Windows Holographic이 있는 경우만 사용할 수 있습니다. 모든 HoloLens 2 장치는 비즈니스용 Windows Holographic과 함께 제공하며 다른 버전은 없습니다. 모든 HoloLens 2 장치는 키오스크 모드를 실행할 수 있습니다.
 >
-> HoloLens (첫번째 gen) 장치는 OS 빌드 및 OS 에디션의 두 가지 측면에서 모두 업그레이드 해야 합니다. 다음은 [Windows 홀로그램 For Business](hololens1-upgrade-enterprise.md) Edition으로 HoloLens (1 gen)를 업데이트 하는 방법에 대 한 자세한 내용입니다. 키오스크 모드를 사용 하도록 HoloLens (첫번째 gen) 장치를 업데이트 하려면 먼저 장치가 Windows 10, 버전 1803 또는 이후 버전을 실행 하는지 확인 해야 합니다. Windows 장치 복구 도구를 사용 하 여 HoloLens (첫번째 gen) 장치를 기본 빌드로 복구 하거나 최신 업데이트를 설치한 경우 장치를 구성할 준비가 된 것입니다.
+> HoloLens(1세대) 장치는 OS 빌드 및 OS 버전 측면에서 모두 업그레이드해야 합니다. 다음은 HoloLens(1세대)를 [비즈니스용 Windows Holographic](hololens1-upgrade-enterprise.md) 버전으로 업데이트하는 데 대한 자세한 정보입니다. 키오스크 모드를 사용하기 위해 HoloLens(1세대) 장치를 업데이트하려면 먼저 디바이스가 Windows 10 버전 1803 이상 버전을 실행하고 있는지 확인합니다. Windows Device Recovery Tool을 사용하여 HoloLens(1세대) 장치를 기본 빌드로 복구한 경우 또는 최신 업데이트를 설치한 경우 장치를 구성할 준비가 된 것입니다.
 
 > [!IMPORTANT]  
-> 키오스크 모드에서 실행 되는 장치를 보호 하기 위해 USB 연결과 같은 기능을 해제 하는 장치 관리 정책을 추가 하는 것이 좋습니다. 또한 업데이트 링 설정을 확인 하 여 업무 시간 동안 자동 업데이트가 발생 하지 않는지 확인 합니다.
+> 키오스크 모드에서 실행되는 디바이스를 보호하려면 USB 연결 등의 기능을 해제하는 장치 관리 정책을 추가하는 것이 고려됩니다. 또한 업데이트 링 설정을 확인하여 업무 시간 중에 자동 업데이트가 발생하지 않는지 확인합니다.
 
-### 단일 앱 키오스크 또는 다중 앱 키오스크 중에서 결정
+### 단일 앱 키오스크 또는 다중 앱 키오스크 결정
 
-단일 앱 키오스크는 사용자가 장치에 로그인 할 때 지정 된 앱을 시작 합니다. Cortana 인 시작 메뉴를 사용할 수 없습니다. HoloLens 2 장치가 [시작](hololens2-basic-usage.md#start-gesture) 제스처에 응답 하지 않습니다. HoloLens (1 gen) 장치가 [블 룸](hololens1-basic-usage.md) 제스처에 응답 하지 않습니다. 앱을 하나만 실행할 수 있으므로 사용자는 다른 앱을 배치할 수 없습니다.
+단일 앱 키오스크는 사용자가 장치에 로그인할 때 지정된 앱을 시작합니다. Cortana와 같은 경우 시작 메뉴를 사용할 수 없습니다. HoloLens 2 장치는 시작 제스처에 [응답하지](hololens2-basic-usage.md#start-gesture) 않습니다. HoloLens(1세대) 장치는 블룸 제스처에 [응답하지](hololens1-basic-usage.md) 않습니다. 한 앱만 실행할 수 있기 때문에 사용자는 다른 앱을 실행할 수 없습니다.
 
-다중 앱 키오스크는 사용자가 장치에 로그인 할 때 시작 메뉴를 표시 합니다. 키오스크 구성은 시작 메뉴에서 사용할 수 있는 앱을 결정 합니다. 다중 앱 키오스크를 사용 하 여 사용자에 게 쉽게 이해할 수 있는 환경을 제공 하 고,이를 사용 하는 데 필요한 작업만 표시 하 고, 사용 하지 않아도 되는 항목을 제거 합니다.
+다중 앱 키오스크는 사용자가 장치에 로그인할 때 시작 메뉴를 표시합니다. 키오스크 구성에 따라 시작 메뉴에서 사용할 수 있는 앱이 결정됩니다. 다중 앱 키오스크를 사용하여 사용자에게 필요한 것만 제공하고 사용하지 않고도 사용할 수 있는 것만 제거하여 사용자에게 이해하기 쉬운 환경을 제공할 수 있습니다.
 
-다음 표에는 여러 키오스크 모드의 기능 기능이 나와 있습니다.
+다음 표에는 서로 다른 키오스크 모드의 기능 목록이 나열되어 있습니다.
 
 | &nbsp; |시작 메뉴 |빠른 작업 메뉴 |카메라 및 비디오 |Miracast |Cortana |기본 제공 음성 명령 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |단일 앱 키오스크 |사용 안 함 |사용 안 함   |사용 안 함 |사용 안 함   |사용 안 함 |사용 <sup> 1</sup> |
-|복수 앱 키오스크 |설정됨 |사용 <sup> 2</sup> |사용 가능 <sup> 2</sup> |사용 가능 <sup> 2</sup> |사용 가능한 <sup> 2, 3</sup>  |사용 <sup> 1</sup> |
+|복수 앱 키오스크 |설정됨 |사용 <sup> 2</sup> |사용 <sup> 가능한 2</sup> |사용 <sup> 가능한 2</sup> |<sup>사용 가능한 2, 3</sup>  |사용 <sup> 1</sup> |
 
-> <sup></sup>사용 안 함 기능과 관련 된 1 개의 음성 명령이 작동 하지 않습니다.  
-> <sup>2 </sup> 이러한 기능을 구성 하는 방법에 대 한 자세한 내용은 [키오스크 앱 선택을](#plan-kiosk-apps)참조 하세요.  
-> <sup>3 </sup> Cortana를 사용할 수 없는 경우에도 기본 제공 음성 명령을 사용할 수 있습니다.
+> <sup>비활성화된 기능과 관련된 음성 명령 </sup> 1개가 작동하지 않습니다.  
+> <sup>2 이러한 기능을 구성하는 방법에 대한 자세한 내용은 키오스크 앱 </sup> [선택을 참조하세요.](#plan-kiosk-apps)  
+> <sup>3 Cortana를 사용하지 않도록 설정한 경우에도 기본 제공 </sup> 음성 명령을 사용할 수 있습니다.
 
-다음 표에는 여러 키오스크 모드의 사용자 지원 기능이 나와 있습니다.
+다음 표에는 다양한 키오스크 모드의 사용자 지원 기능이 나열됩니다.
 
-| &nbsp; |지원 되는 사용자 유형 | 자동 로그인 | 여러 액세스 수준 |
+| &nbsp; |지원되는 사용자 유형 | 자동 로그인 | 여러 액세스 수준 |
 | --- | --- | --- | --- |
-|단일 앱 키오스크 |AAD (Azure Active Directory) 또는 로컬 계정의 MSA (관리 서비스 계정) |예 |아니오 |
-|복수 앱 키오스크 |AAD 계정 |아니오 |예 |
+|단일 앱 키오스크 |Azure AD(Azure Active Directory) 또는 로컬 계정의 MSA(관리 서비스 계정) |예 |아니오 |
+|복수 앱 키오스크 |Azure AD 계정 |아니오 |예 |
 
-이러한 기능을 사용 하는 방법에 대 한 예제는 다음 표를 참조 하세요.
+이러한 기능을 사용하는 방법에 대한 예제는 다음 표를 참조합니다.
 
-|다음에 단일 앱 키오스크 사용: |다음에 대해 다중 앱 키오스크 사용: |
+|단일 앱 키오스크를 사용하여 다음을 할 수 있습니다. |다중 앱 키오스크를 사용하여 다음을 할 수 있습니다. |
 | --- | --- |
-|새 직원에 대 한 Dynamics 365 가이드만 실행 하는 장치입니다. |직원 범위에 대해 가이드 및 원격 지원을 둘 다 실행 하는 장치입니다. |
-|사용자 지정 앱만 실행 하는 장치입니다. |사용자 지정 앱만 실행 하 여 대부분의 사용자에 게 키오스크 역할을 하는 장치로, 특정 사용자 그룹에 대 한 표준 장치 역할을 합니다. |
+|새 직원을 위한 Dynamics 365 가이드만 실행되는 장치입니다. |다양한 직원에 대해 가이드 및 원격 지원을 모두 실행하는 장치입니다. |
+|사용자 지정 앱만 실행되는 장치입니다. |대부분의 사용자에 대해 키오스크로 작동하지만(사용자 지정 앱만 실행) 특정 사용자 그룹에 대한 표준 장치로 기능하는 장치입니다. |
 
 ### 키오스크 앱 계획
 
-키오스크 앱을 선택 하는 방법에 대 한 일반적인 정보는 [할당 된 액세스에 대 한 앱 선택 (키오스크 모드)](https://docs.microsoft.com/windows/configuration/guidelines-for-assigned-access-app)에 대 한 지침을 참조 하세요.
+키오스크 앱을 선택하는 방법에 대한 일반적인 내용은 할당된 액세스용 앱 선택 지침(키오스크 [모드)을 참조하세요.](https://docs.microsoft.com/windows/configuration/guidelines-for-assigned-access-app)
 
-Windows Device Portal을 사용 하 여 단일 앱 키오스크를 구성 하는 경우 설정 프로세스 중에 앱을 선택 합니다.  
+Windows Device Portal을 사용하여 단일 앱 키오스크를 구성하는 경우 설치 프로세스 중에 앱을 선택합니다.  
 
-MDM (모바일 디바이스 관리) 시스템 또는 배포 패키지를 사용 하 여 키오스크 모드를 구성 하는 경우 [ASSIGNEDACCESS CSP (구성 서비스 공급자)](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) 를 사용 하 여 응용 프로그램을 지정 합니다. CSP는 [응용 프로그램 사용자 모델 id (AUMIDs)](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) 를 사용 하 여 응용 프로그램을 식별 합니다. 다음 표에는 다중 앱 키오스크에서 사용할 수 있는 일부 응용 프로그램의 AUMIDs가 나열 되어 있습니다.
+MDM(모바일 장치 관리) 시스템 또는 프로비저닝 패키지를 사용하여 키오스크 모드를 구성하는 경우 [AssignedAccess CSP(구성](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp) 서비스 공급자)를 사용하여 응용 프로그램을 지정합니다. CSP는 [AUMID(응용](https://docs.microsoft.com/windows/configuration/find-the-application-user-model-id-of-an-installed-app) 프로그램 사용자 모델 ID)를 사용하여 응용 프로그램을 식별합니다. 다음 표에는 다중 앱 키오스크에서 사용할 수 있는 일부 In-box 응용 프로그램의 AUMID가 나열됩니다.
 
 > [!IMPORTANT]
-> 키오스크 모드는 사용자가 장치에 로그인 할 때 사용할 수 있는 앱을 결정 합니다. 그러나 키오스크 모드는 보안 방법이 아닙니다. "허용" 된 앱이 허용 되지 않는 다른 앱을 여는 것은 중지 되지 않습니다. 이 동작을 제한 하지 않기 때문에 Edge, 파일 탐색기 및 Microsoft 스토어 앱에서 앱을 시작할 수 있습니다. 키오스크에서 시작 하지 않으려는 특정 앱이 있는 경우 [Windows Defender Application Control (WDAC) CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) 를 사용 하 여 적절 한 정책을 만듭니다. 
+> 키오스크 모드는 사용자가 장치에 로그인할 때 사용할 수 있는 앱을 확인합니다. 그러나 키오스크 모드는 보안 방법이 아니며, "허용" 앱이 허용되지 않는 다른 앱을 열지 못하도록 중지하지는 않습니다. 이 동작은 제한하지 않습니다. Edge, 파일 탐색기 및 Microsoft Store 앱에서 앱을 계속 시작해야 합니다. 키오스크에서 시작하지 않는 특정 앱이 있는 경우 [WDAC(Windows Defender 응용 프로그램 제어) CSP를](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) 사용하여 적절한 정책을 만들 수 있습니다. 
 > 
 > 또한 혼합 현실 홈은 키오스크 앱으로 설정할 수 없습니다.
 
@@ -109,211 +109,211 @@ MDM (모바일 디바이스 관리) 시스템 또는 배포 패키지를 사용 
 
 |앱 이름 |AUMID |
 | --- | --- |
-|3D 뷰어 |Microsoft Microsoft3DViewer _8wekyb3d8bbwe \! Microsoft Microsoft3DViewer |
-|Calendar |windowscommunicationsapps \ _8wekyb3d8bbwe \! windowslive. 일정 |
-|카메라 <sup> 1, 2</sup> |HoloCamera _cw5n1h2txyewy \! HoloCamera |
-|Cortana <sup> 3</sup> |Microsoft 549981C3F5F10 _8wekyb3d8bbwe \! 내 |
-|HoloLens의 장치 선택기 (첫번째 gen) |HoloDevicesFlow _cw5n1h2txyewy \! HoloDevicesFlow |
-|HoloLens 2의 장치 선택기 |DevicesFlowHost \ _cw5n1h2txyewy \! Microsoft DevicesFlowHost |
-|Dynamics 365 Guides |Dynamics365 _8wekyb3d8bbwe \! MicrosoftGuides |
-|Dynamics 365 Remote Assist |Microsoft MicrosoftRemoteAssist _8wekyb3d8bbwe \! Microsoft. RemoteAssist |
-|피드백 &nbsp; 허브 |Microsoft WindowsFeedbackHub _8wekyb3d8bbwe \! 내 |
+|3D 뷰어 |Microsoft.Microsoft3DViewer\_8wekyb3d8bbwe\! Microsoft.Microsoft3DViewer |
+|Calendar |microsoft.windowscommunicationsapps\_8wekyb3d8bbwe\!microsoft.windowslive.calendar |
+|카메라 <sup> 1, 2</sup> |HoloCamera\_cw5n1h2txyewy\! HoloCamera |
+|Cortana <sup> 3</sup> |Microsoft.549981C3F5F10\_8wekyb3d8bbwe\! 앱 |
+|HoloLens의 디바이스 선택기(1세대) |HoloDevicesFlow\_cw5n1h2txyewy\! HoloDevicesFlow |
+|HoloLens 2의 장치 선택 |Microsoft.Windows.DevicesFlowHost\_cw5n1h2txyewy\! Microsoft.Windows.DevicesFlowHost |
+|Dynamics 365 Guides |Microsoft.Dynamics365.Guides\_8wekyb3d8bbwe\! MicrosoftGuides |
+|Dynamics 365 Remote Assist |Microsoft.MicrosoftRemoteAssist\_8wekyb3d8bbwe\! Microsoft.RemoteAssist |
+|피드백 &nbsp; 허브 |Microsoft.WindowsFeedbackHub\_8wekyb3d8bbwe\! 앱 |
 |파일 탐색기 |c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App |
-|Mail |microsoft.windowscommunicationsapps_8wekyb3d8bbwe! windowslive |
+|Mail |microsoft.windowscommunicationsapps_8wekyb3d8bbwe!microsoft.windowslive.mail |
 |Microsoft Store |Microsoft.WindowsStore_8wekyb3d8bbwe!App |
 |Miracast <sup> 4</sup> |&nbsp; |
-|영화 및 TV |Microsoft. ZuneVideo \ _8wekyb3d8bbwe \! Microsoft. ZuneVideo |
-|OneDrive |microsoft microsoftskydrive _8wekyb3d8bbwe \! 내 |
-|사진 |Microsoft. 사진 \ _8wekyb3d8bbwe \! 내 |
-|설정 |HolographicSystemSettings _cw5n1h2txyewy \! 내 |
-|팁 |Microsoft HoloLensTips _8wekyb3d8bbwe \! HoloLensTips |
+|영화 및 TV |Microsoft.ZuneVideo\_8wekyb3d8bbwe\! Microsoft.ZuneVideo |
+|OneDrive |microsoft.microsoftskydrive\_8wekyb3d8bbwe\! 앱 |
+|사진 |Microsoft.Windows.사진\_8wekyb3d8bbwe\! 앱 |
+|설정 |HolographicSystemSettings\_cw5n1h2txyewy\! 앱 |
+|팁 |Microsoft.HoloLensTips\_8wekyb3d8bbwe\! HoloLensTips |
 
-> <sup>1 </sup> 사진 또는 비디오 캡처를 사용 하도록 설정 하려면 카메라 앱을 키오스크 앱으로 설정 해야 합니다.  
-> <sup>2 </sup> 카메라 앱을 사용 하도록 설정 하는 경우 다음 조건에 유의 해야 합니다.
-> - 빠른 동작 메뉴에는 사진 및 비디오 단추가 포함 되어 있습니다.  
-> - 또한 그림을 조작 하거나 검색할 수 있는 앱 (예: 사진, 메일 또는 OneDrive)을 사용 하도록 설정 해야 합니다.  
+> <sup>1 사진 또는 비디오 캡처를 사용하도록 설정하려면 카메라 앱을 키오스크 앱으로 </sup> 사용하도록 설정해야 합니다.  
+> <sup>2 </sup> 카메라 앱을 사용하도록 설정하는 경우 다음 조건을 알고 있어야 합니다.
+> - 빠른 작업 메뉴에는 사진 및 비디오 단추가 포함되어 있습니다.  
+> - 그림을 조작하거나 검색할 수 있는 앱(예: 사진, 메일 또는 OneDrive)도 사용하도록 설정해야 합니다.  
 >  
-> <sup>3 </sup> Cortana를 키오스크 앱으로 사용 하지 않는 경우에도 기본 제공 음성 명령을 사용할 수 있습니다. 그러나 비활성 기능과 관련 된 명령은 아무런 효과가 없습니다.  
-> <sup>4 </sup> Miracast를 직접 사용할 수 없습니다. Miracast를 키오스크 앱으로 사용 하도록 설정 하려면 카메라 앱 및 장치 선택기 앱을 사용 하도록 설정 합니다.
+> <sup>3 Cortana를 키오스크 앱으로 사용하도록 설정하지 않은 경우에도 기본 제공 음성 명령을 </sup> 사용할 수 있습니다. 그러나 비활성화된 기능과 관련된 명령은 영향을 하지 않습니다.  
+> <sup>4 </sup> Miracast를 직접 사용하도록 설정할 수 없습니다. Miracast를 키오스크 앱으로 사용하도록 설정하려면 카메라 앱 및 디바이스 선택 앱을 사용하도록 설정하세요.
 
-### 사용자 또는 그룹에 대 한 키오스크 프로필 계획
+### 사용자 또는 그룹에 대한 키오스크 프로필 계획
 
-Xml 파일을 만들거나 Intune UI를 사용 하 여 키오스크를 설정 하는 경우에는 사용자에 게 키오스크를 지정할 사람을 고려해 야 합니다. 키오스크 구성은 개인 계정이 나 Azure AD 그룹으로 제한할 수 있습니다. 
+xml 파일을 만들거나 Intune의 UI를 사용하여 키오스크를 설정할 때 키오스크를 사용할 사용자를 고려해야 합니다. 키오스크 구성은 개별 계정 또는 Azure AD 그룹으로 제한될 수 있습니다. 
 
-일반적으로 사용자 또는 사용자 그룹에 게 키오스크 기능을 사용할 수 있습니다. 그러나 고유한 XML 키오스크 작성을 계획 하는 경우 Id에 관계 없이 디바이스 수준에서 키오스크가 적용 되는 전역 할당 된 액세스를 고려해 볼 수 있습니다. 이 천체 [전역 할당 된 액세스 키오스크에 대해 자세히 읽어 보세요.](hololens-global-assigned-access-kiosk.md)
+일반적으로 키오스크는 사용자 또는 사용자 그룹에 대해 사용하도록 설정됩니다. 그러나 자체 XML 키오스크를 작성하려는 경우 ID에 관계없이 장치 수준에서 키오스크가 적용되는 전역 할당된 액세스를 고려할 수 있습니다. 이 경우 전역 할당된 액세스 키오스크에 대해 자세히 [읽어 보시겠어요?](hololens-global-assigned-access-kiosk.md)
 
-#### XML 파일을 만들려면 다음을 실행 합니다.
--   여러 키오스크 프로필을 만들고 각 사용자/그룹에 게 할당 합니다. 예를 들어 앱이 여러 개 있는 AAD 그룹에 대해 키오스크를 사용 하 고 앱이 단수형 인 여러 앱 키오스크 사용자가 있는 방문자가 있습니다.
--   키오스크 구성은 **프로필 Id** 라고 하 고 GUID가 있습니다.
--   사용자 유형을 지정 하 고 **Defaultprofile Id**에 대해 동일한 GUID를 사용 하 여 configs 섹션에서 해당 프로필을 할당 합니다.
-- XML 파일은 만들 수 있지만, 사용자 지정 OMA URI 장치 구성 프로필을 만들고 다음 URI 값을 사용 하 여 HoloLens 장치 그룹에 적용 하 여 MDM을 통해 디바이스에 적용 된 상태로 유지 됩니다./Device/Vendor/MSFT/AssignedAccess/Configuration
+#### XML 파일을 만드는 경우:
+-   여러 개의 키오스크 프로필을 만들고 각 프로필을 서로 다른 사용자/그룹에 할당합니다. 앱 수가 많은 Azure AD 그룹에 대한 키오스크, 단일 앱이 있는 여러 앱 키오스크가 있는 방문자 등의 경우
+-   키오스크 구성은 프로필 **ID로** 불리며 GUID가 있습니다.
+-   사용자 유형을 지정하고 **DefaultProfile ID에**대해 동일한 GUID를 사용하여 구성 섹션에서 해당 프로필을 할당합니다.
+- XML 파일은 만들 수 있지만 사용자 지정 OMA URI 장치 구성 프로필을 만들고 URI 값을 사용하여 HoloLens 장치 그룹에 적용하여 MDM을 통해 장치에 계속 적용할 수 있습니다. ./Device/Vendor/MSFT/AssignedAccess/Configuration
 
 #### Intune에서 키오스크를 만드는 경우
--   각 장치는 단일 키오스크 프로필만 받을 수 있으며, 그렇지 않으면 충돌을 만들고 키오스크 구성을 전혀 받지 않습니다. 
-    -   키오스크 구성 프로필과 관련 되지 않은 장치 제한과 같은 다른 종류의 프로필 및 정책은 키오스크 구성 프로필과 충돌 하지 않습니다.
--   사용자 로그온 유형에 속하는 모든 사용자에 게 키오스크를 사용할 수 있으며,이는 사용자 또는 AAD 그룹으로 설정 됩니다. 
--   키오스크 구성을 설정 하 고 **사용자 로그온 유형** (키오스크에 로그인 할 수 있는 사용자)과 앱을 선택한 후에도 장치 구성은 그룹에 할당 되어야 합니다. 할당 된 그룹은 키오스크 장치 구성을 수신할 장치를 결정 하지만, 키오스크를 사용 하는 경우에는 상호 작용 하지 않습니다. 
-    - Intune에서 구성 프로필을 할당 하는 효과에 대 한 자세한 내용은 [Microsoft Intune에서 사용자 및 장치 프로필 할당](https://docs.microsoft.com/intune/configuration/device-profile-assign)을 참조 하세요.
+-   각 장치는 단일 키오스크 프로필만 수신할 수 있으며, 그렇지 않으면 충돌이 생성되어 키오스크 구성을 수신하지 않습니다. 
+    -   키오스크 구성 프로필과 관련이 없는 장치 제한과 같은 다른 종류의 프로필 및 정책은 키오스크 구성 프로필과 충돌하지 않습니다.
+-   사용자 로그온 유형의 일부인 모든 사용자에 대해 키오스크가 사용하도록 설정됩니다. 이 키는 사용자 또는 Azure AD 그룹으로 설정됩니다. 
+-   키오스크 구성을 설정하고 사용자 **** 로그온 유형(키오스크에 로그인할 수 있는 사용자)과 앱을 선택한 후에도 장치 구성을 그룹에 할당해야 합니다. 할당된 그룹은 키오스크 장치 구성을 받는 장치를 결정하나 키오스크가 활성화되어 있는지 여부를 확인하지는 않습니다. 
+    - Intune에서 구성 프로필을 할당하는 경우의 영향에 대한 자세한 내용은 [Microsoft Intune에서](https://docs.microsoft.com/intune/configuration/device-profile-assign)사용자 및 장치 프로필 할당을 참조하세요.
 
 ### 배포 방법 선택
 
-다음 방법 중 하나를 선택 하 여 키오스크 구성을 배포할 수 있습니다.
+다음 방법 중 하나를 선택하여 키오스크 구성을 배포할 수 있습니다.
 
-- [Microsoft Intune 또는 기타 MDM (모바일 디바이스 관리) 서비스](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk)
+- [Microsoft Intune 또는 기타 MDM(모바일 장치 관리) 서비스](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk)
 
 - [프로비저닝 패키지](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk)
 
 - [Windows Device Portal](#use-the-windows-device-portal-to-set-up-a-single-app-kiosk)
 
    > [!NOTE]  
-   > 이 방법을 사용 하려면 디바이스에서 개발자 모드를 사용 하도록 설정 해야 하므로 데모 에서만 사용할 것을 권장 합니다.
+   > 이 방법을 사용하려면 디바이스에서 개발자 모드를 사용하도록 설정해야 하기 때문에 데모에만 사용하는 것이 좋습니다.
 
-다음 표에서는 각 배포 방법의 기능 및 장점을 보여 줍니다.
+다음 표에는 각 배포 방법의 기능과 이점이 나열되어 있습니다.
 
-| &nbsp; |Windows Device Portal을 사용 하 여 배포 |프로비저닝 패키지를 사용 하 여 배포 |MDM을 사용 하 여 배포 |
+| &nbsp; |Windows Device Portal을 사용하여 배포 |프로비저닝 패키지를 사용하여 배포 |MDM을 사용하여 배포 |
 | --------------------------- | ------------- | -------------------- | ---- |
 |단일 앱 키오스크 배포   | 예           | 예                  | 예  |
 |다중 앱 키오스크 배포    | 아니오            | 예                  | 예  |
 |로컬 장치에만 배포 | 예           | 예                  | 아니오   |
-|개발자 모드를 사용 하 여 배포 |필수       | 필수 아님            | 필수 아님   |
-|AAD (Azure Active Directory)를 사용 하 여 배포  | 필수 아님            | 필수 아님                   | 필수  |
+|개발자 모드를 사용하여 배포 |필수       | 필수 아님            | 필수 아님   |
+|Azure AD(Azure Active Directory)를 사용하여 배포  | 필수 아님            | 필수 아님                   | 필수  |
 |자동으로 배포      | 아니오            | 아니오                   | 예  |
 |배포 속도            | 빠름       | 빠름                 | 슬로우 |
-|배율에 배치 | 권장 되지 않음    | 권장 사항        | 권장 사항 |
+|대규모 배포 | 권장하지 않음    | 권장 사항        | 권장 사항 |
 
-## Microsoft Intune 또는 기타 MDM을 사용 하 여 단일 앱 또는 다중 앱 키오스크 설정
+## Microsoft Intune 또는 기타 MDM을 사용하여 단일 앱 또는 다중 앱 키오스크 설정
 
-Microsoft Intune 또는 다른 MDM 시스템을 사용 하 여 키오스크 모드를 설정 하려면 다음 단계를 따릅니다.
+Microsoft Intune 또는 다른 MDM 시스템을 사용하여 키오스크 모드를 설정하기 위해 다음 단계를 수행합니다.
 
-1. [장치 등록을 준비](#mdmenroll)합니다.
-1. [키오스크 구성 프로필을 만듭니다](#mdmprofile).
-1. 키오스크를 구성 합니다.
-   - [단일 앱 키오스크에 대 한 설정을 구성](#mdmconfigsingle)합니다.
-   - [다중 앱 키오스크에 대 한 설정을 구성](#mdmconfigmulti)합니다.
-1. [키오스크 구성 프로필을 그룹에 할당](#mdmassign)합니다.
-1. 장치를 배포 합니다.
-   - [단일 앱 키오스크 배포](#mdmsingledeploy)
-   - [다중 앱 키오스크 배포](#mdmmultideploy)
+1. [장치를 등록할 준비를 합니다.](#mdmenroll)
+1. [키오스크 구성 프로필을 만드시다.](#mdmprofile)
+1. 키오스크를 구성합니다.
+   - [단일 앱 키오스크에 대한 설정을 구성합니다.](#mdmconfigsingle)
+   - [다중 앱 키오스크에 대한 설정을 구성합니다.](#mdmconfigmulti)
+1. [키오스크](#mdmassign)구성 프로필을 그룹에 할당합니다.
+1. 디바이스를 배포합니다.
+   - [단일 앱 키오스크 배포.](#mdmsingledeploy)
+   - [다중 앱 키오스크 배포.](#mdmmultideploy)
 
-### <a id="mdmenroll"></a>MDM, 1 단계 &ndash; 장치 등록 준비
+### <a id="mdmenroll"></a>MDM, 1단계 &ndash; 장치 등록 준비
 
-사용자가 처음 로그인 할 때 HoloLens 장치를 자동으로 등록 하도록 MDM 시스템을 구성 하거나 사용자가 디바이스를 수동으로 등록할 수 있습니다. 또한 디바이스를 Azure AD 도메인에 가입 하 고 해당 그룹에 할당 해야 합니다.
+사용자가 처음 로그인할 때 HoloLens 장치를 자동으로 등록하거나 사용자가 수동으로 장치를 등록하도록 MDM 시스템을 구성할 수 있습니다. 또한 디바이스를 Azure AD 도메인에 가입하고 적절한 그룹에 할당해야 합니다.
 
-장치를 등록 하는 방법에 대 한 자세한 내용은 [Windows 장치용 MDM 및 Intune 등록 방법](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-methods) [에서 HoloLens 등록](hololens-enroll-mdm.md) 을 참조 하세요.
+디바이스를 등록하는 방법에 대한 자세한 내용은 [MDM에서 HoloLens](hololens-enroll-mdm.md) 등록 및 Windows 장치에 대한 [Intune 등록 방법을 참조하세요.](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-methods)
 
-### <a id="mdmprofile"></a>MDM, 2 단계 &ndash; 키오스크 구성 프로필 만들기
+### <a id="mdmprofile"></a>MDM, 2단계 &ndash; 키오스크 구성 프로필 만들기
 
-1. [Azure](https://portal.azure.com/) 포털을 열고 Intune 관리자 계정에 로그인 합니다.
-1. **Microsoft Intune**  >  **장치 구성-** 프로필  >  **만들기**를 선택 합니다.
-1. 프로필 이름을 입력 합니다.
-1. **플랫폼**  >  **Windows 10 이상을**선택한 다음 **프로필 형식**  > **장치 제한을**선택 합니다.
-1. 키오스크 **구성을**선택  >  **Kiosk**하 고 다음 중 하나를 선택 합니다.
-   - 단일 앱 키오스크를 만들려면 **키오스크 모드**  >  **단일 앱 키오스크**을 선택 합니다.
-   - 다중 앱 키오스크를 만들려면 **키오스크 모드**  >  **다중 앱 키오스크**을 선택 합니다.
-1. 키오스크 구성을 시작 하려면 **추가**를 선택 합니다.
+1. [Azure](https://portal.azure.com/) Portal을 열고 Intune 관리자 계정에 로그인합니다.
+1. Microsoft **Intune**  >  **장치 구성 선택 - 프로필**  >  **만들기**프로필.
+1. 프로필 이름을 입력합니다.
+1. 플랫폼 ****  >  **Windows 10 이상을**선택한 **** 다음 프로필 유형 장치  > **제한을 선택합니다.**
+1. ****  >  **키오스크 구성을 선택하고**다음 중 하나를 선택합니다.
+   - 단일 앱 키오스크를 만들하려면 **키오스크**모드 단일 앱  >  **키오스크를 선택합니다.**
+   - 다중 앱 키오스크를 만들하려면 **키오스크**모드 다중 앱  >  **키오스크를 선택합니다.**
+1. 키오스크 구성을 시작하려면 추가를 **선택합니다.**
 
-다음 단계는 원하는 키오스크 유형에 따라 달라 집니다. 자세한 내용을 보려면 다음 옵션 중 하나를 선택 합니다.  
+다음 단계는 원하는 키오스크 유형에 따라 다릅니다. 자세한 내용은 다음 옵션 중 하나를 선택합니다.  
 
 - [단일 앱 키오스크](#mdmconfigsingle)
 - [복수 앱 키오스크](#mdmconfigmulti)
 
-키오스크 구성 프로필을 만드는 방법에 대 한 자세한 내용은 Intune을 [사용 하 여 전용 키오스크로 실행 하기 위한 windows 10 및 Windows 홀로그램 비즈니스 장치 설정을](https://docs.microsoft.com/intune/configuration/kiosk-settings)참조 하세요.
+키오스크 구성 프로필을 만드는 방법에 대한 자세한 내용은 Intune을 사용하여 전용 키오스크로 실행할 [Windows 10 및 비즈니스용 Windows Holographic](https://docs.microsoft.com/intune/configuration/kiosk-settings)장치 설정을 참조하세요.
 
-### <a id="mdmconfigsingle"></a>MDM, 3 단계 (단일 앱) &ndash;  단일 앱 키오스크에 대 한 설정 구성
+### <a id="mdmconfigsingle"></a>MDM, 3단계(단일 앱) 단일 앱 키오스크에 대한 &ndash;  설정 구성
 
-이 섹션에서는 단일 앱 키오스크에 필요한 설정을 요약 합니다. 자세한 내용은 다음 문서를 참조 하세요.
+이 섹션에서는 단일 앱 키오스크에 필요한 설정에 대해 간소하게 설명합니다. 자세한 내용은 다음 문서를 참조합니다.
 
-- Intune에서 키오스크 구성 프로필을 구성 하는 방법에 대 한 자세한 내용은 [Microsoft Intune을 사용 하 여 키오스크 모드를 구성 하는 방법을](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune)참조 하세요.
-- Intune의 단일 앱 키오스크에 사용할 수 있는 설정에 대 한 자세한 내용은 [단일 전체 화면 앱 키오스크](https://docs.microsoft.com/intune/configuration/kiosk-settings-holographic#single-full-screen-app-kiosks) 을 참조 하세요.
-- 다른 MDM 서비스의 경우 공급자의 설명서에서 지침을 확인하세요. MDM 서비스에서 사용자 지정 XML 구성을 사용 하 여 키오스크를 설정 해야 하는 경우 [키오스크 구성을 정의 하는 XML 파일을 만듭니다](#ppkioskconfig).
+- Intune에서 키오스크 구성 프로필을 구성하는 방법에 대한 자세한 내용은 [Microsoft Intune을 사용하여 키오스크](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune)모드를 구성하는 방법을 참조하세요.
+- Intune에서 단일 앱 키오스크에 사용할 수 있는 설정에 대한 자세한 내용은 단일 전체 화면 앱 [키오스크를 참조하세요.](https://docs.microsoft.com/intune/configuration/kiosk-settings-holographic#single-full-screen-app-kiosks)
+- 다른 MDM 서비스의 경우 공급자의 설명서에서 지침을 확인하세요. 사용자 지정 XML 구성을 사용하여 MDM 서비스에서 키오스크를 설정해야 하는 경우 키오스크 구성을 정의하는 XML 파일을 [생성합니다.](#ppkioskconfig)
 
-1. **사용자 로그온 유형**  >  **로컬 사용자 계정을**선택한 다음 키오스크에 로그인 할 수 있는 로컬 (장치) 계정이 나 Microsoft 계정 (MSA)의 사용자 이름을 입력 합니다.
+1. 사용자 **로그온 유형**로컬 사용자 계정을 선택한 다음 키오스크에 로그인할 수 있는 로컬(장치) 계정 또는  >  **** MSA(Microsoft 계정)의 사용자 이름을 입력합니다.
    > [!NOTE]  
-   > **자동 로그온** 사용자 계정 유형은 비즈니스용 Windows 홀로그램에서 지원 되지 않습니다.
-1. **응용 프로그램 종류**  >  **스토어 앱**을 선택한 다음 목록에서 앱을 선택 합니다.
+   > **Autologon** 사용자 계정 유형은 비즈니스용 Windows Holographic에서 지원되지 않습니다.
+1. 응용 **프로그램 유형**스토어 앱을 선택한 다음 목록에서 앱을  >  **** 선택합니다.
 
-다음 단계는 프로필을 그룹에 [할당](#mdmassign) 하는 것입니다.
+다음 단계에서는 [프로필을](#mdmassign) 그룹에 할당합니다.
 
-### <a id="mdmconfigmulti"></a>MDM, 3 단계 (다중 앱) &ndash; 다중 앱 키오스크에 대 한 설정 구성
+### <a id="mdmconfigmulti"></a>MDM, 3단계(다중 앱) 다중 앱 &ndash; 키오스크에 대한 설정 구성
 
-이 섹션에서는 다중 앱 키오스크에 필요한 설정을 간략하게 보여 줍니다. 자세한 내용은 다음 문서를 참조 하세요.
+이 섹션에서는 다중 앱 키오스크에 필요한 설정에 대해 간소하게 설명합니다. 자세한 내용은 다음 문서를 참조하십시오.
 
-- Intune에서 키오스크 구성 프로필을 구성 하는 방법에 대 한 자세한 내용은 [Microsoft Intune을 사용 하 여 키오스크 모드를 구성 하는 방법을](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune)참조 하세요.
-- Intune의 다중 앱 키오스크에 사용할 수 있는 설정에 대 한 자세한 내용은 [다중 앱 키오스크](https://docs.microsoft.com/mem/intune/configuration/kiosk-settings-holographic#multi-app-kiosks) 을 참조 하세요.
-- 다른 MDM 서비스의 경우 공급자의 설명서에서 지침을 확인하세요. MDM 서비스에서 사용자 지정 XML 구성을 사용 하 여 키오스크를 설정 해야 하는 경우 [키오스크 구성을 정의 하는 XML 파일을 만듭니다](#ppkioskconfig). XML 파일을 사용 하는 경우 [시작 레이아웃](#start-layout-for-hololens)을 포함 해야 합니다.  
-- 선택적으로 Intune 또는 기타 MDM 서비스에서 사용자 지정 시작 레이아웃을 사용할 수 있습니다. 자세한 내용은 [MDM (Intune 및 기타)의 시작 레이아웃 파일](#start-layout-file-for-mdm-intune-and-others)을 참조 하세요.
+- Intune에서 키오스크 구성 프로필을 구성하는 방법에 대한 자세한 내용은 [Microsoft Intune을 사용하여 키오스크](hololens-commercial-infrastructure.md#how-to-configure-kiosk-mode-using-microsoft-intune)모드를 구성하는 방법을 참조하세요.
+- Intune에서 다중 앱 키오스크에 사용할 수 있는 설정에 대한 자세한 내용은 다중 앱 [키오스크를 참조하세요.](https://docs.microsoft.com/mem/intune/configuration/kiosk-settings-holographic#multi-app-kiosks)
+- 다른 MDM 서비스의 경우 공급자의 설명서에서 지침을 확인하세요. 사용자 지정 XML 구성을 사용하여 MDM 서비스에서 키오스크를 설정해야 하는 경우 키오스크 구성을 정의하는 XML 파일을 [생성합니다.](#ppkioskconfig) XML 파일을 사용하는 경우 시작 화면 레이아웃을 [포함해야 합니다.](#start-layout-for-hololens)  
+- 필요한 경우 Intune 또는 다른 MDM 서비스에서 사용자 지정 시작 화면 레이아웃을 사용할 수 있습니다. 자세한 내용은 [MDM(Intune 등)의](#start-layout-file-for-mdm-intune-and-others)시작 화면 레이아웃 파일을 참조하세요.
 
-1. **대상 Windows 10의 S 모드 장치**  >  **번호**를 선택 합니다.  
+1. **S 모드 디바이스의 대상 Windows 10 선택**  >  **아니요.**  
    >[!NOTE]  
-   > S 모드는 비즈니스용 Windows 홀로그램에서 지원 되지 않습니다.
-1. **사용자 로그온 유형**  >  **Azure AD 사용자 또는 그룹** 또는 **사용자 로그온**  >  에**HoloLens 방문자**를 입력 하 고 하나 이상의 사용자 그룹 또는 계정 추가를 선택 합니다.  
+   > S 모드는 비즈니스용 Windows Holographic에서 지원되지 않습니다.
+1. 사용자 **로그온 유형**Azure AD 사용자 또는 그룹 또는 사용자  >  **** **로그온**유형  >  **HoloLens 방문자를**선택한 다음 하나 이상의 사용자 그룹 또는 계정을 추가합니다.  
 
-   **사용자 로그온 유형에** 지정 하는 그룹 또는 계정에 속한 사용자만 키오스크 환경을 사용할 수 있습니다.
+   사용자 로그온 유형에서 지정한 그룹 **** 또는 계정에 속하는 사용자만 키오스크 환경을 사용할 수 있습니다.
 
-1. 다음 옵션을 사용 하 여 앱을 하나 이상 선택 합니다.
-   - 업로드 된 lob (기간 업무) 앱을 추가 하려면 **스토어 앱 추가** 를 선택한 다음 원하는 앱을 선택 합니다.
-   - AUMID를 지정 하 여 앱을 추가 하려면 **AUMID에서 추가** 를 선택 하 고 앱의 AUMID를 입력 합니다. [사용할 수 있는 AUMIDs 목록 보기](#aumids)
+1. 다음 옵션을 사용하여 하나 이상의 앱을 선택합니다.
+   - 업로드된 업무용 앱을 추가하려면 스토어 **** 앱 추가를 선택한 다음 원하는 앱을 선택합니다.
+   - AUMID를 지정하여 앱을 추가하려면 **AUMID로** 추가를 선택한 다음 앱의 AUMID를 입력합니다. [사용 가능한 AUMID 목록 보기](#aumids)
 
-다음 단계는 프로필을 그룹에 [할당](#mdmassign) 하는 것입니다.
+다음 단계에서는 [프로필을](#mdmassign) 그룹에 할당합니다.
 
-### <a id="mdmassign"></a>MDM, 4 단계 &ndash; 키오스크 구성 프로필을 그룹에 할당
+### <a id="mdmassign"></a>MDM, 4단계 키오스크 구성 프로필을 그룹에 &ndash; 할당
 
-키오스크 구성 프로필의 **지정** 페이지를 사용 하 여 키오스크 구성을 배포할 위치를 설정 합니다. 가장 간단한 경우에는 디바이스에서 MDM에 등록할 때 HoloLens 장치를 포함할 그룹에 키오스크 구성 프로필을 할당 합니다.
+**키오스크** 구성 프로필의 할당 페이지를 사용하여 키오스크 구성을 배포할 위치를 설정할 수 있습니다. 가장 간단한 경우 디바이스가 MDM에 등록될 때 HoloLens 장치를 포함할 그룹에 키오스크 구성 프로필을 할당합니다.
 
-### <a id="mdmsingledeploy"></a>MDM, 5 단계 (단일 앱) &ndash; 단일 앱 키오스크 배포
+### <a id="mdmsingledeploy"></a>MDM, 5단계(단일 앱) 단일 앱 &ndash; 키오스크 배포
 
-MDM 시스템을 사용 하는 경우 OOBE 중에 MDM에서 장치를 등록할 수 있습니다. OOBE가 완료 된 후에는 장치에 간편 하 게 로그인 할 수 있습니다.
+MDM 시스템을 사용하는 경우 OOBE 중에 MDM에 장치를 등록할 수 있습니다. OOBE가 완료되면 디바이스에 쉽게 로그인할 수 있습니다.
 
-OOBE 중에 다음 단계를 수행 합니다.
+OOBE 중에 다음 단계를 수행합니다.
 
-1. 키오스크 구성 프로필에 지정한 계정을 사용 하 여 로그인 합니다.
-1. 장치를 등록 합니다. 키오스크 구성 프로필이 할당 된 그룹에 장치가 추가 되어 있는지 확인 합니다.
-1. OOBE가 완료 될 때까지, 스토어 앱을 다운로드 및 설치 하 고 정책을 적용할 때까지 기다립니다. 그런 다음 장치를 다시 시작 합니다.
+1. 키오스크 구성 프로필에 지정한 계정을 사용하여 로그인합니다.
+1. 디바이스를 등록합니다. 키오스크 구성 프로필이 할당된 그룹에 장치가 추가되어 있는지 확인합니다.
+1. OOBE가 완료될 때까지 기다렸다가 스토어 앱이 다운로드 및 설치될 때까지, 정책이 적용될 때까지 기다릴 수 있습니다. 그런 다음 장치를 다시 시작합니다.
 
-다음에 장치에 로그인 할 때 키오스크 앱이 자동으로 시작 됩니다.
+다음에 장치에 로그인하면 키오스크 앱이 자동으로 시작됩니다.
 
-이 시점에서 키오스크 구성이 표시 되지 않으면 [과제 상태를 확인](https://docs.microsoft.com/intune/configuration/device-profile-monitor)합니다.
+이때 키오스크 구성이 없는 경우 배정 상태를 [검사합니다.](https://docs.microsoft.com/intune/configuration/device-profile-monitor)
 
-### <a id="mdmmultideploy"></a>MDM, 5 단계 (다중 앱) &ndash; 다중 앱 키오스크 배포
+### <a id="mdmmultideploy"></a>MDM, 5단계(다중 앱) 다중 앱 &ndash; 키오스크 배포
 
-MDM 시스템을 사용 하는 경우 Azure AD 테 넌 트에 디바이스를 연결 하 고 OOBE 중에 MDM에서 장치를 등록할 수 있습니다. 필요에 따라 사용자에 게 등록 정보를 제공 하 여 OOBE 프로세스 중에 사용할 수 있도록 합니다.
+MDM 시스템을 사용하는 경우 장치를 Azure AD 테넌트에 가입하고 OOBE 중에 MDM에 장치를 등록할 수 있습니다. 필요한 경우 OOBE 프로세스 중에 등록 정보를 사용할 수 있도록 사용자에게 등록 정보를 제공합니다.
 
 > [!NOTE]  
-> 사용자를 포함 하는 그룹에 키오스크 구성 프로필을 할당 한 경우 해당 사용자 계정 중 하나가 장치에 로그인 하는 첫 번째 계정 인지 확인 합니다.
+> 사용자가 포함된 그룹에 키오스크 구성 프로필을 할당한 경우 해당 사용자 계정 중 하나를 장치에 처음 로그인하는 계정으로 지정해야 합니다.
 
-OOBE 중에 다음 단계를 수행 합니다.
+OOBE 중에 다음 단계를 수행합니다.
 
-1. **사용자 로그온 유형** 그룹에 속하는 계정을 사용 하 여 로그인 합니다.
-1. 장치를 등록 합니다.
-1. 키오스크 구성 프로필의 일부인 앱을 다운로드 하 여 설치 하는 경우를 기다립니다. 또한 정책이 적용 될 때까지 기다립니다.  
-1. OOBE가 완료 되 면 Microsoft store 또는 테스트용 로드를 통해 추가 앱을 설치할 수 있습니다. 장치가 속한 그룹의 [필수 앱](https://docs.microsoft.com/mem/intune/apps/apps-deploy#assign-an-app) 이 자동으로 설치 됩니다.
-1. 설치가 완료 되 면 장치를 다시 시작 합니다.
+1. 사용자 로그온 유형 그룹에 속한 계정을 사용하여 **로그인합니다.**
+1. 디바이스를 등록합니다.
+1. 키오스크 구성 프로필의 일부인 모든 앱이 다운로드하여 설치할 때까지 기다릴 수 있습니다. 또한 정책이 적용될 때까지 기다릴 수 있습니다.  
+1. OOBE가 완료되면 Microsoft Store에서 또는 사이드로드를 통해 추가 앱을 설치할 수 있습니다. [장치가 자동으로](https://docs.microsoft.com/mem/intune/apps/apps-deploy#assign-an-app) 설치되는 그룹에 필요한 앱입니다.
+1. 설치가 완료되면 장치를 다시 시작합니다.
 
-다음에 **사용자 로그온 유형에**속하는 계정을 사용 하 여 장치에 로그인 할 때 키오스크 앱이 자동으로 시작 됩니다.
+다음에 사용자 로그온 유형에 속하는 계정을 사용하여 **** 장치에 로그인하면 키오스크 앱이 자동으로 시작됩니다.
 
-이 시점에서 키오스크 구성이 표시 되지 않으면 [과제 상태를 확인](https://docs.microsoft.com/intune/configuration/device-profile-monitor)합니다.
+이때 키오스크 구성이 없는 경우 배정 상태를 [검사합니다.](https://docs.microsoft.com/intune/configuration/device-profile-monitor)
 
-## 배포 패키지를 사용 하 여 단일 앱 또는 다중 앱 키오스크 설정
+## 프로비저닝 패키지를 사용하여 단일 앱 또는 다중 앱 키오스크 설정
 
-배포 패키지를 사용 하 여 키오스크 모드를 설정 하려면 다음 단계를 따릅니다.
+프로비저닝 패키지를 사용하여 키오스크 모드를 설정하기 위해 다음 단계를 수행합니다.
 
-1. [키오스크 구성을 정의 하는 XML 파일](#ppkioskconfig)( [시작 레이아웃](#start-layout-for-hololens)포함)을 만듭니다.
-2. [배포 패키지에 XML 파일을 추가 합니다.](#ppconfigadd)
-3. [HoloLens에 프로비저닝 패키지를 적용 합니다.](#ppapply)
+1. [시작 레이아웃을](#ppkioskconfig)포함하여 키오스크 구성을 정의하는 XML [파일을 생성합니다.](#start-layout-for-hololens)
+2. [프로비저닝 패키지에 XML 파일을 추가합니다.](#ppconfigadd)
+3. [HoloLens에 프로비저닝 패키지를 적용합니다.](#ppapply)
 
-### <a id="ppkioskconfig"></a>프로비저닝 패키지, 1 단계 &ndash; 키오스크 구성 XML 파일 만들기
+### <a id="ppkioskconfig"></a>프로비저닝 패키지, 1단계 &ndash; 키오스크 구성 XML 파일 만들기
 
-일반 지침에 따라 다음을 제외 하 고 [Windows 데스크톱용 키오스크 구성 XML 파일을 만듭니다](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
+다음을 제외하고 일반적인 지침에 따라 Windows 데스크톱용 키오스크 구성 [XML](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file)파일을 만들 수 있습니다.
 
-- 클래식 Windows 응용 프로그램 (Win32)을 포함 하지 않습니다. HoloLens는 이러한 응용 프로그램을 지원 하지 않습니다.
-- HoloLens 용 [자리 표시자 시작 레이아웃 XML](#start-layout-for-hololens) 을 사용 합니다.
+- 클래식 Windows 응용 프로그램(Win32)을 포함하지 않습니다. HoloLens는 이러한 응용 프로그램을 지원하지 않습니다.
+- HoloLens에 대해 자리 표시자 시작 화면 레이아웃 [XML을](#start-layout-for-hololens) 사용합니다.
 - 선택 사항: 키오스크 구성에 게스트 액세스 추가
 
 #### <a id="ppkioskguest"></a>선택 사항: 키오스크 구성에 게스트 액세스 추가
 
-[XML 파일의 **Configs** 섹션](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configs)에서 게스트가 키오스크를 사용할 수 있도록 **방문자** 라는 특별 한 그룹을 구성할 수 있습니다. 방문객이 **방문자** 특별 그룹을 지원 하도록 구성 된 경우 "**게스트**" 옵션이 로그인 페이지에 추가 됩니다. **Guest** 계정에는 암호가 필요 하지 않으며 계정이 로그 아웃 될 때 계정에 연결 된 모든 데이터가 삭제 됩니다.
+XML 파일의 [ **구성** ](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configs)섹션에서 게스트가 키오스크를 사용할 수 있도록 **방문자라는** 특수 그룹을 구성할 수 있습니다. 방문자 특수 그룹을 지원하도록 키오스크를 구성하면**로그인**페이지에 "게스트" 옵션이 추가됩니다. **** 게스트 **계정에는** 암호가 필요하지 않습니다. 계정이 로그인하면 계정과 연결된 데이터가 삭제됩니다.
 
-**게스트** 계정을 사용 하도록 설정 하려면 다음 코드 조각을 키오스크 구성 XML에 추가 합니다.
+게스트 계정을 사용하도록 **설정하려면** 키오스크 구성 XML에 다음 코드 자르기 기능을 추가합니다.
 
 ```xml
 <Configs>
@@ -324,17 +324,17 @@ OOBE 중에 다음 단계를 수행 합니다.
 </Configs>  
 ```
 
-#### <a id="start-layout-for-hololens"></a>HoloLens의 개체 틀 시작 레이아웃
+#### <a id="start-layout-for-hololens"></a>HoloLens의 자리 표시자 시작 화면 레이아웃
 
-[배포 패키지](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) 를 사용 하 여 다중 앱 키오스크를 구성 하는 경우에는 절차에 시작 레이아웃이 필요 합니다. 시작 레이아웃 사용자 지정은 비즈니스용 Windows 홀로그램에서 지원 되지 않습니다. 따라서 자리 표시자 시작 레이아웃을 사용 해야 합니다.
-
-> [!NOTE]  
-> 단일 앱 키오스크는 사용자가 로그인 할 때 키오스크 앱을 시작 하므로 시작 메뉴를 사용 하지 않으며 시작 레이아웃을 사용할 필요가 없습니다.
+프로비저닝 [](#use-a-provisioning-package-to-set-up-a-single-app-or-multi-app-kiosk) 패키지를 사용하여 다중 앱 키오스크를 구성하는 경우 프로시저에 시작 화면 레이아웃이 필요합니다. 시작 화면 레이아웃 사용자 지정은 비즈니스용 Windows Holographic에서 지원되지 않습니다. 따라서 자리 표시자 시작 화면 레이아웃을 사용해야 합니다.
 
 > [!NOTE]  
-> [MDM](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) 을 사용 하 여 다중 앱 키오스크를 설정 하는 경우 필요에 따라 시작 레이아웃을 사용할 수 있습니다. 자세한 내용은 [MDM (Intune 및 기타)에 대 한 자리 표시자 시작 레이아웃 파일](#start-layout-file-for-mdm-intune-and-others)을 참조 하세요.
+> 단일 앱 키오스크는 사용자가 로그인할 때 키오스크 앱을 시작하기 때문에 시작 메뉴를 사용하지 않습니다. 시작 화면 레이아웃을 사용할 수도 없습니다.
 
-시작 레이아웃의 경우 kiosk 프로비저닝 XML 파일에 다음 **Startlayout** 섹션을 추가 합니다.
+> [!NOTE]  
+> [MDM을](#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) 사용하여 다중 앱 키오스크를 설정하는 경우 선택적으로 시작 화면 레이아웃을 사용할 수 있습니다. 자세한 내용은 [MDM(Intune](#start-layout-file-for-mdm-intune-and-others)등)에 대한 자리 표시자 시작 화면 레이아웃 파일을 참조하세요.
+
+시작 화면 레이아웃의 경우 키오스크 프로비전 XML 파일에 다음 **StartLayout** 섹션을 추가합니다.
 
 ```xml
 <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
@@ -356,12 +356,12 @@ OOBE 중에 다음 단계를 수행 합니다.
             <!-- This section is required for parity with Desktop Assigned Access. It is not currently used on HoloLens -->
 ```
 
-#### <a id="start-layout-file-for-mdm-intune-and-others"></a>MDM (Intune 및 기타)의 개체 틀 시작 레이아웃 파일
+#### <a id="start-layout-file-for-mdm-intune-and-others"></a>MDM에 대한 자리 표시자 시작 화면 레이아웃 파일(Intune 등)
 
-다음 샘플을 XML 파일로 저장 합니다. Microsoft Intune 또는 키오스크 프로필을 제공 하는 다른 MDM 서비스에서 다중 앱 키오스크을 구성할 때이 파일을 사용할 수 있습니다.
+다음 샘플을 XML 파일로 저장합니다. Microsoft Intune(또는 키오스크 프로필을 제공하는 다른 MDM 서비스)에서 다중 앱 키오스크를 구성할 때 이 파일을 사용할 수 있습니다.
 
 > [!NOTE]
-> MDM 서비스에서 사용자 지정 설정과 전체 XML 구성을 사용 하 여 키오스크를 설정 해야 하는 경우 [에는 프로비저닝 패키지에 대 한 시작 레이아웃 지침](#start-layout-for-hololens)을 사용 합니다.
+> 사용자 지정 설정 및 전체 XML 구성을 사용하여 MDM 서비스에서 키오스크를 설정해야 하는 경우 프로비저닝 패키지에 대한 시작 화면 레이아웃 지침을 [사용합니다.](#start-layout-for-hololens)
 
 ```xml
 <LayoutModificationTemplate
@@ -379,87 +379,87 @@ OOBE 중에 다음 단계를 수행 합니다.
  </LayoutModificationTemplate>
 ```
 
-### <a id="ppconfigadd"></a>Prov. 패키지, 2 단계 &ndash; 에서 kiosk 구성 XML 파일을 프로비저닝 패키지에 추가
+### <a id="ppconfigadd"></a>Prov. 패키지, 2단계 프로비저닝 패키지에 &ndash; 키오스크 구성 XML 파일 추가
 
-1. [Windows 구성 디자이너](https://www.microsoft.com/store/apps/9nblggh4tx22)를 엽니다.
-1. **고급 프로비저닝을**선택 하 고 프로젝트의 이름을 입력 한 후 **다음**을 선택 합니다.
-1. **Windows 10 홀로그램**를 선택 하 고 **다음**을 선택 합니다.
-1. **마침을**선택 합니다. 패키지에 대한 작업 영역이 열립니다.
-1. **런타임 설정**  >  **AssignedAccess**  >  **MultiAppAssignedAccessSettings**를 선택 합니다.
-1. 가운데 창에서 **찾아보기를** 선택 하 여 직접 만든 KIOSK 구성 XML 파일을 찾아 선택 합니다.
+1. [Windows 구성 디자이너를 여는 경우](https://www.microsoft.com/store/apps/9nblggh4tx22)
+1. 고급 **프로비전을 선택하고**프로젝트 이름을 입력한 후 다음을 **선택합니다.**
+1. **Windows 10 Holographic을**선택하고 다음을 **선택합니다.**
+1. 완료를 **선택합니다.** 패키지에 대한 작업 영역이 열립니다.
+1. ****  >  **AssignedAccess**  >  **MultiAppAssignedAccessSettings**런타임 설정을 선택합니다.
+1. 가운데 창에서 찾아보기를 선택하여 만든 키오스크 구성 XML 파일을 찾아 선택합니다. ****
 
    ![Windows 구성 디자이너의 MultiAppAssignedAccessSettings 필드 스크린샷](./images/multiappassignedaccesssettings.png)
 
-1. **선택 사항**입니다. (디바이스의 초기 설정 후에 제공 되는 프로비저닝 패키지를 적용 하려는 경우 키오스크 장치에서 이미 관리자 사용자를 사용할 수 있는 경우이 단계를 건너뛰십시오.) **런타임 설정** &gt; **계정** &gt; **사용자**를 선택한 다음 사용자 계정을 만듭니다. 사용자 이름 및 암호를 입력 한 다음 **UserGroup**  >  **관리자**를 선택 합니다.  
+1. **선택 사항입니다.** (디바이스를 처음 설치한 후 프로비저닝 패키지를 적용하려는 경우 키오스크 장치에서 이미 사용할 수 있는 관리자 사용자가 있는 경우 이 단계를 건너뜁니다.) **런타임 설정** 계정 사용자를 선택한 다음 사용자 &gt; **** &gt; **** 계정을 생성합니다. 사용자 이름과 암호를 입력한 다음 **UserGroup**  >  **Administrators를 선택합니다.**  
   
-     이 계정을 사용 하 여 프로비저닝 상태와 로그를 볼 수 있습니다.  
-1. **선택 사항**입니다. (키오스크 장치에 관리자 이외의 계정이 이미 있는 경우에는이 단계를 건너뛰십시오.) **런타임 설정** &gt; **계정** &gt; **사용자**를 선택한 다음 로컬 사용자 계정을 만듭니다. 사용자 이름이 구성 XML에서 지정 하는 계정과 동일한 지 확인 합니다. **UserGroup**  >  **표준 사용자**를 선택 합니다.
-1. **파일**  >  **저장**을 선택 합니다.
-1. **Export**  >  **배포 패키지**내보내기를 선택 하 고 **소유자**  >  **IT 관리자**를 선택 합니다. 이렇게 하면 다른 원본에서이 디바이스에 적용 되는 프로 비전 패키지 보다 높은 우선 순위를 설정할 수 있습니다.
+     이 계정을 사용하면 프로비전 상태 및 로그를 볼 수 있습니다.  
+1. **선택 사항입니다.** 키오스크 장치에 관리자가 아닌 계정이 이미 있는 경우 이 단계를 건너뜁니다. **런타임 설정** 계정 사용자를 선택한 다음 로컬 사용자 &gt; **** &gt; **** 계정을 생성합니다. 사용자 이름이 구성 XML에서 지정하는 계정과 동일한지 확인 **UserGroup**  >  **Standard Users를 선택합니다.**
+1. 파일 ****  >  **저장을 선택합니다.**
+1. ****  >  **프로비저닝 패키지 내보내기**옵션을 선택한 다음 소유자 IT ****  >  **관리자를 선택합니다.** 이렇게 하면 이 프로비저닝 패키지의 우선 순위가 다른 소스에서 이 장치에 적용되는 프로비저닝 패키지보다 더 높게 설정됩니다.
 1. **다음**을 선택합니다.
-1. **배포 패키지 보안** 페이지에서 보안 옵션을 선택 합니다.
+1. **프로비저닝 패키지 보안** 페이지에서 보안 옵션을 선택합니다.
    > [!IMPORTANT]  
-   > **패키지 서명 사용**을 선택 하는 경우 패키지에 서명 하는 데 사용할 유효한 인증서도 선택 해야 합니다. 이렇게 하려면 **찾아보기를** 선택 하 고 패키지에 서명 하는 데 사용할 인증서를 선택 합니다.
+   > 패키지 서명 **사용을 선택하는**경우 패키지 서명에 사용할 유효한 인증서도 선택해야 합니다. 이렇게하려면 **찾아보기를** 선택하고 패키지에 서명하는 데 사용할 인증서를 선택합니다.
    
    > [!CAUTION]  
-   > **패키지 암호화 사용**을 선택 하지 마세요. HoloLens 장치에서는이 설정으로 인해 프로비저닝이 실패 합니다.
+   > 패키지 암호화 **사용을 선택하지 않습니다.** HoloLens 장치에서 이 설정을 사용하면 프로비전이 실패합니다.
 1. **다음**을 선택합니다.
-1. 프로 비전 패키지를 빌드할 때 이동할 출력 위치를 지정 합니다. 기본적으로 Windows 구성 디자이너는 프로젝트 폴더를 출력 위치로 사용합니다. 출력 위치를 변경 하려면 **찾아보기를**선택 합니다. 완료 되 면 **다음**을 선택 합니다.
-1. **빌드** 를 선택 하 여 패키지 빌드를 시작 합니다. 프로비저닝 패키지를 빌드하는 데는 오랜 시간이 걸리지 않습니다. 빌드 페이지에 프로젝트 정보가 표시 되 고 진행률 표시줄이 빌드 상태를 나타냅니다.
+1. 프로비저닝 패키지를 구축할 때 사용할 출력 위치를 지정합니다. 기본적으로 Windows 구성 디자이너는 프로젝트 폴더를 출력 위치로 사용합니다. 출력 위치를 변경하려면 찾아보기를 **선택합니다.** 완료되면 다음을 **선택합니다.**
+1. **빌드를** 선택하여 패키지 빌드를 시작하십시오. 프로비저닝 패키지를 빌드하는 데는 오랜 시간이 걸리지 않습니다. 빌드 페이지에 프로젝트 정보가 표시되고 진행률 표시줄에 빌드 상태가 표시됩니다.
 
-### <a id="ppapply"></a>프로비저닝 패키지, 3 단계에서 &ndash; 배포 패키지를 HoloLens에 적용
+### <a id="ppapply"></a>프로비저닝 패키지, 3단계에서 HoloLens에 프로비저닝 패키지 &ndash; 적용
 
-"프로비저닝 패키지를 사용 하 여 HoloLens 구성" 문서에서는 다음과 같은 경우에 배포 패키지를 적용 하기 위한 자세한 지침을 제공 합니다.
+"프로비저닝 패키지를 사용하여 HoloLens 구성" 문서에서는 다음과 같은 상황에서 프로비저닝 패키지를 적용하는 자세한 지침을 제공합니다.
 
-- [설치 하는 동안 처음으로 HoloLens에 프로비저닝 패키지를 적용할](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)수 있습니다.
+- 설치하는 동안 [처음에 HoloLens에 프로비저닝 패키지를 적용할 수 있습니다.](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)
 
-- [설치 후에 HoloLens에 제공 패키지를 적용할](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-after-setup)수도 있습니다.
+- 설치 후 [HoloLens에](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-after-setup)프로비저닝 패키지를 적용할 수도 있습니다.
 
-## Windows Device Portal을 사용 하 여 단일 앱 키오스크 설정
+## Windows Device Portal을 사용하여 단일 앱 키오스크 설정
 
-Windows Device Portal을 사용 하 여 키오스크 모드를 설정 하려면 다음 단계를 따르세요.
+Windows Device Portal을 사용하여 키오스크 모드를 설정하려면 다음 단계를 수행합니다.
 
-1. [Windows Device Portal을 사용 하도록 HoloLens 장치를 설정](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal)합니다. Device Portal은 PC의 웹 브라우저에서 연결 가능한 HoloLens에 있는 웹 서버입니다.
+1. [Windows Device Portal을 사용할 HoloLens 장치를 설정합니다.](https://developer.microsoft.com/windows/mixed-reality/using_the_windows_device_portal#setting_up_hololens_to_use_windows_device_portal) Device Portal은 PC의 웹 브라우저에서 연결 가능한 HoloLens에 있는 웹 서버입니다.
 
     > [!CAUTION]
-    > 장치 포털을 사용 하도록 HoloLens를 설정 하는 경우 장치에서 개발자 모드를 사용 하도록 설정 해야 합니다. 비즈니스용 Windows 홀로그램을 사용 하는 디바이스의 개발자 모드에서 앱을 로드 하는 데 도움이 됩니다. 그러나이 설정은 사용자가 Microsoft Store에서 인증 되지 않은 앱을 설치할 수 있다는 위험을 만듭니다. 관리자는 [정책 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider)의 **Applicationmanagement/allowdeveloper Unlock** 설정을 사용 하 여 개발자 모드를 사용 하도록 설정 하는 기능을 차단할 수 있습니다. [개발자 모드에 대해 자세히 알아보세요.](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
+    > 디바이스 포털을 사용하도록 HoloLens를 설정할 때 디바이스에서 개발자 모드를 사용하도록 설정해야 합니다. 비즈니스용 Windows Holographic이 있는 장치의 개발자 모드를 사용하면 앱을 테스트용 로드할 수 있습니다. 그러나 이 설정은 사용자가 Microsoft Store에서 인증되지 않은 앱을 설치할 수 있는 위험을 만듭니다. 관리자는 정책 [CSP에서](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) **ApplicationManagement/AllowDeveloper 잠금** 해제 설정을 사용하여 개발자 모드를 사용하도록 설정하는 기능을 차단할 수 있습니다. [개발자 모드에 대해 자세히 알아보세요.](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development#developer-mode)
     
-1. 컴퓨터에서 [wi-fi](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_wi-fi) 또는 [USB](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_usb)를 사용 하 여 HoloLens에 연결 합니다.
+1. 컴퓨터에서 [Wi-Fi](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_wi-fi) 또는 USB를 사용하여 HoloLens에 [연결합니다.](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#connecting_over_usb)
 
 1. 다음 중 하나를 수행합니다.
-   - Windows Device Portal에 처음 연결 하는 경우 [사용자 이름 및 암호 만들기](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#creating_a_username_and_password)
-   - 이전에 설정한 사용자 이름 및 암호를 입력 합니다.
+   - Windows Device Portal에 처음으로 연결하는 경우 사용자 이름 및 암호를 [만드시다.](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#creating_a_username_and_password)
+   - 이전에 설정한 사용자 이름과 암호를 입력합니다.
 
     > [!TIP]
     > 브라우저에서 인증서 오류가 표시되는 경우 [문제 해결 단계](https://developer.microsoft.com/windows/mixed-reality/Using_the_Windows_Device_Portal#security_certificate)를 따릅니다.
 
-1. Windows 디바이스 포털에서 **키오스크 모드**를 선택 합니다.
+1. Windows Device Portal에서 **키오스크 모드를 선택합니다.**
 
-1. **키오스크 모드 사용**을 선택 하 고 장치가 시작 될 때 실행할 앱을 선택한 다음 **저장**을 선택 합니다.
+1. **키오스크**모드 사용을 선택하고 디바이스가 시작되면 실행할 앱을 선택한 다음 저장을 **선택합니다.**
 
     ![키오스크 모드](images/kiosk.png)
-1. HoloLens를 다시 시작 합니다. 디바이스 포털 페이지가 열려 있는 경우 페이지 맨 위에 있는 **다시 시작** 을 선택할 수 있습니다.
+1. HoloLens를 다시 시작합니다. 디바이스 포털 페이지가 열려 있는 경우 페이지 맨 위에 있는 **다시** 시작을 선택할 수 있습니다.
 
 > [!NOTE]
-> 필수 쿼리 문자열 매개 변수 1 개 ("kioskModeEnabled"에 "true" 또는 "false" 값을 사용 하 고, 선택적 매개 변수 ("startupApp" 패키지 이름 값이 포함 된))를 사용 하 여/api/holographic/kioskmode/settings에 대 한 게시를 수행 하 여 장치 포털의 REST API를 통해 키오스크 모드를 설정할 수 있습니다. 디바이스 포털은 개발자만 사용할 수 있으며 개발자가 작성 하지 않은 장치에서 사용 하지 않도록 설정 해야 한다는 점에 유의 하세요. REST API는 향후 업데이트/릴리스에서 변경 될 수 있습니다.
+> 키오스크 모드는 하나의 필수 쿼리 문자열 매개 변수(값이 "true" 또는 "false"인 "kioskModeEnabled")와 패키지 이름 값이 있는 하나의 선택적 매개 변수("startupApp")를 사용하여 /api/holographic/kioskmode/settings에 POST를 수행하여 장치 포털의 REST API를 통해 설정할 수 있습니다. Device Portal은 개발자 전용으로, 개발자가 아닌 장치에서는 사용하도록 설정되어 있지 않습니다. REST API는 향후 업데이트/릴리스에서 변경될 수 있습니다.
 
 ## 추가 정보
 
-### 배포 패키지를 사용 하 여 키오스크를 구성 하는 방법을 시청 하세요.  
+### 프로비저닝 패키지를 사용하여 키오스크를 구성하는 방법을 시청합니다.  
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
 
-### 전역 할당 액세스 – 키오스크 모드
-- 시스템 수준에서 키오스크 모드를 적용 하는 새 키오스크 방법을 활성화 하 여 키오스크에 대 한 Id 관리를 줄입니다.
+### 전역 할당된 액세스 - 키오스크 모드
+- 시스템 수준에서 키오스크 모드를 적용하는 새로운 Kiosk 메서드를 사용하도록 설정하여 키오스크의 ID 관리가 줄어듭.
 
-이 새로운 기능을 사용 하면 IT 관리자가 시스템에서 사용할 수 있는 여러 앱 키오스크 모드에 대해 HoloLens 2 장치를 구성 하 고 시스템의 모든 id와 관련 된 선호도가 없으며 장치에 로그인 하는 모든 사용자에 게 적용 됩니다. 이 새로운 기능에 대 한 자세한 내용은 [여기](hololens-global-assigned-access-kiosk.md)를 참조 하세요.
+이 새로운 기능을 통해 IT 관리자는 시스템 수준에서 적용할 수 있는 여러 앱 키오스크 모드에 대해 HoloLens 2 장치를 구성할 수 있으며, 시스템의 ID와 관련이 없습니다. 이 디바이스에 로그인하는 모든 사용자에 적용할 수 있습니다. 여기에서 이 새로운 기능에 대해 자세히 [읽어 읽습니다.](hololens-global-assigned-access-kiosk.md)
 
 ### 다중 앱 키오스크 모드에서 응용 프로그램 자동 실행 
-- 자동 앱 시작 기능을 통해 키오스크 모드 환경에 맞게 선택한 UI 및 앱 선택이 더욱 향상 되었습니다.
+- 자동 앱 실행에 집중된 환경으로, 키오스크 모드 환경을 위해 선택된 UI 및 앱 선택을 추가로 늘려야 합니다.
 
-이 속성은 여러 앱 키오스크 모드에만 적용 되며 지정 된 액세스 구성에서 아래의 강조 표시 되는 특성을 사용 하 여 자동 시작 하도록 지정할 수 있습니다. 
+다중 앱 키오스크 모드에만 적용하며 할당된 액세스 구성에서 아래의 강조 표시된 특성을 사용하여 1개 앱만 자동 실행으로 지정될 수 있습니다. 
 
-사용자가 로그인 하면 응용 프로그램이 자동으로 시작 됩니다. 
+사용자가 로그인하면 응용 프로그램이 자동으로 시작됩니다. 
 
 ```xml
 <AllowedApps>                     
@@ -468,48 +468,48 @@ Windows Device Portal을 사용 하 여 키오스크 모드를 설정 하려면 
 ```
 
 
-### 오류 처리에 대 한 키오스크 모드 동작 변경
-- 키오스크 모드 오류에서 사용 가능한 앱을 제거 하 여 더욱 안전한 키오스크 모드. 
+### 오류 처리를 위한 키오스크 모드 동작 변경
+- 키오스크 모드 오류 시 사용 가능한 앱을 제거하여 보다 안전한 키오스크 모드를 사용할 수 있습니다. 
 
-이전에는 키오스크 모드 적용 중 오류가 발생 하 여 시작 메뉴의 모든 응용 프로그램을 표시 하는 데 사용 되는 HoloLens가 있습니다. 이제 Windows 홀로그램 버전 20H2에서 실패가 발생 하는 경우 시작 메뉴에 아래와 같이 앱이 표시 되지 않습니다. 
+키오스크 모드 적용에 오류가 발생하기 전에 HoloLens는 시작 메뉴에 모든 응용 프로그램을 표시하는 데 사용되었습니다. 이제 Windows Holographic 버전 20H2에서 오류가 발생하면 아래와 같이 시작 메뉴에 앱이 표시되지 않습니다. 
 
-![오류가 발생 했을 때 표시 되는 키오스크 모드의 이미지입니다.](images/hololens-kiosk-failure-behavior.png )
+![오류가 발생하면 키오스크 모드가 어떻게 보이는지의 이미지입니다.](images/hololens-kiosk-failure-behavior.png )
 
-### 오프 라인 키오스크에 대 한 AAD 그룹 구성원 캐시
-- 최대 60 일간 AAD 그룹과 사용할 오프 라인 키오스크를 사용할 수 있습니다.
+### 오프라인 Kiosk에 대한 Azure AD 그룹 구성원 캐시
+- 최대 60일 동안 Azure AD 그룹과 함께 사용할 오프라인 키오스크를 사용하도록 설정합니다.
 
-이 정책은 로그인 한 사용자에 대해 AAD 그룹을 대상으로 하는 할당 된 액세스 구성에 사용할 수 있는 시간 (일 수)에 대 한 AAD 그룹 구성원 캐시를 제어 합니다. 이 정책 값을 0 보다 큰 값으로 설정한 후에는 캐시를 사용 하지 않을 수 있습니다.  
+이 정책은 로그인한 사용자의 Azure AD 그룹을 대상으로 하는 할당된 액세스 구성에 Azure AD 그룹 구성원 캐시를 사용할 수 있는 일 수를 제어합니다. 이 정책 값을 0보다 큰 값으로 설정하면 캐시가 사용되지 않습니다.  
 
-Name: AADGroupMembershipCacheValidityInDays URI 값:./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
+이름: AADGroupMembershipCacheValidityInDays URI 값: ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
 
-최소-0 일  
-최대 60 일 
+최소 - 0일  
+최대 - 60일 
 
-이 정책을 올바르게 사용 하는 단계: 
-1. 키오스크 대상 AAD 그룹에 대 한 장치 구성 프로필을 만들어 HoloLens 장치에 할당 합니다. 
-1. 이 정책 값을 원하는 일 수 (> 0)로 설정 하 고 HoloLens 장치에 할당 하는 사용자 지정 OMA URI 기반 장치 구성을 만듭니다. 
-    1. URI 값은/Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays로 OMA URI 텍스트 상자에 입력 해야 합니다.
-    1. 값은 허용 되는 최소값/최대값 일 수 있습니다.
-1. HoloLens 디바이스를 등록 하 고 두 구성이 장치에 적용 되었는지 확인 합니다. 
-1. AAD 사용자 1 로그인 허용 인터넷을 사용할 수 있게 되 면 사용자 로그인 및 AAD 그룹 구성원 자격이 성공적으로 확인 되 면 캐시를 만듭니다. 
-1. 정책 값이 X 일 수를 허용 하는 경우, 이제 AAD 사용자 1이 오프 라인 상태에서 사용할 수 있으며 키오스크 모드에 사용 됩니다. 
-1. 다른 AAD 사용자 N에 대해 4-5 단계를 반복할 수 있습니다. 주요 요점 여기서는 모든 AAD 사용자가 키오스크 구성을 대상으로 하는 AAD 그룹의 구성원 인지 확인할 수 있도록 먼저 인터넷을 사용 하 여 디바이스에 로그인 해야 합니다. 
+이 정책을 올바르게 사용하는 단계: 
+1. Azure AD 그룹을 대상으로 하는 키오스크에 대한 장치 구성 프로필을 만들고 HoloLens 디바이스에 할당합니다. 
+1. 이 정책 값을 원하는 일 수(> 0)로 설정하고 HoloLens 장치에 할당하는 사용자 지정 OMA URI 기반 장치 구성을 생성합니다. 
+    1. URI 값은 OMA-URI 텍스트 상자에 ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays로 입력해야 합니다.
+    1. 값은 최소/최대값 사이일 수 있습니다.
+1. HoloLens 장치를 등록하고 두 구성이 장치에 적용되는지 확인합니다. 
+1. 사용자가 로그인하고 Azure AD 그룹 구성원 자격이 확인되면 인터넷을 사용할 수 있는 경우 Azure AD 사용자 1에 로그인하도록 합니다. 캐시가 생성됩니다. 
+1. 이제 Azure AD 사용자 1은 HoloLens를 오프라인으로 전환하고 정책 값이 X일 수에 한해 키오스크 모드에 사용할 수 있습니다. 
+1. 다른 Azure AD 사용자 N에 대해 4단계와 5단계를 반복할 수 있습니다. 여기서 핵심은 Azure AD 사용자가 적어도 키오스크 구성이 대상으로 지정되는 Azure AD 그룹의 구성원인지 확인할 수 있도록 인터넷을 사용하여 장치에 로그인해야 하다는 것입니다. 
  
 > [!NOTE]
-> AAD 사용자에 대해 4 단계를 수행할 때까지 "연결이 끊긴" 환경에서 발생 하는 실패 동작이 발생 합니다. 
+> Azure AD 사용자에 대해 4단계를 수행할 때까지 "연결이 끊어진" 환경에 언급된 오류 동작이 발생합니다. 
 
 
-## HoloLens 용 XML 키오스크 코드 샘플
+## HoloLens용 XML 키오스크 코드 샘플
 
-### AAD 그룹을 대상으로 하는 여러 앱 키오스크 모드입니다. 
-이 키오스크는 AAD 그룹의 사용자에 게 키오스크를 제공 하며, 3 개의 앱: 설정, 원격 지원 및 피드백 허브를 포함 하는 키오스크 기능을 사용 하도록 설정 합니다. 이 샘플을 즉시 사용 하도록 수정 하려면 아래에서 강조 표시 된 GUID를 변경 하 여 직접 AAD 그룹과 일치 하도록 해야 합니다. 
+### Azure AD 그룹을 대상으로 하는 여러 앱 키오스크 모드입니다. 
+이 키오스크는 Azure AD 그룹의 사용자를 위해 설정, 원격 지원 및 피드백 허브의 3개 앱을 포함하는 키오스크를 사용하도록 설정됩니다. 이 샘플을 즉시 사용하려면 아래 강조 표시된 GUID를 자신의 Azure AD 그룹과 일치하도록 변경해야 합니다. 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-group.xml" highlight="20":::
 
 
-### AAD 계정을 대상으로 하는 여러 앱 키오스크 모드입니다.
-이 키오스크는 단일 사용자를 위해 키오스크 기능을 제공 하며, 3 개의 앱: 설정, 원격 지원 및 피드백 허브를 포함 하는 키오스크를 사용 합니다. 이 샘플을 즉시 사용 하도록 수정 하려면 아래에 강조 표시 된 계정을 변경 하 여 직접 AAD 계정과 일치 하도록 해야 합니다. 
+### Azure AD 계정을 대상으로 하는 여러 앱 키오스크 모드입니다.
+이 키오스크는 단일 사용자에 대해 키오스크를 배포하며 설정, 원격 지원 및 피드백 허브의 3개 앱을 포함하는 키오스크를 사용하도록 설정합니다. 이 샘플을 즉시 사용하려면 아래 강조 표시된 계정을 자신의 Azure AD 계정과 일치하도록 변경해야 합니다. 
 
 
 :::code language="xml" source="samples/kiosk-sample-multi-aad-account.xml" highlight="20":::

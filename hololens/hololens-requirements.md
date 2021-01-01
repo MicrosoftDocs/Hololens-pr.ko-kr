@@ -11,12 +11,12 @@ audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/04/2020
-ms.openlocfilehash: 5f24d62193f083f96144b7e8c3518dc97c14be68
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: 082064acd075451e7a8d55352249a0776cd19d76
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11195591"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253215"
 ---
 # HoloLens 2 엔터프라이즈 배포 및 관리
 
@@ -48,11 +48,11 @@ HoloLens 2는 엔터프라이즈 환경에서 MDM(모바일 장치 관리) 시�
 Microsoft는 장치 그룹에 업데이트를 배포하고 업데이트 설치를 위해 유지 관리 기간을 정의하는 기능 같은 추가 Windows 업데이트 중심 관리 기능을 IT 관리자에게 제공하는 비즈니스용 Windows 업데이트를 설계했습니다. HoloLens 2 업데이트 관리에 대한 자세한 내용은 여기에서 찾을 수 [있습니다.](https://docs.microsoft.com/hololens/hololens-updates)
 
 ### 인증서
-환경에서 Corp 네트워크 인증 또는 다른 리소스에 대한 액세스 또는 Corp Wi-Fi 인증서가 필요한 경우 HoloLens 2는 MDM을 통해 인증서 배포를 지원합니다. 일부 MDM 인프라 구성은 HoloLens 2에 인증서를 배포할 수 있도록 설정해야 할 수 있습니다. [HoloLens 2에](https://docs.microsoft.com/hololens/hololens-certificates-network)대한 인증서 및 네트워크 프로필을 준비하는 방법을 읽어 읽습니다. Intune 세부 정보는 여기에서 찾을 수 [있습니다.](https://docs.microsoft.com/mem/intune/protect/certificates-configure)
+환경에서 Corp 네트워크 인증 또는 다른 리소스에 대한 액세스 또는 Corp Wi-Fi 필요한 경우 HoloLens 2는 MDM을 통해 인증서 배포를 지원합니다. 일부 MDM 인프라 구성은 HoloLens 2에 인증서를 배포할 수 있도록 설정해야 할 수 있습니다. [HoloLens 2에](https://docs.microsoft.com/hololens/hololens-certificates-network)대한 인증서 및 네트워크 프로필을 준비하는 방법을 읽어 읽습니다. Intune 세부 정보는 여기에서 찾을 수 [있습니다.](https://docs.microsoft.com/mem/intune/protect/certificates-configure)
 
 ## 구성
 
-MDM 관리자는 MDM 시스템에 등록된 모든 회사 장치에서 정책 설정을 정의하고 구현할 수 있습니다. 사용하는 구성 설정은 배포 시나리오에 따라 다릅니다. Windows 10에서 CSP(구성 서비스 공급자)는 장치에서 구성 설정을 읽고, 설정하고, 수정하거나, 삭제할 수 있는 인터페이스입니다. 이러한 설정은 레지스트리 키 또는 파일에 매핑됩니다. HoloLens 2용 Windows 10 장치 관리 CSP에 대한 자세한 내용은 HoloLens 장치에서 지원되는 [CSP의 전체 목록을 참조하세요.](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)
+MDM 관리자는 MDM 시스템에 등록된 모든 회사 장치에서 정책 설정을 정의하고 구현할 수 있습니다. 사용하는 구성 설정은 배포 시나리오에 따라 다릅니다. Windows 10에서 CSP(구성 서비스 공급자)는 장치에서 구성 설정을 읽거나 설정, 수정 또는 삭제할 수 있는 인터페이스입니다. 이러한 설정은 레지스트리 키 또는 파일에 매핑됩니다. HoloLens 2용 Windows 10 장치 관리 CSP에 대한 자세한 내용은 HoloLens 장치에서 지원되는 [CSP의 전체 목록을 참조하세요.](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)
 
 HoloLens 2는 사용자 지정 프로비저닝 패키지를 통해 제한된 CSP 구성 집합 설정도 지원됩니다. 프로비저닝 패키지는 일반적으로 MDM이 아닌 관리 장치에 활용되고 각 장치에 수동으로 적용해야 합니다. 사용자 지정 프로비저닝 패키지를 구축하는 데 대한 자세한 내용은 여기에서 찾을 수 [있습니다.](https://docs.microsoft.com/hololens/hololens-provisioning)
 
@@ -75,7 +75,7 @@ HoloLens 2는 클라우드 첫 번째 장치이기 위해 모든 기능을 사�
 
 ### 인증서 배포
 
-회사 Wi-Fi 네트워크 또는 조직 내의 다른 서비스에 액세스하는 데 인증서가 필요한 경우 HoloLens 2는 MDM을 통한 사용자 및 장치 인증서 배포를 지원합니다. 참고: MDM 솔루션에서 Windows 10 디바이스에 인증서를 배포하려면 추가 인프라 구성이 필요할 수 있습니다.
+회사 Wi-Fi 네트워크 또는 조직 내의 기타 서비스에 액세스하는 데 인증서가 필요한 경우 HoloLens 2는 MDM을 통한 사용자 및 장치 인증서 배포를 지원합니다. 참고: MDM 솔루션에서 Windows 10 디바이스에 인증서를 배포하려면 추가 인프라 구성이 필요할 수 있습니다.
 
 ### 보안 검토
 
@@ -100,9 +100,9 @@ HoloLens 2는 카메라, 마이크, 스피커, USB 인터페이스, Bluetooth �
 
 다음 목록에는 HoloLens 2에서 하드웨어 제한을 구성하기 위해 지원하는 가장 일반적으로 사용되는 MDM 설정이 나열됩니다. 이러한 하드웨어 제한 중 일부는 연결을 제공하고 데이터 보호에 도움이 됩니다.
 
-- [**WiFi 허용:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi) 사용자가 디바이스에서 디바이스에서 Wi-Fi 및 사용할 수 있는지 여부
-- [**USB 연결을 허용합니다.**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) USB 연결을 사용할 수 있는지 여부(USB&#39;영향을 주지 않습니다.
-- [**다음 Bluetooth.**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowbluetooth) 사용자가 디바이스에서 디바이스에서 Bluetooth 및 사용할 수 있는지 여부
+- [**WiFi 허용:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi) 사용자가 디바이스에서 Wi-Fi 및 사용할 수 있는지 여부
+- [**USB 연결 허용:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) USB 연결을 사용할 수 있는지 여부(USB&#39;영향을 주지 않습니다.
+- [**다음 Bluetooth.**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowbluetooth) 사용자가 장치에서 디바이스에서 Bluetooth 및 사용할 수 있는지 여부
 
 다른 일반적인 장치 [제한에 대해 자세히 읽어 읽습니다.](https://docs.microsoft.com/hololens/hololens-common-device-restrictions)
 
@@ -110,11 +110,11 @@ HoloLens 2는 카메라, 마이크, 스피커, USB 인터페이스, Bluetooth �
 
 대부분의 회사 Wi-Fi 네트워크에서는 인증서와 기타 복잡한 정보를 요구하여 사용자 액세스를 제한하고 보안을 유지합니다. 이 고급 Wi-Fi 정보는 일반 사용자가 구성하기는 어렵지만 MDM 시스템은 사용자 개입 없이 이러한 Wi-Fi 프로필을 완전히 구성할 수 있습니다. MDM 시스템에서는 여러 개의 Wi-Fi 프로필을 만들 수 있습니다.
 
-Windows 10에 대한 Wi-Fi 설정에 대한 자세한 내용은 엔터프라이즈 프로필 WiFi 설정을 [참조하세요.](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile)
+Windows 10에 대한 Wi-Fi 설정에 대한 자세한 내용은 엔터프라이즈 프로필 [WiFi 설정을 참조하세요.](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile)
 
 #### 인증서
 
-인증서는 웹 콘텐츠의 계정 인증, Wi-Fi 인증, VPN 암호화 및 SSL 암호화를 제공하여 보안을 향상시키는 데 도움이 됩니다. 관리자는 프로비저닝 패키지를 통해 장치에서 인증서를 수동으로 관리할 수 있지만&#39;MDM 시스템을 사용하여 등록부터 갱신 및 해지까지 전체 수명 주기 동안 해당 인증서를 관리하는 것이 가장 좋은 모범 사례입니다. MDM 시스템에서 SCEP(Simple Certificate Enrollment Protocol) 또는 PKCS##12 12(공개 키 암호화 표준)를 지원하는 경우&#39; 인증서 저장소에 이러한 인증서를 자동으로 배포할 수 있습니다. 또한 MDM은 등록된 클라이언트 인증서를 쿼리 및 삭제하거나 현재 인증서가 만료되기 전에 새 등록 요청을 트리거할 수 있습니다.
+인증서는 웹 콘텐츠의 계정 인증, Wi-Fi 인증, VPN 암호화 및 SSL 암호화를 제공하여 보안을 향상시키는 데 도움이 됩니다. 관리자는 프로비저닝 패키지를 통해 장치에서 인증서를 수동으로 관리할 수 있지만&#39;MDM 시스템을 사용하여 등록부터 갱신 및 해지까지 전체 수명 주기 동안 해당 인증서를 관리하는 것이 가장 좋은 모범 사례입니다. MDM 시스템에서 SCEP(Simple Certificate Enrollment Protocol) 또는 PKCS##12 12(공개 키 암호화 표준) 또는 SCEP(Simple Certificate Enrollment Protocol)를 지원하는 경우)&#39; 인증서 저장소에 이러한 인증서를 자동으로 배포할 수 있습니다. 또한 MDM은 등록된 클라이언트 인증서를 쿼리 및 삭제하거나 현재 인증서가 만료되기 전에 새 등록 요청을 트리거할 수 있습니다.
 
 [HoloLens 2에](https://docs.microsoft.com/hololens/hololens-certificates-network) 대한 인증서 및 네트워크 프로필을 준비하는 방법에 대해 자세히 알아보세요.
 
@@ -140,7 +140,7 @@ VPN 프로필에 대한 자세한 내용은 [VPNv2 CSP](https://msdn.microsoft.c
 
 ### MDM 장치 등록
 
-엔터프라이즈 배포의 경우 Azure [enroll devices](https://docs.microsoft.com/hololens/hololens-enroll-mdm) AD 가입 및 자동 MDM 등록(AAD+MDM)을 사용하여 장치를 회사 장치로 MDM에 등록하는 것이 좋습니다. 이를 위해서는 Azure AD Premium이 필요하며 Intune을 비롯한 여러 MDM 공급자에 대한 자동 등록이 지원됩니다.
+엔터프라이즈 배포의 경우 장치를 [](https://docs.microsoft.com/hololens/hololens-enroll-mdm) Azure AD 가입 및 자동 MDM 등록(Azure AD+MDM)을 사용하여 MDM에 회사 장치로 등록하는 것이 좋습니다. 이를 위해서는 Azure AD Premium이 필요하며 Intune을 비롯한 여러 MDM 공급자에 대한 자동 등록이 지원됩니다.
 
 자동 배포 등록 방법 [Autopilot에 대해 자세히 알아보고](https://docs.microsoft.com/hololens/hololens2-autopilot)
 
@@ -157,7 +157,7 @@ HoloLens 2 장치에 응용 프로그램을 배포하는 방법에는 여러 가
 
 ## 유지 관리
 
-엔터프라이즈 IT 환경에서는 보안과 비용 조정에 대한 필요성과 사용자에게 최신 기술을 제공하고 싶은 욕구 사이에 균형을 맞춰야 합니다. 사이버 공격이 일상적으로 발생하고 있는 것이기 때문에 Windows 10 장치의 상태를 제대로 유지 관리하는 것이 중요합니다. IT 부서는 내부 응용 프로그램에 액세스할 수 있는 장치를 적용할 뿐 아니라 구성 설정을 관리하여 규정을 준수하도록 관리해야 합니다. HoloLens 2는 장치가 회사 정책을 준수하는지 보장하는 데 필요한 모바일 작업 관리 기능을 제공합니다.
+엔터프라이즈 IT 환경에서는 보안과 비용 조정에 대한 필요성과 사용자에게 최신 기술을 제공하고 싶은 욕구 사이에 균형을 맞춰야 합니다. 사이버 공격이 일상적으로 발생하고 있는 것이기 때문에 Windows 10 장치의 상태를 제대로 유지 관리하는 것이 중요합니다. IT 부서는 내부 응용 프로그램에 액세스할 수 있는 장치를 적용할 뿐 아니라 구성 설정을 관리하여 규정을 준수하도록 관리해야 합니다. HoloLens 2는 장치가 회사 정책을 준수하는 데 필요한 모바일 작업 관리 기능을 제공합니다.
 
 ### OS 서비스 옵션
 
@@ -165,7 +165,7 @@ HoloLens 2 장치에 응용 프로그램을 배포하는 방법에는 여러 가
 
 Microsoft는 Windows 제품 엔지니어링 및 릴리스 주기를 간소화하였기 때문에, 그 어느 때보다도 빠르게 시장에서 원하는 새 기능과 환경, 특징을 제공할 수 있습니다. Microsoft는 1년(12개월간)에 기능 업데이트를 두 번 제공할 예정입니다. **기능 업데이트는** 현재 분기 또는 CB를 설정하고 연결된 버전을 가 있습니다.
 
-Microsoft는 또한 HoloLens 2 장치에 보안 및 안정성을 위한 업데이트를 직접 전달하고 설치합니다. Windows **업데이트를 통해** Microsoft 제어에 따라 릴리스된 이러한 품질 업데이트는 월간 사용할 수 있습니다. HoloLens 2는 동일한 표준 업데이트 프로세스의 일부로 기능 업데이트 및 품질 업데이트를 사용 합니다.
+Microsoft는 또한 HoloLens 2 장치에 보안 및 안정성을 위한 업데이트를 직접 전달하고 설치합니다. Windows **업데이트를 통해** Microsoft 제어에 따라 릴리스된 이러한 품질 업데이트는 월별 제공됩니다. HoloLens 2는 동일한 표준 업데이트 프로세스의 일부로 기능 업데이트 및 품질 업데이트를 사용 합니다.
 
 엔터프라이즈 고객은 MDM 시스템을 사용하여 HoloLens 2s에서 업데이트 환경 및 프로세스를 관리할 수 있습니다. 대부분의 경우 업데이트 프로세스 관리 정책이 기능 업데이트와 품질 업데이트에 모두 적용됩니다. [HoloLens 업데이트에 대한 MDM](https://docs.microsoft.com/hololens/hololens-updates)구성에 대한 자세한 내용입니다.
 
