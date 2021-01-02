@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: d577bc23089650e47159a8a77004a984059b095e
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: 417412e6b7854d9d985faa13bcf072b98e17f264
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009516"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11252975"
 ---
 # 암호 사용 제한
 
@@ -52,7 +52,7 @@ Windows Hello 자격 증명을 만들면 ID 공급자와 신뢰 관계를 설정
 
 자세한 내용은 다음의 인포그래픽을 참조하세요.
 
-  ![Winows Hello 로그인](images/security-hello-sign-in.png)
+  ![Windows Hello 로그인](images/security-hello-sign-in.png)
   
 위에 표시된 그래픽에서 Nonce는 "Number Once"를 의미하며 임의 또는 부분적인 임의로 생성된 번호입니다. Windows Hello 생체 인식 또는 PIN 자격 증명이 설정되면 프로비전된 장치를 벗어날 수 없습니다. 사용자의 Windows Hello PIN이 피싱 공격 등을 통해 도난당한 경우에도 [사용자의 물리적 장치가 없으면 아무 쓸모가 없게 됩니다.](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password) 
 
@@ -62,17 +62,17 @@ Iris 인증이 PIN으로 대체됩니다. 장치에서 새 PIN(강력한 인증�
 
 ## 웹 계정 관리자를 사용한 Single sign-on 
 
-SSO(Single sign-on)를 통해 암호를 사용하지 않는 사용자는 사용자의 개인 계정이나 회사 또는 학교 계정을 활용하여 장치에 로그인할 수 있습니다. 사용자는 [웹 계정 관리자 API](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041)를 통해 모든 통합 앱 및 서비스에서 SSO를 사용하여 자동으로 인증됩니다.
+SSO(Single sign-on)를 통해 암호를 사용하지 않는 사용자는 사용자의 개인 계정이나 회사 또는 학교 계정을 활용하여 장치에 로그인할 수 있습니다. 사용자는 [웹 계정 관리자 API](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true)를 통해 모든 통합 앱 및 서비스에서 SSO를 사용하여 자동으로 인증됩니다.
 
 하나의 응용 프로그램을 통해 ID가 추가되면 사용자 동의를 사용하여 시스템 수준 통합을 사용하는 모든 앱과 서비스에서 ID를 사용할 수 있게 됩니다. 이를 통해 앱 로그인 부담을 크게 줄이고 사용자에게 원활한 ID 환경을 제공할 수 있습니다.
 
 웹 계정 관리자 API를 구현하는 방법에 대한 자세한 내용은 [웹 계정 관리자 API 구현](https://docs.microsoft.com/windows/uwp/security/web-account-manager)을 참조하세요.
 
-  ![Winows Hello 로그인](images/security-api-img.png)
+  ![보안 API](images/security-api-img.png)
   
 특수 인증 요구 사항을 포함하는 앱 제품군의 경우 WAM(웹 계정 관리자) 프레임 워크는 사용자 지정 ID 공급자로 확장될 수 있습니다. 사용자는 Microsoft 스토어에서 UWP(유니버설 Windows 플랫폼) 앱으로 패키지화된 사용자 지정 ID 공급자를 다운로드하여 해당 ID 공급자와 통합된 다른 앱에서 SSO를 사용할 수 있습니다. 
 
-사용자 지정 WAM ID 공급자 구현에 대한 자세한 내용은 [사용자 지정 WAM ID 공급자 API 참조](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041)를 참조하세요.
+사용자 지정 WAM ID 공급자 구현에 대한 자세한 내용은 [사용자 지정 WAM ID 공급자 API 참조](https://docs.microsoft.com/uwp/api/Windows.Security.Authentication.Web.Provider?view=winrt-19041&preserve-view=true)를 참조하세요.
 
 ## WebAuthn을 사용하여 Windows Hello 및 FIDO2로 로그인
 
@@ -83,7 +83,7 @@ HoloLens2에서 암호를 사용하지 않는 사용자 자격 증명(예: Windo
 
 Windows Hello와 마찬가지로 사용자가 FIDO2 자격 증명을 생성하고 등록하면 장치(HoloLens2 또는 FIDO2 보안 키)가 장치에서 개인 및 공개 키를 생성합니다. 개인 키는 장치에 안전하게 저장되며 생체 인식 또는 PIN과 같은 로컬 제스처를 사용하여 잠금을 해제한 후에만 사용될 수 있습니다. 개인 키가 저장되면 공개 키는 클라우드에서 Microsoft 계정 시스템으로 전송되고 연결된 사용자 계정에 등록됩니다.
 
-MSA 및 AAD 계정을 사용하여 로그인한 후 시스템은 생성된 번호 또는 데이터 변수를 HoloLens2 또는 FIDO2 장치로 전송합니다. HoloLens2 또는 장치는 개인 키를 사용하여 식별 정보에 서명합니다. 서명된 ID와 메타 데이터는 Microsoft 계정 시스템으로 다시 전송되고 공개 키를 사용하여 확인됩니다.
+MSA 및 Azure AD 계정을 사용하여 로그인한 후 시스템은 생성된 번호 또는 데이터 변수를 HoloLens2 또는 FIDO2 장치로 전송합니다. HoloLens2 또는 장치는 개인 키를 사용하여 식별 정보에 서명합니다. 서명된 ID와 메타 데이터는 Microsoft 계정 시스템으로 다시 전송되고 공개 키를 사용하여 확인됩니다.
 
 Windows Hello 및 FIDO2 장치는 HoloLens 장치, 특히 기본 제공되는 신뢰할 수 있는 플랫폼 모듈 보안 엔클레이브 기반의 자격 증명을 구현합니다. TPM 엔클레이브는 개인 키를 저장하며 이에 대해 잠금을 해제하려면 생체 인식 또는 PIN이 필요합니다. 이와 유사하게 FIDO2 보안 키는 개인 키를 저장하는 기본 제공된 보안 엔클레이브가 있는 작은 외부 장치 이며 이에 대해 잠금을 해제하려면 생체 인식 또는 PIN이 필요합니다.
 
@@ -91,7 +91,7 @@ Windows Hello 및 FIDO2 장치는 HoloLens 장치, 특히 기본 제공되는 �
 
   ![FIDO img](images/security-fido2-whfb.png)
 
-MSA 및 AAD는 WebAuthn을 구현하여 암호 없는 인증을 지원하는 첫 신뢰 당사자 중 하나입니다. 
+MSA 및 Azure AD는 WebAuthn을 구현하여 암호 없는 인증을 지원하는 첫 신뢰 당사자 중 하나입니다. 
 
 응용 프로그램 및/또는 SDK에서 WebAuthn를 사용하는 방법에 대한 자세한 내용은 [Windows 10에서 암호 없는 인증을 위한 WebAuthn API](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/webauthnapis)를 참조하세요.
 

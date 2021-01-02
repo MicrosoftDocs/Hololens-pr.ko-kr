@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 95f187b2a4b6a86b59e05f3b12414c84ca0f6460
-ms.sourcegitcommit: fac3e62c1fd4dd531c2c8620870213cd570980dc
+ms.openlocfilehash: 23a850022a686389669e96e987274cc6481b936e
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "11205770"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253245"
 ---
 # HoloLens용 Windows 자동 실행 2
 
@@ -255,7 +255,7 @@ HoloLens 2에서 TenantLockdown Csp의 RequireNetworkInOOBE 노드가 true로 �
 
 RequireNetworkInOOBE는 HoloLens 2에서 TenantLockdown Csp의 a 노드가 true로 설정되 면 OOBE에서 다음 작업을 허용하지 않습니다. 
 - 런타임 프로비저닝을 사용하여 로컬 사용자 만들기 
-- 런타임 프로비저닝을 통해 AAD 참여 작업 수행 
+- 런타임 프로비저닝을 통해 Azure AD 참여 작업 수행 
 - OOBE 환경에서 장치를 소유하는 사용자 선택 
 
 #### Intune을 사용하여 설정하는 방법은 무엇인가요? 

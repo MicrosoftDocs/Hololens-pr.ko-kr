@@ -1,6 +1,6 @@
 ---
 title: HoloLens 인프라 가이드라인
-description: ''
+description: HoloLens 장치 인프라 가이드라인
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 1031eaeaf2767f8aa982d74bb282bc1fb086051b
-ms.sourcegitcommit: 77eb85608066d9a4ed01b3862afe356f7e54d583
+ms.openlocfilehash: a67aaa5df4c74531b5bed88abaa266b00de5c406
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "10940218"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253165"
 ---
 # HoloLens 네트워크 구성
 
@@ -35,7 +35,7 @@ HoloLens는 핵심적으로 Azure와 통합된 Windows 모바일 장치입니다
 
 중요한 클라우드 서비스에는 다음이 포함됩니다.
 
-- Azure Active Directory(AAD)
+- Azure AD(Azure Active Directory)
 - Windows 업데이트(WU)
 
 상업적 고객이 HoloLens 장치를 대규모로 관리하려면 엔터프라이즈 이동성 관리(EMM) 또는 모바일 장치 관리(MDM) 인프라가 필요합니다.  이 가이드에서는 [Microsoft Intune](https://www.microsoft.com/enterprise-mobility-security/microsoft-intune)을 예제로 사용하지만 Microsoft 정책을 완벽하게 지원하는 모든 공급자는 HoloLens를 지원할 수 있습니다.  모바일 장치 관리 공급자에게 HoloLens 2를 지원하는지 문의하세요.

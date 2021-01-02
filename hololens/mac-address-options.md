@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2b0ed266389ccc5a21117a604a6eb0abd214d4d1
-ms.sourcegitcommit: 1793f53f9e1cc63ac40edc09e65bb4beb80a4575
+ms.openlocfilehash: 3e06540dd7dca8892cd69abaf9a318d46ca0f3f2
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "11093244"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253145"
 ---
 # MAC 주소에 HoloLens 장치의 엔터프라이즈 등록으로 제한된 Wi-Fi 환경
 
@@ -46,8 +46,8 @@ HoloLens 장치에서 두 가지 주요 문제가 발생할 수 있으며 이는
 | 솔루션 | 장점 | 요구 사항 |
 | --- | --- | --- |
 | 이더넷 어댑터를 통한 프로비저닝 패키지 | OOBE 환경을 개선하고 보다 신속한 기술자 환경을 허용합니다. | HoloLens와 호환되는 USB C HubTechnician은 MAC용 장치와 캡처 및 OOBE finalisation을 위해 계속 상호 작용해야 합니다. |
-| 이더넷을 통해 Intune이 등록된 Autopilot | 고객 환경에 대한 단일 단계 연결 및 장치 등록을 통해 Mac 캡처는 장치와 상호 작용하지 않고도 완료할 수 있습니다. | 고객 AAD TenantHoloLens 호환 USB-C 네트워크 어댑터로 Intune 사용 |
-| MAC 주소의 자동화된 보고 | Intune 테넌트에 장치를 등록한 경우, MAC 주소 보고를 기술자에게 스크립팅합니다. | Intune Powershell Commandlets |
+| 이더넷을 통해 Intune이 등록된 Autopilot | 고객 환경에 대한 단일 단계 연결 및 장치 등록을 통해 Mac 캡처는 장치와 상호 작용하지 않고도 완료할 수 있습니다. | 고객 Azure AD TenantHoloLens 호환 USB-C 네트워크 어댑터로 Intune 사용 |
+| MAC 주소의 자동화된 보고 | Intune 테넌트에 장치를 등록한 경우, MAC 주소 보고를 기술자에게 스크립팅합니다. | Intune PowerShell Commandlets |
 
 ## 이더넷 어댑터를 통한 프로비저닝 패키지
 
@@ -117,7 +117,7 @@ HoloLens 장치에서 두 가지 주요 문제가 발생할 수 있으며 이는
 3. 장치가 이더넷 어댑터를 통해 OOBE에서 인터넷에 자동으로 연결하고, Autopilot 구성을 감지하고, Azure AD 및 Intune을 통해 자동으로 등록해야 합니다.
 4. 장치에서 Intune을 통해 필요한 Wi-Fi 인증서와 필요에 따라 추가 구성을 적용합니다.
 5. 완료되면 기술자는 Intune (끝점 관리자) 포털을 로드하고 **홈-> 장치 -> DeviceName -> 하드웨어**에서 장치 속성 페이지에 연결할 수 있습니다.
-6. Wifi MAC 주소는 Intune 포털 내에 표시됩니다.
+6. Wi-Fi MAC 주소는 Intune 포털 내에 표시됩니다.
 
 ![Intune을 통한 MAC 주소](images/mac-address-intune.jpg)
 
@@ -125,14 +125,14 @@ HoloLens 장치에서 두 가지 주요 문제가 발생할 수 있으며 이는
 
 ### 장점
 
-이렇게 하면 기술자가 장치를 착용하거나 HoloLens 환경을 수동으로 조작하지 않고도 &quot;장치 미착용&quot; 상태로 장치는 상자에서 AAD 및 Intune에 등록됩니다.
+이렇게 하면 기술자가 장치를 착용하거나 HoloLens 환경을 수동으로 조작하지 않고도 &quot;장치 미착용&quot; 상태로 장치는 상자에서 Azure AD 및 Intune에 등록됩니다.
 
 ## 기술자에게 MAC 주소 보고
 
 ### 요구 사항
 
-- 고객 테넌트에 대한 &quot;Intune 그래프 Powershell&quot;의 권한 부여
-- 기술자 컴퓨터에 Intune 그래프 Powershell 설치
+- 고객 테넌트에 대한 &quot;Intune 그래프 PowerShell&quot;의 권한 부여
+- 기술자 컴퓨터에 Intune 그래프 PowerShell 설치
 - [https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0)
 - Intune의 &quot;관리되는 장치&quot; 요소에 대 한 읽기 액세스 권한입니다. (지원 센터 연산자나 상위 또는 사용자 지정 역할)
 

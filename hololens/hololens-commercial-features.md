@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 254c1048d2a1c7b63dfe87ead4585c21153fa8bb
-ms.sourcegitcommit: fc2ce4d843229bcc9ae6c7a42da559c0f6f558b7
+ms.openlocfilehash: 51d50f863e379baffee4e44c44e3ab467b517359
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "10882988"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253175"
 ---
 # 상업용 기능
 
@@ -64,7 +64,7 @@ HoloLens(1세대)에는 개발자 라이선스 및 상용 라이선스 등 두 �
 |Microsoft Store(소비자) |소비자 |MDM을 사용하여 필터링 |MDM을 사용하여 필터링 |
 |[비즈니스 Microsoft Store 포털](https://docs.microsoft.com/microsoft-store/working-with-line-of-business-apps) | |✔️ |✔️ |
 |**보안 및 ID** | | | |
-|AAD(Azure Active Directory) 계정을 사용하여 로그인 |✔️ |✔️ |✔️ |
+|Azure AD(Azure Active Directory) 계정을 사용하여 로그인 |✔️ |✔️ |✔️ |
 |Microsoft 계정(MSA)을 사용하여 로그인 |✔️ |✔️ |✔️ |
 |PIN 잠금을 사용하는 차세대 자격 증명 |✔️ |✔️ |✔️ |
 |[보안 부팅](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-secure-boot) |✔️ |✔️ |✔️ |

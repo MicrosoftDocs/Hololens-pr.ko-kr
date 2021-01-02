@@ -13,12 +13,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f8434ffe2442f270d6360018bea4b64064168d0c
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: d8e68f73d05db397a7ee088382e82dfa762177b0
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009556"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253255"
 ---
 # 보안 개요 및 아키텍처
 
@@ -32,7 +32,7 @@ Windows HoloLens 2 및 운영 체제 아키텍처는 다음과 같은 혁신적�
   
   * **데이터 보호**: 사용자의 장치를 분실하거나 도난당한 경우 HoloLens 2에서 데이터의 BitLocker 암호화를 사용하여 권한이 없는 응용 프로그램에서 민감한 정보를 읽지 못하도록 합니다. 
   
-  * **암호를 사용하지 않는 운영 체제**: 이전의 암호 기반 운영 체제는 사용자를 피싱 위험에 실수로 노출하고 계정을 위험에 노출되도록 하는 경우가 많았습니다. Windows Holographic for Business는 MSA 및 AAD 로그인에 비밀번호를 사용하지 않으며 Windows Hello™ 및 FIDO2 로그인에서 사용자 ID 보호가 강화됩니다. 
+  * **암호를 사용하지 않는 운영 체제**: 이전의 암호 기반 운영 체제는 사용자를 피싱 위험에 실수로 노출하고 계정을 위험에 노출되도록 하는 경우가 많았습니다. Windows Holographic for Business는 MSA 및 Azure AD 로그인에 비밀번호를 사용하지 않으며 Windows Hello™ 및 FIDO2 로그인에서 사용자 ID 보호가 강화됩니다. 
   
     > [!NOTE]
     > FIDO2 지원을 받으려면 장치가 19041 이상의 빌드에서 작동해야 합니다. 

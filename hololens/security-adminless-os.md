@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c7c54c624fe2e1c48eee468e2d30fe3460f7e786
-ms.sourcegitcommit: 5877c3e51de49f949b35ab840a3312a009a4487a
+ms.openlocfilehash: 79429c960b065e401ef18520350a199704981938
+ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "11102317"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "11253085"
 ---
 # 관리자가 없는 운영 체제
 
@@ -34,9 +34,9 @@ Windows 구성 요소는 또한 시스템 UWP를 통해 AppContainer 샌드박�
 
 마지막으로 장치를 테넌트 또는 사용자 관리에 연결하는 것과 같은 특정 장치 차원의 작업 실행은 "장치 소유자"에만 허용됩니다. 장치의 사용자는 다음 단계 중 하나를 통해 이 그룹을 채웁니다.
   * 장치의 첫 사용자는 항상 소유자로 지정됩니다. 
-    * 이 규칙의 예외는 장치가 AAD에 연결된 경우 연결 작업을 수행한 사용자가 장치 소유자가 되도록 하는 것입니다. 예를 들어 장치가 Autopilot를 통해 AAD에 연결된 경우 장치에 로그인하는 첫 사용자가 장치를 AAD에 연결하지 않아서 장치 소유자가 되지 않는 경우 이에 해당됩니다. AAD에 연결한 장치의 장치 소유자가 된 사용자에 대한 자세한 내용은 [‘로컬 관리자 할당’ 설명서](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin)(HoloLens에는 관리자가 없기 때문에 ‘로컬 관리자’를 ‘장치 소유자라’라 함)를 참조하세요.
+    * 이 규칙의 예외는 장치가 Azure AD에 연결된 경우 연결 작업을 수행한 사용자가 장치 소유자가 되도록 하는 것입니다. 예를 들어 장치가 Autopilot를 통해 Azure AD에 연결된 경우 장치에 로그인하는 첫 사용자가 장치를 Azure AD에 연결하지 않아서 장치 소유자가 되지 않는 경우 이에 해당됩니다. Azure AD에 연결한 장치의 장치 소유자가 된 사용자에 대한 자세한 내용은 [‘로컬 관리자 할당’ 설명서](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin)(HoloLens에는 관리자가 없기 때문에 ‘로컬 관리자’를 ‘장치 소유자라’라 함)를 참조하세요.
   * 사용자의 수준이 장치의 다른 사용자에 의해 설정 UX에서 소유자로 상승한 경우입니다.
-  * 장치 소유자를 더 이상 가용할 수 없고(예: 퇴사) 장치가 AAD에 연결된 경우 테넌트 관리자가 Azure Portal에서 장치 소유자를 새 사용자로 변경할 수 있습니다.
+  * 장치 소유자를 더 이상 가용할 수 없고(예: 퇴사) 장치가 Azure AD에 연결된 경우 테넌트 관리자가 Azure Portal에서 장치 소유자를 새 사용자로 변경할 수 있습니다.
 Azure AD 테넌트의 전역 관리자는 이전 단계 중 하나를 요구하지 않고도 장치의 소유자로 암시적으로 로그인됩니다. 
 
 IT 관리자는 [개인 정보](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy) 정책을 통해 액세스할 수 있는 앱을 관리할 수 있습니다. 
