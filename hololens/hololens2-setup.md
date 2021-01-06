@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b2d95839ff394d61eec8f5c76baf9a151855794a
-ms.sourcegitcommit: e3056a433aeebb8bc45dc3f6db9a75f212fdf53b
+ms.openlocfilehash: 44b66d001e7a6f4bcd5fde9261a225f6aa21b666
+ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "10996406"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "11253567"
 ---
 # HoloLens 2 사용 준비
 
@@ -25,7 +25,7 @@ ms.locfileid: "10996406"
 
 ## HoloLens 충전
 
-USB-C 케이블(포함)을 사용하여 전원 공급 장치를 충전 포트에 연결합니다. 전원 공급 장치를 전원 콘센트에 연결합니다. 디바이스와 함께 제공되는 전원 공급 장치와 USB-C-to-C 케이블이 HoloLens 2를 충전하는 가장 좋은 방법입니다. 충전기는 18W의 전력을 공급합니다(2A에서 9V).
+USB-C 케이블(포함)을 사용하여 전원 공급 장치를 충전 포트에 연결합니다. 전원 공급 장치를 전원 콘센트에 연결합니다. 디바이스와 함께 제공되는 전원 공급 장치와 USB-C-to-C 케이블이 HoloLens 2를 충전하는 가장 좋은 방법입니다. 충전기는 18W의 전력을 공급합니다(2A에서 9V). 제공된 벽면 충전기를 사용하여 HoloLens 2 장치는 장치가 대기 중일 때 65분 이내에 배터리를 완전 충전할 수 있습니다.
 
 충전 속도는 디바이스가 실행되는 환경에 따라 다를 수 있습니다.
 

@@ -14,18 +14,18 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 872e9d3445df2601579ae81f4190458289fa2eea
-ms.sourcegitcommit: 8e2c268733adce2662bf320cf96ccfea5919425e
+ms.openlocfilehash: ad162d1f415430e22e683280089cacf2e1cef02a
+ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "11195601"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "11253584"
 ---
 # HoloLens 2 다시 시작, 초기화 또는 복구
 
 ## 장치 충전
 
-문제 해결 절차를 시작하기 전에 가능한 경우 장치의 배터리 용량이 20~40%정도 충전되어 있는지 확인합니다. HoloLens 2 장치와 함께 제공되는 충전기와 USB 유형 C 케이블을 사용하세요. 디바이스와 함께 제공되는 전원 공급 장치와 USB-C-to-C 케이블이 HoloLens 2를 충전하는 가장 좋은 방법입니다. 충전기는 18W의 전력을 공급합니다(2A에서 9V). 해당 액세서리를 사용할 수 없는 경우 사용할 수 있는 충전기가 최소 15W의 전원을 지원할 수 있는지 확인하세요.
+문제 해결 절차를 시작하기 전에 가능한 경우 장치의 배터리 용량이 20~40%정도 충전되어 있는지 확인합니다. HoloLens 2 장치와 함께 제공되는 충전기와 USB 유형 C 케이블을 사용하세요. 디바이스와 함께 제공되는 전원 공급 장치와 USB-C-to-C 케이블이 HoloLens 2를 충전하는 가장 좋은 방법입니다. 충전기는 18W의 전력을 공급합니다(2A에서 9V). 제공된 벽면 충전기를 사용하여 HoloLens 2 장치는 장치가 대기 중일 때 65분 이내에 배터리를 완전 충전할 수 있습니다. 해당 액세서리를 사용할 수 없는 경우 사용할 수 있는 충전기가 최소 15W의 전원을 지원할 수 있는지 확인하세요.
 
 > [!NOTE]
 > 가능하면 PC에 USB를 연결해 장치를 충전하지 마세요. 속도가 느립니다.
