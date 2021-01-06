@@ -5,12 +5,13 @@ author: hferrone
 ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
-ms.openlocfilehash: d17d9e30ca3699a7bd6c69b75043c6974a2bde1f
-ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
+ms.prod: hololens
+ms.openlocfilehash: 311da6bc52098d5ba16e4684f68fec9a01e7c23b
+ms.sourcegitcommit: 8cea4c04c6d2e22225f4de43e10c05dab840736a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253675"
+ms.locfileid: "11253854"
 ---
 # HoloLens 설명서에 참여
 
@@ -36,11 +37,11 @@ HoloLens docs는 Markdig 기능과 함께 GitHub로 docs.microsoft.com Markdown�
 >Microsoft 직원인 경우 GitHub 계정을 Microsoft 오픈 소스 포털의 Microsoft 별칭에 [연결합니다.](https://repos.opensource.microsoft.com/) **"Microsoft"** 및 **"MicrosoftDocs" 조직에 가입합니다.**
 
 GitHub 계정을 설정할 때 다음 보안 주의 사항도 권장됩니다.
-- [Github 계정의 강력한 암호를 만드시다.](https://github.com/settings/admin)
+- [GitHub 계정에 대한 강력한 암호를 만드시다.](https://github.com/settings/admin)
 - [2단계 인증을 사용하도록 설정](https://github.com/settings/two_factor_authentication/configure)
 - 복구 코드를 [안전한](https://github.com/settings/auth/recovery-codes) 장소에 저장합니다.
 - 공용 프로필 [설정을 업데이트합니다.](https://github.com/settings/profile)
-   - 이름을 설정하고 공용 *전자* 메일을 내 전자 메일 주소를 표시하지 않는 것으로 *설정하는 것을 고려합니다.*
+   - 이름을 설정하고 공용 전자 ** 메일을 내 전자 메일 주소를 표시하지 않는 *것으로 설정하는 것을 고려합니다.*
    - 작성한 문서 페이지에 미리 보기가 표시 찍기 때문에 프로필 사진을 업로드하는 것이 좋습니다.
 - 명령줄을 사용 계획하는 경우 [Windows용 Git 자격](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest)증명 관리자를 설정할 수 있습니다. 이렇게 하면 기여할 때마다 암호를 입력할 수 없습니다.
 
@@ -51,19 +52,26 @@ GitHub 계정을 설정할 때 다음 보안 주의 사항도 권장됩니다.
 다음 워크플로를 사용하여 웹 ** 브라우저에서 GitHub를 통해 기존 문서를 업데이트합니다.
 
 1. "mixed-reality-docs" 폴더에서 편집할 문서로 이동합니다.
+
 2. 오른쪽 위에 있는 편집 단추(연필 아이콘)를 선택하면 '마스터' 분기에서 삭제 가능한 분기가 자동으로 분기됩니다.
 
    ![문서를 편집합니다.](images/editpage.png)
+   
 3. "Markdown 기본"에 따라 문서의 내용을 [편집합니다.](#markdown-basics)
+
 4. 각 문서 맨 위에 있는 메타데이터를 업데이트합니다.
+
    * **제목**: 문서를 볼 때 브라우저 탭에 나타나는 페이지 제목입니다. 페이지 제목은 SEO 및 인덱싱에 사용되기 때문에 필요한 경우를 위해 제목을 변경하지 않습니다(설명서가 공개되기 전에 중요하지는 않습니다).
    * **description**: SEO 및 검색을 향상하는 문서 콘텐츠에 대한 간략한 설명을 작성합니다.
    * **author**: 페이지의 기본 소유자인 경우 여기에 GitHub 별칭을 추가합니다.
    * **ms.author**: 페이지의 기본 소유자인 경우 여기에 Microsoft 별칭을 추가합니다(@microsoft.com 필요 없습니다. 별칭만).
    * **ms.date**: 페이지에 주요 콘텐츠를 추가하는 경우 날짜를 업데이트하지만 명확성, 서식 지정, 문법 또는 맞춤법과 같은 수정 내용은 업데이트하지 않습니다.
-   * **keywords**: SEO의 키워드 지원(검색 엔진 최적화) 문서와 관련이 있지만 목록의 마지막 키워드 다음에 문장 부호가 없는 키워드를 COMMA와 공백으로 구분하여 추가합니다. 모든 문서에 적용되는 전역 키워드를 추가할 필요는 없습니다. 이러한 키워드는 다른 곳에서 관리됩니다. 
+   * **키워드**: SEO의 키워드 지원(검색 엔진 최적화) 문서와 관련이 있지만 목록의 마지막 키워드 다음에 문장 부호가 없는 키워드를 COMMA와 공백으로 구분하여 추가합니다. 모든 문서에 적용되는 전역 키워드를 추가할 필요는 없습니다. 이러한 키워드는 다른 곳에서 관리됩니다. 
+   
 5. 문서 편집을 완료한 후 아래로 스크롤하여 파일 변경 **제안을 선택합니다.**
+
 6. 다음 페이지에서 끌어오기 요청 만들기를 선택하여 자동으로 만들어진 분기를 'master.'로 병합합니다. ****
+
 7. 편집하려는 다음 문서에 대해 위의 단계를 반복합니다.
 
 ## 기존 문서 이름 변경 또는 삭제
@@ -83,22 +91,26 @@ GitHub 계정을 설정할 때 다음 보안 주의 사항도 권장됩니다.
 ```
 
 - 제거하고 있는 이전 문서의 상대적 리포지토리 `source_path` 경로입니다. 경로가 .로 시작하고 으로 `mixed-reality-docs` 끝나야 `.md` 합니다.
+
 - 이전 문서에서 새 문서까지의 상대 공용 `redirect_url` URL입니다. 이 **URL에는** 리포지토리 경로가 아니라 공용 URL을 참조하는 URL이 포함되어 `mixed-reality-docs` 있지 `.md` 않은지 확인합니다. 새 문서에서 사용하는 섹션에 대한 `#section` 링크가 허용됩니다. 필요한 경우 여기에서 다른 사이트에 대한 절대 경로를 사용할 수도 있습니다.
+
 - `redirect_document_id` 이전 파일의 문서 ID를 유지할지 여부를 나타냅니다. 기본값은 `false` . 리디렉션된 문서의 특성 값을 `true` `ms.documentid` 유지하려는 경우 사용하세요. 문서 ID를 보존하면 페이지 보기 및 순위와 같은 데이터가 대상 문서로 전송됩니다. 리디렉션이 주로 이름과 같은 일부 콘텐츠만 다루는 다른 문서에 대한 포인터가 아닌 경우 이 작업을 합니다.
 
 리디렉션을 추가하는 경우 이전 파일도 삭제해야 합니다.
 
 ## 새 문서 만들기
 
-다음 워크플로를 *사용하여* 웹 브라우저에서 GitHub를 통해 설명서 리포지터에 새 문서를 만들 수 있습니다.
+다음 워크플로를 *사용하여* 웹 브라우저에서 GitHub를 통해 설명서 리포지터에 새 문서를 만듭니다.
 
-1. MicrosoftDocs/mixed-reality 'master' 분기에서 포크를 만드십시오(오른쪽 위에 있는 **포크** 단추 사용).
+1. MicrosoftDocs/mixed-reality 'master' 분기(오른쪽 위에 있는 포크 단추 사용)에서 **포크를** 만드십시오.
 
    ![마스터 분기를 분기합니다.](images/forkbranch.png)
+   
 2. "mixed-reality-docs" 폴더에서 오른쪽 **** 위에 새 파일 만들기를 선택합니다.
+
 3. 문서의 페이지 이름을 만들고(공백 대신 하이픈을 사용하며 문장 부호나 아포스트로피를 사용하지 않습니다) ".md"를 추가합니다.
 
-   ![새 페이지의 이름을 지정합니다.](images/newpagetitle.PNG)
+   ![새 페이지의 이름을 지정합니다.](images/newpagetitle.png)
    
    >[!IMPORTANT]
    >"mixed-reality-docs" 폴더 내에서 새 문서를 만들어야 합니다. 새 파일 이름 줄에서 "/mixed-reality-docs/"를 확인하여 이를 확인할 수 있습니다.
@@ -118,20 +130,23 @@ GitHub 계정을 설정할 때 다음 보안 주의 사항도 권장됩니다.
    ```
 
 5. 위의 섹션의 지침에 따라 관련 메타데이터 [필드를 입력합니다.](#editing-an-existing-article)
+
 6. Markdown 기본을 사용하여 문서 [콘텐츠를 작성합니다.](#markdown-basics)
+
 7. 다른 관련 문서에 대한 링크가 있는 문서 `## See also` 아래쪽에 섹션을 추가합니다.
+
 8. 완료되면 새 **파일 커밋을 선택합니다.**
+
 9. 새 **끌어오기** 요청을 선택하고 포크의 '마스터' 분기를 MicrosoftDocs/mixed-reality 'master'로 병합합니다(화살표가 올바른 방법을 가리키고 있는지 확인).
 
-   ![포크에서 MicrosoftDocs/혼합 현실로 끌어오기 요청 만들기](images/pr_to_master.PNG)
+   ![포크에서 MicrosoftDocs/혼합 현실로 끌어오기 요청 만들기](images/pr-to-master.png)
 
 ## Markdown 기본
 
 다음 리소스는 Markdown 언어를 사용하여 설명서를 편집하는 방법을 배우는 데 도움이 됩니다.
 
 - [Markdown 기본](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-- [Markdown-at-a-Glance 참조 포스터](images/MarkdownPoster.pdf)
-- [에 대한 Markdown을 작성하기 위한 추가 docs.microsoft.com](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
+- [표식 작성을 위한 추가 docs.microsoft.com](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
 
 ### 테이블 추가
 
@@ -164,7 +179,7 @@ Microsoft 직원: 기여한 내용이 '마스터' 분기에 병합된 후 공개
 
 ## 브라우저에서 편집 및 데스크톱 클라이언트로 편집
 
-브라우저에서 편집하는 것이 빠른 변경을 수행하는 가장 쉬운 방법입니다. 그러나 몇 가지 단점이 있습니다.
+브라우저에서 편집하는 것이 빠르게 변경하는 가장 쉬운 방법입니다. 그러나 몇 가지 단점이 있습니다.
 
 - 맞춤법 검사를 받을 수 없습니다.
 - 다른 문서에 대한 스마트 연결은 얻을 수 없습니다(문서의 파일 이름을 수동으로 입력해야 합니다).
@@ -174,14 +189,14 @@ Microsoft 직원: 기여한 내용이 '마스터' 분기에 병합된 후 공개
 
 ## 코드 Visual Studio 사용
 
-위에 [나열된](#editing-in-the-browser-vs-editing-with-a-desktop-client)이유로 웹 브라우저 대신 데스크톱 클라이언트를 사용하여 문서를 편집하는 것이 좋습니다. 이 코드는 [Visual Studio 좋습니다.](https://code.visualstudio.com/)
+위에 [나열된](#editing-in-the-browser-vs-editing-with-a-desktop-client)이유로 웹 브라우저 대신 데스크톱 클라이언트를 사용하여 문서를 편집하는 것이 좋습니다. 이 코드는 Visual Studio [좋습니다.](https://code.visualstudio.com/)
 
 ### Setup
 
 다음 단계에 따라 이 리포지 Visual Studio 코드가 작동하도록 구성합니다.
 
 1. 웹 브라우저에서:
-    1. [PC용 Git를 설치합니다.](https://git-scm.com/downloads)
+    1. [PC용 Git을 설치합니다.](https://git-scm.com/downloads)
     2. 코드 [Visual Studio 설치합니다.](https://code.visualstudio.com/)
     3. [아직 MicrosoftDocs/혼합](#creating-a-new-article) 현실을 포크하지 않은 경우
     4. 포크에서 복제를 **선택하거나 URL을 다운로드하여** 복사합니다.
@@ -200,26 +215,32 @@ Microsoft 직원: 기여한 내용이 '마스터' 분기에 병합된 후 공개
 >문서 편집 [](#editing-an-existing-article) 및 만들기에 대한 모든 지침과 위의 [Markdown](#markdown-basics)편집 기본 사항은 Visual Studio 코드를 사용할 때 적용됩니다. [](#creating-a-new-article)
 
 1. 복제된 포크가 공식 리포지타이어를 통해 최신으로 유지해야 합니다.
+
    1. 웹 브라우저에서 MicrosoftDocs/mixed-reality '마스터'의 다른 참가자의 최근 변경 내용을 포크에 동기화하는 끌어오기 요청을 생성합니다(화살표가 올바른 방법을 가리키고 있는지 확인).
       
-      ![MicrosoftDocs/mixed-reality에서 포크로 변경 내용 동기화](images/sync_repos.PNG)
+      ![MicrosoftDocs/mixed-reality에서 포크로 변경 내용 동기화](images/sync-repos.png)
+      
    2. Visual Studio 코드에서 동기화 단추를 선택하여 최신 업데이트된 포크를 로컬 복제본에 동기화합니다.
       
-      ![동기화 단추 이미지 클릭](images/sync_clone.png)
+      ![동기화 단추 이미지 클릭](images/sync-clone.png)
+      
 2. 코드 코드를 사용하여 복제된 리포지타이트에서 Visual Studio 편집합니다.
+
    1. 하나 이상의 문서를 편집합니다(필요한 경우 이미지를 "images" 폴더에 추가).
+   
    2. **탐색기에서** 변경 **내용을 저장합니다.**
       
-      ![탐색기에서 "모두 저장"을 선택](images/explorer_save.png)
+      ![탐색기에서 "모두 저장"을 선택](images/explorer-save.png)
+      
    3. **원본 제어의** 모든 **변경** 내용을 커밋합니다(메시지가 표시될 때 커밋 메시지 쓰기).
       
-      ![소스 제어에서 "모두 커밋"을 선택](images/source_control_commit.png)
    4. 동기화 **단추를 선택하여** 변경 내용을 원본(GitHub의 포크)에 다시 동기화합니다.
       
-      ![동기화 단추 클릭](images/sync_back.png)
+      ![동기화 단추 클릭](images/sync-back.png)
+      
 3. 웹 브라우저에서 포크의 새로운 변경 내용을 MicrosoftDocs/mixed-reality '마스터'에 다시 동기화하는 끌어오기 요청을 생성합니다(화살표가 올바른 방법을 가리키고 있는지 확인).
 
-   ![포크에서 MicrosoftDocs/혼합 현실로 끌어오기 요청 만들기](images/pr_to_master.PNG)
+   ![포크에서 MicrosoftDocs/혼합 현실로 끌어오기 요청 만들기](images/pr-to-master.png)
 
 ### 유용한 확장
 
@@ -230,4 +251,4 @@ Microsoft 직원: 기여한 내용이 '마스터' 분기에 병합된 후 공개
    - 목록, 표 및 docs 관련 설명선과 같은 서식을 `>[!NOTE]` 추가합니다.
    - 내부 링크 및 책갈피(페이지 내의 특정 섹션에 대한 링크)를 검색하고 참조합니다.
    - 서식 오류가 강조 표시됩니다(자세한 내용은 오류 위에 마우스를 놓아야 합니다).
-- [코드 맞춤법 검사기](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) - 철자가 떨어졌다는 단어에 밑선이 그어지기 단어의 올바른 선택을 마우스 오른쪽 단추로 클릭하여 변경하거나 사전에 저장합니다.
+- [코드 맞춤법 검사기](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) - 철자가 떨어졌다는 단어에 밑선이 그어지기 올바른 단어의 선택이 없는 단어를 마우스 오른쪽 단추로 클릭하여 변경하거나 사전에 저장합니다.
