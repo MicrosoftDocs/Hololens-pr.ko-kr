@@ -118,6 +118,6 @@
 ## [Microsoft HoloLens 참가자 미리 보기](hololens-insider.md)
 ## [HoloLens(1세대) 릴리스 정보](hololens1-release-notes.md)
 
-# [피드백 보내기]
+# 피드백을 보내 주세요.
 ## [피드백 허브를 통해 피드백 제공](hololens-feedback.md)
 ## [HoloLens 문서 기여 가이드](contributing.md)
