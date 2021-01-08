@@ -14,12 +14,12 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: ad162d1f415430e22e683280089cacf2e1cef02a
-ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
+ms.openlocfilehash: 7845a00d1141fb721683c4e3f2a884ed0c37c735
+ms.sourcegitcommit: 33911e3b405732d0d31a27039c8f590d52b647c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253584"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "11254835"
 ---
 # HoloLens 2 다시 시작, 초기화 또는 복구
 
@@ -49,6 +49,7 @@ ms.locfileid: "11253584"
 특정 상황에서는 소프트웨어 UI를 사용하지 않고 수동으로 장치를 초기화해야 할 수 있습니다.
 
 ### 표준 절차
+
 1. 유형 C 케이블을 뽑아 전원 공급 장치 또는 호스트 PC에서 장치를 분리합니다.
 
 2. **전원** 버튼을 15초간 길게 누릅니다. 모든 LED가 꺼집니다.
@@ -88,7 +89,7 @@ ms.locfileid: "11253584"
 
 기본적으로 고급 복구 도우미는 최신 기능 릴리스 빌드를 다운로드할 수 있도록 설정되어 있습니다. 여기를 체크표시하여 [릴리스 노트](hololens-release-notes.md#)를 읽어보고 최신 기능 릴리스에 대해 알아보세요. 최신 HoloLens 2 FFU(Full Flash Update) 패키지를 다운로드하여 고급 복구 도우미를 통해 장치를 리플래시하려면 [여기를 클릭하여 최신 월간 HoloLens 2 이미지를 다운로드하세요](https://aka.ms/hololens2download). 이 버전은 일반적으로 사용할 수 있는 최신 빌드입니다.
 
-리플래시 절차를 시작하기 전에 앱이 Windows 10 PC에 설치되어 실행 중인지 확인하고 장치를 감지할 준비가 되었는지 확인합니다.
+리플래시 절차를 시작하기 전에 앱이 Windows 10 PC에 설치되어 실행 중인지 확인하고 장치를 감지할 준비가 되었는지 확인합니다. 또한 HoloLens가 최소 40%까지 청구되는지 확인합니다.
 
 ![HoloLens 2 클린 리플래시 스크린샷](images/ARC1.png)
 
@@ -126,22 +127,21 @@ ms.locfileid: "11253584"
 
 IT 환경에서 Windows 스토어 앱을 사용하지 못하도록 하거나 소매점에 대한 액세스를 제한하는 경우 IT 관리자가 '오프라인' 배포 경로를 통해 이 앱을 사용할 수 있도록 할 수 있습니다.
 
- >[!NOTE] 
+ >[!NOTE]
  > - IT 관리자가 SCCM(System Center Configuration Manager) 또는 Intune을 통해 이 앱을 배포할 수도 있습니다.
  > - 이 가이드는 고급 복구 도우미에 중점을 두지만 다른 ‘오프라인’ 앱에 대해서도 이 프로세스를 사용할 수 있습니다.
 
 배포 경로를 설정하려면 다음 단계를 따릅니다.
 1. [비즈니스용 Microsoft 스토어](https://businessstore.microsoft.com)로 이동하고 Azure Active Directory ID를 사용하여 로그인합니다.
 
-1. **관리 – 설정**으로 이동합니다. **장바구니**에서 **오프라인 앱 표시**를 켭니다. 
+1. **관리 – 설정**으로 이동합니다. **장바구니**에서 **오프라인 앱 표시**를 켭니다.
 1. **내 그룹샵**으로 이동하여 [**_고급 복구 도우미_*_](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8)를 검색합니다.
 1. _*라이선스 유형**을 **_오프라인_*_ 으로 변경하고 _*관리**를 선택합니다.
 1. **오프라인으로 사용하기 위해 패키지 다운로드**에서 두 번째 파란색 **다운로드** 버튼을 클릭합니다. 파일 확장명이 *.appxbundle*인지 확인합니다.
 
     - 이 단계에서 데스크톱 PC에서 인터넷에 액세스할 수 있으면 패키지를 두 번 클릭하여 앱을 설치합니다.
 
-
-    - 대상 PC가 인터넷에 연결되어 있지 않으면 다음 단계를 따릅니다. 
+    - 대상 PC가 인터넷에 연결되어 있지 않으면 다음 단계를 따릅니다.
        1. 인코딩되지 않은 라이선스를 선택한 다음 **라이선스 생성**을 선택합니다.
        2. **필수 프레임워크**에서 **다운로드**를 선택합니다.
        3. DISM을 통해 종속성과 라이선스를 사용하여 패키지를 적용합니다. 관리자 명령 프롬프트에서 다음 명령을 실행합니다.
@@ -153,7 +153,7 @@ IT 환경에서 Windows 스토어 앱을 사용하지 못하도록 하거나 소
             > 이 코드 예제에 나와있는 버전 번호는 현재 사용 가능한 버전과 다를 수 있습니다. 예제의 위치와 다른 다운로드 위치를 선택했을 수도 있습니다. 필요에 따라 명령을 변경합니다.
 
 > [!TIP]
-> 고급 복구 도우미를 사용하여 FFU를 오프라인으로 설치하려는 경우 플래시 이미지를 다운로드하면 유용할 수 있습니다. [**HoloLens 2의 현재 이미지를 다운로드합니다**](https://aka.ms/hololens2download). 
+> 고급 복구 도우미를 사용하여 FFU를 오프라인으로 설치하려는 경우 플래시 이미지를 다운로드하면 유용할 수 있습니다. [**HoloLens 2의 현재 이미지를 다운로드합니다**](https://aka.ms/hololens2download).
 
 다른 리소스:
 - [오프라인 앱 배포](https://docs.microsoft.com/microsoft-store/distribute-offline-apps) 
