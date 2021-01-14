@@ -11,25 +11,147 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 11/10/2020
+ms.date: 1/13/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 260b195a18ecb7fe05d819fcd3e86d56fc2022bf
-ms.sourcegitcommit: 74e9989240dc0c324df35e8651b2f307f9d42148
+ms.openlocfilehash: 06c3faf573adabe158a72a66fc4b8a45afec48fb
+ms.sourcegitcommit: e26aa9059a7d8e73914205e80a89ea9637926e74
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "11201342"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "11269399"
 ---
 # Microsoft HoloLens 참가자 미리 보기
 
-HoloLens용 최신 Insider Preview 빌드를 시작하세요! HoloLens의 [get started](hololens-insider.md#start-receiving-insider-builds) 다음 주요 운영 체제 업데이트에 대해 간단하게 시작하고 중요한 피드백을 제공할 수 있습니다.
+HoloLens용 최신 Insider Preview 빌드를 시작하세요! HoloLens의 [](hololens-insider.md#start-receiving-insider-builds) 다음 주요 운영 체제 업데이트에 대해 간단하게 시작하고 중요한 피드백을 제공할 수 있습니다.
 
 ## Windows Insider Release Notes
 
-최근에 모든 Windows Insider 기능을 출시했습니다. 이러한 모든 기능이 이제 일반적으로 사용 가능해지기 때문에 모든 최신 기능을 볼 수 있도록 릴리스 정보를 읽어 보시고자 합니다. [release notes](hololens-release-notes.md) 새로운 흥미로운 기능의 플라이트를 시작하여 사용해 볼 수 있는 곳을 계속 확인하세요!
+Windows Insiders에 새로운 기능의 플라이트를 다시 시작하게 됩니다. We will be flighting to the Dev Channel for the latest updates. Windows Insider 빌드에 추가 기능 및 업데이트를 추가하면 이 페이지가 계속 업데이트됩니다.  이러한 업데이트를 현실에 혼합할 수 있도록 기다렸다가 준비하세요. 
+
+| 기능 이름                                              | 간단한 설명                                                                      | 빌드에서 사용 가능 |
+|-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
+| [새 Microsoft Edge](#introducing-the-new-microsoft-edge) | 이제 HoloLens 2에서 새로운 Chromium 기반 Microsoft Edge를 사용할 수 있습니다.                         | 20279.1006 |
+| [새 설정 앱](#new-settings-app)                     | 레거시 설정 앱이 새로운 기능 및 설정으로 업데이트된 버전으로 대체되고 있습니다. | 20279.1006 |
+| [기본 앱 선택기](#default-app-picker)                 | 각 파일 또는 링크 유형에 대해 시작해야 하는 앱 선택                                      | 20279.1006 |
+| [Office Web App](#office-web-app)                         | Office Web App 바로 가기가 이제 "모든 앱"에 나열됩니다.                                   | 20279.1006 |
+| [스와이프하여 입력](#swipe-to-type)                           | 손가락 팁을 사용하여 홀로그램 키보드에서 단어 "스와이프"                        | 20279.1006 |
+
+### 새 Microsoft Edge 소개
+
+![새 Microsoft Edge 로고에 대한 레거시 Microsoft Edge 로고 애니메이션](images/new-edge.gif)
+
+새로운 Microsoft [Edge는 Chromium](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) 오픈 소스 프로젝트를 채택하여 고객에게 더 나은 호환성을 만들고 웹 개발자를 위한 웹 조각화가 줄어 습니다. 
+
+이 Insider 미리 보기를 통해 HoloLens 2 고객은 새 Microsoft Edge를 처음으로 사용할 수 있습니다. 새 Microsoft Edge는 결국 HoloLens 2의 레거시 Microsoft Edge를 대체하는 반면, 현재 두 브라우저는 모두 Insiders에서 사용할 수 있습니다. 새 Microsoft Edge 또는 피드백 허브를 통해 피드백 보내기 기능을 통해 피드백 및 버그를 팀과 [공유해 주세요.](hololens-feedback.md) ****
+
+![새 Microsoft Edge 스크린샷](images/new-edge-ui.png)
+
+#### 새 Microsoft Edge 시작
+
+Insiders에 사용할 수 있는 두 가지 버전의 Microsoft Edge가 있습니다. 새 Microsoft Edge 새 Microsoft Edge 아이콘(파란색 및 녹색 소용구 아이콘으로 표시)과 레거시 ![ Microsoft Edge(흰색 "e" 아이콘으로 표시)가 ](images/new_edge_logo.png) 있습니다. 새 Microsoft Edge가 시작 메뉴에 고정되고 웹 링크를 활성화하면 자동으로 시작됩니다. 레거시 Microsoft Edge를 기본 웹 브라우저로 다시 사용하겠는 경우 아래 지침을 참조하여 기본 앱을 [초기화하세요.](#default-app-picker)
+
+> [!NOTE]
+> HoloLens 2에서 새 Microsoft Edge를 처음 시작하면 레거시 Microsoft Edge에서 설정 및 데이터를 가져올 수 있습니다. 새 Microsoft Edge를 시작한 후 레거시 Microsoft Edge를 계속 사용하는 경우 새 데이터는 레거시 Microsoft Edge에서 새 Microsoft Edge로 동기화되지 않습니다.
+
+#### 새 Microsoft Edge에 대한 정책 설정 구성
+
+새로운 Microsoft Edge는 IT 프로에게 이전에 레거시 Microsoft Edge에서 사용할 수 있는 것보다 HoloLens 2의 훨씬 광범위한 브라우저 정책 집합을 제공합니다. 
+
+다음은 새 Microsoft Edge의 정책 설정 관리에 대한 자세한 정보를 알아보는 데 도움이 되는 몇 가지 리소스입니다.
+- [Microsoft Intune을 사용하여 Microsoft Edge 정책 설정 구성](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
+- [Microsoft Edge 레거시에서 Microsoft Edge로 정책 매핑](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
+- [Google Chrome에서 Microsoft Edge로 정책 매핑](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
+- 전체 [Microsoft Edge Enterprise 설명서](https://docs.microsoft.com/deployedge/)
+
+> [!IMPORTANT]
+> 새 Microsoft Edge에서 지원되는 브라우저 정책의 양 때문에 Microsoft 팀은 각 새 정책이 HoloLens 2에서 작동하는지 보장할 수 없습니다. 그러나 이전에 HoloLens 2에서 지원했던 각 레거시 Microsoft Edge 정책에 해당하는 새 Microsoft Edge가 예상대로 작동하고 확인했습니다. Microsoft [Edge 레거시와 Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge) 정책 매핑을 참조하여 HoloLens 2에서 사용 중이던 각 레거시 Microsoft Edge 브라우저 정책에 해당하는 새 Microsoft Edge를 찾아 보십시오.
+>
+> HoloLens 2에서 작동하지 않는 ** 새로운 Microsoft Edge 정책이 두 개 이상 있습니다.
+> - EnterpriseModeSiteList
+> - EnterpriseSiteListServiceURL
+
+#### HoloLens 2의 새로운 Microsoft Edge에서 예상할 일
+
+새 Microsoft Edge는 HoloLens 2와 같은 UWP 전용 장치에서 실행될 수 있도록 하는 새로운 UWP 어댑터 계층이 있는 네이티브 Win32 앱이기 때문에 일부 기능을 즉시 사용할 수 없는 경우도 있습니다. 앞으로 몇 개월 동안 새로운 시나리오 및 기능을 지원할 예정이니 이 공간에서 최신 정보를 확인하시기 바랍니다.
+
+**작동해야 하는 시나리오 및 기능:**
+- 첫 실행 환경, 프로필에 로그인 및 동기화
+- 웹 사이트가 렌더링 및 예상대로 행동해야 합니다.
+- 대부분의 브라우저 기능(즐겨찾기, 기록 등)이 예상대로 작동해야 합니다.
+- 어두운 모드
+- 장치에 웹앱 설치
+- 확장 설치(HoloLens 2에서 제대로 작동하지 않는 확장을 사용하는 경우 알려주세요.
+- PDF 보기 및 표시
+- 단일 브라우저 창의 공간 소리
+- 브라우저의 자동 및 수동 업데이트
+- 인쇄 메뉴에서 PDF 저장("PDF로 저장" 옵션 사용)
+
+**곧 제공될 시나리오 및 기능:**
+- WebXR 및 360 뷰어 확장
+- 환경에 배치된 여러 창을 탐색할 때 창을 수정하기 위한 콘텐츠 복원
+- 동시 오디오 스트림이 있는 여러 창의 공간 소리
+- 비디오, 혼합 현실 캡처 또는 화면 공유를 사용하여 브라우저를 통해 Microsoft Teams 통화에 참가(오디오를 사용하여 통화에 참가하는 것이 잘 작동)
+- "참조, 말하기"
+- 인쇄
+
+**가장 알려진 브라우저 문제:**
+- 장치를 초기화하면 새 Microsoft Edge가 제거됩니다.
+- 홀로그램 키보드의 돋보기 미리 보기에 잘못된 콘텐츠가 표시됩니다.
+
+### 새 설정 앱
+
+이 릴리스에서는 새로운 버전의 설정 앱을 소개합니다. 새 설정 앱에는 입력/출력 오디오 장치, 개별 앱 볼륨, 전원 및 절전, 이더넷 어댑터, 접근성, 비행기 모드 및 기본 앱 영역의 HoloLens 2에 대한 새로운 기능과 확장된 설정이 포함되어 있습니다.
+
+> [!NOTE]
+> 새 설정 앱은 레거시 설정 앱과는 별개이기 때문에 이전에 환경에 배치한 설정 창은 업데이트 시 제거됩니다.
+
+![새 설정 앱 홈페이지](images/new-settings-app.png)
+
+**새로운 기능 및 설정**
+- 설정 검색: 키워드 또는 설정 이름을 사용하여 설정 홈에서 설정 검색
+- 소리:
+  - 입력 및 출력 오디오 장치: 입력 및 출력 오디오 장치를 독립적으로 선택하십시오(예: Bluetooth 헤드폰을 통해 오디오를 듣거나 오디오 입력에 USB-C 마이크를 사용). 참고: Bluetooth 마이크는 HoloLens 2에서 지원되지 않습니다.
+  - 앱 볼륨: 각 앱의 볼륨을 독립적으로 조정
+- 배터리 절약 모드: 배터리 절약 모드를 수동으로 사용하도록 설정하거나 배터리 절약 모드가 자동으로 켜진 지점에 배터리 임계값을 설정합니다.
+- 전원 & 절전: 장치가 비활성 기간 후 절전으로 이동해야 하는 시기 선택
+- USB: 기본적으로 USB 연결을 사용하지 않도록 설정할 수 있습니다.
+- 네트워크 & 인터넷:
+  - 이제 USB-C 이더넷 어댑터가 네트워크 & 표시됩니다.
+  - 이제 해당 IP 주소를 포함하여 USB-C 이더넷 어댑터 설정을 사용할 수 있습니다.
+  - 이제 HoloLens 2에서 비행기 모드를 사용하도록 설정할 수 있습니다.
+- 앱: 파일 및 링크 유형에 사용되는 기본 앱을 다시 설정할 수 있습니다. 자세한 [내용은 기본 앱 선택을](#default-app-picker) 참조하세요.
+- 접근성: 텍스트 크기 및 일부 시각적 효과 변경
+
+**알려진 문제**
+- 이전에 배치된 설정 창이 제거됩니다(위의 참고 참조).
+- 알림 페이지를 방문하면 설정 앱이 충돌할 수 있습니다(조사 중).
+- 현재 이더넷 페이지가 표시되지 않습니다(곧 수정될 예정).
+- UWP 어댑터 계층에서 지원하는 Win32 데스크톱 응용 프로그램 특성으로 인해 새 Microsoft Edge의 배터리 사용량이 정확하지 않을 수 있습니다(곧 수정이 예상되지 않을 예정입니다).
+
+### 기본 앱 선택기
+
+하이퍼링크를 활성화하거나 앱을 지원하는 설치된 앱이 두 개 이상 있는 파일 형식을 열면 파일 또는 링크 형식을 처리해야 하는 설치된 앱을 선택하라는 새 창이 열립니다. 이 창에서 선택한 앱이 파일 또는 링크 형식 "한 번" 또는 "항상"을 처리하게 선택할 수도 있습니다. 
+
+![앱 선택기 창](images/default-app-picker.png)
+
+"항상"을 선택하지만 나중에 특정 파일 또는 링크 형식을 처리하는 앱을 변경하려면 앱의 설정에서 저장된 기본값을 **> 있습니다.** 페이지 아래쪽으로 스크롤하고 "파일 **** 형식에 대한 기본 앱" 및/또는 "링크 형식의 기본 앱"에서 지우기 단추를 선택합니다. 데스크톱 PC의 유사한 설정과 달리 개별 파일 형식 기본값은 다시 설정할 수 없습니다.
+
+### Office Web App
+
+Office Web App이 시작 메뉴의 "모든 앱" 목록에 추가되었습니다. 이 웹앱은 시작 또는 제거에 고정할 수도 있습니다. 웹앱이기 때문에 해당 기능은 방문하여 경험하는 기능과 정확히 https://www.office.com 일치합니다. Office Web App 기능은 HoloLens 2에 활성 인터넷 연결이 있는 경우만 사용할 수 있습니다.
+
+### 스와이프하여 입력
+
+일부 고객은 입력하려는 단어의 모양을 스와이프하여 가상 키보드에서 "입력"하는 것이 더 빠르며 홀로그램 키보드에 대해 이 기능을 미리 보고 있습니다. 홀로그램 키보드의 평면을 통해 손가락 팁을 전달하고 단어의 모양을 스와이프한 다음 키보드 평면에서 손가락 끝을 철회하여 한 단어씩 한 번씩 스와이프할 수 있습니다. 단어 사이에 있는 키보드에서 손가락을 제거하여 스페이스바를 누르지 않고도 후속 단어를 스와이프할 수 있습니다. 키보드에서 손가락을 움직일 때 뒤로 미는 내선이 표시될 경우 이 기능이 작동하고 있는 것을 알 수 있습니다.
+
+휴대폰 디스플레이와 달리 손가락에 대한 저항이 느껴지지 않는 홀로그램 키보드의 특성 때문에 이 기능을 사용 및 마스터하기가 까다로울 수 있습니다. 이 기능은 공개 릴리스에서 평가 중이기 때문에 사용자 의견이 중요합니다. 이 기능이 유용하게 사용되거나 생성적 피드백이 있는지 여부에 따라 피드백 허브를 통해 [알려주세요.](hololens-feedback.md)
+
+
+
+
 
 ## Insider 빌드 수신 시작
 
@@ -40,15 +162,15 @@ HoloLens용 최신 Insider Preview 빌드를 시작하세요! HoloLens의 [get s
 >
 > 백 엔드에서 발생할 수 있는 버그가 발생하여 다시 추적할 수 있습니다.
 
-HoloLens 2 장치에서 보안 **Settings**Windows & 업데이트로 이동하고  >  **Update & Security**  >  **Windows Insider Program** **시작을 선택합니다.** Windows Insider로 등록하는 데 사용한 계정을 연결합니다.
+HoloLens 2 장치에서 보안 **** Windows & 설정 업데이트로 이동하고  >  ****  >  **** **시작을 선택합니다.** Windows Insider로 등록하는 데 사용한 계정을 연결합니다.
 
-Windows 내부자는 이제 채널로 이동하고 있습니다. 빠른 **링은** 개발자 채널이 **되고,** **슬로우** 링은 베타 채널이 **되고,** **릴리스** 미리 보기 링은 릴리스 미리 보기 **채널이 됩니다.** 매핑의 모양은 다음과 같습니다.
+Windows 내부자는 이제 채널로 이동하고 있습니다. 빠른 **링은** 개발자 채널이 되고, **슬로우** 링은 **** 베타 채널이 **되고,** 릴리스 미리 보기 링은 릴리스 미리 보기 **** **채널이 됩니다.** 매핑의 모양은 다음과 같습니다.
 
 ![Windows Insider Channels 설명](images/WindowsInsiderChannels.png)
 
 자세한 내용은 Windows 블로그에 [Windows Insider Channels](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) 소개를 참조하세요.
 
-그런 다음 **Windows의 활성**개발을 선택하고 개발자 **Dev Channel** 채널 또는 **Beta Channel** 베타 채널 빌드를 받을지 여부를 선택하고 프로그램 용어를 검토합니다.
+그런 다음 **Windows의 활성**개발을 선택하고 개발자 **** 채널 또는 **** 베타 채널 빌드를 받을지 여부를 선택하고 프로그램 용어를 검토합니다.
 
 지금 **다시 > 확인을** 선택하여 완료합니다. 장치를 다시 시작한 후 설정 > 업데이트 & **보안** > 최신 빌드를 다운로드하는 업데이트를 확인합니다.
 
@@ -58,18 +180,18 @@ Windows 내부자는 이제 채널로 이동하고 있습니다. 빠른 **링은
 
     1. .에서 PC에 ffu를 [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) 다운로드합니다.
     
-    1. Microsoft Store에서 ARC(고급 복구 도우미)를 설치합니다. [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
+    1. Microsoft Store에서 ARC(Advanced Recovery Companion)를 설치합니다. [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
     
-1. HoloLens - 플라이트 **Settings**잠금 해제: 보안 Windows & 프로그램으로 설정 열기 업데이트 후 등록하고 장치를 다시  >  **Update & Security**  >  **Windows Insider Program** 시작하십시오.
+1. HoloLens - 플라이트 **** 잠금 해제: 보안 Windows & 프로그램으로 설정 열기 업데이트 후 장치를 등록하고 장치를  >  ****  >  **** 다시 시작합니다.
 
 1. 플래시 FFU - 이제 ARC를 사용하여 플라이트 서명된 FFU를 플래시할 수 있습니다.
 
 ## 피드백 제공 및 문제 보고
 
-HoloLens에서 피드백 허브 앱을 사용하여 피드백을 제공하고 문제를 보고하세요. [the Feedback Hub app](hololens-feedback.md) 피드백 허브를 사용하면 엔지니어가 문제를 빠르게 디버그하고 해결하는 데 도움이 되는 필요한 모든 진단 정보가 포함됩니다.  중국어 및 일본어 버전의 HoloLens 관련 문제는 동일한 방식으로 보고해야 합니다.
+HoloLens에서 피드백 허브 앱을 사용하여 피드백을 제공하고 문제를 보고하세요. [](hololens-feedback.md) 피드백 허브를 사용하면 엔지니어가 문제를 빠르게 디버그하고 해결하는 데 도움이 되는 필요한 모든 진단 정보가 포함됩니다.  중국어 및 일본어 버전의 HoloLens 관련 문제는 동일한 방식으로 보고해야 합니다.
 
 > [!NOTE]
-> 피드백 허브가 문서 폴더에 액세스할지 묻는 메시지를 수락해야 합니다(메시지가 표시될 때 예 선택). **Yes**
+> 피드백 허브가 문서 폴더에 액세스할지 묻는 메시지를 수락해야 합니다(메시지가 표시될 때 예 선택). ****
 
 ## 개발자 참고 사항
 
@@ -77,10 +199,10 @@ HoloLens에서 피드백 허브 앱을 사용하여 피드백을 제공하고 �
 
 ## Insider 빌드 수신 중지
 
-Windows Holographic의 Insider 빌드를 더 이상 받지 못하게 하려는 경우 HoloLens가 프로덕션 빌드를 [recover your device](hololens-recovery.md) 실행 중일 때 옵트아웃하거나 고급 복구 도우미를 사용하여 장치를 비 Insider 버전의 Windows Holographic으로 복구할 수 있습니다.
+Windows Holographic의 Insider 빌드를 더 이상 받지 못하게 하려는 경우 HoloLens가 프로덕션 빌드를 [](hololens-recovery.md) 실행 중일 때 옵트아웃하거나 고급 복구 도우미를 사용하여 장치를 비 Insider 버전의 Windows Holographic으로 복구할 수 있습니다.
 
 > [!CAUTION]
-> Insider Preview 빌드를 수동으로 다시 설치한 후 Insider Preview 빌드에서 등록을 등록하지 않은 사용자가 파란색 화면을 경험하는 알려진 문제가 있습니다. 그런 다음 장치를 수동으로 복구해야 합니다. 영향이 있을지 아니면 그렇지 않을지에 대한 자세한 내용은 이 알려진 문제에서 자세히 [확인하시기 바랍니다.](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)
+> Insider Preview 빌드를 수동으로 다시 설치한 후 Insider Preview 빌드에서 등록을 등록하지 않은 사용자가 파란색 화면을 경험하는 알려진 문제가 있습니다. 이후 장치를 수동으로 복구해야 합니다. 영향이 있을지 아니면 그렇지 않을지에 대한 자세한 내용은 이 알려진 문제에서 자세히 [확인하시기 바랍니다.](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)
 
 HoloLens에서 프로덕션 빌드를 실행 중인지 확인:
 
@@ -90,6 +212,6 @@ HoloLens에서 프로덕션 빌드를 실행 중인지 확인:
 
 Insider 빌드를 옵트아웃(opt out)하는 경우:
 
-1. 프로덕션 빌드를 실행하는 HoloLens에서 **설정**> 업데이트 & Windows & 프로그램으로 이동한 다음 > 빌드 중지를 **선택합니다.**
+1. 프로덕션 빌드를 실행하는 HoloLens에서 **Windows**> 보안 > 업데이트 & 업데이트로 이동한 > 빌드 중지를 **선택합니다.**
 
 1. 지침에 따라 디바이스를 옵트아웃합니다.
