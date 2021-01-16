@@ -13,20 +13,28 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c0ea468df2188700af408803ae1c55b9d0e4c763
-ms.sourcegitcommit: ea5fa6c970756025b77c00b4ea600d60ce033106
+ms.openlocfilehash: 7658ace4879fef401accabb95ca22e307e5f80a8
+ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "11268004"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271662"
 ---
 # 원격 지원을 사용하여 외부 클라이언트에 HoloLens 2 배포
 
-이 문서는 IT 사용자가 원격 지원에 중점을 두는 HoloLens 2 장치를 계획하고 배포하는 데 도움이 됩니다. [원격 지원에 대해 자세히 알아보시고.](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist)
+이 가이드는 IT 전문가가 조직에 Microsoft HoloLens 2 장치를 배포하는 데 도움이 됩니다.
+
+1. HoloLens 2 장치 클라우드 연결
+1. 사용할 외부 클라이언트에 HoloLens 2 장치 대출
+1. 대출된 보안 장치
+
+이 가이드에서는 대부분의 HoloLens 2 배포 시나리오에 적용할 수 있는 일반적인 [](#common-concerns) [HoloLens 2](#general-deployment-recommendations-and-instructions) 배포 권장 사항과 외부 사용을 위해 원격 지원을 배포할 때 고객이 가지는 일반적인 우려 사항을 제공합니다.
 
 ## 시나리오 설명
 
-이 문서의 목적을 위해 Contoso Company는 단기 또는 장기 사용을 위해 HoloLens 2 장치를 외부 클라이언트의 공장에 발송하기를 원합니다. 클라이언트가 기계를 서비스하는 데 도움이 필요한 경우 클라이언트는 Contoso Company에서 제공하는 자격 증명을 사용하여 HoloLens 2 장치에 로그인하고 원격 지원을 사용하여 Contoso Company의 전문가에게 연락합니다.
+이 문서의 목적을 위해 Contoso Company는 단기 또는 장기 사용을 위해 HoloLens 2 장치를 외부 클라이언트의 공장에 발송하기를 원합니다. 클라이언트가 기계를 서비스하는 데 도움이 필요한 경우 클라이언트는 Contoso Company에서 제공하는 자격 증명을 사용하여 HoloLens 2 장치에 로그인하고 원격 지원을 사용하여 Contoso 회사의 전문가에게 연락합니다.
+
+원격 지원에 대한 자세한 내용은 여기에서 [자세히 알아보십시오.](https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview#learn-about-remote-assist)
 
 ### 이 시나리오에 대한 요구 사항
 
@@ -61,7 +69,7 @@ HoloLens에 대한 원격 지원 HoloLens 통화는 지원되지 않습니다. �
 1. 클라이언트가 액세스하지 못하게 할 앱(예: 전자 메일)을 [차단합니다(앱](#how-to-restrict-apps)제한 방법 참조).
 1. 사용자 이름이나 암호를 클라이언트와 공유하지 않습니다. HoloLens 2에 로그인하려면 전자 메일 및 숫자 PIN이 필요합니다.
 
-두 번째 옵션은 클라이언트를 호스트하는 별도의 테넌트를 만드는 것입니다(이미지 1.1 참조).
+두 번째 옵션은 클라이언트를 호스트하는 별도의 테넌트(이미지 1.1 참조)를 만드는 것입니다.
 
 **이미지 1.1**
 
@@ -75,7 +83,7 @@ HoloLens에 대한 원격 지원 HoloLens 통화는 지원되지 않습니다. �
 
 1. 암호 만료를 제거합니다. 그러나 이렇게 하면 계정이 손상될 가능성이 높아집니다. NIST 암호 권장은 30-90일마다 암호를 변경하는 것입니다.
 1. HoloLens 2 장치의 암호 만료를 90일을 초과할 수 있습니다.
-1. 암호를 변경하기 위해 장치를 Contoso로 반환해야 합니다. 그러나 장치가 90일 이상 클라이언트의 공장에 있을 것으로 예상되는 경우 이로 인해 문제가 발생할 수 있습니다.  
+1. 암호를 변경하기 위해 장치를 Contoso로 반환해야 합니다. 그러나 이로 인해 장치가 90일 이상 클라이언트의 공장에 있을 것으로 예상되는 경우 문제가 발생할 수 있습니다.  
 1. 여러 클라이언트로 전송되는 장치의 경우 장치를 클라이언트에 전달하기 전에 암호를 다시 설정하십시오.
 
 ### 클라이언트가 채팅 기록에 액세스할 수 없는지 확인하는 방법
@@ -83,7 +91,7 @@ HoloLens에 대한 원격 지원 HoloLens 통화는 지원되지 않습니다. �
 원격 지원은 각 세션 후 채팅 기록을 지우습니다. 그러나 Microsoft Teams 사용자가 채팅 기록을 사용할 수 있습니다.
 
 > [!NOTE]
-> Single Sign-On이 사용하도록 설정되어 있는 경우 [**WDAC를**](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac)사용하여 브라우저를 사용하지 않도록 설정하는 것이 중요합니다. 외부 클라이언트가 브라우저를 열고 Teams의 웹 버전을 사용하는 경우 클라이언트는 통화/채팅 기록에 액세스할 수 있습니다.
+> Single Sign-On이 사용하도록 설정되어 있는 경우 [**WDAC를**](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac)사용하여 브라우저를 사용하지 않도록 설정하는 것이 중요합니다. 외부 클라이언트가 브라우저를 열고 웹 버전의 Teams를 사용하는 경우 클라이언트는 통화/채팅 기록에 액세스할 수 있습니다.
 
 ## 일반 배포 권장 사항 및 지침
 
@@ -103,16 +111,16 @@ HoloLens 2 배포 단계에는 다음이 권장됩니다.
 1. [테넌트는](https://docs.microsoft.com/hololens/hololens-release-notes#tenantlockdown-csp-and-autopilot) 테넌트에만 가입할 수 있도록 디바이스를 잠습니다.
     1. **추가 링크:** [테넌트 잠금 CSP.](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp)
 1. 여기에 대한 전역 할당 액세스를 사용하여 키오스크를 [구성합니다.](https://docs.microsoft.com/hololens/hololens-global-assigned-access-kiosk)
-1. 다음과 같은(선택 사항) 기능을 사용 안 하게 하는 것이 좋습니다.
+1. 다음(선택 사항) 기능을 사용 안 하게 하는 것이 좋습니다.
     1. 여기에서 디바이스를 개발자 모드로 전환하는 [기능을 제공합니다.](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock)
-    1. HOloLens를 PC에 연결하여 날짜를 복사하여 [USB를 사용하지 않도록 설정하는 기능을 제공합니다.](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection)
+    1. HOloLens를 PC에 연결하여 날짜를 복사하여 [USB를 사용할 수 없습니다.](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection)
        > [!NOTE]
         > USB를 사용하지 않도록 설정하고 USB를 사용하여 장치에 프로비저닝 패키지를 적용하려는 경우 여기에 나열된 지침을 [**따릅니다.**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 
 1. [WDAC를 사용하여](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac) HoloLens 2 장치에서 앱을 허용하거나 검은색 앱을 허용합니다.
-1. 설치의 일부로 원격 지원을 최신 버전으로 업데이트합니다. 이 작업을 위한 두 가지 옵션이 있습니다.
+1. 설치의 일부로 원격 도우미를 최신 버전으로 업데이트합니다. 이 작업을 위한 두 가지 옵션이 있습니다.
     1. 이 수행은 Windows **Microsoft Store --> --> 앱 업데이트로 > 수 있습니다.**
-    1. 또 다른 방법은 자동 업데이트를 위해 HoloLens 2를 밤에 플러그 인된 그대로 두는 것입니다.
+    1. [ApplicationManagement/AllowAppStoreAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) CSP를 사용하여 자동 업데이트를 사용하도록 설정하고 업데이트를 받기 위해 장치를 계속 연결합니다.
 1. [사용자가 클라이언트 사이트에서](https://docs.microsoft.com/hololens/settings-uri-list) 게스트 네트워크에 연결할 수 있도록 네트워크 설정을 제외한 모든 설정 페이지를 사용하지 않도록 설정합니다.
 1. [HoloLens 업데이트 관리](https://docs.microsoft.com/hololens/hololens-updates)
     1. OS 업데이트를 [제어하거나](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure#create-and-assign-update-rings) 자유롭게 진행할 수 있는 옵션입니다.

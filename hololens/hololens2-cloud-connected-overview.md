@@ -14,18 +14,18 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7d954347c7c274b844d436c0d6fc96e8bbc59f10
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: fe83333c99f8dbf23b211c9b5155db256dcd20b3
+ms.sourcegitcommit: 50e4d61a31b94d5007776064b4012e26cf9ecbbb
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253185"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "11271679"
 ---
 # 배포 가이드 - 원격 지원이 있는 클라우드 연결 HoloLens 2 - 개요
 
-이 가이드는 IT 전문가가 Dynamics 365 원격 도우미를 사용하여 조직에 클라우드로 연결되는 전체적인 목표를 사용하여 Microsoft HoloLens 2 장치를 계획하고 조직에 배포하는 데 도움이 됩니다. 이 모델은 다양한 HoloLens 2 사용 사례에서 조직에 개념 증명 배포를 위한 모델로 사용할 수 있습니다.
+이 가이드는 IT 전문가가 Dynamics 365 원격 도우미를 사용하여 조직에 클라우드로 연결되는 전체적인 목표를 사용하여 Microsoft HoloLens 2 장치를 계획하고 조직에 배포하는 데 도움이 됩니다. 이는 다양한 HoloLens 2 사용 사례에서 조직에 개념 증명 배포를 위한 모델로 사용할 수 있습니다.
 
-이 가이드에서는 디바이스를 장치 관리에 등록하고, 필요한 경우 라이선스를 적용하고, 최종 사용자가 장치 설정 시 원격 지원을 즉시 사용할 수 있는지 검증하는 방법을 다를 것입니다. 이를 위해 HoloLens 2를 통해 대규모로 배포를 구현하는 설정 및 실행에 필요한 인프라의 중요한 요소에 대해 설명합니다.
+이 가이드에서는 디바이스를 장치 관리에 등록하고, 필요한 경우 라이선스를 적용하고, 최종 사용자가 장치 설정 시 원격 지원을 즉시 사용할 수 있는지 검증하는 방법을 다를 것입니다. 이를 위해 HoloLens 2를 통해 대규모로 배포할 수 있도록 설정 및 실행에 필요한 인프라의 중요한 요소에 대해 설명합니다.
 
 ## 이 가이드의 설명
 
@@ -39,13 +39,13 @@ ms.locfileid: "11253185"
   - 지원되는 장치당 사용자 한명 또는 여러명
 - 완전히 열기에서 단일 앱 키오스크까지 특정 사용 사례에 따라 다양한 수준의 장치 잠금 구성이 적용됩니다.
 
-![클라우드 연결 시나리오](./images/cloud-connected-deployment-chart.png)
+![클라우드 연결 시나리오](./images/cloud-connected-guide-diagram.png)
 
 이 가이드에서는 다른 장치 제한 또는 구성이 적용되지는 않습니다. 그러나 완료 후 이러한 옵션을 살펴보는 것이 좋습니다.
 
 ## 원격 지원에 대해 자세히
 
-원격 도우미를 사용하면 공동 유지 관리 및 복구, 원격 검사뿐만 아니라 지식 공유 및 교육을 사용할 수 있습니다. 원격 지원을 사용하여 다른 역할 및 위치에 있는 사람을 연결하면 기술자가 Microsoft Teams의 원격 공동 작업자와 연결할 수 있습니다. 비디오, 스크린샷 및 주석을 결합하여 동일한 위치에 있지 않은 경우에도 실시간으로 문제를&#39;수 있습니다. 원격 공동 작업자는 HoloLens에서 헤드업 및 핸즈&#39;동안에는 기술자가 물리적 공간을 참조할 수 있도록 참조 이미지, 도형 및 기타 유용한 정보를 삽입할 수 있습니다.
+원격 도우미를 사용하면 공동 유지 관리 및 복구, 원격 검사뿐만 아니라 지식 공유 및 교육을 사용할 수 있습니다. 원격 지원을 사용하여 기술자가 다른 역할 및 위치에 있는 사람을 연결하면 Microsoft Teams의 원격 공동 작업자와 연결할 수 있습니다. 비디오, 스크린샷 및 주석을 결합하여 동일한 위치에 있지 않은 경우에도 실시간으로 문제를&#39;수 있습니다. 원격 공동 작업자는 HoloLens에서 헤드업 및 핸즈&#39;동안에는 기술자가 물리적 공간을 참조할 수 있도록 참조 이미지, 도형 및 기타 유용한 정보를 삽입할 수 있습니다.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
