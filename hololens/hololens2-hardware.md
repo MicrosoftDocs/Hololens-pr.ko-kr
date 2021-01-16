@@ -12,16 +12,16 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8678e238ca17ad66873d4e4ea72ebef161ee6315
-ms.sourcegitcommit: d261604bf9e7ef04c2a947611715d0bec78b4f92
+ms.openlocfilehash: 41508b8cdc2e8e34545c1e07136b69eea2e3aa48
+ms.sourcegitcommit: e97b2b8f47ac5ec2e3be3e5d69d8e026b6f21111
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "11270729"
+ms.locfileid: "11271179"
 ---
 # <span data-ttu-id="0d066-104">HoloLens 2 하드웨어</span><span class="sxs-lookup"><span data-stu-id="0d066-104">HoloLens 2 hardware</span></span>
 
-![HoloLens 2 측면 보기](images/hololens2-exploded-medium.png)
+![HoloLens 2 측면 보기](images/hololens2-breakdown.png)
 
 <span data-ttu-id="0d066-106">Microsoft HoloLens 2는 테더링되지 않은 홀로그램 컴퓨터입니다.</span><span class="sxs-lookup"><span data-stu-id="0d066-106">Microsoft HoloLens 2 is an untethered holographic computer.</span></span>  <span data-ttu-id="0d066-107">HoloLens(1세대)에 의해 시작된 홀로그램 컴퓨팅 여정을 조정하여 보다 편안하고 몰입감 있는 경험을 혼합 현실에서 협업할 수 있는 더 많은 옵션과 함께 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="0d066-107">It refines the holographic computing journey started by HoloLens (1st gen) to provide a more comfortable and immersive experience paired with more options for collaborating in mixed reality.</span></span>
 
@@ -69,7 +69,7 @@ ms.locfileid: "11270729"
 | <span data-ttu-id="0d066-154">IMU(관성 측정 장치)</span><span class="sxs-lookup"><span data-stu-id="0d066-154">Inertial measurement unit (IMU)</span></span> | <span data-ttu-id="0d066-155">가속도계, 자이로스코프, 자력계</span><span class="sxs-lookup"><span data-stu-id="0d066-155">Accelerometer, gyroscope, magnetometer</span></span> |
 | <span data-ttu-id="0d066-156">카메라</span><span class="sxs-lookup"><span data-stu-id="0d066-156">Camera</span></span> | <span data-ttu-id="0d066-157">8-MP 스틸, 1080p30 동영상</span><span class="sxs-lookup"><span data-stu-id="0d066-157">8-MP stills, 1080p30 video</span></span> |
 
-![HoloLens 2 센서](images/hl2-sensors.png)
+![HoloLens 2 센서](images/hololens2-front-view.png)
 
 > [!NOTE]
 > <span data-ttu-id="0d066-159">그림에서 호출된 센서를 덮지 마세요.</span><span class="sxs-lookup"><span data-stu-id="0d066-159">Do no cover any of the sensors that are called out in the picture.</span></span> <span data-ttu-id="0d066-160">머리 추적 카메라는 매우 넓은 FOV를 사용 중입니다. 카메라를 덮지 않을 뿐만 아니라 아무 것도 덮지 말아야 합니다.</span><span class="sxs-lookup"><span data-stu-id="0d066-160">The head tracking cameras have a very wide FOV, nothing should be around them in addition to not covering them.</span></span>
