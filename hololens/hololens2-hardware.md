@@ -12,16 +12,16 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8678e238ca17ad66873d4e4ea72ebef161ee6315
-ms.sourcegitcommit: d261604bf9e7ef04c2a947611715d0bec78b4f92
+ms.openlocfilehash: 41508b8cdc2e8e34545c1e07136b69eea2e3aa48
+ms.sourcegitcommit: e97b2b8f47ac5ec2e3be3e5d69d8e026b6f21111
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "11270729"
+ms.locfileid: "11271179"
 ---
 # HoloLens 2 하드웨어
 
-![HoloLens 2 측면 보기](images/hololens2-exploded-medium.png)
+![HoloLens 2 측면 보기](images/hololens2-breakdown.png)
 
 Microsoft HoloLens 2는 테더링되지 않은 홀로그램 컴퓨터입니다.  HoloLens(1세대)에 의해 시작된 홀로그램 컴퓨팅 여정을 조정하여 보다 편안하고 몰입감 있는 경험을 혼합 현실에서 협업할 수 있는 더 많은 옵션과 함께 제공합니다.
 
@@ -69,7 +69,7 @@ Microsoft HoloLens 2는 테더링되지 않은 홀로그램 컴퓨터입니다. 
 | IMU(관성 측정 장치) | 가속도계, 자이로스코프, 자력계 |
 | 카메라 | 8-MP 스틸, 1080p30 동영상 |
 
-![HoloLens 2 센서](images/hl2-sensors.png)
+![HoloLens 2 센서](images/hololens2-front-view.png)
 
 > [!NOTE]
 > 그림에서 호출된 센서를 덮지 마세요. 머리 추적 카메라는 매우 넓은 FOV를 사용 중입니다. 카메라를 덮지 않을 뿐만 아니라 아무 것도 덮지 말아야 합니다.
