@@ -14,16 +14,14 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e52cc2f031c284b619c61ffa04f259f76397faf5
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: ab0c58d5a97d5dbaf83adf321d1f9fbc01b3ad03
+ms.sourcegitcommit: 37910c10f0f98aa9cbdc29124cd8f14ee0af3fbd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253095"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "11280657"
 ---
 # 앱 설치 관리자를 통해 HoloLens 2에 앱 설치
-
-**HoloLens** 2 장치에 응용 프로그램을 보다 원활하게 설치할 수 있도록 새로운 기능(앱 설치 관리자)을 추가하고 있습니다. 이 기능은 관리되지 않는 장치에 대해 기본적으로 **설정됩니다.** 엔터프라이즈 중단을 방지하기 위해 현재 관리되는 디바이스에서는 앱 설치 관리자를 사용할 **수** 없습니다.  
 
 > [!NOTE]
 > 이 기능은 Windows [Holographic 버전 20H2 – 2020년 12월 업데이트에서 사용할 수 있습니다.](hololens-release-notes.md) 이 기능을 [사용하기 위해](hololens-update-hololens.md) 장치가 업데이트되어 있는지 확인합니다.
@@ -45,7 +43,7 @@ ms.locfileid: "11253095"
  기능은 현재 HoloLens 2 디바이스용 Windows Holographic 20H2 빌드에서 사용할 수 있습니다. 이 메서드를 사용하는 모든 장치가 [업데이트되도록 합니다.](hololens-update-hololens.md)
 
 ### 앱의 경우: 
-앱 설치 관리자에서 스토어의 **** 종속성에 따라 앱의 솔루션 구성이 마스터 또는 릴리스가 되어야 합니다. **** 앱 패키지 [만들기에 대한 자세한 내용은 다음을 참조하세요.](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)
+앱 설치 관리자에서 스토어의 **** 종속성 사용으로 앱의 솔루션 구성은 마스터 또는 릴리스가 되어야 합니다. **** 앱 패키지 [만들기에 대한 자세한 내용은 다음을 참조하세요.](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)
 
 이 방법을 통해 설치된 앱은 디지털 서명을 해야 합니다. 인증서를 사용하여 앱에 서명해야 합니다. MS 신뢰할 수 있는 [CA](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)목록에서 인증서를 얻을 수 있습니다. 이 경우 추가 작업을 수행하지 필요가 없습니다. 또는 인증서를 장치에 푸시해야 하는 자체 인증서에 서명할 수 있습니다.
 
@@ -63,7 +61,7 @@ ms.locfileid: "11253095"
 
 ## 설치 방법
 
-1. 장치가 관리되는 것으로 간주되지 않는지 확인합니다.
+1. 디바이스가 관리되는 것으로 간주되지 않는지 확인합니다.
 1. HoloLens 2 디바이스가 전원이 설정 및 로그인된지 확인합니다.
 1. PC에서 사용자 지정 앱으로 이동하고app.appxbundle을devicename\Internal Storage\Downloads에 복사합니다.
     파일 복사를 마친 후 장치 연결을 끊고 나중에 설치를 완료할 수 있습니다.
@@ -78,9 +76,9 @@ ms.locfileid: "11253095"
 
 ### 설치 문제 해결
 
-앱이 설치에 실패한 경우 다음을 확인하여 문제를 해결합니다.
+앱을 설치하지 못한 경우 다음을 확인하여 문제를 해결합니다.
 
-- 앱은 마스터 또는 릴리스 빌드입니다.
+- 앱은 마스터 빌드 또는 릴리스 빌드입니다.
 - 디바이스가 이 기능을 사용할 수 있는 빌드로 업데이트됩니다.
 - 인터넷에 [연결되어 있습니다.](hololens-network.md)
 - [Microsoft Store에 대한 끝점이](hololens-offline.md) 올바르게 구성되었습니다.  

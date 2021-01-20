@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 417412e6b7854d9d985faa13bcf072b98e17f264
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 2d9527c9fee2818dfe8aa1f88a2f193415323bb1
+ms.sourcegitcommit: 37910c10f0f98aa9cbdc29124cd8f14ee0af3fbd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11252975"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "11280667"
 ---
 # 암호 사용 제한
 
@@ -97,8 +97,8 @@ MSA 및 Azure AD는 WebAuthn을 구현하여 암호 없는 인증을 지원하�
 
 ## 로컬 계정
 
-단일 로컬 계정을 오프라인 모드 배포용으로 구성할 수 있습니다. 로컬 계정은 기본적으로 사용하도록 설정되어 있지 않으며 장치 프로비전 중에 구성해야 합니다. 로컬 계정은 암호를 사용하여 로그인해야 하며 대체 인증 방법(예: [비즈니스용 Windows Hello](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview) 또는 [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello))이 지원되지 않습니다. 
+단일 로컬 계정을 오프라인 모드 배포용으로 구성할 수 있습니다. 로컬 계정은 기본적으로 사용하도록 설정되어 있지 않으며 장치 프로비전 중에 구성해야 합니다. 암호로 로그인해야 하며 대체 인증 방법(예: [비즈니스용 Windows Hello](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview) 또는 [Windows Hello](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello))을 지원하지 않습니다. 
 
 HoloLens 사용자 계정에 대한 자세한 내용은 [HoloLens ID](https://docs.microsoft.com/hololens/hololens-identity)를 참조하세요. 
 
-IT 관리자는 [AllowMicrosoftAccountConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection)을 통해 사용자가 전자 메일 이외의 관련 연결 인증 및 서비스에 MSA 계정을 사용할 수 있는지 여부를 조정할 수 있습니다. 암호 구성 정책, 유휴 정책 및 잠금 화면 정책에 대한 자세한 내용은 [장치 잠금](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock)을 참조하세요. 
+IT 관리자는 [AllowMicrosoftAccountConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection)을 통해 사용자가 전자 메일 이외의 관련 연결 인증 및 서비스에 MSA 계정을 사용할 수 있는지 여부를 조정할 수 있습니다. 암호 구성 정책, 유휴 정책 및 잠금 화면 정책은 [장치 잠금](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock)을 참조하세요. 
