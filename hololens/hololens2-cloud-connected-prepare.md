@@ -1,6 +1,6 @@
 ---
-title: 배포 가이드 - 원격 지원으로 클라우드 연결 HoloLens 2 배포 대규모 - 준비
-description: 클라우드 연결 네트워크를 통해 HoloLens 장치 등록을 준비하는 방법
+title: 배포 가이드 - 원격 지원으로 클라우드에 연결된 HoloLens 2 배포 대규모 - 준비
+description: Azure Active Directory 및 ID 관리를 사용하여 클라우드 연결 네트워크를 통해 HoloLens 장치 등록을 준비하는 방법을 설명합니다.
 keywords: HoloLens, 관리, 클라우드 연결, 원격 지원, AAD, Azure AD, MDM, 모바일 장치 관리
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a4e99740d985a709683595cd5afef76094faaf76
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 067917396631f9a89a50b13ef1b7dcca8b631f52
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253055"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283869"
 ---
 # 준비 - 클라우드 연결 가이드
 
@@ -51,14 +51,14 @@ Azure AD는 ID 및 액세스 관리를 제공하는 클라우드 기반 디렉�
 Enterprise Mobility + Security의 일부인 Microsoft [Intune은](https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune)테넌트에 연결된 장치를 관리하는 클라우드 기반 MDM 시스템입니다. Office 365와 마찬가지로 Intune은 ID 관리를 위해 Azure AD를 사용 하여 직원이 Office 365에 로그인하는 데 사용하는 동일한 자격 증명을 사용하여 Intune에 장치를 등록합니다. Intune은 iOS 및 Android와 같은 다른 운영 체제를 실행하여 완전한 MDM 솔루션을 제공하는 장치도 지원합니다. 이 가이드에서는 HoloLens&#39;대규모로 클라우드 배포를 사용하도록 설정하기 위해 Intune을 사용하는 데 중점을 두는 것이 좋습니다.
 
 > [!IMPORTANT]
-> 모바일 장치 관리는 반드시 필요합니다. 이 가이드를&#39;아직 설정하지 않은 경우 [Intune을 시작하세요.](https://docs.microsoft.com/mem/intune/fundamentals/free-trial-sign-up)
+> 모바일 장치 관리는 반드시 필요합니다. 이 가이드를&#39;아직 설정하지 않은 경우 [Intune으로 시작하세요.](https://docs.microsoft.com/mem/intune/fundamentals/free-trial-sign-up)
 
 > [!NOTE]
 > 여러 MDM 시스템이 Windows 10을 지원하고 개인 및 회사 장치 배포 시나리오를 지원합니다. Windows 10 Holographic을 지원하는 MDM 공급자는 현재 AirWatch, MobileIron 등입니다. 업계 최고의 MDM 공급업체가 대부분 Azure AD와의 통합을 이미 지원하고 있습니다. [Azure 마켓플레이스](https://azure.microsoft.com/marketplace/)에서 Azure AD를 지원하는 MDM 공급업체를 찾을 수 있습니다.
 
 ## 네트워크
 
-이 설치에서는 사용 가능한 모든 개방형 네트워크에서 인터넷에 연결하는 HoloLens 2 Wi-Fi 있습니다. 사용자는 위치에 따라 네트워크 연결을 변경해야 할 수 있습니다. [HoloLens 장치를 Wi-Fi에](https://docs.microsoft.com/hololens/hololens-network) 연결하는 방법을 배워야 합니다.
+이 설치에서는 사용 가능한 열려 있는 모든 네트워크에서 인터넷에 연결하는 HoloLens 2 Wi-Fi 있습니다. 사용자는 위치에 따라 네트워크 연결을 변경해야 할 수 있습니다. [HoloLens 장치를 Wi-Fi에](https://docs.microsoft.com/hololens/hololens-network) 연결하는 방법을 배워야 합니다.
 
 Dynamics 365 Remote Assist의 경우 비디오 통화 환경에 영향을 줄 수 있는 대역폭, 대기 시간, 지터 및 패킷 손실을 비롯한 다양한 네트워크 조건이 있습니다. 대역폭이 감소된 환경에서는 오디오 및 비디오 통화가 가능하기는 하지만 기능 저하가 발생할 수 있습니다. HoloLens에서 Dynamics 365 원격 도우미를 사용하는 경우 유의해야 할 네트워크 요구 사항은 다음과 같습니다.
 

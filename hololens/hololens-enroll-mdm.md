@@ -1,6 +1,6 @@
 ---
 title: MDM에 HoloLens 등록
-description: 여러 장치를 더 쉽게 관리하기 위해 MDM(모바일 장치 관리)에 HoloLens를 등록합니다.
+description: 여러 장치를 보다 쉽게 관리하기 위해 MDM(모바일 장치 관리)에 HoloLens를 등록하는 방법을 학습합니다.
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 2a9b3fca-8370-44ec-8b57-fb98b8d317b0
@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 7c17cbf88fc2e7a6dcd9aa600ad6e6910edb29a8
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: b9473f4e80f6438ef4c438711ac0de342c5327e1
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253235"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283189"
 ---
 # MDM에 HoloLens 등록
 
@@ -57,4 +57,4 @@ OOBE 또는 로그인 후 선택한 ID 유형에 따라 다양한 등록 방법�
 
 ## Intune에서 HoloLens의Enroll을 Unenroll(HoloLens)
 
-디바이스의 사용 안 을(를) 설정하는 데 대한 자세한 내용은 이 [페이지를 참조하세요.](https://docs.microsoft.com/windows/client-management/mdm/disconnecting-from-mdm-unenrollment) 
+디바이스의 사용 안 을(를) 설정하는 방법을 자세히 알아보시고 이 페이지를 [방문하세요.](https://docs.microsoft.com/windows/client-management/mdm/disconnecting-from-mdm-unenrollment) 

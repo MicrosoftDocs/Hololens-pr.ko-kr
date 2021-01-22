@@ -1,6 +1,6 @@
 ---
 title: 개요 - 앱 관리
-description: 앱, 관리, 앱 관리
+description: 모바일 장치 관리, 비즈니스용 Microsoft Store 및 프로비저닝 패키지를 사용하여 혼합 현실 앱 관리에 대한 개요를 시작하세요.
 keywords: HoloLens, 사용자, 계정, 앱, 응용 프로그램 관리,
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2ca0b05b6ed61ddce327a44fedbbcf280b33a106
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: 951c79e49d67c1a0308e236e4283ffa498a7139f
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252669"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283709"
 ---
 # 앱 관리: 개요
 

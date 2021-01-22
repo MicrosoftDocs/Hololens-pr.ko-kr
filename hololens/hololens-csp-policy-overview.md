@@ -1,6 +1,6 @@
 ---
 title: CSP 및 장치 관리 구성 개요
-description: CSP, 정책 및 장치 관리를 구성하는 방법
+description: 모바일 장치 관리 및 프로비저닝 패키지를 사용하여 CSP, 정책 및 장치 관리를 구성하는 방법을 학습합니다.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -13,16 +13,16 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c6da29506035525b1b1b5141a04603f63de1ef24
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: 60e73a9a70a70c5c583edc73a0add2f0f502ef80
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252779"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283249"
 ---
 # CSP 및 장치 관리 구성 개요
 
-IT 관리자는 HoloLens 2에서 정책 설정을 정의하고 구현할 수 있습니다. 사용할 구성 설정은 배포 시나리오에 따라 다르며, IT 부서에 가장 광범위한 제어 범위를 제공하는 것은 회사 장치입니다. Windows 10에서 CSP(구성 서비스 공급자)는 장치에서 구성 설정을 읽거나 설정, 수정 또는 삭제할 수 있는 인터페이스입니다. 이러한 설정은 레지스트리 키 또는 파일에 매핑됩니다. 일부 구성 서비스 공급자는 WAP 형식을 지원하고, 일부는 SyncML을 지원하며, 일부는 두 가지를 모두 지원합니다.
+IT 관리자는 HoloLens 2에서 정책 설정을 정의하고 구현할 수 있습니다. 사용할 구성 설정은 배포 시나리오에 따라 다르며, IT 부서에 가장 광범위한 제어 범위를 제공하는 것은 회사 장치입니다. Windows 10에서 CSP(구성 서비스 공급자)는 장치에서 구성 설정을 읽고, 설정하고, 수정하거나, 삭제할 수 있는 인터페이스입니다. 이러한 설정은 레지스트리 키 또는 파일에 매핑됩니다. 일부 구성 서비스 공급자는 WAP 형식을 지원하고, 일부는 SyncML을 지원하며, 일부는 두 가지를 모두 지원합니다.
 
 Windows 10 Holographic 장치 관리 CSP에 대한 자세한 내용은 HoloLens 장치에서 지원되는 [전체 CSP 목록을 참조하세요.](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)
 IT 관리자는 장치에서 정책 CSP를 관리할 수 있습니다. [HoloLens 2에서](https://docs.microsoft.com/windows/client-management/mdm/policy-csps-supported-by-hololens2)지원하는 정책 CSP의 전체 목록을 참조하세요.
@@ -51,7 +51,7 @@ HoloLens 2는 사용자 지정 프로비저닝 패키지를 통해 HoloLens 2 �
 
 설정 앱 정책을 사용하여 기본적으로 설정에 액세스할 수 있는 ID를 제어합니다. 이 정책을 사용하여 선택 페이지만 표시하거나 선택한 모든 페이지를 숨기도록 설정 앱을 구성할 수 있습니다. [사용 가능한 페이지를 구성하는 방법을 읽어 읽습니다.](settings-uri-list.md)
 
-이 기능은 현재 Windows [Insider 빌드에서만 사용할 수 있습니다.](hololens-insider.md) 이 기능을 사용하려는 장치가 빌드 19041.1349+에 있도록 합니다.
+이 기능은 현재 Windows [Insider 빌드에서만 사용할 수 있습니다.](hololens-insider.md) 이 기능을 사용하려는 디바이스가 빌드 19041.1349+에 있도록 합니다.
 
 ### WDAC
 

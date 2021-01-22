@@ -1,6 +1,6 @@
 ---
 title: 배포 가이드 - 원격 지원으로 클라우드 연결 HoloLens 2 배포 대규모 배포 - 구성
-description: 클라우드 연결 네트워크를 통해 HoloLens 장치를 등록하기 위한 구성을 설정하는 방법
+description: 원격 지원을 사용하여 클라우드 연결 네트워크를 통해 대규모로 HoloLens 장치를 등록하는 구성을 설정하는 방법을 자세히 알아보고
 keywords: HoloLens, 관리, 클라우드 연결, 원격 지원, AAD, Azure AD, MDM, 모바일 장치 관리
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 042a29fe436b21ca37a2fcd7921fc53d6a9686d5
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 00cc3f9df1fefafc9c4c084ff642364ae3ccb85c
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253045"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283889"
 ---
 # 구성 - 클라우드 연결 가이드
 
@@ -27,7 +27,7 @@ ms.locfileid: "11253045"
 
 ## Azure 사용자 및 그룹
 
-해당 확장에 따라 Azure 및 Intune은 사용자 및 그룹을 사용하여 구성 및 라이선스를 할당합니다. 이 배포 흐름의 유효성을 검사하고 한 사용자에서 다른 사용자로 원격 지원 전화를 걸 수 있도록&#39;계정이 필요합니다.
+Azure 및 해당 확장에 따라 Intune은 사용자 및 그룹을 사용하여 구성 및 라이선스를 할당합니다. 이 배포 흐름의 유효성을 검사하고 한 사용자에서 다른 사용자로 원격 지원 전화를 걸 수 있도록&#39;계정이 필요합니다.
 
 라이선스를 할당하기 위해 단일 사용자 그룹을 만들 수 있습니다. 두 사용자를 동일한 그룹에 가입하고 해당 그룹에 Intune 및 원격 지원에 대한 라이선스를 적용할 수 있습니다.
 

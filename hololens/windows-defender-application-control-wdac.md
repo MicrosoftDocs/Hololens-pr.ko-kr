@@ -1,6 +1,6 @@
 ---
 title: Windows Defender 응용 프로그램 제어 - WDAC
-description: WDAC가 무엇일지와 HoloLens 장치를 관리하는 데 사용하는 방법에 대한 개요입니다.
+description: 응용 프로그램 Windows Defender 및 이 컨트롤을 사용하여 HoloLens 혼합 현실 장치를 관리하는 방법에 대한 개요입니다.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -12,23 +12,23 @@ ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d337f9856eaeac433524d7bb8b60e9a24e264b80
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: 23c9a274387424e8f084a4729ee621e130820716
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252649"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284139"
 ---
 # Windows Defender 응용 프로그램 제어 - WDAC
 
-WDAC를 사용하면 IT 관리자가 디바이스에서 앱 실행을 차단하도록 장치를 구성할 수 있습니다. 이는 사용자가 디바이스에서 앱을 숨기지만 계속 실행될 수 있는 UI를 표시하는 키오스크 모드와 같은 장치 제한 메서드와 다릅니다. WDAC가 구현되는 동안 앱은 여전히 모든 앱 목록에 표시되지만 WDAC는 해당 앱 및 프로세스가 장치 사용자가 시작하지 못하도록 합니다.
+WDAC를 사용하면 IT 관리자가 디바이스에서 앱 실행을 차단하도록 장치를 구성할 수 있습니다. 이는 사용자가 디바이스에서 앱을 숨기지만 계속 실행될 수 있는 UI를 표시하는 키오스크 모드와 같은 장치 제한 메서드와 다릅니다. WDAC가 구현되는 동안 앱은 여전히 모든 앱 목록에 표시되지만 WDAC는 해당 앱 및 프로세스가 장치 사용자가 시작되지 못하도록 합니다.
 
 디바이스에 두 개 이상의 WDAC 정책이 할당될 수 있습니다. 시스템에서 여러 WDAC 정책이 설정되어 있는 경우 가장 제한적인 정책이 적용됩니다. 
 
 > [!NOTE]
 > 최종 사용자가 WDAC에 의해 차단된 앱을 시작하려고 하면 HoloLens에서 해당 앱을 시작하지 못했다는 알림이 수신되지 않습니다.
 
-다음은 [Microsoft Intune에서 HoloLens 2](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens)장치에서 앱을 허용하거나 차단하기 위해 WDAC 및 Windows PowerShell 방법을 알아보는 사용자를 위한 가이드입니다.
+다음은 [Microsoft Intune에서 HoloLens 2 장치에서](https://docs.microsoft.com/mem/intune/configuration/custom-profile-hololens)앱을 허용하거나 차단하기 위해 WDAC 및 Windows PowerShell 방법을 알아보는 사용자를 위한 가이드입니다.
 
 사용자가 첫 번째 예제 단계를 사용하여 Windows 10 PC에 설치된 앱을 검색할 때 결과를 좁히기 위해 몇 가지 시도를 해야 할 수 있습니다.
 
@@ -76,7 +76,7 @@ Get-AppxPackage -name *edge*
 앱이 목록에 없는 경우 사용자는 차단하고자 하는 앱을 설치한 HoloLens 2에 연결된 Device Portal을 사용하여 PackageRelativeID를 확인한 다음 해당 장치에서 PackageFamilyName을 얻을 수 있습니다.
 
 1. HoloLens 2 장치에 앱을 설치합니다. 
-1. Open Settings -> Updates & Security ->, and enable **Developer mode** and then **Device portal.** 
+1. Open Settings -> Updates & Security -> For developers, **and** then Device **portal.** 
     1. 자세한 내용은 여기에서 디바이스 포털의 설정 및 사용에 대해 [자세히 읽어 읽습니다.](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)
 1. 디바이스 포털이 연결되면 **Views로** 이동한 다음 **앱으로 이동합니다.** 
 1. 설치된 앱 패널 내에서 드롭다운을 사용하여 설치된 앱을 선택합니다. 

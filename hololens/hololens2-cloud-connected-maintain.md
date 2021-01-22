@@ -1,6 +1,6 @@
 ---
 title: 배포 가이드 - 원격 지원으로 클라우드 연결 HoloLens 2 배포 규모 - 유지 관리
-description: 클라우드 연결 네트워크를 통해 HoloLens 장치 유지 관리 팁
+description: 클라우드 연결 네트워크를 통해 HoloLens 장치를 유지 관리하고 지원하기 위한 팁을 통해 최신 정보를 유지 관리하세요.
 keywords: HoloLens, 관리, 클라우드 연결, 원격 지원, AAD, Azure AD, MDM, 모바일 장치 관리
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8117c73516d2775ec67f37bad524bcf377ece2e5
-ms.sourcegitcommit: fc268335e5df529a1cedc2c6b88fa86245fe1b9b
+ms.openlocfilehash: bc34c4e41c5a6cee8f3f9a0a97407ee38d419bbc
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "11252699"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283899"
 ---
 # 유지 관리 - 클라우드 연결 가이드
 
@@ -33,7 +33,7 @@ Microsoft는 장치 그룹에 업데이트를 배포하고 업데이트 설치�
 
 ## 지원 플랜
 
-지원 계획은 매우 중요한 일입니다. 누군가 또는 그룹이 HoloLens 장치에서 등록 프로세스 문제를 해결하고 조직 내에서 HoloLens 디바이스를 일반적으로 사용하는 데 도움이 됩니다. 사용자가 문제를 더 빠르게 해결하도록 허용하기 위해 에스컬레이터 프로세스는 다음 순서와 유사한 방식으로 처리하는 것이 권장됩니다.
+지원 계획은 매우 중요한 일입니다. 누군가 또는 그룹이 HoloLens 장치에서 등록 프로세스 문제를 해결하고 조직 내에서 HoloLens 디바이스를 일반적으로 사용하는 데 도움이 됩니다. 사용자가 문제를 더 빠르게 해결하도록 허용하기 위해 에스컬레이터 프로세스는 다음 순서와 유사한 방식으로 처리하는 것이 있습니다.
 
 1. 지원 센터
 2. HoloLens 전문가 팀
@@ -42,22 +42,22 @@ Microsoft는 장치 그룹에 업데이트를 배포하고 업데이트 설치�
 
 ## 개발 계획
 
-장치를 성공적으로 등록하면 이제 장치에 LOB 앱(LOB 앱)을 배포할 준비가 완료되었습니다. 이러한 앱은 요구 사항을 충족하기 위해&#39;사용자 지정 앱입니다.
+장치를 성공적으로 등록하면 이제 장치에 LOB 앱(LOB 앱)을 배포할 준비가 완료되었습니다. 이러한 앱은 요구에 따라 조직에&#39;사용자 지정 앱입니다.
 
 이미 비즈니스용 앱이 있는 경우 [MDM을](https://docs.microsoft.com/hololens/app-deploy-intune)&#39;앱을 배포할 준비가 된 것입니다. 다른&#39;원하는 경우 [HoloLens 2의](https://docs.microsoft.com/hololens/app-deploy-overview) 응용 프로그램 배포 개요를 검토하여 장치에 LOB 앱을 배포하는 더 많은 방법을 알아보는 것이 좋습니다.
 
-아직 LOB 앱을&#39;개발 중이면 혼합 현실 개발 docs를 검토하여 디자인 및 프로토타이핑을 시작하거나 혼합 현실 개발을 시작할 핵심 개념을 배워야 [합니다.](https://docs.microsoft.com/windows/mixed-reality/discover/get-started-with-mr) [](https://docs.microsoft.com/windows/mixed-reality/design/design)
+아직 LOB 앱을&#39;아직 만들지 않았거나 아직 만드는 프로세스에 있는 경우 혼합 현실 개발 [](https://docs.microsoft.com/windows/mixed-reality/design/design) docs를 검토하여 디자인 및 프로토타이핑을 시작하거나 혼합 현실 개발을 시작할 핵심 개념을 배워야 [합니다.](https://docs.microsoft.com/windows/mixed-reality/discover/get-started-with-mr)
 
 ## 장치 관리 
 
 이 가이드에서는 MDM(모바일 장치 관리) 설정에 대해 설명하는 동안 장치 제한이나 정책을 장치에 적용하는 데 사용되지 않습니다. 장치 관리를 사용하여 인증서를 푸시하여 액세스를 허용하거나 다양한 장치 제한으로 액세스를 제한할 수 있습니다. 
 
-대부분의 경우 디바이스에 연결 제한(예: Bluetooth VPN, USB) 또는 카메라 또는 마이크에 대한 액세스를 해제할 수 있습니다. 이러한 관심사 중 한 가지가 있는 경우 일반적인 장치 제한 페이지를 [읽어보는 것이 좋습니다.](hololens-common-device-restrictions.md)
+대부분의 경우 디바이스에 연결 제한(예: Bluetooth VPN, USB) 또는 카메라 또는 마이크에 대한 액세스를 해제할 수 있습니다. 이러한 관심사 중 어느 것이든 일반적인 장치 제한 페이지를 [읽어보는 것이 좋습니다.](hololens-common-device-restrictions.md)
 
 사용할 수 있는 기타 더 복잡한 장치 제한이 있습니다. 예:
 
-- [SettingsPageVisibility를](settings-uri-list.md)사용하여 설정 앱에서 볼 수 있는 페이지를 제한하여 사용자가 설정 연결 변경과 같이 조정해야 하는 설정에만 액세스할 Wi-Fi 있습니다.
-- [키오스크 모드를 사용하여](hololens-kiosk.md) 디바이스의 사용자에게 표시되는 UI를 제한합니다. 키오스크를 설정하여 단일 앱 또는 사용자 지정 시작 페이지가 있는 여러 앱을 표시하는 데 사용할 수 있습니다. 키오스크는 다른 사용자에게도 다양한 환경을 제공합니다.  
+- [SettingsPageVisibility를](settings-uri-list.md)사용하여 설정 앱에서 볼 수 있는 페이지를 제한하여 사용자가 설정 연결 변경과 같이 조정해야 하는 설정에만 액세스할 수 Wi-Fi 있습니다.
+- [키오스크 모드를 사용하여](hololens-kiosk.md) 디바이스의 사용자에게 표시되는 UI를 제한합니다. 키오스크를 설정하여 단일 앱 또는 사용자 지정 시작 페이지가 있는 여러 앱을 표시하는 데 사용할 수 있습니다. 키오스크는 사용자마다 다른 환경을 제공합니다.  
 - 특정 앱 또는 프로세스가 완전히 시작되지 못하도록 [하는 WDAC(Windows](windows-defender-application-control-wdac.md) 응용 프로그램 제어)입니다.
 
 장치 관리 또는 장치 제한의 다양한 방법에 대해 알아보고자 하는 경우 다음 단계를 진행하고 장치 관리 개요를 읽어 하세요.
