@@ -6,12 +6,12 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: 311da6bc52098d5ba16e4684f68fec9a01e7c23b
-ms.sourcegitcommit: 8cea4c04c6d2e22225f4de43e10c05dab840736a
+ms.openlocfilehash: dd205ab1fe399d6612be982136c80733a5eb087e
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253854"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283666"
 ---
 # HoloLens 설명서에 참여
 
@@ -19,7 +19,7 @@ ms.locfileid: "11253854"
 
 HoloLens docs는 Markdig 기능과 함께 GitHub로 docs.microsoft.com Markdown을 사용하는 docs.microsoft.com 플랫폼에 표시됩니다. 이 리포지타입에서 편집하는 콘텐츠는 에 표시되어 스타일이 있는 페이지로 서식이 https://docs.microsoft.com/hololens 설정됩니다. 
 
-이 페이지에는 기여하기 위한 기본 단계 및 지침과 Markdown 기본에 대한 링크가 다수 표시됩니다. 기여해주신 분들 감사합니다.
+이 페이지에는 기여에 대한 기본 단계와 지침과 Markdown 기본에 대한 링크가 다수 표시됩니다. 기여해주신 덕분에 감사합니다.
 
 ## 사용 가능한 리포지타시
 
@@ -43,7 +43,7 @@ GitHub 계정을 설정할 때 다음 보안 주의 사항도 권장됩니다.
 - 공용 프로필 [설정을 업데이트합니다.](https://github.com/settings/profile)
    - 이름을 설정하고 공용 전자 ** 메일을 내 전자 메일 주소를 표시하지 않는 *것으로 설정하는 것을 고려합니다.*
    - 작성한 문서 페이지에 미리 보기가 표시 찍기 때문에 프로필 사진을 업로드하는 것이 좋습니다.
-- 명령줄을 사용 계획하는 경우 [Windows용 Git 자격](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest)증명 관리자를 설정할 수 있습니다. 이렇게 하면 기여할 때마다 암호를 입력할 수 없습니다.
+- 명령줄을 사용 계획하는 경우 [Windows용 Git 자격](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest)증명 관리자를 설정할 수 있습니다. 이렇게 하면 참여할 때마다 암호를 입력할 수 없습니다.
 
 게시 시스템은 GitHub에 있으므로 이러한 단계가 중요합니다. GitHub 별칭을 사용하여 각 문서의 작성자 또는 작성자로 나열됩니다.
 
@@ -61,7 +61,7 @@ GitHub 계정을 설정할 때 다음 보안 주의 사항도 권장됩니다.
 
 4. 각 문서 맨 위에 있는 메타데이터를 업데이트합니다.
 
-   * **제목**: 문서를 볼 때 브라우저 탭에 나타나는 페이지 제목입니다. 페이지 제목은 SEO 및 인덱싱에 사용되기 때문에 필요한 경우를 위해 제목을 변경하지 않습니다(설명서가 공개되기 전에 중요하지는 않습니다).
+   * **제목**: 문서를 볼 때 브라우저 탭에 나타나는 페이지 제목입니다. 페이지 제목은 SEO 및 인덱싱에 사용되기 때문에 필요한 경우를 위해 제목을 변경하지 않습니다(설명서가 공개되기 전에는 중요하지는 않습니다).
    * **description**: SEO 및 검색을 향상하는 문서 콘텐츠에 대한 간략한 설명을 작성합니다.
    * **author**: 페이지의 기본 소유자인 경우 여기에 GitHub 별칭을 추가합니다.
    * **ms.author**: 페이지의 기본 소유자인 경우 여기에 Microsoft 별칭을 추가합니다(@microsoft.com 필요 없습니다. 별칭만).
@@ -152,14 +152,14 @@ GitHub 계정을 설정할 때 다음 보안 주의 사항도 권장됩니다.
 
 표 스타일 docs.microsoft.com 때문에 인라인 CSS를 사용해도 테두리나 사용자 지정 스타일이 없습니다. 잠시 동안 작동하지만 결국 플랫폼에서 스타일이 표에서 제거됩니다. 따라서 테이블을 간단하게 계획하십시오. [다음은 Markdown 테이블을 쉽게 만드는 사이트입니다.](https://www.tablesgenerator.com/markdown_tables)
 
-또한 [문서 코드용 Docs Markdown Extension for Visual Studio](https://docs.microsoft.com/teamblog/docs-extension) 코드를 사용하여 설명서를 편집하는 경우 Visual Studio [코드(아래](#using-visual-studio-code) 참조)를 사용하여 테이블을 쉽게 생성할 수 있습니다.
+문서 [코드용 Docs Markdown Extension for Visual Studio](https://docs.microsoft.com/teamblog/docs-extension) 코드를 사용하여 설명서를 편집하는 경우 Visual Studio [코드(아래](#using-visual-studio-code) 참조)를 사용하여 테이블을 쉽게 생성할 수 있습니다.
 
 ### 이미지 추가
 
 리포지터의 "mixed-reality-docs/images" 폴더에 이미지를 업로드한 다음 문서에서 적절히 참조해야 합니다. 이미지가 자동으로 전체 크기로 표시되어 큰 이미지가 문서의 전체 너비를 채우게 됩니다. 이미지를 업로드하기 전에 이미지의 크기 조정을 미리 조정하는 것이 좋습니다. 권장되는 너비는 600에서 700픽셀 사이입니다. 그러나 각각 조밀한 스크린샷 또는 스크린샷의 일부인 경우 크기를 조정하거나 작아야 합니다.
 
 >[!IMPORTANT]
->이미지를 포크된 리포지 파일로만 업로드한 다음에야 이 파일을 업로드할 수 있습니다. 따라서 문서에 이미지를 추가하려면 [Visual Studio Code를](#using-visual-studio-code) 사용하여 먼저 포크의 "이미지" 폴더에 이미지를 추가하거나 웹 브라우저에서 다음을 수행해야 합니다.
+>이미지를 포크된 리포지 파일로만 업로드할 수 있습니다. 따라서 문서에 이미지를 추가하려면 [Visual Studio Code를](#using-visual-studio-code) 사용하여 먼저 포크의 "이미지" 폴더에 이미지를 추가하거나 웹 브라우저에서 다음을 수행해야 합니다.
 >
 >1. MicrosoftDocs/mixed-reality 리포지토를 포크했습니다.
 >2. 포크에서 문서를 편집했습니다.
@@ -189,14 +189,14 @@ Microsoft 직원: 기여한 내용이 '마스터' 분기에 병합된 후 공개
 
 ## 코드 Visual Studio 사용
 
-위에 [나열된](#editing-in-the-browser-vs-editing-with-a-desktop-client)이유로 웹 브라우저 대신 데스크톱 클라이언트를 사용하여 문서를 편집하는 것이 좋습니다. 이 코드는 Visual Studio [좋습니다.](https://code.visualstudio.com/)
+위에 [나열된](#editing-in-the-browser-vs-editing-with-a-desktop-client)이유로 웹 브라우저 대신 데스크톱 클라이언트를 사용하여 문서를 편집하는 것이 좋습니다. 이 코드는 [Visual Studio 좋습니다.](https://code.visualstudio.com/)
 
 ### Setup
 
 다음 단계에 따라 이 리포지 Visual Studio 코드가 작동하도록 구성합니다.
 
 1. 웹 브라우저에서:
-    1. [PC용 Git을 설치합니다.](https://git-scm.com/downloads)
+    1. [PC용 Git를 설치합니다.](https://git-scm.com/downloads)
     2. 코드 [Visual Studio 설치합니다.](https://code.visualstudio.com/)
     3. [아직 MicrosoftDocs/혼합](#creating-a-new-article) 현실을 포크하지 않은 경우
     4. 포크에서 복제를 **선택하거나 URL을 다운로드하여** 복사합니다.
@@ -232,7 +232,9 @@ Microsoft 직원: 기여한 내용이 '마스터' 분기에 병합된 후 공개
       
       ![탐색기에서 "모두 저장"을 선택](images/explorer-save.png)
       
-   3. **원본 제어의** 모든 **변경** 내용을 커밋합니다(메시지가 표시될 때 커밋 메시지 쓰기).
+   3. **원본 제어의** 모든 변경 내용을 커밋합니다(메시지가 표시될 때 커밋 메시지 쓰기). ****
+   
+      ![소스 제어에서 "모두 커밋"을 선택](images/source-control-commit.png)
       
    4. 동기화 **단추를 선택하여** 변경 내용을 원본(GitHub의 포크)에 다시 동기화합니다.
       
