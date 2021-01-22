@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 앱 설치 관리자를 통해 앱을 테스트용 로드 및 설치하는 방법
-description: UI를 통해 슬라이드 로드 및 앱 설치
+description: 앱 설치 관리자를 사용하여 앱을 설치하고 문제를 해결하는 방법을 알아보고 UI를 통해 앱을 테스트용 로드 및 설치합니다.
 keywords: 앱 관리, 앱, hololens, 앱 설치 관리자
 author: evmill
 ms.author: v-evmill
@@ -14,19 +14,19 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ab0c58d5a97d5dbaf83adf321d1f9fbc01b3ad03
-ms.sourcegitcommit: 37910c10f0f98aa9cbdc29124cd8f14ee0af3fbd
+ms.openlocfilehash: 89f48fab236fdaf58fb0bf8b29e5a3aacb3bdee3
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "11280657"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283739"
 ---
 # 앱 설치 관리자를 통해 HoloLens 2에 앱 설치
 
 > [!NOTE]
 > 이 기능은 Windows [Holographic 버전 20H2 – 2020년 12월 업데이트에서 사용할 수 있습니다.](hololens-release-notes.md) 이 기능을 [사용하기 위해](hololens-update-hololens.md) 장치가 업데이트되어 있는지 확인합니다.
 
-**HoloLens** 2 장치에 응용 프로그램을 보다 원활하게 설치할 수 있도록 새로운 기능(앱 설치 관리자)이 추가되었습니다. 이 기능은 관리되지 않는 장치에 대해 기본적으로 **설정됩니다.** 엔터프라이즈 중단을 방지하기 위해 현재 관리되는 디바이스에서는 앱 설치 관리자를 사용할 **수** 없습니다.  
+**HoloLens** 2 디바이스에 응용 프로그램을 보다 원활하게 설치할 수 있도록 새로운 기능(앱 설치 관리자)이 추가되었습니다. 이 기능은 관리되지 않는 장치에 대해 기본적으로 **설정됩니다.** 엔터프라이즈 중단을 방지하기 위해 현재 관리되는 디바이스에서는 앱 설치 관리자를 사용할 **수** 없습니다.  
 
 다음 중 한 가지가 **** 참이면 디바이스가 "관리"되는 것으로 간주됩니다.
 
@@ -43,7 +43,7 @@ ms.locfileid: "11280657"
  기능은 현재 HoloLens 2 디바이스용 Windows Holographic 20H2 빌드에서 사용할 수 있습니다. 이 메서드를 사용하는 모든 장치가 [업데이트되도록 합니다.](hololens-update-hololens.md)
 
 ### 앱의 경우: 
-앱 설치 관리자에서 스토어의 **** 종속성 사용으로 앱의 솔루션 구성은 마스터 또는 릴리스가 되어야 합니다. **** 앱 패키지 [만들기에 대한 자세한 내용은 다음을 참조하세요.](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)
+앱 설치 관리자에서 스토어의 **** 종속성 사용으로 앱의 솔루션 구성은 마스터 또는 릴리스가 되어야 합니다. **** 앱 패키지 만들기에 [대한 자세한 정보를 참조하세요.](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)
 
 이 방법을 통해 설치된 앱은 디지털 서명을 해야 합니다. 인증서를 사용하여 앱에 서명해야 합니다. MS 신뢰할 수 있는 [CA](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)목록에서 인증서를 얻을 수 있습니다. 이 경우 추가 작업을 수행하지 필요가 없습니다. 또는 인증서를 장치에 푸시해야 하는 자체 인증서에 서명할 수 있습니다.
 
@@ -64,7 +64,7 @@ ms.locfileid: "11280657"
 1. 디바이스가 관리되는 것으로 간주되지 않는지 확인합니다.
 1. HoloLens 2 디바이스가 전원이 설정 및 로그인된지 확인합니다.
 1. PC에서 사용자 지정 앱으로 이동하고app.appxbundle을devicename\Internal Storage\Downloads에 복사합니다.
-    파일 복사를 마친 후 장치 연결을 끊고 나중에 설치를 완료할 수 있습니다.
+    파일 복사를 마친 후 장치의 연결을 끊고 나중에 설치를 완료할 수 있습니다.
 1. HoloLens 2 장치에서 시작 메뉴를 열고 **모든**앱을 **선택하고** 파일 탐색기 **앱을 실행합니다.**
 1. 다운로드 폴더로 이동합니다. 앱의 왼쪽 패널에서 이 디바이스를 **** 먼저 선택한 다음 다운로드로 이동해야 할 수 있습니다.
 1. yourapp.appxbundle 파일을 선택합니다.
@@ -81,7 +81,7 @@ ms.locfileid: "11280657"
 - 앱은 마스터 빌드 또는 릴리스 빌드입니다.
 - 디바이스가 이 기능을 사용할 수 있는 빌드로 업데이트됩니다.
 - 인터넷에 [연결되어 있습니다.](hololens-network.md)
-- [Microsoft Store에 대한 끝점이](hololens-offline.md) 올바르게 구성되었습니다.  
+- [Microsoft Store의 끝점이](hololens-offline.md) 올바르게 구성되었습니다.  
 
 ## 웹 설치 관리자
 
@@ -97,7 +97,7 @@ ms.locfileid: "11280657"
 1. 사용자가 위에서 선택한 방법을 사용하여 인증서를 받아 장치에 설치합니다.
 1. 사용자가 위의 단계에서 만든 URL을 방문합니다.
 
-이제 앱이 장치에 설치됩니다. 앱을 찾으하려면 시작 **** 메뉴를 열고 앱 **찾기를** 위해 모든 앱 단추를 선택합니다.
+이제 앱이 장치에 설치됩니다. 앱을 찾으하려면 시작 **** 메뉴를 열고 **** 모든 앱 단추를 선택하여 앱을 찾습니다.
 
 - 앱 설치 관리자 설치 방법 문제 해결에 대한 자세한 도움말은 앱 설치 관리자 [문제 해결을 방문하세요.](https://docs.microsoft.com/windows/msix/app-installer/troubleshoot-appinstaller-issues)
 

@@ -1,6 +1,6 @@
 ---
 title: HoloLens 1 다시 시작, 초기화 또는 복구
-ms.reviewer: Basic and advanced instructions for rebooting or resetting your HoloLens.
+ms.reviewer: Keep up to date on the basic and advanced instructions for rebooting or resetting your HoloLens mixed reality device.
 description: Windows Device Recovery Tool을 사용하여 이미지를 HoloLens 1세대로 플래시하는 방법
 keywords: 사용 방법, 다시 부팅, 초기화, 복구, 하드 초기화, 소프트 초기화, 전원 주기, HoloLens, 종료, wdrt, windows device recovery tool
 ms.prod: hololens
@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: cd3e7a14ea811f6f3f3086563e7ead3bcd0115ae
-ms.sourcegitcommit: 2122490074adb7f63edfc3576441980caa22695f
+ms.openlocfilehash: f0aa400be56d09a843a1b7c9bae78346551ad8af
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "10915964"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283919"
 ---
 # HoloLens 2(1세대) 다시 시작, 초기화 또는 복구
 
