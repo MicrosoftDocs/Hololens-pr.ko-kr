@@ -1,6 +1,6 @@
 ---
 title: 배포 가이드 - 원격 지원으로 클라우드 연결 HoloLens 2 배포 대규모 배포 - 배포
-description: 클라우드 연결 네트워크를 통해 HoloLens 장치에 대한 등록 및 원격 지원의 유효성을 검사하는 방법
+description: 클라우드 연결 네트워크를 통해 HoloLens 장치에 대한 등록 및 원격 지원의 유효성을 검사하는 방법을 확인합니다.
 keywords: HoloLens, 관리, 클라우드 연결, 원격 지원, AAD, Azure AD, MDM, 모바일 장치 관리
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2b38f4a76ee088d4f892c86de07d8f5a10d2a3bf
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 4183bde30673f5147683e16b4d625f73b063c529
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253195"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11282939"
 ---
 # 배포 - 클라우드 연결 가이드
 
@@ -40,7 +40,7 @@ ms.locfileid: "11253195"
 
 ![HoloLens 2 설정 - 정보](./images/hololens2-settings-about.jpg)
 
-7. 설정 앱 내에서 장치가 Azure AD에 성공적으로 등록된 것을 확인할 수 있습니다. **설정에서** **계정 액세스**직장 또는  ->  **학교를 선택합니다.** 이 화면에서 Azure &quot; AD의 _nameofAAD에_ 연결&#39;확인하여 성공적으로 등록되어 있는지 확인할 수 있습니다. _yourusername_ @ _nameofAAD_.onmicrosoft.com. &quot;
+7. 설정 앱 내에서 장치가 Azure AD에 성공적으로 등록된 것을 확인할 수 있습니다. **설정에서** **계정 액세스**직장 또는  ->  **학교를 선택합니다.** 이 화면에서 &quot; Azure AD의 _nameofAAD에_ 연결&#39;확인하여 성공적으로 등록되어 있는지 확인할 수 있습니다. _yourusername_ @ _nameofAAD_.onmicrosoft.com. &quot;
 
 
 Azure AD에 가입된 장치의 유효성을 검사하기 위해 [Azure Portal](https://portal.azure.com/#home)Azure Active Directory 장치 모든 디바이스에서 Azure Active  ->  **Directory를**확인하고  ->  ****  ->  **** 장치 이름을 검색할 수 있습니다. Azure&#39;디바이스가 Azure Active Directory의 일부인지 볼 수 있습니다.
@@ -54,7 +54,7 @@ Azure AD에 가입된 장치의 유효성을 검사하기 위해 [Azure Portal](
 
 ## 원격 지원 통화 유효성 검사
 
-AAD&#39;MDM 모두에 장치가 등록되어 있는 것을 확인한 후&#39;원격 지원 통화를 걸 수 있습니다. 이 유효성 검사를&#39;Pc에 대한 두 번째 Azure AD 사용자 계정뿐만 아니라 HoloLens 장치 및 Windows 10 PC가 필요합니다.
+AAD&#39;MDM 모두에 장치가 등록되어 있는 것을 확인한 후&#39;원격 지원 통화를 걸 수 있습니다. 이 유효성 검사를&#39;HoloLens 장치 및 Windows 10 PC와 PC에 대한 두 번째 Azure AD 사용자 계정이 필요합니다.
 
 이 유효성 검사 단계에서는 사용자가 이전에 마지막 유효성 검사 단계를 완료하고 장치가 등록된 경우 Azure AD 사용자가 장치에 있는 것으로 가정합니다.
 
@@ -62,7 +62,7 @@ AAD&#39;MDM 모두에 장치가 등록되어 있는 것을 확인한 후&#39;원
 1. PC에 Microsoft Teams가 설치되어 있지 않은 경우 여기에서 [Teams를 다운로드할 수 있습니다.](https://www.microsoft.com/microsoft-365/microsoft-teams/download-app)
 2. 현재 HoloLens에 로그인한 계정보다 두 번째 Azure AD 사용자 계정을 사용하여 Teams에 로그인합니다. PC에 로그인하면 전화를 받을 준비가 됩니다.
 3. HoloLens 잠금을 해제하고 로그인합니다.
-4. 원격 지원 앱을 시작하려면 시작 메뉴를 **열고** 원격 지원을 **선택합니다.** 원격 도우미는 받은 편지함 앱으로 번들로 제공된 것이 아니라 HoloLens 2&#39;시작 메뉴에 고정됩니다. 시작 메뉴에&#39;없는 경우 모든 앱 목록을 열어서 찾아야 합니다. ****
+4. 원격 지원 앱을 시작하려면 시작 메뉴를 **열고** 원격 지원을 **선택합니다.** 원격 도우미는 받은 편지함 앱으로 번들화할 뿐만 아니라 HoloLens 2&#39;시작 메뉴에 고정됩니다. 시작 메뉴에&#39;없는 경우 모든 앱 목록을 열어서 찾아야 합니다. ****
 5. 원격 지원이 시작되면 [SSO를](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on) 통해 디바이스 사용자를 식별하고 앱에 로그인해야 합니다.
 6. 앱에서 PC에서 **두** 번째 사용자 검색을 선택하고 검색합니다. 통화를 시작할 사용자를 선택합니다.
 7. PC에서 통화에 응답합니다.
