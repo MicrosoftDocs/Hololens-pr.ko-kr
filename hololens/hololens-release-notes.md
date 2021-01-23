@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 릴리스 정보
-description: 각 새로운 HoloLens 2 릴리스의 업데이트에 대해 자세히 알아보습니다.
+description: 각 새 HoloLens 2 릴리스의 모든 업데이트를 최신으로 유지하세요.
 author: scooley
 ms.author: scooley
 manager: laurawi
@@ -15,16 +15,16 @@ ms.custom:
 audience: ITPro
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7c93f567921a634e5a75c274304819ec9e81b933
-ms.sourcegitcommit: e26aa9059a7d8e73914205e80a89ea9637926e74
+ms.openlocfilehash: 8dd5f4c50ebdab202d24d4a52d393b8bee086c7a
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "11269419"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284099"
 ---
 # HoloLens 2 릴리스 정보
 
-HoloLens 장치에 대한 생산성을 보장하기 위해 계속해서 기능, 버그 및 보안 업데이트를 릴리스합니다. 이 페이지에서 매월 HoloLens의 새로운 것을 볼 수 있습니다. To get the latest HoloLens 2 update, you can either [check for updates and manually update](hololens-update-hololens.md#check-for-updates-and-manually-update) or get the Full Flash Update (FFU) to flash your device via Advanced Recovery [Companion,](hololens-recovery.md#clean-reflash-the-device) [download it here.](https://aka.ms/hololens2download) 다운로드는 최신으로 유지하며 일반적으로 사용할 수 있는 최신 빌드를 제공합니다.
+HoloLens 디바이스에 대한 생산성을 보장하기 위해 계속해서 기능, 버그 및 보안 업데이트를 릴리스합니다. 이 페이지에서 매월 HoloLens의 새로운 것을 볼 수 있습니다. To get the latest HoloLens 2 update, you can either [check for updates and manually update](hololens-update-hololens.md#check-for-updates-and-manually-update) or get the Full Flash Update (FFU) to flash your device via Advanced Recovery [Companion.](hololens-recovery.md#clean-reflash-the-device) [다운로드는](https://aka.ms/hololens2download) 최신으로 유지하며 일반적으로 사용할 수 있는 최신 빌드를 제공합니다.
 
 Windows Insiders에 새로운 기능의 플라이트를 다시 시작하게 됩니다. We will be flighting to the Dev Channel for the latest updates. Windows Insider 빌드에 추가 기능 및 업데이트를 추가할 때 [HoloLens Insider](hololens-insider.md) Notes를 계속 사용할 예정입니다. 이러한 업데이트를 현실에 혼합할 수 있도록 기다렸다가 준비하세요. 
 
@@ -78,15 +78,15 @@ Windows 유니버설 샘플 [GitHub에서](https://github.com/microsoft/Windows-
 
 ### 업데이트의 개선 사항 및 수정 사항:
 
-- 손 추적은 이제 이전에 손을 잃은 많은 새로운 경우 추적을 유지 관리합니다.  이러한 새로운 경우 일부에서는 사용자의 실제 손바목에 따라 손바라지 위치만 업데이트되고 다른 조인트는 이전 포즈에 따라 유추됩니다.  이 변경은 슬래시, 던지기, 스푸핑 및 박수와 같은 동작의 추적 일관성을 향상시키는 데 도움이 됩니다.  손이 표면에 가깝거나 개체를 잡고 있는 경우도 도움이 됩니다.  손 조인트가 유추되는 경우 [](https://docs.microsoft.com/uwp/api/windows.perception.people.jointposeaccuracy?view=winrt-19041&preserve-view=true) 조인트당 정확도 값은 "High" 대신 "Approximate"로 설정됩니다.
-- Azure AD 계정의 PIN 재설정 시 "문제가 발생했습니다.
+- 손 추적은 이제 이전에 손을 잃은 많은 새로운 경우 추적을 유지 관리합니다.  이러한 새로운 경우 일부에서는 사용자의 실제 손바목에 따라 손바라지 위치만 업데이트되고 다른 조인트는 이전 포즈에 따라 유추됩니다.  이 변경은 슬래시, 던지기, 스푸핑 및 박수와 같은 동작의 추적 일관성을 향상시키는 데 도움이 됩니다.  손이 표면에 가깝거나 개체를 잡고 있는 경우도 도움이 됩니다.  손 조인트가 유추되는 경우 [](https://docs.microsoft.com/uwp/api/windows.perception.people.jointposeaccuracy?view=winrt-19041&preserve-view=true) 조인트당 정확도 값은 "높음" 대신 "대략값"으로 설정됩니다.
+- Azure AD 계정의 PIN 재설정에 "문제가 발생했습니다.
 - 사용자는 ET, 설정 앱의 홍채, 새 사용자 또는 알림 알림을 시작하면 부팅 후 OOBE 크래시가 훨씬 더 적게 표시됩니다.
-- 사용자에게 올바른 표준 시간대가 OOBE에서 나오야 합니다.
+- 사용자는 OOBE에서 올바른 표준 시간대를 사용할 수 있습니다.
 
 ## Windows Holographic, 버전 1903 – 2020년 12월 업데이트
 - 빌드 18362.1088
 
-이 월별 품질 업데이트에는 중요 한 변경 내용이 포함되어 있지 않습니다, 최신 Windows Holographic, 버전 20H2 – 2020년 12월 업데이트 및 빌드에 추가된 새로운 앱 설치 관리자 기능을 사용해 보아야 합니다.
+이 월별 품질 업데이트에는 중요 한 변경 내용이 포함되어 있지 않습니다. 최신 Windows Holographic, 버전 20H2 – 2020년 12월 업데이트 및 빌드에 추가된 새로운 앱 설치 관리자 기능을 사용해 보아야 합니다.
 
 
 ## Windows Holographic, 버전 20H2
@@ -117,7 +117,7 @@ Windows Holographic, 버전 20H2를 이제 사용할 수 있으며 HoloLens 2 �
 | [업데이트 정책](hololens-release-notes.md#newly-enabled-update-policies-for-hololens)        | 업데이트 제어를 허용하는 새로 사용하도록 설정된 정책입니다.           |
 | [HoloLens 2에 대한 설정 페이지 표시](hololens-release-notes.md#enabled-settings-page-visibility-for-hololens-2)      | 설정 앱에 표시되는 페이지를 선택하기 위해 정책입니다.             |
 | [리서치 모드](hololens-release-notes.md#research-mode) | HoloLens 2에서 리서치 모드 사용. |
-| [기록 길이 증가](hololens-release-notes.md#recording-length-increased) | MRC 녹음/녹화가 더 이상 5분으로 증가하지 않습니다. |
+| [기록 길이 증가](hololens-release-notes.md#recording-length-increased) | MRC 기록이 더 이상 5분으로 캐핑하지 않습니다. |
 | [업데이트의 개선 및 수정](hololens-release-notes.md#improvements-and-fixes-in-the-update)                 | 업데이트의 추가 수정입니다.   |
 
 ### 자동 눈 위치 지원
@@ -189,18 +189,16 @@ Windows Holographic 버전 20H2에서는 HoloLens 2 설정 앱에 인증서 관�
 1. OOBE가 처음으로 조작 가능한 순간에 프로비저닝 패키지로 USB 드라이브에 연결
 1. 장치를 프로비전할 준비가 되면 프로비전 페이지가 있는 프롬프트가 자동으로 열립니다. 
 
-참고: 장치가 부팅되는 동안 USB 드라이브가 연결되어 있는 경우 OOBE는 기존 USB 저장 장치를 열00개하고 연결되는 추가 장치를 확인합니다.
+참고: 장치가 부팅되는 동안 USB 드라이브가 연결되어 있는 경우 OOBE는 기존 USB 저장 장치를 열고 연결되는 추가 장치를 확인합니다.
 
-OOBE 중에 프로비저닝 패키지를 적용하는 데 대한 자세한 내용은 여기에서 계속 읽어 [주세요.](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup)
+OOBE 중에 프로비저닝 패키지를 적용하는 데 대한 자세한 내용은 [HoloLens](hololens-provisioning.md#apply-a-provisioning-package-to-hololens-during-setup) 프로비저닝 설명서를 참조하세요.
 
-이 정보는 나중에 여기에서 찾을 수 [있습니다.](hololens-provisioning.md#auto-launch-provisioning-from-usb)
+[USB에서](hololens-provisioning.md#auto-launch-provisioning-from-usb) 자동 실행 프로비전에 대한 자세한 내용은 HoloLens 프로비전 설명서에서 찾을 수 있습니다.
 
 ### OOBE에서 프로비저닝 패키지 자동 확인
 - 사용자 상호 작용을 덜 허용하는 자동화된 프로세스로 프로비저닝 패키지 페이지가 표시되면 나열된 모든 패키지가 자동으로 적용됩니다.
 
-프로비저닝 주 화면이 시작될 때 OOBE는 모든 프로비저닝 패키지 적용을 자동으로 시작하기 전에 10초 아래로 계산됩니다. 사용자는 예상한 패키지를 확인한 후 10초 이내에 계속 확인하거나 취소할 수 있습니다.
-
-이 정보는 나중에 여기에서 찾을 수 [있습니다.](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe)
+프로비저닝 주 화면이 시작될 때 OOBE는 모든 프로비저닝 패키지 적용을 자동으로 시작하기 전에 10초 아래로 계산됩니다. 사용자는 [예상한](hololens-provisioning.md#auto-confirm-provisioning-packages-in-oobe) 패키지를 확인한 후 10초 이내에 계속 확인하거나 취소할 수 있습니다.
 
 ### UI를 사용하지 않고 자동 프로비전
 - 프로비저닝을 위한 축소된 장치 조작을 위한 결합된 자동 프로세스. 
@@ -215,9 +213,7 @@ USB 장치에서 프로비저닝 자동 시작과 프로비저닝 패키지의 �
 1. HoloLens 2 장치가 OOBE로 부팅되면 USB 드라이브에서 프로비저닝 패키지를 자동으로 검색하고 프로비저닝 페이지를 실행합니다.
 1. 10초 후 장치는 프로비저닝 패키지를 자동으로 적용합니다. 
 
-이제 장치가 구성되어 프로비전 성공 화면이 표시됩니다.
-
-이 정보는 나중에 여기에서 찾을 수 [있습니다.](hololens-provisioning.md#automatic-provisioning-without-using-ui)
+이제 장치가 구성되어 프로비전 성공 [화면이 표시됩니다.](hololens-provisioning.md#automatic-provisioning-without-using-ui)
 
 ### Autopilot과 Wi-Fi 연결 사용
 - Autopilot이 연결된 디바이스에서 작동할 수 있도록 하여 이더넷에 대한 USB-C 어댑터의 Wi-Fi 제거되었습니다.
@@ -275,7 +271,7 @@ OOBE는 Autopilot 프로필이 다운로드될 때까지 무기한 대기하고 
 ### 전역 할당된 액세스 - 키오스크 모드
 - 시스템 수준에서 키오스크 모드를 적용하는 새로운 Kiosk 메서드를 사용하도록 설정하여 키오스크의 ID 관리가 줄어듭.
 
-이 새로운 기능을 통해 IT 관리자는 시스템 수준에서 적용할 수 있는 여러 앱 키오스크 모드에 대해 HoloLens 2 장치를 구성할 수 있으며, 시스템의 ID와 관련이 없습니다. 이 디바이스에 로그인하는 모든 사용자에 적용할 수 있습니다. 여기에서 이 새로운 기능에 대해 자세히 [읽어 읽습니다.](hololens-global-assigned-access-kiosk.md)
+이 새로운 기능을 통해 IT 관리자는 시스템 수준에서 적용할 수 있는 여러 앱 키오스크 모드에 대해 HoloLens 2 장치를 구성할 수 있으며, 시스템의 ID와 관련이 없습니다. 이 디바이스에 로그인하는 모든 사용자에 적용할 수 있습니다. HoloLens 전역 할당 액세스 키오스크에서 이 새로운 기능에 대해 자세히 [읽어보아야 합니다.](hololens-global-assigned-access-kiosk.md)
 
 ### 다중 앱 키오스크 모드에서 응용 프로그램 자동 실행 
 - 자동 앱 실행에 집중된 환경으로, 키오스크 모드 환경을 위해 선택된 UI 및 앱 선택을 추가로 늘려야 합니다.
@@ -336,13 +332,13 @@ Windows Holographic 버전 20H2의 HoloLens 2 장치에 대한 새로운 혼합 
 ### HoloLens 2에 대한 새로운 장치 제한 정책
 - 사용자가 프로비저닝 패키지 추가 또는 제거 차단과 같은 특정 장치 관리 정책을 관리할 수 있습니다.
 
-HoloLens 2 장치의 추가 관리 옵션을 허용하는 새로 설정된 정책입니다. 
+HoloLens 2 장치의 추가 관리 옵션을 허용하는 새로 사용하도록 설정된 정책입니다. 
 - [AllowAddProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowaddprovisioningpackage)
 - [AllowRemoveProvisioningPackage](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-allowremoveprovisioningpackage) 
 - [ConfigureTimeZone](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-timelanguagesettings#timelanguagesettings-configuretimezone)
 - [RemoteLock](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)
 
-AllowAddProvisioningPackage 및 AllowRemoveProvisioningPackage에 대한 이러한 두 가지 새 경찰이 일반 장치 제한에 [추가됩니다.](hololens-common-device-restrictions.md)
+AllowAddProvisioningPackage 및 AllowRemoveProvisioningPackage에 대한 이러한 두 가지 새로운 경찰이 일반 장치 제한에 [추가됩니다.](hololens-common-device-restrictions.md)
 
 > [!NOTE]
 > [RemoteLock과](https://docs.microsoft.com/windows/client-management/mdm/remotelock-csp)관련하여 HoloLens는 ./Vendor/MSFT/RemoteLock/Lock 구성만 지원합니다. 초기화 및 복구와 같은 PIN을 다루는 구성은 지원되지 않습니다.
@@ -367,7 +363,7 @@ DisplayOffTimeoutOnBattery 및 DisplayOffTimeoutPluggedIn에 대한 이러한 �
 > HoloLens 2에서 일관된 환경을 제공하도록 DisplayOffTimeoutOnBattery 및 StandbyTimeoutOnBattery의 값이 동일한 값으로 설정되어 있도록 하십시오. DisplayOffTimeoutPluggedIn 및 StandbyTimeoutPluggedIn에도 동일하게 적용됩니다. 최신 [대기에 대한](https://docs.microsoft.com/windows-hardware/design/device-experiences/display--sleep--and-hibernate-idle-timers) 자세한 내용은 표시, 절전 및 최대 절전형 유휴 시간을 참조하세요.
 
 ### HoloLens에 대해 새로 사용하도록 설정된 업데이트 정책
-- 업데이트를 설치하거나 업데이트 확인을 위해 업데이트 일시 중지 단추를 사용할 수 없습니다.
+- 업데이트가 설치되는 경우 또는 업데이트를 보장하기 위해 업데이트 일시 중지 단추를 사용할 수 없습니다.
 
 이제 HoloLens 2 장치에서 이러한 업데이트 정책을 사용할 수 있습니다.
 -   [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)
@@ -375,7 +371,7 @@ DisplayOffTimeoutOnBattery 및 DisplayOffTimeoutPluggedIn에 대한 이러한 �
 -   [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)
 -   [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)
 
-이 업데이트 정책 및 HoloLens 장치에 사용하는 방법에 대한 자세한 내용은 [HoloLens](hololens-updates.md)업데이트 관리에서 여기에서 읽을 수 있습니다.
+이 업데이트 정책 및 HoloLens 장치에 사용하는 방법에 대한 자세한 내용은 [HoloLens](hololens-updates.md)업데이트 관리에서 읽어 볼 수 있습니다.
 
 ### HoloLens 2에 대한 설정 페이지 표시
 - 설정 앱에서 제한된 페이지 선택을 표시하기 위해 혼동될 수 있는 설정 앱의 UI 컨트롤이 증가했습니다.
@@ -395,17 +391,17 @@ HoloLens 2에서 사용자 지정할 수 있는 페이지 설정을 확인하려
 
 이제 연구원들이 HoloLens 장치에서 연구 모드를 사용하도록 설정하여 이러한 모든 외부 연결 원시 이미지 센서 스트림에 액세스할 수 있습니다. HoloLens 2의 리서치 모드는 가속도계, 자이로스코프 및 자력계 판독값에 대한 액세스도 제공합니다. 사용자의 개인 정보를 보호하기 위해 리서치 모드를 통해 원시 눈 추적 카메라 이미지를 사용할 수 없지만 기존 API를 통해 시선 방향을 사용할 수 있습니다.
 
-자세한 기술 [정보는 리서치](https://docs.microsoft.com/windows/mixed-reality/research-mode) 모드 설명서를 참조하세요.
+자세한 기술 정보는 [리서치](https://docs.microsoft.com/windows/mixed-reality/research-mode) 모드 설명서를 참조하세요.
 
 ### 기록 길이 증가
-고객 의견으로 인해 혼합 현실 캡처의 기록 [길이가 증가했습니다.](holographic-photos-and-videos.md) 혼합 현실 캡처는 더 이상 기본적으로 5분으로 제한되지 않고 사용 가능한 디스크 공간에 따라 최대 녹음/녹화 길이를 계산합니다. 장치는 사용 가능한 디스크 공간에 따라 최대 비디오 녹화 시간을 총 디스크 공간의 80%까지 예측합니다.
+고객 피드백으로 인해 혼합 현실 캡처의 기록 [길이가 증가했습니다.](holographic-photos-and-videos.md) 혼합 현실 캡처는 더 이상 기본적으로 5분으로 제한되지 않고 사용 가능한 디스크 공간에 따라 최대 녹음/녹화 길이를 계산합니다. 장치는 사용 가능한 디스크 공간에 따라 최대 비디오 녹화 시간을 총 디스크 공간의 80%까지 예측합니다.
 
 > [!NOTE]
 > HoloLens는 다음 중 하나에 해당하면 기본 비디오 녹화 길이(5분)를 사용하게 됩니다.
 > - 예상 최대 기록 기간은 기본값인 5분보다 작습니다.
 > - 사용 가능한 디스크 공간이 총 디스크 공간의 20% 미만입니다.
 
-이 정보는 여기에서 다시 찾을 수 [있습니다.](holographic-photos-and-videos.md#maximum-recording-length) 
+홀로그램 사진 및 비디오 설명서에서 전체 요구 [사항을 찾을 수](holographic-photos-and-videos.md#maximum-recording-length) 있습니다. 
 
 ### 업데이트의 개선 사항 및 수정 사항:
 - 이제 OOBE의 더 많은 화면이 어두운 모드에 있습니다.
@@ -549,7 +545,7 @@ HoloLens 2, *Windows Holographic, 버전 2004의 2020년* 5월 주요 소프트�
 
 ### Windows Autopilot 지원
 
-HoloLens 2용 Windows Autopilot을 사용하면 장치 판매 채널이 HoloLens를 Intune 테넌트에 미리 등록할 수 있습니다. 장치가 도착하면 테넌트에서 공유 장치로 자체 배포할 준비가 됩니다. 자체 배포를 활용하려면 장치가 USB-C-이더넷을 사용하여 설치 시 첫 번째 화면 중에 네트워크에 연결해야 합니다.
+HoloLens 2용 Windows Autopilot을 사용하면 장치 판매 채널에서 HoloLens를 Intune 테넌트에 미리 등록할 수 있습니다. 장치가 도착하면 테넌트에서 공유 장치로 자체 배포할 준비가 됩니다. 자체 배포를 활용하려면 장치가 USB-C-이더넷을 사용하여 설치 시 첫 번째 화면 중에 네트워크에 연결해야 합니다.
 
 사용자가 Autopilot 자체 배포 프로세스를 시작하면 프로세스가 다음 단계를 완료합니다.
 
@@ -567,7 +563,7 @@ HoloLens 2용 Windows Autopilot을 사용하면 장치 판매 채널이 HoloLens
 
 일부 사용자는 직장 또는 학교 환경의 다른 사용자와 HoloLens 장치를 공유합니다. 따라서 긴 사용자 이름과 암호를 입력하지 않고도 사용자가 쉽게 사용할 수 있는 것이 중요합니다. FIDO(Fast Identity Online)를 사용하면 조직의 모든 사용자(Azure AD 테넌트)가 사용자 이름이나 암호를 입력하지 않고 HoloLens에 원활하게 로그인할 수 있습니다.
 
-FIDO2 보안 키는 모든 폼 팩터에서 사용할 수 있는 "이식할 수 없는" 표준 기반 암호 없는 인증 방법입니다. FIDO는 암호 없는 인증을 위한 개방형 표준입니다. 이를 통해 사용자 및 조직이 사용자 이름이나 암호 없이 리소스에 로그인할 수 있습니다. 대신 외부 보안 키 또는 장치에 기본 제공되는 플랫폼 키를 사용합니다.
+FIDO2 보안 키는 모든 폼 팩터에서 사용할 수 있는 "코드할 수 없는" 표준 기반 암호 없는 인증 방법입니다. FIDO는 암호 없는 인증을 위한 개방형 표준입니다. 이를 통해 사용자 및 조직이 사용자 이름이나 암호 없이 리소스에 로그인할 수 있습니다. 대신 외부 보안 키 또는 장치에 기본 제공되는 플랫폼 키를 사용합니다.
 
 시작하려면 암호 없는 보안 키 로그인 [사용을 참조하세요.](https://docs.microsoft.com/azure/active-directory/authentication/howto-authentication-passwordless-security-key)
 
@@ -588,7 +584,7 @@ HoloLens에는 업무용 앱에 대한 MDM 앱 배포 및 관리가 중요합니
 
 ### 추가 CSP 및 정책
 
-[CSP(구성](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference?redirectedfrom=MSDN) 서비스 공급자)는 장치에서 구성 설정을 읽고, 설정하고, 수정하거나, 삭제할 수 있는 인터페이스입니다. 이 릴리스에서는 배포된 HoloLens 장치를 통해 관리자가 제어 기능을 강화하는 추가 정책에 대한 지원을 추가합니다. HoloLens에서 지원하는 CSP 목록은 [NetworkQoSPolicy CSP를 참조하세요.](https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp)
+[CSP(구성 서비스](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference?redirectedfrom=MSDN) 공급자)는 장치에서 구성 설정을 읽거나 설정, 수정 또는 삭제할 수 있는 인터페이스입니다. 이 릴리스에서는 배포된 HoloLens 장치를 통해 관리자가 제어 기능을 강화하는 추가 정책에 대한 지원을 추가합니다. HoloLens에서 지원하는 CSP 목록은 [NetworkQoSPolicy CSP를 참조하세요.](https://docs.microsoft.com/windows/client-management/mdm/networkqospolicy-csp)
 
 이 릴리스의 새로운 버전:
 
@@ -664,7 +660,7 @@ USB를 통해 HoloLens 2에 테더링될 때 5G/LTE 휴대폰 및 Wi-Fi 핫팟�
 - 첫 실행 설치 후 바로 눈 추적의 정확도가 예상보다 낮을 수 있는 문제를 해결했습니다.
 - 눈 추적 하위 시스템으로 특정 조건에서 보정을 초기화하거나 수행하지 못한 문제를 해결했습니다.
 - 이미 보정된 사용자에게 눈 보정 메시지가 표시되는 문제를 해결했습니다.
-- 눈 보정 중에 드라이버가 충돌하는 문제를 해결했습니다.
+- 시선 보정 중에 드라이버가 충돌하는 문제를 해결했습니다.
 - 전원 단추를 반복해서 누르면 60초 시스템 시간 제한 및 셸 충돌이 발생할 수 있는 문제를 해결했습니다.
 - 깊이 버퍼의 안정성이 향상되었습니다.
 - 사용자가 **보다** 쉽게 피드백을 공유할 수 있도록 피드백 허브에 공유 단추가 추가되었습니다.

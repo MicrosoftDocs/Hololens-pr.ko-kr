@@ -1,6 +1,6 @@
 ---
 title: HoloLens BitLocker 암호화
-description: HoloLens에 저장된 파일을 보호하기 위해 Bitlocker 디바이스 암호화를 사용하도록 설정
+description: Bitlocker 장치 암호화를 사용하도록 설정하여 HoloLens 혼합 현실 장치에 저장된 파일을 보호하는 방법을 배워야 합니다.
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,28 +11,28 @@ ms.localizationpriority: medium
 ms.date: 01/26/2019
 ms.reviewer: ''
 manager: laurawi
-ms.openlocfilehash: 5ab35f0804c6a906cb0bb262211e8ae5ab017459
-ms.sourcegitcommit: 896bdfccf4612a692a25a6bfaecfa2146860407e
+ms.openlocfilehash: 268c3650b85e7e7f102618ccc5a94c25de54dcfe
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "10865778"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284029"
 ---
-# HoloLens (첫번째 Gen) BitLocker 암호화
+# HoloLens(1세대) BitLocker 암호화
 
-HoloLens (첫번째 gen) 및 HoloLens 2 모두 BitLocker를 사용 하 여 장치 암호화를 지원 하지만 HoloLens 2에서는 항상 BitLocker를 사용할 수 있습니다.
+HoloLens(1세대) 및 HoloLens 2는 모두 BitLocker를 사용하여 장치 암호화를 지원하나, HoloLens 2에서는 BitLocker가 항상 사용하도록 설정됩니다.
 
-이 문서는 HoloLens에서 BitLocker를 사용 하 고 관리 하는 데 도움이 됩니다 (1 gen).
+이 문서는 HoloLens(1세대)에서 BitLocker를 사용하도록 설정하고 관리하는 데 도움이 될 것입니다.
 
-HoloLens (첫번째 gen)에서 BitLocker 장치 암호화를 수동으로 사용 하거나 MDM (모바일 디바이스 관리)을 사용할 수 있습니다. 파일 및 HoloLens에 저장 된 정보를 보호 하기 위해 [BitLocker 장치 암호화](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) 를 사용 하도록 설정 하려면 다음 지침을 따르세요. 장치 암호화는 CSP (BitLocker 구성 서비스 공급자)의 e 0 [Methodbydrivetype 메서드 3](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) 에 해당 하는 aes-ccmp 128 암호화 메서드를 사용 하 여 데이터를 보호할 수 있습니다. 올바른 암호화 키 (예: 암호)를 사용 하는 사용자는 해독 하거나 데이터 복구를 수행할 수 있습니다.
+HoloLens(1세대)에서는 수동으로 또는 MDM(모바일 장치 관리)을 사용하여 BitLocker 장치 암호화를 사용하도록 설정할 수 있습니다. 다음 지침에 따라 [BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) 장치 암호화를 사용하도록 설정하여 HoloLens에 저장된 파일 및 정보를 보호합니다. 장치 암호화는 BitLocker CSP(구성 서비스 공급자)의 [EncryptionMethodByDriveType 메서드 3에](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#encryptionmethodbydrivetype) 해당하는 AES-CBC 128 암호화 방법을 사용하여 데이터를 보호하는 데 도움이 됩니다. 올바른 암호화 키(예: 암호)가 있는 직원은 암호를 해독하거나 데이터 복구를 수행할 수 있습니다.
 
 ## MDM을 사용하여 디바이스 암호화를 사용하도록 설정
 
-MDM (모바일 디바이스 관리) 공급자를 사용 하 여 장치 암호화가 필요한 정책을 적용할 수 있습니다. 사용할 정책은 정책 CSP의 [Security/RequireDeviceEncryption 설정](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) 입니다.
+MDM(모바일 장치 관리) 공급자를 사용하여 장치 암호화가 필요한 정책을 적용할 수 있습니다. 사용할 정책은 정책 CSP의 [Security/RequireDeviceEncryption](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption) 설정입니다.
 
-[Microsoft Intune을 사용 하 여 장치 암호화를 사용 하도록 설정 하는 지침을 참조 하세요.](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-holographic-for-business)
+[Microsoft Intune을 사용하여 장치 암호화를 사용하도록 설정하는 방법에 대한 지침을 참조하세요.](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-holographic-for-business)
 
-다른 MDM 도구의 경우 MDM 공급자의 설명서의 지침을 참조하세요. MDM 공급자가 장치 암호화를 위해 사용자 지정 URI를 요구 하는 경우 다음 구성을 사용 합니다.
+다른 MDM 도구의 경우 MDM 공급자의 설명서의 지침을 참조하세요. MDM 공급자가 장치 암호화를 위해 사용자 지정 URI를 필요로 하는 경우 다음 구성을 사용합니다.
 
 - **이름**: 사용자가 선택한 이름
 - **설명**: 선택 사항
@@ -44,14 +44,14 @@ MDM (모바일 디바이스 관리) 공급자를 사용 하 여 장치 암호화
 
 프로비저닝 패키지는 지정한 구성을 장치에 적용하는 Windows 구성 디자이너 도구에서 생성된 파일입니다. 
 
-### Windows 홀로그램 edition을 업그레이드 하 고 암호화를 사용 하는 프로비저닝 패키지를 만듭니다.
+### Windows Holographic 에디션을 업그레이드하고 암호화를 사용하는 프로비저닝 패키지 만들기
 
 1. [HoloLens용 프로비저닝 패키지를 만듭니다.](hololens-provisioning.md)
 1. **런타임 설정** > **정책** > **보안**으로 이동하여 **RequireDeviceEncryption**을 선택합니다.
 
     ![디바이스 암호화 설정을 예로 구성 필요](images/device-encryption.png)
 
-1. 상업용 제품군을 구입할 때 제공 된 XML 라이선스 파일을 찾습니다.
+1. Commercial Suite를 구매할 때 제공된 XML 라이선스 파일을 찾아야 합니다.
 
 1. Commercial Suite를 구입했을 때 받은 XML 라이선스 파일을 찾아 선택합니다.
     > [!NOTE]
@@ -59,10 +59,10 @@ MDM (모바일 디바이스 관리) 공급자를 사용 하 여 장치 암호화
 
 1. **파일** 메뉴에서 **저장**을 클릭합니다. 
 
-1. 프로젝트 파일에 중요 한 정보가 포함 될 수 있음을 설명 하는 경고를 읽고 **확인**을 클릭 합니다.
+1. 프로젝트 파일에 중요한 정보가 포함될 수 있는 경우를 설명하는 경고를 읽고 확인을 **클릭합니다.**
 
     > [!IMPORTANT]
-    > 배포 패키지를 빌드할 때 프로젝트 파일과 프로비저닝 패키지 (ppkg) 파일에 중요 한 정보가 포함 될 수 있습니다. .ppkg 파일을 암호화하는 옵션이 있지만 프로젝트 파일은 암호화되지 않습니다. 프로젝트 파일을 안전한 위치에 저장 하 고 더 이상 필요 하지 않을 경우 프로젝트 파일을 삭제 해야 합니다.
+    > 프로비저닝 패키지를 빌드할 때 프로젝트 파일 및 프로비저닝 패키지(.ppkg) 파일에 중요한 정보를 포함할 수 있습니다. .ppkg 파일을 암호화하는 옵션이 있지만 프로젝트 파일은 암호화되지 않습니다. 프로젝트 파일을 안전한 위치에 저장하고 더 이상 필요하지 않는 경우 프로젝트 파일을 삭제해야 합니다.
 
 1. **내보내기** 메뉴에서 **프로비저닝 패키지**를 클릭합니다.
 1. **소유자**를 **IT 관리자**로 변경합니다. 이렇게 하면 이 프로비저닝 패키지의 우선 순위가 다른 소스에서 이 장치에 적용된 프로비저닝 패키지보다 더 높게 설정됩니다. 그런 후 **다음**을 선택합니다.
@@ -97,6 +97,6 @@ MDM (모바일 디바이스 관리) 공급자를 사용 하 여 장치 암호화
 
 HoloLens에서 암호화는 자동으로 적용됩니다. 디바이스 암호화 상태를 확인하려면:
 
-- HoloLens에서 **설정** > **시스템** > **정보**로 이동합니다. 장치가 암호화 되어 있으면 **BitLocker** 를 **사용할 수** 있습니다. 
+- HoloLens에서 **설정** > **시스템** > **정보**로 이동합니다. 장치가 **암호화된** 경우 **BitLocker를** 사용할 수 있습니다. 
 
-    ![BitLocker 사용 가능으로 표시 된 화면 정보](images/about-encryption.png)
+    ![BitLocker를 사용하도록 설정한 화면을 보여 주면](images/about-encryption.png)

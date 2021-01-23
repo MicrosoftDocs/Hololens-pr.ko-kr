@@ -1,6 +1,6 @@
 ---
 title: 상용 환경에서 HoloLens 설정
-description: 엔터프라이즈 환경에서 HoloLens를 배포하고 관리하는 방법을 자세히 알아보십시오.
+description: 인프라, Azure Active Directory 및 모바일 장치 관리를 비롯한 엔터프라이즈 환경에서 HoloLens를 배포하고 관리하는 방법을 자세히 설명합니다.
 ms.prod: hololens
 ms.sitesec: library
 ms.assetid: 88bf50aa-0bac-4142-afa4-20b37c013001
@@ -11,18 +11,18 @@ audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/04/2020
-ms.openlocfilehash: 082064acd075451e7a8d55352249a0776cd19d76
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 9458a6fd02cf96dd265580cb099e39fa221d4206
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253215"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284049"
 ---
 # HoloLens 2 엔터프라이즈 배포 및 관리
 
 이 개요는 IT 전문가가 엔터프라이즈 내에서 Microsoft HoloLens 2 장치를 배포하고 관리하기 위한 고려 사항을 이해하는 데 도움이 됩니다.
 
-HoloLens 2는 강력하고 유연한 기본 제공 모바일 장치 및 앱 관리 기술을 조직에 제공하는 Windows 10 Holographic에서 실행됩니다. Windows 10 Holographic은 종단 내 장치 수명 주기 관리를 지원하여 회사에서 장치, 데이터 및 앱을 제어할 수 있도록 합니다. HoloLens 2는 포괄적인 모바일 장치 관리 솔루션을 사용하여 장치 등록, 구성 및 응용 프로그램 관리에서 유지 관리 및 사용 중지까지 표준 수명 주기 관행에 쉽게 통합할 수 있습니다.
+HoloLens 2는 강력하고 유연한 기본 제공 모바일 장치 및 앱 관리 기술을 조직에 제공하는 Windows 10 Holographic에서 실행됩니다. Windows 10 Holographic은 종단 내 장치 수명 주기 관리를 지원하여 회사에서 장치, 데이터 및 앱을 제어할 수 있도록 합니다. HoloLens 2는 포괄적인 모바일 장치 관리 솔루션을 사용하여 장치 등록, 구성 및 응용 프로그램 관리에서 유지 관리 및 사용 중지까지 표준 수명 주기 관행에 쉽게 통합될 수 있습니다.
 
 ## 준비
 
@@ -45,27 +45,27 @@ HoloLens 2는 엔터프라이즈 환경에서 MDM(모바일 장치 관리) 시�
 > System Center Configuration Manager와 같은 기존 프레미스 PC 관리 시스템은 HoloLens 2에서 지원되지 않습니다.
 
 ### 비즈니스용 Windows 업데이트
-Microsoft는 장치 그룹에 업데이트를 배포하고 업데이트 설치를 위해 유지 관리 기간을 정의하는 기능 같은 추가 Windows 업데이트 중심 관리 기능을 IT 관리자에게 제공하는 비즈니스용 Windows 업데이트를 설계했습니다. HoloLens 2 업데이트 관리에 대한 자세한 내용은 여기에서 찾을 수 [있습니다.](https://docs.microsoft.com/hololens/hololens-updates)
+Microsoft는 장치 그룹에 업데이트를 배포하고 업데이트 설치를 위해 유지 관리 기간을 정의하는 기능 같은 추가 Windows 업데이트 중심 관리 기능을 IT 관리자에게 제공하는 비즈니스용 Windows 업데이트를 설계했습니다. [HoloLens](https://docs.microsoft.com/hololens/hololens-updates) 2 업데이트 관리에 대한 자세한 내용은 HoloLens 업데이트 설명서를 참조하세요.
 
 ### 인증서
-환경에서 Corp 네트워크 인증 또는 다른 리소스에 대한 액세스 또는 Corp Wi-Fi 필요한 경우 HoloLens 2는 MDM을 통해 인증서 배포를 지원합니다. 일부 MDM 인프라 구성은 HoloLens 2에 인증서를 배포할 수 있도록 설정해야 할 수 있습니다. [HoloLens 2에](https://docs.microsoft.com/hololens/hololens-certificates-network)대한 인증서 및 네트워크 프로필을 준비하는 방법을 읽어 읽습니다. Intune 세부 정보는 여기에서 찾을 수 [있습니다.](https://docs.microsoft.com/mem/intune/protect/certificates-configure)
+환경에서 Corp 네트워크 인증 또는 다른 리소스에 대한 액세스 또는 Corp Wi-Fi 인증서가 필요한 경우 HoloLens 2는 MDM을 통해 인증서 배포를 지원합니다. 일부 MDM 인프라 구성은 HoloLens 2에 인증서를 배포할 수 있도록 설정해야 할 수 있습니다. [HoloLens 2에](https://docs.microsoft.com/hololens/hololens-certificates-network)대한 인증서 및 네트워크 프로필을 준비하는 방법을 읽어 읽습니다. Intune을 사용하는 경우 인증 구성 세부 [정보를 확인](https://docs.microsoft.com/mem/intune/protect/certificates-configure) 합니다.
 
 ## 구성
 
 MDM 관리자는 MDM 시스템에 등록된 모든 회사 장치에서 정책 설정을 정의하고 구현할 수 있습니다. 사용하는 구성 설정은 배포 시나리오에 따라 다릅니다. Windows 10에서 CSP(구성 서비스 공급자)는 장치에서 구성 설정을 읽거나 설정, 수정 또는 삭제할 수 있는 인터페이스입니다. 이러한 설정은 레지스트리 키 또는 파일에 매핑됩니다. HoloLens 2용 Windows 10 장치 관리 CSP에 대한 자세한 내용은 HoloLens 장치에서 지원되는 [CSP의 전체 목록을 참조하세요.](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens)
 
-HoloLens 2는 사용자 지정 프로비저닝 패키지를 통해 제한된 CSP 구성 집합 설정도 지원됩니다. 프로비저닝 패키지는 일반적으로 MDM이 아닌 관리 장치에 활용되고 각 장치에 수동으로 적용해야 합니다. 사용자 지정 프로비저닝 패키지를 구축하는 데 대한 자세한 내용은 여기에서 찾을 수 [있습니다.](https://docs.microsoft.com/hololens/hololens-provisioning)
+HoloLens 2는 사용자 지정 프로비저닝 패키지를 통해 제한된 CSP 구성 집합 설정도 지원됩니다. 프로비저닝 패키지는 일반적으로 MDM이 아닌 관리 장치에 활용되고 각 장치에 수동으로 적용해야 합니다. 사용자 지정 프로비저닝 패키지를 작성하는 데 대한 자세한 내용은 [HoloLens](https://docs.microsoft.com/hololens/hololens-provisioning) 프로비저닝 설명서를 참조하세요.
 
 > [!NOTE]
 > HoloLens 2는 회사 Windows 10 장치 구성을 관리하기 위한 쉽고 간단한 프로세스를 제공하는 [Windows Autopilot을](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot)지원합니다.
 
 ### ID 관리
 
-직원은 하나의 계정만 사용하여 장치를 초기화할 수 있으므로 조직에서 먼저&#39;계정을 제어해야 합니다. 선택하는 계정이 장치를 제어하는 사람을 결정하고 관리 기능에 영향을 줍니다. HoloLens 2는 로컬 사용자 계정, 개인 Microsoft 계정 및 Azure Active Directory 계정의 세 가지 계정 유형을 지원합니다. HoloLens 2 디바이스에서 모든 기능을 사용할 수 있도록 하여 엔터프라이즈 ID 관리 솔루션에 Azure Active Directory를 활용하는 것이 좋습니다. HoloLens 2의 ID에 대한 자세한 내용은 여기에서 찾을 수 [있습니다.](https://docs.microsoft.com/hololens/hololens-identity)
+직원은 하나의 계정만 사용하여 장치를 초기화할 수 있으므로 조직에서 먼저&#39;계정을 제어해야 합니다. 선택하는 계정이 장치를 제어하는 사람을 결정하고 관리 기능에 영향을 줍니다. HoloLens 2는 로컬 사용자 계정, 개인 Microsoft 계정 및 Azure Active Directory 계정의 세 가지 계정 유형을 지원합니다. HoloLens 2 디바이스에서 모든 기능을 사용할 수 있도록 하여 엔터프라이즈 ID 관리 솔루션에 Azure Active Directory를 활용하는 것이 좋습니다. [HoloLens](https://docs.microsoft.com/hololens/hololens-identity) 2의 ID에 대한 자세한 내용은 HoloLens ID를 참조합니다.
 
 ### 네트워크 및 연결
 
-HoloLens 2는 클라우드 첫 번째 장치이기 위해 모든 기능을 사용하려면 온라인 리소스에 대한 네트워크 액세스가 필요합니다. 회사 인트라넷 네트워크에 연결하여 HoloLens 2 장치를 배포하는 경우 HoloLens 2 클라우드 서비스에 대한 액세스를 허용하도록 프록시/방화벽 규칙을 업데이트해야 할 수 있습니다. HoloLens 2 운영 체제에 필요한 공통 끝점 목록은 여기에서 찾을 수 [있습니다.](https://docs.microsoft.com/hololens/hololens-offline) HoloLens 2에서 응용 프로그램 또는 기타 클라우드 서비스를 성공적으로 실행하려면 추가 끝점에 액세스해야 할 수 있습니다.
+HoloLens 2는 클라우드 첫 번째 장치이기 위해 모든 기능을 사용하려면 온라인 리소스에 대한 네트워크 액세스가 필요합니다. 회사 인트라넷 네트워크에 연결하여 HoloLens 2 장치를 배포하는 경우 HoloLens 2 클라우드 서비스에 대한 액세스를 허용하도록 프록시/방화벽 규칙을 업데이트해야 할 수 있습니다. 자세한 내용은 [HoloLens 2](https://docs.microsoft.com/hololens/hololens-offline)운영 체제의 공통 끝점 목록을 살펴보아야 합니다. HoloLens 2에서 응용 프로그램 또는 기타 클라우드 서비스를 성공적으로 실행하려면 추가 끝점에 액세스해야 할 수 있습니다.
 
 추가 끝점 액세스가 필요한 몇 가지 일반적인 HoloLens 2 서비스는 다음과 같습니다.
 
@@ -79,7 +79,7 @@ HoloLens 2는 클라우드 첫 번째 장치이기 위해 모든 기능을 사�
 
 ### 보안 검토
 
-대부분의 엔터프라이즈 IT 부서에서는 회사 엔터프라이즈 네트워크에 배포되는 새 장치를 평가하고 검토해야 합니다. 조직에서 HoloLens 2에 대한 보안 검토를 요구하는 경우 여기에서 보안 승인 획득을 지원하기 위해 더 많은 세부 정보를 찾을 [수 있습니다.](https://docs.microsoft.com/hololens/security-overview)
+대부분의 엔터프라이즈 IT 부서에서는 회사 엔터프라이즈 네트워크에 배포되는 새 장치를 평가하고 검토해야 합니다. 조직에서 HoloLens 2에 대한 보안 검토가 필요한 경우 보안 승인을 획득하는 데 도움이 될 더 많은 세부 정보를 찾을 [수 있습니다.](https://docs.microsoft.com/hololens/security-overview)
 
 ### 일반적인 HoloLens 2 장치 설정
 
@@ -98,11 +98,11 @@ HoloLens 2 장치를 회사 엔터프라이즈 환경에 배포할 때 HoloLens 
 
 HoloLens 2는 카메라, 마이크, 스피커, USB 인터페이스, Bluetooth 인터페이스 및 Wi-Fi와 같은 인기 하드웨어 기능을 포함하는 최첨단 기술을 사용합니다. 이러한 기능의 가용성을 제어하는 데 하드웨어 제한을 사용할 수 있습니다.
 
-다음 목록에는 HoloLens 2에서 하드웨어 제한을 구성하기 위해 지원하는 가장 일반적으로 사용되는 MDM 설정이 나열됩니다. 이러한 하드웨어 제한 중 일부는 연결을 제공하고 데이터 보호에 도움이 됩니다.
+다음에는 HoloLens 2에서 하드웨어 제한을 구성하기 위해 지원하는 가장 일반적으로 사용되는 MDM 설정이 나열됩니다. 이러한 하드웨어 제한 중 일부는 연결을 제공하고 데이터 보호에 도움이 됩니다.
 
 - [**WiFi 허용:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi#wifi-allowwifi) 사용자가 디바이스에서 Wi-Fi 및 사용할 수 있는지 여부
-- [**USB 연결 허용:**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) USB 연결을 사용할 수 있는지 여부(USB&#39;영향을 주지 않습니다.
-- [**다음 Bluetooth.**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowbluetooth) 사용자가 장치에서 디바이스에서 Bluetooth 및 사용할 수 있는지 여부
+- [**USB 연결을 허용합니다.**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowusbconnection) USB 연결을 사용할 수 있는지 여부(USB&#39;영향을 주지 않습니다.
+- [**다음 Bluetooth.**](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity#connectivity-allowbluetooth) 사용자가 디바이스에서 디바이스에서 Bluetooth 및 사용할 수 있는지 여부
 
 다른 일반적인 장치 [제한에 대해 자세히 읽어 읽습니다.](https://docs.microsoft.com/hololens/hololens-common-device-restrictions)
 
@@ -110,7 +110,7 @@ HoloLens 2는 카메라, 마이크, 스피커, USB 인터페이스, Bluetooth �
 
 대부분의 회사 Wi-Fi 네트워크에서는 인증서와 기타 복잡한 정보를 요구하여 사용자 액세스를 제한하고 보안을 유지합니다. 이 고급 Wi-Fi 정보는 일반 사용자가 구성하기는 어렵지만 MDM 시스템은 사용자 개입 없이 이러한 Wi-Fi 프로필을 완전히 구성할 수 있습니다. MDM 시스템에서는 여러 개의 Wi-Fi 프로필을 만들 수 있습니다.
 
-Windows 10에 대한 Wi-Fi 설정에 대한 자세한 내용은 엔터프라이즈 프로필 [WiFi 설정을 참조하세요.](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile)
+Windows 10에 대한 Wi-Fi 설정에 대한 자세한 내용은 엔터프라이즈 프로필 WiFi 설정을 [참조하세요.](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-windows#enterprise-profile)
 
 #### 인증서
 
@@ -150,14 +150,14 @@ VPN 프로필에 대한 자세한 내용은 [VPNv2 CSP](https://msdn.microsoft.c
 
 Windows 10에서는 Windows 앱용 UWP(유니버설 Windows 플랫폼)를 사용하여 여러 장치에서 원활하게 작동하는 앱을 개발할 수 있습니다.
 
-HoloLens 2 장치에 응용 프로그램을 배포하는 방법에는 여러 가지가 있습니다. MDM, 비즈니스용 Microsoft Store를 통해 직접 앱을 배포하거나 프로비저닝 패키지를 통해 테스트용 로드할 수 있습니다. 앱 [배포에 대한 자세한 내용은 여기에서 찾을 수 있습니다.](https://docs.microsoft.com/hololens/app-deploy-overview)
+HoloLens 2 장치에 응용 프로그램을 배포하는 방법에는 여러 가지가 있습니다. MDM, 비즈니스용 Microsoft Store를 통해 직접 앱을 배포하거나 프로비저닝 패키지를 통해 테스트용 로드할 수 있습니다. 자세한 내용은 [앱 배포](https://docs.microsoft.com/hololens/app-deploy-overview) 설명서를 참조하세요.
 
 > [!NOTE]
 > HoloLens 2는 UWP ARM64 앱 실행만 지원합니다.
 
 ## 유지 관리
 
-엔터프라이즈 IT 환경에서는 보안과 비용 조정에 대한 필요성과 사용자에게 최신 기술을 제공하고 싶은 욕구 사이에 균형을 맞춰야 합니다. 사이버 공격이 일상적으로 발생하고 있는 것이기 때문에 Windows 10 장치의 상태를 제대로 유지 관리하는 것이 중요합니다. IT 부서는 내부 응용 프로그램에 액세스할 수 있는 장치를 적용할 뿐 아니라 구성 설정을 관리하여 규정을 준수하도록 관리해야 합니다. HoloLens 2는 장치가 회사 정책을 준수하는 데 필요한 모바일 작업 관리 기능을 제공합니다.
+엔터프라이즈 IT 환경에서는 보안과 비용 조정에 대한 필요성과 사용자에게 최신 기술을 제공하고 싶은 욕구 사이에 균형을 맞춰야 합니다. 사이버 공격이 일상적으로 발생하고 있는 것이기 때문에 Windows 10 장치의 상태를 제대로 유지 관리하는 것이 중요합니다. IT 부서는 내부 응용 프로그램에 액세스할 수 있는 장치를 적용할 뿐 아니라 구성 설정을 관리하여 규정을 준수하도록 관리해야 합니다. HoloLens 2는 장치가 회사 정책을 준수하는지 보장하는 데 필요한 모바일 작업 관리 기능을 제공합니다.
 
 ### OS 서비스 옵션
 
@@ -165,7 +165,7 @@ HoloLens 2 장치에 응용 프로그램을 배포하는 방법에는 여러 가
 
 Microsoft는 Windows 제품 엔지니어링 및 릴리스 주기를 간소화하였기 때문에, 그 어느 때보다도 빠르게 시장에서 원하는 새 기능과 환경, 특징을 제공할 수 있습니다. Microsoft는 1년(12개월간)에 기능 업데이트를 두 번 제공할 예정입니다. **기능 업데이트는** 현재 분기 또는 CB를 설정하고 연결된 버전을 가 있습니다.
 
-Microsoft는 또한 HoloLens 2 장치에 보안 및 안정성을 위한 업데이트를 직접 전달하고 설치합니다. Windows **업데이트를 통해** Microsoft 제어에 따라 릴리스된 이러한 품질 업데이트는 월별 제공됩니다. HoloLens 2는 동일한 표준 업데이트 프로세스의 일부로 기능 업데이트 및 품질 업데이트를 사용 합니다.
+Microsoft는 또한 HoloLens 2 장치에 보안 및 안정성을 위한 업데이트를 직접 전달하고 설치합니다. Windows **업데이트를 통해** Microsoft 제어에 따라 릴리스된 이러한 품질 업데이트는 월별 제공됩니다. HoloLens 2는 기능 업데이트 및 품질 업데이트를 동일한 표준 업데이트 프로세스의 일부로 사용 합니다.
 
 엔터프라이즈 고객은 MDM 시스템을 사용하여 HoloLens 2s에서 업데이트 환경 및 프로세스를 관리할 수 있습니다. 대부분의 경우 업데이트 프로세스 관리 정책이 기능 업데이트와 품질 업데이트에 모두 적용됩니다. [HoloLens 업데이트에 대한 MDM](https://docs.microsoft.com/hololens/hololens-updates)구성에 대한 자세한 내용입니다.
 
