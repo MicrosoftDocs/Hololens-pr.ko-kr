@@ -1,6 +1,6 @@
 ---
 title: HoloLens 다시 시작, 초기화 또는 복구
-ms.reviewer: Basic and advanced instructions for rebooting or resetting your HoloLens.
+ms.reviewer: Follow along with our basic and advanced instructions for rebooting or resetting your HoloLens 2 device.
 description: 고급 복구 도우미를 사용하여 이미지를 HoloLens 2로 플래시하는 방법
 keywords: 사용 방법, 다시 부팅, 초기화, 복구, 하드 초기화, 소프트 초기화, 전원 주기, HoloLens, 종료, acr, 고급 복구 도우미
 ms.prod: hololens
@@ -14,12 +14,12 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 7845a00d1141fb721683c4e3f2a884ed0c37c735
-ms.sourcegitcommit: 33911e3b405732d0d31a27039c8f590d52b647c4
+ms.openlocfilehash: 025ba8508eb930cdad6d502c381e5a07d9efc6e0
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "11254835"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284089"
 ---
 # <span data-ttu-id="31ddb-104">HoloLens 2 다시 시작, 초기화 또는 복구</span><span class="sxs-lookup"><span data-stu-id="31ddb-104">Restart, reset, or recover HoloLens 2</span></span>
 
