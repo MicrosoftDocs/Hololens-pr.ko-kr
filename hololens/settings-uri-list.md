@@ -1,6 +1,6 @@
 ---
 title: 페이지 설정 표시 여부
-description: PageVisibilityList에 대해 지원되는 HoloLens 목록 및 가이드입니다.
+description: PageVisibilityList에 대해 지원되는 URIS 목록과 HoloLens 혼합 현실 장치의 지침에 대한 최신 정보를 유지하세요.
 author: evmill
 ms.author: v-evmill
 ms.date: 10/13/2020
@@ -13,12 +13,12 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8cd336ce64cf7d4549b031a7977f592ca82dd6e4
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: e4d4936595144f82a468883f26dae6e19eef4f84
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11163146"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284119"
 ---
 # 페이지 설정 표시 여부
 
@@ -42,7 +42,8 @@ HoloLens 디바이스의 관리 가능한 기능 중 하나는 [Settings/PageVis
 1. 데이터 선택을 선택할 때: **문자열**
 1. 값을 입력 할 때 사용: **showonly:network-wifi;network-proxy;bluetooth**
 1. 장치가 있는 그룹에 사용자 지정 장치 구성을 할당 해야 합니다.
-Intune 그룹과 장치 구성에 대 한 자세한 내용은 [여기를 참조 하세요](hololens-mdm-configure.md).
+
+Intune 그룹 및 장치 구성에 대한 자세한 내용은 [HoloLens MDM 구성](hololens-mdm-configure.md)을 참조하세요.
 
 장치가 선택한 방법에 상관 없이 이제 변경을 수신 받을 것이고 사용자에게는 다음 설정 앱이 표시됩니다. 
 
@@ -126,4 +127,4 @@ HoloLens 장치와 Windows 10 장치는 설정 앱 내에서 서로 다른 페�
 > - ms-settings:windowsupdate-options
 > - ms-settings:windowsupdate-restartoptions 
 
-Windows 10 설정 URI의 전체 목록을 보려면 [여기](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference)를 방문해 주세요. 
+Windows 10 설정 URI의 전체 목록은 [시작 설정](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) 설명서를 참조하세요. 

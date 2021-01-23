@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 89f48fab236fdaf58fb0bf8b29e5a3aacb3bdee3
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 9e413963dbf34dd071fc9603487590065b967ee7
+ms.sourcegitcommit: af4e222a4f83ab82466a383099897986ddf6b8c4
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283739"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "11297293"
 ---
 # 앱 설치 관리자를 통해 HoloLens 2에 앱 설치
 
@@ -40,10 +40,11 @@ ms.locfileid: "11283739"
 
 ### 디바이스의 경우:
 
- 기능은 현재 HoloLens 2 디바이스용 Windows Holographic 20H2 빌드에서 사용할 수 있습니다. 이 메서드를 사용하는 모든 장치가 [업데이트되도록 합니다.](hololens-update-hololens.md)
+이 기능은 현재 HoloLens 2 디바이스용 Windows Holographic 20H2 빌드에서 사용할 수 있습니다. 이 메서드를 사용하는 모든 장치가 [업데이트되도록 합니다.](hololens-update-hololens.md)
 
-### 앱의 경우: 
-앱 설치 관리자에서 스토어의 **** 종속성 사용으로 앱의 솔루션 구성은 마스터 또는 릴리스가 되어야 합니다. **** 앱 패키지 만들기에 [대한 자세한 정보를 참조하세요.](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)
+### 앱의 경우:
+
+앱 설치 관리자에서 스토어의 **** 종속성에 따라 앱의 솔루션 구성이 마스터 또는 릴리스가 되어야 합니다. **** 앱 패키지 만들기에 [대한 자세한 정보를 참조하세요.](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)
 
 이 방법을 통해 설치된 앱은 디지털 서명을 해야 합니다. 인증서를 사용하여 앱에 서명해야 합니다. MS 신뢰할 수 있는 [CA](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)목록에서 인증서를 얻을 수 있습니다. 이 경우 추가 작업을 수행하지 필요가 없습니다. 또는 인증서를 장치에 푸시해야 하는 자체 인증서에 서명할 수 있습니다.
 
@@ -64,7 +65,7 @@ ms.locfileid: "11283739"
 1. 디바이스가 관리되는 것으로 간주되지 않는지 확인합니다.
 1. HoloLens 2 디바이스가 전원이 설정 및 로그인된지 확인합니다.
 1. PC에서 사용자 지정 앱으로 이동하고app.appxbundle을devicename\Internal Storage\Downloads에 복사합니다.
-    파일 복사를 마친 후 장치의 연결을 끊고 나중에 설치를 완료할 수 있습니다.
+    파일 복사를 마친 후 장치 연결을 끊고 나중에 설치를 완료할 수 있습니다.
 1. HoloLens 2 장치에서 시작 메뉴를 열고 **모든**앱을 **선택하고** 파일 탐색기 **앱을 실행합니다.**
 1. 다운로드 폴더로 이동합니다. 앱의 왼쪽 패널에서 이 디바이스를 **** 먼저 선택한 다음 다운로드로 이동해야 할 수 있습니다.
 1. yourapp.appxbundle 파일을 선택합니다.
@@ -78,7 +79,7 @@ ms.locfileid: "11283739"
 
 앱을 설치하지 못한 경우 다음을 확인하여 문제를 해결합니다.
 
-- 앱은 마스터 빌드 또는 릴리스 빌드입니다.
+- 앱은 마스터 또는 릴리스 빌드입니다.
 - 디바이스가 이 기능을 사용할 수 있는 빌드로 업데이트됩니다.
 - 인터넷에 [연결되어 있습니다.](hololens-network.md)
 - [Microsoft Store의 끝점이](hololens-offline.md) 올바르게 구성되었습니다.  

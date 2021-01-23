@@ -1,6 +1,6 @@
 ---
 title: HoloLens용 Windows 자동 실행 2
-description: HoloLens 2 장치에서 Autopilot를 설정하는 방법
+description: HoloLens 2 장치에서 Autopilot을 설정, 구성 및 문제 해결하는 방법을 알아봅니다.
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 10/13/2020
@@ -13,18 +13,18 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: autopilot
 manager: jarrettr
-ms.openlocfilehash: 98f35c52091a2d477a2f0852f66ad706498ad026
-ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
+ms.openlocfilehash: 23cb3612a633f6747c770d9fd52b137561492426
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253594"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284039"
 ---
 # HoloLens용 Windows 자동 실행 2
 
-Windows Holographic 버전 2004, HoloLens 2에서Windows Autopilot [자체 배포 모드](https://docs.microsoft.com/mem/autopilot/self-deploying)를 지원합니다. 관리자는 Microsoft Endpoint Manager에서 OOBE(첫 실행 경험)를 구성하고 최종 사용자가 거의 또는 전혀 상호 작용 없이 비즈니스용으로 장치를 준비할 수 있습니다. 이를 통해 인벤토리 관리 오버헤드, 실제 장치 준비 비용 및 설치 경험 중 직원의 지원 요청을 줄일 수 있습니다. Windows 자동 조종에 대해 자세히 알아보려면 [여기](https://docs.microsoft.com/mem/autopilot/windows-autopilot)를 클릭합니다.
+Windows Holographic 버전 2004, HoloLens 2에서Windows Autopilot [자체 배포 모드](https://docs.microsoft.com/mem/autopilot/self-deploying)를 지원합니다. 관리자는 Microsoft Endpoint Manager에서 OOBE(첫 실행 경험)를 구성하고 최종 사용자가 거의 또는 전혀 상호 작용 없이 비즈니스용으로 장치를 준비할 수 있습니다. 이를 통해 인벤토리 관리 오버헤드, 실제 장치 준비 비용 및 설치 경험 중 직원의 지원 요청을 줄일 수 있습니다. [Windows Autopilot](https://docs.microsoft.com/mem/autopilot/windows-autopilot) 설명서에서 자세한 내용을 알아보세요.
 
-Surface 디바이스와 마찬가지로 고객은 Microsoft [Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider)(리셀러 또는 디스트리뷰터)와 협력하여 파트너 센터를 통해 Autopilot 서비스에 등록된 디바이스를 가져오는 것이 좋습니다. 다른 장치 등록 방법에 대한 자세한 내용은 [여기](https://docs.microsoft.com/mem/autopilot/add-devices)에 나와 있습니다. Microsoft의 채널 파트너를 활용하여 가장 효율적인 종단 간 경로를 보장 합니다.
+Surface 디바이스와 마찬가지로 고객은 Microsoft [Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider)(리셀러 또는 디스트리뷰터)와 협력하여 파트너 센터를 통해 Autopilot 서비스에 등록된 디바이스를 가져오는 것이 좋습니다. 장치 등록을 위한 다른 방법은 [장치 추가](https://docs.microsoft.com/mem/autopilot/add-devices) 설명서에서 간략하게 설명되어 있지만, Microsoft의 채널 파트너를 활용하면 가장 효과적인 종단 간 경로가 보장됩니다.
 
 > [!NOTE]
 > 11/20/2020을 기준으로 Microsoft Endpoint Manager의 HoloLens에 대한 자동 설정 구성이 **공개 미리 보기**으로 전환되고 있습니다. 고객은 더 이상 개인 미리 보기에 등록할 필요가 없으며 모든 테넌트는 MEM 관리 센터에서 Autopilot을 설정할 수 있습니다.
@@ -73,7 +73,7 @@ Surface 디바이스와 마찬가지로 고객은 Microsoft [Cloud Solution Prov
 
 #### HoloLens OS 요구 사항을 검토합니다.
 
-- 디바이스는 [Windows 홀로그래픽, 버전 2004](hololens-release-notes.md#windows-holographic-version-2004)(빌드 19041.1103) 이상에 있어야 합니다. 디바이스의 빌드 버전을 확인하거나 최신 OS로 재플래시하려면 [고급 복구 도우미(ARC)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab)를 사용할 수 있습니다. [여기](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device)에서 지침을 확인할 수 있습니다. 2020년 9월 말까지 제공되는 장치에는 Windows Holographic 버전 1903이 미리 설치되어 있습니다. Autopilot 지원 장치가 배송되었는지 확인하려면 대리점에 문의하시기 바랍니다.
+- 디바이스는 [Windows 홀로그래픽, 버전 2004](hololens-release-notes.md#windows-holographic-version-2004)(빌드 19041.1103) 이상에 있어야 합니다. 장치에서 빌드 버전을 확인하거나 최신 OS로 다시 플래시하려면 [ARC(고급 복구 도우미)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab) 및 [장치 다시 플래시 지침](https://docs.microsoft.com/hololens/hololens-recovery#clean-reflash-the-device)을 사용하세요. 2020년 9월 말까지 제공되는 장치에는 Windows Holographic 버전 1903이 미리 설치되어 있습니다. Autopilot 지원 장치가 배송되었는지 확인하려면 대리점에 문의하시기 바랍니다.
 
 - Windows Holographic 버전 2004는 이더넷 연결을 통해서만 Autopilot를 지원합니다. **HoloLens를 켜기 전에** "USB-C에서 이더넷" 어댑터를 사용하여 HoloLens가 이더넷에 연결되어 있는지 확인합니다. 장치 부팅 시 사용자 상호 작용이 필요하지 않습니다. 많은 HoloLens 장치에 대한 자동 설치 롤아웃을 계획하고 있는 경우 어댑터 인프라에 대한 계획을 세우는 것이 좋습니다. USB 허브는 HoloLens에서 지원되지 않는 타사 드라이버를 추가로 설치해야 하는 경우가 많기 때문에 권장하지 않습니다.
 
