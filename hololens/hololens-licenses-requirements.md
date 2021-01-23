@@ -1,6 +1,6 @@
 ---
 title: 라이선스 요구 사항
-description: ''
+description: 모바일 장치 관리, HoloLens 및 원격 지원에 필요한 모든 라이선스 요구 사항 및 지침을 최신으로 유지하세요.
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 3ac86512755620ebb6159dd4d845b488e203dbad
-ms.sourcegitcommit: 238d41844116ab94d347a2ffd0fbfa18b8a81947
+ms.openlocfilehash: 2f7af532d2172dcaa6514ee11dbb0d6ab5631929
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "10956764"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283969"
 ---
 # 라이선스 요구 사항
 
@@ -27,7 +27,7 @@ ms.locfileid: "10956764"
 
 HoloLens 장치 관리 계획을 수립할 때 Azure AD와 MDM이 필요합니다. AD(활성 디렉터)는 HoloLens 장치를 관리 하는 데 사용할 수 없습니다.
 Intune 이외의 MDM을 사용하려는 경우 [Azure Active Directory 라이선스](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)가 필요합니다.
-Intune을 MDM으로 사용하는 경우 [다음](https://docs.microsoft.com/intune/fundamentals/licenses)은 Intune 라이선스가 포함된 제품군의 목록입니다. **Azure AD는 이러한 제품군의 대부분에 포함되어 있다는 점을 기억하세요.**
+Intune을 MDM으로 사용할 계획이라면 Intune 라이선스가 포함된 [제품군 목록](https://docs.microsoft.com/intune/fundamentals/licenses)을 읽어 보세요. **Azure AD는 이러한 제품군의 대부분에 포함되어 있다는 점을 기억하세요.**
 
 ## 시나리오 및 제품에 필요한 라이선스 식별
 
@@ -42,7 +42,7 @@ HoloLens(1세대) 장치를 비즈니스용 Windows Holographic으로 업그레�
 
 ### 원격 지원 라이선스 요구 사항
 
-필수 라이선싱 및 장치를 사용하고 있는지 확인합니다. 업데이트된 라이선스 및 제품 요구 사항은 [여기](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements)에서 찾을 수 있습니다.
+[요구 사항](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements) 설명서에서 확인할 수 있는 필수 라이선스 및 장치가 있는지 확인합니다.
 
 1. [원격 지원 라이선스](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)
     1. 또는 [원격 지원 평가판을 사용해 보세요](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
@@ -53,7 +53,7 @@ HoloLens(1세대) 장치를 비즈니스용 Windows Holographic으로 업그레�
 
 ### 라이선스 요구 사항 가이드
 
-업데이트된 라이선스 및 장치 요구 사항은 [여기](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements)에서 찾을 수 있습니다.
+[업데이트된 라이선스 및 장치 요구 사항](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements)을 확인합니다.
 
 1. [Azure AD(Azure Active Directory) 라이선스](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
 1. [Power BI](https://powerbi.microsoft.com/desktop/)

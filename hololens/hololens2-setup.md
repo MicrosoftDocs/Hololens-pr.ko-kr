@@ -1,6 +1,6 @@
 ---
 title: 새로운 HoloLens 2 준비
-description: 이 가이드는 처음 설정 및 하드웨어 가이드를 안내합니다.
+description: 건강 및 안전 팁과 하드웨어 가이드를 포함하여 HoloLens 2 장치를 처음으로 설정하고 조정하는 방법에 대해 알아보세요.
 keywords: hololens, 라이트, 맞춤, 편안함, 부품
 ms.assetid: 02692dcf-aa22-4d1e-bd00-f89f51048e32
 ms.date: 9/17/2019
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 44b66d001e7a6f4bcd5fde9261a225f6aa21b666
-ms.sourcegitcommit: 3827d244426ffecb517f6cfa714eeef9363c062d
+ms.openlocfilehash: 8b17ad031cfd49ac7a7553765633bc948bafc01d
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "11253567"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11282909"
 ---
 # HoloLens 2 사용 준비
 

@@ -1,6 +1,6 @@
 ---
 title: HoloLens(1세대) 핏 및 편안함 자주 묻는 질문
-description: HoloLens(1세대)에 맞게 조정하는 방법에 대해 자주 묻는 질문입니다.
+description: HoloLens(1세대) 혼합 현실 장치에 맞추는 방법에 대한 질문과 대답을 최신으로 유지하세요.
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -13,12 +13,12 @@ audience: ITPro
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: d21d4485919b8e3230e61fc0e158a6635d4e2c37
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 8205675213faefd1b0907627c427c572d52a37c6
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828673"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283999"
 ---
 # HoloLens(1세대) 핏 및 편안함 자주 묻는 질문
 

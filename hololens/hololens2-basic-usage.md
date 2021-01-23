@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 둘러보기
-description: HoloLens 2를 손으로 사용하는 방법에 대한 가이드
+description: HoloLens 2 장치를 손으로 사용하는 방법에 대한 이 가이드를 이용해 혼합 현실에 대해 알아보고 시작하세요.
 ms.assetid: 5f791a5c-bdb2-4c5d-bf46-4a198de68f21
 ms.date: 9/17/2019
 keywords: HoloLens
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8c905b53e878b9445ebccd4c4873d91a1d57f5e0
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 8aa4a7a4ca1982ee1877ecad9820a27a4ff9a218
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10828858"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11282949"
 ---
 # HoloLens 2 둘러보기
 

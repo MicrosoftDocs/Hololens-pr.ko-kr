@@ -1,6 +1,6 @@
 ---
 title: HoloLens(1세대) 설정
-description: 이 가이드는 처음 설정하는 과정을 안내합니다.  Wi-Fi 네트워크와 Microsoft(MSA) 또는 Azure AD(Azure Active Directory) 계정이 필요합니다.
+description: Microsoft(MSA) 또는 AAD(Azure Active Directory) 계정을 사용하여 Wi-Fi 네트워크를 통해 HoloLens(1세대)를 처음 설정하는 방법을 알아봅니다.
 ms.assetid: 0136188e-1305-43be-906e-151d70292e87
 ms.prod: hololens
 author: Teresa-Motiv
@@ -11,12 +11,12 @@ manager: jarrettr
 ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 9a20a2ddd52c08a2b44dad452aac07ad9e69de85
-ms.sourcegitcommit: 7edbb99e0972d3d857e5e87c062c3c64cacc1f41
+ms.openlocfilehash: aca7b287b3d26ab37ddb90e4245a1e0b3adc17e2
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "10903234"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283929"
 ---
 # HoloLens(1세대) 설정
 
@@ -24,7 +24,7 @@ HoloLens를 처음 켜면 장치 보정, 장치 설정 및 로그인 과정을 �
 
 다음 섹션에서는 HoloLens와 작업하고 홀로그램과 상호 작용하는 방법에 대해 알아봅니다. 해당 문서를 건너뛰려면 [HoloLens(1세대) 시작](hololens1-basic-usage.md)을 참조하세요.
 
-## 시작하기 전 확인 사항
+## 시작하기 전에
 
 시작하려면 먼저 다음 항목이 준비되어 있는지 확인해야 합니다.
 
@@ -71,7 +71,7 @@ HoloLens(1세대)는 동공 사이의 거리(IPD 또는 [동공 간 거리](http
 
 *두 번째 단계에서 IPD 손가락 맞춤 화면*
 
-축하합니다. 설정이 완료되었으며 HoloLens 사용을 시작할 수 있습니다.
+축하합니다! 설정이 완료되었으며 HoloLens 사용을 시작할 수 있습니다.
 
 ## 다음 단계
 

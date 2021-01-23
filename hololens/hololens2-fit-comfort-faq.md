@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 핏 및 편안함 FAQ
-description: HoloLens 2에 맞게 조정하는 방법에 대해 자주 묻는 질문입니다.
+description: HoloLens 2를 맞추고 혼합 현실 환경에서 편안함을 유지하는 방법에 대해 자주 묻는 질문에 대한 답변을 최신 상태로 유지하세요.
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -13,12 +13,12 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 17b55ef165cbb9df47f822f742141f4460cd9c6b
-ms.sourcegitcommit: bdbaed42dd9ecbd0ed9517de2e98a0465f584c1d
+ms.openlocfilehash: 158354c23e93abe770875491af1ab559e47557a7
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "10929844"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283839"
 ---
 # HoloLens 2 핏 및 편안함 자주 묻는 질문
 

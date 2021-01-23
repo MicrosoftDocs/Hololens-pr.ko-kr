@@ -1,6 +1,6 @@
 ---
 title: HoloLens 인프라 가이드라인
-description: HoloLens 장치 인프라 가이드라인
+description: 무선 네트워크 지원, 원격 지원 및 모바일 장치 관리를 포함하여 HoloLens 장치에 대한 인프라 지침에 대해 자세히 알아보세요.
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: a67aaa5df4c74531b5bed88abaa266b00de5c406
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 4eb55bec56e53de9195ac87e0491eefd91992f3d
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253165"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283389"
 ---
 # HoloLens 네트워크 구성
 
@@ -59,11 +59,11 @@ HoloLens는 제한된 클라우드 연결 해제 환경을 지원합니다.
 
 ### 원격 지원 특정 네트워크 요구 사항
 
-1. 원격 지원에서 최적의 성능을 내도록 권장되는 대역폭은 1.5 Mbps입니다. 자세한 네트워크 요구 사항과 추가 정보는 [여기](https://docs.microsoft.com/MicrosoftTeams/prepare-network)에서 볼 수 있습니다.
+1. 원격 지원에서 최적의 성능을 내도록 권장되는 대역폭은 1.5 Mbps입니다. 추가 정보는 [자세한 네트워크 요구 사항](https://docs.microsoft.com/MicrosoftTeams/prepare-network)에서 참고하세요.
 **(네트워크 속도가 1.5Mbps 이상인 네트워크가 아닌 경우에도 Remote Assist는 계속 작동합니다. 그러나 품질이 저하될 수 있습니다.)**
-1. 이러한 포트와 URL이 네트워크 방화벽에서 허용되는지 확인합니다. 이를 통해 Microsoft Teams가 실행하게 됩니다. 최신 목록은[여기](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)에서 볼 수 있습니다.
+1. Microsoft Teams의 기능이 작동하도록 네트워크 방화벽에서 이러한 포트 및 URL이 허용되어 있는지 확인합니다. [최신 포트 목록](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)을 유지하세요.
 
-- [원격 지원의 특정 네트워크 요구 사항](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#network-requirements)에 대해 자세히 알아보세요. 
+- [원격 지원의 특정 네트워크 요구 사항](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements#network-requirements)을 자세히 알아보세요. 
 - [Microsoft Teams에 맞게 조직의 네트워크를 준비](https://docs.microsoft.com/MicrosoftTeams/prepare-network)하는 방법에 대해 알아보세요.
 
 ### 특정 네트워크 요구 사항 가이드
@@ -80,15 +80,15 @@ HoloLens는 제한된 클라우드 연결 해제 환경을 지원합니다.
 
 1. 자동 등록을 사용하려는 경우 [Azure AD 등록을 구성](https://docs.microsoft.com/intune/deploy-use/.set-up-windows-device-management-with-microsoft-intune#azure-active-directory-enrollment)해야 합니다.
 
-1. 회사의 사용자가 Azure Active Directory (Azure AD)에 있는지 확인합니다.
-사용자 추가 지침은 [여기](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)에서 확인할 수 있습니다.
+1. 회사의 사용자가 Azure Active Directory(Azure AD)에 있는지 확인합니다.
+다음 [지침](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)에서 사용자 추가 방법을 알아보세요.
 
 1. 유사한 라이선스가 필요한 사용자를 같은 그룹에 추가하는 것이 좋습니다.
     1. [그룹 만들기](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
     1. [그룹에 사용자 추가](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal)
 
 1. 회사의 사용자(또는 사용자 그룹)에게 필수 라이선스가 할당되어 있는지 확인합니다.
-라이선스 할당에 대한 지시사항은 [여기](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups)에서 찾을 수 있습니다.
+라이선스를 할당해야 하는 경우 다음 [지침](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups)을 따르세요.
 
 1. 사용자가 HoloLens/모바일 장치를 사용자에게 등록해야 하는 경우에만이 단계를 수행하세요(세 가지 옵션이 있음). 이 단계는 회사의 사용자(또는 사용자 그룹)가 장치를 추가할 수 있도록 합니다.
     1. **옵션 1:** 모든 사용자에 게 Azure AD에 장치를 연결할 수 있는 권한을 부여합니다.
@@ -110,9 +110,9 @@ HoloLens는 제한된 클라우드 연결 해제 환경을 지원합니다.
 
 지속적인 디바이스 관리는 모바일 디바이스 관리 인프라에 따라 다릅니다.  일반적인 기능은 거의 같지만 사용자 인터페이스는 크게 다를 수 있습니다.
 
-1. [CSP(구성 서비스 공급자)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)를 사용하면 네트워크의 디바이스에 대한 관리 설정을 만들고 배포할 수 있습니다. HoloLens 에 대한 CSP 목록은 [여기](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)에서 찾을 수 있습니다.
+1. [CSP(구성 서비스 공급자)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)를 사용하면 네트워크 장치의 관리 설정을 만들고 배포할 수 있습니다. [HoloLens CSP 목록](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#csps-supported-in-hololens-devices)을 참고자료로 보세요.
 
-1. [준수 정책](https://docs.microsoft.com/intune/device-compliance-get-started)은 디바이스가 회사 인프라에서 준수를 위해 충족해야 하는 규칙 및 설정입니다. 이 정책을 조건부 액세스와 함께 사용하여 비준수 장치의 회사 리소스에 대한 액세스를 차단할 수 있습니다. 예를 들어, Bitlocker를 사용하도록 설정해야 하는 정책을 만들 수 있습니다.
+1. [준수 정책](https://docs.microsoft.com/intune/device-compliance-get-started)은 회사 인프라에서 장치가 반드시 준수해야 하는 규칙 및 설정입니다. 이 정책을 조건부 액세스와 함께 사용하여 비준수 장치의 회사 리소스에 대한 액세스를 차단할 수 있습니다. 예를 들어, Bitlocker를 사용하도록 설정해야 하는 정책을 만들 수 있습니다.
 
 1. [준수 정책 생성](https://docs.microsoft.com/intune/protect/compliance-policy-create-windows).
 
@@ -151,20 +151,20 @@ Intune에는 HoloLens 2 및 HoloLens v1(Holographic for Business 포함)을 포�
 
 ### 인증서
 
-MDM 공급자를 통해 인증서를 배포할 수 있습니다. 회사에 인증서가 필요한 경우 Intune에서 PKCS, PFX 및 SCEP를 지원합니다. 어떤 인증서가 회사에 적합한지를 이해하는 것이 중요합니다. 사용자에게 가장 적합한 인증서를 확인하려면 [여기](https://docs.microsoft.com/intune/protect/certificates-configure)를 방문하세요. HoloLens 인증에 인증서를 사용하려는 경우 PFX 또는 SCEP가 적합할 수 있습니다.
+MDM 공급자를 통해 인증서를 배포할 수 있습니다. 회사에 인증서가 필요한 경우 Intune에서 PKCS, PFX 및 SCEP를 지원합니다. 어떤 인증서가 회사에 적합한지를 이해하는 것이 중요합니다. [인증서 구성](https://docs.microsoft.com/intune/protect/certificates-configure) 설명서를 보고 가장 적합한 인증서를 확인하시기 바랍니다. HoloLens 인증에 인증서를 사용하려는 경우 PFX 또는 SCEP가 적합할 수 있습니다.
 
-SCEP 단계는 [여기](https://docs.microsoft.com/intune/protect/certificates-profile-scep)에서 찾을 수 있습니다.
+[SCEP](https://docs.microsoft.com/intune/protect/certificates-profile-scep) 사용을 위해 다음 단계를 참고하세요.
 
 ### Holographics for Business Commercial 제품군으로 업그레이드 하는 방법
 
 > [!NOTE]
 > Windows Holographics for Business(상업용 제품군)는 HoloLens 1세대 장치에만 사용 가능합니다. HoloLens 2 장치에는 프로필이 적용되지 않습니다.
 
-상업용 제품군으로 업그레이드하는 방법에 대한 지침은 [여기](https://docs.microsoft.com/intune/configuration/holographic-upgrade)를 참조하세요.
+상용 제품군으로 업그레이드하는 방법은 [홀로그램 업그레이드](https://docs.microsoft.com/intune/configuration/holographic-upgrade) 설명서에서 찾을 수 있습니다.
 
 ### Microsoft Intune을 사용하여 키오스크 모드를 구성하는 방법
 
-1. Microsoft Store와 Intune 동기화([여기](https://docs.microsoft.com/intune/apps/windows-store-for-business)).
+1. Microsoft Store를 Intune에 동기화합니다(다음 [지침](https://docs.microsoft.com/intune/apps/windows-store-for-business) 참고).
 
 1. 앱 설정 확인
     1. Microsoft Store Business 계정에 로그인
@@ -180,7 +180,7 @@ SCEP 단계는 [여기](https://docs.microsoft.com/intune/protect/certificates-p
 
 ![Intune에서 키오스크 모드 구성을 보여주는 이미지](images/aad-kioskmode.png)
 
-다른 MDM 서비스의 경우 공급자의 설명서에서 지침을 확인하세요. MDM 서비스에서 키오스크를 설정하기 위해 사용자 지정 설정 및 전체 XML 구성을 사용해야 하는 경우 [여기](hololens-kiosk.md#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk)에서 추가 지침을 찾을 수 있습니다.
+다른 MDM 서비스의 경우 공급자의 설명서에서 지침을 확인하세요. 사용자 지정 설정 및 전체 XML 구성을 사용하여 MDM 서비스에서 키오스크를 설정해야 한다면 [HoloLens](hololens-kiosk.md#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) 키오스크 지침을 참고하세요.
 
 ## 인증서 및 인증
 

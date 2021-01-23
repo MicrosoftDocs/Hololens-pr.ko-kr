@@ -1,6 +1,6 @@
 ---
 title: 지역화된 버전의 HoloLens 설치
-description: 중국어 또는 일본어 버전의 HoloLens를 설치하는 방법 알아보기
+description: 중국어 및 일본어 버전을 포함하여 현지화된 버전의 홀로렌즈(1세대)를 설치하는 방법에 대해 알아보세요.
 ms.prod: hololens
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 9ccee2e11650926a5570967f1de5f6b341a17ae6
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: af79e42477a3a317dde03a795c442fa31241600d
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829557"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11282979"
 ---
 # 지역화된 버전의 HoloLens(1세대) 설치
 

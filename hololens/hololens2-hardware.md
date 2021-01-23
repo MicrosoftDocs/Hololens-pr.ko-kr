@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2 하드웨어
-description: Microsoft HoloLens 2를 구성하는 구성 요소의 개요이며, Windows 10을 실행하는 Microsoft의 완전히 테더링되지 않은 홀로그램 컴퓨터의 최신 버전입니다.
+description: Windows 10을 실행하는 최신 홀로그래픽 Microsoft 컴퓨터의 진화된 Microsoft HoloLens 2를 구성하는 구성 요소에 대해 알아보세요.
 ms.assetid: 651d0430-bfbc-4685-a4fd-db7c33ce9325
 ms.date: 10/20/2020
 keywords: HoloLens
@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 41508b8cdc2e8e34545c1e07136b69eea2e3aa48
-ms.sourcegitcommit: e97b2b8f47ac5ec2e3be3e5d69d8e026b6f21111
+ms.openlocfilehash: db8f7774bc3c5718a09a99d8d4137d2ed3271bc1
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "11271179"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283039"
 ---
 # HoloLens 2 하드웨어
 

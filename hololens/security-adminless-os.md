@@ -1,6 +1,6 @@
 ---
-title: 보안 관리자가 없는 OS
-description: 관리자가 없는 OS 및 HoloLens 보안
+title: 관리자 없는 운영 체제 보안
+description: HoloLens 혼합 현실 장치의 관리자 없는 운영 체제, 장치 소유자 및 보안에 대해 자세히 알아보세요.
 ms.prod: hololens
 author: evmill
 ms.author: v-evmill
@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 79429c960b065e401ef18520350a199704981938
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: a5c86a5420f3a9b0705667161e6b9440134731d7
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253085"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284129"
 ---
 # 관리자가 없는 운영 체제
 

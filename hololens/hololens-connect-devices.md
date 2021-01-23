@@ -1,6 +1,6 @@
 ---
 title: Bluetooth 및 USB-C 장치에 연결
-description: 이 가이드는 Bluetooth 및 USB-C 장치 및 액세서리에 연결하는 과정을 안내합니다.
+description: HoloLens 혼합 현실 장치에서 Bluetooth 및 USB-C 장치 및 액세서리에 연결을 시작하세요.
 ms.assetid: 01af0848-3b36-4c13-b797-f38ad3977e30
 ms.prod: hololens
 ms.sitesec: library
@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2f2de4d776a0fdb99555687a96719d111ffb6460
-ms.sourcegitcommit: 8bf8e9196c4ea89297f210b5c1d41b31f9edd407
+ms.openlocfilehash: afbcfd0762bea9e7a6bc217d5e4a2910eaab7359
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "11156295"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283349"
 ---
 # Bluetooth 및 USB-C 장치에 연결
 

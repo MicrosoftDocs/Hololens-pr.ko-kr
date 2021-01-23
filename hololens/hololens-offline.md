@@ -1,6 +1,6 @@
 ---
 title: HoloLens에 대한 연결 엔드포인트 관리
-description: HoloLens를 설정하려면 Wi-Fi 네트워크에 연결해야 합니다.
+description: 연결 끝점을 관리하고 구성하는 동안 Wi-Fi 네트워크를 통해 HoloLens를 설정하는 방법을 알아봅니다.
 keywords: hololens, 오프라인, OOBE
 audience: ITPro
 ms.date: 07/01/2019
@@ -18,12 +18,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f40d5adec0a8c0dc4bde5583a080ceedc0950fdb
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
+ms.openlocfilehash: 2208291aea5bfa9cbedd09d40fbbb83b1faa627b
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829220"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283949"
 ---
 # HoloLens에 대한 연결 엔드포인트 관리
 

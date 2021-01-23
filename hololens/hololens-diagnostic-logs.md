@@ -1,6 +1,6 @@
 ---
 title: HoloLens 장치에서 진단 정보 수집 및 사용
-description: HoloLens 장치에서 진단 정보 수집 및 사용
+description: HoloLens 장치에서 진단 정보를 수집, 사용 및 보존하는 방법에 대해 자세히 알아보습니다.
 author: Teresa-Motiv
 ms.author: v-tea
 ms.date: 10/15/2020
@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 24f9fc142581de5017e498b2c4591cdb8f79d533
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: 206a31476820e8722b1b72fbd501345a089379b1
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253155"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283229"
 ---
 # HoloLens 장치에서 진단 정보 수집 및 사용
 
@@ -62,7 +62,7 @@ HoloLens 사용자는 Microsoft 피드백 허브 데스크톱 앱을 사용하�
 
 ### 데이터 위치, 액세스 및 보존
 
-피드백 허브의 사용 약관에 동의하면 사용자는 데이터 저장 및 사용에 명시적으로 동의합니다(해당 계약에 따라 정의).
+피드백 허브의 사용 약관에 동의하면 사용자는 해당 계약에 따라 정의된 데이터 저장 및 사용에 명시적으로 동의합니다.
 
 피드백 허브는 사용자가 진단 정보를 저장할 수 있는 두 개의 장소를 제공합니다.
 
@@ -70,7 +70,7 @@ HoloLens 사용자는 Microsoft 피드백 허브 데스크톱 앱을 사용하�
    > [!NOTE]  
    > 이러한 요구 사항은 모든 피드백 허브 범주의 데이터에 적용됩니다.
 
-- **HoloLens 장치.** 피드백 허브에 보고서를 작성하는 동안 사용자는 피드백을 제공하면 만들어진 진단 및 첨부 파일 로컬 복사본 저장을 **선택할 수 있습니다.** 사용자가 이 옵션을 선택하면 피드백 허브는 HoloLens 장치에 진단 정보의 복사본을 저장합니다. 이 정보는 사용자(또는 해당 계정을 사용하여 HoloLens에 로그인하는 데 사용하는 모든 사용자)에게 계속 액세스할 수 있습니다. 이 정보를 삭제하려면 사용자에게 장치에 대한 **** 장치 **소유자** 또는 관리자 권한이 있어야 합니다. 적절한 권한이 있는 사용자는 피드백 허브에 로그인하고 설정 **** 보기 진단 로그를 선택한 다음 정보를  >  **** 삭제할 수 있습니다.
+- **HoloLens 장치.** 피드백 허브에 보고서를 작성하는 동안 사용자는 피드백을 제공하면 만들어진 진단 및 첨부 파일 로컬 복사본 저장을 **선택할 수 있습니다.** 사용자가 이 옵션을 선택하면 피드백 허브는 HoloLens 장치에 진단 정보의 복사본을 저장합니다. 이 정보는 사용자(또는 해당 계정을 사용하여 HoloLens에 로그인하는 데 사용하는 모든 사용자)에게 계속 액세스할 수 있습니다. 이 정보를 삭제하려면 사용자에게 장치에 대한 **** **장치 소유자** 또는 관리자 권한이 있어야 합니다. 적절한 권한이 있는 사용자는 피드백 허브에 로그인하고 설정 **** 보기 진단 로그를 선택한 다음 정보를  >  **** 삭제할 수 있습니다.
 
 ## 설정 문제 해결사
 
@@ -94,7 +94,7 @@ HoloLens 사용자는 장치의 설정 앱을 사용하여 문제를 해결하�
 > 이 PC\\ \<*HoloLens device name*> \\Internal Storage\\Documents\\Trace \<*ddmmyyhhmmss*> .etl
 
 > [!NOTE]  
-> 이 파일 경로와 이름에서 HoloLens 장치의 이름을 나타내고 파일을 만든 날짜와 \<*HoloLens device name*> \<*ddmmyyhhmmss*> 시간을 표현합니다.
+> 이 파일 경로와 이름에서 HoloLens 장치의 이름을 나타내고 파일을 만든 날짜와 \<*HoloLens device name*> \<*ddmmyyhhmmss*> 시간을 지정합니다.
 
 진단 정보는 사용자가 삭제할 때까지 이러한 위치에 남아 있습니다.
 
