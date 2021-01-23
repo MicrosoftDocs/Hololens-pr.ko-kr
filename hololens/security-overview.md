@@ -1,6 +1,6 @@
 ---
 title: HoloLens 보안 개요
-description: 보안 개요
+description: HoloLens 혼합 현실 장치에 대한 보안 개요를 시작하세요.
 author: evmill
 ms.author: v-evmill
 ms.reviewer: tagran
@@ -13,17 +13,17 @@ ms.localizationpriority: high
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cd626d404831cdfb39acd5a2d8a4f6507a5c694b
-ms.sourcegitcommit: 72ff3174b34d2acaf72547b7d981c66aef8fa82f
+ms.openlocfilehash: bbf05404193f684bdc43d7d6a37159e17678d604
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "11009446"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11284149"
 ---
-# <span data-ttu-id="7d797-104">보안 개요</span><span class="sxs-lookup"><span data-stu-id="7d797-104">Security overview</span></span>
+# <span data-ttu-id="aba11-104">보안 개요</span><span class="sxs-lookup"><span data-stu-id="aba11-104">Security overview</span></span>
 
-<span data-ttu-id="7d797-105">최신 위협 환경 및 관련 위험 요소에 대한 문제를 해결하기 위해 HoloLens2 보안 아키텍처는 혁신적인 고급 보안 및 개인 정보 보호, 엔드투엔드 기능을 제공할 수 있도록 완전히 재설계되었습니다.</span><span class="sxs-lookup"><span data-stu-id="7d797-105">To meet the challenges of a modern threat landscape and its associated risks, the HoloLens 2 security architecture has been completely redesigned to provide advanced, innovative security and privacy protection, end-to-end.</span></span>
+<span data-ttu-id="aba11-105">최신 위협 환경 및 관련 위험 요소에 대한 문제를 해결하기 위해 HoloLens2 보안 아키텍처는 혁신적인 고급 보안 및 개인 정보 보호, 엔드투엔드 기능을 제공할 수 있도록 완전히 재설계되었습니다.</span><span class="sxs-lookup"><span data-stu-id="aba11-105">To meet the challenges of a modern threat landscape and its associated risks, the HoloLens 2 security architecture has been completely redesigned to provide advanced, innovative security and privacy protection, end-to-end.</span></span>
 
-<span data-ttu-id="7d797-106">HoloLens2를 사용하면 기업이나 고객은 강력하고 기본 제공되는 보안 프레임 워크가 포함된 최신 첨단 운영 체제를 갖출 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7d797-106">With HoloLens 2, businesses and customers have a truly modern, cutting-edge operating system with a strong, built-in security framework.</span></span> <span data-ttu-id="7d797-107">이 최신 운영 체제를 통해 개발자는 복잡한 위협 환경과 관련 위험 요소를 효과적으로 처리하는 탁월한 보안 전략을 사용하여 응용 프로그램을 설계, 작성 및 제공할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7d797-107">This contemporary operating system allows developers to design, build, and deliver applications with an exceptional security strategy, to effectively combat a complex threat landscape and its associated risks.</span></span> 
+<span data-ttu-id="aba11-106">HoloLens2를 사용하면 기업이나 고객은 강력하고 기본 제공되는 보안 프레임 워크가 포함된 최신 첨단 운영 체제를 갖출 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="aba11-106">With HoloLens 2, businesses and customers have a truly modern, cutting-edge operating system with a strong, built-in security framework.</span></span> <span data-ttu-id="aba11-107">이 최신 운영 체제를 통해 개발자는 복잡한 위협 환경과 관련 위험 요소를 효과적으로 처리하는 탁월한 보안 전략을 사용하여 응용 프로그램을 설계, 작성 및 제공할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="aba11-107">This contemporary operating system allows developers to design, build, and deliver applications with an exceptional security strategy, to effectively combat a complex threat landscape and its associated risks.</span></span> 
 
-<span data-ttu-id="7d797-108">다음의 보안 챕터에서는 개발 중인 Windows HoloLens2 보안에 대한 개요를 제공합니다. 이를 통해 개발자는 보다 성공적이고 안전한 고성능 응용 프로그램을 구축할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="7d797-108">The following security chapters present an overview of our evolving Windows HoloLens 2 security, which enables developers to build more successful and secure high-performance applications.</span></span> <span data-ttu-id="7d797-109">이 섹션에서는 Windows HoloLens2 운영 체제 보안 아키텍처, 보안 위치, 관련 보안 기능 및 메커니즘에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="7d797-109">These sections describe the Windows HoloLens 2 operating system security architecture, its secure locations, and related security features and mechanisms.</span></span>
+<span data-ttu-id="aba11-108">다음의 보안 챕터에서는 개발 중인 Windows HoloLens2 보안에 대한 개요를 제공합니다. 이를 통해 개발자는 보다 성공적이고 안전한 고성능 응용 프로그램을 구축할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="aba11-108">The following security chapters present an overview of our evolving Windows HoloLens 2 security, which enables developers to build more successful and secure high-performance applications.</span></span> <span data-ttu-id="aba11-109">이 섹션에서는 Windows HoloLens2 운영 체제 보안 아키텍처, 보안 위치, 관련 보안 기능 및 메커니즘에 대해 설명합니다.</span><span class="sxs-lookup"><span data-stu-id="aba11-109">These sections describe the Windows HoloLens 2 operating system security architecture, its secure locations, and related security features and mechanisms.</span></span>
