@@ -1,7 +1,6 @@
 ---
 title: 상업용 기능
-description: Microsoft HoloLens Commercial Suite에는 기업에서 HoloLens 장치를 더 쉽게 관리할 수 있는 기능이 포함되어 있습니다. HoloLens 2 장치는 기본적으로 상업용 기능을 갖추고 있습니다.
-keywords: HoloLens, 상업용, 기능, mdm, 모바일 장치 관리, 키오스크 모드
+description: 기업에서 HoloLens 장치를 보다 쉽게 관리할 수 있도록 하는 Microsoft HoloLens Commercial Suite 기능에 대해 자세히 알아보세요.
 author: scooley
 ms.author: scooley
 ms.date: 08/26/2019
@@ -18,12 +17,13 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 51d50f863e379baffee4e44c44e3ab467b517359
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+keywords: HoloLens, 상업용, 기능, MDM, 모바일 장치 관리, 키오스크 모드
+ms.openlocfilehash: 5aef764b1d7937832e162ab219131d8c3d768e68
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253175"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283449"
 ---
 # 상업용 기능
 

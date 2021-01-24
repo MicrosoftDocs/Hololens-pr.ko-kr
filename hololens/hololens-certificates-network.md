@@ -1,6 +1,6 @@
 ---
 title: HoloLens 2용 인증서 및 네트워크 프로필 준비
-description: HoloLens 2 장치의 네트워크에 대한 인증서를 구성하고 사용하는 방법
+description: HoloLens 2 혼합 현실 장치에서 네트워크에 대한 인증서를 구성, 사용, 배포 및 문제 해결하는 방법을 학습합니다.
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -13,12 +13,12 @@ audience: ITPro
 manager: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b5fe64a1843db5ba8dc31f3c17776f0717264fe1
-ms.sourcegitcommit: 108b818130e2627bf08107f4e47ae159dd6ab1d2
+ms.openlocfilehash: 1bfac948b493c2e55207e45042d6b022c1818969
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "11162979"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283439"
 ---
 # HoloLens 2용 인증서 및 네트워크 프로필 준비
 
