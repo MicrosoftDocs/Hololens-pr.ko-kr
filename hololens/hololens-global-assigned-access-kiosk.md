@@ -1,6 +1,6 @@
 ---
 title: 전체 할당된 액세스
-description: 전체 할당된 액세스 키오스크에 OMA-URI를 사용하는 방법 안내
+description: Intune 및 Windows 구성 디자이너가 있는 글로벌 할당된 액세스 키오스크를 위한 OMA-URI 사용 방법을 안내합니다.
 author: evmill
 ms.author: v-evmill
 ms.date: 9/21/2020
@@ -13,12 +13,12 @@ ms.reviewer: lavinds
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f91b77be846b585de8d89c17e516923f97304d57
-ms.sourcegitcommit: 96dcd015ad24169295690a8ed13ea1bf480e4b9e
+ms.openlocfilehash: b86d88c7487043c6fcb057f03f353a57e44ef781
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "11253205"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283179"
 ---
 # 전체 할당된 액세스 - 키오스크
 
