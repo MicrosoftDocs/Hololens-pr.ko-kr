@@ -1,6 +1,6 @@
 ---
 title: HoloLens에서 파일 찾기 및 저장
-description: HoloLens의 파일 탐색기를 사용 하 여 장치에서 파일 보기 및 관리
+description: HoloLens의 파일 탐색기를 사용하여 혼합 현실 장치에서 파일을 열고, 보고, 관리하는 방법을 배워야 합니다.
 keywords: 방법, 파일 선택기, 파일, 사진, 비디오, 사진, OneDrive, 저장소, 파일 탐색기, hololens
 ms.assetid: 77d2e357-f65f-43c8-b62f-6cd9bf37070a
 author: mattzmsft
@@ -16,89 +16,89 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: fb3287f0a074eddeac0c7ee2871e289b93eafcac
-ms.sourcegitcommit: 8b56f4b9b5f9c928fc361f18efcbea729055a0b2
+ms.openlocfilehash: 2d979b2cffd20589ddef7f11db5c7206eaea23cb
+ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "10919129"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "11283529"
 ---
-# <span data-ttu-id="1a546-104">HoloLens에서 파일 찾기, 열기 및 저장</span><span class="sxs-lookup"><span data-stu-id="1a546-104">Find, open, and save files on HoloLens</span></span>
+# <span data-ttu-id="1d9b4-104">HoloLens에서 파일 찾기, 열기 및 저장</span><span class="sxs-lookup"><span data-stu-id="1d9b4-104">Find, open, and save files on HoloLens</span></span>
 
-<span data-ttu-id="1a546-105">HoloLens에서 만든 사진 및 비디오 등의 파일은 HoloLens 장치에 직접 저장 됩니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-105">Files you create on HoloLens, including photos and videos, are saved directly to your HoloLens device.</span></span> <span data-ttu-id="1a546-106">Windows 10에서 파일을 관리 하는 것과 동일한 방법으로 보기 및 관리:</span><span class="sxs-lookup"><span data-stu-id="1a546-106">View and manage them in the same way you would manage files on Windows 10:</span></span>
+<span data-ttu-id="1d9b4-105">사진 및 비디오를 포함하여 HoloLens에서 만든 파일은 HoloLens 장치에 직접 저장됩니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-105">Files you create on HoloLens, including photos and videos, are saved directly to your HoloLens device.</span></span> <span data-ttu-id="1d9b4-106">Windows 10에서 파일을 관리하는 방법과 동일한 방식으로 보고 관리합니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-106">View and manage them in the same way you would manage files on Windows 10:</span></span>
 
-- <span data-ttu-id="1a546-107">파일 탐색기 앱을 사용 하 여 로컬 폴더에 액세스</span><span class="sxs-lookup"><span data-stu-id="1a546-107">Using the File Explorer app to access local folders.</span></span>
-- <span data-ttu-id="1a546-108">앱 저장소 내</span><span class="sxs-lookup"><span data-stu-id="1a546-108">Within an app's storage.</span></span>
-- <span data-ttu-id="1a546-109">비디오 또는 음악 라이브러리와 같은 특수 폴더</span><span class="sxs-lookup"><span data-stu-id="1a546-109">In a special folder (such as the video or music library).</span></span>
-- <span data-ttu-id="1a546-110">앱과 파일 선택 (예: OneDrive)이 포함 된 저장소 서비스를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-110">Using a storage service that includes an app and file picker (such as OneDrive).</span></span>
-- <span data-ttu-id="1a546-111">MTP (미디어 전송 프로토콜) 지원을 사용 하 여 HoloLens에 연결 된 데스크톱 PC를 USB 케이블로 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-111">Using a desktop PC connected to your HoloLens by using a USB cable, using MTP (Media Transfer Protocol) support.</span></span>
+- <span data-ttu-id="1d9b4-107">파일 탐색기 앱을 사용하여 로컬 폴더에 액세스</span><span class="sxs-lookup"><span data-stu-id="1d9b4-107">Using the File Explorer app to access local folders.</span></span>
+- <span data-ttu-id="1d9b4-108">앱의 저장소 내에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-108">Within an app's storage.</span></span>
+- <span data-ttu-id="1d9b4-109">특수 폴더(예: 비디오 또는 음악 라이브러리)에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-109">In a special folder (such as the video or music library).</span></span>
+- <span data-ttu-id="1d9b4-110">앱 및 파일 선택기(예: OneDrive)를 포함하는 저장소 서비스 사용.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-110">Using a storage service that includes an app and file picker (such as OneDrive).</span></span>
+- <span data-ttu-id="1d9b4-111">MTP(미디어 전송 프로토콜) 지원을 사용하여 USB 케이블을 사용하여 HoloLens에 연결된 데스크톱 PC를 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-111">Using a desktop PC connected to your HoloLens by using a USB cable, using MTP (Media Transfer Protocol) support.</span></span>
 
-## <span data-ttu-id="1a546-112">파일 탐색기를 사용 하 여 HoloLens에서 파일 보기</span><span class="sxs-lookup"><span data-stu-id="1a546-112">View files on HoloLens using File Explorer</span></span>
+## <span data-ttu-id="1d9b4-112">파일 탐색기를 사용하여 HoloLens에서 파일 보기</span><span class="sxs-lookup"><span data-stu-id="1d9b4-112">View files on HoloLens using File Explorer</span></span>
 
-> <span data-ttu-id="1a546-113">[Hololens에 대 한 Windows 10 4 월 2018 업데이트 (RS4)](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018)의 모든 HoloLens 2 장치 및 HoloLens (1 회 gen)에 적용 됩니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-113">Applies to all HoloLens 2 devices and HoloLens (1st gen) as of the [Windows 10 April 2018 Update (RS4) for HoloLens](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018).</span></span>
+> <span data-ttu-id="1d9b4-113">HoloLens용 [Windows 10 2018년 4월 업데이트(RS4)부터](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018)모든 HoloLens 2 장치 및 HoloLens(1세대)에 적용됩니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-113">Applies to all HoloLens 2 devices and HoloLens (1st gen) as of the [Windows 10 April 2018 Update (RS4) for HoloLens](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018).</span></span>
 
-<span data-ttu-id="1a546-114">HoloLens의 파일 탐색기를 사용 하 여 3D 개체, 문서, 그림을 비롯 한 장치에서 파일을 보고 관리할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-114">Use File Explorer on HoloLens to view and manage files on your device, including 3D objects, documents, and pictures.</span></span> <span data-ttu-id="1a546-115">**Start**   >  시작 하려면**모든 앱**   >  **파일 탐색기** 시작으로 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-115">Go to **Start**  > **All apps**  > **File Explorer** to get started.</span></span>
+<span data-ttu-id="1d9b4-114">HoloLens의 파일 탐색기를 사용하여 3D 개체, 문서 및 그림을 비롯한 장치의 파일을 보고 관리합니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-114">Use File Explorer on HoloLens to view and manage files on your device, including 3D objects, documents, and pictures.</span></span> <span data-ttu-id="1d9b4-115">시작하려면 **모든**앱   >  **파일**   >  **탐색기** 시작으로 이동하세요.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-115">Go to **Start**  > **All apps**  > **File Explorer** to get started.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="1a546-116">파일 탐색기에 파일이 나열 되어 있지 않으면 왼쪽 위 창에서 **이 장치** 를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-116">If there are no files listed in File Explorer, select **This Device** in the top left pane.</span></span>
+> <span data-ttu-id="1d9b4-116">파일 탐색기에서 나열된 파일이 \*\*\*\* 없는 경우 왼쪽 위 창에서 이 장치를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-116">If there are no files listed in File Explorer, select **This Device** in the top left pane.</span></span>
 
-<span data-ttu-id="1a546-117">파일 탐색기에 파일이 표시 되지 않는 경우 "최근" 필터가 활성 상태일 수 있습니다 (시계 아이콘이 왼쪽 창에서 강조 표시 됨).</span><span class="sxs-lookup"><span data-stu-id="1a546-117">If you don’t see any files in File Explorer, the "Recent" filter may be active (clock icon is highlighted in left pane).</span></span> <span data-ttu-id="1a546-118">이 문제를 해결 하려면 왼쪽 창에서 **이 장치** 문서 아이콘 (시계 아이콘 아래)을 선택 하거나 메뉴를 열고 **이 장치**를 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-118">To fix this, select the **This Device** document icon in the left pane (beneath the clock icon), or open the menu and select **This Device**.</span></span>
+<span data-ttu-id="1d9b4-117">파일 탐색기에서 파일이 없는 경우 "최근" 필터가 활성화될 수 있습니다(시계 아이콘이 왼쪽 창에 강조 표시).</span><span class="sxs-lookup"><span data-stu-id="1d9b4-117">If you don’t see any files in File Explorer, the "Recent" filter may be active (clock icon is highlighted in left pane).</span></span> <span data-ttu-id="1d9b4-118">이 문제를 해결하려면 \*\*\*\* 왼쪽 창(시계 아이콘 아래)에서 이 장치 문서 아이콘을 선택하거나 메뉴를 열고 **이 장치를 선택합니다.**</span><span class="sxs-lookup"><span data-stu-id="1d9b4-118">To fix this, select the **This Device** document icon in the left pane (beneath the clock icon), or open the menu and select **This Device**.</span></span>
 
-## <span data-ttu-id="1a546-119">사진 및 동영상 찾기 및 보기</span><span class="sxs-lookup"><span data-stu-id="1a546-119">Find and view your photos and videos</span></span>
+## <span data-ttu-id="1d9b4-119">사진 및 비디오 찾기 및 보기</span><span class="sxs-lookup"><span data-stu-id="1d9b4-119">Find and view your photos and videos</span></span>
 
-<span data-ttu-id="1a546-120">[Mixed reality 캡처](holographic-photos-and-videos.md) 를 사용 하 여 HoloLens에서 실제로 사용할 수 있는 사진 및 동영상을 혼합할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-120">[Mixed reality capture](holographic-photos-and-videos.md) lets you take mixed reality photos and videos on HoloLens.</span></span>  <span data-ttu-id="1a546-121">이러한 사진과 비디오는 장치의 카메라 앨범 폴더에 저장 됩니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-121">These photos and videos are saved to the device's Camera Roll folder.</span></span>
+<span data-ttu-id="1d9b4-120">[혼합 현실 캡처를](holographic-photos-and-videos.md) 사용하면 HoloLens에서 혼합 현실 사진 및 비디오를 촬영할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-120">[Mixed reality capture](holographic-photos-and-videos.md) lets you take mixed reality photos and videos on HoloLens.</span></span>  <span data-ttu-id="1d9b4-121">이러한 사진 및 비디오는 장치의 카메라 롤 폴더에 저장됩니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-121">These photos and videos are saved to the device's Camera Roll folder.</span></span>
 
-<span data-ttu-id="1a546-122">아래와 같은 방법으로 HoloLens를 사용 하 여 찍은 사진과 비디오에 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-122">You can access photos and videos taken with HoloLens by:</span></span>
+<span data-ttu-id="1d9b4-122">다음을 통해 HoloLens로 찍은 사진 및 비디오에 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-122">You can access photos and videos taken with HoloLens by:</span></span>
 
-- <span data-ttu-id="1a546-123">[사진 앱](holographic-photos-and-videos.md)을 통해 카메라 롤에 직접 액세스 합니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-123">accessing the Camera Roll directly through the [Photos app](holographic-photos-and-videos.md).</span></span>
-- <span data-ttu-id="1a546-124">사진과 비디오를 OneDrive에 동기화 하 여 클라우드 저장소에 사진 및 비디오를 업로드 합니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-124">uploading photos and videos to cloud storage by syncing your photos and videos to OneDrive.</span></span>
-- <span data-ttu-id="1a546-125">[Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture)의 Mixed Reality 캡처 페이지를 사용 합니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-125">using the Mixed Reality Capture page of the [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture).</span></span>
+- <span data-ttu-id="1d9b4-123">사진 통해 카메라 [롤에 직접 액세스합니다.](holographic-photos-and-videos.md)</span><span class="sxs-lookup"><span data-stu-id="1d9b4-123">accessing the Camera Roll directly through the [Photos app](holographic-photos-and-videos.md).</span></span>
+- <span data-ttu-id="1d9b4-124">OneDrive에 사진 및 비디오를 동기화하여 사진 및 비디오를 클라우드 저장소에 업로드합니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-124">uploading photos and videos to cloud storage by syncing your photos and videos to OneDrive.</span></span>
+- <span data-ttu-id="1d9b4-125">[Windows Device Portal의](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture)혼합 현실 캡처 페이지를 사용합니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-125">using the Mixed Reality Capture page of the [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture).</span></span>
 
-### <span data-ttu-id="1a546-126">사진 앱</span><span class="sxs-lookup"><span data-stu-id="1a546-126">Photos app</span></span>
+### <span data-ttu-id="1d9b4-126">사진 앱</span><span class="sxs-lookup"><span data-stu-id="1d9b4-126">Photos app</span></span>
 
-<span data-ttu-id="1a546-127">사진 앱은 **시작** 메뉴의 기본 앱 중 하나 이며, HoloLens를 사용 하 여 기본적으로 제공 됩니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-127">The Photos app is one of the default apps on the **Start** menu, and comes built-in with HoloLens.</span></span> <span data-ttu-id="1a546-128">[사진 앱을 사용 하 여 콘텐츠를 보는](holographic-photos-and-videos.md)방법에 대해 자세히 알아보세요.</span><span class="sxs-lookup"><span data-stu-id="1a546-128">Learn more about [using the Photos app to view content](holographic-photos-and-videos.md).</span></span>
+<span data-ttu-id="1d9b4-127">앱 사진 시작 메뉴의 기본 앱 중 \*\*\*\* 하나에 HoloLens가 기본 제공됩니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-127">The Photos app is one of the default apps on the **Start** menu, and comes built-in with HoloLens.</span></span> <span data-ttu-id="1d9b4-128">앱 앱을 사용하여 [사진 보는 방법을 자세히 알아보겠습니다.](holographic-photos-and-videos.md)</span><span class="sxs-lookup"><span data-stu-id="1d9b4-128">Learn more about [using the Photos app to view content](holographic-photos-and-videos.md).</span></span>
 
-<span data-ttu-id="1a546-129">Microsoft Store에서 [OneDrive 앱](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) 을 설치 하 여 사진을 다른 장치에 동기화 할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-129">You can also install the [OneDrive app](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) from the Microsoft Store to sync photos to other devices.</span></span>
+<span data-ttu-id="1d9b4-129">Microsoft Store에서 [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) 앱을 설치하여 사진을 다른 장치와 동기화할 수도 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-129">You can also install the [OneDrive app](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) from the Microsoft Store to sync photos to other devices.</span></span>
 
-### <span data-ttu-id="1a546-130">OneDrive 앱</span><span class="sxs-lookup"><span data-stu-id="1a546-130">OneDrive app</span></span>
+### <span data-ttu-id="1d9b4-130">OneDrive 앱</span><span class="sxs-lookup"><span data-stu-id="1d9b4-130">OneDrive app</span></span>
 
-<span data-ttu-id="1a546-131">[OneDrive](https://onedrive.live.com/) 를 사용 하면 모든 장치 및 사용자와 함께 사진과 비디오에 액세스 하 고, 관리 하 고, 공유할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-131">[OneDrive](https://onedrive.live.com/) lets you access, manage, and share your photos and videos with any device and with any user.</span></span> <span data-ttu-id="1a546-132">HoloLens에서 캡처한 사진과 비디오에 액세스 하려면 HoloLens의 Microsoft 스토어에서 [OneDrive 앱](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) 을 다운로드 하세요.</span><span class="sxs-lookup"><span data-stu-id="1a546-132">To access the photos and videos captured on HoloLens, download the [OneDrive app](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) from the Microsoft Store on your HoloLens.</span></span> <span data-ttu-id="1a546-133">다운로드 되 면 OneDrive 앱을 열고 **설정**  >  **카메라 업로드**를 선택 하 고 **카메라 업로드**를 켭니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-133">Once downloaded, open the OneDrive app and select **Settings** > **Camera upload**, and turn on **Camera upload**.</span></span>
+<span data-ttu-id="1d9b4-131">[OneDrive를](https://onedrive.live.com/) 사용하면 모든 장치 및 사용자와 사진 및 비디오를 액세스, 관리 및 공유할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-131">[OneDrive](https://onedrive.live.com/) lets you access, manage, and share your photos and videos with any device and with any user.</span></span> <span data-ttu-id="1d9b4-132">HoloLens에서 캡처한 사진 및 비디오에 액세스하려면 HoloLens의 Microsoft Store에서 [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) 앱을 다운로드합니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-132">To access the photos and videos captured on HoloLens, download the [OneDrive app](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3) from the Microsoft Store on your HoloLens.</span></span> <span data-ttu-id="1d9b4-133">다운로드한 후 OneDrive 앱을 열고 설정 카메라 업로드를 **선택하고**  >  \*\*\*\* 카메라 업로드를 **켜면 됩니다.**</span><span class="sxs-lookup"><span data-stu-id="1d9b4-133">Once downloaded, open the OneDrive app and select **Settings** > **Camera upload**, and turn on **Camera upload**.</span></span>
 
-### <span data-ttu-id="1a546-134">PC에 연결</span><span class="sxs-lookup"><span data-stu-id="1a546-134">Connect to a PC</span></span>
+### <span data-ttu-id="1d9b4-134">PC에 연결</span><span class="sxs-lookup"><span data-stu-id="1d9b4-134">Connect to a PC</span></span>
 
-<span data-ttu-id="1a546-135">HoloLens에서 [windows 10 4 월 2018 업데이트](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) 이상을 실행 하는 경우 USB 케이블을 사용 하 여 WINDOWS 10 PC에 hololens를 연결 하 고 MTP (미디어 전송 프로토콜)를 사용 하 여 디바이스의 사진 및 비디오를 찾아볼 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-135">If your HoloLens is running the [Windows 10 April 2018 update](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) or later, you can connect your HoloLens to a Windows 10 PC by using a USB cable to browse photos and videos on the device by using MTP (media transfer protocol).</span></span> <span data-ttu-id="1a546-136">장치에 PIN 또는 암호가 설정 되어 있는 경우 장치를 잠금 해제 하 여 파일을 검색 해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-136">You'll need to make sure the device is unlocked to browse files if you have a PIN or password set up on your device.</span></span>  
+<span data-ttu-id="1d9b4-135">HoloLens에서 [Windows 10 2018년 4월](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) 업데이트 이상을 실행하는 경우 USB 케이블을 사용하여 MTP(미디어 전송 프로토콜)를 사용하여 디바이스의 사진 및 비디오를 찾아보는 방법을 통해 HoloLens를 Windows 10 PC에 연결할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-135">If your HoloLens is running the [Windows 10 April 2018 update](https://docs.microsoft.com/windows/mixed-reality/release-notes-april-2018) or later, you can connect your HoloLens to a Windows 10 PC by using a USB cable to browse photos and videos on the device by using MTP (media transfer protocol).</span></span> <span data-ttu-id="1d9b4-136">디바이스에 PIN 또는 암호가 설정된 경우 파일을 찾아보기 위해 장치가 잠금 해제되어 있는지 확인해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-136">You'll need to make sure the device is unlocked to browse files if you have a PIN or password set up on your device.</span></span>  
 
-<span data-ttu-id="1a546-137">[Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)을 사용 하도록 설정한 경우 장치에 저장 된 사진과 비디오를 찾아보고 검색 하 고 관리 하는 데 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-137">If you have enabled the [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal), you can use it to browse, retrieve, and manage the photos and videos stored on your device.</span></span>
+<span data-ttu-id="1d9b4-137">[Windows Device Portal을](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)사용하도록 설정한 경우 이를 사용하여 디바이스에 저장된 사진 및 비디오를 찾아보고 검색하고 관리할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-137">If you have enabled the [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal), you can use it to browse, retrieve, and manage the photos and videos stored on your device.</span></span>
 
-## <span data-ttu-id="1a546-138">앱 내에서 파일에 액세스</span><span class="sxs-lookup"><span data-stu-id="1a546-138">Access files within an app</span></span>
+## <span data-ttu-id="1d9b4-138">앱 내의 파일에 액세스</span><span class="sxs-lookup"><span data-stu-id="1d9b4-138">Access files within an app</span></span>
 
-<span data-ttu-id="1a546-139">응용 프로그램이 장치에 파일을 저장 하는 경우 해당 응용 프로그램을 사용 하 여 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-139">If an application saves files on your device, you can use that application to access them.</span></span>
+<span data-ttu-id="1d9b4-139">응용 프로그램에서 장치에 파일을 저장하는 경우 해당 응용 프로그램을 사용하여 파일에 액세스할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-139">If an application saves files on your device, you can use that application to access them.</span></span>
 
-### <span data-ttu-id="1a546-140">다른 앱에서 파일 요청</span><span class="sxs-lookup"><span data-stu-id="1a546-140">Requesting files from another app</span></span>
+### <span data-ttu-id="1d9b4-140">다른 앱에서 파일 요청</span><span class="sxs-lookup"><span data-stu-id="1d9b4-140">Requesting files from another app</span></span>
 
-<span data-ttu-id="1a546-141">파일 [선택기](https://docs.microsoft.com/windows/mixed-reality/app-model#file-pickers)를 사용 하 여 응용 프로그램에서 파일을 저장 하거나 다른 앱에서 파일을 열 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-141">An application can request to save a file or open a file from another app by using [file pickers](https://docs.microsoft.com/windows/mixed-reality/app-model#file-pickers).</span></span>
+<span data-ttu-id="1d9b4-141">응용 프로그램은 파일 선택기에서 파일을 저장하거나 다른 앱에서 파일을 열지 [요청할 수 있습니다.](https://docs.microsoft.com/windows/mixed-reality/app-model#file-pickers)</span><span class="sxs-lookup"><span data-stu-id="1d9b4-141">An application can request to save a file or open a file from another app by using [file pickers](https://docs.microsoft.com/windows/mixed-reality/app-model#file-pickers).</span></span>
 
-### <span data-ttu-id="1a546-142">알려진 폴더</span><span class="sxs-lookup"><span data-stu-id="1a546-142">Known folders</span></span>
+### <span data-ttu-id="1d9b4-142">알려진 폴더</span><span class="sxs-lookup"><span data-stu-id="1d9b4-142">Known folders</span></span>
 
-<span data-ttu-id="1a546-143">HoloLens는 앱이 액세스 권한을 요청할 수 있는 여러 개의 [알려진 폴더](https://docs.microsoft.com/windows/mixed-reality/app-model#known-folders) 를 지원 합니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-143">HoloLens supports a number of [known folders](https://docs.microsoft.com/windows/mixed-reality/app-model#known-folders) that apps can request permission to access.</span></span>
+<span data-ttu-id="1d9b4-143">HoloLens는 앱에서 액세스 [](https://docs.microsoft.com/windows/mixed-reality/app-model#known-folders) 권한을 요청할 수 있는 여러 알려진 폴더를 지원합니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-143">HoloLens supports a number of [known folders](https://docs.microsoft.com/windows/mixed-reality/app-model#known-folders) that apps can request permission to access.</span></span>
 
-## <span data-ttu-id="1a546-144">PC에서 HoloLens 파일 보기</span><span class="sxs-lookup"><span data-stu-id="1a546-144">View HoloLens files on your PC</span></span>
+## <span data-ttu-id="1d9b4-144">PC에서 HoloLens 파일 보기</span><span class="sxs-lookup"><span data-stu-id="1d9b4-144">View HoloLens files on your PC</span></span>
 
-<span data-ttu-id="1a546-145">다른 모바일 장치와 유사 하 게, MTP (미디어 전송 프로토콜)를 사용 하 여 HoloLens를 데스크톱 PC에 연결 하 고 PC의 파일 탐색기를 열어 사용자 환경 전송을 위해 HoloLens 라이브러리에 액세스 합니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-145">Similar to other mobile devices, connect HoloLens to your desktop PC using MTP (Media Transfer Protocol) and open File Explorer on the PC to access your HoloLens libraries for easy transfer.</span></span>
+<span data-ttu-id="1d9b4-145">다른 모바일 장치와 마찬가지로 MTP(미디어 전송 프로토콜)를 사용하여 HoloLens를 데스크톱 PC에 연결하고 PC에서 파일 탐색기를 열어 쉽게 전송할 수 있도록 HoloLens 라이브러리에 액세스합니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-145">Similar to other mobile devices, connect HoloLens to your desktop PC using MTP (Media Transfer Protocol) and open File Explorer on the PC to access your HoloLens libraries for easy transfer.</span></span>
 
-<span data-ttu-id="1a546-146">PC의 파일 탐색기에서 HoloLens 파일을 보려면 다음을 수행 합니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-146">To see your HoloLens files in File Explorer on your PC:</span></span>
+<span data-ttu-id="1d9b4-146">PC의 파일 탐색기에서 HoloLens 파일을 확인하려면</span><span class="sxs-lookup"><span data-stu-id="1d9b4-146">To see your HoloLens files in File Explorer on your PC:</span></span>
 
-1. <span data-ttu-id="1a546-147">HoloLens에 로그인 한 다음 HoloLens와 함께 제공 되는 USB 케이블을 사용 하 여 PC에 연결 합니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-147">Sign in to HoloLens, then plug it into the PC using the USB cable that came with the HoloLens.</span></span>
+1. <span data-ttu-id="1d9b4-147">HoloLens에 로그인한 다음 HoloLens와 함께 사용된 USB 케이블을 사용하여 PC에 연결합니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-147">Sign in to HoloLens, then plug it into the PC using the USB cable that came with the HoloLens.</span></span>
 
-1. <span data-ttu-id="1a546-148">**장치 열기를 선택 하 여 파일 탐색기를 사용 하 여 파일을 보거나**PC의 파일 탐색기를 열고 장치로 이동 합니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-148">Select **Open Device to view files with File Explorer**, or open File Explorer on the PC and navigate to the device.</span></span>
+1. <span data-ttu-id="1d9b4-148">파일 탐색기를 사용하여 파일을 **보거나**PC에서 파일 탐색기를 열고 디바이스로 이동합니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-148">Select **Open Device to view files with File Explorer**, or open File Explorer on the PC and navigate to the device.</span></span>
 
-<span data-ttu-id="1a546-149">HoloLens에 대 한 정보를 보려면 PC의 파일 탐색기에서 장치 이름을 마우스 오른쪽 단추로 클릭 한 다음 **속성**을 선택 합니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-149">To see info about your HoloLens, right-click the device name in File Explorer on your PC, then select **Properties**.</span></span>
+<span data-ttu-id="1d9b4-149">HoloLens에 대한 정보를 보려면 PC의 파일 탐색기에서 장치 이름을 마우스 오른쪽 단추로 클릭한 다음 속성을 **선택합니다.**</span><span class="sxs-lookup"><span data-stu-id="1d9b4-149">To see info about your HoloLens, right-click the device name in File Explorer on your PC, then select **Properties**.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="1a546-150">HoloLens (첫번째 gen)는 외부 하드 드라이브 또는 SD 카드에 대 한 연결을 지원 하지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-150">HoloLens (1st gen) does not support connecting to external hard drives or SD cards.</span></span>
+> <span data-ttu-id="1d9b4-150">HoloLens(1세대)는 외부 하드 드라이브 또는 SD 카드에 연결할 수 없습니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-150">HoloLens (1st gen) does not support connecting to external hard drives or SD cards.</span></span>
 
-## <span data-ttu-id="1a546-151">클라우드와 동기화</span><span class="sxs-lookup"><span data-stu-id="1a546-151">Sync to the cloud</span></span>
+## <span data-ttu-id="1d9b4-151">클라우드에 동기화</span><span class="sxs-lookup"><span data-stu-id="1d9b4-151">Sync to the cloud</span></span>
 
-<span data-ttu-id="1a546-152">HoloLens의 사진 및 기타 파일을 클라우드와 동기화 하려면 HoloLens에 OneDrive를 설치 하 고 설정 합니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-152">To sync photos and other files from your HoloLens to the cloud, install and set up OneDrive on HoloLens.</span></span> <span data-ttu-id="1a546-153">OneDrive를 다운로드 하려면 HoloLens의 Microsoft Store에서 검색 하세요.</span><span class="sxs-lookup"><span data-stu-id="1a546-153">To get OneDrive, search for it in the Microsoft Store on your HoloLens.</span></span>
+<span data-ttu-id="1d9b4-152">HoloLens에서 사진 및 기타 파일을 클라우드로 동기화하려면 HoloLens에 OneDrive를 설치하고 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-152">To sync photos and other files from your HoloLens to the cloud, install and set up OneDrive on HoloLens.</span></span> <span data-ttu-id="1d9b4-153">OneDrive를 다운로드하기 위해 HoloLens의 Microsoft Store에서 검색합니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-153">To get OneDrive, search for it in the Microsoft Store on your HoloLens.</span></span>
 
-<span data-ttu-id="1a546-154">HoloLens는 앱 파일 및 데이터를 백업 하지 않으므로 중요 한 내용을 OneDrive에 저장 하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-154">HoloLens doesn't back up app files and data, so it's a good idea to save your important stuff to OneDrive.</span></span> <span data-ttu-id="1a546-155">이렇게 하면 장치를 다시 설정 하거나 앱을 제거 하면 정보가 백업 됩니다.</span><span class="sxs-lookup"><span data-stu-id="1a546-155">That way, if you reset your device or uninstall an app, your info will be backed up.</span></span>
+<span data-ttu-id="1d9b4-154">HoloLens는 앱 파일 및 데이터를 백업하지 않습니다. 따라서 중요한 정보를 OneDrive에 저장하는 것이 좋습니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-154">HoloLens doesn't back up app files and data, so it's a good idea to save your important stuff to OneDrive.</span></span> <span data-ttu-id="1d9b4-155">이렇게 하면 장치를 초기화하거나 앱을 제거하면 정보가 백업됩니다.</span><span class="sxs-lookup"><span data-stu-id="1d9b4-155">That way, if you reset your device or uninstall an app, your info will be backed up.</span></span>
