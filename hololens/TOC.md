@@ -114,7 +114,7 @@
 ### [자주 묻는 질문](hololens-faq.md)
 ### [HoloLens의 알려진 문제](hololens-known-issues.md)
 ### [HoloLens 장치에서 진단 정보 수집 및 사용](hololens-diagnostic-logs.md)
-### [지원 받기](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
+### [기술 지원 받기](https://support.microsoft.com/supportforbusiness/productselection?sapid=e9391227-fa6d-927b-0fff-f96288631b8f)
 
 # HoloLens 릴리스 정보
 ## [HoloLens 2 릴리스 정보](hololens-release-notes.md)
