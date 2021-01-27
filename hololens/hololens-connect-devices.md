@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: afbcfd0762bea9e7a6bc217d5e4a2910eaab7359
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 1b4f95f43fc60dffa2ca75322466857a0a20a0a7
+ms.sourcegitcommit: 145bbabc390f626ba6633fa49423c38656cd2224
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283349"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "11302272"
 ---
 # Bluetooth 및 USB-C 장치에 연결
 
@@ -61,9 +61,9 @@ HoloLens 2(1세대)는 다음 Bluetooth 장치 클래스를 지원합니다.
 1. 펜 끝을 사용하여 클리커 상태 표시등이 흰색으로 깜박일 때까지 클리커 연결 단추를 길게 누릅니다. 상태 표시등이 깜박일 때까지 단추를 누르고 있어야 합니다.  
 
    페어링 단추는 클리커 아래쪽에 손가락 루프 옆에 있습니다.
-   
+
    ![페어링 단추는 손가락 루프 옆에 있습니다.](images/use-hololens-clicker-1.png)
-   
+
 1. 페어링 화면에서 **클리커** > **연결**을 선택합니다.
 
 ## Bluetooth 해제
@@ -90,6 +90,15 @@ HoloLens 2는 다음 USB-C 장치 클래스를 지원합니다.
 > HoloLens가 USB-C 연결을 사용하는 일부 모바일 장치를 이더넷 어댑터로 인식 하기 때문에 Windows Holographic 버전 2004부터 테더링 구성에서 사용할 수 있습니다. 별도의 드라이버 및/또는 구성을 위해 설치된 응용 프로그램이 필요한 USB LTE 모뎀은 지원되지 않습니다.
 
 고객 의견에 따라 USB-C를 통해 HoloLens에 직접 테더링된 휴대폰 연결에 대한 제한적 지원을 설정했습니다.  테더링 연결은 일반 Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) 드라이버 구현을 지원하고 추가 드라이버나 응용 프로그램 설치가 필요하지 않은 장치에만 사용할 수 있습니다.  이러한 장치를 연결하면 HoloLens 2 네트워크 설정 UI에서 자동으로 새 이더넷 연결로 표시됩니다. 해당 장치 제조업체에 일반 Microsoft RNDIS 드라이버 지원 여부에 대한 자세한 정보를 확인하세요.
+
+### USB-C 허브
+
+일부 사용자는 한 번에 여러 장치를 연결해야 할 수 있습니다. 다른 연결된 장치와 함께 내부자 기능을 미리 보고 [USB-C 마이크 사용](hololens-insider.md#usb-c-external-microphone-support)을 원하는 사용자의 경우 USB-C 허브가 요구에 적합할 수 있습니다. Microsoft는 이러한 장치를 테스트하지 않았으며 특정 브랜드를 추천할 수도 없습니다.
+
+**USB-C 허브 및 연결된 장치에 대한 요구 사항:**
+
+- 연결된 장치에는 드라이버를 설치할 필요가 없습니다.
+- 연결된 모든 장치의 총 전력 소모량은 4.5W 미만이어야 합니다.
 
 ## Miracast에 연결
 
