@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: db8f7774bc3c5718a09a99d8d4137d2ed3271bc1
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: a339470e0c8be2b1cdf492bd14bad1ab724fdc3e
+ms.sourcegitcommit: c72a3c60d4105c77407e6d04c95fadd08f102775
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283039"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "11304971"
 ---
 # HoloLens 2 하드웨어
 
@@ -29,8 +29,10 @@ Microsoft HoloLens 2는 테더링되지 않은 홀로그램 컴퓨터입니다. 
 
 - **바이저**. HoloLens 센서 및 디스플레이를 포함합니다. HoloLens를 착용한 상태에서 바이저를 위로 회전시킬 수 있습니다.
 - **헤드밴드**. HoloLens를 착용하려면 조정 휠을 사용하여 헤드밴드를 확장합니다. HoloLens를 장착한 상태에서 헤드밴드가 편안해질 때까지 오른쪽으로 돌려 조정 휠을 조입니다.
-- **밝기 단추**. HoloLens를 착용하면 장치의 왼쪽에 밝기 단추가 있습니다.
-- **볼륨 단추**. HoloLens를 착용하면 장치의 오른쪽에 볼륨 단추가 있습니다.
+- **밝기 단추**. HoloLens를 착용하면 밝기 단추는 바이서 왼쪽에 있습니다.
+- **볼륨 단추**. HoloLens를 착용하면 볼륨 단추는 바이서 오른쪽에 있습니다.
+- **전원 단추.** HoloLens를 착용하면 전원 단추가 뒤쪽 외부 덮개 오른쪽에 있습니다.
+- **USB-C 포트**. HoloLens를 착용하면 USB-C 포트가 전원 단추 아래의 뒤쪽 외부 덮개 오른쪽에 있습니다.
 
 ## 상자 내부
 
