@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a339470e0c8be2b1cdf492bd14bad1ab724fdc3e
-ms.sourcegitcommit: c72a3c60d4105c77407e6d04c95fadd08f102775
+ms.openlocfilehash: 8e0b5732c6dd2eba0a318a2b72694aacd404c68f
+ms.sourcegitcommit: a5b6e9fdc0fa61a93cb23a89348f5b49316e2748
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "11304971"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "11306926"
 ---
 # HoloLens 2 하드웨어
 
@@ -132,22 +132,23 @@ Microsoft HoloLens 2는 테더링되지 않은 홀로그램 컴퓨터입니다. 
 
 ## 사전 설치된 소프트웨어
 
-- Windows 홀로그램 운영 체제
-- 3D 뷰어
-- Calendar
-- Cortana
-- Dynamics 365 Guides
-- Dynamics 365 Remote Assist
-- 피드백 허브
-- 파일 탐색기
-- Mail
-- Microsoft Edge
-- Microsoft Store
-- 영화 및 TV
-- OneDrive
-- 사진
-- 설정
-- 팁
+|   |   |
+| - | - |
+| Windows 홀로그램 운영 체제 | Windows 10 사용자는 Windows Holographic으로 HoloLens 2를 통해 혼합된 현실 환경에서 일부 앱과 게임을 사용할 수 있습니다.
+| 3D 뷰어 | [3D 뷰어](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab)를 사용하면 3D 모델과 애니메이션을 실시간으로 쉽게 볼 수 있습니다.|
+| Cortana | 여러분의 개인 생산성 도우미인 [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)는 중요한 정보를 계속 확인하여 필요한 정보를 찾을 시간을 절약할 수 있습니다.  |
+| Dynamics 365 Guides |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab)는 직원들이 HoloLens 장치에서 새로운 기술을 더 빨리 배울 수 있도록 지원합니다. |
+| Dynamics 365 Remote Assist | [Microsoft Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab)는 기술자가 Microsoft Teams 또는 Dynamics 365 Remote Assist를 사용하여 원격 공동 작업을 수행하고 문제를 해결할 수 있도록 지원합니다.  |
+| 피드백 허브 | [피드백 허브](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab)를 사용하면 제안 또는 문제를 공유하여 Windows 및 앱에 대한 피드백을 제공할 수 있습니다.  |
+| 파일 탐색기 | 파일 탐색기는 파일 시스템에 액세스하기 위한 그래픽 사용자 인터페이스를 제공합니다. |
+| 메일 및 일정 | [메일 및 일정](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) 앱은 전자 메일의 최신 정보를 유지하고, 스케줄을 관리하며, 다른 사용자들과 연락하는 데 도움이 됩니다. |  
+| Microsoft Edge | Microsoft Edge는 탐색하는 동안 더 많은 개인 정보 보호, 생산성 및 더 많은 가치를 제공하는 세계적인 성능을 제공합니다. |
+| Microsoft Store | HoloLens와 작동하는 앱과 게임을 얻으려면 [Microsoft Store](https://www.microsoft.com)를 방문하세요.|
+| 영화 및 TV | [영화 및 TV는](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab) 간단하고 빠르며 우아한 하나의 앱으로 최신 엔터테인먼트를 제공합니다. |
+| OneDrive | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab)를 통해 어디서나 모든 장치에서 파일에 액세스하고 편집할 수 있습니다.  |
+| 사진| [사진](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab)을 사용하면 사진 및 비디오를 보고 편집하고, 영화를 만들고, 앨범을 만들 수 있습니다.  |
+| 설정 | 설정 앱은 Windows Holographic의 작동 방식을 자세히 사용자 지정하는 곳입니다.  |
+| 팁 | [팁](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab)을 사용하면 Windows Holographic에서 할 수 있는 놀랍고 덜 알려진 작업을 마스터할 수 있습니다. |
 
 ## 장치 인증
 
@@ -174,9 +175,9 @@ Microsoft HoloLens 2는 테더링되지 않은 홀로그램 컴퓨터입니다. 
 |     외부 포장 깊이     |     172.01mm          |     6.772인치        |
 |     외부 포장 중량    |     3.284kg           |     7.240lbs           |
 
-참고:
-- 유닛: 검은색 소매 스타일 상자 HoloLens 2가 판매됩니다.
-- 외부 포장: 장치를 감싼 보호 배송 포장
+> [!NOTE]
+> - 유닛: 검은색 소매 스타일 상자 HoloLens 2가 판매됩니다.
+> - 외부 포장: 장치를 감싼 보호 배송 포장
 
 ## 일련 번호 찾기
 
@@ -186,16 +187,16 @@ HoloLens 2 장치의 일련 번호는 바이저 아래에 적혀 있습니다.
 1. 힌지 근처에 일련 번호를 찾을 수 있을 것입니다. 
 
 
-<img src="images/serial-number-diagram-hl2.png" width="625" height="903" />
+<img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
 일련 번호는 연결된 PC를 통해 찾을 수도 있습니다.
 
 1. 장치 연결
 1. 파일 탐색기에서 **이 PC**로 이동
 1. 마우스 오른쪽 단추를 클릭한 후 HoloLens 장치의 **속성**을 선택
-1. 장치의 일련 번호가 표시될 것입니다. 아래 스크린샷을 참조하세요.
+1. 아래 스크린샷과 같이 장치의 일련 번호가 표시됩니다.
 
-<img src="images/ResetRecovery2.png" width="400" height="600" />
+<img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
 ## 다음 단계
 

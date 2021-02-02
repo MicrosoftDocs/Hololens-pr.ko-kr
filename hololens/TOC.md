@@ -12,8 +12,9 @@
 ### [HoloLens 2 정리 FAQ](hololens2-maintenance.md)
 ### [HoloLens 2에 지원되는 언어](hololens2-language-support.md)
 ### [HoloLens 2 둘러보기](hololens2-basic-usage.md)
-### [HoloLens 2 개발 에디션 FAQ](hololens2-development-edition-faq.md)
-### [HoloLens 2에 대한 사용자 지정 앱 관리](hololens2-holographic-custom-apps.md)
+### [HoloLens 2 개발 버전 FAQ](hololens2-development-edition-faq.md)
+### [HoloLens 2 인더스트리얼 버전 FAQ](hololens2-industrial-edition-faq.md)
+
 
 
 ## HoloLens(1세대) 시작하기
@@ -35,6 +36,7 @@
 ### [혼합 현실 사진 및 비디오 만들기](holographic-photos-and-videos.md)
 ## Holographic 응용 프로그램
 ### [응용 프로그램 찾기, 설치 및 제거](holographic-store-apps.md)
+### [HoloLens 2에 대한 사용자 지정 앱 관리](hololens2-holographic-custom-apps.md)
 ## 홀로그램 광학 및 공간에 배치
 ### [시각적 품질과 편안함 개선](hololens-calibration.md)
 ### [HoloLens를 사용하여 물리적 공간 매핑](hololens-spaces.md) 
