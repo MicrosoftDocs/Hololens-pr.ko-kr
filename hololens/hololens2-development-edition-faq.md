@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8d17276adff49fcc7b6d2947539d17392a76eee5
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 1ce1ec05e0eb3c17b6b79a8cdae009c5d917e21e
+ms.sourcegitcommit: b24acae8bdc56442ae0cb8290ab5e9464e6f564e
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283859"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "11306657"
 ---
 # HoloLens 2 개발 에디션 FAQ
 
@@ -31,7 +31,7 @@ HoloLens 2 Development Edition에는 HoloLens 2, Azure 크레딧 $500, 3개월 U
 
 ### HoloLens 2와 HoloLens 2 Development Edition의 차이점은 무엇입니까?
 
-프로덕션 설정에서 HoloLens 2(상업용 버전)와 연결하여 사용할 엔터프라이즈 응용 프로그램의 내부 구축 및 테스트에는 HoloLens 2 Development Edition만 사용할 수 있습니다. Development Edition 구입의 일부로 Microsoft는 전적으로 재량에 따라 특정 Microsoft 또는 타사 서비스 또는 도구에 대한 특정 할인 크레딧 또는 평가판 액세스를 제한된 기간 동안 교환할 수 있는 권한 등 체크 아웃 프로세스 중에 식별된 특정 권한을 사용자에게 제공할 수 있습니다. [자세히 알아보기](hololens2-options.md?tabs=developeredition#1-learn-about-the-development-edition)
+프로덕션 설정에서 HoloLens 2(상업용 버전)와 함께 사용할 내부 엔터프라이즈 응용 프로그램을 빌드하고 테스트하는 데 HoloLens 2 Development Edition만 사용할 수 있습니다. Development Edition 구입의 일부로 Microsoft는 전적으로 재량에 따라 체크 아웃 프로세스 중에 식별된 특정 권리 권한을 사용자에게 제공할 수 있습니다. 이러한 권리에는 특정 할인 크레딧 또는 평가판 액세스 권한을 제한된 기간 동안 특정 Microsoft 또는 타사 서비스 또는 도구로 교환할 수 있는 권한이 포함됩니다. [자세히 알아보기](hololens2-options.md#learn-about-the-development-edition)
 
 ### HoloLens 2의 어떤 버전도 개발에 사용할 수 있나요?
 
@@ -59,7 +59,7 @@ HoloLens 2 Development Edition에 대한 Financing은 2021년 초에 사용할 �
 
 ### HoloLens 2 Development Edition 권리에 대한 질문과 대답은 누구인가요?
 
-자격과 관련된 질문이 있으면 영업 전문가(866-425-4709, Mon to Fri, 6AM에서 6PM까지 PST)에 문의하세요.
+자격과 관련된 질문이 있으면 영업 전문가에게 866-425-4709, Mon to Fri, 6AM에서 6PM까지 PST로 문의하세요.
 
 ### 회사에서 여러 HoloLens 2 Development Edition 장치를 구입할 수 있나요? 
 
@@ -85,9 +85,9 @@ HoloLens 2 Development Edition은 Microsoft Store에서만 판매됩니다.
 
 MRTK-Unity Unity에서 플랫폼 간 MR 앱 개발을 가속화하는 데 사용되는 구성 요소 및 기능 집합을 제공하는 Microsoft 기반 프로젝트입니다. [자세히 알아보기](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 
-### HoloLens 2 Development Edition에서 개발하기 위해 혼합 현실 Toolkit Unreal UXT를 어떻게 사용할 수 있나요?
+### HoloLens 2 Development Edition에서 개발하는 데 Toolkit Unreal UXT는 어떻게 사용할 수 있나요?
 
-MRTK-Unreal 릴리스되는 첫 번째 UX 도구 구성 요소로, 현재 HoloLens 2에서만 지원됩니다. 구성 요소 플러그 인에는 입력 시뮬레이션을 위한 코드, 청사진 및 일반적인 UX 기능의 예제 자산, 손 조작 행위자, 누를 수 있는 단추 구성 요소, 조작자 구성 요소 및 동작 구성 요소를 따르는 자산이 포함되어 있습니다. [자세히 알아보기](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/WelcomeToUXTools.html)
+MRTK-Unreal 릴리스되는 첫 번째 UX 도구 구성 요소로, 현재 HoloLens 2에서만 지원됩니다. 구성 요소 플러그 인에는 입력 시뮬레이션, 손 조작 행위자, 누를 수 있는 단추 구성 요소, 조작자 구성 요소 및 동작 구성 요소를 따르는 일반적인 UX 기능의 코드, 청사진 및 예제 자산이 포함되어 있습니다. [자세히 알아보기](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/WelcomeToUXTools.html)
 
 ### HoloLens 2 Development Edition의 OS 릴리스가 HoloLens 2와 동일한가요?
 
@@ -130,9 +130,9 @@ HoloLens 2 Development Edition 설명서 페이지를 방문하세요. [자세�
 3. 제품 &#39;코드 교환을&#39;
 4. 제품 코드를 입력하고 제품 &#39;코드 교환을&#39;
 
-HoloLens 2 Development Edition 설명서를 방문하여 자세한 [내용을 참조하세요.](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
+HoloLens 2 Development Edition 설명서를 방문하여 [자세한 내용을 참조하세요.](https://docs.microsoft.com/hololens/hololens2-options?tabs=device)
 
-### PRO 라이선스가 없는 Unity 버전으로 응용 프로그램을 빌드할 수 있나요?
+### PRO 라이선스가 없는 Unity 버전을 사용하여 응용 프로그램을 빌드할 수 있나요?
 
 예, 호환되는 모든 버전의 Unity를 사용하여 응용 프로그램을 빌드할 수 있습니다.
 
@@ -144,9 +144,9 @@ Unity ID, 계정, 조직 및 구독에 대한 질문이 있는 경우 해당 계
 
 ### 내 Pixyz 플러그 인 평가판에 포함된 것은 무엇입니까?
 
-Pixyz에 액세스할 수 있는 3개월 동안의 Pixyz 플러그 인 평가판으로 완벽한 미사용 메시, 제한된 다각형 수 및 자동 UV로 즉시 사용할 수 있는 자산을 만들 수 있습니다. 관련 Pixyz 플러그 인 평가판에 교환 기한이 없는 경우
+Pixyz에 액세스할 수 있도록 하는 3개월간의 Pixyz 플러그 인 평가판으로 완벽한 테스팅된 메시, 제한된 다각형 수 및 자동 UV로 즉시 사용할 수 있는 자산을 만들 수 있습니다. 관련 Pixyz 플러그 인 평가판에 교환 기한이 없는 경우
 
-이 제품은 새 사용자를 위한 제품으로, 정해진 Pixyz 구독에 누적되지 않습니다. Pixyz 플러그 인은 사용 시 추가 약관이 적용될 수 있습니다. 적용 가능한 사용 약관 및 개인 정보 취급 [ &amp; 방침을](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) [검토합니다.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)
+이 제품은 새 사용자를 위한 제품으로, 확립된 Pixyz 구독에 누적되지 않습니다. Pixyz 플러그 인은 사용 시 추가 약관이 적용될 수 있습니다. 적용 가능한 사용 약관 및 개인 정보 취급 [ &amp; 방침을](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) [검토합니다.](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)
 
 ### 내 Pixyz 플러그 인 평가판을 교환하는 방법
 
@@ -180,7 +180,7 @@ Azure 키 코드를 활성화하고 90일 후에 $500 Azure 크레딧이 만료�
 
 ### Azure 크레딧으로 무엇을 할 수 있나요?
 
-Azure 크레딧을 사용하면 Microsoft&#39;클라우드 서비스로 구축을 시작할 수 있습니다. HoloLens 2 Development Edition에 포함된 Azure 크레딧은 고객이 Azure에서 혼합 현실 응용 프로그램을 신속하게 구축하고 테스트할 수 있도록 하는 것입니다. Azure에서 구축하는 자세한 내용은 Azure 리소스를 [방문하세요.](https://azure.microsoft.com/en-us/resources/)
+Azure 크레딧을 사용하면 Microsoft&#39;클라우드 서비스로 구축을 시작할 수 있습니다. HoloLens 2 Development Edition에 포함된 Azure 크레딧은 고객이 Azure에서 혼합 현실 응용 프로그램을 신속하게 구축하고 테스트할 수 있도록 하는 것입니다. Azure에서 구축하는 자세한 내용은 [Azure 리소스를 방문하세요.](https://azure.microsoft.com/en-us/resources/)
 
 ### Azure 혼합 현실 서비스에 대한 자세한 내용은 어디에서 알 수 있나요?
 
