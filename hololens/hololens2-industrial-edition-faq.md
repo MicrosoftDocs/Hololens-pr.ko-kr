@@ -14,16 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2a7a9fe510c699571dc2e307f5def8c730097815
-ms.sourcegitcommit: b24acae8bdc56442ae0cb8290ab5e9464e6f564e
+ms.openlocfilehash: ece60949c998f0388bbd6bbcb235ae9f02340247
+ms.sourcegitcommit: 9a5e101fad8627042b552872d5de7320c09552ac
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "11306701"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "11311753"
 ---
 # HoloLens 2 - 인더스트리얼 버전 FAQ
 
-![청정실에 사용된 인더스트리얼 버전](./images/industrial-edition.jpg)
+![청정실에 사용된 인더스트리얼 버전](./images/industrial-sku-with-remote-assist.png)
 
 ## HoloLens 2 인더스트리얼 버전 이점
 
@@ -92,7 +92,7 @@ HoloLens 2 Industrial Edition은 &quot;70%&quot; 이소프로필 알코올 및 �
 
 ### HoloLens 2 인더스트리얼 버전에서 실행할 수 있는 앱은 무엇인가요?
 
-HoloLens 2 인더스트리얼 버전은 다양한 기본 제공 엔터프라이즈 지원 앱과 함께 타사 앱을 모두 지원합니다. LOB(기간 업무) 앱은 여러 [앱 배포 방법](https://docs.microsoft.com/hololens/app-deploy-overview)을 사용하는 장치에 배포할 수 있습니다.
+HoloLens 2 인더스트리얼 버전은 다양한 기본 제공 엔터프라이즈 지원 앱과 함께 타사 앱을 모두 지원합니다. 여러 [앱 배포 방법](https://docs.microsoft.com/hololens/app-deploy-overview)을 활용하는 장치에 기간 업무 앱을 배포할 수 있습니다.
 
 ### HoloLens 2에서 HoloLens 2 산인더스트리얼 버전으로 업그레이드할 수 있나요?
 
