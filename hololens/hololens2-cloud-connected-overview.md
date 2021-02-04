@@ -14,18 +14,20 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 835b4be101b665d2b86c2170a65c04697686e403
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 69b31657a7efaebd5b25b742023dc8767f9c5038
+ms.sourcegitcommit: 39424078a75feaf6a1e9b0547cb7d5de9847faf3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283079"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11312640"
 ---
-# 배포 가이드 - 원격 지원이 있는 클라우드 연결 HoloLens 2 - 개요
+# 전개 가이드 – Remote Assist를 통해 클라우드에 연결된 HoloLens 2 – 개요
 
 이 가이드는 IT 전문가가 Dynamics 365 원격 도우미를 사용하여 조직에 클라우드로 연결되는 전체적인 목표를 사용하여 Microsoft HoloLens 2 장치를 계획하고 조직에 배포하는 데 도움이 됩니다. 이 모델은 다양한 HoloLens 2 사용 사례에서 조직에 개념 증명 배포를 위한 모델로 사용할 수 있습니다.
 
 이 가이드에서는 디바이스를 장치 관리에 등록하고, 필요한 경우 라이선스를 적용하고, 최종 사용자가 장치 설정 시 원격 지원을 즉시 사용할 수 있는지 검증하는 방법을 다를 것입니다. 이를 위해 HoloLens 2를 통해 대규모로 배포를 구현하는 설정 및 실행에 필요한 인프라의 중요한 요소에 대해 설명합니다.
+
+![클라우드 연결 배너](./images/cloud-connected-hololens-large.png)
 
 ## 이 가이드의 설명
 
@@ -37,7 +39,7 @@ ms.locfileid: "11283079"
 - MDM 자동 등록을 사용하여 Azure AD 가입 -- MDM(Intune) 관리
 - 사용자가 자신의 회사 계정(Azure AD)으로 로그인합니다.
   - 지원되는 장치당 사용자 한명 또는 여러명
-- 장치 잠금 구성의 다양한 수준은 특정 사용 사례에 따라 완전히 열기에서 단일 앱 키오스크까지 적용됩니다.
+- 완전히 열기에서 단일 앱 키오스크까지 특정 사용 사례에 따라 다양한 수준의 장치 잠금 구성이 적용됩니다.
 
 ![클라우드 연결 시나리오](./images/cloud-connected-guide-diagram.png)
 

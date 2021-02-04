@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d4275d8fe71e469eee3f8c63576794e6ea5adf3c
-ms.sourcegitcommit: b24acae8bdc56442ae0cb8290ab5e9464e6f564e
+ms.openlocfilehash: 1348e6f33f5ea64c6fd3572b09c18fdcb6ae63e6
+ms.sourcegitcommit: 39424078a75feaf6a1e9b0547cb7d5de9847faf3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "11306677"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "11312653"
 ---
 # HoloLens 2 개요
 
@@ -106,7 +106,7 @@ HoloLens 2 인더스트리얼 버전은 다음과 같은 광범위한 산업 환
 
 업그레이드된 장치 외에도 HoloLens 2 인더스트리얼 버전은 2년 보증 및 신속한 교체 프로그램을 제공합니다.
 
-[HoloLens 2 인더스트리얼 버전 FAQ](https://github.com/MicrosoftDocs/Hololens-pr/blob/evmill-industrial-edition/hololens/hololens2-industrial-edition-faq.md)를 검토하세요.
+[HoloLens 2 인더스트리얼 버전 FAQ](hololens2-industrial-edition-faq.md)를 검토하세요.
 
 #### HoloLens 2 정리 및 처리
 HoloLens 2 Industrial Edition은 “70%” 이소프로필 알코올 및 물을 사용하여 바이저, 브로우 패드 및 헤드 스트랩을 비롯한 장치의 단단한 표면을 청소할 수 있습니다. 자세한 내용은 [HoloLens 2 청소 FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance)를 참조하세요. 
