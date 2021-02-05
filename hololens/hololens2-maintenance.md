@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ea6e4f32e804ee6c2f2f155da1f4290e1116bb74
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: c9016be7bba8f795e43339c2c93d3fe3b44d2c8c
+ms.sourcegitcommit: 1d44907cb7454ff96f1a9badb90db4cdc958e784
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283089"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "11313797"
 ---
 # HoloLens 2 정리 FAQ
 
@@ -29,9 +29,13 @@ ms.locfileid: "11283089"
 
 ## HoloLens 2 장치에 대한 일반적인 정리 지침은 무엇입니까?
 
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player]
+## HoloLens 2 장치에 대한 일반적인 정리 지침은 무엇입니까?
+<!-- <iframe src="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Use-and-Care/player" width="960" height="540" allowFullScreen frameBorder="0" title="HoloLens 2 Use and Care - Microsoft Channel 9 Video"></iframe> -->
+
 **디바이스를 정리하려면**
 
-1. 장치의 표면을 부드럽게 지우기 위해 린트가 없는 건조한 마이크로픽스 천막을 사용하여 미세한 미세한 불을 제거합니다.
+1. 장치의 표면을 부드럽게 지우기 위해 건조하고 린트가 없는 마이크로픽스 천막을 사용하여 미세한 미세한 불을 제거합니다.
 1. 의료 "70%"의 이스트로픽스를 사용하여 가을을 살짝 촉촉하게 촉촉하게 닦은 후 촉촉한 촉감으로 디바이스 표면을 닦아냅니다.
 
    ![바이저를 청소하는 방법을 보여 주는 이미지](images/hololens-cleaning-visor.png)
@@ -47,16 +51,16 @@ ms.locfileid: "11283089"
 
 아니요. 렌즈 세정제는 바이저의 필터에 연성적일 수 있습니다. 바이너리 정리를 위해 다음 단계를 수행합니다.  
 
-1. 건조한 린트 없는 마이크로픽스 천막을 사용하여 바이너리가 부드럽게 닦아내어 미세한 물티슈를 제거합니다.
-1. 의료 "70%"의 이방성 음영을 사용하여 가루를 살짝 적신 다음 바이너리에서 부드럽게 닦아냅니다.
+1. 건조한 린트 없는 마이크로픽스 천을 사용하여 바이더를 부드럽게 닦아내어 미세한 미세한 불을 제거합니다.
+1. 의료 "70%" 이방성 술을 사용하여 가을을 은하게 적신 다음 바이너리에서 부드럽게 닦아냅니다.
 1. 바이너리가 완전히 건조하게 합니다.
 
-## 장치를 정리하는 데 소진 지우기를 사용할 수 있나요?
+## 장치를 정리하기 위해 소진 지우기를 사용할 수 있나요?
 
 예, 지우기에서 표백을 포함하지 않는 경우 비오블리싱 제거 지우기를 사용하여 HoloLens 표면을 부드럽게 [지우는 데 사용할 수 있습니다.](#what-are-the-general-cleaning-instructions-for-hololens-2-devices)  
 
 > [!CAUTION]  
-> HoloLens 표면을 정리하기 위해 블리치가 포함된 소 제거 지우기를 사용하지 마십시오. 아무 것도 사용할 수 없는 중요한 상황에서는 블리치 지우기를 사용할 수 있습니다. 그러나 블리싱은 HoloLens 바이서나 다른 표면에 손상을 입을 수 있습니다.
+> HoloLens 표면을 정리하기 위해 표백이 포함된 소 제거 지우기를 사용하지 않도록 합니다. 아무 것도 사용할 수 없는 중요한 상황에서는 블리치 지우기를 사용할 수 있습니다. 그러나 블리싱은 HoloLens 바이서나 기타 표면에 손상을 입을 수 있습니다.
 
 ## 술을 사용하여 디바이스를 정리할 수 있나요?
 
@@ -72,7 +76,7 @@ ms.locfileid: "11283089"
 
 브로우 패드를 정리하기 위해 물과 부드러운 촉촉한 비누를 사용하여 촉촉하게 닦아냅니다. 브로우 패드를 다시 사용하기 전에 완전히 건조하게 합니다.
 
-## UV(uvviolet) 조명을 사용하여 장치를 소진할 수 있나요?
+## UV(uvviolet) 빛을 사용하여 장치를 소진할 수 있나요?
 
 0.5-0.6mW/cm 2의 강도 수준에서 265nm에서 작동하며 오존을 발산하지 않는 UVC LED를 사용하여 UVC 조사를 <sup> </sup> 사용하여 HoloLens2를 소독할 수 있습니다. 처리 및 노출 시간에 대한 제조업체의 사양을 따르십시오.
 
