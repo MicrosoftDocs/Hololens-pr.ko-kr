@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e36d25a31495b09e2e9f08f8ea5a8bf34fadafeb
-ms.sourcegitcommit: 12d96e5d0c733e733f6ff7da2f4efb8e0f96c27b
+ms.openlocfilehash: 3d91c9cf1378fd06d1982b69177638354b552c6f
+ms.sourcegitcommit: feccd0135ac567d1217a1ac78a36f03321554305
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "11311838"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "11314009"
 ---
 # Microsoft HoloLens 참가자 미리 보기
 
@@ -30,6 +30,11 @@ HoloLens용 최신 Insider Preview 빌드를 시작하세요! HoloLens의 [](hol
 ## Windows Insider Release Notes
 
 Windows Insiders에 새로운 기능의 플라이트를 다시 시작하게 됩니다. We will be flighting to the Dev Channel for the latest updates. Windows Insider 빌드에 추가 기능 및 업데이트를 추가하면 이 페이지가 계속 업데이트됩니다.  이러한 업데이트를 현실에 혼합할 수 있도록 기다렸다가 준비하세요.
+
+> [!IMPORTANT]
+> 이전에 키오스크에서 설정 앱 또는 Microsoft Edge 앱을 사용 중이던 경우 이러한 앱을 다른 앱 ID를 사용하는 새 앱으로 대체했습니다. 아래 키오스크 모드에서 새 앱에 대한 새 [AUMID를 읽어보는 것이](#use-the-new-settings-and-edge-apps-in-kiosk-modes) 좋습니다. 이렇게 하면 키오스크에 설정 앱이 계속 포함되거나 새 Microsoft Edge 앱이 포함됩니다.
+
+<br>
 
 | 기능 이름                                              | 간단한 설명                                                                      | 빌드에서 사용 가능 |
 |-----------------------------------------------------------|----------------------------------------------------------------------------------------|--------------------|
@@ -56,7 +61,7 @@ Windows Insiders에 새로운 기능의 플라이트를 다시 시작하게 됩�
 
 #### 새 Microsoft Edge 시작
 
-Insiders에 사용할 수 있는 두 가지 버전의 Microsoft Edge가 있습니다. 새 Microsoft Edge 새 Microsoft Edge 아이콘(파란색 및 녹색 소용구 아이콘으로 표시) 및 레거시 ![ Microsoft Edge(흰색 "e" 아이콘으로 ](images/new_edge_logo.png) 표시)가 있습니다. 새 Microsoft Edge가 시작 메뉴에 고정되고 웹 링크를 활성화하면 자동으로 시작됩니다. 레거시 Microsoft Edge를 기본 웹 브라우저로 다시 사용하겠는 경우 아래 지침을 참조하여 기본 앱을 [초기화하세요.](#default-app-picker)
+Insiders에 사용할 수 있는 두 가지 버전의 Microsoft Edge가 있습니다. 새 Microsoft Edge 새 Microsoft Edge 아이콘(파란색 및 녹색 소용구 아이콘으로 표시)과 레거시 ![ Microsoft Edge(흰색 "e" 아이콘으로 ](images/new_edge_logo.png) 표시)가 있습니다. 새 Microsoft Edge가 시작 메뉴에 고정되고 웹 링크를 활성화하면 자동으로 시작됩니다. 레거시 Microsoft Edge를 기본 웹 브라우저로 다시 사용하겠는 경우 아래 지침을 참조하여 기본 앱을 [초기화하세요.](#default-app-picker)
 
 > [!NOTE]
 > HoloLens 2에서 새 Microsoft Edge를 처음 시작하면 레거시 Microsoft Edge에서 설정 및 데이터를 가져올 수 있습니다. 새 Microsoft Edge를 시작한 후 레거시 Microsoft Edge를 계속 사용하는 경우 새 데이터는 레거시 Microsoft Edge에서 새 Microsoft Edge로 동기화되지 않습니다.
@@ -73,7 +78,7 @@ Insiders에 사용할 수 있는 두 가지 버전의 Microsoft Edge가 있습�
 - 전체 [Microsoft Edge Enterprise 설명서](https://docs.microsoft.com/deployedge/)
 
 > [!IMPORTANT]
-> 새 Microsoft Edge에서 지원되는 브라우저 정책의 양 때문에 Microsoft 팀은 각 새 정책이 HoloLens 2에서 작동하는지 보장할 수 없습니다. 그러나 이전에 HoloLens 2에서 지원했던 각 레거시 Microsoft Edge 정책에 해당하는 새 Microsoft Edge가 예상대로 작동하고 확인했습니다. Microsoft [Edge 레거시와 Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge) 정책 매핑을 참조하여 HoloLens 2에서 사용 중이던 각 레거시 Microsoft Edge 브라우저 정책에 해당하는 새 Microsoft Edge를 찾아 보십시오.
+> 새 Microsoft Edge에서 지원되는 브라우저 정책의 양 때문에 각 새 정책이 HoloLens 2에서 작동하는지 보장할 수 없습니다. 그러나 이전에 HoloLens 2에서 지원했던 각 레거시 Microsoft Edge 정책에 해당하는 새 Microsoft Edge가 예상대로 작동하고 확인했습니다. Microsoft [Edge 레거시와 Microsoft Edge](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge) 정책 매핑을 참조하여 HoloLens 2에서 사용 중이던 각 레거시 Microsoft Edge 브라우저 정책에 해당하는 새 Microsoft Edge를 찾을 수 있습니다.
 >
 > HoloLens 2에서 작동하지 않는 ** 새로운 Microsoft Edge 정책이 두 개 이상 있습니다.
 > - EnterpriseModeSiteList
@@ -81,7 +86,7 @@ Insiders에 사용할 수 있는 두 가지 버전의 Microsoft Edge가 있습�
 
 #### HoloLens 2의 새로운 Microsoft Edge에서 예상할 일
 
-새 Microsoft Edge는 HoloLens 2와 같은 UWP 전용 장치에서 실행될 수 있도록 하는 새로운 UWP 어댑터 계층이 있는 네이티브 Win32 앱이기 때문에 일부 기능을 즉시 사용할 수 없는 경우도 있습니다. 앞으로 몇 개월 동안 새로운 시나리오 및 기능을 지원할 예정이니 이 공간에서 최신 정보를 확인하시기 바랍니다.
+새 Microsoft Edge는 HoloLens 2와 같은 UWP 전용 장치에서 실행될 수 있도록 하는 새로운 UWP 어댑터 계층이 있는 네이티브 Win32 앱이기 때문에 일부 기능을 즉시 사용할 수 없는 경우도 있습니다. 앞으로 몇 개월 동안 새로운 시나리오 및 기능을 지원할 예정이기 때문에 이 공간에서 최신 정보를 확인하시기 바랍니다.
 
 **작동해야 하는 시나리오 및 기능:**
 - 첫 실행 환경, 프로필에 로그인 및 동기화
@@ -108,28 +113,28 @@ Insiders에 사용할 수 있는 두 가지 버전의 Microsoft Edge가 있습�
 - 장치를 초기화하면 새 Microsoft Edge가 제거됩니다.
 - 홀로그램 키보드의 돋보기 미리 보기에 잘못된 콘텐츠가 표시됩니다.
 
-#### Microsoft Edge 내부자 채널
+#### Microsoft Edge Insider 채널
 
-Microsoft Edge 팀은 에지 참여자 커뮤니티에서 세 가지 미리 보기 채널인 Beta, Dev 및 Canary를 사용할 수 있도록 합니다. 미리 보기 채널을 설치해도 HoloLens 2에 릴리스된 Microsoft Edge 버전이 제거되지는 않습니다. 동시에 두 개 이상의 Microsoft Edge를 설치할 수 있습니다. 
+Microsoft Edge 팀은 에지 참여자 커뮤니티에 세 가지 미리 보기 채널인 Beta, Dev 및 Canary를 사용할 수 있도록 합니다. 미리 보기 채널을 설치해도 HoloLens 2에 릴리스된 Microsoft Edge 버전이 제거되지는 않습니다. 동시에 두 개 이상의 Microsoft Edge를 설치할 수 있습니다. 
 
-Microsoft [Edge Insider 홈페이지를](https://www.microsoftedgeinsider.com) 방문하여 에지 내부자 커뮤니티에 대해 자세히 알아보십시오. 다양한 에지 내부자 채널에 대한 자세한 내용을 알아보고 시작하려면 [Edge Insider 다운로드 페이지를 방문하세요.](https://www.microsoftedgeinsider.com/download)
+Microsoft [Edge Insider 홈페이지를](https://www.microsoftedgeinsider.com) 방문하여 에지 내부자 커뮤니티에 대해 자세히 알아보십시오. 다양한 에지 Insider 채널에 대한 자세한 내용을 알아보고 시작하려면 [Edge Insider 다운로드 페이지를 방문하세요.](https://www.microsoftedgeinsider.com/download)
 
 HoloLens 2에 Microsoft Edge Insider 채널을 설치하는 데 사용할 수 있는 몇 가지 방법이 있습니다.
 
 **장치에 직접 설치(현재 관리되지 않는 디바이스에서만 사용 가능)**
-  1. HoloLens 2에서 [에지 Insider 다운로드 페이지를 방문합니다.](https://www.microsoftedgeinsider.com/download)
-  1. 설치하고자 하는 에지 내부자 채널에 대한 **HoloLens 2** 다운로드 단추 선택
-  1. Edge 다운로드 큐 또는 장치의 "다운로드" 폴더에서 다운로드한 .msix 파일 시작(파일 탐색기 사용)
-  1. [앱 설치 관리자 시작](app-deploy-app-installer.md)
-  1. 설치 **단추** 선택
+  1. HoloLens 2에서 Edge [Insider 다운로드 페이지를 방문합니다.](https://www.microsoftedgeinsider.com/download)
+  1. 설치하고자 하는 에지 내부자 채널에 대한 **HoloLens 2** 다운로드 단추를 선택합니다.
+  1. Edge 다운로드 큐 또는 장치의 "다운로드" 폴더(파일 탐색기 사용)에서 다운로드된 .msix 파일을 실행합니다.
+  1. [앱 설치 관리자를 실행합니다.](app-deploy-app-installer.md)
+  1. 설치 **단추를** 선택합니다.
   1. 설치가 성공하면 시작 메뉴의 모든 앱 목록에서 Microsoft Edge **** Beta, Dev 또는 Canary를 별도의 항목으로 찾을 수 있습니다.
 
 **Windows Device Portal을 사용하여 [](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal) PC를 통해 설치(HoloLens 2에서 개발자 모드를 사용하도록 설정해야 합니다.)**
-  1. PC에서 [에지 Insider](https://www.microsoftedgeinsider.com/download) 다운로드 페이지 방문
+  1. PC에서 [Edge Insider 다운로드 페이지를 방문합니다.](https://www.microsoftedgeinsider.com/download)
   1. 설치하고자 **** 하는 에지 내부자 채널의 "Windows 10용 다운로드" 단추 옆에 있는 드롭다운 화살표 단추를 선택합니다.
-  1. 드롭다운 **메뉴에서 HoloLens 2** 선택
-  1. .msix 파일을 PC의 "다운로드" 폴더(또는 쉽게 찾을 수 있는 다른 폴더)에 저장
-  1. PC에서 [Windows Device Portal을](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) 사용하여 HoloLens 2에 다운로드된 .msix 파일 설치
+  1. 드롭다운 **메뉴에서 HoloLens 2를** 선택합니다.
+  1. .msix 파일을 PC의 "다운로드" 폴더(또는 쉽게 찾을 수 있는 다른 폴더)에 저장합니다.
+  1. PC에서 [Windows Device Portal을](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app) 사용하여 다운로드한 .msix 파일을 HoloLens 2에 설치합니다.
   1. 설치가 성공하면 시작 메뉴의 모든 앱 목록에서 Microsoft Edge **** Beta, Dev 또는 Canary를 별도의 항목으로 찾을 수 있습니다.
 
 > [!NOTE]
@@ -137,7 +142,7 @@ HoloLens 2에 Microsoft Edge Insider 채널을 설치하는 데 사용할 수 �
 
 ### WebXR 및 360 Viewer
 
-*Windows Insider Build 20289.1000에 추가되었습니다.*
+*Windows Insider 빌드 20289.1000에 추가되었습니다.*
 
 새로운 Microsoft Edge에는 몰입형 웹 환경을 만들기 위한 새로운 표준인 WebXR에 대한 지원이 포함되어 있습니다(WebVR 대체). 많은 몰입형 웹 환경은 VR을 염두에 두어 디자인했지만(시야를 가상 환경으로 대체) HoloLens 2에서도 지원됩니다. WebXR 표준은 실제 환경을 활용하는 증강 및 혼합 현실 몰입형 웹 환경을 가능하게 합니다. 개발자가 WebXR에 더 많은 시간을 소비할수록 HoloLens 2 고객에게 새로운 증강 및 혼합 현실 몰입형 환경이 제공될 것으로 예상됩니다.
 
@@ -146,7 +151,7 @@ HoloLens 2에 Microsoft Edge Insider 채널을 설치하는 데 사용할 수 �
 #### WebXR 사용 방법
 
 1. WebXR 지원을 사용하여 웹 사이트로 이동합니다.
-1. 웹 사이트에서 **VR** 입력 단추를 선택합니다. 이 단추의 위치 및 시각적 표현은 웹 사이트마다 다를 수 있지만 다음과 유사할 수 있습니다.
+1. 웹 사이트에서 **VR 입력** 단추를 선택합니다. 이 단추의 위치 및 시각적 표현은 웹 사이트마다 다를 수 있지만 다음과 유사할 수 있습니다.
 
     ![VR 입력 단추 예제](images/75px-enter-vr.png)
 
@@ -168,7 +173,7 @@ HoloLens 2에 Microsoft Edge Insider 채널을 설치하는 데 사용할 수 �
     ![360 뷰어 활성화 단추](images/enter-360-viewer.jpg)
 
 1. 특정 도메인에서 360 Viewer를 처음 시작하려고 하면 브라우저에서 몰입형 보기를 입력하는 데 동의하도록 요청합니다. 허용을 **선택합니다.**
-1. [에어 탭하여](hololens2-basic-usage.md#select-using-air-tap) 재생 컨트롤을 나타 습니다. 손 [광선](hololens2-basic-usage.md#select-using-air-tap) 및 에어 탭을 사용하여 재생/일시 중지, 앞으로/뒤로 건너뛰기, 캡션 켜기/끄기 또는 경험을 중지합니다(몰입형 보기를 종료). 재생 컨트롤은 몇 초 동안 비활성 상태일 때 사라집니다.
+1. [에어 탭하여](hololens2-basic-usage.md#select-using-air-tap) 재생 컨트롤을 가져오는 기능입니다. 손 [광선](hololens2-basic-usage.md#select-using-air-tap) 및 에어 탭을 사용하여 재생/일시 중지, 앞으로/뒤로 건너뛰기, 캡션 켜기/끄기 또는 경험을 중지합니다(몰입형 보기를 종료). 재생 컨트롤은 몇 초 동안 비활성 상태일 때 사라집니다.
 
 #### 상위 WebXR 및 360 뷰어 알려진 문제
 - WebXR 환경에서는 머리를 기울거나 환경 주위를 이동할 때 홀로그램이 이동하거나 기울어지게 될 수 있습니다.
@@ -196,11 +201,13 @@ HoloLens 2에 Microsoft Edge Insider 채널을 설치하는 데 사용할 수 �
 ![새 설정 앱 홈페이지](images/new-settings-app.png)
 
 **새로운 기능 및 설정**
-- 설정 검색: 키워드 또는 설정 이름을 사용하여 설정 홈에서 설정 검색
+- 설정 검색: 키워드 또는 설정 이름을 사용하여 설정 홈에서 설정을 검색합니다.
 - 시스템 > 소리:
-  - 입력 및 출력 오디오 장치: 입력 및 출력 오디오 장치를 독립적으로 선택하십시오(예: Bluetooth 헤드폰을 통해 오디오를 듣거나 오디오 입력에 USB-C 마이크를 사용). 참고: Bluetooth 마이크는 HoloLens 2에서 지원되지 않습니다.
-  - 앱 볼륨: 각 앱의 볼륨을 독립적으로 조정
-- 시스템 > 전원 & 절전: 장치가 비활성 기간 후 절전으로 이동해야 하는 시기 선택
+  - 입력 및 출력 오디오 장치: 입력 및 출력 오디오 장치를 독립적으로 선택하십시오(예: Bluetooth 헤드폰을 통해 오디오를 듣거나 오디오 입력에 USB-C 마이크를 사용). 
+    > [!NOTE]
+    > Bluetooth HoloLens 2에서 지원되지 않습니다.
+  - 앱 볼륨: 각 앱의 볼륨을 독립적으로 조정합니다.
+- 시스템 > 전원 & 절전: 장치가 비활성 기간 후 절전으로 이동해야 하는 시기를 선택하십시오.
 - 시스템 > 배터리: 배터리 절약 모드를 수동으로 사용하도록 설정하거나 배터리 절약 모드가 자동으로 켜진 지점에 배터리 임계값을 설정합니다.
 - USB > 장치: 기본적으로 USB 연결을 사용하지 않도록 설정할 수 있습니다.
 - 네트워크 & 인터넷:
@@ -208,15 +215,15 @@ HoloLens 2에 Microsoft Edge Insider 채널을 설치하는 데 사용할 수 �
   - 이제 해당 IP 주소를 포함하여 USB-C 이더넷 어댑터 설정을 사용할 수 있습니다.
   - 이제 HoloLens 2에서 비행기 모드를 사용하도록 설정할 수 있습니다.
 - 앱: 파일 및 링크 유형에 사용되는 기본 앱을 다시 설정할 수 있습니다. 자세한 [내용은 기본 앱 선택을](#default-app-picker) 참조하세요.
-- 다른 > 사용자에 대한 계정: 장치 소유자는 사용자를 추가하고, 표준 사용자를 장치 소유자로 업그레이드하고, 장치 소유자를 표준 사용자로 다운그레이드하고, 사용자를 제거할 수 있습니다.
-- 접근성: 텍스트 크기 및 일부 시각적 효과 변경
+- 다른 > 계정: 장치 소유자는 사용자를 추가하고, 표준 사용자를 장치 소유자로 업그레이드하고, 장치 소유자를 표준 사용자로 다운그레이드하고, 사용자를 제거할 수 있습니다.
+- 접근성: 텍스트 크기 및 일부 시각 효과를 변경합니다.
 
 **알려진 문제**
-- 이전에 배치된 설정 창이 제거됩니다(위의 참고 참조).
+- 이전에 배치한 설정 창이 제거됩니다(위의 참고 참조).
 - 알림 페이지를 방문하면 설정 앱이 충돌할 수 있습니다(조사 중).
 - 현재 이더넷 페이지가 표시되지 않습니다(곧 수정될 예정).
-- 더 이상 설정 앱으로 디바이스 이름을 변경할 수 없습니다(IT 관리자는 프로비저닝 패키지 또는 MDM을 사용하여 장치 이름을 변경할 수 없음)
-- UWP 어댑터 계층에서 지원하는 Win32 데스크톱 응용 프로그램 특성으로 인해 새 Microsoft Edge의 배터리 사용량이 정확하지 않을 수 있습니다(곧 수정이 예상되지 않을 예정입니다).
+- 더 이상 설정 앱으로 디바이스 이름을 변경할 수 없습니다(IT 관리자는 프로비저닝 패키지 또는 MDM을 사용하여 장치 이름을 변경할 수 있습니다).
+- UWP 어댑터 계층에서 지원하는 Win32 데스크톱 응용 프로그램(곧 수정이 예상되지 않는 경우)으로 인해 새 Microsoft Edge의 배터리 사용량이 정확하지 않을 수 있습니다.
 
 ### 기본 앱 선택기
 
@@ -224,17 +231,17 @@ HoloLens 2에 Microsoft Edge Insider 채널을 설치하는 데 사용할 수 �
 
 ![앱 선택기 창](images/default-app-picker.png)
 
-"항상"을 선택하지만 나중에 특정 파일 또는 링크 형식을 처리하는 앱을 변경하려면 앱의 설정에서 저장된 기본값을 **> 있습니다.** 페이지 아래쪽으로 스크롤하고 "파일 **** 형식에 대한 기본 앱" 및/또는 "링크 형식의 기본 앱"에서 지우기 단추를 선택합니다. 데스크톱 PC의 유사한 설정과 달리 개별 파일 형식 기본값은 다시 설정할 수 없습니다.
+"항상"을 선택하지만 나중에 특정 파일 또는 링크 유형을 처리하는 앱을 변경하려면 설정 및 앱의 설정에서 저장된 기본값을 **> 있습니다.** 페이지 아래쪽으로 스크롤하여 "파일 **** 형식에 대한 기본 앱" 및/또는 "링크 형식의 기본 앱"에서 지우기 단추를 선택합니다. 데스크톱 PC의 유사한 설정과 달리 개별 파일 형식 기본값은 다시 설정할 수 없습니다.
 
 ### Office Web App
 
-Office Web App이 시작 메뉴의 "모든 앱" 목록에 추가되었습니다. 이 웹앱은 시작 또는 제거에 고정할 수도 있습니다. 웹앱이기 때문에 해당 기능은 방문하여 경험하는 기능과 정확히 https://www.office.com 일치합니다. Office Web App 기능은 HoloLens 2에 활성 인터넷 연결이 있는 경우만 사용할 수 있습니다.
+시작 메뉴의 "모든 앱" 목록에 Office Web App이 추가되었습니다. 이 웹앱은 시작 또는 제거에 고정할 수도 있습니다. 웹앱이기 때문에 해당 기능은 방문하여 경험하는 기능과 정확히 https://www.office.com 일치합니다. Office Web App 기능은 HoloLens 2에 활성 인터넷 연결이 있는 경우만 사용할 수 있습니다.
 
 ### 스와이프하여 입력
 
-일부 고객은 입력하려는 단어의 모양을 스와이프하여 가상 키보드에서 "입력"하는 것이 더 빠르며 홀로그램 키보드에 대해 이 기능을 미리 보고 있습니다. 홀로그램 키보드의 평면을 통해 손가락 팁을 전달하고 단어의 모양을 스와이프한 다음 키보드 평면에서 손가락 끝을 철회하여 한 단어씩 한 번씩 스와이프할 수 있습니다. 단어 사이에 있는 키보드에서 손가락을 제거하여 스페이스바를 누르지 않고도 후속 단어를 스와이프할 수 있습니다. 키보드에서 손가락을 움직일 때 뒤로 미는 내선이 표시될 경우 이 기능이 작동하고 있는 것을 알 수 있습니다.
+일부 고객은 입력하려는 단어의 모양을 스와이프하여 가상 키보드에서 "입력"하는 것이 더 빠르며 홀로그램 키보드에 대해 이 기능을 미리 보고 있습니다. 홀로그램 키보드의 평면을 통해 손가락 팁을 전달하고 단어의 모양을 스와이프한 다음 키보드 평면에서 손가락 팁을 철회하여 한 단어씩 한 번씩 스와이프할 수 있습니다. 단어 사이에 있는 키보드에서 손가락을 제거하여 스페이스바를 누르지 않고도 후속 단어를 스와이프할 수 있습니다. 키보드에서 손가락을 움직일 때 뒤로 스와이프 뒤로 이동이 표시될 경우 기능이 작동하고 있는 것을 알 수 있습니다.
 
-휴대폰 디스플레이와 달리 손가락에 대한 저항이 느껴지지 않는 홀로그램 키보드의 특성 때문에 이 기능을 사용 및 마스터하기가 까다로울 수 있습니다. 이 기능은 공개 릴리스에서 평가 중이기 때문에 사용자 의견이 중요합니다. 이 기능이 유용하게 사용되거나 생성적 피드백이 있는지 여부에 따라 피드백 허브를 통해 [알려주세요.](hololens-feedback.md)
+휴대폰 디스플레이와 달리 손가락에 대한 저항이 느껴지지 않는 홀로그램 키보드의 특성 때문에 이 기능을 사용 및 마스터하기가 까다로울 수 있습니다. 이 기능은 공개 릴리스에서 평가 중이기 때문에 사용자 의견이 중요합니다. 이 기능이 유용하게 사용되거나 생성적인 피드백이 있는지 여부에 따라 피드백 허브를 통해 [알려주세요.](hololens-feedback.md)
 
 ### USB-C 외부 마이크 지원
 
@@ -266,7 +273,7 @@ Office Web App이 시작 메뉴의 "모든 앱" 목록에 추가되었습니다.
 
 #### USB-C 마이크 문제 해결
 
-일부 USB-C 마이크는 마이크와 스피커 모두로 ** 잘못 보고합니다. HoloLens가 아니라 마이크에 문제가 있습니다. 이러한 마이크 중 하나를 HoloLens에 연결할 때 소리가 손실될 수 있습니다. 다행히 간단한 수정이 있습니다.  
+일부 USB-C 마이크는 마이크와 스피커 모두로 ** 잘못 보고합니다. HoloLens가 아니라 마이크에 문제가 있습니다. 이러한 마이크 중 하나를 HoloLens에 연결하면 소리가 손실될 수 있습니다. 다행히 간단한 수정이 있습니다.  
 
 설정 **시스템**  ->  **소리에서**기본 제공 스피커(아날로그 기능 오디오 드라이버)를 명시적으로 기본  ->  **** **장치로 설정** **** HoloLens는 마이크를 제거하고 나중에 다시 연결한 경우에도 이 설정을 기억해야 합니다.
 
@@ -276,7 +283,7 @@ Office Web App이 시작 메뉴의 "모든 앱" 목록에 추가되었습니다.
 
 키오스크에 [](hololens-kiosk.md)앱을 포함하면 IT 관리자가 종종 앱을 키오스크에 추가하지만 AUMID(앱 사용자 모델 ID)를 사용하게 됩니다. 설정 앱과 Microsoft Edge 앱은 모두 새 앱으로 간주되어 해당 앱에 대해 AUMID를 사용하는 이전 앱 키오스크를 업데이트해야 새 AUMID를 사용할 수 있기 때문에
 
-새 앱을 포함하도록 키오스크를 수정할 때 새 AUMID를 추가하고 이전 앱을 남겨 두는 것이 좋습니다. 이렇게 하면 사용자가 OS를 업데이트할 때 쉽게 전환할 수 있으며 키오스크를 의도한 바에 따라 계속 사용하기 위한 새 정책을 받을 필요가 없습니다.
+새 앱을 포함하도록 Kiosk를 수정할 때 새 AUMID를 추가하고 이전 앱을 남겨 두는 것이 좋습니다. 이렇게 하면 사용자가 OS를 업데이트할 때 쉽게 전환할 수 있으며 키오스크를 의도한 바에 따라 계속 사용하기 위한 새 정책을 받을 필요가 없습니다.
 
 | 앱                    | AUMID                                                  |
 |------------------------|--------------------------------------------------------|
@@ -293,7 +300,7 @@ Windows Insider 릴리스부터는 AAD 그룹 키오스크 모드 중 오류가 
 
 ### 설정 앱을 통해 Fallback Diagnostics 구성
 
-이제 설정 앱에서 사용자가 [Fallback Diagnostics의 동작을 구성할 수 있습니다.](hololens-diagnostic-logs.md) 설정 앱에서 개인 **정보**문제 해결 페이지로 이동하여  ->  **** 이 설정을 구성합니다.
+이제 설정 앱에서 사용자가 [Fallback Diagnostics의 동작을 구성할 수 있습니다.](hololens-diagnostic-logs.md) 설정 앱에서 개인 **정보**문제 해결 페이지로 이동하여 이  ->  **** 설정을 구성합니다.
 
 > [!NOTE]
 > 장치에 대해 구성된 MDM 정책이 있는 경우 사용자는 해당 동작을 다시 구성할 수 없습니다.  
@@ -312,9 +319,9 @@ Windows Insider 릴리스부터는 AAD 그룹 키오스크 모드 중 오류가 
 >
 > 백 엔드에서 발생할 수 있는 버그가 발생하여 다시 추적할 수 있습니다.
 
-HoloLens 2 장치에서 보안 **** Windows & 설정 업데이트로 이동하고  >  ****  >  **** **시작을 선택합니다.** Windows Insider로 등록하는 데 사용한 계정을 연결합니다.
+HoloLens 2 장치에서 보안 **** Windows & 업데이트로 이동하고  >  ****  >  **** **시작을 선택합니다.** Windows Insider로 등록하는 데 사용한 계정을 연결합니다.
 
-Windows 내부자는 이제 채널로 이동하고 있습니다. 빠른 **링은** 개발자 채널이 되고, **슬로우** 링은 **** 베타 채널이 **되고,** 릴리스 미리 보기 링은 릴리스 미리 보기 **** **채널이 됩니다.** 매핑의 모양은 다음과 같습니다.
+Windows 내부자는 이제 채널로 이동하고 있습니다. 빠른 **링은** 개발자 채널이 **되고,** **슬로우** 링은 베타 채널이 **되고,** **릴리스** 미리 보기 링은 릴리스 미리 보기 **채널이 됩니다.** 매핑의 모양은 다음과 같습니다.
 
 ![Windows Insider Channels 설명](images/WindowsInsiderChannels.png)
 
@@ -332,7 +339,7 @@ Windows 내부자는 이제 채널로 이동하고 있습니다. 빠른 **링은
 2.  설정, 업데이트 & 보안, Windows 업데이트, **업데이트를 확인합니다.** 업데이트 후 2단계로 계속 진행합니다.
 
 #### 2단계 - 개발자 채널
-1. 설정, & 업데이트, Windows Insider Program, **개발자 채널을 선택합니다.**
+1. 설정, & 업데이트, Windows Insider Program, **개발자 채널 선택.**
 2. 설정, 업데이트 & 보안, Windows 업데이트, **업데이트를 확인합니다.**
 
 ## FFU 다운로드 및 플래시 길
@@ -341,7 +348,7 @@ Windows 내부자는 이제 채널로 이동하고 있습니다. 빠른 **링은
 
     1. .에서 PC에 ffu를 [https://aka.ms/hololenspreviewdownload](https://aka.ms/hololenspreviewdownload) 다운로드합니다.
     
-    1. Microsoft Store에서 ARC(Advanced Recovery Companion)를 설치합니다. [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8)
+    1. Microsoft Store에서 ARC(Advanced Recovery Companion)를 [https://www.microsoft.com/store/productId/9P74Z35SFRS8](https://www.microsoft.com/store/productId/9P74Z35SFRS8) 설치합니다.
     
 1. HoloLens - 플라이트 **** 잠금 해제: 보안 Windows & 프로그램으로 설정 열기 업데이트 후 장치를 등록하고 장치를  >  ****  >  **** 다시 시작합니다.
 
@@ -360,7 +367,7 @@ HoloLens에서 피드백 허브 앱을 사용하여 피드백을 제공하고 �
 
 ## Insider 빌드 수신 중지
 
-Windows Holographic의 Insider 빌드를 더 이상 받지 못하게 하려는 경우 HoloLens가 프로덕션 빌드를 [](hololens-recovery.md) 실행 중일 때 옵트아웃하거나 고급 복구 도우미를 사용하여 장치를 비 Insider 버전의 Windows Holographic으로 복구할 수 있습니다.
+Windows Holographic의 Insider 빌드를 더 이상 받지 못하게 하려는 경우 HoloLens가 프로덕션 빌드를 [](hololens-recovery.md) 실행 중일 때 옵트아웃하거나 Advanced Recovery Companion를 사용하여 장치를 Windows Holographic의 비 Insider 버전으로 복구할 수 있습니다.
 
 > [!CAUTION]
 > Insider Preview 빌드를 수동으로 다시 설치한 후 Insider Preview 빌드에서 등록을 등록하지 않은 사용자가 파란색 화면을 경험하는 알려진 문제가 있습니다. 이후 장치를 수동으로 복구해야 합니다. 영향이 있을지 아니면 그렇지 않을지에 대한 자세한 내용은 이 알려진 문제에서 자세히 [확인하시기 바랍니다.](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)
