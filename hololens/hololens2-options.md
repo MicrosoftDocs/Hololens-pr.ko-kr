@@ -4,7 +4,7 @@ description: 각 HoloLens 2 장치 버전이 어떻게 같거나 다른지, 그�
 keywords: HoloLens 2 구매 옵션, HoloLens 옵션, 개발자 버전
 author: evmill
 ms.author: v-evmill
-ms.reviewer: sekerawa
+ms.reviewer: evmill
 ms.date: 1/01/2021
 ms.prod: hololens
 ms.topic: article
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9de0bbe4cc8d3056a1f34647c0779ebdff1476aa
-ms.sourcegitcommit: f122e2c0c7c0366d88fa3efa3590e9e237eaf925
+ms.openlocfilehash: df3fa8ba3fbf65fa0b59f2ba9a6ace2ea489308b
+ms.sourcegitcommit: c58747f312cf1fea2de146501ea2473e93bd8300
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "11313555"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "11314284"
 ---
 # HoloLens 2 개요
 
@@ -106,6 +106,8 @@ HoloLens 2 인더스트리얼 버전은 다음과 같은 광범위한 산업 환
 
 업그레이드된 장치 외에도 HoloLens 2 인더스트리얼 버전은 2년 보증 및 신속한 교체 프로그램을 제공합니다.
 
+![청정실에 사용된 인더스트리얼 버전](./images/ie-small-pic.png)
+
 [HoloLens 2 인더스트리얼 버전 FAQ](hololens2-industrial-edition-faq.md)를 검토하세요.
 
 #### HoloLens 2 정리 및 처리
@@ -115,6 +117,8 @@ HoloLens 2 Industrial Edition은 “70%” 이소프로필 알코올 및 물을 
 
 #### Trimble XR10에 대한 자세한 정보
 HoloLens 2가 지원되는 Trimble XR10은 Microsoft HoloLens Customization Program을 통해 개발된 최초의 장치이며, 최신 공간 컴퓨팅 기술을 인증된 솔루션에 통합하여 작업자 안전을 위한 하드 모자와 함께 사용할 수 있습니다.
+
+![트림블 SKU](./images/trimble-ed.png)
 
 [Trimble XR10](https://fieldtech.trimble.com/en/product/trimble-xr10-with-hololens-2)에 대해 자세히 알아보세요.
 
@@ -132,6 +136,8 @@ HoloLens 2 개발 버전에는 HoloLens 2, 500 달러의 Azure 크레딧, 3개�
 |  [Unity](https://unity.com/) | 실시간 3D 개발 플랫폼   |
 |  [Unity용 Pixyz 플러그 인](https://www.pixyz-software.com/plugin/) | 엔지니어링 &amp; CAD 세계와 개발 세계를 연결하는 다리입니다.   |
 | [Azure 서비스에 대한 Azure 크레딧 500달러](https://azure.microsoft.com/resources/) | HoloLens 2 Development Edition에 포함된 Azure 크레딧은 Azure에서 혼합 현실 응용 프로그램의 신속한 구축 및 테스트를 시작하기 위한 것입니다. |
+
+![HoloLens 2 개발 버전](./images/hololens-2-dev-ed.png)
 
 #### 크레딧 상환
 
