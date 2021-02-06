@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 1348e6f33f5ea64c6fd3572b09c18fdcb6ae63e6
-ms.sourcegitcommit: 39424078a75feaf6a1e9b0547cb7d5de9847faf3
+ms.openlocfilehash: 9de0bbe4cc8d3056a1f34647c0779ebdff1476aa
+ms.sourcegitcommit: f122e2c0c7c0366d88fa3efa3590e9e237eaf925
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "11312653"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "11313555"
 ---
 # HoloLens 2 개요
 
@@ -66,7 +66,7 @@ HoloLens는 *홀로그램으로 구동되는* 혼합현실 장치로, 공동 작
 
 ### **HoloLens 2(장치 전용)**
 #### HoloLens 2에 대한 자세한 정보
-상용 환경에서 HoloLens 2 장치를 사용하는 것은 비즈니스 또는 조직에 강력한 도구가 될 수 있습니다. 또한 HoloLens 2는 혼합 현실 앱을 만드는 개발자가 될 수 있습니다. 
+상용 환경에서 HoloLens 2 장치를 사용하는 것은 비즈니스 또는 조직에 강력한 도구가 될 수 있습니다. HoloLens 2는 개발자가 혼합 현실 앱을 만드는 데도 사용될 수 있습니다. 
 
 <br>
 
@@ -87,7 +87,7 @@ HoloLens는 *홀로그램으로 구동되는* 혼합현실 장치로, 공동 작
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### 다음은 Dynamics 365 Remote Assist 버전 HoloLens 2에서 수행할 작업입니다.
-HoloLens 장치를 규모에 맞게 배포할 수 있도록 지원하는 특별 가이드를 작성했습니다. 이 가이드에는 Azure Active Directory에 대해 Remote Assist 호출을 검증하기 위한 종단 간 설정이 포함되어 있습니다. 자세한 내용은 [배포 가이드 - 클라우드에 연결된 HoloLens 2 Remote Assist](hololens2-cloud-connected-overview.md)를 참조하세요.
+HoloLens 장치를 규모에 맞게 배포할 수 있도록 지원하는 특별 가이드를 작성했습니다. 이 가이드에는 원격 지원 통화의 유효성을 검사하기 위한 Azure Active Directory에 대한 종단 간 설정이 포함되어 있습니다. 자세한 내용은 [배포 가이드 - 클라우드에 연결된 HoloLens 2 Remote Assist](hololens2-cloud-connected-overview.md)를 참조하세요.
 
 | 검사점  | 결과                                |
 |-------------|----------------------------------------|
@@ -131,7 +131,7 @@ HoloLens 2 개발 버전에는 HoloLens 2, 500 달러의 Azure 크레딧, 3개�
 |---|---|
 |  [Unity](https://unity.com/) | 실시간 3D 개발 플랫폼   |
 |  [Unity용 Pixyz 플러그 인](https://www.pixyz-software.com/plugin/) | 엔지니어링 &amp; CAD 세계와 개발 세계를 연결하는 다리입니다.   |
-| [Azure 서비스에 대한 Azure 크레딧 500달러](https://azure.microsoft.com/resources/) | HoloLens 2 개발 버전에 포함된 Azure 크레딧은 Azure에서 혼합된 현실 응용 프로그램을 신속하게 구축하고 테스트하기 위한 것입니다. |
+| [Azure 서비스에 대한 Azure 크레딧 500달러](https://azure.microsoft.com/resources/) | HoloLens 2 Development Edition에 포함된 Azure 크레딧은 Azure에서 혼합 현실 응용 프로그램의 신속한 구축 및 테스트를 시작하기 위한 것입니다. |
 
 #### 크레딧 상환
 
