@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: df3fa8ba3fbf65fa0b59f2ba9a6ace2ea489308b
-ms.sourcegitcommit: c58747f312cf1fea2de146501ea2473e93bd8300
+ms.openlocfilehash: 2c1cc7fb2ec362fde96df5f0cea23aab132b62ef
+ms.sourcegitcommit: 76a99370ab841c06e533cc2f4a0c78c1fb7eac70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "11314284"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "11324771"
 ---
 # HoloLens 2 개요
 
@@ -73,7 +73,8 @@ HoloLens는 *홀로그램으로 구동되는* 혼합현실 장치로, 공동 작
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XwOnHqiNAeU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### HoloLens 2를 통해 다음 작업을 할 수 있습니다.
-1. [장치를 사용할 준비](https://docs.microsoft.com/hololens/hololens2-setup)한 다음 [설정을 마치세요](https://docs.microsoft.com/hololens/hololens2-start).
+1. [HoloLens 2 사용 및 관리](https://docs.microsoft.com/hololens/hololens2-maintenance##HoloLens-2-Use-and-Care)에 대한 이 비디오를 시청하세요.
+1. [장치를 사용할 준비](https://docs.microsoft.com/hololens/hololens2-setup)한 다음 [설정을 마치세요](https://docs.microsoft.com/hololens/hololens2-start)
 1. [HoloLens 2를 다운로드 받는 방법을 알아보세요](https://docs.microsoft.com/hololens/holographic-home).
 1. 편안해 졌다면 [혼합 현실 사진이나 비디오를 촬영하세요](https://docs.microsoft.com/hololens/holographic-photos-and-videos).
 1. [Microsoft 앱 스토어에서 HoloLens 2에 사용할 수 있는 모든 앱](https://docs.microsoft.com/hololens/holographic-store-apps)을 살펴보세요.
@@ -111,7 +112,7 @@ HoloLens 2 인더스트리얼 버전은 다음과 같은 광범위한 산업 환
 [HoloLens 2 인더스트리얼 버전 FAQ](hololens2-industrial-edition-faq.md)를 검토하세요.
 
 #### HoloLens 2 정리 및 처리
-HoloLens 2 Industrial Edition은 “70%” 이소프로필 알코올 및 물을 사용하여 바이저, 브로우 패드 및 헤드 스트랩을 비롯한 장치의 단단한 표면을 청소할 수 있습니다. 자세한 내용은 [HoloLens 2 청소 FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance)를 참조하세요. 
+HoloLens 2 Industrial Edition은 “70%” 이소프로필 알코올 및 물을 사용하여 바이저, 브로우 패드 및 헤드 스트랩을 비롯한 장치의 단단한 표면을 청소할 수 있습니다. 자세한 내용은 [HoloLens 2 청소 FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance)를 참조하세요.
 
 ### **HoloLens 2가 있는 XR10 자르기**
 
