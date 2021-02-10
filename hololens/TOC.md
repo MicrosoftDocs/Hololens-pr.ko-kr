@@ -64,9 +64,10 @@
 ### [데이터 암호화 및 보호](security-encryption-data-protection.md)
 ### [네트워크 보안](security-network-security.md)
 ### [보안 엔지니어링 ](security-engineering.md)
-### HoloLens 1세대 보안
+### HoloLens 1세대 보안 
 #### [HoloLens(1세대)의 보안에 대한 자주 묻는 질문](hololens1-faq-security.md)
 #### [HoloLens(1세대) BitLocker 암호화](hololens1-encryption.md)
+### [HoloLens 2 개인정보처리방침](hololens2-compliance.md)
 ## [라이선스 요구 사항](hololens-licenses-requirements.md)
 ## 환경
 ### [HoloLens 환경 고려 사항](hololens-environment-considerations.md)
