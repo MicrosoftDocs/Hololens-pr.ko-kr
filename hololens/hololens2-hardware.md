@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8e0b5732c6dd2eba0a318a2b72694aacd404c68f
-ms.sourcegitcommit: a5b6e9fdc0fa61a93cb23a89348f5b49316e2748
+ms.openlocfilehash: 65d3ec2a8ecc7fc456f8e8d9d6820a5624da9e99
+ms.sourcegitcommit: 0d16c7dc4d18d550023da9f6b3cc942eb915a2c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "11306926"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "11328112"
 ---
 # HoloLens 2 하드웨어
 
@@ -29,8 +29,8 @@ Microsoft HoloLens 2는 테더링되지 않은 홀로그램 컴퓨터입니다. 
 
 - **바이저**. HoloLens 센서 및 디스플레이를 포함합니다. HoloLens를 착용한 상태에서 바이저를 위로 회전시킬 수 있습니다.
 - **헤드밴드**. HoloLens를 착용하려면 조정 휠을 사용하여 헤드밴드를 확장합니다. HoloLens를 장착한 상태에서 헤드밴드가 편안해질 때까지 오른쪽으로 돌려 조정 휠을 조입니다.
-- **밝기 단추**. HoloLens를 착용하면 밝기 단추는 바이서 왼쪽에 있습니다.
-- **볼륨 단추**. HoloLens를 착용하면 볼륨 단추는 바이서 오른쪽에 있습니다.
+- **밝기 단추**. HoloLens를 착용하면 밝기 단추는 템플 근처 바이저 왼쪽에 있습니다.
+- **볼륨 단추**. HoloLens를 착용하면 볼륨 단추는 템플 근처 바이저 오른쪽에 있습니다.
 - **전원 단추.** HoloLens를 착용하면 전원 단추가 뒤쪽 외부 덮개 오른쪽에 있습니다.
 - **USB-C 포트**. HoloLens를 착용하면 USB-C 포트가 전원 단추 아래의 뒤쪽 외부 덮개 오른쪽에 있습니다.
 
@@ -182,10 +182,10 @@ Microsoft HoloLens 2는 테더링되지 않은 홀로그램 컴퓨터입니다. 
 ## 일련 번호 찾기
 
 HoloLens 2 장치의 일련 번호는 바이저 아래에 적혀 있습니다.
+
 1. 장치의 바이저를 들어 올립니다.
 1. 브로우 패드 근처를 살펴보세요.
-1. 힌지 근처에 일련 번호를 찾을 수 있을 것입니다. 
-
+1. 힌지 근처에 일련 번호를 찾을 수 있을 것입니다.
 
 <img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 

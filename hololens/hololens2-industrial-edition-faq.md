@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ece60949c998f0388bbd6bbcb235ae9f02340247
-ms.sourcegitcommit: 9a5e101fad8627042b552872d5de7320c09552ac
+ms.openlocfilehash: 11ce1af46189605cbac898f69647bdca28c573dc
+ms.sourcegitcommit: 0d16c7dc4d18d550023da9f6b3cc942eb915a2c3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "11311753"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "11328102"
 ---
 # HoloLens 2 - 인더스트리얼 버전 FAQ
 
@@ -44,6 +44,10 @@ HoloLens 2 인더스트리얼 버전은 엄격한 요구사항이 있는 규제 
 HoloLens 2 인더스트리얼 버전은 인화성 가스, 증기 또는 액체가 존재할 수 있는 UL Class I, Division 2-Groups A, B, C 및 DAZLOC 환경에서 사용하도록 인증되었습니다.
 
 자세한 정보는 [UL 인증](https://www.ul.com/services/ul-and-c-ul-hazardous-areas-certification-north-america?csrf-token=CIwNZNlR4XbisJF39I8yWnWX9wX4WFoz&amp;Search=UL+Class+I%2C+Dev+2+&amp;search-submit=Search)을 참조하세요.
+
+### HoloLens 2 인더스트리얼 버전은 ATEX를 인증하나요?
+
+아니요. HoloLens 2 인더스트리얼 버전에는 ATEX 인증이 없습니다. HoloLens 2 인더스트리얼 버전에는 미국/캐나다 클래스 1, 2 그룹 A, B, C 및 D 인증이 있습니다.
 
 ### 이 장치를 반도체 및 제약 환경에서 사용할 수 있나요?
 
