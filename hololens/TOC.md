@@ -41,6 +41,7 @@
 ### [시각적 품질과 편안함 개선](hololens-calibration.md)
 ### [HoloLens를 사용하여 물리적 공간 매핑](hololens-spaces.md) 
 ## [HoloLens 업데이트하는 법](hololens-update-hololens.md)
+## [Microsoft 메시(미리 보기)](/mesh/overview)
 
 # 준비
 ## [상용 환경에서 HoloLens 배포](hololens-requirements.md)
@@ -94,6 +95,7 @@
 ### [HoloLens 2용 인증서 및 네트워크 프로필 준비](hololens-certificates-network.md)
 ### [HoloLens에 대한 연결 엔드포인트 관리](hololens-offline.md)
 ### [Bluetooth 및 USB-C 장치에 연결](hololens-connect-devices.md)
+### [셀룰러 및 5G에 연결](hololens-cellular.md)
 ## [인증서 관리자](certificate-manager.md)
 
 # 배포
