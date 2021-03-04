@@ -12,20 +12,20 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9824de1d81fd6ba9ccafc8627d660aebefeaed15
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: 31c2c9ed7b2a35c759a0e1d86b89a2f0ab75d965
+ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283879"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "11385604"
 ---
-# HoloLens 2 설정
+# <a name="set-up-your-hololens-2"></a>HoloLens 2 설정
 
 HoloLens를 처음 켜면 장치 설정, 사용자 계정으로 로그인, 눈에 맞춰 HoloLens 보정 방법을 안내합니다.  이 섹션에서는 HoloLens 2 초기 설정 환경에 대해 살펴봅니다.
 
 다음 섹션에서는 HoloLens와 작업하고 홀로그램과 상호 작용하는 방법에 대해 알아봅니다. 해당 문서 건너뛰려면 [HoloLens 2 시작](hololens2-basic-usage.md)을 참조하세요.
 
-## 시작하기 전에
+## <a name="before-you-start"></a>시작하기 전에
 
 시작하려면 먼저 다음 항목이 준비되어 있는지 확인해야 합니다.
 
@@ -37,7 +37,7 @@ HoloLens를 처음 켜면 장치 설정, 사용자 계정으로 로그인, 눈�
 
 HoloLens와 함께 제공되어 가장 편안한 착용감을 제공하는 **옵션 편의 액세서리**. [핏 및 편안함에 대해 자세히 알아보기](hololens2-setup.md#adjust-fit).
 
-## Windows 설정
+## <a name="set-up-windows"></a>Windows 설정
 
 HoloLens 2를 처음 시작할 때 첫 번째 작업은 Windows Holographic을 설정하는 것입니다.  HoloLens를 시작 하면 음악을 들을 수 있고 Windows 로고가 표시 됩니다.
 
@@ -91,7 +91,10 @@ HoloLens 2는 다음 단계를 안내 합니다.
 
 축하합니다!  설치가 완료되었으며 HoloLens를 사용할 준비가 되었습니다!
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
+
+1. 혼합 현실과 바로 상호 작용하기 시작하고 HoloLens에서 Windows 10을 탐색합니다. 수동 상호 작용에 대한 실습 자습서는 **팁** 앱을 참조하세요. 시작 제스처를 사용하여 시작으로 이동하거나 "시작으로 이동"이라고 말한 다음 팁을 선택 합니다. 
+1. HoloLens 2에 대해 계속 읽으려면 아래를 클릭하세요.
 
 > [!div class="nextstepaction"]
 > [HoloLens 2 시작하기](hololens2-basic-usage.md)
