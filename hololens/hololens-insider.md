@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 2/23/2021
+ms.date: 3/4/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ac408f100fb6e421a0ed0c85563ed920f1a25a83
-ms.sourcegitcommit: fbc8ddb17e31fea8667ece43a511592b86ac3947
+ms.openlocfilehash: 327701c2f618fc8958704cef5f174efed08fff3a
+ms.sourcegitcommit: f3e35e278f7841176982b411881f2791e9600e6a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11385562"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "11388780"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens 참가자 미리 보기
 
@@ -155,8 +155,6 @@ Windows Insiders에 새로운 기능의 플라이트를 다시 시작하게 됐�
 - 단일 브라우저 창의 공간 소리
 - 브라우저의 자동 및 수동 업데이트
 - 인쇄 메뉴에서 PDF 저장("PDF에 저장" 옵션 사용)
-
-**곧 제공될 시나리오 및 기능:**
 - WebXR 및 360 뷰어 확장
 - 환경에 배치된 여러 창을 탐색할 때 올바른 창으로 콘텐츠 복원
 
@@ -168,6 +166,9 @@ Windows Insiders에 새로운 기능의 플라이트를 다시 시작하게 됐�
 **가장 알려진 브라우저 문제:**
 - 장치를 초기화하면 새 Microsoft Edge가 제거됩니다.
 - 홀로그램 키보드의 돋보기 미리 보기에 잘못된 콘텐츠가 표시됩니다.
+- 스크롤 시 스터터가 표시될 수 있습니다.
+- Microsoft Store 앱의 웹 링크가 브라우저를 시작하지 않을 수 있습니다.
+- 이전에 다른 브라우저 창에서 오디오를 재생한 경우 오디오가 잘못된 브라우저 창에서 재생될 수 있습니다.
 
 #### <a name="microsoft-edge-insider-channels"></a>Microsoft Edge 내부자 채널
 
@@ -330,6 +331,7 @@ HoloLens 2에 저장된 사용자 지정 색 프로필에 불만이 있는 경�
     - 해결 작업: 다른 설정 페이지를 선택한 다음 보정 페이지를 다시 선택합니다.
 - 디스플레이 색 보정을 실행하는 동안 HoloLens 2가 절전된 경우 나중에 혼합 현실 홈으로 다시 시작되고 디스플레이 밝기 수준은 여전히 희미해지게 됩니다.
 - 장치 왼쪽에 있는 밝기 단추를 예상대로 작동하기 전에 몇 번 아래로 누르는 것을 시도해야 할 수 있습니다.
+- 지역화가 모든 지역화에 완료되지는 않습니다.
 
 ### <a name="default-app-picker"></a>기본 앱 선택기
 
@@ -350,6 +352,9 @@ HoloLens 2에 저장된 사용자 지정 색 프로필에 불만이 있는 경�
 ### <a name="office-web-app"></a>Office Web App
 
 Office Web App이 시작 메뉴의 "모든 앱" 목록에 추가되었습니다. 이 웹앱을 시작 또는 제거에 고정할 수도 있습니다. 이 기능은 웹 앱이기 때문에 를 방문하여 경험하는 기능과 정확히 https://www.office.com 일치합니다. Office Web App 기능은 HoloLens 2에 활성 인터넷 연결이 있는 경우만 사용할 수 있습니다.
+
+**알려진 문제**
+- 장치를 초기화하면 Office 웹앱이 제거됩니다.
 
 ### <a name="swipe-to-type"></a>스와이프하여 입력
 
