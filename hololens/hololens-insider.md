@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 327701c2f618fc8958704cef5f174efed08fff3a
-ms.sourcegitcommit: f3e35e278f7841176982b411881f2791e9600e6a
+ms.openlocfilehash: 7c11dfbdb78e59493d648fb3a172d3e1f73048c8
+ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "11388780"
+ms.locfileid: "11393882"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens 참가자 미리 보기
 
@@ -283,8 +283,8 @@ HoloLens 2에 Microsoft Edge Insider 채널을 설치하는 데 사용할 수 �
 
 **알려진 문제**
 - 이전에 배치된 설정 창이 제거됩니다(위의 참고 참조).
-- 이더넷 페이지에는 모든 시간(조사 중)에 가상 이더넷 장치("UsbNcm")가 표시됩니다. 이 가상 이더넷 장치는 장치 설정의 네트워크 페이지에도 표시되지만 무시할 수 있습니다(조사 중).
-- 더 이상 설정 앱으로 디바이스 이름을 변경할 수 없습니다(IT 관리자는 프로비저닝 패키지 또는 MDM을 사용하여 디바이스 이름을 변경할 수 있습니다).
+- 더 이상 설정 앱을 사용하여 디바이스 이름을 변경할 수 없습니다. IT 관리자는 [HoloLens 2용 Windows Autopilot](https://docs.microsoft.com/hololens/hololens2-autopilot) 장치 이름 템플릿 또는 MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName 노드를 사용하여 디바이스 이름을 바킬 수 있습니다.
+- 이더넷 페이지에는 모든 가상 이더넷 장치("UsbNcm")가 표시됩니다.
 - UWP 어댑터 계층에서 지원하는 Win32 데스크톱 응용 프로그램(곧 수정이 예상되지 않을 예정)으로 인해 새 Microsoft Edge의 배터리 사용량이 정확하지 않을 수 있습니다.
 
 ### <a name="display-color-calibration"></a>색 보정 표시

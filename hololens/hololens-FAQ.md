@@ -18,20 +18,20 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 51058ddcba10a285b91d7fffedccf19d052d4e04
-ms.sourcegitcommit: f3e35e278f7841176982b411881f2791e9600e6a
+ms.openlocfilehash: 918ffe42ae23c6b7e0e91c6d365c80eee487660b
+ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
 ms.translationtype: MT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "11388766"
+ms.locfileid: "11393862"
 ---
 # <a name="frequently-asked-questions-about-hololens-devices-and-holograms"></a>HoloLens 장치 및 홀로그램에 대한 질문과 대답
 
 이 문서에서는 홀로그램 배치, 공간을 사용하여 작업하는 방법 등을 포함하는 HoloLens를 사용하는 방법에 대한 몇 가지 질문에 답변합니다.
 
-문제가 있을 때마다 HoloLens가 [충전되어 있는지](https://support.microsoft.com/help/12627/hololens-charge-your-hololens) 확인하세요. [다시 시작](hololens-restart-recover.md)하여 문제가 해결되었는지 확인해 보세요. 피드백 앱을 사용하여 문제에 대한 정보를 보내주세요. [**시작** 메뉴](holographic-home.md)에서 피드백 앱을 찾을 수 있습니다.
+문제가 발생하면 HoloLens가 충전 [에 있는지 확인 합니다.](https://support.microsoft.com/help/12627/hololens-charge-your-hololens) [다시 시작](hololens-restart-recover.md)하여 문제가 해결되었는지 확인해 보세요. 피드백 앱을 사용하여 문제에 대한 정보를 보내주세요. [**시작** 메뉴](holographic-home.md)에서 피드백 앱을 찾을 수 있습니다.
 
-HoloLens를 착용하는 방법에 대한 팁은 [HoloLens(1세대) 핏 및 편안함 자주 묻는 질문](hololens1-fit-comfort-faq.md)을 확인하세요.
+HoloLens를 착용하는 방법에 대한 팁은 [HoloLens(1세대)](hololens1-fit-comfort-faq.md)핏과 편안함을 자주 묻는 질문을 참조하세요.
 
 이 문서에서는 다음 질문과 문제를 다룹니다.
 <a id="list"></a>
@@ -210,7 +210,7 @@ Bluetooth 장치를 사용하는 데 문제가 있는 경우 장치를 지원하
 
 ## <a name="im-having-problems-using-the-hololens-clicker"></a>HoloLens clicker를 사용하는 데 문제가 있습니다.
 
-[clicker](hololens1-clicker.md)를 사용하여 홀로그램을 선택, 스크롤, 이동, 크기 조정합니다. 개별 앱은 추가 clicker 제스처를 지원할 수 있습니다.
+[clicker](hololens1-clicker.md)를 사용하여 홀로그램을 선택, 스크롤, 이동, 크기 조정합니다. 개별 앱은 추가 클릭커 제스처를 지원할 수 있습니다.
 
 Clicker을 사용하는 데 문제가 있는 경우 clicker가 충전이 되어 있고 HoloLens와 페어링되어 있는지 확인하세요. 배터리가 낮은 경우 표시등이 주황색으로 깜박입니다. Clicker가 페어링되었는지 확인하려면 **설정** > **장치**로 이동하여 해당 위치에 표시되는지 확인합니다. 자세한 내용은 [clicker 페어링](hololens1-clicker.md)을 참조하세요.
 
