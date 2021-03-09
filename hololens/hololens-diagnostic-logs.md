@@ -18,12 +18,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c8d9aa9fecff74a04e3f7cb395bffe5d239e18cf
-ms.sourcegitcommit: 7791e470fc2e03bdf51b19a816d7215018772860
+ms.openlocfilehash: 4a360e99a45b855957e36dd6ba31ede3da9631ba
+ms.sourcegitcommit: b5f1b7c197cb58b746efc3809c61cf7a2e8c08ef
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "11387519"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "11399810"
 ---
 # <a name="collect-and-use-diagnostic-information-from-hololens-devices"></a>HoloLens 장치에서 진단 정보 수집 및 사용
 
@@ -102,6 +102,10 @@ HoloLens 사용자는 장치의 설정 앱을 사용하여 문제를 해결하�
 
 MDM(모바일 장치 관리) 환경에서 IT 관리자는 [DiagnosticLog CSP(구성](https://docs.microsoft.com/windows/client-management/mdm/diagnosticlog-csp) 서비스 공급자)를 사용하여 등록된 HoloLens 장치에서 진단 설정을 구성할 수 있습니다. IT 관리자는 이러한 설정을 구성하여 등록된 장치에서 로그를 수집할 수 있습니다.
 
+자세한 내용은 다음을 참조합니다.
+- [Windows 장치에서 진단 수집](https://docs.microsoft.com/mem/intune/remote-actions/collect-diagnostics)
+- [Intune 공개 미리 보기 - Windows 10 장치 진단](https://techcommunity.microsoft.com/t5/intune-customer-success/intune-public-preview-windows-10-device-diagnostics/ba-p/2179712#:~:text=This%20first%20release%20of%20device%20diagnostics%20utilizes%20the,taking%20about%205%20minutes%20from%20start%20to%20finish.)
+
 ### <a name="prerequisites"></a>필수 구성 요소
 
 - 디바이스가 네트워크에 연결되어 있습니다.
@@ -125,12 +129,12 @@ USB 케이블을 통해 PC에 연결한 후 파일 탐색기에서 장치가 표
 > [!NOTE]
 > 오프라인 진단 생성 및 관리는 OS 버전에 따라 다르게 제어됩니다. 이전에는 원격 분석 설정으로 제어했지만 이제는 MDM 정책을 통해 직접 제어됩니다. 설정 또는 MDM 정책을 통해 사용하지 않도록 설정한 경우 이 메커니즘을 사용하여 진단 로그를 수집할 수 없습니다.
 
-동작 [Windows Holographic, verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2)이전 :
+동작 [Windows Holographic, 버전 20H2](hololens-release-notes.md#windows-holographic-version-20h2)이전 :
  - 오프라인 진단은 사용자가 OOBE 또는 [System\AllowTelemetry](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) 정책 값을 전체로 설정한 경우(HoloLens의 기본값은 기본)에만 사용할 수 있습니다. 
 - 오프라인 진단을 사용하지 않도록 설정하려면 설정 앱 > 개인 정보 페이지로 이동하고 진단 **데이터에서** **기본을** **선택합니다.** 오프라인 진단이 원격 분석 설정에 따라 달라지는 빌드에서는 로그 수집 여부에만 영향을 미치게 됩니다. 수집된 파일에는 영향을 주지 않습니다.
 - 장치가 잠겨 있는 경우 로그가 나타나지 않습니다.
 
-On builds [Windows Holographic, verison 20H2](hololens-release-notes.md#windows-holographic-version-20h2) and onwards:
+On builds [Windows Holographic, version 20H2](hololens-release-notes.md#windows-holographic-version-20h2) and onwards:
 - Fallback Diagnostics가 사용하도록 설정된 경우 해당 설정 [MixedReality/FallbackDiagnostics를](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mixedreality#mixedreality-fallbackdiagnostics) 사용하여 특정 MDM 정책에 의해 제어됩니다.
 - 장치가 잠겨 있는 경우 로그가 나타나지 않습니다.
 
