@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7c11dfbdb78e59493d648fb3a172d3e1f73048c8
-ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
+ms.openlocfilehash: 33e16d75a95d62e2c8b881f298acdf692874ef94
+ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "11393882"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "11400708"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens 참가자 미리 보기
 
@@ -90,6 +90,10 @@ Windows Insiders에 새로운 기능의 플라이트를 다시 시작하게 됐�
 #### <a name="updates-for-your-wdac-policy"></a>WDAC 정책 업데이트
 
 이전에 WDAC를 통해 Microsoft Edge를 차단한 경우 WDAC 정책을 업데이트할 수 있습니다. 다음을 [검토하고](#using-wdac-to-block-new-microsoft-edge) 제공된 샘플 코드를 사용하시기 바랍니다.
+
+#### <a name="enable-new-endpoints-for-edge"></a>Edge에 대한 새 끝점 사용
+
+프록시 또는 방화벽과 같은 네트워크 끝점을 구성하는 인프라가 있는 경우 새 Microsoft Ege 앱에 대해 이러한 새 끝점을 사용하도록 [설정하세요.](#managing-endpoints-for-the-new-microsoft-edge)
 
 #### <a name="newly-configurable-items"></a>새로 구성 가능한 항목
 
@@ -202,6 +206,12 @@ HoloLens 2에 Microsoft Edge Insider 채널을 설치하는 데 사용할 수 �
 새 Microsoft Edge 앱을 차단하기 위해 [WDAC](windows-defender-application-control-wdac.md) 정책을 업데이트하려면 정책에 다음을 추가해야 합니다.
 
 ``` <Deny ID="ID_DENY_D_3_0" FriendlyName="C:\Data\Programs FileRule" PackageVersion="65535.65535.65535.65535" FileName="msedge.exe" /> ```
+
+#### <a name="managing-endpoints-for-the-new-microsoft-edge"></a>새 Microsoft Edge의 끝점 관리
+
+일부 환경에는 네트워크 제한이 고려 사항으로 고려될 수 있습니다. 새 Edge를 원활하게 사용하려면 이러한 Microsoft 끝점을 사용하도록 [설정하세요.](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints)
+
+HoloLens에 대해 현재 사용 가능한 끝점에 대해 자세히 [읽어보아야 합니다.](hololens-offline.md)
 
 ### <a name="webxr-and-360-viewer"></a>WebXR 및 360 뷰어
 
