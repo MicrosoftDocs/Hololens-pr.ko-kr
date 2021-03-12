@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 33e16d75a95d62e2c8b881f298acdf692874ef94
-ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
+ms.openlocfilehash: 26fa6bfbbb1d9ec0408208513a4cd54b8ba93117
+ms.sourcegitcommit: b1362ab822d1cba97fe0b3fb4e666d9b68b6adbf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "11400708"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "11406774"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens 참가자 미리 보기
 
@@ -93,7 +93,7 @@ Windows Insiders에 새로운 기능의 플라이트를 다시 시작하게 됐�
 
 #### <a name="enable-new-endpoints-for-edge"></a>Edge에 대한 새 끝점 사용
 
-프록시 또는 방화벽과 같은 네트워크 끝점을 구성하는 인프라가 있는 경우 새 Microsoft Ege 앱에 대해 이러한 새 끝점을 사용하도록 [설정하세요.](#managing-endpoints-for-the-new-microsoft-edge)
+프록시 또는 방화벽과 같은 네트워크 끝점을 구성하는 인프라가 있는 경우 새 Microsoft Edge 앱에 대해 이러한 새 끝점을 사용하도록 [설정하세요.](#managing-endpoints-for-the-new-microsoft-edge)
 
 #### <a name="newly-configurable-items"></a>새로 구성 가능한 항목
 
