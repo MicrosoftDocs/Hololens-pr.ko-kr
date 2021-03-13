@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: fe365248332f8e78b15ab362f169b84e48dfe594
-ms.sourcegitcommit: 07ffe1bf2f45dcb2ba9d7fbe54b4773a0fb9d525
+ms.openlocfilehash: a577eace62040e2d48de5d3e4cc99ef108bd006c
+ms.sourcegitcommit: 04b7e789fe69615a60571b769e13a01a9d7aee70
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "11393842"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "11407623"
 ---
 # <a name="enterprise-enrollment-of-hololens-devices-in-mac-address-restricted-wi-fi-environment"></a>MAC 주소에 HoloLens 장치의 엔터프라이즈 등록으로 제한된 Wi-Fi 환경
 
@@ -36,7 +36,9 @@ ms.locfileid: "11393842"
 위 요구 사항을 충족할 때 주요 과제는 다음과 같습니다.
 
 1. MAC 주소는 현재 장치의 설정 앱에서만 식별되거나 제대로 등록한 후 Intune에서 식별할 수 있습니다.
+
 2. MAC 주소가 없으면 장치에서 Wi-Fi 네트워크에 연결하여 등록을 시작할 수 없습니다.
+
 3. 이러한 문제를 수동으로 해결하려면 기술자가 장치와 상호 작용해야 합니다.
 
 ## <a name="solutions"></a>해결 방법
@@ -47,7 +49,7 @@ ms.locfileid: "11393842"
 | --- | --- | --- |
 | 이더넷 어댑터를 통한 프로비저닝 패키지 | OOBE 환경을 개선하고 보다 신속한 기술자 환경을 허용합니다. | HoloLens 호환 USB-C Hub + 이더넷 어댑터, 기술자는 여전히 MAC 캡처 및 OOBE 마무리를 위한 장치와 상호 작용해야 합니다. |
 | 이더넷을 통해 Intune이 등록된 Autopilot | 단일 단계 연결 및 장치와 고객 환경에 대한 등록입니다. 장치와 상호 작용할 필요 없이 MAC 캡처를 완료할 수 있습니다. | 고객 AAD 테넌트 및 HoloLens 호환 USB-C 이더넷 어댑터로 Intune 사용 |
-| MAC 주소의 자동화된 보고 | Intune 테넌트에 장치를 등록한 경우, MAC 주소 보고를 기술자에게 스크립팅합니다. | Intune Powershell Commandlets |
+| MAC 주소의 자동화된 보고 | Intune 테넌트에 장치를 등록한 경우, MAC 주소 보고를 기술자에게 스크립팅합니다. | Intune PowerShell cmdlets |
 
 ## <a name="provisioning-package-with-ethernet-adaptor"></a>이더넷 어댑터를 통한 프로비저닝 패키지
 
@@ -57,7 +59,7 @@ ms.locfileid: "11393842"
 ### <a name="requirements"></a>요구 사항
 
 - 고객 네트워크에 대한 액세스 권한이 있는 유선 네트워크 포트
-- 이더넷 어댑터가 포함된 HoloLens 호환 USB-C 허브 - 추가 드라이버나 응용 프로그램을 설치하지 않&#39;아도 되는 어댑터면 적합할 것입니다.
+- 이더넷 어댑터가 포함된 HoloLens 호환 USB-C 허브 - 추가 드라이버나 응용 프로그램을 설치하지 않아도 되는 어댑터면 적합할 것입니다.
 - 프로비저닝 패키지 구성:
   - 무선 네트워크 정보 및 인증서를 포함
   - 선택적으로 조직의 Azure AD에 대한 등록 정보 포함
@@ -87,7 +89,7 @@ ms.locfileid: "11393842"
 
 ### <a name="benefits"></a>장점
 
-이렇게 하면 장치의 &quot;단일 터치&quot;가 올바른 프로비저닝 패키지를 적용하고 장치의 MAC 주소를 수집할 수 있습니다. [여기에 나와 있는 지침에 따라 프로비저닝 패키지를 만들 수 있습니다.](https://docs.microsoft.com/hololens/hololens-provisioning)
+이렇게 하면 장치의 “단일 터치”가 올바른 프로비저닝 패키지를 적용하고 장치의 MAC 주소를 수집할 수 있습니다. [여기에 나와 있는 지침에 따라 프로비저닝 패키지를 만들 수 있습니다.](https://docs.microsoft.com/hololens/hololens-provisioning)
 
 ## <a name="autopilot-with-intune-enrollment"></a>Intune 등록을 통한 Autopilot
 
@@ -113,30 +115,35 @@ ms.locfileid: "11393842"
 ### <a name="process"></a>Process
 
 1. 이더넷 케이블을 어댑터에 연결하고 HoloLens 2 장치의 USB-C 포트에 어댑터를 연결합니다.
-2. HoloLens 2를 켭니다.
-3. 이더넷 어댑터를 통해 OOBE 동안 장치가 자동으로 인터넷에 연결됩니다. 자동 업데이트 구성을 감지하고 Azure AD 및 Intune에 자동으로 등록해야 합니다.
-4. 장치에서 Intune을 통해 필요한 Wi-Fi 인증서와 필요에 따라 추가 구성을 적용합니다.
-5. 완료되면 기술자는 Intune (끝점 관리자) 포털을 로드하고 **홈-> 장치 -> DeviceName -> 하드웨어**에서 장치 속성 페이지에 연결할 수 있습니다.
-6. Wifi MAC 주소는 Intune 포털 내에 표시됩니다.
 
-![Intune을 통한 MAC 주소](images/mac-address-intune.jpg)
+2. HoloLens 2를 켭니다.
+
+3. 이더넷 어댑터를 통해 OOBE 동안 장치가 자동으로 인터넷에 연결됩니다. 자동 업데이트 구성을 감지하고 Azure AD 및 Intune에 자동으로 등록해야 합니다.
+
+4. 장치에서 Intune을 통해 필요한 Wi-Fi 인증서와 필요에 따라 추가 구성을 적용합니다.
+
+5. 완료되면 기술자는 Intune (끝점 관리자) 포털을 로드하고 **홈-> 장치 -> DeviceName -> 하드웨어**에서 장치 속성 페이지에 연결할 수 있습니다.
+
+6. Wi-Fi MAC 주소는 Intune 포털 내에 표시됩니다.
+
+   ![Intune을 통한 MAC 주소](images/mac-address-intune.jpg)
 
 7. 기술자는 이 MAC 주소를 허용되는 장치로 추가합니다.
 
 ### <a name="benefits"></a>장점
 
-이렇게 하면 기술자가 장치를 착용하거나 HoloLens 환경을 수동으로 조작하지 않고도 &quot;장치 미착용&quot; 상태로 장치는 상자에서 Azure AD 및 Intune에 등록됩니다.
+이렇게 하면 기술자가 장치를 착용하거나 HoloLens 환경과 수동으로 상호 작용할 필요 없이 장치가 상자에서 Azure AD 및 Intune에 등록된 상태로 이동할 수있는 "장치 미착용" 배포 환경이 기술자에게 구현됩니다.
 
 ## <a name="reporting-of-mac-addresses-to-the-technician"></a>기술자에게 MAC 주소 보고
 
 ### <a name="requirements"></a>요구 사항
 
-- 고객 테넌트에 대한 &quot;Intune 그래프 PowerShell&quot;의 권한 부여
-- 기술자 컴퓨터에 Intune 그래프 PowerShell 설치
+- 고객 테넌트에 대한 “Intune Graph PowerShell”의 권한 부여
+- 기술자 컴퓨터에 Intune Graph PowerShell 설치
 - [https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0](https://www.powershellgallery.com/packages/Microsoft.Graph.Intune/6.1907.1.0)
-- Intune의 &quot;관리되는 장치&quot; 요소에 대 한 읽기 액세스 권한입니다. (지원 센터 연산자나 상위 또는 사용자 지정 역할)
+- Intune의 “관리되는 장치” 요소에 대 한 읽기 액세스 권한입니다. (지원 센터 연산자나 상위 또는 사용자 지정 역할)
 
-현재로서는 Intune 내에서 새 장치의 등록을 기반으로 자동화 명령을 트리거하는 &quot;간단한&quot; 방법이 없습니다. 따라서 이 명령은 기술자에게 포털에 로그인하여 수동으로 검색할 필요없이 MAC 주소를 검색하는 간단한 방법을 제공합니다.
+현재로서는 Intune 내에서 새 장치의 등록을 기반으로 자동화 명령을 트리거하는 “간단한” 방법이 없습니다. 따라서 이 명령은 기술자에게 포털에 로그인하여 수동으로 검색할 필요없이 MAC 주소를 검색하는 간단한 방법을 제공합니다.
 
 ```powershell
 Import-Module Microsoft.Graph.Intune
@@ -148,7 +155,7 @@ Get-IntuneManagedDevice -Filter "model eq 'Hololens 2'" | where {$_.enrolledDate
 
 이는 최근 30일 이내에 등록된 모든 HoloLens 장치의 이름과 MAC 주소를 반환합니다.
 
-![Powershell을 통한 MAC 주소](images/mac-address-powershell.jpg)
+![PowerShell을 통한 MAC 주소](images/mac-address-powershell.jpg)
 
 ### <a name="process"></a>프로세스
 
