@@ -12,18 +12,18 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: feedb0093b8766de75079a61c286c99817ab18f9
-ms.sourcegitcommit: 1f3ad5b099e72491f436d851738d2b6f3d4dff31
+ms.openlocfilehash: e48e596f46aaad1b2fc79abd0fe60bd2f44bab6d
+ms.sourcegitcommit: fdae5b561d56d3d4e62da4db15f07bc10249398a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "11400698"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408418"
 ---
 # <a name="hololens-2-hardware"></a>HoloLens 2 하드웨어
 
 ![HoloLens 2 측면 보기](images/hololens2-breakdown.png)
 
-Microsoft HoloLens 2는 테더링되지 않은 홀로그램 컴퓨터입니다.  HoloLens(1세대)에 의해 시작된 홀로그램 컴퓨팅 여정을 조정하여 보다 편안하고 몰입감 있는 경험을 혼합 현실에서 협업할 수 있는 더 많은 옵션과 함께 제공합니다.
+Microsoft HoloLens 2는 테더링되지 않은 홀로그램 컴퓨터입니다.  HoloLens(1세대)에 의해 시작된 홀로그램 컴퓨팅 여정을 조정하여 보다 편안하고 몰입감 있는 경험을 혼합 현실에서 협업할 수 있는 더 많은 옵션과 함께 제공합니다. HoloLens 2를 사용하려면 사용자 계정이 필요합니다.
 
 ## <a name="hololens-components"></a>HoloLens 구성 요소
 
@@ -165,9 +165,12 @@ Microsoft HoloLens 2는 테더링되지 않은 홀로그램 컴퓨터입니다. 
 
 Microsoft HoloLens 2에는 표준 제한 [보증](https://support.microsoft.com/topic/warranties-extended-service-plans-and-terms-conditions-for-your-device-eedf7a23-84a7-1a47-480b-0e10503eedf5)이 제공됩니다. 
 
-구매는[ Microsoft Store 사용 및 판매 약관](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1)이 적용됩니다. 
+
+구매에는 [Microsoft Store 사용 및 판매 약관](https://www.microsoft.com/storedocs/terms-of-sale?rtc=1)이 적용됩니다. 모든 판매가 최종 판매입니다. 환불되지 않습니다.
 
 HoloLens 2를 구매하면 [소프트웨어 사용권 계약](https://www.microsoft.com/Useterms/)에 동의하게 됩니다.
+
+13세 미만의 어린이는 사용할 수 없습니다.
 
 ## <a name="package-dimensions"></a>패키지 치수
 

@@ -14,18 +14,18 @@ ms.custom:
 ms.topic: article
 ms.localizationpriority: high
 manager: jarrettr
-ms.openlocfilehash: 025ba8508eb930cdad6d502c381e5a07d9efc6e0
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: b5b9568bab5afebe4ac3e9d57645c18837c71cb6
+ms.sourcegitcommit: fdae5b561d56d3d4e62da4db15f07bc10249398a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11284089"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "11408428"
 ---
-# HoloLens 2 다시 시작, 초기화 또는 복구
+# <a name="restart-reset-or-recover-hololens-2"></a>HoloLens 2 다시 시작, 초기화 또는 복구
 
-## 장치 충전
+## <a name="charge-the-device"></a>장치 충전
 
-문제 해결 절차를 시작하기 전에 가능한 경우 장치의 배터리 용량이 20~40%정도 충전되어 있는지 확인합니다. HoloLens 2 장치와 함께 제공되는 충전기와 USB 유형 C 케이블을 사용하세요. 디바이스와 함께 제공되는 전원 공급 장치와 USB-C-to-C 케이블이 HoloLens 2를 충전하는 가장 좋은 방법입니다. 충전기는 18W의 전력을 공급합니다(2A에서 9V). 제공된 벽면 충전기를 사용하여 HoloLens 2 장치는 장치가 대기 중일 때 65분 이내에 배터리를 완전 충전할 수 있습니다. 해당 액세서리를 사용할 수 없는 경우 사용할 수 있는 충전기가 최소 15W의 전원을 지원할 수 있는지 확인하세요.
+문제 해결 절차를 시작하기 전에 가능한 경우 장치의 배터리 용량이 20~40% 정도 충전되어 있는지 확인합니다. HoloLens 2 장치와 함께 제공되는 [충전기 및 USB 유형 C 케이블](https://www.microsoft.com/en-us/p/microsoft-hololens-2-usb-c-charger-cable/8vj21f2z8pk5?rtc=1)을 사용합니다. 장치와 함께 제공되는 전원 공급 장치와 USB-C-to-C 케이블이 HoloLens 2를 충전하는 가장 좋은 방법입니다. 충전기는 18W의 전력을 공급합니다(2A에서 9V). 제공된 벽면 충전기를 사용하여 HoloLens 2 장치는 장치가 대기 중일 때 65분 이내에 배터리를 완전 충전할 수 있습니다. 해당 액세서리를 사용할 수 없는 경우 사용할 수 있는 충전기가 최소 15W의 전원을 지원할 수 있는지 확인하세요.
 
 > [!NOTE]
 > 가능하면 PC에 USB를 연결해 장치를 충전하지 마세요. 속도가 느립니다.
@@ -44,11 +44,11 @@ ms.locfileid: "11284089"
 
 장치가 시작 메뉴로 부팅할 수 없는 경우 호스트 PC에 LED 모양과 장치 열거형을 기록해 둡니다. 그런 다음 [문제 해결 가이드](https://docs.microsoft.com/hololens/hololens-troubleshooting)를 따릅니다. 장치 상태가 문제 해결 가이드에 나열된 상태에 해당하지 않으면 장치를 호스트 PC가 아닌 전원 공급 장치에 연결하고 [하드 초기화 절차](hololens-recovery.md#hard-reset-procedure)를 실행합니다. 장치가 충전될 때까지 1시간 이상 기다립니다.
 
-## 장치 초기화
+## <a name="reset-the-device"></a>장치 초기화
 
 특정 상황에서는 소프트웨어 UI를 사용하지 않고 수동으로 장치를 초기화해야 할 수 있습니다.
 
-### 표준 절차
+### <a name="standard-procedure"></a>표준 절차
 
 1. 유형 C 케이블을 뽑아 전원 공급 장치 또는 호스트 PC에서 장치를 분리합니다.
 
@@ -60,7 +60,7 @@ ms.locfileid: "11284089"
 
    ![HoloLens 2 MicrosoftHoloLensRecovery 장치 관리자](images/MicrosoftHoloLens_DeviceManager.png)
 
-### 하드 초기화 절차
+### <a name="hard-reset-procedure"></a>하드 초기화 절차
 
 표준 초기화 절차로 문제가 해결되지 않는 경우에는 하드 초기화 절차를 사용할 수 있습니다.
 
@@ -73,7 +73,7 @@ ms.locfileid: "11284089"
 
    ![HoloLens 2 MicrosoftHoloLensRecovery 장치 관리자 2](images/MicrosoftHoloLens_DeviceManager.png)
 
-## 장치 클린 리플래시
+## <a name="clean-reflash-the-device"></a>장치 클린 리플래시
 
 드물게 일부 상황에서 HoloLens 2를 ‘클린 플래시’해야 할 수 있습니다. 클린 리플래시는 다음 문제에 영향을 주지 않을 것으로 예상됩니다.
 - [색상 균일성 표시](hololens2-display.md)
@@ -93,7 +93,7 @@ ms.locfileid: "11284089"
 
 ![HoloLens 2 클린 리플래시 스크린샷](images/ARC1.png)
 
-### 일반 절차
+### <a name="normal-procedure"></a>일반 절차
 
 1. HoloLens 장치가 실행 중일 때 고급 복구 도우미 앱을 미리 열려 있는 Windows 10 PC에 연결합니다.
  
@@ -103,7 +103,7 @@ ms.locfileid: "11284089"
 
 3. 고급 복구 도우미 앱 UI에서 HoloLens 2 장치를 선택하고 지침에 따라 리플래시를 완료합니다.
 
-### 수동 절차
+### <a name="manual-procedure"></a>수동 절차
 
 장치가 제대로 시작되지 않는 경우에는 HoloLens 2 장치를 복구 모드로 전환해야 할 수 있습니다.
 
@@ -123,7 +123,7 @@ ms.locfileid: "11284089"
 
 6. 고급 복구 도우미 앱 UI에서 HoloLens 2 장치를 선택하고 지침에 따라 리플래시를 완료합니다.
 
-## 앱 스토어를 사용하지 않고 ARC 다운로드
+## <a name="download-arc-without-using-the-app-store"></a>앱 스토어를 사용하지 않고 ARC 다운로드
 
 IT 환경에서 Windows 스토어 앱을 사용하지 못하도록 하거나 소매점에 대한 액세스를 제한하는 경우 IT 관리자가 '오프라인' 배포 경로를 통해 이 앱을 사용할 수 있도록 할 수 있습니다.
 
@@ -134,9 +134,9 @@ IT 환경에서 Windows 스토어 앱을 사용하지 못하도록 하거나 소
 배포 경로를 설정하려면 다음 단계를 따릅니다.
 1. [비즈니스용 Microsoft 스토어](https://businessstore.microsoft.com)로 이동하고 Azure Active Directory ID를 사용하여 로그인합니다.
 
-1. **관리 – 설정**으로 이동합니다. **장바구니**에서 **오프라인 앱 표시**를 켭니다.
-1. **내 그룹샵**으로 이동하여 [**_고급 복구 도우미_*_](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8)를 검색합니다.
-1. _*라이선스 유형**을 **_오프라인_*_ 으로 변경하고 _*관리**를 선택합니다.
+1. **관리 – 설정**으로 이동합니다. **쇼핑 환경**에서 **오프라인 앱 표시**를 켭니다.
+1. **내 그룹 상점**으로 이동하여 [**_고급 복구 도우미_**](https://businessstore.microsoft.com/store/details/advanced-recovery-companion/9P74Z35SFRS8)를 검색합니다.
+1. **라이선스 유형**을 **_오프라인_*_으로 변경하고 _* 관리**를 선택합니다.
 1. **오프라인으로 사용하기 위해 패키지 다운로드**에서 두 번째 파란색 **다운로드** 버튼을 클릭합니다. 파일 확장명이 *.appxbundle*인지 확인합니다.
 
     - 이 단계에서 데스크톱 PC에서 인터넷에 액세스할 수 있으면 패키지를 두 번 클릭하여 앱을 설치합니다.
