@@ -11,29 +11,29 @@ ms.sitesec: library
 author: v-miegge
 ms.author: v-miegge
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 5beb3e333634dfbe5080c9d36a7df3f38b0a5f37
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: a1ed1b900f255da9f8db66577f1e88f6bd6881e8
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11284069"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439074"
 ---
-# HoloLens(1세대) 둘러보기
+# <a name="getting-around-hololens-1st-gen"></a>HoloLens(1세대) 둘러보기
 
 홀로그램의 세계를 살펴볼 준비가 되었나요? 시작하기 위한 몇 가지 정보가 있습니다.
 
 이 가이드에서는 혼합 현실, 홀로그램과 상호 작용하기 위한 제스처, Windows Holographic에 대한 소개를 제공합니다.
 
-## 혼합 현실 검색
+## <a name="discover-mixed-reality"></a>혼합 현실 검색
 
 HoloLens에서는 홀로그램을 실제 환경과 혼합하여 세계의 일부인 것처럼 보고 들리게 할 수 있습니다. 홀로그램이 사용자 주변을 둘러싸고 있는 경우에도 주변을 볼 수 있고 자유롭게 이동하고 다른 사용자 및 개체와 상호 작용할 수 있습니다. 이러한 경험을 "혼합 현실"이라고 부릅니다.
 
 홀로그램 프레임은 눈이 세부 사항에 가장 민감한 곳에 홀로그램을 배치하고, 시스루 렌즈는 주변 시야를 가리지 않게 합니다. 공간 음향만 있으면, 홀로그램이 뒤에 있어도 정확히 집어낼 수 있습니다. 또한 HoloLens는 사용자 환경을 학습하고 이해하기 때문에 실제 개체 및 그 주변에 홀로그램을 배치할 수 있으며 애플리케이션과 게임도 마찬가지입니다. 따라서 게임의 캐릭터가 사용자의 소파에 앉아 있거나 [우주 로봇이 사용자의 벽을 뚫고 나갈 수 있습니다](https://www.microsoft.com/store/apps/9nblggh5fv3j)
 
-## 손으로 HoloLens 사용
+## <a name="use-hololens-with-your-hands"></a>손으로 HoloLens 사용
 
 HoloLens를 둘러보는 것은 스마트폰을 사용하는 것과 비슷합니다. 손을 사용하여 홀로그램 창, 메뉴 및 버튼을 조작할 수 있습니다.  가리키거나 클릭하거나 탭하는 대신 응시, [목소리](hololens-cortana.md), 제스처를 사용하여 앱과 홀로그램을 선택하고 HoloLens를 둘러볼 수 있습니다.
 
@@ -41,13 +41,13 @@ HoloLens를 둘러보는 것은 스마트폰을 사용하는 것과 비슷합니
 
 HoloLens를 처음 사용할 때 기본 사항을 설명해 드리겠습니다. **시작** 메뉴에서 제스처 자습서를 찾을 수 있습니다. 제스처 배우기 앱을 찾습니다.
 
-### 손 추적 프레임
+### <a name="the-hand-tracking-frame"></a>손 추적 프레임
 
 HoloLens는 사용자 양쪽의 몇 피트까지 볼 수 있는 센서를 가지고 있습니다. 손을 사용할 때는 그 프레임 안에 손을 두어야 합니다. 그렇지 않으면 HoloLens가 손을 보지 못할 것입니다 움직이면 프레임이 같이 움직입니다.  
 
 ![HoloLens 손 추적 프레임을 보여 주는 이미지](./images/hololens-2-gesture-frame.png)
 
-### 블룸으로 시작 메뉴 열기
+### <a name="open-the-start-menu-with-bloom"></a>블룸으로 시작 메뉴 열기
 
 **시작** 메뉴를 열려면
 
@@ -55,7 +55,7 @@ HoloLens는 사용자 양쪽의 몇 피트까지 볼 수 있는 센서를 가지
 1. 블룸: 모든 손가락을 모으고 손을 벌립니다.
   ![블룸 동작을 보여 주는 애니메이션](./images/hololens-bloom.gif)
 
-### 응시 및 에어 탭을 사용하여 홀로그램 선택
+### <a name="select-holograms-with-gaze-and-air-tap"></a>응시 및 에어 탭을 사용하여 홀로그램 선택
 
 앱이나 다른 홀로그램을 선택하려면 선택한 홀로그램을 직접 보면서 에어 탭합니다. 이렇게 하려면 다음 단계를 따르세요.
 
@@ -64,13 +64,13 @@ HoloLens는 사용자 양쪽의 몇 피트까지 볼 수 있는 센서를 가지
 1. 에어 탭: 손가락을 아래로 내린 다음 빠르게 위로 올리세요.
    ![에어 탭 제스처 애니메이션](./images/hololens-air-tap.gif)
 
-### 음성을 사용하여 홀로그램 선택
+### <a name="select-a-hologram-by-using-your-voice"></a>음성을 사용하여 홀로그램 선택
 
 1. 응시 커서는 머리를 움직여 움직이는 점입니다. 이를 사용하여 음성 명령을 정밀하게 타겟팅할 수 있습니다.
 1. 선택할 홀로그램을 응시합니다.
 1. 홀로그램을 선택하려면, "선택"이라고 말합니다.
 
-## 홀로그램스 및 앱
+## <a name="holograms-and-apps"></a>홀로그램스 및 앱
 
 이제 제스처를 시험해 볼 때입니다!
 
@@ -82,14 +82,14 @@ HoloLens에서 앱을 사용하는 것은 PC와 약간 다릅니다. 일부 앱�
 
 앱 창이나 앱 시작 관리자를 배치하면 제거할 때까지 그대로 유지됩니다. 이러한 홀로그램은 언제든지 혼합 현실 홈에서 이동하거나 크기를 조정할 수 있습니다.
 
-## 앱 이동, 크기 조정 및 회전
+## <a name="move-resize-and-rotate-apps"></a>앱 이동, 크기 조정 및 회전
 
 HoloLens에서 앱을 이동하고 크기를 조정하는 작업은 PC에서 하는 작업과 약간 다릅니다. 앱을 끄는 대신, [제스처](https://support.microsoft.com/help/12644/hololens-use-gestures) 또는 [clicker](hololens1-clicker.md)와 함께 응시를 사용합니다. 3D 스페이스에서 앱 창을 회전할 수도 있습니다.
 
 > [!TIP]
 > 음성을 사용하여 앱을 다시 정렬합니다. 앱을 응시하고 "나를 보기", "크게" 또는 "작게"라고 말합니다. 또는 Cortana에게 "안녕 코타나, \ **앱 이름 \ ** 이동" 이라고 말하여 앱을 옮기라고 할 수 있습니다
 
-### 앱 이동
+### <a name="move-an-app"></a>앱 이동
 
 앱(앱 창의 제목 표시줄)을 응시한 다음 다음 중 하나를 수행합니다.
 
@@ -100,7 +100,7 @@ HoloLens에서 앱을 이동하고 크기를 조정하는 작업은 PC에서 하
 > [!TIP]
 > 앱을 움직일 때 떨어뜨리는 경우 앱을 계속 응시하면서 제스처 프레임에 손을 유지해야 합니다.
 
-### 앱 크기 조정
+### <a name="resize-an-app"></a>앱 크기 조정
 
 앱을 응시하고 다음 중 하나를 수행합니다.
 
@@ -111,19 +111,19 @@ HoloLens에서 앱을 이동하고 크기를 조정하는 작업은 PC에서 하
 > [!TIP]
 > 조정 모드에서 홀로그램을 이동하거나 크기를 조정할 수 있습니다.
 
-### 앱 회전
+### <a name="rotate-an-app"></a>앱 회전
 
 앱을 응시하고 양손으로 길게 눌러 선택합니다. 한 손은 고정한 채 다른 손을 움직여 앱을 회전시킵니다. 완료되면 두 검지 손가락을 올립니다.
 
-### 앱 창에서 콘텐츠 스크롤
+### <a name="scroll-content-in-an-app-window"></a>앱 창에서 콘텐츠 스크롤
 
 앱 창의 콘텐츠를 응시합니다. 길게 누르고 손을 위 또는 아래로 살짝 움직여 콘텐츠를 스크롤합니다.
 
-## HoloLens(1세대) Clicker를 소개합니다.
+## <a name="meet-the-hololens-1st-gen-clicker"></a>HoloLens(1세대) Clicker를 소개합니다.
 
 [HoloLens(1세대) clicker](hololens1-clicker.md)는 홀로그램과 상호작용하는 또 다른 방법을 제공합니다. HoloLens와 [페어링](hololens-connect-devices.md)한 다음 응시와 함께 사용하여 선택, 스크롤 등을 수행합니다.
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 
 축하합니다! HoloLens(1세대)를 사용할 준비가 되었습니다.
 
@@ -133,7 +133,7 @@ HoloLens에서 앱을 이동하고 크기를 조정하는 작업은 PC에서 하
 
 [음성 및 Cortana에 대한 자세한 정보](hololens-cortana.md)
 
-### 도움말! 홀로그램이 보이지 않음
+### <a name="help-i-dont-see-my-holograms"></a>도움말! 홀로그램이 보이지 않음
 
 HoloLens를 사용하는 동안 배치한 홀로그램이 표시되지 않으면 다음 사항을 시도해 볼 수 있습니다.
 

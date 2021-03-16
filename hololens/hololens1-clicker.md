@@ -10,29 +10,29 @@ ms.sitesec: library
 author: v-miegge
 ms.author: v-miegge
 ms.topic: article
-ms.localizationpriority: high
+ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 13b86c049ba8bb6ed67be202609d27c8d47ffc53
-ms.sourcegitcommit: 7c057aeeaeebb4daffa2120491d4e897a31e8d0f
-ms.translationtype: HT
+ms.openlocfilehash: 4b17fc134846a66046a819c56755d87206c5643e
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10829472"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439054"
 ---
-# HoloLens(1세대) 클릭커 사용
+# <a name="use-the-hololens-1st-gen-clicker"></a>HoloLens(1세대) 클릭커 사용
 
 클릭커는 HoloLens(1세대)용으로 맞춤 제작되었으며 다른 방식으로 홀로그램과 상호 작용하게 해줍니다. 별도의 상자에 HoloLens(1세대)와 함께 제공됩니다.
 
 핸드 제스처 대신 사용하여 앱을 선택하고, 스크롤, 이동하고, 크기를 조정합니다.
 
-## 클릭커 하드웨어 및 페어링
+## <a name="clicker-hardware-and-pairing"></a>클릭커 하드웨어 및 페어링
 
 HoloLens(1세대) 클릭커에는 손가락 루프가 있어 홀드하기가 더 쉬워졌으며, 표시등이 있습니다.
 
 ![HoloLens 클릭커](images/use-hololens-clicker-1.png)
 
-### 클릭커 표시등
+### <a name="clicker-indicator-lights"></a>클릭커 표시등
 
 클릭커 표시등의 의미는 다음과 같습니다.
 
@@ -42,25 +42,25 @@ HoloLens(1세대) 클릭커에는 손가락 루프가 있어 홀드하기가 더
 - **주황색으로 깜박입니다**. 배터리가 부족합니다.
 - **계속 주황색으로 빛납니다**. 클릭커에 오류가 발생하면 다시 시작해야 합니다. 페어링 단추를 누른 상태에서 클릭하고 15초 동안 유지합니다.
 
-### 클릭커와 HoloLens(1세대) 페어링
+### <a name="pair-the-clicker-with-your-hololens-1st-gen"></a>클릭커와 HoloLens(1세대) 페어링
 
 1. 블룸 제스처를 사용하여 **시작**으로 이동한 다음 **설정** > **장치**를 선택하고 Bluetooth가 켜져 있는지 확인합니다.
 1. 상태 표시등이 흰색으로 깜박일 때까지 클리커의 페어링 단추를 길게 누릅니다.
 1. 페어링 화면에서 **클릭커** > **연결**을 선택합니다.
 
-### 클릭커 충전
+### <a name="charge-the-clicker"></a>클릭커 충전
 
 클릭커 배터리가 부족하면 배터리 표시등이 주황색으로 깜박입니다. 마이크로 USB 케이블을 USB 전원 공급 장치에 연결하여 장치를 충전합니다.
 
-## HoloLens(1세대)에서 클릭커 사용
+## <a name="use-the-clicker-with-hololens-1st-gen"></a>HoloLens(1세대)에서 클릭커 사용
 
-### 클릭커 홀드
+### <a name="hold-the-clicker"></a>클릭커 홀드
 
 클리커를 가동하려면 마이크로 USB 포트가 손목쪽을 향하도록 루프를 약지 또는 중지 너머로 미끄러뜨립니다. 들여쓰기에 엄지를 놓습니다.
 
 ![클릭커 홀드 방법](images/use-hololens-clicker-2.png)
 
-### 클릭커 제스처
+### <a name="clicker-gestures"></a>클릭커 제스처
 
 클릭커 제스처는 HoloLens 핸드 제스처에 사용되는 큰 움직임이 아니라 작은 손목의 회전입니다. 그리고 HoloLens는 클릭커가 [제스처 프레임](hololens1-basic-usage.md) 외부에 있는 경우에도 제스처를 인식하고 클릭하므로 사용자가 가장 편한 위치에 클리커를 유지할 수 있습니다.
 
@@ -75,21 +75,21 @@ HoloLens(1세대) 클릭커에는 손가락 루프가 있어 홀드하기가 더
 > [!TIP]
 > Microsoft Edge를 사용할 때 확대/축소하려면 페이지를 응시하고 두 번 클릭합니다.
 
-## 클릭커 다시 시작 또는 복구
+## <a name="restart-or-recover-the-clicker"></a>클릭커 다시 시작 또는 복구
 
 다음은 HoloLens 클릭커가 응답하지 않거나 제대로 작동하지 않을 때 시도해 볼 수 있는 몇 가지 작업입니다.
 
-### 클릭커 다시 시작
+### <a name="restart-the-clicker"></a>클릭커 다시 시작
 
 펜 끝을 사용하여 페어링 단추를 길게 누릅니다. 동시에 클릭커를 15초 동안 클릭한 채로 유지합니다. 클릭커가 HoloLens와 이미 연결된 경우 다시 시작한 후에 연결된 상태가 유지됩니다.
 
 클릭커가 켜지거나 다시 시작되지 않으면 HoloLens 충전기를 사용하여 충전해 보세요. 배터리가 매우 부족한 경우 흰색 표시등이 켜지는 데 몇 분 정도 걸릴 수 있습니다.
 
-### 클릭커 다시 연결
+### <a name="re-pair-the-clicker"></a>클릭커 다시 연결
 
 **설정** > **장치**를 선택하고 클릭커를 선택합니다. **제거**를 선택하고 몇 초 정도 기다린 다음 클릭커를 다시 연결합니다.
 
-### 클릭커 복구
+### <a name="recover-the-clicker"></a>클릭커 복구
 
 클릭커를 다시 시작하고 다시 연결해도 문제가 해결되지 않으면 Windows Device Recovery Tool을 통해 복구할 수 있습니다. 복구 프로세스에 시간이 걸릴 수 있으며 최신 버전의 클릭커 소프트웨어가 설치됩니다. 이 도구를 사용하려면 Windows 10 이상을 실행하며 최소 4GB의 사용 가능한 저장소 공간이 있는 컴퓨터가 필요합니다.
 

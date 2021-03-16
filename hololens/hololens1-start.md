@@ -8,23 +8,23 @@ ms.author: v-tea
 ms.topic: article
 ms.date: 8/12/2019
 manager: jarrettr
-ms.localizationpriority: high
+ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: aca7b287b3d26ab37ddb90e4245a1e0b3adc17e2
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
-ms.translationtype: HT
+ms.openlocfilehash: f0ec62e55f15fda6d5a8304ea2bb77039d644b9e
+ms.sourcegitcommit: 01c0b0a789e156a9d29aaf6f61e36dfd09b8c01a
+ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283929"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "11439064"
 ---
-# HoloLens(1세대) 설정
+# <a name="set-up-your-hololens-1st-gen"></a>HoloLens(1세대) 설정
 
 HoloLens를 처음 켜면 장치 보정, 장치 설정 및 로그인 과정을 안내합니다.  이 문서는 HoloLens(1세대)의 첫 번째 시작 및 설정 환경에 대해 안내합니다.
 
 다음 섹션에서는 HoloLens와 작업하고 홀로그램과 상호 작용하는 방법에 대해 알아봅니다. 해당 문서를 건너뛰려면 [HoloLens(1세대) 시작](hololens1-basic-usage.md)을 참조하세요.
 
-## 시작하기 전에
+## <a name="before-you-start"></a>시작하기 전에
 
 시작하려면 먼저 다음 항목이 준비되어 있는지 확인해야 합니다.
 
@@ -41,7 +41,7 @@ HoloLens와 함께 제공되어 가장 편안한 착용감을 제공하는 **옵
 > - HoloLens를 처음 사용하는 경우 [Cortana](hololens-cortana.md)는 이미 켜져 있으며 안내할 준비가 되어 있습니다(단, 장치를 설정한 후에야 질문에 응답할 수 있음). 사용자는 언제라도 Cortana 설정에서 Cortana 기능을 끌 수 있습니다.
 > - 중국어 또는 일본어 버전의 HoloLens로 전환하려면 PC에서 언어 빌드를 다운로드한 다음 HoloLens에 설치해야 합니다. 자세한 내용은 [지역화된 버전의 HoloLens(1세대) 설치](hololens1-install-localized.md)를 참조하세요.
 
-## HoloLens 시작 및 Windows 설정
+## <a name="start-your-hololens-and-set-up-windows"></a>HoloLens 시작 및 Windows 설정
 
 HoloLens를 처음 시작할 때 첫 번째 작업은 장치에 Windows Holographic을 설정하는 것입니다.
 
@@ -59,7 +59,7 @@ HoloLens를 처음 시작할 때 첫 번째 작업은 장치에 Windows Holograp
 
 1. 장치는 Wi-Fi 네트워크에서 가져오는 정보에 따라 표준 시간대를 설정 합니다.
 
-## 보정
+## <a name="calibration"></a>보정
 
 Cortana가 자신을 소개하면 다음 설정 단계는 보정입니다. 최상의 HoloLens 환경을 위해 설정 중에 보정 프로세스를 완료해야 합니다.
 
@@ -71,9 +71,9 @@ HoloLens(1세대)는 동공 사이의 거리(IPD 또는 [동공 간 거리](http
 
 *두 번째 단계에서 IPD 손가락 맞춤 화면*
 
-축하합니다! 설정이 완료되었으며 HoloLens 사용을 시작할 수 있습니다.
+축하합니다. 설정이 완료되었으며 HoloLens 사용을 시작할 수 있습니다.
 
-## 다음 단계
+## <a name="next-steps"></a>다음 단계
 
 > [!div class="nextstepaction"]
 > [HoloLens(1세대) 시작하기](hololens1-basic-usage.md)
