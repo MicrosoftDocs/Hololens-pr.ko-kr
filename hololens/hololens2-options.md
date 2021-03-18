@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7e8e333471df139ced3613801d07a5bfaafd8d30
-ms.sourcegitcommit: fdae5b561d56d3d4e62da4db15f07bc10249398a
+ms.openlocfilehash: f34517a74a7a47f4687c094e63b1550a7d3ff4fb
+ms.sourcegitcommit: 257720deb27f3bbc301175ce2a4afa79001862d3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "11408408"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "11440349"
 ---
 # <a name="hololens-2-overview"></a>HoloLens 2 개요
 
@@ -47,6 +47,18 @@ HoloLens는 *홀로그램으로 구동되는* 혼합현실 장치로, 공동 작
 - <sup>1</sup> - 500달러의 Azure 크레딧과 Unity Pro 및 Pixyz Plugin의 3개월 평가판이 포함됩니다.
 - <sup>2</sup> - Microsoft에서 결함 있는 장치를 받기 전에 교체 장치를 받거나 빠른 배송(사용 가능한 옵션 중 빠른 속도)을 받을 수 있습니다.
 - <sup>3</sup> - Trimble XR10(HoloLens 2 버전 포함)에 대한 보증, 지원 및 인증 질문은 [Trimble에 문의](https://fieldtech.trimble.com/en/contact-support)하세요.
+
+## <a name="countries-where-hololens-2-is-available"></a>HoloLens 2를 사용할 수 있는 국가
+
+<br>
+
+| HoloLens 2 버전                  | 지원되는 지역/국가               |
+|-------------------------------------------| ----------------------------------------| 
+| HoloLens 2 | 미국, 캐나다, 독일, 프랑스, 영국, 아일랜드, 중국, 일본, 오스트레일리아, 이탈리아, 뉴질랜드, 네덜란드, 스위스, 스페인, 오스트리아, 스웨덴, 핀란드, 노르웨이, 덴마크, 벨기에, 포르투갈, 폴란드, 싱가포르, 홍콩 특별 행정구, 대만 및 대한민국 |
+| Remote Assist가 가능한 HoloLens 2 | 오스트레일리아, 일본, 캐나다, 미국, 오스트리아, 벨기에, 덴마크, 핀란드, 프랑스, 독일, 이탈리아, 네덜란드, 노르웨이, 스페인, 스웨덴, 스위스, 영국 및 아일랜드 <sup>1</sup> 
+| HoloLens 2 인더스트리얼 버전 *(출시 예정)* | 미국, 캐나다, 독일, 프랑스, 영국, 아일랜드, 중국, 일본, 오스트레일리아, 이탈리아, 뉴질랜드, 네덜란드, 스위스, 스페인, 오스트리아, 스웨덴, 핀란드, 노르웨이, 덴마크, 벨기에, 포르투갈, 폴란드, 싱가포르, 홍콩 특별 행정구, 대만 및 대한민국 |
+| HoloLens 2 개발 버전 | 캐나다, 독일, 프랑스, 영국, 아일랜드, 일본, 오스트레일리아, 이탈리아, 스위스 및 뉴질랜드 |
+- <sup>1</sup> 목록이 동적이면 다시 업데이트 확인
 
 ## <a name="options-overview"></a>옵션 개요
 
