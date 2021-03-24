@@ -10,51 +10,55 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: 6d11ae0907aa82df71d7c86bb37996dcce71d845
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: f1968afe7d450425776bac24532f2d84c4dc3c62
+ms.sourcegitcommit: 9f79ed9f76b930b8ceb97844d5f9eace9316b8a3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283979"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "11442597"
 ---
-# 네트워크에 HoloLens 연결
+# <a name="connect-hololens-to-a-network"></a>네트워크에 HoloLens 연결
 
-HoloLens에서 대부분의 작업을 수행하려면 네트워크에 연결되어 있어야 합니다. 이 가이드는 다음을 지원합니다.
+HoloLens에서 대부분의 작업을 수행하려면 네트워크에 연결되어 있어야 합니다. HoloLens에는 802.11ac 지원, 2x2 Wi-Fi 라디오가 포함되며 네트워크에 연결하는 것은 Windows 10 데스크톱 또는 모바일 장치를 Wi-Fi 네트워크에 연결하는 것과 비슷합니다. 이 가이드는 다음을 지원합니다.
 
 - Wi-Fi 또는 USB-C에서 이더넷을 사용하여(HoloLens 2에만 해당) 네트워크에 연결
 - Wi-Fi를 사용하지 않도록 설정하고 다시 사용하도록 설정
 
 [오프라인으로 HoloLens 사용](hololens-offline.md)에 대한 자세한 내용을 알아보세요.
 
-## 처음 연결
+## <a name="connecting-for-the-first-time"></a>처음 연결
 
-HoloLens를 처음 사용할 때 Wi-Fi 네트워크에 연결하는 방법에 대한 안내를 받습니다. 설치하는 동안 Wi-Fi에 연결하는 데 문제가 있는 경우, 네트워크가 공개, 암호로 보호된 네트워크 또는 종속 포털 네트워크인지 확인합니다. 네트워크에 연결할 때 인증서를 사용할 필요가 없는지 확인합니다. 설정 후, 다른 유형의 Wi-Fi 네트워크에 연결할 수 있습니다.
+HoloLens를 처음 사용할 때 Wi-Fi 네트워크에 연결하는 방법에 대한 안내를 받습니다. 설치하는 동안 Wi-Fi에 연결하는 데 문제가 있는 경우, 네트워크가 공개, 암호로 보호된 네트워크 또는 종속 포털 네트워크인지 확인합니다. 또한 네트워크에 연결하기 위해 인증서를 사용할 필요가 없는지 확인합니다. 설정 후, 다른 유형의 Wi-Fi 네트워크에 연결할 수 있습니다.
 
-HoloLens 2 장치의 경우 사용자가 [USB 타입 C에서 이더넷 어댑터](hololens-connect-devices.md#hololens-2-connect-usb-c-devices)를 사용하여 Wi-Fi에 직접 연결하여 장치 설정을 지원할 수도 있습니다. 장치가 설정되면 사용자가 어댑터를 계속 사용할 수도 있고 설정 후 장치와 어댑터의 연결을 끊고 [Wi-Fi에 연결](hololens-network.md#connecting-to-wi-fi-after-setup)할 수도 있습니다. 
+HoloLens 2 장치에서 사용자는 [USB-C에서 이더넷 어댑터를 사용](hololens-connect-devices.md#hololens-2-connect-usb-c-devices)하여 Wi-Fi에 직접 연결하여 장치 설정을 지원할 수도 있습니다. 장치가 설정되면 사용자는 어댑터를 계속 사용하거나 어댑터에서 장치를 분리하고 [설정 후에 Wi-Fi에 연결할 수 있습니다.](hololens-network.md#connecting-to-wi-fi-after-setup) 
 
-## 설치 후 Wi-Fi에 연결
+## <a name="connecting-to-wi-fi-after-setup"></a>설치 후 Wi-Fi에 연결
 
 1. **Start gesture** and select **Settings**을 실행합니다. 설정 앱이 자동 배치됩니다.
 1. **네트워크 및 인터넷** > **Wi-Fi**를 선택합니다. Wi-Fi가 켜져 있는지 확인합니다. 네트워크에 표시되지 않으면 목록을 아래로 스크롤합니다.
 1. 네트워크를 선택하고 **연결**을 선택합니다.
 1. 네트워크 암호를 묻는 메시지가 표시되면 입력하고 **다음**을 선택합니다.
 
-HoloLens에는 802.11ac 가능, 2x2 Wi-Fi 무선 송수신 장치가 포함되어 있습니다. HoloLens를 Wi-Fi 네트워크에 연결하는 것은 Windows 10 데스크톱 또는 모바일 장치를 Wi-Fi 네트워크에 연결하는 것과 유사합니다.
+![HoloLens Wi-Fi 설정](./images/hololens-2-wifi-settings.jpg)
 
-![HoloLens Wi-Fi 설정](./images/wifi-hololens-600px.jpg)
-
-**시작** 메뉴에서 Wi-Fi 상태를 확인하여 Wi-Fi 네트워크에 연결되어 있는지 확인할 수도 있습니다.
+Wi-Fi 네트워크에 연결되어 있는지 확인하려면 **시작** 메뉴에서 Wi-Fi 상태를 확인합니다.
 
 1. **시작** 메뉴를 엽니다.
 1. **시작** 메뉴의 왼쪽 위에 있는 Wi-Fi 상태를 확인합니다. Wi-Fi의 상태와 연결된 네트워크의 SSID가 표시됩니다.
 
-## Wi-Fi에 대한 연결 문제 해결
+> [!TIP]
+> Wi-Fi를 사용할 수 없는 경우 [셀룰러 및 5G네트워크에 연결](https://docs.microsoft.com/hololens/hololens-cellular)할 수도 있습니다.
+
+> [!IMPORTANT]
+> 기본적으로 사용자는 HoloLens 2의 Wi-Fi 로밍 동작을 미세 조정할 수 없습니다. **Wi-Fi 목록을 새로 고칠 수 있는 유일한 방법은 Wi-Fi를 끄고 켜는 것입니다.** 이를 통해 장치가 범위에서 벗어나면 AP에 "갇힌" 상태로 유지되는 것과 같은 많은 문제가 방지됩니다.
+
+## <a name="troubleshooting-your-connection-to-wi-fi"></a>Wi-Fi에 대한 연결 문제 해결
 
 Wi-Fi에 연결하는 데 문제가 있는 경우 [Wi-Fi에 연결할 수 없음](./hololens-faq.md#i-cant-connect-to-wi-fi)을 참조하세요.
 
 장치에서 엔터프라이즈 또는 조직 계정에 로그인하는 경우 IT 관리자가 정책을 구성한다면 MDM(모바일 장치 관리) 정책을 적용할 수도 있습니다.
 
-## HoloLens를 엔터프라이즈 Wi-Fi 네트워크에 연결
+## <a name="connect-hololens-to-enterprise-wi-fi-network"></a>HoloLens를 엔터프라이즈 Wi-Fi 네트워크에 연결
 
 엔터프라이즈 Wi-Fi 프로필은 EAP(확장할 수 있는 인증 프로토콜)를 사용하여 Wi-Fi 연결을 인증합니다. [](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages)Windows 구성 디자이너[](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages)에서 생성한 프로비저닝 패키지 또는 MDM을 통해 HoloLens 엔터프라이즈 Wi-Fi 프로필을 구성할 수 있습니다.
 
@@ -129,7 +133,7 @@ EAP 유형에 따라 장치에 서버 루트 CA 인증서 및 클라이언트 �
 - WLANv1Profile Schema: [[MS-GPWL]: 무선 LAN 프로필 V1 스키마 | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/34054c93-cfcd-44df-89d8-5f2ba7532b67)
 - EAP-TLS 스키마: [[MS-GPWL]: MICROSOFT EAP TLS 스키마 | Microsoft Docs](https://docs.microsoft.com/openspecs/windows_protocols/ms-gpwl/9590925c-cba2-4ac5-b9a1-1e5292bb72cb)
 
-### EAP 문제 해결
+### <a name="eap-troubleshooting"></a>EAP 문제 해결
 
 1. 이중 확인 Wi-Fi 프로필의 설정이 올바른지 확인합니다.
    1. EAP 유형이 올바르게 구성되어 있습니다. 일반적인 EAP 유형: EAP-TLS(13), EAP-TTLS(21), PEAP(25).
@@ -142,10 +146,10 @@ EAP 유형에 따라 장치에 서버 루트 CA 인증서 및 클라이언트 �
 1. 엔터프라이즈 프로파일이 Wi-Fi 프로비저닝 패키지를 통해 프로비저닝된 경우 Windows 10 PC에서 프로비저닝 패키지를 적용하는 것이 좋습니다. Windows 10 PC에서도 오류가 발생하면 [Windows 클라이언트 802.1X 인증 문제 해결 가이드](https://docs.microsoft.com/windows/client-management/advanced-troubleshooting-802-authentication)를 따릅니다.
 1. [피드백 허브](https://docs.microsoft.com/hololens/hololens-feedback)를 통해 피드백을 보내주세요.
 
-### 추가 리소스:
+### <a name="additional-resources"></a>추가 리소스:
 - [Windows 장치에서 Wi-Fi 설정 내보내기](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-import-windows-8-1#export-wi-fi-settings-from-a-windows-device)
 
-## VPN
+## <a name="vpn"></a>VPN
 VPN 연결을 사용 하면 회사 네트워크와 인터넷에 더 안전하게 연결하고 액세스 하는데 도움이 됩니다. HoloLens 2는 기본 제공 VPN 클라이언트와 UWP(Universal Windows Platform) VPN 플러그 인을 지원합니다. 
 
 지원되는 기본 제공 VPN 프로토콜:
@@ -159,7 +163,7 @@ VPN 연결을 사용 하면 회사 네트워크와 인터넷에 더 안전하게
 
 [가이드를](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-guide) 사용하여 [VPN을 구성하는 방법](https://support.microsoft.com/help/20510/windows-10-connect-to-vpn)에 대해 자세히 알아보세요.  
 
-### UI를 통한 VPN
+### <a name="vpn-via-ui"></a>UI를 통한 VPN
 
 VPN은 기본적으로 사용 하도록 설정 되지 않지만 앱**설정**을 열고 **네트워크 및 인터넷 > VPN**으로 이동하여 수동으로 설정할 수 있습니다.
 1. VPN 제공자를 선택합니다.
@@ -172,7 +176,7 @@ VPN은 기본적으로 사용 하도록 설정 되지 않지만 앱**설정**을
 
 ![HoloLens VPN 설정입니다.](./images/vpn-settings-ui.jpg)
 
-### Provisioning 패키지를 통해 VPN이 설정되었습니다.
+### <a name="vpn-set-via-provisioning-package"></a>Provisioning 패키지를 통해 VPN이 설정되었습니다.
 
 > [!TIP] 
 > Microsoft의 Windows 홀로그래픽 버전 20H2에서는 VPN 연결을 위한 프록시 구성 문제를 해결했습니다. 이 흐름을 사용하려면 장치를 이 빌드로 업그레이드해 주십시오.
@@ -191,7 +195,7 @@ VPN은 기본적으로 사용 하도록 설정 되지 않지만 앱**설정**을
 1. HoloLens에서 시작 메뉴를 열고 **설정**  -> **계정** -> ** 액세스 회사 또는 학교** -> **를 선택하여 VPN .ppkg를 적용합니다. 프로비저닝 패키지 추가 또는 제거**-> VPN 패키지 선택.
 
 
-### Intune을 통해 VPN 설정
+### <a name="setting-up-vpn-via-intune"></a>Intune을 통해 VPN 설정
 시작하려면 Intune 문서의 내용을 따르기면 됩니다. 다음 단계를 수행할 때는 HoloLens 장치가 지원하는 기본 제공 VPN 프로토콜을 기억하시기 바랍니다. 
 
 [Intune](https://docs.microsoft.com/mem/intune/configuration/vpn-settings-configure)의 VPN 서버에 연결할 VPN 프로파일을 생성합니다.
@@ -200,7 +204,7 @@ VPN은 기본적으로 사용 하도록 설정 되지 않지만 앱**설정**을
 
 완료되면 [프로파일을 할당](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign)해야 합니다.
 
-### 타사 MDM 솔루션을 통한 VPN
+### <a name="vpn-via-3rd-party-mdm-solutions"></a>타사 MDM 솔루션을 통한 VPN
 타사 VPN 연결 예:
 ```xml
 <!-- Configure VPN Server Name or Address (PhoneNumber=) [Comma Separated]-->
@@ -290,9 +294,9 @@ VPN은 기본적으로 사용 하도록 설정 되지 않지만 앱**설정**을
         </Item>
       </Add>
 ```
-## HoloLens(1세대)에서 Wi-Fi 사용 안 함
+## <a name="disabling-wi-fi-on-hololens-1st-gen"></a>HoloLens(1세대)에서 Wi-Fi 사용 안 함
 
-### HoloLens에서 설정 앱 사용
+### <a name="using-the-settings-app-on-hololens"></a>HoloLens에서 설정 앱 사용
 
 1. **시작** 메뉴를 엽니다.
 1. **시작** 또는 **시작** 메뉴의 오른쪽에 있는 **모든 앱** 목록에 있는 **설정** 앱을 선택합니다. **설정** 앱이 자동 배치됩니다.
@@ -304,9 +308,9 @@ VPN은 기본적으로 사용 하도록 설정 되지 않지만 앱**설정**을
 
 1. 슬라이더 스위치를 **켜기** 위치로 이동하여 Wi-Fi 무선 송수신 장치를 켜고 Microsoft HoloLens에서 Wi-Fi 기능을 복원합니다. 선택한 Wi-Fi 무선 송수신 장치 상태(**켜기** 또는 **끄기**)는 다시 부팅하는 동안 유지됩니다.
 
-## Wi-Fi 네트워크에서 HoloLens의 IP 주소 식별
+## <a name="identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network"></a>Wi-Fi 네트워크에서 HoloLens의 IP 주소 식별
 
-### 설정 앱 사용
+### <a name="by-using-the-settings-app"></a>설정 앱 사용
 
 1. **시작** 메뉴를 엽니다.
 1. **시작** 또는 **시작** 메뉴의 오른쪽에 있는 **모든 앱** 목록에 있는 **설정** 앱을 선택합니다. **설정** 앱이 자동 배치됩니다.
@@ -317,11 +321,11 @@ VPN은 기본적으로 사용 하도록 설정 되지 않지만 앱**설정**을
 
    IP 주소는 **IPv4 주소**옆에 나타납니다.
 
-### 음성 명령을 사용하여
+### <a name="by-using-voice-commands"></a>음성 명령을 사용하여
 
 장치 구축에 따라 기본 제공 음성 명령 또는 Cortana를 사용하여 IP 주소를 표시할 수 있습니다. [19041.1103](hololens-release-notes.md#windows-holographic-version-2004) 후 빌드에 "내 IP 주소가 무엇인가요?" 말하기 그러면 표시 됩니다. 이전 빌드 또는 HoloLens(1세대)의 경우 "안녕 Cortana 내 IP 주소가 무엇인가요?"라고 말합니다. Cortana가 IP 주소를 표시하고 읽습니다.
 
-### Windows 장치 포털 사용
+### <a name="by-using-windows-device-portal"></a>Windows 장치 포털 사용
 
 1. PC의 웹 브라우저에서 [장치 포털](/windows/mixed-reality/using-the-windows-device-portal.md#networking)을 엽니다.
 1. **네트워킹** 섹션으로 이동합니다.  
