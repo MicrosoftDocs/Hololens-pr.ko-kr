@@ -54,6 +54,12 @@
 #### [클라우드 연결 - 배포](hololens2-cloud-connected-deploy.md)
 #### [클라우드 연결 - 유지 관리](hololens2-cloud-connected-maintain.md)
 ### [원격 지원을 사용하여 외부 클라이언트에 HoloLens 2 배포](hololens2-deployment-guide.md)
+### Dynamic 365 가이드를 통해 회사에 연결된 HoloLens 2 배포
+#### [회사 연결 - 배포 개요](hololens2-corp-connected-overview.md)
+#### [회사 연결 - 준비](hololens2-corp-connected-prepare.md)
+#### [회사 연결 - 구성](hololens2-corp-connected-configure.md)
+#### [회사 연결 - 배포](hololens2-corp-connected-deploy.md)
+#### [회사 연결 - 유지 관리](hololens2-corp-connected-maintain.md)
 ### [오프라인 보안](hololens-common-scenarios-offline-secure.md)
 ## 보안
 ### [보안 개요](security-overview.md)
