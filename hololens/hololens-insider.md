@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 26fa6bfbbb1d9ec0408208513a4cd54b8ba93117
-ms.sourcegitcommit: b1362ab822d1cba97fe0b3fb4e666d9b68b6adbf
+ms.openlocfilehash: 9b4ce7d05849191ae242396f50df740f25a2cdfe
+ms.sourcegitcommit: 86dba9e8a5e25f0bf29f4c0580970c25c44b7359
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "11406774"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "11470066"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens 참가자 미리 보기
 
@@ -79,7 +79,7 @@ Windows Insiders에 새로운 기능의 플라이트를 다시 시작하게 됐�
 
 [**키오스크 모드 오류 수리 개선**](#kiosk-mode-behavior-changes-for-handling-of-failures)
 
-이제 이 업데이트는 디바이스를 키오스크 모드로 더 잘 제어하므로 단순히 빈 키오스크를 발표하기 전에 다양한 유형의 키오스크로 돌아갑니다. 이 방법은 관리할 수 없는 경우 구성에 적용될 수 있는 방식으로 키오스크를 사용하는 경우 지원 부서에 알리기 위한 것일 수 있습니다.
+로그인한 AAD 사용자의 AAD 그룹 구성원이 확인되지 않으면 시작 메뉴(있는 경우)에 전역 키오스크 구성이 사용됩니다. 그렇지 않으면 빈 시작 메뉴가 표시됩니다. 비어 있는 시작 메뉴는 직접 설정할 수 있는 구성이 아니며, 이러한 새로운 처리는 구성에 적용되거나 할당된 액세스 구성을 새로 조정하는 것이 까다로워지기 때문에 이 새로운 처리는 지원 부서에 키오스크를 사용하는 경우를 알리기 위한 것일 수 있습니다.
 
 #### <a name="updates-to-page-settings-visibility"></a>페이지 설정 표시 여부 업데이트
 
