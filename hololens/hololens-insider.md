@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 3/4/2021
+ms.date: 04/01/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9b4ce7d05849191ae242396f50df740f25a2cdfe
-ms.sourcegitcommit: 86dba9e8a5e25f0bf29f4c0580970c25c44b7359
+ms.openlocfilehash: ebd3992458daa94726e73742b1fba4d7fa97a48b
+ms.sourcegitcommit: ad725427c2c88e73df2e5753001a26502b2327de
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "11470066"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "11474843"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens 참가자 미리 보기
 
@@ -167,12 +167,15 @@ Windows Insiders에 새로운 기능의 플라이트를 다시 시작하게 됐�
 - "보고 말하기"
 - 인쇄
 
-**가장 알려진 브라우저 문제:**
-- 장치를 초기화하면 새 Microsoft Edge가 제거됩니다.
-- 홀로그램 키보드의 돋보기 미리 보기에 잘못된 콘텐츠가 표시됩니다.
-- 스크롤 시 스터터가 표시될 수 있습니다.
+**가장 잘 알려진 브라우저 문제:**
+- Wi-Fi 개별 Wi-Fi 대상으로 하는 프록시 정책인 프록시 구성은 현재 새 Microsoft Edge에서 작동하지 않습니다. WE're actively working to unblock this issue before public release of the OS update.
+- 새 Microsoft Edge에 대해 홀로그램 키보드의 돋보기 미리 보기를 사용할 수 없습니다. 확대가 올바르게 작동하면 향후 업데이트에서 이 기능을 다시 사용할 수 있습니다.
+- 새 Microsoft Edge에서는 일본어 키보드의 두 문자가 예상대로 작동하지 않습니다. This issue has been root caused and should be fixed soon.
 - Microsoft Store 앱의 웹 링크가 브라우저를 시작하지 않을 수 있습니다.
-- 이전에 다른 브라우저 창에서 오디오를 재생한 경우 오디오가 잘못된 브라우저 창에서 재생될 수 있습니다.
+- 다른 브라우저 창이 열려 활성화된 경우 잘못된 브라우저 창에서 오디오가 재생될 수 있습니다. 오디오를 재생하지 않는 다른 활성 창을 닫아 이 문제를 해결합니다.
+- 브라우저 창에서 [오디오를 재생하는 경우 "팔로우"](hololens2-basic-usage.md#follow-me-stop-following)모드를 사용하지 않도록 설정하면 오디오가 계속 재생됩니다. "팔로우" 모드를 사용 중지하기 전에 오디오 재생을 중지하거나 X 단추로 창을 닫아 이 문제를 **해결합니다.**
+- 활성 Microsoft Edge 창과 상호 작용하면 다른 2D 앱 창이 예기치 않게 비활성화될 수 있습니다. 이러한 창을 다시 상호 작용하여 다시 활성화할 수 있습니다.
+- 다른 앱에서 웹 링크를 열거나 특정 유형의 문서(예: PC)를 열면 웹 링크 또는 파일 링크의 내용으로 만든 새 탭 외에 브라우저에서 두 번째 빈 탭이 열립니다. 추가 빈 탭을 닫아 이 문제를 해결하면 됩니다.
 
 #### <a name="microsoft-edge-insider-channels"></a>Microsoft Edge 내부자 채널
 
@@ -249,16 +252,14 @@ HoloLens에 대해 현재 사용 가능한 끝점에 대해 자세히 [읽어보
 1. [에어 탭하여](hololens2-basic-usage.md#select-using-air-tap) 재생 컨트롤을 업합니다. 손 [광선](hololens2-basic-usage.md#select-using-air-tap) 및 에어 탭을 사용하여 재생/일시 중지, 앞으로/뒤로 건너뛰기, 캡션 켜기/끄기 또는 환경을 중지(몰입형 보기를 종료)합니다. 재생 컨트롤은 몇 초 동안 비활성 상태일 때 사라집니다.
 
 #### <a name="top-webxr-and-360-viewer-known-issues"></a>상위 WebXR 및 360 뷰어 알려진 문제
-- WebXR 환경에서는 머리를 기울거나 환경 주위를 이동할 때 홀로그램이 이동하거나 기울어지게 될 수 있습니다.
 - WebXR 환경의 복잡도에 따라 프레임 속도는 떨어뜨리거나 스터터될 수 있습니다.
-- WebXR에서는 아직 손 조인트가 제공되지 않습니다.
+- WebXR에서 손 조인트 지원은 기본적으로 사용되지 않습니다. 개발자는 "WebXR 핸드 입력"을 켜서 지원을 사용하도록 설정할 `edge://flags` 수 있습니다.
 - WebXR 또는 360 뷰어 환경을 종료할 때 혼합 현실 홈의 홀로그램이 다시 시작될 때 30초 이상이 걸릴 수 있습니다.
 - YouTube가 아닌 웹 사이트의 360 비디오가 예상대로 작동하지 않을 수 있습니다.
-- 360 비디오가 몰입형 보기를 입력하지 않는 경우(또는 혼합 현실 헤드셋 단추가 나타나지 않는 경우) 페이지를 새로 고쳐 보세요.
-- HoloLens 2의 360 뷰어에는 캡션이 아직 표시되지 않습니다.
+- 현재 HoloLens 2의 360 뷰어에서 캡션을 사용할 수 없습니다. 향후 업데이트에서 이 기능을 사용하도록 설정할 예정입니다.
 - 360 뷰어에서 비디오를 일시 중지하면 비디오 렌더링이 중지되지만 재생 단추를 올바르게 선택하면 재생이 다시 시작됩니다.
 - 360 뷰어의 "다음 비디오" 단추는 현재 작동하지 않습니다.
-- 몰입형 "페더러" 모드에서 2D 비디오를 재생할 수 있지만 프레임 속도는 30ps 미만입니다.
+- 2D 비디오를 몰입형 "후방" 모드로 재생할 수 있지만 프레임 속도는 30ps 미만일 수 있습니다.
 
 #### <a name="providing-feedback-on-webxr-and-360-viewer"></a>WebXR 및 360 뷰어에 대한 피드백 제공
 
@@ -337,11 +338,8 @@ HoloLens 2에 저장된 사용자 지정 색 프로필에 불만이 있는 경�
 
 #### <a name="top-display-color-calibration-known-issues"></a>상위 디스플레이 색 보정 알려진 문제
 
-- 설정 페이지에서 색 프로필이 마지막으로 변경된 날짜를 표시하는 상태 문자열은 설정 페이지를 다시 로드할 때까지 최신 상태가 됩니다. 
+- 설정 페이지에서 색 프로필이 마지막으로 변경된 날짜를 알려 주면 설정 페이지를 다시 로드할 때까지 상태 문자열이 최신 상태가 됩니다.
     - 해결 작업: 다른 설정 페이지를 선택한 다음 보정 페이지를 다시 선택합니다.
-- 디스플레이 색 보정을 실행하는 동안 HoloLens 2가 절전된 경우 나중에 혼합 현실 홈으로 다시 시작되고 디스플레이 밝기 수준은 여전히 희미해지게 됩니다.
-- 장치 왼쪽에 있는 밝기 단추를 예상대로 작동하기 전에 몇 번 아래로 누르는 것을 시도해야 할 수 있습니다.
-- 지역화가 모든 지역화에 완료되지는 않습니다.
 
 ### <a name="default-app-picker"></a>기본 앱 선택기
 
@@ -360,6 +358,9 @@ HoloLens 2에 저장된 사용자 지정 색 프로필에 불만이 있는 경�
  <img alt="App volume and device preferences." src="./images/volume-per-app.jpg" width="500" height="250" />
 
 ### <a name="office-web-app"></a>Office Web App
+
+>[!NOTE]
+>Windows Insider 빌드 20325.1000을 사용할 때 Office 웹앱은 더 이상 사전 설치되지 않습니다(예정된 OS 업데이트 공개 릴리스를 위해 미리 설치되지 않습니다. Office Web App을 설치하려면 주소 표시줄에서 사용 가능한 앱 또는 Office 설치 https://www.office.com 단추를 선택합니다. **** **** 설치를 **선택하여** 확인할 수 있습니다.
 
 Office Web App이 시작 메뉴의 "모든 앱" 목록에 추가되었습니다. 이 웹앱을 시작 또는 제거에 고정할 수도 있습니다. 이 기능은 웹 앱이기 때문에 를 방문하여 경험하는 기능과 정확히 https://www.office.com 일치합니다. Office Web App 기능은 HoloLens 2에 활성 인터넷 연결이 있는 경우만 사용할 수 있습니다.
 
@@ -585,9 +586,15 @@ HoloLens Insider 빌드 20279.1006+를 실행하는 PC 및 기타 HoloLens 2 장
 
 - [오프라인 진단에는](hololens-diagnostic-logs.md#offline-diagnostics) 일련 번호 및 OS 버전에 대한 추가 장치 정보도 포함됩니다.
 
+### <a name="known-issues-and-work-around"></a>알려진 문제 및 해결
 
+#### <a name="pairing-hololens-to-pc"></a>HoloLens를 PC에 페어링
 
+Windows Insider 빌드 20325.1000 이전에는 [사용자가 Windows Holographic, 버전 20H2](hololens-release-notes.md#windows-holographic-version-20h2) 또는 Windows [Holographic 버전 2004에서](hololens-release-notes.md#windows-holographic-version-2004) 자격 증명 페어링을 설정하고 Windows Insider 빌드로 업데이트한 경우 앱을 배포하고 디버깅하는 등의 목적으로 HoloLens를 PC와 페어링하기 위한 이전 집합 자격 증명이 Visual Studio 작동하지 않습니다. Windows Insider 빌드 20325.1000은 이 문제를 해결하며 장치 포털을 사용하여 다시 시작하려면 추가 작업이 필요 없습니다.
 
+이제 [Insider](#ffu-download-and-flash-directions) 빌드로 장치를 플래시한 사용자는 디바이스를 PC와 페어링하기 위해 디바이스를 리플래시(20325.1000+ 또는 GA 빌드로)해야 합니다.
+
+Windows Insiders에 등록하지 않은 사용자가 일반적으로 사용할 수 있을 때 기능 업데이트를 받을 사용자는 영향을 받지 않습니다.
 
 
 ## <a name="start-receiving-insider-builds"></a>Insider 빌드 수신 시작
