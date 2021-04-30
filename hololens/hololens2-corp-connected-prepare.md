@@ -1,6 +1,6 @@
 ---
-title: 배포 가이드 - Dynamics 365 가이드를 통해 회사에서 연결된 HoloLens 2 - 준비
-description: Dynamics 365 가이드를 통해 회사 연결 네트워크를 통해 HoloLens 2 장치 등록을 준비하는 방법을 알아보세요.
+title: 배포 가이드 – Dynamics 365를 사용 하 여 회사에 연결 된 HoloLens 2 가이드-준비
+description: Dynamics 365 가이드를 사용 하 여 회사에 연결 된 네트워크를 통해 HoloLens 2 장치를 등록 하기 위해 준비 하는 방법을 알아봅니다.
 keywords: HoloLens, 관리, 회사 연결, Dynamics 365 가이드, AAD, Azure AD, MDM, 모바일 장치 관리
 author: joyjaz
 ms.author: v-jjaswinski
@@ -15,94 +15,94 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 2ab24aeac371b8d4a17d6121c3adf317cac7daf1
-ms.sourcegitcommit: d7c86ccad7be32f7223d4b801083798454fda740
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "11448597"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108309493"
 ---
-# <a name="prepare---corporate-connected-guide"></a>준비 - 회사 연결 가이드
-## <a name="infrastructure-essentials"></a>Infrastructure Essentials
-개인 및 회사 배포 시나리오에서 MDM(모바일 장치 관리) 시스템은 Windows 10 장치, 특히 HoloLens 2를 배포하고 관리하는 데 필요한 필수 인프라입니다. [Azure AD Premium 구독은](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-get-started-premium) ID 공급자로 권장되는 것이 며 특정 기능을 지원하는 데 필요합니다. ****
+# <a name="prepare---corporate-connected-guide"></a>준비-회사에 연결 된 가이드
+## <a name="infrastructure-essentials"></a>인프라 Essentials
+개인 및 회사 배포 시나리오 모두에서 MDM (모바일 장치 관리) 시스템은 Windows 10 장치, 특히 HoloLens 2를 배포 하 고 관리 하는 데 필요한 필수 인프라입니다. [Azure AD Premium 구독은](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-get-started-premium) id 공급자로 권장 되며 특정 기능을 지 원하는 데 **필요** 합니다.
 
 > [!NOTE]
-> HoloLens 2는 모바일 장치처럼 배포 및 관리되는 데는 일반적으로 여러 사용자 간의 공유 장치로 사용됩니다.
+> HoloLens 2는 모바일 장치와 같이 배포 및 관리 되지만 일반적으로 많은 사용자 간에 공유 장치로 사용 됩니다.
 
 ## <a name="azure-active-directory"></a>Azure Active Directory
-Azure AD는 ID 및 액세스 관리를 제공하는 클라우드 기반 디렉터리 서비스입니다. Microsoft Office 365 또는 Intune을 사용하는 조직은 이미 무료, 프리미엄 P1 및 Premium P2의 세 가지 버전이 있는 Azure AD를 사용하고 [있습니다(Azure Active Directory 버전](https://azure.microsoft.com/documentation/articles/active-directory-editions)참조). 모든 버전은 Azure AD 장치 등록을 지원하지만, 이 가이드의 나중에 사용할 MDM 자동 등록을 사용하도록 설정하려면 Premium P1이 필요합니다.
+Azure AD는 id 및 액세스 관리를 제공 하는 클라우드 기반 디렉터리 서비스입니다. Microsoft Office 365 또는 Intune을 사용 하는 조직은 Azure AD를 이미 사용 하 고 있습니다 .이는 무료, 프리미엄 P1 및 Premium P2의 세 가지 버전이 있습니다 ( [Azure Active Directory 버전](https://azure.microsoft.com/documentation/articles/active-directory-editions)참조). 모든 버전은 Azure AD 장치 등록을 지원 하지만 프리미엄 P1은 나중에이 가이드에서 사용할 MDM 자동 등록을 사용 하도록 설정 하는 데 필요 합니다.
 > [!Important]
-> HoloLens 장치에서는 프레미스 AD 가입을 지원하지 않는 Azure AD가 반드시 필요합니다. 아직 Azure AD를 설정하지 않은 경우 지침에 따라 시작하고 Azure Active Directory에서 새 테넌트 [만들기 를 시작하세요.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)
+> HoloLens 장치는 온-프레미스 AD 조인을 지원 하지 않으므로 Azure AD를 설정 하는 것이 중요 합니다. Azure AD를 아직 설정 하지 않은 경우 지침에 따라 시작 하 고 [Azure Active Directory에 새 테 넌 트를 만듭니다](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
 
 ## <a name="identity-management"></a>ID 관리
-이 가이드에서 사용되는 [ID는](https://docs.microsoft.com/hololens/hololens-identity) Azure AD 계정입니다. Azure AD 계정에는 몇 가지 이점이 있습니다.
-- 직원은 Azure AD 계정을 사용하여 Azure AD에 장치를 등록하고 조직의 MDM 솔루션에 자동으로 등록할 수 있습니다(Azure AD+MDM – Azure AD Premium 구독 [필요).](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-get-started-premium)
-- Azure AD 계정에는 [비즈니스용](https://docs.microsoft.com/hololens/hololens-identity) Windows Hello를 통한 추가 [인증 옵션이 있습니다.](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification) Iris 로그인 외에도 사용자는 다른 장치에서 로그인하거나 FIDO 보안 키를 사용할 수 있습니다.
+이 가이드에서 사용 되는 [id](https://docs.microsoft.com/hololens/hololens-identity) 는 Azure AD 계정이 됩니다. Azure AD 계정에는 다음과 같은 몇 가지 이점이 있습니다.
+- 직원은 azure ad 계정을 사용 하 여 Azure AD에 장치를 등록 하 고 조직의 MDM 솔루션 (Azure AD + MDM – [Azure AD Premium 구독](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-get-started-premium)필요)에 자동으로 등록할 수 있습니다.
+- Azure AD 계정에는 [비즈니스용 Windows Hello를](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-identity-verification)통해 추가 [인증 옵션이](https://docs.microsoft.com/hololens/hololens-identity) 있습니다. Iri 로그인 외에도 사용자는 다른 장치에서 로그인 하거나 FIDO 보안 키를 사용할 수 있습니다.
 
 > [!WARNING] 
-> 직원은 하나의 계정만 사용하여 장치를 초기화할 수 있으므로 조직에서 먼저 사용하도록 설정된 계정을 **제어해야 합니다.** 선택하는 계정이 장치를 제어하는 사람을 결정하고 관리 기능에 영향을 줍니다.
+> 직원은 한 계정만 사용 하 여 장치를 초기화할 수 있으므로 **조직에서 먼저 사용 하도록 설정 된 계정을 제어 하는 것이 필수적입니다**. 선택한 계정은 장치를 제어 하 고 관리 기능에 영향을 주는 사용자를 결정 합니다.
 
-## <a name="mobile-device-management"></a>모바일 장치 관리
-Enterprise Mobility + Security의 일부인 Microsoft Intune은 테넌트에 연결된 장치를 관리하는 클라우드 기반 MDM 시스템입니다. Office 365와 마찬가지로 Intune은 ID 관리를 위해 Azure AD를 사용 하여 직원이 Office 365에 로그인하는 데 사용하는 동일한 자격 증명을 사용하여 Intune에 장치를 등록합니다. 또한 Intune은 iOS 및 Android와 같은 다른 운영 체제를 실행하여 완전한 MDM 솔루션을 제공하는 장치를 지원합니다. 이 가이드에서는 HoloLens 2를 사용하여 내부 네트워크에 배포할 수 있도록 Intune을 사용하는 데 집중할 것입니다.
+## <a name="mobile-device-management"></a>Mobile Device Management
+Enterprise Mobility + Security의 일부인 Microsoft Intune은 테 넌 트에 연결 된 장치를 관리 하는 클라우드 기반 MDM 시스템입니다. Office 365 처럼 Intune은 id 관리를 위해 Azure AD를 사용 하므로 직원 들은 동일한 자격 증명을 사용 하 여 Office 365에 로그인 하는 데 사용 하는 장치를 Intune에 등록 합니다. 또한 Intune은 iOS, Android 등의 다른 운영 체제를 실행 하는 장치를 지원 하 여 완전 한 MDM 솔루션을 제공 합니다. 이 가이드에서는 HoloLens 2를 사용 하 여 내부 네트워크에 대 한 배포를 사용 하도록 설정 하기 위해 Intune을 사용 하는 방법을 집중적으로 설명 합니다.
 > [!Important] 
-> 모바일 장치 관리를 반드시 설정해야 합니다. 아직 설정하지 않은 경우 이 가이드를 따르고 Intune 시작을 참조하세요.
+> 모바일 장치를 관리 하는 것이 중요 합니다. 아직 설정 하지 않은 경우이 가이드에 따라 Intune을 시작 하세요.
 
 > [!Important]
-> 가이드를 사용하려면 Azure AD 계정이 필요합니다.
+> 가이드를 사용 하려면 Azure AD 계정이 필요 합니다.
 
 > [!Note] 
-> 여러 MDM 시스템이 Windows 10을 지원하고 개인 및 회사 장치 배포 시나리오를 지원합니다. Windows 10 Holographic을 지원하는 MDM 공급자에는 AirWatch, MobileIron 등이 포함됩니다. 업계 최고의 MDM 공급업체가 대부분 Azure AD와의 통합을 이미 지원하고 있습니다. Azure 마켓플레이스에서 Azure AD를 지원하는 MDM 공급업체의 가장 최근 목록을 [찾을 수 있습니다.](https://azuremarketplace.microsoft.com/marketplace/apps/category/azure-active-directory-apps)
+> 여러 MDM 시스템은 Windows 10을 지원 하 고 개인 및 회사 장치 배포 시나리오를 지원 합니다. Windows 10 Holographic를 지 원하는 MDM 공급자는 MobileIron 및 기타 항목을 포함 합니다. 대부분의 업계 최고의 MDM 공급 업체는 이미 Azure AD와의 통합을 지원 합니다. [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/apps/category/azure-active-directory-apps)에서 Azure AD를 지 원하는 MDM 공급 업체의 최신 목록을 찾을 수 있습니다.
 
 ## <a name="network-access"></a>네트워크 액세스 
-Dynamics 365 가이드는 클라우드 기반 응용 프로그램입니다. 네트워크 관리자에게 승인 목록이 있는 경우 Dynamics 365 서버에 연결하는 데 필요한 IP 주소 및/또는 끝점을 추가해야 할 수 있습니다. IP 주소 및 URL 차단 [해제에 대해 자세히 알아보하세요.](https://docs.microsoft.com/power-platform/admin/online-requirements#ip-addresses-and-urls)
+Dynamics 365 가이드는 클라우드 기반 응용 프로그램입니다. 네트워크 관리자에 게 승인 목록이 있으면 Dynamics 365 서버에 연결 하는 데 필요한 IP 주소 및/또는 끝점을 추가 해야 할 수 있습니다. [IP 주소 및 url 차단 해제에 대해 자세히 알아보세요](https://docs.microsoft.com/power-platform/admin/online-requirements#ip-addresses-and-urls).
 
 ## <a name="certificates"></a>인증서
-인증서는 웹 콘텐츠의 계정 인증, Wi-Fi 인증, VPN 암호화 및 SSL 암호화를 제공하여 보안을 향상시키는 데 도움이 됩니다. 관리자는 프로비저닝 패키지를 통해 디바이스에서 인증서를 수동으로 관리할 수 있지만 등록부터 갱신 및 해지까지 전체 수명 주기 동안 MDM 시스템을 사용하여 인증서를 관리하는 것이 가장 좋은 것입니다. 
+인증서는 계정 인증, Wi-Fi 인증, VPN 암호화 및 웹 콘텐츠의 SSL 암호화를 제공 하 여 보안을 개선 하는 데 도움이 됩니다. 관리자는 프로 비전 패키지를 통해 수동으로 장치에서 인증서를 관리할 수 있지만 등록에서 갱신 및 해지를 통해 MDM 시스템을 사용 하 여 전체 수명 주기 동안 해당 인증서를 관리 하는 것이 좋습니다. 
 
-MDM 시스템에서 **SCEP(Simple Certificate Enrollment Protocol)** 또는 **PKCS#12(공개**키 암호화 표준)를 지원하는 경우 MDM 시스템에서 인증서를 등록한 후 장치의 인증서 저장소에 이러한 인증서를 자동으로 배포할 #12 수 있습니다. [Microsoft Intune에서](https://docs.microsoft.com/mem/intune/protect/certificates-configure)사용하는 인증서 유형 및 프로필에 대해 알아보세요. 또한 MDM은 등록된 클라이언트 인증서를 쿼리 및 삭제하거나 현재 인증서가 만료되기 전에 새 등록 요청을 트리거할 수 있습니다.
+Mdm 시스템이 **단순 인증서 등록 프로토콜 (SCEP)** 또는 **공개 키 암호화 표준 #12 (PKCS # 12)** 를 지 원하는 한, mdm 시스템에서 장치 인증서 저장소에 이러한 인증서를 자동으로 배포할 수 있습니다. [Microsoft Intune에서 사용 하는 인증서 유형 및 프로필에 대해 알아봅니다](https://docs.microsoft.com/mem/intune/protect/certificates-configure). 현재 인증서가 만료 되기 전에 MDM에서 등록 된 클라이언트 인증서를 쿼리 및 삭제 하거나 새 등록 요청을 트리거할 수도 있습니다.
  
-MDM 시스템이 인증서에 대해 이미 구성되어 있는 경우 [HoloLens 2용](https://docs.microsoft.com/hololens/hololens-certificates-network) 인증서 및 네트워크 프로필 준비를 참조하여 HoloLens 2 장치에 대한 인증서 및 프로필 배포를 시작하세요.
+MDM 시스템이 이미 인증서에 대해 구성 된 경우 HoloLens 2 장치에 대 한 인증서 및 프로필 배포를 시작 하려면 [hololens 2 용 인증서 및 네트워크 프로필 준비](https://docs.microsoft.com/hololens/hololens-certificates-network) 를 참조 하세요.
 
 ## <a name="scep"></a>SCEP
 
-다음 서비스는 웹 응용 프로그램 프록시 서버를 제외하고 SCEP 배포에 필요합니다.
+다음 서비스는 웹 응용 프로그램 프록시 서버를 제외 하 고 SCEP 배포에 필요 합니다.
 - [인증 기관](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj125375(v=ws.11))
 - [NDES 서버 역할](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831498(v=ws.11))
 - [Microsoft Intune 커넥터](https://docs.microsoft.com/mem/intune/protect/certificates-scep-configure#install-the-microsoft-intune-connector)
 
-또한 Azure AD 응용 프로그램 프록시 또는 웹 액세스 프록시를 사용하여 회사 네트워크 외부에 [NDES URL을 게시해야 합니다.](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application) 원하는 다른 역방향 프록시를 사용할 수도 있습니다.
+또한 [AZURE AD 응용 프로그램 프록시 또는 웹 액세스 프록시](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application)를 사용 하 여 회사 네트워크 외부에 NDES URL을 게시 해야 합니다. 선택한 다른 역방향 프록시를 사용할 수도 있습니다.
 
 ![SCEP 데이터 흐름](./images/hololens2-scep-info-flow.png)
 
-네트워크에서 SCEP를 아직 지원하지 않는 경우 또는 Intune을 통해 네트워크가 SCEP에 올바르게 설정되어 있는지 잘 알고 있지 않은 경우  [Intune을 통해 SCEP를](https://docs.microsoft.com/mem/intune/protect/certificates-scep-configure)지원하도록 인프라 구성을 참조합니다.
+네트워크에서 SCEP를 아직 지원 하지 않거나 네트워크가 Intune과 함께 SCEP에 올바르게 설정 되었는지 확신할 수 없는 경우  [intune을 사용 하 여 scep를 지원 하도록 인프라 구성](https://docs.microsoft.com/mem/intune/protect/certificates-scep-configure)을 참조 하세요.
 
-인프라에서 이미 SCEP를 지원하는 경우 [](https://docs.microsoft.com/mem/intune/protect/certificates-profile-scep) HoloLens 2에서 사용할 각 SCEP 인증서에 대한 프로필을 만들어야 합니다. [](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/create-certificate-profiles) SCEP에 문제가 있는 경우 SCEP 인증서 프로필 사용 문제 해결을 사용하여 [Microsoft Intune으로 인증서를 프로비전합니다.](https://docs.microsoft.com/troubleshoot/mem/intune/troubleshoot-scep-certificate-profiles)
+인프라가 이미 SCEP를 지 원하는 경우 HoloLens 2가 사용할 각 SCEP 인증서에 대 한 [프로필](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/create-certificate-profiles) 을 [만들어야](https://docs.microsoft.com/mem/intune/protect/certificates-profile-scep) 합니다. SCEP에 문제가 있는 경우 [scep 인증서 프로필의 사용 문제 해결을 사용 하 여 Microsoft Intune 인증서를 프로 비전](https://docs.microsoft.com/troubleshoot/mem/intune/troubleshoot-scep-certificate-profiles)합니다.
 
 ## <a name="pkcs"></a>PKCS
-Intune에서는 개인 및 PKCS(공개 키 쌍) 인증서도 사용할 수 있습니다. 참조 [자세한 내용은 Microsoft Intune에서](https://docs.microsoft.com/mem/intune/protect/certificates-pfx-configure) 개인 및 공개 키 인증서를 사용하세요.
+또한 Intune은 개인 및 PKCS (공개 키 쌍) 인증서를 사용할 수 있도록 지원 합니다. 참조 [Microsoft Intune 개인 및 공개 키 인증서를 사용 하 여](https://docs.microsoft.com/mem/intune/protect/certificates-pfx-configure) 자세한 내용을 참조 하세요.
 
-## <a name="proxy"></a>Proxy (프록시)
-대부분의 회사 인트라넷 네트워크는 프록시를 사용하여 외부 트래픽을 관리합니다. HoloLens 2를 사용하면 이더넷, 서버 및 VPN 연결에 Wi-Fi 수 있습니다.
+## <a name="proxy"></a>프록시
+대부분의 회사 인트라넷 네트워크는 프록시를 활용 하 여 외부 트래픽을 관리 합니다. HoloLens 2를 사용 하 여 이더넷, Wi-Fi 및 VPN 연결에 대 한 프록시 서버를 구성할 수 있습니다.
 
-몇 가지 유형의 프록시 및 프록시를 구성하는 방법이 있습니다. 이 가이드의 목적을 위해 Wi-Fi 프록시를 선택하고 PAC URL을 통해 설정하며 **MDM을 통해 배포할 수 있습니다.** 이는 MDM을 통해 자동으로 배포되고, server:port 구성을 사용하는 대신 PAC 파일을 업데이트할 수 있는 이점과 마지막으로 Wi-Fi 프록시를 사용하여 단일 Wi-Fi 연결에만 적용하도록 프록시를 구성하여 장치를 다른 위치에 연결된 경우 계속 사용할 수 있는 이점이 있습니다. 
+프록시를 구성 하는 방법에는 몇 가지 다른 유형이 있습니다. 이 가이드의 목적에 맞게 Wi-fi 프록시를 선택 하 고 **, PAC URL을 통해 설정 하 고, MDM을 통해 배포** 합니다. 이는 MDM을 통해 자동으로 배포 하 고, 서버: 포트 구성을 사용 하는 대신 PAC 파일을 업데이트할 수 있으며, 마지막으로 Wi-Fi 프록시를 사용 하 여 단일 Wi-Fi 연결에만 적용 되도록 프록시를 구성 하 여 다른 위치에 연결 되어 있는 경우에도 장치를 사용할 수 있도록 하는 이점을 제공 합니다. 
 
 
-Windows 10의 프록시 설정에 대한 자세한 내용은 Microsoft Intune - Azure에서 디바이스에 Wi-Fi 프로필 [만들기를 참조하세요.](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-configure)
+Windows 10의 프록시 설정에 대 한 자세한 내용은 [Microsoft Intune에서 장치에 대 한 Wi-Fi 프로필 만들기-Azure](https://docs.microsoft.com/mem/intune/configuration/wi-fi-settings-configure)를 참조 하세요.
 
-## <a name="line-of-business-apps"></a>업무용 앱 
-Microsoft Store를 통해 여러 앱을 설치할 수 있는 경우 혼합 현실에서 사용하기 위해 특별히 만든 사용자 지정 앱이 있을 수 있습니다. 비즈니스를 위해 조직 전체에 배포된 이러한 사용자 지정 앱을 LOB(LoB) 앱이라고 합니다.
+## <a name="line-of-business-apps"></a>Lob (기간 업무) 앱 
+Microsoft Store를 통해 여러 앱을 설치할 수 있지만, 혼합 현실에서 사용 하기 위해 특별히 만든 사용자 지정 앱이 있을 수 있습니다. 비즈니스를 위해 조직 전체에 분산 된 이러한 사용자 지정 앱을 LOB (기간 업무) 앱 이라고 합니다.
   
-HoloLens 2 장치에 응용 프로그램을 배포하는 방법에는 여러 가지가 있습니다. 앱은 MDM, 비즈니스용 Microsoft Store(MSfB)를 통해 직접 배포하거나 프로비저닝 패키지를 통해 사이드로드할 수 있습니다. 이 가이드를 위해 필요한 앱 설치를 사용하여 MDM을 통해 앱을 배포합니다. 이렇게 하면 등록이 완료되면 LOB 앱이 HoloLens 장치에 자동으로 다운로드될 수 있습니다.
+HoloLens 2 장치에 응용 프로그램을 배포 하는 방법에는 여러 가지가 있습니다. 앱은 MDM, MSfB (비즈니스 Microsoft Store) 또는 프로 비전 패키지를 통해 테스트용으로 로드를 통해 직접 배포할 수 있습니다. 이 가이드에서는 필수 앱 설치를 사용 하 여 MDM을 통해 앱을 배포 합니다. 이렇게 하면 등록이 완료 되 면 LOB 앱을 HoloLens 장치에 자동으로 다운로드할 수 있습니다.
 
-LOB가 없는 사용자들을 위해 이 배포 흐름을 테스트하기 위한 샘플 앱을 제공합니다. 이 앱은 [MRTK 예제](https://aka.ms/HoloLensDocs-Sample-MRTK-Examples-App) 앱으로, 개념 증명을 테스트하기 위해 이미 미리 준비되고 패키지되어 있습니다.
+사용자 고유의 LOB가 없는 사용자를 위해 샘플 앱을 제공 하 여이 배포 흐름을 테스트 합니다. 이 앱은 [Mrtk 예제](https://aka.ms/HoloLensDocs-Sample-MRTK-Examples-App) 앱이 되며 개념 증명을 테스트 하기 위해 이미 미리 작성 되 고 패키지로 제공 됩니다.
  
-앱 배포에 대한 자세한 내용은 [앱 관리: 개요에서 확인할 수 있습니다.](https://docs.microsoft.com/hololens/app-deploy-overview)
+앱 배포에 대 한 자세한 내용은 [앱 관리: 개요](https://docs.microsoft.com/hololens/app-deploy-overview)에서 찾을 수 있습니다.
 
 > [!NOTE]
-> HoloLens 2는 UWP ARM64 앱의 실행만 지원합니다.
+> HoloLens 2는 UWP ARM64 앱의 실행만 지원 합니다.
 
-## <a name="guides-playbook"></a>가이드 플레이북
-가이드는 Microsoft Dataverse 환경을 가이드 앱의 데이터 스토어로 사용 합니다. Dataverse 환경이 가이드 앱 및 테넌트와 상호 작용하는 방식에 대한 더 큰 그림을 이해하는 것이 중요합니다. 이 가이드에서는 데이터버스를 관리하는 방법을 다루지 않지만 [Dynamics 365 가이드- Dynamics 365 Mixed Reality](https://docs.microsoft.com/dynamics365/mixed-reality/guides/admin-deployment-playbook)배포를 위한 기본 개념을 검토하세요.
+## <a name="guides-playbook"></a>가이드 플레이 북
+가이드는 Microsoft Dataverse 환경을 가이드 앱의 데이터 저장소로 사용 합니다. Dataverse 환경에서 가이드 앱 및 테 넌 트와 상호 작용 하는 방법을 이해 하는 것이 중요 합니다. 이 가이드에서는 dataverse를 관리 하는 방법에 대해서는 다루지 않지만 [dynamics 365 가이드-dynamics 365 Mixed Reality 배포에 대 한 기본 개념](https://docs.microsoft.com/dynamics365/mixed-reality/guides/admin-deployment-playbook)을 검토 하세요.
 
 ## <a name="next-step"></a>다음 단계 
 > [!div class="nextstepaction"]
-> [회사 연결 배포 - 구성](hololens2-corp-connected-configure.md)
+> [회사에 연결 된 배포-구성](hololens2-corp-connected-configure.md)

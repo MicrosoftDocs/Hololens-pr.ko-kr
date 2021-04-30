@@ -1,6 +1,6 @@
 ---
-title: HoloLens 2 앱 설치 관리자를 통해 앱을 테스트용 로드 및 설치하는 방법
-description: 앱 설치 관리자를 사용하여 앱을 설치하고 문제를 해결하는 방법을 알아보고 UI를 통해 앱을 테스트용 로드 및 설치합니다.
+title: HoloLens 2 앱 설치 관리자를 통해 앱을 로드 하 고 설치 하는 방법
+description: 앱 설치 관리자를 사용 하 여 앱을 설치 하 고 문제를 해결 하 고 UI를 통해 앱을 로드 하 고 설치 하는 방법을 알아봅니다
 keywords: 앱 관리, 앱, hololens, 앱 설치 관리자
 author: evmill
 ms.author: v-evmill
@@ -15,100 +15,100 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 9e413963dbf34dd071fc9603487590065b967ee7
-ms.sourcegitcommit: af4e222a4f83ab82466a383099897986ddf6b8c4
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "11297293"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108309272"
 ---
-# 앱 설치 관리자를 통해 HoloLens 2에 앱 설치
+# <a name="install-apps-on-hololens-2-via-app-installer"></a>앱 설치 관리자를 통해 HoloLens 2에 앱 설치
 
 > [!NOTE]
-> 이 기능은 Windows [Holographic 버전 20H2 – 2020년 12월 업데이트에서 사용할 수 있습니다.](hololens-release-notes.md) 이 기능을 [사용하기 위해](hololens-update-hololens.md) 장치가 업데이트되어 있는지 확인합니다.
+> 이 기능은 [Windows Holographic 버전 20H2 – 12 월 2020 업데이트](hololens-release-notes.md)에서 사용할 수 있었습니다. 이 기능을 사용 하도록 장치가 [업데이트](hololens-update-hololens.md) 되었는지 확인 합니다.
 
-**HoloLens** 2 디바이스에 응용 프로그램을 보다 원활하게 설치할 수 있도록 새로운 기능(앱 설치 관리자)이 추가되었습니다. 이 기능은 관리되지 않는 장치에 대해 기본적으로 **설정됩니다.** 엔터프라이즈 중단을 방지하기 위해 현재 관리되는 디바이스에서는 앱 설치 관리자를 사용할 **수** 없습니다.  
+HoloLens 2 장치에 **더욱 원활 하 게 응용 프로그램을 설치할 수 있도록 하는 새로운 기능 (앱 설치 관리자)이 추가** 되었습니다. 이 기능은 **기본적으로 관리 되지 않는 장치에 대해 설정** 됩니다. 엔터프라이즈 중단을 방지 하기 위해 지금은 **관리 되는 장치에 대해** 앱 설치 관리자를 사용할 수 없습니다.  
 
-다음 중 한 가지가 **** 참이면 디바이스가 "관리"되는 것으로 간주됩니다.
+다음 조건 중 **하나** 에 해당 하는 경우 장치는 "관리" 된 것으로 간주 됩니다.
 
-- MDM [등록](hololens-enroll-mdm.md)
-- 프로비저닝 [패키지로 구성](hololens-provisioning.md)
-- 사용자 [ID가](hololens-identity.md) Azure AD입니다.
+- MDM [등록](hololens-enroll-mdm.md) 됨
+- [프로 비전 패키지](hololens-provisioning.md) 를 사용 하 여 구성
+- 사용자 [id](hololens-identity.md) 는 Azure AD입니다.
 
-이제 개발자 모드를 사용하도록 설정하거나 디바이스 포털을 사용하지 않고도 앱을 설치할 수 있습니다.  USB를 통해 또는 Microsoft Edge를 통해 Appx 번들을 장치에 다운로드하고 파일 탐색기에서 Appx 번들로 이동하여 설치를 시작하라는 메시지가 표시됩니다.  또는 웹 [페이지에서 설치를 시작하십시오.](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)  Microsoft Store에서 설치하거나 MDM의 LOB 앱 배포 기능을 사용하여 사이드로드하는 앱과 마찬가지로 앱은 [](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) 서명 도구를 [](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) 사용하여 디지털 서명해야 합니다. 서명에 사용되는 인증서를 HoloLens 장치에서 신뢰해야 앱을 배포할 수 있습니다.
+이제 개발자 모드를 사용 하도록 설정 하거나 장치 포털을 사용 하지 않고도 앱을 설치할 수 있습니다.  장치에 Appx 번들을 다운로드 하 여 (USB를 통해 또는 Microsoft Edge를 통해) 파일 탐색기에서 Appx 번들로 이동 하 여 설치를 시작 하 라는 메시지를 표시 합니다.  또는 [웹 페이지에서 설치를 시작](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web)합니다.  MDM의 LOB 앱 배포 기능을 사용 하 여 Microsoft Store 또는 테스트용으로 로드에서 설치 하는 앱과 마찬가지로 서명 [도구](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) 를 사용 하 여 앱을 디지털 서명 해야 하며, [서명 하는 데 사용 되는 인증서](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool#security-considerations) 는 앱을 배포 하기 전에 HoloLens 장치에서 신뢰할 수 있어야 합니다.
 
-## 요구 사항
+## <a name="requirements"></a>요구 사항
 
-### 디바이스의 경우:
+### <a name="for-your-devices"></a>장치:
 
-이 기능은 현재 HoloLens 2 디바이스용 Windows Holographic 20H2 빌드에서 사용할 수 있습니다. 이 메서드를 사용하는 모든 장치가 [업데이트되도록 합니다.](hololens-update-hololens.md)
+이 기능은 현재 HoloLens 2 장치에 대 한 Windows Holographic 20H2 빌드에서 사용할 수 있습니다. 이 방법을 사용 하는 모든 장치가 [업데이트](hololens-update-hololens.md)되었는지 확인 합니다.
 
-### 앱의 경우:
+### <a name="for-your-apps"></a>앱의 경우:
 
-앱 설치 관리자에서 스토어의 **** 종속성에 따라 앱의 솔루션 구성이 마스터 또는 릴리스가 되어야 합니다. **** 앱 패키지 만들기에 [대한 자세한 정보를 참조하세요.](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)
+앱 설치 관리자는 저장소의 종속성을 사용할 수 있으므로 앱의 솔루션 구성은 **마스터** 또는 **릴리스** 중 하나 여야 합니다. [앱 패키지 만들기](https://docs.microsoft.com/windows/msix/app-installer/create-appinstallerfile-vs)에 대 한 자세한 내용을 참조 하세요.
 
-이 방법을 통해 설치된 앱은 디지털 서명을 해야 합니다. 인증서를 사용하여 앱에 서명해야 합니다. MS 신뢰할 수 있는 [CA](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)목록에서 인증서를 얻을 수 있습니다. 이 경우 추가 작업을 수행하지 필요가 없습니다. 또는 인증서를 장치에 푸시해야 하는 자체 인증서에 서명할 수 있습니다.
+이 메서드를 통해 설치 되는 앱은 디지털 서명 되어야 합니다. 인증서를 사용 하 여 앱에 서명 해야 합니다. [MS 신뢰할 수 있는 CA 목록](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)에서 인증서를 가져올 수 있으며,이 경우 추가 작업을 수행할 필요가 없습니다. 또는 자체 인증서를 서명할 수 있지만 인증서를 장치에 푸시 해야 합니다.
 
-- 서명 도구를 사용하여 [앱에 서명하는 방법](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool)
+- [서명 도구를 사용 하 여](https://docs.microsoft.com/windows/win32/appxpkg/how-to-sign-a-package-using-signtool) 앱에 서명 하는 방법입니다.
 
 **인증서 옵션:**
 
 - [MS 신뢰할 수 있는 CA 목록](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT)
 
-**인증서 배포 방법을 선택하십시오.**
+**인증서 배포 방법을 선택 합니다.**
 
-- [프로비저닝 패키지는](hololens-provisioning.md) 로컬 장치에 적용할 수 있습니다.
-- MDM을 사용하여 장치 구성을 사용하여 [인증서를 적용할 수 있습니다.](https://docs.microsoft.com/mem/intune/protect/certificates-configure)
-- 디바이스 인증서 [관리자를 사용합니다.](certificate-manager.md)
+- [프로 비전 패키지](hololens-provisioning.md) 를 로컬 장치에 적용할 수 있습니다.
+- MDM은 [장치 구성으로 인증서를 적용](https://docs.microsoft.com/mem/intune/protect/certificates-configure)하는 데 사용할 수 있습니다.
+- 장치 [인증서 관리자](certificate-manager.md)에서를 사용 합니다.
 
-## 설치 방법
+## <a name="installation-method"></a>설치 방법
 
-1. 디바이스가 관리되는 것으로 간주되지 않는지 확인합니다.
-1. HoloLens 2 디바이스가 전원이 설정 및 로그인된지 확인합니다.
-1. PC에서 사용자 지정 앱으로 이동하고app.appxbundle을devicename\Internal Storage\Downloads에 복사합니다.
-    파일 복사를 마친 후 장치 연결을 끊고 나중에 설치를 완료할 수 있습니다.
-1. HoloLens 2 장치에서 시작 메뉴를 열고 **모든**앱을 **선택하고** 파일 탐색기 **앱을 실행합니다.**
-1. 다운로드 폴더로 이동합니다. 앱의 왼쪽 패널에서 이 디바이스를 **** 먼저 선택한 다음 다운로드로 이동해야 할 수 있습니다.
-1. yourapp.appxbundle 파일을 선택합니다.
-1. 앱 설치 관리자가 실행됩니다. 설치 **단추를** 선택하여 앱을 설치합니다.
+1. 장치가 관리 되는 것으로 간주 되지 않았는지 확인 합니다.
+1. HoloLens 2 장치의 전원이 켜져 있고 로그인 되어 있는지 확인 합니다.
+1. PC에서 사용자 지정 앱으로 이동 하 고 yourapp을 yourdevicename\Internal Storage\downloadss에 복사 합니다.
+    파일 복사를 완료 한 후 장치를 분리 하 고 나중에 설치를 완료할 수 있습니다.
+1. HoloLens 2 장치에서 **시작 메뉴** 를 열고 **모든 앱** 을 선택 하 고 **파일 탐색기** 앱을 시작 합니다.
+1. 다운로드 폴더로 이동 합니다. 앱의 왼쪽 패널에서 **이 장치** 를 먼저 선택한 다음 다운로드로 이동 해야 할 수 있습니다.
+1. Yourapp 파일을 선택 합니다.
+1. 앱 설치 관리자가 시작 됩니다. **설치** 단추를 선택 하 여 앱을 설치 합니다.
 
-설치가 완료되면 설치된 앱이 자동으로 시작됩니다.
+설치가 완료 되 면 설치 된 앱이 자동으로 시작 됩니다.
 
-![앱 설치 관리자를 통해 MRTK 예제 설치](images/hololens-app-installer-picture.jpg)
+![App Installer를 통해 MRTK 예제 설치](images/hololens-app-installer-picture.jpg)
 
-### 설치 문제 해결
+### <a name="troubleshooting-installs"></a>설치 문제 해결
 
-앱을 설치하지 못한 경우 다음을 확인하여 문제를 해결합니다.
+앱을 설치 하지 못한 경우 다음을 확인 하 여 문제를 해결 합니다.
 
 - 앱은 마스터 또는 릴리스 빌드입니다.
-- 디바이스가 이 기능을 사용할 수 있는 빌드로 업데이트됩니다.
-- 인터넷에 [연결되어 있습니다.](hololens-network.md)
-- [Microsoft Store의 끝점이](hololens-offline.md) 올바르게 구성되었습니다.  
+- 장치가이 기능을 사용할 수 있는 빌드로 업데이트 됩니다.
+- 사용자가 [인터넷에 연결](hololens-network.md)되어 있습니다.
+- [Microsoft Store에 대 한 끝점이](hololens-offline.md) 올바르게 구성 되어 있습니다.  
 
-## 웹 설치 관리자
+## <a name="web-installer"></a>웹 설치 관리자
 
-사용자는 웹 서버에서 직접 앱을 설치할 수 있습니다. 이 흐름은 간편한 다운로드 및 설치 배포 방법과 결합된 앱 설치 관리자를 사용합니다.
+사용자는 웹 서버에서 직접 앱을 설치할 수 있습니다. 이 흐름은 간편한 다운로드 및 설치 배포 방법과 함께 앱 설치 관리자를 사용 합니다.
 
-### 웹 설치를 설정하는 방법:
+### <a name="how-to-set-up-web-install"></a>웹 설치를 설정 하는 방법:
 
-1. 앱이 설치되도록 올바르게 구성되어 있는지 확인합니다.
-1. 웹 페이지에서 [설치를 사용하도록 설정하려면 다음 단계를 수행합니다.](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web#how-to-enable-this-on-a-webpage)
+1. 앱이 설치 되도록 올바르게 구성 되어 있는지 확인 합니다.
+1. [웹 페이지에서 설치를 사용 하도록 설정 하려면 다음 단계를](https://docs.microsoft.com/windows/msix/app-installer/installing-windows10-apps-web#how-to-enable-this-on-a-webpage)수행 합니다.
 
-### 최종 사용자 환경:
+### <a name="end-user-experience"></a>최종 사용자 환경:
 
-1. 사용자가 위에서 선택한 방법을 사용하여 인증서를 받아 장치에 설치합니다.
-1. 사용자가 위의 단계에서 만든 URL을 방문합니다.
+1. 사용자가 이전에 선택한 방법을 사용 하 여 장치에 인증서를 받아서 설치 합니다.
+1. 사용자가 위 단계에서 만든 URL을 방문 합니다.
 
-이제 앱이 장치에 설치됩니다. 앱을 찾으하려면 시작 **** 메뉴를 열고 **** 모든 앱 단추를 선택하여 앱을 찾습니다.
+이제 앱이 장치에 설치 됩니다. 앱을 찾으려면 **시작 메뉴** 를 열고 **모든 앱** 단추를 선택 하 여 앱을 찾습니다.
 
-- 앱 설치 관리자 설치 방법 문제 해결에 대한 자세한 도움말은 앱 설치 관리자 [문제 해결을 방문하세요.](https://docs.microsoft.com/windows/msix/app-installer/troubleshoot-appinstaller-issues)
+- 앱 설치 관리자 설치 방법 문제를 해결 하는 방법에 대 한 자세한 내용은 [앱 설치 관리자 문제 해결](https://docs.microsoft.com/windows/msix/app-installer/troubleshoot-appinstaller-issues)을 참조 하세요.
 
 > [!NOTE]
-> 업데이트 프로세스 중 UI는 지원되지 않습니다. 따라서 이 페이지의 ShowPrompt 옵션 및 관련 옵션은 지원되지 않습니다. [](https://docs.microsoft.com/windows/msix/app-installer/update-settings)
+> 업데이트 프로세스 중에 UI가 지원 되지 않습니다. 따라서 [이 페이지](https://docs.microsoft.com/windows/msix/app-installer/update-settings) 의 showprompt 옵션과 관련 옵션은 지원 되지 않습니다.
 
-## 샘플 앱
+## <a name="sample-apps"></a>샘플 앱
 
-일부 샘플 앱에서 앱 설치 관리자를 시도하려면 사용 가능한 샘플 중 일부를 확인하세요.
+몇 가지 샘플 앱을 사용 하 여 앱 설치 관리자를 사용 하려면 사용 가능한 샘플을 확인 하세요.
 
 - [MRTK 예제 허브](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html)
-- [표면](https://docs.microsoft.com/windows/mixed-reality/develop/unity/sampleapp-surfaces)
+- [평면](https://docs.microsoft.com/windows/mixed-reality/develop/unity/sampleapp-surfaces)
 - [테스트에 사용할 수 있는 UWP 샘플 앱](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples)

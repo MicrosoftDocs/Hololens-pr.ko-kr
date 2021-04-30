@@ -1,6 +1,6 @@
 ---
-title: 배포 가이드 - Dynamics 365 가이드를 통해 회사에서 연결된 HoloLens 2 - 유지 관리
-description: Dynamics 365 가이드를 통해 회사 연결 네트워크를 통해 HoloLens 2 장치를 유지 관리하는 방법을 알아보세요.
+title: 배포 가이드 – Dynamics 365를 사용 하 여 회사에 연결 된 HoloLens 2 가이드-유지 관리
+description: Dynamics 365 가이드를 사용 하 여 회사에 연결 된 네트워크를 통해 HoloLens 2 장치를 유지 관리 하는 방법을 알아봅니다.
 keywords: HoloLens, 관리, 회사 연결, Dynamics 365 가이드, AAD, Azure AD, MDM, 모바일 장치 관리
 author: joyjaz
 ms.author: v-jjaswinski
@@ -15,67 +15,67 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: f231e65e17ab053e34e7174e1ed7ff6e7a0a56b8
-ms.sourcegitcommit: d7c86ccad7be32f7223d4b801083798454fda740
+ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "11448598"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "108309501"
 ---
-# <a name="maintain---corporate-connected-guide"></a>유지 관리 - 회사 연결 가이드
+# <a name="maintain---corporate-connected-guide"></a>유지 관리-회사에 연결 된 가이드
 
 ## <a name="update-hololens"></a>HoloLens 업데이트
 
-Microsoft는 장치 그룹에 업데이트를 배포하고 업데이트 설치를 위해 유지 관리 기간을 정의하는 기능 같은 추가 Windows 업데이트 중심 관리 기능을 IT 관리자에게 제공하는 비즈니스용 Windows 업데이트를 설계했습니다.
+Microsoft는 IT 관리자에 게 장치 그룹에 업데이트를 배포 하 고 업데이트를 설치 하기 위한 유지 관리 기간을 정의 하는 기능과 같은 추가 Windows 업데이트 중심 관리 기능을 제공 하도록 Windows 업데이트 설계 되었습니다.
 
-인기 있는 업데이트 관리 방법 중 하나는 기능 지연을 30일로 연기하는 것입니다. 이를 통해 관리자는 새 기능을 업데이트하고 미리 보고, 먼저 지식을 얻고 지원 센터에 새로운 변경 내용을 알릴 수 있습니다.
+업데이트를 관리 하는 널리 사용 되는 방법 중 하나는 30 일간의 기능 지연입니다. 이를 통해 관리자는 새로운 기능을 업데이트 하 고 미리 볼 수 있으며, 처음에는 지식을 얻고 새로운 변경 사항을 지원 센터에 알립니다.
 
-예정된 일, 예약된 시간 및 장치에서 사용 시간을 설정하는 [등 HoloLens](https://docs.microsoft.com/hololens/hololens-updates)업데이트를 관리하는 방법을 알아보고, 작업 시간 외에서 업데이트됩니다.
+예약 된 날짜, 예약 된 시간 및 장치의 활성 시간 설정을 포함 하 여 [HoloLens 업데이트를 관리](https://docs.microsoft.com/hololens/hololens-updates)하는 방법을 알아보고 업무 외 시간에 업데이트 합니다.
 
-## <a name="how-to-update-dynamics-365-guides-and-other-store-apps"></a>Dynamics 365 가이드(및 기타 스토어 앱)를 업데이트하는 방법
+## <a name="how-to-update-dynamics-365-guides-and-other-store-apps"></a>Dynamics 365 가이드 및 기타 스토어 앱을 업데이트 하는 방법
 
-Dynamics 365 가이드는 In-Box 앱으로, Microsoft Store 앱을 통해 업데이트할 수 있습니다. Microsoft Store를 통해 다운로드되는 모든 앱의 경우 [Microsoft Store](https://docs.microsoft.com/hololens/holographic-store-apps#update-apps) 앱 자체를 통해 수동으로 업데이트할 수 있습니다.
+Dynamics 365 가이드는 In-Box 앱 이며 Microsoft Store 앱을 통해 업데이트할 수 있습니다. Microsoft Store을 통해 다운로드 되는 모든 앱의 경우 Microsoft Store 앱 자체를 [통해 수동으로 업데이트할](https://docs.microsoft.com/hololens/holographic-store-apps#update-apps) 수 있습니다.
 
-## <a name="how-to-update-lob-apps"></a>LOB 앱을 업데이트하는 방법
+## <a name="how-to-update-lob-apps"></a>LOB 앱을 업데이트 하는 방법
 
-LOB 앱은 Intune에 추가된 방식으로 업데이트할 수 있습니다. 더 높은 버전 번호의 새 앱을 기존 앱 구성에 업로드하여 Intune에서 앱을 업데이트할 수 있습니다. 장치가 Intune에 동기화하면 최신 앱 버전이 있으며 최신 앱이 다운로드된 후 이전 앱을 대체합니다.
+LOB 앱은 Intune에 추가 된 것과 동일한 방식으로 업데이트할 수 있습니다. 더 높은 버전 번호의 새 앱을 기존 앱 구성에 업로드 하 여 Intune에서 앱을 업데이트할 수 있습니다. 장치가 Intune에 동기화 되 면 최신 앱 버전이 있고 최신 앱이 다운로드 되 고 이전 앱을 교체 하는 것을 확인할 수 있습니다.
 
-1. 새 앱을 업로드하려면 [MEM 포털](https://endpoint.microsoft.com/#home)앱  ->  **** -> 모든 **앱**  ->  *TheNameOfYourApp 속성으로*  ->  **이동합니다.**
-2. 앱 정보 옆에 있는 편집을 **선택합니다.**
-3. 업데이트할 파일 &quot; 선택의 값으로 &quot; 파일을 선택합니다.
-4. 여기에서 상황에 맞는 메뉴를 사용하여 파일 탐색기를 열고 최신 버전의 LOB 앱을 업로드합니다. 종속성은 필요한 경우 포함해야 합니다.
+1. 최신 앱을 업로드 하려면 [메모리 포털](https://endpoint.microsoft.com/#home)  ->  **앱** -모든 **앱**>  ->  *TheNameOfYourApp*  ->  **속성** 으로 이동 합니다.
+2. 앱 정보 옆에서 편집을 선택 **합니다.**
+3. &quot;업데이트할 파일 선택 값에 대해 &quot; 파일을 선택 합니다.
+4. 여기에서 상황에 맞는 메뉴를 사용 하 여 파일 탐색기를 열고 최신 버전의 LOB 앱을 업로드 합니다. 필요에 따라 종속성을 포함 해야 합니다.
 
-자세한 내용은 [다음을 참조하세요. HoloLens용 Intune 앱 배포](https://docs.microsoft.com/hololens/app-deploy-intune)
+자세히 보기: [HoloLens 용 Intune 앱 배포](https://docs.microsoft.com/hololens/app-deploy-intune)
 
 ## <a name="development-plan"></a>개발 계획
 
-장치가 성공적으로 등록되면 이제 장치에 더 많은 LOB 앱을 배포할 준비가 완료되었습니다. 이 가이드의 기간 동안 샘플 앱을 사용하지만 조직의 요구에 따라 구축된 사용자 지정 앱을 사용할 가능성이 더 높습니다.
+장치를 성공적으로 등록 하면 이제 장치에 더 많은 LOB 앱을 배포할 준비가 되었습니다. 이 가이드의 기간 동안 샘플 앱을 사용 하지만 조직의 요구에 맞게 빌드된 사용자 지정 앱을 사용 하려고 할 가능성이 높습니다.
 
-LOB 앱이 이미 있는 경우 [MDM을](https://docs.microsoft.com/hololens/app-deploy-intune)통해 앱을 배포할 준비가 된 것입니다. 다른 방법을 원할 경우 [HoloLens 2의](https://docs.microsoft.com/hololens/app-deploy-overview) 응용 프로그램 배포 개요를 검토하여 장치에 LOB 앱을 배포하는 더 많은 방법을 알아보하세요.
+LOB 앱이 이미 있는 경우 [MDM을 통해 앱을 배포할](https://docs.microsoft.com/hololens/app-deploy-intune)준비가 된 것입니다. 다른 방법을 선호 하는 경우 [HoloLens 2에 대 한 응용 프로그램 배포 개요](https://docs.microsoft.com/hololens/app-deploy-overview) 를 검토 하 여 장치에 LOB 앱을 배포 하는 방법에 대 한 자세한 방법을 알아보세요.
 
-아직 LOB 앱을 만들지 않았거나 아직 만드는 중이면 혼합 현실 개발 docs를 [](https://docs.microsoft.com/windows/mixed-reality/design/design) 검토하여 혼합 현실 개발을 시작하여 디자인 및 프로토타이핑을 시작하거나 혼합 현실 개발을 시작하기 위한 핵심 개념을 배워야 [합니다.](https://docs.microsoft.com/windows/mixed-reality/discover/get-started-with-mr)
+사용자 고유의 LOB 앱을 만들거나 아직 생성 중인 경우에는 혼합 현실 개발 문서를 검토 하 여 혼합 현실 개발을 시작 하기 위한 핵심 개념을 [설계 하 고 프로토타입](https://docs.microsoft.com/windows/mixed-reality/design/design) 하거나 학습을 시작 [합니다.](https://docs.microsoft.com/windows/mixed-reality/discover/get-started-with-mr)
 
 ## <a name="support-plan"></a>지원 플랜
 
-지원 계획은 매우 중요한 일입니다. HoloLens 장치에서 등록 프로세스 문제를 해결하고 조직 내에서 HoloLens 디바이스를 일반적으로 사용하는 방법을 교육한 사람이나 그룹이 있는 것이 유용합니다. 사용자가 문제를 보다 빠르게 해결하도록 허용하기 위해 에스컬레이터 프로세스는 다음 순서와 유사한 방식으로 처리하는 것이 있습니다.
+지원 플랜은 매우 좋은 일입니다. 사용자 또는 그룹이 HoloLens 장치에서 등록 프로세스의 문제 해결에 대해 학습 하 고 조직 내 HoloLens 장치를 일반적으로 사용 하는 것이 유용 합니다. 사용자가 문제를 보다 빠르게 해결할 수 있도록 하기 위해 에스컬레이션 프로세스를 다음과 같은 순서로 처리 하는 것이 좋습니다.
 
-1. 지원 센터
+1. 지원 센터.
 2. HoloLens 전문가 팀
-3. [HoloLens Docs](https://docs.microsoft.com/hololens/)  /  [HoloLens 문제 해결 Docs](https://docs.microsoft.com/hololens/hololens-troubleshooting)
-4. [고객 지원](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f)
+3. [HoloLens 문서](https://docs.microsoft.com/hololens/)  /  [HoloLens 문제 해결 문서](https://docs.microsoft.com/hololens/hololens-troubleshooting)
+4. [지원 문의](https://support.serviceshub.microsoft.com/supportforbusiness/create?sapId=e9391227-fa6d-927b-0fff-f96288631b8f)
 
-## <a name="device-management"></a>장치 관리
+## <a name="device-management"></a>디바이스 관리
 
-이 가이드에서는 MDM(모바일 장치 관리)을 설정하는 데 대해 설명하고 일부 장치 구성을 설정하고 인증서 및 프록시와 관련한 액세스가 허용되는 Wi-Fi 사용했습니다. 그러나 MDM을 사용하여 CSP 및 정책을 통해 장치 제한을 적용할 수도 있습니다.
+이 가이드에서는 MDM (모바일 장치 관리)을 설정 하는 방법에 대해 설명 하 고,이를 사용 하 여 일부 장치 구성을 설정 하 고, Wi-Fi 인증서 및 프록시를 기준으로 액세스를 허용 하는 설정을 적용 합니다. 그러나 MDM은 Csp 및 정책을 통해 장치 제한을 적용 하는 데 사용할 수도 있습니다.
 
-대부분의 경우 디바이스에 연결 제한이 있을 수 있습니다(예: Bluetooth, VPN, USB 또는 카메라 또는 마이크에 대한 액세스 끄기). 이러한 관심사 중 한 가지가 있는 경우 일반적인 장치 제한 페이지를 [읽어보는 것이 좋습니다.](https://docs.microsoft.com/hololens/hololens-common-device-restrictions)
+대부분의 경우 장치는 Bluetooth, VPN, USB 등의 연결 제한이 있거나 카메라나 마이크에 대 한 액세스를 해제할 수 있습니다. 이러한 관심사가 있으면 [일반적인 장치 제한 페이지](https://docs.microsoft.com/hololens/hololens-common-device-restrictions)를 참조 하는 것이 좋습니다.
 
-사용할 수 있는 기타 더 복잡한 장치 제한이 있습니다. 예:
+사용할 수 있는 기타 복잡 한 장치 제한이 있습니다. 예:
 
-- [SettingsPageVisibility를](https://docs.microsoft.com/hololens/settings-uri-list)사용하여 설정 앱에서 볼 수 있는 페이지를 제한하여 사용자가 설정 연결을 변경하는 등 조정해야 하는 설정에만 액세스할 Wi-Fi 있습니다.
-- [키오스크 모드를 사용하여](https://docs.microsoft.com/hololens/hololens-kiosk) 디바이스의 사용자에게 표시되는 UI를 제한합니다. 키오스크를 설정하여 단일 앱 또는 사용자 지정 시작 페이지가 있는 여러 앱을 표시하는 데 사용할 수 있습니다. 키오스크는 사용자마다 다른 환경을 제공 할 수도 있습니다.
-- 특정 앱 또는 프로세스가 완전히 시작되지 못하도록 [하는 WDAC(Windows](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac) 응용 프로그램 제어)입니다.
+- [Settingspagevisibility](https://docs.microsoft.com/hololens/settings-uri-list)를 사용 하 여 설정 앱에서 볼 수 있는 페이지를 제한 하 여 사용자가 조정 해야 하는 설정 (예: Wi-Fi 연결 변경)만 액세스할 수 있도록 합니다.
+- [키오스크 모드](https://docs.microsoft.com/hololens/hololens-kiosk) 를 사용 하 여 장치에서 사용자에 게 표시 되는 UI를 제한할 수 있습니다. 단일 앱 또는 사용자 지정 시작 페이지를 사용 하 여 여러 앱을 표시 하도록 키오스크를 설정할 수 있습니다. 키오스크는 다른 사용자에 게 다른 환경을 제공할 수도 있습니다.
+- 특정 앱 또는 프로세스가 완전히 시작 되지 않도록 하는 [Windows 응용 프로그램 제어 (WDAC)](https://docs.microsoft.com/hololens/windows-defender-application-control-wdac)
 
-장치 관리 또는 장치 제한의 추가 방법에 대해 알아보고자 하는 경우 다음 단계를 진행하고 장치 관리 개요 [를 읽어 하세요.](https://docs.microsoft.com/hololens/hololens-csp-policy-overview)
+장치 관리 또는 장치 제한의 추가 방법에 대해 알아보려면 다음 단계를 수행 하 고 [장치 관리 개요](https://docs.microsoft.com/hololens/hololens-csp-policy-overview)를 참조 하세요.
 
 
 
