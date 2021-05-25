@@ -1,8 +1,8 @@
 ---
-title: HoloLens 다시 시작, 다시 설정 또는 복구 1
+title: HoloLens 1 다시 시작, 다시 설정 또는 복구
 ms.reviewer: Keep up to date on the basic and advanced instructions for rebooting or resetting your HoloLens mixed reality device.
-description: Windows 장치 복구 도구를 사용 하 여 이미지를 플래시 하는 첫 번째 Gen로 이미지를 만드는 방법입니다.
-keywords: 방법, 재부팅, 다시 설정, 복구, 하드 리셋, 소프트 리셋, 전원 주기, HoloLens, 종료, wdrt, windows 장치 복구 도구
+description: Windows Device Recovery 도구를 사용하여 이미지를 HoloLens 1세대로 플래시하는 방법입니다.
+keywords: 방법, 다시 부팅, 다시 설정, 복구, 하드 재설정, 소프트 재설정, 전원 주기, HoloLens, 종료, wdrt, Windows 디바이스 복구 도구
 ms.prod: hololens
 ms.sitesec: library
 author: evmill
@@ -16,37 +16,37 @@ ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: f50a885f6cc82256d146d7f4914aca934e81c0c0
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: f855aa84a347edc85e5b9f02458721778eb2515a
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309392"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397694"
 ---
-# <a name="restart-reset-or-recover-hololens-1st-gen"></a>HoloLens 다시 시작, 다시 설정 또는 복구 (첫 번째 Gen)
+# <a name="restart-reset-or-recover-hololens-1st-gen"></a>HoloLens 다시 시작, 다시 설정 또는 복구(1세대)
 
-HoloLens에 문제가 발생 하는 경우 다시 시작 하거나 다시 설정 하거나 장치 복구를 사용 하 여 장치를 경감 하기 위해 할 수 있습니다. 이 문서에서는 권장 되는 복구 단계를 순서 대로 안내 합니다.
+HoloLens에 문제가 발생하는 경우 다시 시작하거나 다시 설정하거나 디바이스 복구를 사용하여 디바이스를 리플래시하는 것이 좋습니다. 이 문서에서는 권장되는 복구 단계를 순서대로 안내합니다.
 
-HoloLens 2를 복구 하려는 경우 해당 프로세스가 서로 다르므로 [hololens 2 복구](https://docs.microsoft.com/hololens/hololens-recovery)를 참조 하세요.
+HoloLens 2 복구하려는 경우 프로세스가 다르므로 HoloLens 2 [복구를](https://docs.microsoft.com/hololens/hololens-recovery)참조하세요.
 
 > [!NOTE]
-> 이 문서에서는 HoloLens 장치 및 소프트웨어에 대해 집중적으로 설명 합니다. Holograms 적절 하지 않은 경우 홀로그램 품질을 개선 하는 요소에 대 한 자세한 내용은 **[HoloLens 환경 고려 사항](hololens-environment-considerations.md)** 을 참조 하세요.
+> 이 문서에서는 HoloLens 디바이스 및 소프트웨어에 중점을 둡니다. 홀로그램이 제대로 표시되지 않는 경우 홀로그램 품질을 향상시키는 요인에 대한 자세한 내용은 **[HoloLens 환경 고려 사항을](hololens-environment-considerations.md)** 참조하세요.
 
 ## <a name="restart"></a>재시작
 
-### <a name="do-a-safe-restart-by-using-cortana"></a>Cortana를 사용 하 여 안전 하 게 다시 시작
+### <a name="do-a-safe-restart-by-using-cortana"></a>Cortana를 사용하여 안전하게 다시 시작
 
-HoloLens를 가장 안전 하 게 다시 시작 하는 방법은 Cortana를 사용 하는 것입니다 .이는 일반적으로 HoloLens에서 문제가 발생할 때 가장 먼저 시도할 수 있는 작업입니다.
+HoloLens를 다시 시작하는 가장 안전한 방법은 일반적으로 HoloLens에 문제가 발생할 때 가장 먼저 시도하는 Cortana를 사용하는 것입니다.
 
 > [!NOTE] 
-> Cortana는 모든 장치에서 사용할 수 없습니다.
-> - Cortana는 모든 HoloLens (첫 번째 Gen) 장치에서 사용할 수 있습니다. 
-> - Cortana는 Windows Holograpic 버전 2004 업데이트 이전의 빌드에 대 한 HoloLens 2 장치에서 사용할 수 있습니다.
+> Cortana는 일부 디바이스에서 사용할 수 없습니다.
+> - Cortana는 모든 HoloLens(1세대) 디바이스에서 사용할 수 있습니다. 
+> - Cortana는 Windows Holograpic 버전 2004 업데이트 이전 빌드의 HoloLens 2 디바이스에서 사용할 수 있습니다.
 
 1. HoloLens를 켭니다.
-1. 사용자가 로그인 되어 있고 장치에서 잠금을 해제 하기 위해 대기 하 고 있지 않은지 확인 합니다.
-2. "안녕하세요 Cortana, restart" 또는 "안녕하세요 Cortana, restart" 라고 표시 됩니다.
-3. Cortana가 응답 하 고 확인 하 라는 메시지를 표시 합니다. 사운드가 질문 후에 재생 될 때까지 기다렸다가 "예"를 클릭 합니다. 장치가 다시 시작 됩니다.
+1. 사용자가 로그인되어 있고 디바이스가 암호 잠금을 해제할 때까지 기다리고 있지 않은지 확인합니다.
+2. "Hey Cortana, 다시 부팅" 또는 "Hey Cortana, 다시 시작"이라고 말합니다.
+3. Cortana가 응답하고 확인하라는 메시지를 표시합니다. 질문 후에 소리가 재생되기를 기다린 다음, "예"라고 말합니다. 디바이스가 다시 시작됩니다.
 
 ### <a name="use-the-power-button-to-do-a-safe-restart"></a>전원 단추를 사용 하 여 안전 하 게 다시 시작
 
@@ -73,27 +73,27 @@ HoloLens를 가장 안전 하 게 다시 시작 하는 방법은 Cortana를 사�
 > [!WARNING]
 > 이는 잠재적으로 유해한 방법 이며 이전에 언급 한 메서드가 작동 하지 않은 경우에만 사용 해야 합니다.
 
-1. 최소 10 초 동안 **전원** 단추를 길게 누릅니다.
-   - 단추를 10 초 이상 길게 유지 해도 됩니다.
-   - 모든 LED 작업을 무시 하는 것이 안전 합니다.
-1. 단추를 눌렀다가 2-3 초 동안 기다립니다.
-1. 1 초 동안 **전원** 단추를 길게 누릅니다.
-1. 문제가 여전히 발생 하는 경우 모든 배터리 표시기가 페이드 아웃 되 고 화면이 holograms 표시를 중지 하기 전까지 4 초간 **전원** 단추를 누릅니다. 1 분 정도 기다린 다음 **전원** 단추를 다시 눌러 장치를 켭니다.
+1. **전원** 단추를 10초 이상 길게 누릅니다.
+   - 단추를 10초 넘게 유지해도 괜찮습니다.
+   - LED 작업은 무시해도 안전합니다.
+1. 단추를 해제하고 2-3초 동안 기다립니다.
+1. **전원** 단추를 1초 동안 길게 누릅니다.
+1. 여전히 문제가 있는 경우 모든 배터리 표시기가 페이드 아웃되고 화면이 홀로그램 표시를 중지할 때까지 4초 동안 **전원** 단추를 누릅니다. 1분 정도 기다린 다음 **전원** 단추를 다시 눌러 디바이스를 켭니다.
 
 ## <a name="reset-to-factory-settings"></a>공장 설정으로 다시 설정
 
 > [!NOTE]
-> 배터리를 다시 설정 하려면 적어도 40% 요금이 청구 되어야 합니다.
+> 배터리를 다시 설정하려면 40% 이상의 충전이 필요합니다.
 
-HoloLens에 여전히 문제가 있는 경우 공장 상태로 다시 설정 해 보세요. 이 단계에서는 설치 된 Windows Holographic 소프트웨어의 버전을 유지 하 고 다른 모든 항목을 공장 설정으로 반환 합니다.
+HoloLens에 여전히 문제가 있는 경우 공장 상태로 다시 설정해 보세요. 이 단계에서는 설치된 Windows Holographic 소프트웨어의 버전을 유지하고 다른 모든 것을 공장 설정으로 반환합니다.
 
 >[!WARNING]
-> 장치를 다시 설정 하는 경우 TPM 다시 설정 정보를 포함 하 여 모든 개인 데이터, 앱 및 설정이 지워집니다. 다시 설정 하면 설치 된 최신 버전의 Windows Holographic 설치 됩니다. 모든 초기화 단계 (보정, Wi-fi에 연결, 사용자 계정 만들기, 앱 다운로드 등)를 다시 실행 해야 합니다.
+> 디바이스를 다시 설정하면 TPM 재설정 정보를 포함하여 모든 개인 데이터, 앱 및 설정이 지워집니다. 다시 설정하면 설치된 최신 버전의 Windows Holographic만 설치됩니다. 모든 초기화 단계를 다시 수행해야 합니다(보정, Wi-Fi에 연결, 사용자 계정 만들기, 앱 다운로드 등).
 
-1. 설정 앱을 열고 **업데이트**  >  **복구** 를 선택 합니다.
-1. **장치 다시 설정** 옵션을 선택 하 고 확인 메시지를 읽습니다.
-1. 다시 설정을 확인 합니다. 장치가 다시 시작 되 고 회전 하는 기어 집합과 진행률 표시줄이 표시 됩니다.
-1. 이 프로세스가 완료 될 때까지 30 분 정도 기다립니다. 완료 되 면 장치가 "기본 제공" 환경으로 다시 시작 됩니다.
+1. 설정 앱을 열고 **복구 업데이트를**  >  선택합니다.
+1. 디바이스 **다시 설정** 옵션을 선택하고 확인 메시지를 읽습니다.
+1. 다시 설정을 확인합니다. 디바이스가 다시 시작되고 회전 기어 세트와 진행률 표시줄이 표시됩니다.
+1. 이 프로세스가 완료되기까지 약 30분 정도 기다립니다. 완료되면 디바이스가 "바로" 환경으로 다시 시작됩니다.
 
 ## <a name="reinstall-the-operating-system"></a>운영 체제 다시 설치
 
@@ -121,8 +121,8 @@ HoloLens (첫 번째 gen)가 자동으로 검색 되지 않는 경우 **내 장�
 
 1. 전원에서 장치를 분리 합니다.
 1. 장치가 켜져 있으면 완전히 꺼질 때까지 **전원** 단추를 누릅니다.
-2. **볼륨 위로** 단추를 누른 상태에서 **전원** 단추를 잠시 누릅니다. 장치를 시작 하 고 중간 LED 라이트만 표시 해야 합니다.
-3. 장치를 PC에 연결 합니다.
-4. Windows 장치 복구 도구를 엽니다.
-5. **장치를 검색 하지 못했습니다** .를 선택 하 고 **HoloLens** 를 선택 합니다. 
-6. 지침에 따라 장치를 복구 합니다.
+2. 볼륨 **위로** 단추를 누르고 **전원** 단추를 잠깐 탭합니다. 디바이스가 시작되고 중간 LED만 표시되어야 합니다.
+3. 디바이스를 PC에 연결합니다.
+4. Windows Device Recovery 도구를 엽니다.
+5. **내 디바이스가 검색되지 않음을** 선택한 **다음, HoloLens 를** 선택합니다. 
+6. 지침에 따라 디바이스를 복구합니다.
