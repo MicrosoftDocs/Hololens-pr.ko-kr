@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3041a31e6a4f8b51385fa02dfddc21d56993721d
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: ee6c24f65e5990f1e84a71d86b24dd782cf9f4cc
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309775"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110397208"
 ---
 # <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>배포 가이드-Dynamics 365의 회사 연결 HoloLens 2 가이드-개요
 
@@ -27,7 +27,7 @@ ms.locfileid: "108309775"
 
 이 가이드에서는 기존 장치 관리에 장치를 등록 하 고, 필요에 따라 라이선스를 적용 하 고, 최종 사용자가 장치 설정 후 사용자 지정 lob (기간 업무) 앱을 사용할 365 수 있는지 확인 하는 방법에 대해 설명 합니다. 
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>필수 구성 요소
 
 다음 인프라는 이미 준비 되어 있어야 합니다.
 - Wi-Fi
@@ -47,33 +47,35 @@ ms.locfileid: "108309775"
 - Azure AD 계정
 - Dynamics 365 가이드 응용 프로그램 PC 및 HoloLens
 - Dynamics 365 가이드 구독
-    - Microsoft Dataverse (포함)
-    - Power Apps (포함)
+    - Microsoft Dataverse(포함)
+    - Power Apps(포함)
 - Power BI Desktop
 - 네트워크 연결
 
-![Corp 연결 네트워크 다이어그램](./images/corpconnected-diagHL2-guides.png)
+[![회사 연결 네트워크 다이어그램, 1단계 ](./images/deployment-guides-revised-scenario-b-01-1.png)](./images/deployment-guides-revised-scenario-b-01-1.png#lightbox)
 
-## <a name="stages-of-deployment"></a>배포 단계
+[![회사 연결 네트워크 다이어그램, 2단계 ](./images/deployment-guides-revised-scenario-b-02-1.png)](./images/deployment-guides-revised-scenario-b-02-1.png#lightbox)
+
+## <a name="in-this-guide-you-will"></a>이 가이드에서는 다음을 수행합니다.
 ### <a name="prepare"></a>준비
 > [!div class="checklist"]
->- [HoloLens 2 장치에 대 한 인프라 essentials에 대해 알아봅니다.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
->- [Azure AD에 대 한 자세한 정보를 확인 하 고 없는 경우 하나를 설정 합니다.](hololens2-corp-connected-prepare.md#azure-active-directory)
->- [Id 관리 및 Azure AD 계정을 최적으로 설정 하는 방법에 대해 알아봅니다.](hololens2-corp-connected-prepare.md#identity-management)
->- [MDM에 대해 자세히 알아보고 아직 준비 하지 않은 경우 Intune을 사용 하 여 설정 합니다.](hololens2-corp-connected-prepare.md#mobile-device-management)
->- [인증서 기반 Wi-fi에 익숙해져야 합니다.](hololens2-corp-connected-prepare.md#certificates)
->- [프록시를 숙지 합니다.](hololens2-corp-connected-prepare.md#proxy)
->- [Lob (기간 업무) 앱을 사용 하는 방법을 이해 합니다.](hololens2-corp-connected-prepare.md#line-of-business-apps)
->- [조직에서 가이드를 사용할 수 있는 방법에 대해 자세히 알아보세요.](hololens2-corp-connected-prepare.md#guides-playbook)
+>- [HoloLens 2 디바이스의 인프라 필수 요소에 대해 알아봅니다.](hololens2-corp-connected-prepare.md#infrastructure-essentials)
+>- [Azure AD에 대해 자세히 알아보고 없는 경우 설정합니다.](hololens2-corp-connected-prepare.md#azure-active-directory)
+>- [ID 관리 및 Azure AD 계정을 가장 잘 설정하는 방법에 대해 알아봅니다.](hololens2-corp-connected-prepare.md#identity-management)
+>- [MDM에 대해 자세히 알아보고 준비되지 않은 경우 Intune으로 설정합니다.](hololens2-corp-connected-prepare.md#mobile-device-management)
+>- [인증서 기반 Wi-Fi를 숙지합니다.](hololens2-corp-connected-prepare.md#certificates)
+>- [프록시를 숙지합니다.](hololens2-corp-connected-prepare.md#proxy)
+>- [사업장 앱을 사용하는 방법을 이해합니다.](hololens2-corp-connected-prepare.md#line-of-business-apps)
+>- [조직에 대한 가이드를 사용하는 방법에 대해 자세히 알아보세요.](hololens2-corp-connected-prepare.md#guides-playbook)
 ### <a name="configure"></a>구성
 > [!div class="checklist"]
 >- [사용자 및 그룹을 만드는 방법](hololens2-corp-connected-configure.md#azure-users-and-groups)
->- [자동 등록을 설정 하는 방법](hololens2-corp-connected-configure.md#auto-enrollment-on-hololens-2)
->- [회사 Wi-Fi 연결에 대 한 Wi-Fi 인증서 및 프로필을 설정 하는 방법입니다.](hololens2-corp-connected-configure.md#corporate-wi-fi-connectivity)
->- [LOB (기간 업무) 앱 패키지를 업로드 하 고 할당 합니다.](hololens2-corp-connected-configure.md#app-deployment)
->- [Dynamics 365 가이드를 설정 합니다.](hololens2-corp-connected-configure.md#setup-guides-application-licenses-dataverse-and-authoring)
->- [키오스크 모드를 구성 하는 방법 (옵션)](hololens2-corp-connected-configure.md#optional-kiosk-mode)
->- [WDAC를 구성 하는 방법 (옵션).](hololens2-corp-connected-configure.md#optional-wdac)
+>- [자동 등록을 설정하는 방법](hololens2-corp-connected-configure.md#auto-enrollment-on-hololens-2)
+>- [회사 Wi-Fi 연결에 대한 Wi-Fi 인증서 및 프로필을 설정하는 방법입니다.](hololens2-corp-connected-configure.md#corporate-wi-fi-connectivity)
+>- [LOB(LOB) 앱 패키지를 업로드하고 할당합니다.](hololens2-corp-connected-configure.md#app-deployment)
+>- [Dynamics 365 가이드를 설치합니다.](hololens2-corp-connected-configure.md#setup-guides-application-licenses-dataverse-and-authoring)
+>- [키오스크 모드를 구성하는 방법(선택 사항).](hololens2-corp-connected-configure.md#optional-kiosk-mode)
+>- [WDAC를 구성하는 방법(선택 사항).](hololens2-corp-connected-configure.md#optional-wdac)
 ### <a name="deploy"></a>배포
 > [!div class="checklist"]
 >-  [장치 및 MDM을 통해 등록의 유효성을 검사 합니다.](hololens2-corp-connected-deploy.md#enrollment-validation)
