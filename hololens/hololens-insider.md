@@ -1,6 +1,6 @@
 ---
-title: Microsoft HoloLens 대한 참가자 미리 보기
-description: 참가자 빌드를 시작하고 HoloLens의 다음 주요 운영 체제 업데이트에 대한 중요한 피드백을 제공하는 방법을 알아봅니다.
+title: Microsoft HoloLens에 대한 참가자 미리 보기
+description: Insider 빌드를 시작 하 고 다음 주요 HoloLens 운영 체제 업데이트에 대 한 귀중 한 피드백을 제공 하는 방법에 대해 알아봅니다.
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -16,66 +16,83 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8545b5f23dc81c194b68ea8b40feb83e525dfdf7
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: a4949ab68121cb772fdb8a62411ed70868a6ccb6
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397824"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924369"
 ---
-# <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens 대한 참가자 미리 보기
+# <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens에 대한 참가자 미리 보기
 
-HoloLens에 대한 최신 Insider Preview 빌드를 시작합니다. HoloLens의 다음 주요 운영 체제 업데이트에 대한 중요한 피드백을 [간단하게 시작하고](hololens-insider.md#start-receiving-insider-builds) 제공할 수 있습니다.
+HoloLens의 최신 Insider Preview 빌드를 시작 합니다. 간단 하 게 [시작](hololens-insider.md#start-receiving-insider-builds) 하 고 HoloLens의 다음 주요 운영 체제 업데이트에 대 한 유용한 피드백을 제공할 수 있습니다.
 
 ## <a name="windows-insider-release-notes"></a>Windows 참가자 릴리스 정보
 
-새로운 기능을 Windows 참가자로 다시 플라이팅하기 시작하게 되어 기쁘게요. 새 빌드는 최신 업데이트를 위해 개발 및 베타 채널로 플라이팅됩니다. Windows 참가자 빌드에 더 많은 기능과 업데이트를 추가함에 따라 이 페이지를 계속 업데이트할 예정입니다. 이러한 업데이트를 현실에 혼합할 준비가 되어 있습니다. 
+Windows 참가자에 게 새 기능을 다시 시작 하는 것이 좋습니다. 새 빌드는 최신 업데이트에 대 한 개발 및 베타 채널에 대 한 플 라이팅 받게 됩니다. Windows 참가자 빌드에 더 많은 기능과 업데이트를 추가 하는 경우이 페이지를 계속 업데이트 합니다. 이러한 업데이트를 현실에 맞게 혼합할 수 있습니다. 
 
-### <a name="onedrive-for-work-or-school-camera-roll-upload"></a>직장 또는 학교용 OneDrive 카메라 롤 업로드
+### <a name="csp-changes-on-hololens"></a>HoloLens의 CSP 변경 내용
+ 
+- Windows 참가자 빌드, 20348.1403에서 도입 되었습니다.
 
-*빌드 20346.1402에 도입되었습니다.*
+#### <a name="devdetail-csp"></a>DevDetail CSP
 
-고객이 디바이스의 사진 > 카메라 롤 폴더에서 해당 OneDrive for work 또는 school 폴더로 혼합 현실 사진 및 비디오를 자동으로 업로드할 수 있는 새로운 기능을 HoloLens 2 설정 앱에 추가했습니다. 이 기능은 HoloLens 2 [OneDrive 앱 내에서 기능 차이를](holographic-photos-and-videos.md#share-your-mixed-reality-photos-and-videos) 해결합니다. 이 앱은 고객의 개인 Microsoft 계정 자동 Camera Roll 업로드만 지원합니다(직장 또는 학교 계정이 아닌).
+이제 DevDetail CSP는 HoloLens 장치에서 사용 가능한 저장소 공간을 보고 합니다. 이 값은 설정 앱의 저장소 페이지에 표시 된 값과 거의 일치 해야 합니다. 다음은이 정보를 포함 하는 특정 노드입니다.
 
-**작동 방법**
+- ./DevDetail/Ext/Microsoft/FreeStorage (GET 작업에만 해당)
 
-- **설정 > 시스템 > 혼합 현실 카메라** 방문하여 "카메라 업로드"를 사용하도록 설정합니다.
-- 이 기능을 **켜기** 위치로 설정하면 디바이스에 캡처된 혼합 현실 사진 또는 비디오가 자동으로 큐에 대기되어 작업 또는 학교용 OneDrive 계정의 Pictures > Camera Roll 폴더에 업로드됩니다.
-    >[!NOTE]
-    >이 기능을 사용하도록 설정하기 전에 캡처된 사진 및 비디오는 업로드를 위해 큐에 *대기되지 않으며* 수동으로 업로드해야 합니다.
-- 설정 페이지의 상태 메시지에 업로드 보류 중인 파일 수가 표시됩니다(또는 보류 중인 모든 파일이 업로드된 경우 "OneDrive가 최신 상태임").
-- 대역폭에 관심이 있거나 어떤 이유로 든 업로드를 "일시 중지" 하려는 경우 기능을 **Off** 위치로 전환할 수 있습니다. 이 기능을 일시적으로 사용 하지 않도록 설정 하면 카메라 롤 폴더에 새 파일을 추가할 때 업로드 큐가 계속 증가 하지만 기능을 다시 사용 하도록 설정할 때까지 파일이 업로드 되지 않습니다.
-- 최신 파일은 먼저 업로드 됩니다 (마지막에는 마지막으로).
-- OneDrive 계정에 문제가 있는 경우 (예: 암호 변경 후) **지금 수정** 단추가 설정 페이지에 표시 됩니다.
-- 최대 파일 크기는 없지만, 큰 파일을 업로드 하는 데 더 오래 걸립니다 (특히 업로드 대역폭이 제한 된 경우). 대량 파일을 업로드 하는 동안 "일시 중지" 하거나 업로드 기능을 해제 하면 업로드가 즉시 취소 됩니다. 기능을 다시 사용 하도록 설정 하면 업로드가 다시 시작 됩니다. 파일은 손실 되지 않지만 부분 업로드는 무시 됩니다.
+#### <a name="devicestatus-csp"></a>DeviceStatus CSP
 
-**알려진 문제 및 주의 사항**
+이제 DeviceStatus CSP는 HoloLens가 현재 연결 되어 있는 Wifi 네트워크의 SSID와 BSSID도 보고 합니다. 다음은이 정보를 포함 하는 특정 노드입니다.
 
-- 이 설정에는 현재 대역폭 사용량을 기준으로 하는 제한 사항이 기본 제공 되지 않습니다. 다른 시나리오에 대 한 대역폭을 최대화 해야 하는 경우 설정을 수동으로 해제 합니다. 업로드가 일시 중지 되지만이 기능은 새로 추가 된 파일을 카메라 롤에 계속 모니터링 합니다. 계속할 준비가 되 면 업로드를 다시 사용 하도록 설정 합니다.
-- 장치에서 각 사용자 계정에 대해이 기능을 사용 하도록 설정 해야 하며, 현재 장치에 로그인 한 사용자의 파일만 적극적으로 업로드할 수 있습니다.
-- 설정 페이지에서 실시간으로 업로드 횟수를 확인 하는 동안 사진이 나 비디오를 촬영 하는 경우 현재 파일의 업로드가 완료 될 때까지 보류 중인 파일 수를 변경 하지 못할 수 있습니다.
-- 장치가 절전 모드로 전환 되거나 전원이 꺼진 경우 업로드가 일시 중지 됩니다. 보류 중인 업로드가 완료 되었는지 확인 하려면 설정 페이지에서 "OneDrive가 최신 상태"를 읽을 때까지 장치를 적극적으로 사용 하거나 **전원 & 절전 모드** 설정을 조정 합니다.
+- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*Wi-Fi 어댑터의 mac 주소 (*/ssid)
+- Wi-Fi 어댑터/Bssid의./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac 주소*
+
+NetworkIdentifiers (MDM 공급 업체) 예제를 통해 NetworkIdentifiers 쿼리
+
+```xml
+<SyncML>
+<SyncBody>
+    <Get>
+        <CmdID>$CmdID$</CmdID>
+        <Item>
+            <Target>
+            <LocURI>
+                ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers?list=StructData
+            </LocURI>
+            </Target>
+        </Item>
+    </Get>
+    <Final/>
+</SyncBody>
+</SyncML>
+```
+
+### <a name="fixes-and-improvements"></a>수정 사항 및 향상 된 기능:
+
+- [잠긴 파일 다운로드 프롬프트가 없는 장치 포털의 알려진 문제를 수정 했습니다.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
+- [파일 업로드 및 다운로드 시간 제한이 있는 장치 포털의 알려진 문제를 수정 했습니다.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 
 ## <a name="start-receiving-insider-builds"></a>Insider 빌드 수신을 시작 합니다.
 > [!NOTE]
 > 최근에 업데이트 하지 않은 경우 장치를 다시 부팅 하 여 상태를 업데이트 하 고 최신 빌드를 다운로드 하세요.
 > - "장치 다시 부팅" 음성 명령은 제대로 작동 합니다. 
-> - 설정/Windows 참가자 프로그램 다시 시작 단추를 선택할 수도 있습니다.
+> - 설정/Windows 참가자 프로그램에서 다시 시작 단추를 선택할 수도 있습니다.
 >
-> 발생한 백 엔드 버그가 있으므로 다시 추적할 수 있습니다.
+> 사용자가 발생 시킨 백 엔드에 대 한 버그가 있었으며이로 인해 다시 추적할 수 있습니다.
 
-HoloLens 2 디바이스에서 설정 업데이트   >  **& 보안** Windows 참가자 프로그램 이동하여  >   **시작을** 선택합니다. Windows 참가자 등록하는 데 사용한 계정을 연결합니다.
-이제 Windows 참가자가 채널로 전환됩니다. **빠른** 링이 **개발 채널이** **되고, 느린** 링이 **베타 채널** 되고, 릴리스 **미리 보기** 링이 릴리스 미리 **보기 채널** 이 됩니다. 매핑은 다음과 ![ 같습니다. Windows 참가자 채널 ](images/WindowsInsiderChannels.png) 설명에 대한 자세한 내용은 Windows 블로그에서 [Windows 참가자 채널 소개를](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) 참조하세요.
-그런 **다음, Windows의 활성 개발을** **선택하고, 개발 채널** 또는 **베타 채널** 빌드를 받을지 선택하고, 프로그램 용어를 검토합니다.
-확인을 > **지금 다시 시작을** 선택하여 완료합니다. 디바이스가 다시 부팅된 후 설정 > 업데이트 & 보안 > 업데이트 확인으로 이동하여 최신 빌드를 **확인합니다.**
-### <a name="update-error-0x80070490-work-around"></a>업데이트 오류 0x80070490 해결
-Dev 또는 Beta 채널에서 업데이트할 때 업데이트 오류 0x80070490 발생하는 경우 다음과 같은 단기 해결을 시도합니다. 여기에는 참가자 채널을 이동하고, 업데이트를 선택하고, 참가자 채널을 다시 이동하는 작업이 포함됩니다.
-#### <a name="stage-one---release-preview"></a>1단계 - 릴리스 미리 보기
-1.  설정, & 보안 업데이트 Windows 참가자 프로그램 릴리스 미리 **보기 채널을** 선택합니다.
-2.  설정, 업데이트 & 보안, **Windows 업데이트, 업데이트 확인.** 업데이트 후 2단계로 계속 진행합니다.
-#### <a name="stage-two---dev-channel"></a>2단계 - 개발 채널
-1. 설정, & 보안 업데이트, Windows 참가자 프로그램 개발 **채널을** 선택합니다.
-2. 설정, 업데이트 & 보안, **Windows 업데이트, 업데이트 확인.**
+HoloLens 2 장치에서 **설정**  >  **업데이트 & 보안**  >  **Windows 참가자 프로그램** 으로 이동 하 고 **시작** 을 선택 합니다. Windows 참가자로 등록 하는 데 사용한 계정을 연결 합니다.
+이제 Windows 참가자가 채널로 이동 하 고 있습니다. **빠른** 링은 **Dev 채널이** 되 고, **저속** 링은 **베타 채널이** 되며, **릴리스 미리 보기** 링은 **릴리스 미리 보기 채널이** 됩니다. 매핑은 ![ Windows 참가자 채널 설명에 나와 있습니다. ](images/WindowsInsiderChannels.png) 자세한 내용은 windows 블로그에서 Windows [참가자 채널 소개](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) 를 참조 하세요.
+그런 다음 **Windows의 활성 개발** 을 선택 하 고 **개발 채널** 또는 **베타 채널** 빌드를 받을지 여부를 선택한 후 프로그램 용어를 검토 합니다.
+확인을 선택 하 **> 지금 다시 시작** 하 여 완료 합니다. 장치를 다시 부팅 한 후에는 **설정 > 업데이트 & 보안 > 업데이트 확인** 으로 이동 하 여 최신 빌드를 가져옵니다.
+### <a name="update-error-0x80070490-work-around"></a>업데이트 오류 0x80070490 문제 해결
+Dev 또는 Beta 채널에서 업데이트할 때 0x80070490 업데이트 오류가 발생 하는 경우 다음 단기 작업을 수행해 보세요. 여기에는 insider channel을 이동 하 고, 업데이트를 선택한 다음, Insider channel을 다시 이동 하는 작업이 포함 됩니다.
+#### <a name="stage-one---release-preview"></a>1 단계 릴리스 미리 보기
+1.  설정, 업데이트 & 보안, Windows Insider Program, **Release Preview 채널** 을 선택 합니다.
+2.  설정, 업데이트 & 보안, Windows 업데이트 **업데이트 확인**. 업데이트 후 2 단계를 계속 진행 합니다.
+#### <a name="stage-two---dev-channel"></a>2 단계 개발자 채널
+1. 설정, 업데이트 & 보안, Windows 참가자 프로그램, **개발 채널** 을 선택 합니다.
+2. 설정, 업데이트 & 보안, Windows 업데이트 **업데이트 확인**.
 ## <a name="ffu-download-and-flash-directions"></a>FFU 다운로드 및 플래시 방향
 비행 서명 된 ffu로 테스트 하려면 비행 서명 된 ffu를 깜박임 전에 먼저 장치 잠금을 해제 해야 합니다.
 1. PC:
@@ -94,10 +111,10 @@ HoloLens의 Insider 빌드를 사용 하 여 응용 프로그램을 개발 하�
 ## <a name="stop-receiving-insider-builds"></a>Insider 빌드 수신을 중지 합니다.
 더 이상 Windows Holographic의 참가자 빌드를 수신 하지 않으려는 경우 HoloLens가 프로덕션 빌드를 실행 하 고 있을 때 옵트아웃 하거나 고급 복구 도우미를 사용 하 여 장치를 [복구](hololens-recovery.md) 하 여 비-windows Holographic 버전으로 장치를 복구할 수 있습니다.
 > [!CAUTION]
-> 새 미리 보기 빌드를 수동으로 다시 설치 하면 사용자에 게 Insider Preview 빌드에서 등록을 취소 하는 알려진 문제가 있습니다. 그런 다음 디바이스를 수동으로 복구해야 합니다. 영향을 받을지 여부에 대한 자세한 내용은 이 [알려진 문제에](https://docs.microsoft.com/hololens/hololens-known-issues?source=docs#blue-screen-is-shown-after-unenrolling-from-insider-preview-builds-on-a-device-reflashed-with-a-insider-build)대한 자세한 내용을 확인하세요.
-HoloLens에서 프로덕션 빌드를 실행하고 있는지 확인하려면 다음을 수행합니다.
-1. 설정 **> 시스템 > 정보로** 이동하여 빌드 번호를 찾습니다.
-1. [프로덕션 빌드 번호는 릴리스 정보 를 참조하세요.](hololens-release-notes.md)
-참가자 빌드를 옵트아웃하려면 다음을 수행합니다.
-1. 프로덕션 빌드를 실행하는 HoloLens에서 **설정 > 업데이트 & 보안 > Windows 참가자 프로그램** 로 이동하고 참가자 **빌드 중지를** 선택합니다.
-1. 지침에 따라 디바이스를 옵트아웃합니다.
+> 새 미리 보기 빌드를 수동으로 다시 설치 하면 사용자에 게 Insider Preview 빌드에서 등록을 취소 하는 알려진 문제가 있습니다. 이후에는 장치를 수동으로 복구 해야 합니다. 영향을 받는 경우에 대 한 자세한 내용은이 [알려진 문제](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)에 대 한 자세한 내용을 확인 하세요.
+HoloLens가 프로덕션 빌드를 실행 하 고 있는지 확인 하려면 다음을 수행 합니다.
+1. **설정 > 시스템 > 정보** 로 이동 하 여 빌드 번호를 찾습니다.
+1. [프로덕션 빌드 번호에 대 한 릴리스 정보를 참조](hololens-release-notes.md)하세요.
+참가자 빌드를 옵트아웃 (opt out) 하려면 다음을 수행 합니다.
+1. 프로덕션 빌드를 실행 하는 HoloLens에서 **설정 > 업데이트 & 보안 > Windows Insider Program** 로 이동 하 여 **insider build 중지** 를 선택 합니다.
+1. 지침에 따라 장치를 옵트아웃 합니다.

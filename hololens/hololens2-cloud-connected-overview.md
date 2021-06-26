@@ -1,7 +1,7 @@
 ---
-title: 원격 지원에 대 한 클라우드 연결 HoloLens 2 개요
-description: Dynamics 365 원격 지원을 사용 하 여 클라우드 연결 네트워크를 통해 HoloLens 2 장치를 등록 하는 방법을 알아봅니다.
-keywords: HoloLens, 관리, 클라우드 연결, 원격 지원, AAD, Azure AD, MDM, 모바일 장치 관리
+title: Remote Assist 클라우드 연결 HoloLens 2 개요
+description: Dynamics 365 Remote Assist 사용하여 클라우드 연결 네트워크를 통해 HoloLens 2 디바이스를 등록하는 방법을 알아봅니다.
+keywords: HoloLens, 관리, 클라우드 연결, Remote Assist, AAD, Azure AD, MDM, Mobile 장치 관리
 author: evmill
 ms.author: v-evmill
 ms.reviewer: aboeger
@@ -14,35 +14,33 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 43fbcc3a841f6c3f15006f285188e55d22f10599
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: a44247b4afea747e4b75c974fcae344380909989
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397654"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112923536"
 ---
-# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>배포 가이드-클라우드 연결 HoloLens 2 (원격 지원 포함)-개요
+# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>배포 가이드 – Remote Assist 있는 클라우드 연결 HoloLens 2 - 개요
 
-이 가이드를 통해 IT 전문가는 Dynamics 365 원격 지원을 사용 하도록 준비 된 상태에서 조직에 연결 된 장치 클라우드가 있는 전체 목표를 사용 하 여 조직에 Microsoft HoloLens 2 장치를 계획 하 고 배포할 수 있습니다. 이는 다양 한 HoloLens 2 사용 사례에서 조직의 개념 증명 배포를 위한 모델 역할을 한다는 점에 유의 하세요.
+이 가이드는 IT 전문가가 Remote Assist Microsoft HoloLens 2개 디바이스를 계획하고 조직에 배포하는 데 도움이 됩니다. 다양한 HoloLens 2 사용 사례에서 조직에 개념 증명 배포를 위한 모델로 사용할 수 있습니다. 설정은 시나리오 [A: 클라우드 연결 디바이스에 배포와](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)비슷합니다. 
 
-이 가이드에서는 장치를 장치 관리에 등록 하 고, 필요에 따라 라이선스를 적용 하 고, 최종 사용자가 장치 설치 시 원격 지원을 즉시 사용할 수 있는지 확인 하는 방법을 설명 합니다. 이렇게 하려면 HoloLens 2를 사용 하 여 대규모로 배포를 달성 하는 데 필요한 인프라의 중요 한 부분을 살펴보겠습니다.
+이 가이드에서는 디바이스를 디바이스 관리에 등록하고, 필요에 따라 라이선스를 적용하고, 최종 사용자가 디바이스 설정 시 Remote Assist 즉시 사용할 수 있는지 확인하는 방법을 설명합니다. 이를 위해 설정 및 실행에 필요한 인프라의 중요한 부분을 살펴보면서 HoloLens 2 대규모로 배포할 수 있습니다. 이 가이드에는 다른 디바이스 제한 또는 구성이 적용되지 않습니다. 그러나 완료한 후에는 이러한 옵션을 살펴보는 것이 좋습니다.
 
-[![클라우드 연결 시나리오 ](./images/deployment-guides-revised-scenario-a.png)](./images/deployment-guides-revised-scenario-a.png#lightbox)
-## <a name="in-this-guide"></a>이 가이드의 내용
+## <a name="prerequisites"></a>필수 조건
 
-이 가이드에는 HoloLens 장치에서 조직 내에 원격 지원을 설정 하는 구체적인 목표가 있습니다. 이 목표를 달성 하는 데 필요한 필요성에 대해 설명 합니다. 이러한 목표에 초점을 유지 하기 위해이 배포를 최적화 하거나를 구성 하는 데 필요한 항목을 줄이기 위해 특정 준비 및 구성이 미리 선택 됩니다. 이러한 선택 항목에 대 한 알림이 표시 되며 비즈니스 요구에 따라 배포를 사용자 지정할 수 있습니다.
+HoloLens 2 배포하려면 다음 인프라가 있어야 합니다. 그렇지 않은 경우 Azure 및 Intune 설정이 이 가이드에 포함되어 있습니다.
 
-[시나리오 a: 클라우드 연결 장치에 배포](https://docs.microsoft.com/hololens/common-scenarios#scenario-a)하는 것과 유사한 설정입니다 .이는 다음과 같은 개념 증명 배포의 여러 가지 유용한 옵션입니다.
+- Wi-Fi
+    - 네트워크는 일반적으로 인터넷 및 클라우드 서비스에 대해 열려 있습니다.
+- MDM 자동 등록을 사용하여 Azure Active Directory(Azure AD) 조인([Azure AD P1 구독](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) 필요)
+- MDM(Intune) 관리
+    - MDM을 통해 하나 이상의 애플리케이션이 배포됩니다.
+- 사용자가 자신의 회사 계정(Azure AD)으로 로그인합니다.
+    - 디바이스당 단일 또는 여러 사용자가 지원됩니다.
 
-- 일반적으로 인터넷 및 클라우드 서비스에 대 한 Wi-Fi 네트워크가 완전히 열립니다.
-- MDM 자동 등록을 사용 하는 Azure AD 조인--MDM (Intune) 관리
-- 사용자가 자신의 회사 계정 (Azure AD)으로 로그인
-  - 지원 되는 장치 당 단일 또는 여러 사용자
-- 완전 열기에서 단일 앱 키오스크까지 특정 사용 사례에 따라 다양한 수준의 디바이스 잠금 구성이 적용됩니다.
+:::image type="content" alt-text="클라우드 연결 시나리오" source="./images/deployment-guides-revised-scenario-a.png" lightbox="./images/deployment-guides-revised-scenario-a.png":::
 
-
-
-이 가이드에는 다른 디바이스 제한 또는 구성이 적용되지 않습니다. 그러나 완료 후 해당 옵션을 살펴보는 것이 좋습니다.
 
 ## <a name="learn-about-remote-assist"></a>Remote Assist 대해 알아보기
 
@@ -50,17 +48,34 @@ Remote Assist 통해 공동 유지 관리 및 복구, 원격 검사, 지식 공�
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+### <a name="remote-assist-licensing-and-requirements"></a>Remote Assist 라이선스 및 요구 사항
+
+- Azure AD 계정(구독 구매 및 라이선스 할당에 필요)
+- [Remote Assist 구독(또는](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) [Remote Assist 평가판)](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
+    
+#### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 Remote Assist 사용자
+
+- Remote Assist 라이선스
+- 네트워크 연결
+
+#### <a name="microsoft-teams-user"></a>Microsoft Teams 사용자
+
+- Microsoft Teams 또는 [Teams Freemium](https://products.office.com/microsoft-teams/free).
+- 네트워크 연결
+
+이 [테넌트 간 시나리오를](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)구현하려는 경우 Information Barriers 라이선스가 필요할 수 있습니다. Information Barrier 라이선스가 필요한지 확인하려면 [이 문서를](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary) 참조하세요.
+
 ## <a name="in-this-guide-you-will"></a>이 가이드에서는 다음을 수행합니다.
 
 준비:
 
 > [!div class="checklist"]
 > - [HoloLens 2 디바이스의 인프라 필수 요소에 대해 알아봅니다.](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
-> - [Azure AD에 대해 자세히 알아보고, Azure AD가 없으면 설정해야&#39;.](hololens2-cloud-connected-prepare.md#azure-active-directory)
+> - [Azure AD에 대해 자세히 알아보고, Azure AD가&#39;없는 경우 설정합니다.](hololens2-cloud-connected-prepare.md#azure-active-directory)
 > - [ID 관리 및 Azure AD 계정을 가장 잘 설정하는 방법에 대해 알아봅니다.](hololens2-cloud-connected-prepare.md#identity-management)
-> - [MDM에 대해 자세히 알아보고, 준비되지 않은 경우 intune을&#39;설정합니다.](hololens2-cloud-connected-prepare.md#mobile-device-management)
+> - [MDM에 대해 자세히 알아보고, 준비되지&#39;Intune으로 설정합니다.](hololens2-cloud-connected-prepare.md#mobile-device-management)
 > - [Remote Assist 네트워킹 요구 사항에 대해 알아봅니다.](hololens2-cloud-connected-prepare.md#network)
-> - [선택 사항: 조직 리소스에 연결하는 VPN](/hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
+> - [선택 사항: 조직 리소스에 연결하는 VPN](hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
 
 구성:
 
@@ -79,11 +94,11 @@ Remote Assist 통해 공동 유지 관리 및 복구, 원격 검사, 지식 공�
 
 > [!div class="checklist"]
 > - [Microsoft Store 앱을 사용하여 Remote Assist 업데이트하는 방법입니다.](hololens2-cloud-connected-maintain.md#updates)
-> - [지원 계획 수립.](hololens2-cloud-connected-maintain.md#support-plan)
+> - [지원 계획 수립](hololens2-cloud-connected-maintain.md#support-plan)
 > - [개발 계획.](hololens2-cloud-connected-maintain.md#development-plan)
 
 ## <a name="next-step"></a>다음 단계
 
 > [!div class="nextstepaction"]
-> [클라우드 연결 배포-준비](hololens2-cloud-connected-prepare.md)
+> [클라우드 연결 배포 - 준비](hololens2-cloud-connected-prepare.md)
 

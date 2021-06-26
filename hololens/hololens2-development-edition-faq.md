@@ -14,14 +14,14 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f7ee1849e51132f0e3d30585cfed6a89ecfee2a9
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: a3e54bd586502207d24e28d7d2eeadd659b3e019
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397634"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924556"
 ---
-# <a name="hololens-2-development-edition-faq"></a>HoloLens 2 Development Edition FAQ
+# <a name="hololens-2-development-edition-faq"></a>HoloLens 2 개발 버전 FAQ
 
 ## <a name="general-questions"></a>일반적인 질문
 
@@ -49,45 +49,45 @@ HoloLens 2 Development Edition을 사용하여 프로덕션 설정에서 HoloLen
 
 Unity Pro는 소규모/중간 규모 스튜디오/회사를 위한 실시간 3D 플랫폼입니다. 기술 및 비기술 기술이 혼합된 팀을 위해 설계되었습니다. [자세한 정보](https://store.unity.com/products/unity-pro)
 
-### <a name="what-is-pixyz-plugin"></a>Pixyz 플러그 인 이란?
+### <a name="what-is-pixyz-plugin"></a>Pixyz 플러그 인이란?
 
-Pixyz 플러그 인은 거의 모든 형식을 읽고 변환 하며,이를 최적화 하 여 Unity에 배치 하 고, 실시간 응용 프로그램을 위해 즉시 사용할 수 있는 자산을 제공 하는 단계를 수행 합니다. [자세한 정보](https://unity.com/products/pixyz)
+Pixyz 플러그 인은 거의 모든 형식을 읽고 변환하고, 최적화하고, Unity에 넣고, 실시간 애플리케이션에 즉시 사용할 수 있는 자산을 제공하도록 준비합니다. [자세한 정보](https://unity.com/products/pixyz)
 
 ### <a name="is-financing-for-the-hololens-2-development-edition--available"></a>HoloLens 2 Development Edition을 사용할 수 있나요?
 
-예, 이제 미국 에서만 [HoloLens 2 Development Edition](https://ms.liftforward.com/hololens?product=hololens-development-edition) 을 사용할 수 있습니다. 
+예, [HoloLens 2 Development Edition의 경우](https://ms.liftforward.com/hololens?product=hololens-development-edition) 이제 미국 사용할 수 있습니다. 
 
-### <a name="who-do-i-contact-with-questions-about-my-hololens-2-development-edition-entitlements"></a>HoloLens 2 Development Edition 자격에 대 한 질문이 있으면 누구에 게 연락 해야 하나요?
+### <a name="who-do-i-contact-with-questions-about-my-hololens-2-development-edition-entitlements"></a>내 HoloLens 2 Development Edition 자격에 대한 질문과 관련하여 누구에게 문의합니까?
 
-자격에 대 한 질문이 있으면 판매 전문가에 게 866-425-4709, 월요일 ~ 금요일, 6AM에서 오후 6 시, PST로 문의 하세요.
+자격과 관련된 질문이 있으면 영업 전문가에게 866-425-4709, Mon to Fri, 오전 6시~오후 6시, PST에 문의하세요.
 
-### <a name="can-my-company-buy-multiple-hololens-2-development-edition-devices"></a>회사에서 여러 HoloLens 2 Development Edition 장치를 구매할 수 있나요? 
+### <a name="can-my-company-buy-multiple-hololens-2-development-edition-devices"></a>회사에서 여러 HoloLens 2 Development Edition 디바이스를 구입할 수 있나요? 
 
-이 장치는 혼합 현실 솔루션을 빌드하는 개발자를 위한 것입니다. 고객 트랜잭션만 하나의 구매를 제한 합니다. 회사에서 여러 개발 버전 장치를 구입 하려는 경우 회사를 대신 하 여 HoloLens 2 Development Edition 장치를 구매 하려면 별도의 트랜잭션이 필요 합니다. 
+이 디바이스는 혼합 현실 솔루션을 빌드하는 개발자를 위한 것입니다. 고객 트랜잭션당 하나의 구매를 제한합니다. 회사에서 여러 Development Edition 디바이스를 구입하려는 경우 회사를 대신하여 HoloLens 2 Development Edition 디바이스를 구매하려면 별도의 트랜잭션이 필요합니다. 
 
-### <a name="can-i-show-my-hololens-2-development-edition-device-to-my-customers"></a>내 고객에 게 HoloLens 2 Development Edition 장치를 표시할 수 있나요? 
+### <a name="can-i-show-my-hololens-2-development-edition-device-to-my-customers"></a>내 HoloLens 2 Development Edition 디바이스를 고객에게 표시할 수 있나요? 
 
-예,이 장치는 혼합 현실 솔루션을 프로토타입 하 고 테스트 하는 데 사용 됩니다.
+예, 이 디바이스는 혼합 현실 솔루션을 프로토타이핑하고 테스트하는 데 사용됩니다.
 
-### <a name="where-can-i-buy-the-hololens-2-development-edition"></a>HoloLens 2 Development Edition은 어디에서 구입할 수 있나요? 
+### <a name="where-can-i-buy-the-hololens-2-development-edition"></a>HoloLens 2 Development Edition은 어디서 구입할 수 있나요? 
 
-HoloLens 2 Development Edition은 Microsoft Store에 독점적으로 판매 됩니다.  
+HoloLens 2 Development Edition은 Microsoft Store 단독으로 판매됩니다.  
 
 ### <a name="can-i-return-my-hololens-2-development-edition"></a>HoloLens 2 Development Edition을 반환할 수 있나요?  
 
-모든 판매는 최종 이며 HoloLens 2 Development Edition에서 사용할 수 있는 환불 없습니다.
+모든 판매는 최종 판매이며 HoloLens 2 Development Edition에서 사용할 수 있는 환불이 없습니다.
 
-### <a name="does-developer-edition-have-different-hardware-requirements-that-differ-from-the-hololens-2"></a>개발자 버전에는 HoloLens 2와 다른 하드웨어 요구 사항이 있나요?
+### <a name="does-developer-edition-have-different-hardware-requirements-that-differ-from-the-hololens-2"></a>Developer Edition에는 HoloLens 2 다른 하드웨어 요구 사항이 있나요?
 
-아니요,이 장치는 하드웨어 요구 사항 관점에서 동일 합니다. 개발 버전은 상용 설정에서 응용 프로그램을 개발 및/또는 테스트 구체적 배포할 수 있습니다. 
+아니요, 이 디바이스는 하드웨어 요구 사항 관점에서 동일합니다. 개발 버전은 상용 설정에서 애플리케이션의 개발 및/또는 테스트를 지원하도록 허용됩니다. 
 
-### <a name="how-can-i-use-mixed-reality-toolkit--unity-for-developing-on-my-hololens-2-development-edition"></a>HoloLens 2 Development Edition에서 개발 하는 데는 Mixed Reality Toolkit – Unity를 어떻게 사용할 수 있나요?
+### <a name="how-can-i-use-mixed-reality-toolkit--unity-for-developing-on-my-hololens-2-development-edition"></a>HoloLens 2 Development Edition에서 개발하기 위해 Mixed Reality Toolkit – Unity를 어떻게 사용할 수 있나요?
 
 MRTK-Unity는 Unity에서 플랫폼 간 MR 앱 개발을 가속화하는 데 사용되는 구성 요소 및 기능 집합을 제공하는 Microsoft 기반 프로젝트입니다. [자세한 정보](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 
 ### <a name="how-can-i-use-mixed-reality-toolkit--unreal-uxt-for-developing-on-my-hololens-2-development-edition"></a>HoloLens 2 Development Edition에서 개발하기 위해 Mixed Reality Toolkit – Unreal UXT를 어떻게 사용할 수 있나요?
 
-MRTK-Unreal 릴리스되는 첫 번째 UX Tools 구성 요소이며 현재 HoloLens 2만 지원됩니다. 구성 요소 플러그 인에는 입력 시뮬레이션, 손 조작 행위자, 누를 수 있는 단추 구성 요소, 따르기 동작 구성 요소를 위한 일반 UX 기능의 코드, 청사진 및 예제 자산이 포함됩니다. [자세한 정보](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/WelcomeToUXTools.html)
+MRTK-Unreal 릴리스되는 첫 번째 UX 도구 구성 요소이며 현재 HoloLens 2 지원됩니다. 구성 요소 플러그 인에는 입력 시뮬레이션, 손 조작 행위자, 누를 수 있는 단추 구성 요소, 따르기 동작 구성 요소를 위한 일반 UX 기능의 코드, 청사진 및 예제 자산이 포함됩니다. [자세한 정보](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/WelcomeToUXTools.html)
 
 ### <a name="are-os-releases-for-the-hololens-2-development-edition-the-same-as-hololens-2"></a>HoloLens 2 Development Edition의 OS 릴리스는 HoloLens 2 동일합니까?
 
@@ -117,40 +117,40 @@ Mixed Reality 디자인 소개 설명서를 참조하세요. [자세한 정보](
 
 ### <a name="what-is-included-with-my-unity-trial"></a>Unity 평가판에는 무엇이 포함됩니까?
 
-3개월 Unity Pro 평가판을 사용하면 전문가가 만들고 운영하며 수익을 창출할 수 있는 Unity&#39;완전한 솔루션에 액세스할 수 있습니다. 관련 Unity Pro 평가판에는 사용할 최종 기한이 없습니다.
+3개월 Unity Pro 평가판을 사용하면 전문가가 만들고, 운영하고, 수익을 창출할 수 있는 Unity&#39;완전한 솔루션에 액세스할 수 있습니다. 관련 Unity Pro 평가판에는 사용할 최종 기한이 없습니다.
 
 이 제품은 새 사용자를 위한 것이며 설정된 Unity Pro 구독에는 적용되지 않습니다. Unity Pro 평가판에는 상환 시 사용할 수 있는 추가 조건이 적용될 수 있습니다. 해당하는 사용 약관 및 [개인 정보 취급 방침을](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0) [검토합니다. &amp; ](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0)
 
-### <a name="how-can-i-redeem-my-unity-pro-trial"></a>Unity Pro 평가판을 어떻게 사용할 수 있나요?
+### <a name="how-can-i-redeem-my-unity-pro-trial"></a>Unity Pro 평가판은 어떻게 사용할 수 있나요?
 
-교환 지침
+사용 지침
 
-1. Id.unity.com 방문
-2. Unity ID를 사용 하 여 로그인 하거나 계정 만들기
-3. 제품 코드&#39; &#39;선택 합니다.
-4. 제품 코드를 입력 하 고 &#39;제품 코드를 선택&#39;
+1. id.unity.com 방문
+2. Unity ID로 로그인하거나 계정을 만듭니다.
+3. 제품 코드&#39; &#39;사용 선택
+4. 제품 코드를 입력하고 제품 코드&#39; &#39;선택을 선택합니다.
 
-[자세한](https://docs.microsoft.com/hololens/hololens2-options?tabs=device) 내용은 HoloLens 2 Development Edition 설명서를 참조 하세요.
+자세한 [내용은](https://docs.microsoft.com/hololens/hololens2-options?tabs=device) HoloLens 2 Development Edition 설명서를 참조하세요.
 
-### <a name="can-i-build-applications-with-versions-of-unity-other-than-pro-license"></a>PRO 라이선스가 아닌 Unity 버전으로 응용 프로그램을 빌드할 수 있나요?
+### <a name="can-i-build-applications-with-versions-of-unity-other-than-pro-license"></a>PRO 라이선스 이외의 Unity 버전으로 애플리케이션을 빌드할 수 있나요?
 
-예, 호환 되는 모든 버전의 Unity를 사용 하 여 응용 프로그램을 빌드할 수 있습니다.
+예, 모든 호환되는 Unity 버전으로 애플리케이션을 빌드할 수 있습니다.
 
-### <a name="how-do-i-contact-unity-support"></a>Unity 지원에 문의 어떻게 할까요? 있나요?
+### <a name="how-do-i-contact-unity-support"></a>Unity 지원에 문의해야 어떻게 할까요??
 
-Unity ID, 계정, 조직 및 구독에 대 한 질문에 대 한 도움을 받으려면 support.unity3d.com를 방문 하세요.
+Unity ID, 계정, 조직 및 구독에 대한 질문에 대한 도움말을 확인하려면 support.unity3d.com.
 
 ## <a name="pixyz"></a>Pixyz
 
-### <a name="what-is-included-with-my-pixyz-plugin-trial"></a>Pixyz 플러그 인 평가판에는 무엇이 포함 되나요?
+### <a name="what-is-included-with-my-pixyz-plugin-trial"></a>내 Pixyz 플러그 인 평가판에는 무엇이 포함됩니까?
 
-Pixyz에 액세스 하 여 완벽 한 공간 분할 메시, 제한 된 다각형 수 및 자동 UV를 사용 하는 즉시 사용 가능한 자산을 만들 수 있도록 하는 3 개월 Pixyz 플러그 인 평가판입니다. 관련 Pixyz 플러그 인 평가판에는 사용할 수 있는 마감일이 없습니다.
+Pixyz에 액세스하여 완벽한 전매 메시, 제한된 다각형 수 및 자동 UV를 사용하여 즉시 사용할 수 있는 자산을 만들 수 있는 3개월 Pixyz 플러그 인 평가판입니다. 관련 Pixyz 플러그 인 평가판에는 사용할 최종 기한이 없습니다.
 
-이 제품은 새로운 사용자를 위한 것 이며 설정 된 Pixyz 구독에는 쌓입니다. Pixyz 플러그 인에는 상환에 적용 되는 추가 조건이 적용 될 수 있습니다. 적용 가능한 [ &amp; 조건](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0) 및 [개인 정보 취급 방침](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0)을 검토 합니다.
+이 제품은 새 사용자를 위한 것이며 설정된 Pixyz 구독에 누적되지 않습니다. Pixyz 플러그 인에는 상환 시 추가 조건이 적용될 수 있습니다. 해당하는 사용 약관 및 [개인 정보 취급 방침을](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fprivacy-policy%3F_ga%3D2.6941362.1885447993.1600097102-915351856.1592845189%26_gac%3D1.157951432.1600400000.CjwKCAjwkoz7BRBPEiwAeKw3q-QDTrYufD7wCV6bND3hfqI2SP07k7V4VvIBjFvGsBWu4cZaibnn2hoC7oMQAvD_BwE&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=RHyvW2qY4DdFpz3QYhB6D2tx4t%2BiMnm58hIacMeFEPk%3D&amp;reserved=0) [검토합니다. &amp; ](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Funity3d.com%2Flegal%2Fterms-of-service&amp;data=04%7C01%7CRonan.Jenkins%40microsoft.com%7C65a23c756bcb49a003ef08d86bb16132%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637377756872930038%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&amp;sdata=VKL3asd8TjWONsqhzj%2BzjQhkBnY81aa2P5YE8%2BJRecE%3D&amp;reserved=0)
 
-### <a name="how-can-i-redeem-my-pixyz-plugin-trial"></a>Pixyz 플러그 인 평가판을 어떻게 사용할 수 있나요?
+### <a name="how-can-i-redeem-my-pixyz-plugin-trial"></a>내 Pixyz 플러그 인 평가판은 어떻게 사용할 수 있나요?
 
-교환 지침
+사용 지침
 
 1. id.unity.com 방문
 2. Pixyz로 로그인하거나 계정을 만듭니다.

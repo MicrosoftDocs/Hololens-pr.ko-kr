@@ -1,6 +1,6 @@
 ---
-title: HoloLens clicker 사용
-description: 이 문서에서는 clicker 페어링, 요금 청구 및 복구를 포함 하 여 HoloLens clicker를 사용 하는 방법을 설명 합니다.
+title: HoloLens 클릭하여 사용
+description: 이 문서에서는 클릭하여 페어링, 충전 및 복구를 포함하여 HoloLens 클릭하여 사용하는 방법을 간략하게 설명합니다.
 ms.assetid: 7d4a30fd-cf1d-4c9a-8eb1-1968ccecbe59
 ms.date: 09/16/2019
 manager: jarrettr
@@ -13,90 +13,100 @@ ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4b17fc134846a66046a819c56755d87206c5643e
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 83e5a746b6900c547778c71a0855426563458032
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108310000"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924063"
 ---
-# <a name="use-the-hololens-1st-gen-clicker"></a>HoloLens (첫 번째 gen) clicker 사용
+# <a name="use-the-hololens-1st-gen-clicker"></a>HoloLens(1세대) 클릭커 사용
 
-Clicker는 HoloLens (첫 번째 gen) 용으로 특별히 설계 되었으며 holograms와 상호 작용 하는 다른 방법을 제공 합니다. 별도의 상자에 HoloLens (첫 번째 gen)가 제공 됩니다.
+클릭기는 HoloLens(1세대)를 위해 특별히 설계되었으며 홀로그램과 상호 작용하는 다른 방법을 제공합니다. 별도의 상자에 HoloLens(1세대)가 함께 제공됩니다.
 
-핸드 제스처 대신 앱을 선택 하 고, 스크롤하고, 이동 하 고, 크기를 조정 하는 데 사용 합니다.
+손 제스처 대신 사용하여 앱을 선택, 스크롤, 이동 및 크기 조정합니다.
 
-## <a name="clicker-hardware-and-pairing"></a>Clicker 하드웨어 및 페어링
+## <a name="clicker-hardware-and-pairing"></a>클릭하여 하드웨어 및 페어링
 
-HoloLens (첫 번째 gen) clicker에는 더 쉽게 유지할 수 있는 손가락 루프와 표시기 표시등이 있습니다.
+HoloLens(1세대) 클릭하여 손쉽게 보관할 수 있는 손가락 루프와 표시등이 있습니다.
 
-![HoloLens Clicker](images/use-hololens-clicker-1.png)
+![HoloLens 클릭하여](images/use-hololens-clicker-1.png)
 
-### <a name="clicker-indicator-lights"></a>Clicker 표시등
+### <a name="clicker-indicator-lights"></a>클릭하여 표시등
 
-Clicker 평균의 표시등은 다음과 같습니다.
+클릭하여 조명의 의미는 다음과 같습니다.
 
-- **흰색 깜박임** Clicker가 페어링 모드에 있습니다.
-- **고속 깜박임 흰색**. 페어링에 성공 했습니다.
-- **흰색 단색** 입니다. Clicker 요금을 청구 합니다.
-- **주황색으로 깜박입니다**. 배터리가 부족 합니다.
-- **주황색으로 고정** 되어 있습니다. Clicker에 오류가 발생 하 여 다시 시작 해야 합니다. 페어링 단추를 누르는 동안 15 초 동안을 클릭 합니다.
+- **흰색이 깜박입니다.** 클릭하여 페어링 모드에 있습니다.
+- **빠르게 깜박이는 흰색 입니다.** 페어링에 성공했습니다.
+- **단색 흰색** 입니다. 클릭하여 충전 중입니다.
+- **깜박이는 주황색**. 배터리가 부족합니다.
+- **단색**. 클릭하여 오류가 발생했으며 다시 시작해야 합니다. 페어링 단추를 누른 상태에서 15초 동안 길게 클릭합니다.
 
-### <a name="pair-the-clicker-with-your-hololens-1st-gen"></a>Clicker를 HoloLens와 페어링 (첫 번째 gen)
+### <a name="pair-the-clicker-with-your-hololens-1st-gen"></a>클릭하여 HoloLens(1세대)와 페어링
 
-1. 블 룸 제스처를 사용 하 여 **시작** 으로 이동한 다음 **설정**  >  **장치** 를 선택 하 고 Bluetooth가 켜져 있는지 확인 합니다.
-1. Clicker에서 상태 표시등이 흰색으로 깜박일 때까지 페어링 단추를 길게 누릅니다.
-1. 페어링 화면에서 **Clicker**  >  **Pair** 를 선택 합니다.
+1. 꽃 제스처를 사용하여 **시작으로** 이동한 **다음, 설정**  >  **디바이스를** 선택하고 Bluetooth가 켜져 있는지 확인합니다.
+1. 클릭하여 상태 표시등이 흰색으로 깜박일 때까지 페어링 단추를 길게 누릅니다.
+1. 페어링 화면에서 **클릭하여**  >  **쌍을** 선택합니다.
 
-### <a name="charge-the-clicker"></a>Clicker 요금 청구
+### <a name="charge-the-clicker"></a>클릭하여 청구
 
-Clicker 배터리가 낮으면 배터리 표시기가 주황색으로 깜박입니다. USB 전원 공급 장치에 마이크로 USB 케이블을 연결 하 여 장치를 청구 합니다.
+클릭하여 배터리가 부족하면 배터리 표시기가 깜박입니다. 마이크로 USB 케이블을 USB 전원 공급 장치에 연결하여 디바이스를 충전합니다.
 
-## <a name="use-the-clicker-with-hololens-1st-gen"></a>HoloLens와 함께 clicker 사용 (첫 번째 gen)
+## <a name="use-the-clicker-with-hololens-1st-gen"></a>HoloLens(1세대)와 함께 클릭하여 사용
 
-### <a name="hold-the-clicker"></a>Clicker 유지
+### <a name="hold-the-clicker"></a>클릭하여 누르기
 
-Clicker에 배치 하려면 마이크로 USB 포트가 손목에 직면 하도록 링 또는 가운데 손가락 위로 루프를 이동 합니다. 들여쓰기에 엄지 단추를 놓습니다.
+클릭하여 루프를 링 또는 가운데 손가락 위로 밀어 마이크로 USB 포트가 사용자의 손을 향하도록 합니다. 들여쓰기에서 엄지 손가락을 놓습니다.
 
-![Clicker를 보유 하는 방법](images/use-hololens-clicker-2.png)
+![클릭하여 누르는 방법](images/use-hololens-clicker-2.png)
 
-### <a name="clicker-gestures"></a>Clicker 제스처
+### <a name="clicker-gestures"></a>클릭하여 제스처
 
-Clicker 제스처는 HoloLens 손 제스처에 사용 되는 큰 이동이 아닌 작은 손목 회전입니다. Clicker가 [제스처 프레임](hololens1-basic-usage.md)외부에 있는 경우에도 HoloLens는 제스처와 클릭을 인식 하므로 가장 편안한 위치에서 clicker를 보유할 수 있습니다.
+클릭 제스처는 HoloLens 손 제스처에 사용되는 더 큰 이동이 아니라 작은 회전입니다. 또한 HoloLens는 제스처를 인식하고 클릭하여 클릭하여 클릭이 [제스처 프레임](hololens1-basic-usage.md)외부에 있더라도 가장 익숙한 위치에 클릭하여 클릭할 수 있습니다.
 
-- 을 **선택** 합니다. 홀로그램, 단추 또는 다른 요소를 선택 하려면 해당 요소를 응시 한 다음을 클릭 합니다.
+- **를 선택합니다.** 홀로그램, 단추 또는 기타 요소를 선택하려면 홀로그램을 응시한 다음 클릭합니다.
 
-- **클릭 하 고 유지** 합니다. 단추를 클릭 하 고 누른 채로 단추를 클릭 하 여 홀로그램 이동 또는 크기 조정과 같이 탭 하 여 보유 하 고 있는 것과 같은 작업을 수행 합니다.
+- **를 클릭하고 을 유지합니다.** 단추에서 엄지손짐을 클릭하여 홀로그램 이동 또는 크기 조정과 같이 탭하고 길게 누른 것과 동일한 작업을 수행합니다.
 
-- **스크롤합니다**. 앱 바에서 **스크롤 도구** 를 선택 합니다. 클릭 하 고 누른 다음 clicker up, down, left 또는 right를 회전 합니다. 더 빠르게 스크롤하려면 스크롤 도구의 가운데에서 손을 움직입니다.
+- **스크롤합니다.** 앱 바에서 **스크롤 도구** 를 선택합니다. 길게 클릭한 다음, 클릭하여 위로, 아래로, 왼쪽 또는 오른쪽으로 회전합니다. 더 빠르게 스크롤하려면 스크롤 도구의 중심에서 손을 더 멀리 이동합니다.
 
-- **확대/축소**. 앱 바에서 **확대/축소 도구** 를 선택 합니다. 클릭 한 후 clicker 위쪽으로 회전 하거나 축소 하려면 클릭 합니다.
+- **확대/축소**. 앱 바에서 **확대/축소 도구** 를 선택합니다. 길게 누른 다음, 클릭하여 확대하거나 축소하려면 아래로 회전합니다.
 
 > [!TIP]
-> Microsoft Edge를 사용 하는 경우 확대 하거나 축소 하려면 페이지를 응시 하 고 두 번 클릭 합니다.
+> Microsoft Edge 사용할 때 확대 또는 축소하려면 페이지를 응시하고 두 번 클릭합니다.
 
-## <a name="restart-or-recover-the-clicker"></a>Clicker 다시 시작 또는 복구
+## <a name="im-having-problems-using-the-hololens-clicker"></a>HoloLens 클릭하여 사용하는 데 문제가 있습니다.
 
-HoloLens clicker가 응답 하지 않거나 제대로 작동 하지 않는 경우 다음을 시도해 야 합니다.
+[클릭하여](hololens1-clicker.md) 홀로그램을 선택, 스크롤, 이동 및 크기를 조정합니다. 개별 앱은 추가 클릭하여 제스처를 지원할 수 있습니다.
 
-### <a name="restart-the-clicker"></a>Clicker를 다시 시작 합니다.
+클릭하여 사용하는 데 문제가 있는 경우 요금이 청구되고 HoloLens와 쌍으로 연결되었는지 확인합니다. 배터리가 부족하면 표시등이 깜박입니다. 클릭하여 쌍을 이루는지 확인하려면 **설정**  >  **디바이스로** 이동하여 표시되는지 확인합니다. 자세한 내용은 [클릭하여 페어링을 참조하세요.](hololens1-clicker.md)
 
-펜의 팁을 사용 하 여 페어링 단추를 길게 누릅니다. 동시에 15 초 동안 clicker를 클릭 하 여 보유 합니다. Clicker가 HoloLens와 이미 페어링 된 경우 다시 시작 된 후 페어링된 상태를 유지 합니다.
+클릭하여 요금이 청구되고 쌍을 이루는 경우에도 문제가 계속 발생하면 기본 단추와 페어링 단추를 15초 동안 눌러 다시 설정합니다. 그런 다음, 클릭하여 HoloLens와 다시 페어링합니다.
 
-Clicker을 설정 하거나 다시 시작 하지 않는 경우 HoloLens 충전기를 사용 하 여 요금을 청구 해 보세요. 배터리가 매우 적으면 흰색 표시기가 설정 되는 데 몇 분 정도 걸릴 수 있습니다.
+클릭하여 다시 설정하는 것이 도움이 되지 않는 경우 [HoloLens 클릭하여 다시 시작 또는 복구를 참조하세요.](hololens1-clicker.md#restart-or-recover-the-clicker)
+## <a name="restart-or-recover-the-clicker"></a>클릭하여 다시 시작 또는 복구
 
-### <a name="re-pair-the-clicker"></a>Clicker를 다시 페어링 합니다.
+HoloLens 클릭하여 응답하지 않거나 잘 작동하지 않는 경우 다음과 같은 작업을 시도해 보세요.
 
-**설정**  >  **장치** 를 선택 하 고 clicker를 선택 합니다. **제거** 를 선택 하 고 몇 초 정도 기다린 다음 clicker를 다시 페어링 합니다.
+### <a name="restart-the-clicker"></a>클릭하여 다시 시작
 
-### <a name="recover-the-clicker"></a>Clicker 복구
+펜의 팁을 사용하여 페어링 단추를 길게 누릅니다. 동시에 클릭 하 고 15 초 동안 클릭하여 유지합니다. 클릭하여 HoloLens와 이미 페어링된 경우 다시 시작한 후에도 쌍을 유지합니다.
 
-Clicker를 다시 시작 하 고 다시 연결 해도 문제가 해결 되지 않는 경우 Windows 장치 복구 도구를 통해 복구 하는 데 도움이 될 수 있습니다. 복구 프로세스는 다소 시간이 걸릴 수 있으며 최신 버전의 clicker 소프트웨어를 설치 합니다. 이 도구를 사용 하려면 최소 4gb의 사용 가능한 저장소 공간이 있는 Windows 10 이상을 실행 하는 컴퓨터가 필요 합니다.
+클릭하여 켜지거나 다시 시작하지 않는 경우 HoloLens 표시기를 사용하여 충전해 보세요. 배터리가 매우 낮으면 흰색 표시등이 켜지는 데 몇 분 정도 걸릴 수 있습니다.
 
-Clicker를 복구 하려면:
+### <a name="re-pair-the-clicker"></a>클릭하여 다시 페어링
 
-1. 컴퓨터에 [Windows 장치 복구 도구](https://dev.azure.com/ContentIdea/ContentIdea/_queries/query/8a004dbe-73f8-4a32-94bc-368fc2f2a895/) 를 다운로드 하 여 설치 합니다.
-1. HoloLens와 함께 제공 되는 마이크로 USB 케이블을 사용 하 여 clicker를 컴퓨터에 연결 합니다.
-1. Windows 장치 복구 도구를 실행 하 고 지침을 따릅니다.
+**설정**  >  **디바이스를** 선택하고 클릭하여 선택합니다. **제거를** 선택하고 몇 초 정도 기다린 다음, 클릭하여 다시 페어링합니다.
 
-Clicker가 자동으로 검색 되지 않으면 **장치를 검색 하지 못했습니다** 를 선택 하 고 지침에 따라 장치를 복구 모드로 전환 합니다.
+### <a name="recover-the-clicker"></a>클릭하여 복구
+
+클릭하여 다시 시작하고 다시 페어링해도 문제가 해결되지 않으면 Windows Device Recovery 도구를 사용하여 복구할 수 있습니다. 복구 프로세스는 다소 시간이 걸릴 수 있으며 최신 버전의 클릭하여 소프트웨어를 설치합니다. 이 도구를 사용하려면 4GB 이상의 여유 스토리지 공간이 있는 Windows 10 이상을 실행하는 컴퓨터가 필요합니다.
+
+클릭하여 복구하려면 다음을 수행합니다.
+
+1. 컴퓨터에 Windows [Device Recovery 도구를](https://dev.azure.com/ContentIdea/ContentIdea/_queries/query/8a004dbe-73f8-4a32-94bc-368fc2f2a895/) 다운로드하여 설치합니다.
+1. HoloLens와 함께 마이크로 USB 케이블을 사용하여 클릭하여 컴퓨터에 연결합니다.
+1. Windows Device Recovery 도구를 실행하고 지침을 따릅니다.
+
+클릭하여 자동으로 검색되지 않는 경우 **내 디바이스가 검색되지 않음을** 선택하고 지침에 따라 디바이스를 복구 모드로 전환합니다.
+

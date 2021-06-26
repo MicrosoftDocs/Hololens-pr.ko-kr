@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 067917396631f9a89a50b13ef1b7dcca8b631f52
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 21132ed5d1e84d92a877747ac9a4c090b177ca08
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309349"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924573"
 ---
 # <a name="prepare---cloud-connected-guide"></a>준비-클라우드 연결 가이드
 
@@ -34,7 +34,7 @@ ms.locfileid: "108309349"
 Azure AD는 id 및 액세스 관리를 제공 하는 클라우드 기반 디렉터리 서비스입니다. Microsoft Office 365 또는 Intune을 사용 하는 조직은 Azure AD를 이미 사용 하 고 있습니다 .이는 무료, 프리미엄 P1 및 Premium P2의 세 가지 버전이 있습니다 ( [Azure Active Directory 버전](https://azure.microsoft.com/documentation/articles/active-directory-editions)참조). 모든 버전은 Azure AD 장치 등록을 지원 하지만 프리미엄 P1은 나중에이 가이드에서 사용할 MDM 자동 등록을 사용 하도록 설정 하는 데 필요 합니다.
 
 > [!IMPORTANT]
-> HoloLens 장치는 온-프레미스 AD 조인을 지원 하지 않으므로 Azure Active Directory 있어야 합니다. 이미 Azure Active Directory 설정을&#39;하지 않은 경우이 링크의 지침에 따라 시작 하 고 [Azure Active Directory에서 새 테 넌 트를 만듭니다](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant).
+> HoloLens 장치는 온-프레미스 AD 조인을 지원 하지 않으므로 Azure Active Directory 있어야 합니다. 이미 Azure Active Directory 설정 된&#39;없는 경우 [Azure Active Directory에서 새 테 넌 트 만들기](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-access-create-new-tenant)로 이동 합니다.
 
 ## <a name="identity-management"></a>ID 관리
 

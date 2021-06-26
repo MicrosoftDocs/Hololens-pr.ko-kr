@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9e413963dbf34dd071fc9603487590065b967ee7
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: d8be5c2ed7fba38b6710aba9c122557a36073a79
+ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309272"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924131"
 ---
 # <a name="install-apps-on-hololens-2-via-app-installer"></a>앱 설치 관리자를 통해 HoloLens 2에 앱 설치
 
@@ -107,8 +107,6 @@ HoloLens 2 장치에 **더욱 원활 하 게 응용 프로그램을 설치할 �
 
 ## <a name="sample-apps"></a>샘플 앱
 
-몇 가지 샘플 앱을 사용 하 여 앱 설치 관리자를 사용 하려면 사용 가능한 샘플을 확인 하세요.
-
-- [MRTK 예제 허브](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html)
-- [평면](https://docs.microsoft.com/windows/mixed-reality/develop/unity/sampleapp-surfaces)
-- [테스트에 사용할 수 있는 UWP 샘플 앱](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples)
+사용 가능한 샘플 앱 중 하나를 사용 하 여 앱 설치 관리자를 사용해 보세요. 
+> [!div class="nextstepaction"]
+> [샘플 앱](https://docs.microsoft.com/windows/mixed-reality/develop/features-and-samples?tabs=unity#sample-apps)
