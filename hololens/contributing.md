@@ -1,23 +1,23 @@
 ---
 title: 영향을 주는 지침
-description: Flavored Markdown를 사용 하 여 docs.microsoft.com 플랫폼에서 HoloLens 문서에 참여 하는 방법을 알아봅니다.
+description: GitHub-flavored Markdown를 사용 하 여 docs.microsoft.com 플랫폼에서 HoloLens 문서에 참여 하는 방법을 알아봅니다.
 author: hferrone
 ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: dd205ab1fe399d6612be982136c80733a5eb087e
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 73b6e8bcd634cb4d45171bda0a85f2e991a977c9
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309216"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635673"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>HoloLens 설명서에 기여
 
 [HoloLens 설명서](https://github.com/MicrosoftDocs/Hololens)를 시작 합니다. 이 리포지토리에서 만들거나 편집 하는 모든 문서는 **공용에 표시 됩니다.** 
 
-HoloLens 문서는 docs.microsoft.com 플랫폼에 표시 되며, 여기서는 GitHub-flavored Markdown를 사용 하 여 Markdig 기능을 사용 합니다. 이 리포지토리에서 편집 하는 콘텐츠는에 표시 되는 스타일 있는 페이지로 서식 지정 https://docs.microsoft.com/hololens 됩니다. 
+HoloLens 문서는 markdig 기능에서 GitHub-flavored Markdown를 사용 하는 docs.microsoft.com 플랫폼에 표시 됩니다. 이 리포지토리에서 편집 하는 콘텐츠는/hololens.에서 표시 되는 스타일 있는 페이지로 서식 지정 됩니다.
 
 이 페이지에서는 Markdown 기본 사항에 기여 하 고 연결 하는 데 필요한 기본 단계 및 지침을 설명 합니다. 참가 해 주셔서 감사 합니다.
 
@@ -26,15 +26,15 @@ HoloLens 문서는 docs.microsoft.com 플랫폼에 표시 되며, 여기서는 G
 | 리포지토리 이름 | URL |
 | --- | --- |
 | HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
-| Mixed Reality | [MicrosoftDocs/mixed-현실](https://docs.microsoft.com/windows/mixed-reality) |
+| Mixed Reality | [MicrosoftDocs/mixed-현실](/windows/mixed-reality) |
 | VR 매니아 가이드 | [MicrosoftDocs/mixed-현실/열성적인](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 
 ## <a name="before-you-start"></a>시작하기 전에
 
-아직 없는 경우 [GitHub 계정을 만들어야](https://github.com/join)합니다.
+계정이 아직 없는 경우 [GitHub 계정을 만들어야](https://github.com/join)합니다.
 
 >[!NOTE]
->Microsoft 직원 인 경우 microsoft [오픈 소스 포털](https://repos.opensource.microsoft.com/)의 microsoft 별칭에 GitHub 계정을 연결 하세요. **"Microsoft"** 및 **"MicrosoftDocs"** 조직에 참여 합니다.
+>microsoft 직원 인 경우 [microsoft 오픈 소스 포털](https://repos.opensource.microsoft.com/)의 microsoft 별칭에 GitHub 계정을 연결 하세요. **"Microsoft"** 및 **"MicrosoftDocs"** 조직에 참여 합니다.
 
 GitHub 계정을 설정할 때 다음과 같은 보안 예방 조치를 권장 합니다.
 - [GitHub 계정에 대 한 강력한 암호](https://github.com/settings/admin)를 만듭니다.
@@ -43,13 +43,13 @@ GitHub 계정을 설정할 때 다음과 같은 보안 예방 조치를 권장 �
 - [공개 프로필 설정을](https://github.com/settings/profile)업데이트 합니다.
    - 사용자의 이름을 설정 하 고 *전자 메일 주소를 표시 하지 않도록* *공용 전자 메일* 을 설정 하는 것이 좋습니다.
    - 사용자가 참여 하는 문서 페이지에 미리 보기가 표시 되기 때문에 프로필 사진을 업로드 하는 것이 좋습니다.
-- 명령줄을 사용할 계획인 경우 [Windows 용 Git 자격 증명 관리자](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest)를 설정 하는 것이 좋습니다. 이렇게 하면 기여를 할 때마다 암호를 입력할 필요가 없습니다.
+- 명령줄을 사용 하려는 경우 [Windows에 대해 Git 자격 증명 관리자](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest)를 설정 하는 것이 좋습니다. 이렇게 하면 기여를 할 때마다 암호를 입력할 필요가 없습니다.
 
-게시 시스템은 GitHub에 연결 되므로 이러한 단계가 중요 합니다. GitHub 별칭을 사용 하 여 각 아티클에 대 한 작성자 또는 참가자로 나열 됩니다.
+게시 시스템은 GitHub 연결 되어 있으므로 이러한 단계가 중요 합니다. GitHub 별칭을 사용 하 여 각 아티클에 대 한 작성자 또는 참가자로 나열 됩니다.
 
 ## <a name="editing-an-existing-article"></a>기존 문서 편집
 
-웹 브라우저에서 GitHub를 통해 *기존 문서* 를 업데이트 하려면 다음 워크플로를 사용 합니다.
+다음 워크플로를 사용 하 여 웹 브라우저에서 GitHub를 통해 *기존 문서* 를 업데이트 합니다.
 
 1. "Mixed reality-docs" 폴더에서 편집 하려는 문서로 이동 합니다.
 
@@ -100,7 +100,7 @@ GitHub 계정을 설정할 때 다음과 같은 보안 예방 조치를 권장 �
 
 ## <a name="creating-a-new-article"></a>새 문서 만들기
 
-웹 브라우저에서 GitHub를 통해 설명서 리포지토리에서 *새 문서를 만들려면* 다음 워크플로를 사용 합니다.
+다음 워크플로를 사용 하 여 웹 브라우저에서 GitHub를 통해 설명서 리포지토리에서 *새 문서를 만들* 수 있습니다.
 
 1. 오른쪽 위에 있는 **포크** 단추를 사용 하 여 MicrosoftDocs/mixed reality ' master ' 분기에서 포크를 만듭니다.
 
@@ -146,13 +146,13 @@ GitHub 계정을 설정할 때 다음과 같은 보안 예방 조치를 권장 �
 다음 리소스는 Markdown 언어를 사용 하 여 문서를 편집 하는 방법을 배우는 데 도움이 됩니다.
 
 - [Markdown 기본 사항](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-- [Docs.microsoft.com에 대 한 Markdown 쓰기에 대 한 추가 리소스](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
+- [Docs.microsoft.com에 대 한 Markdown 쓰기에 대 한 추가 리소스](/contribute/how-to-write-use-markdown)
 
 ### <a name="adding-tables"></a>테이블 추가
 
 스타일 docs.microsoft.com 스타일을 지정 하는 방식 때문에 인라인 CSS를 시도 하더라도 테두리나 사용자 지정 스타일은 없습니다. 짧은 시간 동안 작동 하는 것 처럼 보이지만 결국 플랫폼은 테이블에서 스타일을 제거 합니다. 따라서 미리 계획 하 고 테이블을 단순하게 유지 합니다. [Markdown 테이블을 쉽게 만들 수 있는 사이트는 다음과 같습니다](https://www.tablesgenerator.com/markdown_tables).
 
-[Visual Studio Code에 대 한 Docs Markdown 확장](https://docs.microsoft.com/teamblog/docs-extension) 은 [Visual Studio Code (아래 참조)](#using-visual-studio-code) 를 사용 하 여 문서를 편집 하는 경우에도 테이블을 쉽게 생성할 수 있습니다.
+[Visual Studio Code에 대 한 Docs Markdown 확장](/teamblog/docs-extension) 은 [Visual Studio Code (아래 참조)](#using-visual-studio-code) 를 사용 하 여 문서를 편집 하는 경우에도 테이블을 쉽게 생성할 수 있습니다.
 
 ### <a name="adding-images"></a>이미지 추가
 
@@ -170,12 +170,12 @@ GitHub 계정을 설정할 때 다음과 같은 보안 예방 조치를 권장 �
 
 ## <a name="previewing-your-work"></a>작업 미리 보기
 
-웹 브라우저를 통해 GitHub에서 편집 하는 동안 페이지 맨 위에 있는 **미리 보기** 탭을 선택 하 여 커밋 전 작업을 미리 볼 수 있습니다. 
+웹 브라우저를 통해 GitHub에서 편집 하는 동안 페이지 맨 위에 있는 **미리 보기** 탭을 선택 하 여 커밋하기 전에 작업을 미리 볼 수 있습니다. 
 
 >[!NOTE]
 >review.docs.microsoft.com의 변경 내용 미리 보기는 Microsoft 직원 에게만 제공 됩니다.
 
-Microsoft 직원: 기여를 ' 마스터 ' 분기에 병합 한 후에는에서 공개 되기 전에 콘텐츠를 검토할 수 있습니다 https://review.docs.microsoft.com/hololens?branch=master . 왼쪽 열에 있는 목차를 사용 하 여 문서를 찾습니다.
+Microsoft 직원: 기여를 ' 마스터 ' 분기에 병합 한 후에는 콘텐츠를 검토 하 여 </hololens? branch = master>에서 공용으로 전환 합니다. 왼쪽 열에 있는 목차를 사용 하 여 문서를 찾습니다.
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>브라우저에서 편집 및 데스크톱 클라이언트를 사용 하 여 편집
 
@@ -189,9 +189,9 @@ Microsoft 직원: 기여를 ' 마스터 ' 분기에 병합 한 후에는에서 �
 
 ## <a name="using-visual-studio-code"></a>Visual Studio Code 사용
 
-[위에](#editing-in-the-browser-vs-editing-with-a-desktop-client)나열 된 이유 때문에 웹 브라우저가 아닌 데스크톱 클라이언트를 사용 하 여 문서를 편집 하는 것이 좋습니다. [Visual Studio Code](https://code.visualstudio.com/)를 사용 하는 것이 좋습니다.
+[위에](#editing-in-the-browser-vs-editing-with-a-desktop-client)나열 된 이유 때문에 웹 브라우저가 아닌 데스크톱 클라이언트를 사용 하 여 문서를 편집 하는 것이 좋습니다. [Visual Studio Code](https://code.visualstudio.com/)를 사용하는 것이 좋습니다.
 
-### <a name="setup"></a>설치
+### <a name="setup"></a>설치 프로그램
 
 이 리포지토리를 사용 하도록 Visual Studio Code를 구성 하려면 다음 단계를 수행 합니다.
 
@@ -236,7 +236,7 @@ Visual Studio Code를 사용 하 여 설명서를 변경 하려면 다음 워크
    
       ![소스 제어에서 "모두 커밋"을 선택 합니다.](images/source-control-commit.png)
       
-   4. **동기화** 단추를 선택 하 여 변경 내용을 원본으로 다시 동기화 합니다 (GitHub의 포크).
+   4. **동기화** 단추를 선택 하 여 변경 내용을 원본으로 다시 동기화 합니다 (GitHub 포크).
       
       ![동기화 단추를 클릭 합니다.](images/sync-back.png)
       
@@ -248,7 +248,7 @@ Visual Studio Code를 사용 하 여 설명서를 변경 하려면 다음 워크
 
 문서를 편집할 때 다음과 같은 Visual Studio Code 확장을 유용 하 게 사용할 수 있습니다.
 
-- [Visual Studio Code 용 Docs Markdown 확장](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) - **Alt + M** 을 사용 하 여 다음과 같은 docs 제작 옵션 메뉴를 표시 합니다.
+- [Visual Studio Code 용 docs Markdown 확장](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) - **Alt + M** 을 사용 하 여 다음과 같은 docs 제작 옵션 메뉴를 표시 합니다.
    - 업로드 한 이미지를 검색 하 고 참조 합니다.
    - 목록과 같이 목록, 테이블 및 문서 특정 호출 등의 서식을 추가 `>[!NOTE]` 합니다.
    - 내부 링크와 책갈피를 검색 하 고 참조 합니다 (페이지 내의 특정 섹션에 대 한 링크).
