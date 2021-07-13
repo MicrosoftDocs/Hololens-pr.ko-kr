@@ -1,0 +1,43 @@
+---
+title: HoloLens 2에 대한 Windows Autopilot 등록 지원
+description: HoloLens 2 장치에 대한 Autopilot 등록 지원을 받는 방법에 대해 알아보세요.
+author: joyjaz
+ms.author: v-jjaswinski
+ms.date: 5/20/2021
+ms.prod: hololens
+ms.topic: article
+ms.custom:
+- CI 116283
+- CSSTroubleshooting
+audience: ITPro
+ms.localizationpriority: high
+keywords: Autopilot
+manager: ylempidakis
+ms.openlocfilehash: cdd2ab68905d5cc82b1c5ccc50640112e857f2f4
+ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110398907"
+---
+# <a name="hololens-2-registration-support-for-autopilot"></a><span data-ttu-id="a717e-104">Autopilot를 사용하기 위한 HoloLens 2 등록 지원</span><span class="sxs-lookup"><span data-stu-id="a717e-104">HoloLens 2 Registration Support for Autopilot</span></span>
+
+<span data-ttu-id="a717e-105">이제 고객과 Microsoft CSP(클라우드 솔루션 공급자)는 Microsoft 지원에 직접 요청을 전송하여 HoloLens 2 장치를 등록할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a717e-105">Customers and Microsoft Cloud Solution Providers (CSPs) can now register HoloLens 2 devices by directly submitting requests to Microsoft Support.</span></span> <span data-ttu-id="a717e-106">이 페이지에는 다음과 같이 지원되는 Autopilot 등록 시나리오에 대한 요구 사항이 간략하게 설명되어 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a717e-106">This page outlines the requirements for the following supported Autopilot registration scenarios:</span></span>
+
+- <span data-ttu-id="a717e-107">**HoloLens 2 장치 Autopilot 등록**.</span><span class="sxs-lookup"><span data-stu-id="a717e-107">**HoloLens 2 Device Autopilot Registration**.</span></span> <span data-ttu-id="a717e-108">Windows Autopilot에 HoloLens 2 장치를 등록해 달라는 요청을 제출합니다.</span><span class="sxs-lookup"><span data-stu-id="a717e-108">Submits request to register HoloLens 2 devices into Windows Autopilot.</span></span>
+- <span data-ttu-id="a717e-109">**HoloLens 2 장치 하드웨어 해시 요청**.</span><span class="sxs-lookup"><span data-stu-id="a717e-109">**HoloLens 2 Device Hardware Hash Request**.</span></span> <span data-ttu-id="a717e-110">Microsoft 지원에 요청을 제출하여 고객 또는 CSP가 Microsoft Intune 또는 Microsoft 파트너 센터를 통해 장치를 직접 등록하는 데 사용할 수 있는 하드웨어 해시를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="a717e-110">Submits request to Microsoft Support to provide you with hardware hashes that customers or CSPs can use to self-register devices via Microsoft Intune or the Microsoft Partner Center.</span></span>
+- <span data-ttu-id="a717e-111">**HoloLens 2 장치 Autopilot 등록 취소**.</span><span class="sxs-lookup"><span data-stu-id="a717e-111">**HoloLens 2 Device Autopilot Deregistration**.</span></span> <span data-ttu-id="a717e-112">Windows Autopilot에서 장치를 삭제해 달라는 요청을 제출합니다. 이는 일반적으로 장치 종료 시나리오에서 사용됩니다.</span><span class="sxs-lookup"><span data-stu-id="a717e-112">Submits request to delete devices from Windows Autopilot, typically used in device end of life scenarios.</span></span>
+
+<span data-ttu-id="a717e-113">다음 표에는 Microsoft 지원에 등록 요청을 제출하기 *전에* 수집해야 하는 정보가 자세히 나와 있습니다.</span><span class="sxs-lookup"><span data-stu-id="a717e-113">The following table details the information you will need to collect *prior* to submitting registration requests to Microsoft Support.</span></span>
+
+| <span data-ttu-id="a717e-114">필요한 정보</span><span class="sxs-lookup"><span data-stu-id="a717e-114">Required Information</span></span> | <span data-ttu-id="a717e-115">설명</span><span class="sxs-lookup"><span data-stu-id="a717e-115">Description</span></span> | <span data-ttu-id="a717e-116">Autopilot 등록</span><span class="sxs-lookup"><span data-stu-id="a717e-116">Autopilot Registration</span></span>  | <span data-ttu-id="a717e-117">하드웨어 해시 요청</span><span class="sxs-lookup"><span data-stu-id="a717e-117">Hardware Hash Request</span></span> | <span data-ttu-id="a717e-118">Autopilot 등록 취소</span><span class="sxs-lookup"><span data-stu-id="a717e-118">Autopilot Deregistration</span></span> |
+------------|-------------------------------|--------------------------------------------------|------------------------------|--------------------------------|
+|  <span data-ttu-id="a717e-119">Azure Active Directory 테넌트 ID</span><span class="sxs-lookup"><span data-stu-id="a717e-119">Azure Active Directory Tenant ID</span></span>    |    <span data-ttu-id="a717e-120">Azure Active Directory 테넌트 ID는 조직 이름 또는 도메인과 다른 GUID(Globally Unique Identifier)입니다.</span><span class="sxs-lookup"><span data-stu-id="a717e-120">Your Azure Active Directory tenant ID is a globally unique identifier (GUID) that is different than your organization name or domain.</span></span>    <span data-ttu-id="a717e-121">테넌트 ID를 찾으려면 [Azure Portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)에 로그인합니다.</span><span class="sxs-lookup"><span data-stu-id="a717e-121">To find your Tenant ID sign into the [Azure Portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).</span></span>    |     <span data-ttu-id="a717e-122">✔️</span><span class="sxs-lookup"><span data-stu-id="a717e-122">✔️</span></span>                         |                              |                         <span data-ttu-id="a717e-123">✔️</span><span class="sxs-lookup"><span data-stu-id="a717e-123">✔️</span></span>                        |
+|  <span data-ttu-id="a717e-124">Azure Active Directory 도메인 이름</span><span class="sxs-lookup"><span data-stu-id="a717e-124">Azure Active Directory Domain Name</span></span>    |   <span data-ttu-id="a717e-125">최상위 도메인 이름(예: contoso.com)</span><span class="sxs-lookup"><span data-stu-id="a717e-125">Your top-level domain name; for example, contoso.com.</span></span>    |     <span data-ttu-id="a717e-126">✔️</span><span class="sxs-lookup"><span data-stu-id="a717e-126">✔️</span></span>                         |                              |                         <span data-ttu-id="a717e-127">✔️</span><span class="sxs-lookup"><span data-stu-id="a717e-127">✔️</span></span>                        |
+|  <span data-ttu-id="a717e-128">소유권 증명</span><span class="sxs-lookup"><span data-stu-id="a717e-128">Proof of Ownership</span></span>    |   <span data-ttu-id="a717e-129">원본 매도 증서나 송장을 PDF 형식으로 업로드하여 소유권 증명을 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="a717e-129">Verify proof of ownership by uploading the original bill of sale or invoice in PDF format.</span></span> <span data-ttu-id="a717e-130">스크린샷은 허용되지 않습니다.</span><span class="sxs-lookup"><span data-stu-id="a717e-130">Screenshots are not accepted.</span></span> <span data-ttu-id="a717e-131">매도 증서나 송장에는 장치 일련 번호가 포함되어야 합니다.</span><span class="sxs-lookup"><span data-stu-id="a717e-131">The bill of sale or invoice must include the following: Device serial numbers.</span></span> <span data-ttu-id="a717e-132">회사 이름</span><span class="sxs-lookup"><span data-stu-id="a717e-132">Company name.</span></span>     |     <span data-ttu-id="a717e-133">✔️</span><span class="sxs-lookup"><span data-stu-id="a717e-133">✔️</span></span>                         |              <span data-ttu-id="a717e-134">✔️</span><span class="sxs-lookup"><span data-stu-id="a717e-134">✔️</span></span>                |                         <span data-ttu-id="a717e-135">✔️</span><span class="sxs-lookup"><span data-stu-id="a717e-135">✔️</span></span>                        |
+|  <span data-ttu-id="a717e-136">장치 일련 번호</span><span class="sxs-lookup"><span data-stu-id="a717e-136">Device serial numbers</span></span>    |   <span data-ttu-id="a717e-137">Excel 파일을 각 장치 일련 번호가 새 줄에 입력된 CSV 형식으로 업로드합니다.</span><span class="sxs-lookup"><span data-stu-id="a717e-137">Upload Excel file in CSV format with each device serial number in a new line.</span></span>     |     <span data-ttu-id="a717e-138">✔️</span><span class="sxs-lookup"><span data-stu-id="a717e-138">✔️</span></span>                         |              <span data-ttu-id="a717e-139">✔️</span><span class="sxs-lookup"><span data-stu-id="a717e-139">✔️</span></span>                |                         <span data-ttu-id="a717e-140">✔️</span><span class="sxs-lookup"><span data-stu-id="a717e-140">✔️</span></span>                        |
+
+## <a name="submit-support-requests"></a><span data-ttu-id="a717e-141">지원 요청 제출</span><span class="sxs-lookup"><span data-stu-id="a717e-141">Submit support requests</span></span>
+
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="a717e-142">HoloLens 2에 대한 Autopilot 등록 지원 제출</span><span class="sxs-lookup"><span data-stu-id="a717e-142">Submit Autopilot Registration Support for HoloLens 2</span></span>](https://prod.support.services.microsoft.com/supportrequestform/0d8bf192-cab7-6d39-143d-5a17840b9f5f)
