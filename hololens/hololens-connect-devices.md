@@ -13,12 +13,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: e02950bf6cb70e381e3bc5850509bc65267759c1
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 5fed56d7a0beeda0a0d96eddc63aaee872f3e52d
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924182"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639100"
 ---
 # <a name="connect-to-bluetooth-and-usb-c-devices"></a>Bluetooth 및 USB-C 디바이스에 연결
 
@@ -26,14 +26,14 @@ ms.locfileid: "112924182"
 
 HoloLens 2는 다음 Bluetooth 장치 클래스를 지원합니다.
 
-- [HID](https://docs.microsoft.com/windows-hardware/drivers/hid/):
+- [HID](/windows-hardware/drivers/hid/):
     - 마우스
     - Keyboard
 - 오디오 출력(A2DP) 장치
 
 HoloLens 2는 다음과 같은 Bluetooth API를 지원합니다.
-- GATT [서버](https://docs.microsoft.com/windows/uwp/devices-sensors/gatt-server) 및 [클라이언트](https://docs.microsoft.com/windows/uwp/devices-sensors/gatt-client)
-- [RFCOMM](https://docs.microsoft.com/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm)
+- GATT [서버](/windows/uwp/devices-sensors/gatt-server) 및 [클라이언트](/windows/uwp/devices-sensors/gatt-client)
+- [RFCOMM](/windows/uwp/devices-sensors/send-or-receive-files-with-rfcomm)
 >[!IMPORTANT]
 > 실제로 HID 및 GATT 장치를 사용하려면 Microsoft Store에서 해당하는 도우미 앱을 설치해야 할 수 있습니다.
 
@@ -41,7 +41,7 @@ HoloLens(1세대)는 다음 Bluetooth 장치 클래스를 지원합니다.
 
 - 마우스
 - Keyboard
-- [HoloLens(1세대) 클릭커](https://docs.microsoft.com/hololens/hololens1-clicker)
+- [HoloLens(1세대) 클릭커](hololens1-clicker.md)
 
 > [!NOTE]
 > 다른 유형의 Bluetooth 장치(예: 스피커, 헤드셋, 스마트폰, 게임 패드)가 HoloLens 설정에서 사용 가능한 것으로 표시될 수 있습니다. 그러나 이러한 장치는 HoloLens(1세대)에서 지원되지 않습니다. 자세한 내용은 [HoloLens 설정에 장치를 사용 가능으로 표시되지만 장치가 작동하지 않음](hololens-troubleshooting.md#devices-listed-as-available-in-settings-dont-work)을 참조하세요.

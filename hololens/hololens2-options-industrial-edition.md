@@ -2,7 +2,7 @@
 title: HoloLens 2 인더스트리얼 버전
 description: HoloLens 2 Industrial Edition에 대해 알아보고 사용자 자신의 버전을 구입한 후에 수행할 작업을 알아봅니다.
 keywords: HoloLens 2 구매 옵션, HoloLens 옵션, Industrial Edition
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: df18c64487645ebe5381d853de7e32780c4fccad
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 686510fdda8bb09182d7e32188bb9eef9022828c
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398865"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639576"
 ---
 # <a name="hololens-2-industrial-edition"></a>HoloLens 2 인더스트리얼 버전
 
@@ -40,7 +40,7 @@ HoloLens 2 Industrial Edition은 다음과 같은 광범위한 산업 환경을 
 
 ## <a name="cleaning-and-handling-hololens-2"></a>HoloLens 2 청소 및 처리
 
-HoloLens 2 Industrial Edition은 "70%" 이소프로필 알코올 및 물을 사용하여 바이저, 브로우 패드 및 헤드 스트랩을 비롯한 장치의 단단한 표면을 청소할 수 있습니다. 자세한 내용은 [HoloLens 2 청소 FAQ](https://docs.microsoft.com/hololens/hololens2-maintenance)를 참조하세요.
+HoloLens 2 Industrial Edition은 "70%" 이소프로필 알코올 및 물을 사용하여 바이저, 브로우 패드 및 헤드 스트랩을 비롯한 장치의 단단한 표면을 청소할 수 있습니다. 자세한 내용은 [HoloLens 2 청소 FAQ](/hololens/hololens2-maintenance)를 참조하세요.
 
 ## <a name="next-steps"></a>다음 단계
 

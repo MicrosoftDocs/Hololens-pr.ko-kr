@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 96bacd79d559bc0adcd42665c4a8b4af856b58b0
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 548f484043f2b1cb62ce0e0cfb6450a956d412b3
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923621"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636931"
 ---
 # <a name="hololens-2-display-troubleshooting"></a>HoloLens 2 디스플레이 문제 해결
 
@@ -122,8 +122,8 @@ HoloLens 1을 경험한 후 고객이 Microsoft에 가장 많이 요청한 사�
 
 개발자는 다크 모드 디자인 지침을 따르는 것이 좋습니다.
 
-* [HoloLens 디스플레이용 개발자 디자인 가이드](https://docs.microsoft.com/windows/mixed-reality/designing-content-for-holographic-display#design-guidelines)
-* [권장 글꼴 크기](https://docs.microsoft.com/windows/mixed-reality/typography#recommended-font-size)
+* [HoloLens 디스플레이용 개발자 디자인 가이드](/windows/mixed-reality/designing-content-for-holographic-display#design-guidelines)
+* [권장 글꼴 크기](/windows/mixed-reality/typography#recommended-font-size)
 
 홀로그램에 흰색 배경이 필요한 경우 디스플레이의 전체 시야보다 홀로그램 크기를 작게 유지합니다. 이 크기를 사용하여 사용자는 홀로그램을 디스플레이 중앙에 배치할 수 있습니다.
 

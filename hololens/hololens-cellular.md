@@ -12,12 +12,12 @@ ms.date: 02/24/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8318d011d6a593c1036b6bcf6f7973870b0dc294
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 6f7da0263e8637486f0151fd2b9da55da8feccc1
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110397494"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635843"
 ---
 # <a name="connect-to-cellular-and-5g"></a>셀룰러 및 5G에 연결
 
@@ -44,7 +44,7 @@ USB-C 테더링은 낮은 대기 시간이 필요한 고급 워크로드의 대�
 
 이더넷 어댑터로 표시되는 장치는 Windows Holographic 버전 2004 이상에서 사용할 수 있습니다.
 
-이더넷 어댑터로 표시되지 않는 장치는 일반 Microsoft [RNDIS](https://docs.microsoft.com/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) 드라이버를 지원해야 합니다. 그러나 이러한 장치는 제한된 수만 HoloLens 2와 호환됩니다. 장치의 제조업체에 일반 Microsoft RNDIS 드라이버를 지원하는지를 문의하세요.
+이더넷 어댑터로 표시되지 않는 장치는 일반 Microsoft [RNDIS](/windows-hardware/drivers/network/overview-of-remote-ndis--rndis-) 드라이버를 지원해야 합니다. 그러나 이러한 장치는 제한된 수만 HoloLens 2와 호환됩니다. 장치의 제조업체에 일반 Microsoft RNDIS 드라이버를 지원하는지를 문의하세요.
 
 RNDIS와 호환되지 않는 장치나, 드라이버 또는 응용 프로그램을 설치해야 하는 장치는 지원되지 않습니다.
 

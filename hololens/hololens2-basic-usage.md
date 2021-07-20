@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8acf5659739d58d24add3f299daeacab7132a086
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: d2804742fdcf9d6562fce0c693552d4a9241398f
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924590"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635214"
 ---
 # <a name="getting-around-hololens-2"></a>HoloLens 2 둘러보기
 
@@ -111,7 +111,7 @@ HoloLens는 사용자 양쪽으로 몇 피트까지 볼 수 있는 센서를 가
 > 한 손 시작 제스처를 사용하려면 다음을 수행합니다.
 >
 > 1. 2019년 11월 업데이트(빌드 18363.1039) 이상으로 업데이트해야 합니다.
-> 1. 시선 추적이 올바르게 작동하려면 장치에서 눈을 보정해야 합니다. 시작 아이콘을 볼 때 아이콘 주변에 회전하는 점이 보이지 않으면 장치에서 눈이 [보정](https://docs.microsoft.com/hololens/hololens-calibration#calibrating-your-hololens-2)되지 않은 것입니다.
+> 1. 시선 추적이 올바르게 작동하려면 장치에서 눈을 보정해야 합니다. 시작 아이콘을 볼 때 아이콘 주변에 회전하는 점이 보이지 않으면 장치에서 눈이 [보정](/hololens/hololens-calibration#calibrating-your-hololens-2)되지 않은 것입니다.
 
 한 손으로만 시작 제스처를 수행할 수도 있습니다. 이를 위해 손바닥을 마주 보는 쪽으로 놓고 그대로 있으면서 손목 안쪽의 **시작 아이콘** 을 봅니다. **아이콘을 주시하면서** 엄지손가락과 집게손가락을 함께 모읍니다.
 

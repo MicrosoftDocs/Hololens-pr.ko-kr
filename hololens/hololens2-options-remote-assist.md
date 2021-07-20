@@ -2,7 +2,7 @@
 title: HoloLens 2 Remote Assist
 description: HoloLens 2 Remote Assist 및 사용자 자신의 장치를 구입한 후에 수행할 작업을 알아봅니다.
 keywords: HoloLens 2 구매 옵션, HoloLens 옵션, Remote Assist
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b10bdb55a5d9cb3c059cb85c29a0ed4f4cf7c7d7
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 540bdcaefafcc50cc38d5e9a67dea3b9cb596f05
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398862"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639474"
 ---
 # <a name="hololens-2-with-remote-assist"></a>HoloLens 2 with Remote Assist
 
@@ -37,10 +37,10 @@ Microsoft는 HoloLens 장치를 대규모로 배포할 수 있도록 지원하�
 
 | 검사점  | 결과                                |
 |-------------|----------------------------------------|
-| [시작](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens) | Remote Assist를 시작합니다.        |
-| [라이선스](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses)     | Remote Assist 라이선스를 사용합니다.      |
-| [연결](https://docs.microsoft.com/hololens/hololens-network)     | 장치를 Wi-Fi에 연결합니다.       |
-| [등록](https://docs.microsoft.com/hololens/hololens-enroll-mdm)      | 조직에 장치를 등록합니다. |
+| [시작](/dynamics365/mixed-reality/remote-assist/overview-hololens) | Remote Assist를 시작합니다.        |
+| [라이선스](/dynamics365/mixed-reality/remote-assist/deploy-remote-assist#add-and-assign-licenses)     | Remote Assist 라이선스를 사용합니다.      |
+| [연결](/hololens/hololens-network)     | 장치를 Wi-Fi에 연결합니다.       |
+| [등록](/hololens/hololens-enroll-mdm)      | 조직에 장치를 등록합니다. |
 
 ## <a name="next-steps"></a>다음 단계
 

@@ -9,12 +9,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: bf1a2080c15346843b9ea9b2d0dc93154e185107
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: e6da84c180ef596b63b6d41229bd094354ab1221
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398910"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640171"
 ---
 # <a name="new-settings-app"></a>새 설정 앱
 
@@ -47,7 +47,7 @@ ms.locfileid: "110398910"
 
 **알려진 문제**
 - 이전에 배치된 설정 창이 제거됩니다(위 참고 사항 참조).
-- 더 이상 설정 앱을 통해 장치 이름을 바꿀 수 없습니다. IT 관리자는 [HoloLens 2용 Windows Autopilot](https://docs.microsoft.com/hololens/hololens2-autopilot) 장치 이름 템플릿 또는 MDM [DevDetail CSP](https://docs.microsoft.com/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName 노드를 사용하여 장치 이름을 바꿀 수 있습니다.
+- 더 이상 설정 앱을 통해 장치 이름을 바꿀 수 없습니다. IT 관리자는 [HoloLens 2용 Windows Autopilot](hololens2-autopilot.md) 장치 이름 템플릿 또는 MDM [DevDetail CSP](/windows/client-management/mdm/devdetail-csp) Ext/Microsoft/DNSComputerName 노드를 사용하여 장치 이름을 바꿀 수 있습니다.
 - 이더넷 페이지에는 항상 가상 이더넷 장치("UsbNcm")가 표시됩니다.
 - UWP 어댑터 계층에서 지원하는 Win32 데스크톱 응용 프로그램의 특성 때문에 새 Microsoft Edge 대한 배터리 사용량이 정확하지 않을 수 있습니다(곧 수정될 예정 없음).
 

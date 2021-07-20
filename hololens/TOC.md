@@ -2,6 +2,7 @@
 
 # 디바이스 개요
 ## [HoloLens 정보 2](hololens2-hardware.md)
+## [HoloLens 2로 무엇을 할 수 있나요?](hololens-commercial-features.md)
 ## HoloLens 2 버전 검색
 ### [HoloLens 2 옵션 비교](hololens2-options.md)
 ### [디바이스 전용 버전](hololens2-options-device-only.md)
@@ -9,7 +10,7 @@
 ### [인더스트리얼 버전](hololens2-options-industrial-edition.md)
 #### [HoloLens 2 인더스트리얼 버전 FAQ](hololens2-industrial-edition-faq.md)
 ### [개발 버전](hololens2-options-dev-edition.md)
-#### [HoloLens 2 개발 버전 FAQ](hololens2-development-edition-faq.md)
+#### [HoloLens 2 개발 버전 FAQ](hololens2-development-edition-faq.yml)
 ### [Trimble XR10 버전](hololens2-options-trimble-xr10-edition.md)
 ### [상용 기능](hololens-commercial-features.md)
 
@@ -114,7 +115,7 @@
 ## [HoloLens 2 릴리스 정보](hololens-release-notes.md)
 ## [Microsoft HoloLens에 대한 참가자 미리 보기](hololens-insider.md)
 ## [지원되는 언어](hololens2-language-support.md)
-## [Microsoft Mesh(미리 보기)를 사용하여 개발](https://docs.microsoft.com/mesh/overview)
+## [Microsoft Mesh(미리 보기)를 사용하여 개발](/mesh/overview)
 ## HoloLens(1세대)
 ### 처음 사용
 #### [HoloLens(1세대) 정보](hololens1-hardware.md)
@@ -130,7 +131,7 @@
 #### [Windows Holographic for Business 기능 잠금 해제](hololens1-upgrade-enterprise.md)
 #### [HoloLens(1세대) 초기화](hololens1-recovery.md)
 ### HoloLens(1세대) 보안
-#### [자주 묻는 HoloLens(1세대) 보안 질문](hololens1-faq-security.md)
+#### [자주 묻는 HoloLens(1세대) 보안 질문](hololens1-faq-security.yml)
 #### [HoloLens(1세대) BitLocker 암호화](hololens1-encryption.md)
 ### [HoloLens(1세대)의 알려진 문제 및 해결 방법](hololens-known-issues.md)
 ### [HoloLens(1세대) 릴리스 정보](hololens1-release-notes.md)

@@ -2,7 +2,7 @@
 title: HoloLens 2 개발 버전
 description: HoloLens 2 Development Edition과 사용자 자신의 버전을 얻은 후 수행할 작업을 알아봅니다.
 keywords: HoloLens 2 구매 옵션, HoloLens 옵션, 디벨로퍼 버전
-author: bogenera
+author: bgener
 ms.author: bogenera
 ms.reviewer: bogenera
 ms.date: 4/12/2021
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6ecb881f694ca919f9c37a9d6094a708eafcb414
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 613f0a24d1d0d0740ebc448b2c92238a76350958
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924471"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639678"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 개발 버전
 
@@ -61,7 +61,7 @@ HoloLens 2 Development Edition에는 HoloLens 2, 500달러의 Azure 크레딧, 3
 
 ### <a name="azure"></a>Azure
 다음은 Azure 크레딧을 사용할 수 있는 몇 가지 일반적인 [혼합 현실용 Azure 제품](https://azure.microsoft.com/topic/mixed-reality/)입니다.
-Azure 크레딧을 사용하는 방법: 500달러의 Azure 크레딧을 사용하려면 Azure Pass 프로모션 코드를 사용하고 구독을 활성화합니다. [자세한 정보](hololens2-development-edition-faq.md#how-can-i-redeem-my-500-azure-credit)
+Azure 크레딧을 사용하는 방법: 500달러의 Azure 크레딧을 사용하려면 Azure Pass 프로모션 코드를 사용하고 구독을 활성화합니다. [자세한 정보](hololens2-development-edition-faq.yml#how-can-i-redeem-my--500-azure-credit-)
 
 - [Azure Spatial Anchors가 3D 콘텐츠를 매핑, 공유 및 유지하는 앱을 빌드하는 데 어떤 도움이 되는지 알아보기](https://azure.microsoft.com/services/spatial-anchors/)
 - [Azure Remote Rendering을 통해 고품질, 대화형 3D 콘텐츠를 렌더링하고 장치에 실시간으로 스트리밍하는 방법 알아보기](https://azure.microsoft.com/services/remote-rendering/)
@@ -72,19 +72,19 @@ Azure 크레딧을 사용하는 방법: 500달러의 Azure 크레딧을 사용�
 
 |     검사점                              |     결과                                                                                                                    |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-|     [디자인 및 프로토타입 생성 시작](https://docs.microsoft.com/windows/mixed-reality/design/design)         |     핵심 개념, 상호 작용 모델 및 UX 요소 전반에 혼합 현실 응용 프로그램을 디자인해 보세요.     |
-|     [혼합 현실을 위한 개발 시작](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)    |     엔진을 선택하고 도구를 다운로드하고 핵심 구성 요소를 추가하고 지금 구축을 시작하세요.                                  |
-|     [Azure Cloud Services 살펴보기](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Azure Remote Rendering 및 Azure Spatial Anchors를 통해 매력적인 몰입형 환경을 빌드하세요.                                 |
+|     [디자인 및 프로토타입 생성 시작](/windows/mixed-reality/design/design)         |     핵심 개념, 상호 작용 모델 및 UX 요소 전반에 혼합 현실 응용 프로그램을 디자인해 보세요.     |
+|     [혼합 현실을 위한 개발 시작](/windows/mixed-reality/develop/development?tabs=unity)    |     엔진을 선택하고 도구를 다운로드하고 핵심 구성 요소를 추가하고 지금 구축을 시작하세요.                                  |
+|     [Azure Cloud Services 살펴보기](/windows/mixed-reality/develop/mixed-reality-cloud-services)            |     Azure Remote Rendering 및 Azure Spatial Anchors를 통해 매력적인 몰입형 환경을 빌드하세요.                                 |
 
 ## <a name="developer-edition-additional-resources"></a>개발자 버전 추가 리소스
 
-- [HoloLens 2 Development Edition FAQ](hololens2-development-edition-faq.md)
-- [HoloLens 개발용 도구를 설치하기.](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
-- [Unity가 포함된 HoloLens 2를 위한 개발에 대해 알아보기](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
-- [MRTK와 Unity를 결합하는 방법에 대해 알아보기](https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-getting-started).
+- [HoloLens 2 Development Edition FAQ](hololens2-development-edition-faq.yml)
+- [HoloLens 개발용 도구를 설치하기.](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
+- [Unity가 포함된 HoloLens 2를 위한 개발에 대해 알아보기](/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2).
+- [MRTK와 Unity를 결합하는 방법에 대해 알아보기](/windows/mixed-reality/develop/unity/mrtk-getting-started).
 - [빌드된 앱을 배포하는 방법 알아보기](app-deploy-overview.md).
-- [혼합 현실에 대한 모든 가능성 탐색하기](https://docs.microsoft.com/windows/mixed-reality/).
-- [Unreal이 포함된 HoloLens 2를 위한 개발에 대해 알아보기.](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
+- [혼합 현실에 대한 모든 가능성 탐색하기](/windows/mixed-reality/).
+- [Unreal이 포함된 HoloLens 2를 위한 개발에 대해 알아보기.](/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=mrtk%2Casa)
 - [HoloDevelopers Slack 채널에서 동료 개발자와 교류하세요](https://holodevelopersslack.azurewebsites.net/).
 
 ## <a name="next-steps"></a>다음 단계

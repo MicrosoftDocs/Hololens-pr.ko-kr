@@ -9,12 +9,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: aefb414deb68376ea45e792f21a929fac7cf3969
-ms.sourcegitcommit: 29573e577381a23891e9557884a6dfdaac0c1c48
+ms.openlocfilehash: 41978c626328903cf480a3315d56841f187bc123
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110398886"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640188"
 ---
 # <a name="introducing-the-new-microsoft-edge"></a>새 Microsoft Edge 소개
 
@@ -42,13 +42,13 @@ ms.locfileid: "110398886"
 
 새 Microsoft Edge의 정책 설정을 관리하는 방법에 대한 자세한 내용은 다음 리소스를 참조하세요.
 
-- [Microsoft Intune을 사용하여 Microsoft Edge 정책 설정 구성](https://docs.microsoft.com/deployedge/configure-edge-with-intune)
-- [Microsoft Edge 레거시와 Microsoft Edge 정책 매핑](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
-- [Google Chrome과 Microsoft Edge 정책 매핑](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
-- 전체 [Microsoft Edge Enterprise 설명서](https://docs.microsoft.com/deployedge/)
+- [Microsoft Intune을 사용하여 Microsoft Edge 정책 설정 구성](/deployedge/configure-edge-with-intune)
+- [Microsoft Edge 레거시와 Microsoft Edge 정책 매핑](/deployedge/microsoft-edge-policy-map-legacy-to-newedge)
+- [Google Chrome과 Microsoft Edge 정책 매핑](/deployedge/microsoft-edge-policy-map-chrome-to-newedge)
+- 전체 [Microsoft Edge Enterprise 설명서](/deployedge/)
 
 > [!IMPORTANT]
-> 새 Microsoft Edge에서 지원되는 브라우저 정책의 양 때문에 저희 팀은 각 새 정책이 HoloLens 2에서 작동한다고 보장할 수 없습니다. 그러나 이전에 HoloLens 2에서 지원했던 각 레거시 Microsoft Edge 정책에 해당하는 새로운 Microsoft Edge 정책이 예상대로 작동하는지 테스트하고 확인했습니다. HoloLens 2에서 사용했던 각 레거시 Microsoft Edge 브라우저 정책에 해당하는 새 Microsoft Edge 정책을 찾으려면 [Microsoft Edge 레거시와 Microsoft Edge 정책 매핑](https://docs.microsoft.com/deployedge/microsoft-edge-policy-map-legacy-to-newedge)을 참조하세요.
+> 새 Microsoft Edge에서 지원되는 브라우저 정책의 양 때문에 저희 팀은 각 새 정책이 HoloLens 2에서 작동한다고 보장할 수 없습니다. 그러나 이전에 HoloLens 2에서 지원했던 각 레거시 Microsoft Edge 정책에 해당하는 새로운 Microsoft Edge 정책이 예상대로 작동하는지 테스트하고 확인했습니다. HoloLens 2에서 사용했던 각 레거시 Microsoft Edge 브라우저 정책에 해당하는 새 Microsoft Edge 정책을 찾으려면 [Microsoft Edge 레거시와 Microsoft Edge 정책 매핑](/deployedge/microsoft-edge-policy-map-legacy-to-newedge)을 참조하세요.
 >
 > HoloLens 2에서 작동하지 *않는* 것으로 알고 있는 새로운 Microsoft Edge 정책이 두 개 이상 있습니다.
 > - EnterpriseModeSiteList
@@ -99,12 +99,12 @@ HoloLens 2에 Microsoft Edge Insider Channels를 설치하는 데 사용할 수 
   1. **설치** 단추를 선택합니다.
   1. 설치가 완료되면 시작 메뉴의 **모든 앱** 목록에 Microsoft Edge Beta, Dev 또는 Canary가 별도의 항목으로 나타납니다.
 
-**Windows 장치 포털을 사용하여 PC를 통해 설치(HoloLens 2에서 [개발자 모드](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal)를 사용해야 함)**
+**Windows 장치 포털을 사용하여 PC를 통해 설치(HoloLens 2에서 [개발자 모드](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#setting-up-hololens-to-use-windows-device-portal)를 사용해야 함)**
   1. PC에서 [Edge Insider 다운로드 페이지](https://www.microsoftedgeinsider.com/download)를 방문합니다.
   1. 설치할 Edge Insider Channel의 "Windows 10 다운로드" 단추 옆에 있는 **드롭다운 화살표 단추** 를 선택합니다.
   1. 드롭다운 메뉴에서 **HoloLens 2** 를 선택합니다.
   1. PC의 "다운로드" 폴더(또는 쉽게 찾을 수 있는 다른 폴더)에 .msix 파일을 저장합니다.
-  1. PC에서 [Windows 장치 포털](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)을 사용하여 다운로드한 .msix 파일을 HoloLens 2에 설치합니다.
+  1. PC에서 [Windows 장치 포털](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)을 사용하여 다운로드한 .msix 파일을 HoloLens 2에 설치합니다.
   1. 설치가 완료되면 시작 메뉴의 **모든 앱** 목록에 Microsoft Edge Beta, Dev 또는 Canary가 별도의 항목으로 나타납니다.
 
 ## <a name="using-wdac-to-block-new-microsoft-edge"></a>WDAC를 사용하여 새 Microsoft Edge 차단
@@ -115,7 +115,7 @@ HoloLens 2에 Microsoft Edge Insider Channels를 설치하는 데 사용할 수 
 
 ## <a name="managing-endpoints-for-the-new-microsoft-edge"></a>새 Microsoft Edge의 엔드포인트 관리
 
-일부 환경에는 고려 사항으로 확인해야 할 네트워크 제한이 있을 수 있습니다. 새 Edge의 원활한 환경을 보장하려면 [이러한 Microsoft 엔드포인트를 사용하도록 설정](https://docs.microsoft.com/deployedge/microsoft-edge-security-endpoints)하세요.
+일부 환경에는 고려 사항으로 확인해야 할 네트워크 제한이 있을 수 있습니다. 새 Edge의 원활한 환경을 보장하려면 [이러한 Microsoft 엔드포인트를 사용하도록 설정](/deployedge/microsoft-edge-security-endpoints)하세요.
 
 현재 사용할 수 있는 [HoloLens의 엔드포인트](hololens-offline.md)에 대해 자세히 읽어보세요.
 
