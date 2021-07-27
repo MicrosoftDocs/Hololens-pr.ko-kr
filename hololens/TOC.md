@@ -12,7 +12,6 @@
 ### [개발 버전](hololens2-options-dev-edition.md)
 #### [HoloLens 2 개발 버전 FAQ](hololens2-development-edition-faq.yml)
 ### [Trimble XR10 버전](hololens2-options-trimble-xr10-edition.md)
-### [상용 기능](hololens-commercial-features.md)
 
 # HoloLens 사용
 ## 처음 사용
@@ -110,6 +109,7 @@
 ## [HoloLens 2 초기화](hololens-recovery.md)
 
 # 리소스
+## [HoloLens 2 구입처](hololens2-purchase.md)
 ## [지원 및 도움말 옵션](hololens2-support.md)
 ## [Autopilot 지원 요청](hololens2-autopilot-registration-support.md)
 ## [HoloLens 2 릴리스 정보](hololens-release-notes.md)
