@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: dc5e6a731fb02adab9ef8223313cac52710b6272
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923502"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659032"
 ---
 # <a name="compare-hololens-2-options"></a>HoloLens 2 옵션 비교
 
@@ -31,33 +31,22 @@ HoloLens는 *홀로그램 기반* 의 혼합 현실 장치로, 공동 작업을 
 
 |                                                      | HoloLens 2 | HoloLens 2 with Remote Assist | HoloLens 2 인더스트리얼 버전 | HoloLens 2 Industrial Edition with Remote Assist | Trimble XR10 with HoloLens 2 | HoloLens 2 개발 버전 |
 |------------------------------------------------------|------------|-------------------------------|-------------------------------|--------------------------------------------------|------------------------------|--------------------------------|
-| HoloLens 2 장치(장치 1개)                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
-| Dynamics 365 Remote Assist(사용자 1명)                |            |               ✔️               |                               |                         ✔️                        |                              |                                |
-| ISO 14644-1 클래스 5 청정실 분류           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
-| UL Class I, Division 2-Groups A, B, C 및 D HAZLOC 환경                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| 안전모 통합(40개 이상의 국가에서 PPE 준수) |            |                               |                               |                                                  |               ✔️              |                                |
-| 노이즈 캔슬링 오디오 출력                        |            |                               |                               |                                                  |               ✔️              |                                |
-| 개발자 권리 유형 <sup>1</sup>                             |            |                               |                               |                                                  |                              |                ✔️               |
-| 신속한 교체 프로그램 <sup>2</sup>                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
-| 상용 사용 권한                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
-| [보증](hololens2-hardware.md#warranty-information)                                             |   1년   |             1년            |             2년            |                      2년                      |            1년 <sup>3</sup>            |             1년             |
-| 장치 구매 한도                                |    없음    |              없음             |              없음             |                       없음                       |             없음             |       거래당 1개      |
+| **HoloLens 2 장치(장치 1개)**                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
+| **Dynamics 365 Remote Assist(사용자 1명)**                |            |               ✔️               |                               |                         ✔️                        |                              |                                |
+| **ISO 14644-1 클래스 5 청정실 분류**           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| **UL Class I, Division 2-Groups A, B, C 및 D HAZLOC 환경**                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
+| **안전모 통합(40개 이상의 국가에서 PPE 준수)** |            |                               |                               |                                                  |               ✔️              |                                |
+| **노이즈 캔슬링 오디오 출력**                        |            |                               |                               |                                                  |               ✔️              |                                |
+| **개발자 자격 <sup>1</sup>**                             |            |                               |                               |                                                  |                              |                ✔️               |
+| **신속한 교체 프로그램 <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| **상용 사용 권한**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
+| [**보증**](hololens2-hardware.md#warranty-information)                                             |   1년   |             1년            |             2년            |                      2년                      |            1년 <sup>3</sup>            |             1년             |
+| **장치 구매 한도**                                |    None    |              None             |              None             |                       None                       |             없음             |       거래당 1개      |
 
 - <sup>1</sup> - 500달러의 Azure 크레딧과 Unity Pro 및 Pixyz Plugin의 3개월 평가판이 포함됩니다.
 - <sup>2</sup> - Microsoft에서 결함 있는 장치를 받기 전에 야간에 교체 장치를 받거나 빠른 배송을 받을 수 있습니다(사용 가능한 옵션 중 더 빠른 옵션).
 - <sup>3</sup> - Trimble XR10 with HoloLens 2 버전에 대한 보증, 지원 및 인증 질문은 [Trimble에 문의](https://fieldtech.trimble.com/en/contact-support)하세요.
 
-## <a name="countries-where-hololens-2-is-available"></a>HoloLens 2를 사용할 수 있는 국가
-
-<br>
-
-| HoloLens 2 버전                  | 지원되는 시장               |
-|-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | 미국, 캐나다, 독일, 프랑스, 영국, 아일랜드, 중국, 일본, 오스트레일리아, 이탈리아, 뉴질랜드, 네덜란드, 스위스, 스페인, 오스트리아, 스웨덴, 핀란드, 노르웨이, 덴마크, 벨기에, 포르투갈, 폴란드, 싱가포르, 홍콩, 대만 및 대한민국 |
-| HoloLens 2 with Remote Assist | 오스트레일리아, 일본, 캐나다, 미국, 오스트리아, 벨기에, 덴마크, 핀란드, 프랑스, 독일, 이탈리아, 네덜란드, 노르웨이, 스페인, 스웨덴, 스위스, 영국 및 아일랜드 <sup>1</sup> 
-| HoloLens 2 Industrial Edition *(출시 시)* | 미국, 캐나다, 독일, 프랑스, 영국, 아일랜드, 중국, 일본, 오스트레일리아, 이탈리아, 뉴질랜드, 네덜란드, 스위스, 스페인, 오스트리아, 스웨덴, 핀란드, 노르웨이, 덴마크, 벨기에, 포르투갈, 폴란드, 싱가포르, 홍콩, 대만 및 대한민국 |
-| HoloLens 2 개발 버전 | 캐나다, 독일, 프랑스, 영국, 아일랜드, 일본, 오스트레일리아, 이탈리아, 스위스 및 뉴질랜드 |
-- <sup>1</sup> 이 목록은 바뀔 수 있습니다. 업데이트를 다시 확인하세요.
 
 ## <a name="options-overview"></a>옵션 개요
 
@@ -82,8 +71,8 @@ HoloLens 혼합 현실 장치를 위해 구축된 다음 추가 솔루션을 살
 | [HoloLens용 Dynamics 365](https://www.microsoft.com//hololens/apps)          | 직원에게 권한을 부여하고 작업을 최적화합니다.                                                        |
 | [Dynamics 365 Remote Assist](https://dynamics.microsoft.com/mixed-reality/remote-assist/)          | 기술자가 여러 위치에서 함께 작업하여 보다 효율적으로 공동 작업할 수 있도록 권한을 부여합니다. |
 |   [Dynamics 365 Guides](https://dynamics.microsoft.com/mixed-reality/guides/)        | 효과적인 학습 요구 사항을 개선하고 직원들의 업무 수행에 대해 알아봅니다.                          |
-|  [혼합 현실을 위한 Azure Cloud Services](https://docs.microsoft.com/windows/mixed-reality/develop/mixed-reality-cloud-services#:~:text=Mixed%20Reality%20services%20Mixed%20Reality%20cloud%20services%20like,all%20in%20the%20context%20of%20your%20users%E2%80%99%20environments)         | Azure Cloud Services를 사용하여 솔루션을 개발하는 방법을 알아봅니다.                                       |
-|  [HoloLens 2 개발 시작](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity)         | 필요에 맞게 혼합 현실 솔루션을 구축합니다.                                                 |
+|  [혼합 현실을 위한 Azure Cloud Services](/windows/mixed-reality/develop/mixed-reality-cloud-services#:~:text=Mixed%20Reality%20services%20Mixed%20Reality%20cloud%20services%20like,all%20in%20the%20context%20of%20your%20users%E2%80%99%20environments)         | Azure Cloud Services를 사용하여 솔루션을 개발하는 방법을 알아봅니다.                                       |
+|  [HoloLens 2 개발 시작](/windows/mixed-reality/develop/development?tabs=unity)         | 필요에 맞게 혼합 현실 솔루션을 구축합니다.                                                 |
 
 ## <a name="next-steps"></a>다음 단계
 

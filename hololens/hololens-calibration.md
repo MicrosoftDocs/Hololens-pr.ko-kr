@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: 보정, 편안함, 시각적 개체, 품질, ipd, HoloLens, Windows Mixed Reality, VR 헤드셋
-ms.openlocfilehash: 62d83aa5c6032d15b26fbc7938859bdaf74151f4
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: f72bdfb980fc20b3812e0377d9486539d34f437c
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924148"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635979"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>시각적 품질과 편안함 개선
 
@@ -60,7 +60,7 @@ HoloLens 2는 사용자에게 다음과 같은 상황에서 장치를 보정하�
 
 ### <a name="manually-starting-the-calibration-process"></a>수동으로 보정 프로세스 시작
 
-1. 시작 제스처를 사용하여 [**시작** 메뉴](hololens2-basic-usage.md#start-gesture)를 엽니다.
+1. 시작 제스처를 사용하여 [**시작 메뉴**](hololens2-basic-usage.md#start-gesture)를 엽니다.
 1. 설정 앱이 **시작** 에 고정되지 않은 경우 **모든 앱** 을 선택합니다.
 1. **설정** 을 선택한 다음, **시스템** > **보정** > **Eye Calibration** > **Run eye calibration** 을 선택합니다.
 
@@ -92,7 +92,7 @@ HoloLens 2에서는 눈 위치를 통해 정확한 홀로그램 위치 지정, �
 1.  시선 추적 보정 프롬프트 대화 상자에서는 사용자에게 시선 추적이 필요한 이유에 대한 세부 정보를 제공합니다.
 2.  사용자에게 눈 보정을 거절할 수 있는 방법을 제공합니다.
 
-사용자가 시선 추적 보정을 시작하도록 선택하면 보정이 완료된 후 초점이 원래 응용 프로그램으로 돌아가야 합니다. 
+사용자가 시선 추적 보정을 시작하도록 선택하면 보정이 완료된 후 초점이 원래 애플리케이션으로 돌아가야 합니다. 
 
 ### <a name="calibration-data-and-security"></a>보정 데이터 및 보안
 
@@ -109,8 +109,11 @@ HoloLens 2에서는 눈 위치를 통해 정확한 홀로그램 위치 지정, �
 1. **설정** > **시스템** > **보정** 을 선택합니다.
 1. **새 사용자가 이 HoloLens를 사용하는 경우 자동으로 눈 보정을 실행하도록 요청** 을 끕니다.
 
-> [!IMPORTANT]
-> 이 설정은 홀로그램 렌더링 품질과 편안함에 부정적인 영향을 줄 수 있습니다.  이 설정을 끄면 시선 추적에 의존하는 기능(예: 텍스트 스크롤)이 몰입형 응용 프로그램에서 더 이상 작동하지 않습니다.
+   > [!IMPORTANT]
+   > 이 설정은 홀로그램 렌더링 품질과 편안함에 부정적인 영향을 줄 수 있습니다.  이 설정을 끄면 시선 추적에 의존하는 기능(예: 텍스트 스크롤)이 몰입형 응용 프로그램에서 더 이상 작동하지 않습니다.
+
+> [!NOTE]
+> 설정 스위치는 [자동 시선 위치 지원](hololens-release-notes.md#auto-eye-position-support)이 시작된 Windows Holographic, 버전 20H2부터 제거되었습니다. 보정 프롬프트는 조정되지 않은 사용자가 시선 추적 사용 앱을 사용하는 경우에만 자동으로 표시됩니다.
 
 ### <a name="hololens-2-eye-tracking-technology"></a>HoloLens 2 시선 추적 기술
 
@@ -140,9 +143,9 @@ HoloLens(1세대) 장치를 설정하면 Cortana의 자기 소개 후 시각적 
 1. 모든 앱을 보려면 **+** 을(를) 선택합니다.
 1. **보정** 을 선택합니다.
 
-![셸에서 보정 앱 액세스](./images/calibration-shell.png)
+   ![셸에서 보정 앱 액세스](./images/calibration-shell.png)
 
-![시작된 후에 라이브 큐브로 표시된 보정 앱](./images/calibration-livecube-200px.png)
+   ![시작된 후에 라이브 큐브로 표시된 보정 앱](./images/calibration-livecube-200px.png)
 
 설정 앱을 사용하여 보정 앱을 실행하려면 다음 단계를 수행합니다.
 
@@ -151,7 +154,7 @@ HoloLens(1세대) 장치를 설정하면 Cortana의 자기 소개 후 시각적 
 1. **설정** 을 선택합니다.
 1. **시스템** > **유틸리티** > **보정 열기** 를 선택합니다.
 
-![설정 앱에서 보정 앱 시작](./images/calibration-settings-500px.jpg)
+   ![설정 앱에서 보정 앱 시작](./images/calibration-settings-500px.jpg)
 
 ## <a name="immersive-headsets"></a>몰입형 헤드셋
 

@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: be33eb5d06ee7d63f1f598792ff75605b0eb4424
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 0124453ef9e3b21722acaf2c6b438ebdfbd65043
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923638"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113635945"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>HoloLens 2 다시 시작, 초기화 또는 복구
 
@@ -72,6 +72,7 @@ HoloLens 2와 함께 제공된 [충전기와 USB Type-C 케이블](https://www.m
 2. **Volume down** + **전원** 단추를 15초 동안 길게 누릅니다. 장치가 자동으로 다시 시작합니다.
 
 4. 호스트 PC에 장치를 연결합니다.
+
 
 5. 장치 관리자를 엽니다(Windows 10의 경우 **Windows** 키를 누른 후 **X** 키를 누른 다음 **장치 관리자** 를 선택). 아래 이미지에 표시된 것처럼 장치에서 *Microsoft HoloLens* 로 제대로 열거되는지 확인합니다.
 
@@ -131,9 +132,15 @@ HoloLens 2가 올바르게 시작되지 않거나 고급 복구 도우미가 장
 
 1. 플래시를 시도하기 전에 장치가 40% 이상 충전되었는지 확인합니다.
 
-2. 장치가 잠금 해제되어 있는지 확인합니다.
+2. 디바이스가 잠금 해제되어 있는지 확인합니다.
 
-3. ARC가 장치를 탐지하지 못하는 경우 PC의 파일 탐색기를 통해 장치에 연결할 수 있는지 확인합니다. 연결할 수 없는 경우, 다음과 같이 합니다.
+1. 디바이스가 허브가 아닌 호스트 PC에 직접 연결되어 있는지 확인합니다.
+
+1. 디바이스가 범용 직렬 버스 드라이버에서 HoloLens/HoloLens 복구 디바이스로 표시되지 않는 경우 다음을 확인합니다.
+    1. Qualcomm HS-USB 디바이스로서의 **포트**
+    1.   QUSB_BULK 디바이스로서의 **기타 디바이스** - 호스트 PC에 HoloLens를 감지하는 데 필요한 드라이버가 없습니다. 마우스 오른쪽 단추를 클릭하고 드라이버 업데이트를 선택하여 온라인으로 드라이버를 검색하거나 [Windows 업데이트 설정에서 선택적 업데이트를 확인합니다](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674). 드라이버가 다운로드되면 ARC가 이를 검색할 수 있어야 합니다.
+ 
+1. ARC가 장치를 탐지하지 못하는 경우 PC의 파일 탐색기를 통해 장치에 연결할 수 있는지 확인합니다. 연결할 수 없는 경우, 다음과 같이 합니다.
 
     1.  장치에 해당 연결을 사용하지 않도록 설정하는 USB 정책이 있을 수 있습니다. 이 경우 [수동 플래싱 모드](hololens-recovery.md#manual-procedure)를 사용해 보세요.
     2.  정책이 없으면 다른 USB 케이블을 사용해 보세요.

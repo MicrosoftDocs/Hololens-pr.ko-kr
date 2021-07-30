@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 88687559310a9abc24f34c416880e02caf535177
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: 4c476a2adc8f03c37e17e6324960318b4806534e
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924522"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113639746"
 ---
 # <a name="about-hololens-2"></a>HoloLens 정보 2
 
@@ -58,22 +58,22 @@ HoloLens 2를 사용하려면 사용자 계정이 필요합니다.
 
 ### <a name="display"></a>표시
 
-|   |   |
-| - | - |
-| 광학 | 시스루 홀로그램 렌즈(도파관) |
-| 홀로그램 해상도 | 2k 3:2 광원 엔진 |
-| 홀로그램 밀도 | >2.5 k 복사(라디언당 광점) |
-| 눈 기반 렌더링 | 3D 눈 위치에 대한 디스플레이 최적화 |
+|   | &nbsp; |
+|---|---|
+| **광학** | 시스루 홀로그램 렌즈(도파관) |
+| **홀로그램 해상도** | 2k 3:2 광원 엔진 |
+| **홀로그램 밀도** | >2.5 k 복사(라디언당 광점) |
+| **눈 기반 렌더링** | 3D 눈 위치에 대한 디스플레이 최적화 |
 
 ### <a name="sensors"></a>센서
 
-|   |   |
-| - | - |
-| 머리 추적 | 가시광선 카메라 4대 |
-| 시선 추적 | IR(적외선) 카메라 2대 |
-| 깊이 | 1-MP 비행 시간 심도 센서 |
-| IMU(관성 측정 장치) | 가속도계, 자이로스코프, 자력계 |
-| 카메라 | 8-MP 스틸, 1080p30 비디오 |
+|   | &nbsp; |
+|---|---|
+| **머리 추적** | 가시광선 카메라 4대 |
+| **시선 추적** | IR(적외선) 카메라 2대 |
+| **깊이** | 1-MP 비행 시간 심도 센서 |
+| **IMU(관성 측정 장치)** | 가속도계, 자이로스코프, 자력계 |
+| **카메라** | 8-MP 스틸, 1080p30 비디오 |
 
 ![HoloLens 2 센서](images/hololens2-front-view.png)
 
@@ -82,77 +82,77 @@ HoloLens 2를 사용하려면 사용자 계정이 필요합니다.
 
 ### <a name="audio-and-speech"></a>오디오 및 음성
 
-|   |   |
-| - | - |
-| 마이크 배열 | 채널 5개 |
-| 스피커 | 기본 제공 공간 음향 |
+|   | &nbsp; |
+|---|---|
+| **마이크 배열** | 채널 5개 |
+| **스피커** | 기본 제공 공간 음향 |
 
 ### <a name="compute-and-connectivity"></a>컴퓨팅 및 연결
 
-|   |   |
-| - | - |
-| 칩의 시스템 | Qualcomm Snapdragon 850 컴퓨팅 플랫폼 [세부 정보](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform) |
-| 홀로그램 처리 장치 | 2세대 사용자 지정 홀로그램 처리 장치 |
-| 메모리 | 4GB LPDDR4x 시스템 DRAM |
-| 스토리지 | 64GB UFS 2.1 |
-| WiFi | 802.11ac 2x2 |
-| Bluetooth | 5.0 |
-| USB | USB Type-C DRP |
+|   | &nbsp; |
+|---|---|
+| **칩의 시스템** | Qualcomm Snapdragon 850 컴퓨팅 플랫폼 [세부 정보](https://www.qualcomm.com/products/snapdragon-850-mobile-compute-platform) |
+| **홀로그램 처리 장치** | 2세대 사용자 지정 홀로그램 처리 장치 |
+| **메모리** | 4GB LPDDR4x 시스템 DRAM |
+| **스토리지** | 64GB UFS 2.1 |
+| **Wi-Fi** | 802.11ac 2x2 |
+| **Bluetooth** | 5.0 |
+| **USB** | USB Type-C DRP |
 
 ### <a name="power"></a>고급
 
-|   |   |
-| - | - |
-| 배터리 사용 시간 | 2~3시간의 활성 사용. 최대 2주의 대기 시간. |
-| 배터리 기술 | [리튬 배터리](https://www.microsoft.com/download/details.aspx?id=43388) |
-| 충전 동작 | 충전 시 완벽하게 작동 |
-| 냉각 유형 | 소극적 냉각(팬 없음) |
-| 소비전력 | 장치가 켜져 있는 동안 내부 배터리 충전율을 유지/향상하려면 최소한 15W 충전기에 연결해야 합니다. |
+|   | &nbsp; |
+|---|---|
+| **배터리 사용 시간** | 2~3시간의 활성 사용. 최대 2주의 대기 시간. |
+| **배터리 기술** | [리튬 배터리](https://www.microsoft.com/download/details.aspx?id=43388) |
+| **충전 동작** | 충전 시 완벽하게 작동 |
+| **냉각 유형** | 소극적 냉각(팬 없음) |
+| **소비전력** | 장치가 켜져 있는 동안 내부 배터리 충전율을 유지/향상하려면 최소한 15W 충전기에 연결해야 합니다. |
 
 ### <a name="fit"></a>맞춤
 
-|   |   |
-| - | - |
-| 크기 조정 | 조절 가능한 밴드 포함 단일 사이즈.  안경 위로 맞추기 |
-| 무게 | 566그램 |
+|   | &nbsp; |
+|---|---|
+| **크기 조정** | 조절 가능한 밴드 포함 단일 사이즈.  안경 위로 맞추기 |
+| **Weight** | 566그램 |
 
 ## <a name="device-capabilities"></a>장치 접근 권한 값
 
 ### <a name="human-understanding"></a>인간 이해
 
-|   |   |
-| - | - |
-| 손 추적 | 양손 완전 굴절형 모델, 직접 조작 |
-| 시선 추적 | 실시간 추적 |
-| 음성 | 장치에서 명령 및 제어, 인터넷에 연결되는 Cortana 자연어 |
+|   | &nbsp; |
+|---|---|
+| **손 추적** | 양손 완전 굴절형 모델, 직접 조작 |
+| **시선 추적** | 실시간 추적 |
+| **음성** | 장치에서 명령 및 제어, 인터넷에 연결되는 Cortana 자연어 |
 
 ### <a name="environment-understanding"></a>환경 이해
 
-|   |   |
-| - | - |
-| 6DoF(6자유도) 추적 | 세계적 규모의 위치 추적 |
-| 공간 매핑 | 실시간 환경 메시 |
-| 혼합 현실 캡처 | 혼합 홀로그램과 물리적 환경 사진 및 비디오 |
+|   | &nbsp; |
+|---|---|
+| **6DoF(6자유도) 추적** | 세계적 규모의 위치 추적 |
+| **공간 매핑** | 실시간 환경 메시 |
+| **혼합 현실 캡처** | 혼합 홀로그램과 물리적 환경 사진 및 비디오 |
 
 ## <a name="pre-installed-software"></a>사전 설치된 소프트웨어
 
-|   |   |
-| - | - |
-| Windows Holographic 운영 체제 | Windows 10 사용자는 [Windows Holographic OS](hololens-release-notes.md)를 사용하여 HoloLens 2를 통해 혼합 현실 환경에서 일부 앱과 게임을 사용할 수 있습니다.
-| 3D 뷰어 | [3D 뷰어](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab)를 사용하면 3D 모델과 애니메이션을 실시간으로 쉽게 볼 수 있습니다.|
-| Cortana | 여러분의 개인 생산성 도우미인 [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)는 중요한 최신 정보가 계속 업데이트되어 필요한 정보를 찾는 시간을 절약할 수 있습니다.  |
-| Dynamics 365 Guides |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab)는 직원들이 HoloLens 장치에서 새로운 기술을 더 빨리 배울 수 있도록 돕습니다. |
-| Dynamics 365 Remote Assist | [Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab)는 기술자가 Microsoft Teams 또는 Dynamics 365 Remote Assist를 사용하여 원격 협력자와 공동 작업을 수행하고 문제를 해결할 수 있도록 지원합니다.  |
-| 피드백 허브 | [피드백 허브](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab)를 사용하면 제안 또는 문제를 공유하여 Windows 및 앱에 대한 피드백을 제공할 수 있습니다.  |
-| 파일 탐색기 | 파일 탐색기는 파일 시스템에 액세스하기 위한 그래픽 사용자 인터페이스를 제공합니다. |
-| 메일 및 일정 | [메일 및 일정](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) 앱은 전자 메일의 최신 정보를 유지하고, 일정을 관리하며, 연락처에 있는 사람들과 연락을 주고받는 데 도움이 됩니다. |  
-| Microsoft Edge | Microsoft Edge는 검색하는 동안 더 높은 수준의 개인 정보 보호, 생산성 및 가치를 제공하는 세계적인 성능을 제공합니다. |
-| Microsoft Store | HoloLens와 작동하는 앱과 게임을 얻으려면 [Microsoft Store](https://www.microsoft.com)를 방문하세요.|
-| 영화 및 TV | [영화 및 TV](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab)는 간단하고 빠르며 세련된 하나의 앱으로 최신 엔터테인먼트를 제공합니다. |
-| OneDrive | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab)를 사용하면 어디서나 모든 장치에서 파일에 액세스하고 편집할 수 있습니다.  |
-| 사진| [사진](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab)을 사용하면 사진 및 비디오를 보고 편집하고, 영화를 만들고, 앨범을 만들 수 있습니다.  |
-| 설정 | 설정 앱은 Windows Holographic의 작동 방식을 자세히 사용자 지정하는 곳입니다.  |
-| 팁 | [팁](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab)을 사용하면 Windows Holographic에서 수행할 수 있는 놀라우면서도 잘 알려지지 않은 작업을 마스터할 수 있습니다. |
+| &nbsp; | &nbsp; |
+|---|---|
+| **Windows Holographic 운영 체제** | Windows 10 사용자는 [Windows Holographic OS](hololens-release-notes.md)를 사용하여 HoloLens 2를 통해 혼합 현실 환경에서 일부 앱과 게임을 사용할 수 있습니다.
+| **3D 뷰어** | [3D 뷰어](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab)를 사용하면 3D 모델과 애니메이션을 실시간으로 쉽게 볼 수 있습니다.|
+| **Cortana** | 여러분의 개인 생산성 도우미인 [Cortana](https://www.microsoft.com/p/cortana/9nffx4szz23l?activetab=pivot:overviewtab)는 중요한 최신 정보가 계속 업데이트되어 필요한 정보를 찾는 시간을 절약할 수 있습니다.  |
+| **Dynamics 365 Guides** |  [Dynamics 365 Guides](https://www.microsoft.com/p/microsoft-dynamics-365-guides/9n038fb42kkb?activetab=pivot:overviewtab)는 직원들이 HoloLens 장치에서 새로운 기술을 더 빨리 배울 수 있도록 돕습니다. |
+| **Dynamics 365 Remote Assist** | [Dynamics 365 Remote Assist](https://www.microsoft.com/p/microsoft-dynamics-365-remote-assist/9p77qgw10k9m?activetab=pivot:overviewtab)는 기술자가 Microsoft Teams 또는 Dynamics 365 Remote Assist를 사용하여 원격 협력자와 공동 작업을 수행하고 문제를 해결할 수 있도록 지원합니다.  |
+| **피드백 허브** | [피드백 허브](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?activetab=pivot:overviewtab)를 사용하면 제안 또는 문제를 공유하여 Windows 및 앱에 대한 피드백을 제공할 수 있습니다.  |
+| **파일 탐색기** | 파일 탐색기는 파일 시스템에 액세스하기 위한 그래픽 사용자 인터페이스를 제공합니다. |
+| **메일 및 일정** | [메일 및 일정](https://www.microsoft.com/p/mail-and-calendar/9wzdncrfhvqm#activetab=pivot:overviewtab) 앱은 전자 메일의 최신 정보를 유지하고, 일정을 관리하며, 연락처에 있는 사람들과 연락을 주고받는 데 도움이 됩니다. |
+| **Microsoft Edge** | Microsoft Edge는 검색하는 동안 더 높은 수준의 개인 정보 보호, 생산성 및 가치를 제공하는 세계적인 성능을 제공합니다. |
+| **Microsoft Store** | HoloLens와 작동하는 앱과 게임을 얻으려면 [Microsoft Store](https://www.microsoft.com)를 방문하세요.|
+| **영화 및 TV** | [영화 및 TV](https://www.microsoft.com/p/movies-tv/9wzdncrfj3p2?activetab=pivot:overviewtab)는 간단하고 빠르며 세련된 하나의 앱으로 최신 엔터테인먼트를 제공합니다. |
+| **OneDrive** | [OneDrive](https://www.microsoft.com/p/onedrive/9wzdncrfj1p3?activetab=pivot:overviewtab)를 사용하면 어디서나 모든 장치에서 파일에 액세스하고 편집할 수 있습니다.  |
+| **사진** | [사진](https://www.microsoft.com/p/microsoft-photos/9wzdncrfjbh4?activetab=pivot:overviewtab)을 사용하면 사진 및 비디오를 보고 편집하고, 영화를 만들고, 앨범을 만들 수 있습니다.  |
+| **설정** | 설정 앱은 Windows Holographic의 작동 방식을 자세히 사용자 지정하는 곳입니다.  |
+| **팁** | [팁](https://www.microsoft.com/p/microsoft-tips/9wzdncrdtbjj?activetab=pivot:overviewtab)을 사용하면 Windows Holographic에서 수행할 수 있는 놀라우면서도 잘 알려지지 않은 작업을 마스터할 수 있습니다. |
 
 ## <a name="device-certifications"></a>장치 인증
 
@@ -202,7 +202,7 @@ HoloLens 2 장치의 일련 번호는 바이저 아래에 있습니다.
 1. 브로우 패드 근처를 살펴봅니다.
 1. 힌지 근처에서 일련 번호를 찾을 수 있습니다.
 
-<img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
+   <img src="images/serial-number-diagram-hl2.png" alt=Null width="625" height="903" />
 
 일련 번호는 연결된 PC를 통해 찾을 수도 있습니다.
 
@@ -211,7 +211,7 @@ HoloLens 2 장치의 일련 번호는 바이저 아래에 있습니다.
 1. 마우스 오른쪽 단추를 클릭하고 HoloLens 장치의 **속성** 을 선택합니다.
 1. 아래 스크린샷과 같이 장치의 일련 번호가 표시됩니다.
 
-<img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
+   <br/><img src="images/ResetRecovery2.png" alt=null line width="400" height="600" />
 
 ## <a name="next-steps"></a>다음 단계
 

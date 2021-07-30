@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0d087037e94bcaed2cd79d9cff77ed3039919a09
-ms.sourcegitcommit: d5b2080868d6b74169a1bab2c7bad37dfa5a8b5a
+ms.openlocfilehash: a5c0e28eff9bb71135309ec5e484fc5b88f02d08
+ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112923785"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113636678"
 ---
 # <a name="set-up-your-hololens-2"></a>HoloLens 2 설정
 
@@ -42,6 +42,14 @@ HoloLens와 함께 제공되는 **편안한 액세서리(선택 사항)** 로 �
 HoloLens 2를 처음 시작할 때 가장 먼저 할 작업은 Windows Holographic을 설정하는 것입니다.  HoloLens를 시작하면 음악이 들리고 Windows 로고가 표시됩니다.
 
 ![처음 부팅 시 첫 번째 화면](images/01-magic-moment.png)
+
+주변을 날아다니는 벌새가 보입니다.
+
+![날고 있는 벌새](images/hummingbird-1.png)
+
+손으로 벌새를 따라가세요.
+
+![날고 있는 벌새 확대](images/hummingbird-2.png)
 
 HoloLens 2에서 다음 단계를 안내합니다.
 
@@ -88,6 +96,7 @@ HoloLens 2에서 다음 단계를 안내합니다.
 
 1. 사용자 계정에 로그인합니다. **My work or school owns it** 및 **I own it** 중에서 선택합니다.
 
+    ![사용자 설정](images/13-device-owner.png)
     - **회사 또는 학교 소유** 를 선택하면 Azure AD 계정을 사용하여 로그인합니다. 조직에서 Azure AD Premium을 사용하고 자동 MDM 등록을 구성한 경우 HoloLens가 MDM에 자동으로 등록됩니다. 조직에서 Azure AD Premium을 사용하지 않는 경우 자동 MDM 등록을 사용할 수 없습니다. 이 경우 [장치 관리에서 HoloLens를 수동으로 등록](hololens-enroll-mdm.md#different-ways-to-enroll)해야 합니다.
 
         1. 조직 계정 정보를 입력합니다.
@@ -100,11 +109,10 @@ HoloLens 2에서 다음 단계를 안내합니다.
         1. Microsoft 계정 정보를 입력합니다.
         2. 암호를 입력합니다. Microsoft 계정에 [2FA(2단계 인증)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/)가 필요한 경우 인증 프로세스를 완료합니다.
 
-    ![사용자 설정](images/13-device-owner.png)
-
-1. **다음** 을 선택하여 아이리스 로그인을 설정합니다. 눈 보정과 비슷하게 진행됩니다. 검색이 완료되면 **완료** 를 선택합니다. **건너뛰기** 를 선택하여 이 단계를 건너뛸 수도 있습니다.
+        
+1. **다음** 을 선택하여 홍채 로그인을 설정합니다. 눈 보정과 비슷하게 진행됩니다. 검색이 완료되면 **완료** 를 선택합니다. **건너뛰기** 를 선택하여 이 단계를 건너뛸 수도 있습니다.
     
-    ![아이리스 설정](images/setup-iris.png) ![아이리스 설정 완료](images/iris-setup-complete.png) 
+    ![홍채 설정](images/setup-iris.png) ![홍채 설정 완료](images/iris-setup-complete.png) 
      
   
 1. 장치에 로그인할 PIN을 설정합니다. 이 PIN은 장치별로 지정됩니다. 

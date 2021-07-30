@@ -1,6 +1,6 @@
 ---
 title: 라이선스 요구 사항
-description: 모바일 장치 관리, HoloLens 및 원격 지원에 필요한 모든 라이선스 요구 사항 및 지침을 최신으로 유지하세요.
+description: 모바일 장치 관리, HoloLens 및 Remote Assist에 필요한 모든 라이선스 요구 사항 및 지침을 최신으로 유지하세요.
 ms.prod: hololens
 ms.sitesec: library
 author: pawinfie
@@ -12,49 +12,102 @@ ms.date: 1/23/2020
 ms.reviewer: ''
 manager: bradke
 appliesto:
-- HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 2f7af532d2172dcaa6514ee11dbb0d6ab5631929
-ms.sourcegitcommit: d20057957aa05c025c9838119cc29264bc57b4bd
+ms.openlocfilehash: bd7a7d03c81dced4fb66d8ebb176887811e823c9
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "11283969"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640284"
 ---
-# 라이선스 요구 사항
+# <a name="license-requirements"></a>라이선스 요구 사항
 
-## MDM(모바일 장치 관리) 라이선스 지침
+## <a name="hololens-2-device-managed"></a>HoloLens 2 디바이스(관리됨)
 
-HoloLens 장치 관리 계획을 수립할 때 Azure AD와 MDM이 필요합니다. AD(활성 디렉터)는 HoloLens 장치를 관리 하는 데 사용할 수 없습니다.
-Intune 이외의 MDM을 사용하려는 경우 [Azure Active Directory 라이선스](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)가 필요합니다.
-Intune을 MDM으로 사용할 계획이라면 Intune 라이선스가 포함된 [제품군 목록](https://docs.microsoft.com/intune/fundamentals/licenses)을 읽어 보세요. **Azure AD는 이러한 제품군의 대부분에 포함되어 있다는 점을 기억하세요.**
+[Azure AD 계정](/azure/active-directory/)
 
-## 시나리오 및 제품에 필요한 라이선스 식별
+> [!IMPORTANT]
+> AD(Active Directory)는 HoloLens 디바이스를 관리하는 데 사용할 수 없습니다.
 
-### HoloLens(1세대) 라이선스 요구 사항
+[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) 또는 다른 MDM.
+- [HoloLens 2용 Windows Autopilot](hololens2-autopilot.md) - IT 관리자와 최종 사용자 모두를 위한 프로비전 환경을 간소화합니다. IT 관리자는 HoloLens 2 정책을 미리 구성할 수 있으며, 처음 부팅될 때 디바이스는 최종 사용자의 조작 없이 비즈니스 준비 상태로 배포됩니다. 
 
-HoloLens(1세대) 장치를 비즈니스용 Windows Holographic으로 업그레이드해야 할 수 있습니다. (업그레이드해야 하는지 여부를 결정하기 위해 [HoloLens 상업용 기능](holoLens-commercial-features.md#feature-comparison-between-editions)을 참조하세요.)
+  > [!NOTE]
+  > Windows Autopilot을 사용하려면 로우 터치 Autopilot 흐름 및 디바이스 배포를 위해 먼저 [Azure P1](/azure/active-directory/fundamentals/active-directory-whatis) 및 [자동 등록](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)을 구성해야 합니다. 
 
- 업그레이드가 필요한 경우 다음을 수행해야 합니다.
+### <a name="business-use-case"></a>비즈니스 사용 사례: 
 
-- HoloLens Enterprise 라이선스 XML 파일 획득
-- HoloLens에 XML 파일 적용 [프로비저닝 패키지](hololens-provisioning.md) 또는 [모바일 장치 관리자](https://docs.microsoft.com/intune/configuration/holographic-upgrade)를 통해 이 작업을 수행할 수 있습니다.
+- [배포 시나리오 A](hololens-requirements.md#scenario-a-deploy-to-cloud-connected-devices) - 개념 증명 또는 파일럿 배포.
 
-### 원격 지원 라이선스 요구 사항
+- [배포 시나리오 B](hololens-requirements.md#scenario-b-deploy-inside-your-organizations-network) - 대규모로 배포.
 
-[요구 사항](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/requirements) 설명서에서 확인할 수 있는 필수 라이선스 및 장치가 있는지 확인합니다.
+## <a name="hololens-2-device-only-non-managed"></a>HoloLens 2 디바이스 전용(관리되지 않음)
 
-1. [원격 지원 라이선스](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)
-    1. 또는 [원격 지원 평가판을 사용해 보세요](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/try-remote-assist)
-1. [Teams Freemium/Teams](https://products.office.com/microsoft-teams/free)
-1. [Azure AD(Azure Active Directory) 라이선스](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
+MSA(Microsoft 계정) 또는 로컬 계정을 사용하는 경우 이러한 계정에 추가 라이선스가 필요하지 않습니다.
 
-**[이 교차 테넌트 시나리오](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)** 를 구현하려면 정보 장벽 라이선스가 필요할 수 있습니다. 정보 장벽 라이선스가 필요한지 여부를 확인하려면 [이 문서](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary)를 참조하세요.
+[로컬 계정](/windows/security/identity-protection/access-control/local-accounts)
 
-### 라이선스 요구 사항 가이드
+- 이 계정은 WCD(Windows Configuration Designer)를 사용하여 미리 [프로비전](hololens-provisioning.md#provisioning-package-hololens-wizard)되어야 합니다.
 
-[업데이트된 라이선스 및 장치 요구 사항](https://docs.microsoft.com/dynamics365/mixed-reality/guides/requirements)을 확인합니다.
+[MSA(Microsoft 계정)](/windows/security/identity-protection/access-control/microsoft-accounts)
 
-1. [Azure AD(Azure Active Directory) 라이선스](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)
-1. [Power BI](https://powerbi.microsoft.com/desktop/)
-1. [가이드](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup)
+> [!WARNING]
+> 이러한 계정을 사용하는 디바이스는 여러 사용자를 지원하지 않습니다.
+
+### <a name="business-use-case"></a>비즈니스 사용 사례: 
+
+- [배포 시나리오 C](hololens-requirements.md#scenario-c-deploy-in-secure-offline-environment) - 오프라인 또는 보안 배포.
+ 
+## <a name="dynamics-365-licensing-and-requirements"></a>Dynamics 365 라이선스 및 요구 사항
+
+### <a name="dynamics-365-remote-assist"></a>Dynamics 365 Remote Assist 
+
+#### <a name="admin"></a>Admin
+
+- Azure AD 계정(구독을 구매하고 라이선스를 할당하는 데 필요)
+- [Remote Assist 구독](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)(또는 [Remote Assist 평가판](/dynamics365/mixed-reality/remote-assist/try-remote-assist))
+    
+#### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 Remote Assist 사용자
+
+- Azure AD 계정
+
+- Remote Assist 라이선스 
+
+  > [!NOTE]
+  > Microsoft Teams는 Remote Assist와 함께 번들로 제공됩니다.
+
+- 네트워크 연결
+
+#### <a name="microsoft-teams-user"></a>Microsoft Teams 사용자
+
+- Azure AD 계정
+
+- Microsoft Teams 또는 [Teams Freemium](https://products.office.com/microsoft-teams/free).
+
+- 네트워크 연결
+
+이 [교차 테넌트 시나리오](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)를 구현할 계획이라면 정보 장벽 라이선스가 필요할 수 있습니다. 정보 장벽 라이선스가 필요한지 확인하려면 [이 문서](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation#step-1-determine-if-information-barriers-are-necessary)를 참조하세요.
+
+### <a name="dynamics-365-guides"></a>Dynamics 365 Guides 
+
+#### <a name="admin"></a>Admin
+
+- Azure AD 계정(구독을 구매하고 라이선스를 할당하는 데 필요)
+- Dynamics 365 [가이드 구독 또는 평가판](/dynamics365/mixed-reality/guides/setup-step-one)
+
+#### <a name="guides-author"></a>가이드 작성자
+
+1. Azure AD 계정
+1. [Dynamics 365 Guides 라이선스](/dynamics365/mixed-reality/guides/requirements)
+1. PC 또는 HoloLens에 설치된 Dynamics 365 Guides 애플리케이션
+1. [Power BI Desktop](https://powerbi.microsoft.com/desktop/)(Analytics 대시보드를 보는 데 사용됨)
+1. 작성자 역할(가이드 생성)
+1. 네트워크 연결
+
+#### <a name="guides-user"></a>가이드 사용자
+
+1. Azure AD 계정
+1. [Dynamics 365 Guides 라이선스](/dynamics365/mixed-reality/guides/requirements)
+1. HoloLens에 설치된 Dynamics 365 Guides 앱
+1. 운영자 역할(가이드 테스트 또는 사용)
+1. 네트워크 연결
