@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 32153fd6f7703347f4fe2f9ad41043fbeb9fab3f
+ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659032"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113640477"
 ---
 # <a name="compare-hololens-2-options"></a>HoloLens 2 옵션 비교
 
@@ -29,11 +29,11 @@ HoloLens는 *홀로그램 기반* 의 혼합 현실 장치로, 공동 작업을 
 
 <br>
 
-|                                                      | HoloLens 2 | HoloLens 2 with Remote Assist | HoloLens 2 인더스트리얼 버전 | HoloLens 2 Industrial Edition with Remote Assist | Trimble XR10 with HoloLens 2 | HoloLens 2 개발 버전 |
+|                                                      | HoloLens 2 | HoloLens 2 with Remote Assist | HoloLens 2 인더스트리얼 버전 | HoloLens 2 인더스트리얼 버전(Remote Assist 포함) | Trimble XR10 with HoloLens 2 | HoloLens 2 개발 버전 |
 |------------------------------------------------------|------------|-------------------------------|-------------------------------|--------------------------------------------------|------------------------------|--------------------------------|
 | **HoloLens 2 장치(장치 1개)**                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
 | **Dynamics 365 Remote Assist(사용자 1명)**                |            |               ✔️               |                               |                         ✔️                        |                              |                                |
-| **ISO 14644-1 클래스 5 청정실 분류**           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+| **ISO 14644-1 Class 5 클린룸 분류**           |            |                               |               ✔️               |                         ✔️                        |                              |                                |
 | **UL Class I, Division 2-Groups A, B, C 및 D HAZLOC 환경**                     |            |                               |               ✔️               |                         ✔️                        |               ✔️              |                                |
 | **안전모 통합(40개 이상의 국가에서 PPE 준수)** |            |                               |                               |                                                  |               ✔️              |                                |
 | **노이즈 캔슬링 오디오 출력**                        |            |                               |                               |                                                  |               ✔️              |                                |
@@ -41,12 +41,23 @@ HoloLens는 *홀로그램 기반* 의 혼합 현실 장치로, 공동 작업을 
 | **신속한 교체 프로그램 <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
 | **상용 사용 권한**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
 | [**보증**](hololens2-hardware.md#warranty-information)                                             |   1년   |             1년            |             2년            |                      2년                      |            1년 <sup>3</sup>            |             1년             |
-| **장치 구매 한도**                                |    None    |              None             |              None             |                       None                       |             없음             |       거래당 1개      |
+| **장치 구매 한도**                                |    없음    |              없음             |              없음             |                       없음                       |             없음             |       거래당 1개      |
 
 - <sup>1</sup> - 500달러의 Azure 크레딧과 Unity Pro 및 Pixyz Plugin의 3개월 평가판이 포함됩니다.
 - <sup>2</sup> - Microsoft에서 결함 있는 장치를 받기 전에 야간에 교체 장치를 받거나 빠른 배송을 받을 수 있습니다(사용 가능한 옵션 중 더 빠른 옵션).
 - <sup>3</sup> - Trimble XR10 with HoloLens 2 버전에 대한 보증, 지원 및 인증 질문은 [Trimble에 문의](https://fieldtech.trimble.com/en/contact-support)하세요.
 
+## <a name="countries-where-hololens-2-is-available"></a>HoloLens 2를 사용할 수 있는 국가
+
+<br>
+
+| HoloLens 2 버전                  | 지원되는 시장               |
+|-------------------------------------------| ----------------------------------------| 
+| HoloLens 2 | 미국, 캐나다, 독일, 프랑스, 영국, 아일랜드, 중국, 일본, 오스트레일리아, 이탈리아, 뉴질랜드, 네덜란드, 스위스, 스페인, 오스트리아, 스웨덴, 핀란드, 노르웨이, 덴마크, 벨기에, 포르투갈, 폴란드, 싱가포르, 홍콩, 대만 및 대한민국 |
+| HoloLens 2 with Remote Assist | 오스트레일리아, 일본, 캐나다, 미국, 오스트리아, 벨기에, 덴마크, 핀란드, 프랑스, 독일, 이탈리아, 네덜란드, 노르웨이, 스페인, 스웨덴, 스위스, 영국 및 아일랜드 <sup>1</sup> 
+| HoloLens 2 인더스트리얼 버전 *(출시 시)* | 미국, 캐나다, 독일, 프랑스, 영국, 아일랜드, 중국, 일본, 오스트레일리아, 이탈리아, 뉴질랜드, 네덜란드, 스위스, 스페인, 오스트리아, 스웨덴, 핀란드, 노르웨이, 덴마크, 벨기에, 포르투갈, 폴란드, 싱가포르, 홍콩, 대만 및 대한민국 |
+| HoloLens 2 개발 버전 | 캐나다, 독일, 프랑스, 영국, 아일랜드, 일본, 오스트레일리아, 이탈리아, 스위스 및 뉴질랜드 |
+- <sup>1</sup> 이 목록은 바뀔 수 있습니다. 업데이트를 다시 확인하세요.
 
 ## <a name="options-overview"></a>옵션 개요
 
@@ -54,7 +65,7 @@ HoloLens는 *홀로그램 기반* 의 혼합 현실 장치로, 공동 작업을 
 
 **[HoloLens 2 with Dynamics 365 Remote Assist](hololens2-options-remote-assist.md)** : 첫날부터 HoloLens 2와 Microsoft의 탁월한 혼합 현실 커뮤니케이션 앱을 함께 시작할 수 있습니다. 회사 전체의 생산성을 높이고 더 많은 목적을 가지고 혁신하도록 지원하세요. Dynamics 365 및 업계 파트너의 솔루션을 통해 지금 혼합 현실을 경험해 보세요.
 
-**[HoloLens 2 Industrial Edition](hololens2-options-industrial-edition.md)** : ISO 클래스 6부터 ISO 클래스 8 범위의 표준으로 청정실 환경을 지원하도록 설계, 구축 및 테스트된 HoloLens 2 Industrial Edition은 UL Class I, Division 2 인증을 받았으며 2년 보증 및 신속한 교체 프로그램이 지원됩니다.
+**[HoloLens 2 인더스트리얼 버전](hololens2-options-industrial-edition.md)** : ISO Class 6부터 ISO Class 8 범위의 표준으로 청정실 환경을 지원하도록 설계, 구축 및 테스트된 HoloLens 2 인더스트리얼 버전은 UL Class I, Division 2 인증을 받았으며 2년 보증 및 신속한 교체 프로그램이 지원됩니다.
 
 **[Trimble XR10 with HoloLens 2](hololens2-options-trimble-xr10-edition.md)** : 지저분하고 시끄러운 안전 관리 환경에서 작업자를 위해 용도에 맞게 제작된 Trimble XR10 with HoloLens 2는 작업 현장에 바로 혼합 현실을 제공합니다.
 

@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 52503c0e1ff8c937211500203b91a30806cd317d
-ms.sourcegitcommit: 74f5b64c67026881c8ae46410f272b22862ff582
+ms.openlocfilehash: e8adb2f796299c99a9152a5b245e8bdd0b768f05
+ms.sourcegitcommit: 78e5f26014e55c13fee9c2b75a80810fd2e77877
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114696319"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "115009343"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens에 대한 참가자 미리 보기
 
@@ -29,17 +29,18 @@ HoloLens 위한 최신 Insider Preview 빌드를 시작합니다. HoloLens 대�
 
 ## <a name="windows-insider-release-notes"></a>Windows 참가자 릴리스 정보
 
-새 기능을 다시 Windows 위해 플라이팅을 시작하게 되어 기쁩니다. 새 빌드는 최신 업데이트를 위해 개발 및 베타 채널로 플라이팅됩니다. Windows Insider 빌드에 더 많은 기능 및 업데이트를 추가함에 따라 이 페이지를 계속 업데이트할 예정입니다. 이러한 업데이트를 현실에 혼합할 준비가 되어 있습니다.
+새로운 기능을 Windows 참가자에게 다시 플라이팅을 시작하게 되어 기쁩니다. 새 빌드는 최신 업데이트를 위해 개발 및 베타 채널로 플라이팅됩니다. Windows 참가자 빌드에 더 많은 기능 및 업데이트를 추가함에 따라 이 페이지를 계속 업데이트할 예정입니다. 이러한 업데이트를 현실에 혼합할 준비가 되어 있습니다.
 
-| 기능                 | 설명                | 사용자 또는 시나리오 | 빌드 소개 |
+| 기능                 | Description                | 사용자 또는 시나리오 | 빌드 소개 |
 |-------------------------|----------------------------|--------------|------------------|
-| [HoloLens 세부 정보를 보고하기 위한 CSP 변경 내용](#csp-changes-for-reporting-hololens-details) | 데이터를 쿼리하기 위한 의 새 CSP | IT 관리자    | 20348.1403                 |
+| [HoloLens 세부 정보를 보고하기 위한 CSP 변경 내용](#csp-changes-for-reporting-hololens-details) | 데이터를 쿼리하는 에 대한 새 CSP | IT 관리자    | 20348.1403                 |
 | [CSP에서 제어하는 자동 로그인 정책](#auto-login-policy-controlled-by-csp) | 자동으로 계정에 로그인하는 데 사용 | IT 관리자 | 20348.1405 |
 | [인증서 관리자에 대한 PFX 파일 지원](#pfx-file-support-for-certificate-manager) | 설정 UI를 통해 PFX 인증서 추가 | 최종 사용자 | 20348.1405 |
 | [HoloLens 설정 고급 진단 보고서 보기](#view-advanced-diagnostic-report-in-settings-on-hololens) | 디바이스에서 MDM 진단 로그 보기 | 문제 해결 | 20348.1405 |
 | [오프라인 진단 알림](#offline-diagnostics-notifications) | 로그 수집에 대한 시청각 피드백 | 문제 해결 | 20348.1405 |
 | [프라이빗 스토어 앱만 Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | 조직의 앱만 표시하도록 스토어 앱 구성 | IT 관리자 | 20348.1408 |
-| [수정 및 개선](hololens-insider.md#fixes-and-improvements) | HoloLens 대한 수정 및 개선 | 모두 | 20348.1408 |
+| [낮은 스토리지 로그 수집 개선](#low-storage-log-collection-improvements) | 스토리지 부족 상황에서 로그 수집 시나리오가 개선되었습니다. | IT 관리자 | 20348.1412 |
+| [수정 및 개선](hololens-insider.md#fixes-and-improvements) | HoloLens 대한 수정 및 개선 | 모두 | 20348.1411 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>HoloLens 세부 정보를 보고하기 위한 CSP 변경 내용
 
@@ -49,7 +50,7 @@ HoloLens 위한 최신 Insider Preview 빌드를 시작합니다. HoloLens 대�
 
 #### <a name="devdetail-csp---free-storage"></a>DevDetail CSP - 무료 Storage
 
-이제 DevDetail CSP는 HoloLens 디바이스에 사용 중인 스토리지 공간도 보고합니다. 이 값은 설정 앱의 Storage 페이지에 표시된 값과 거의 일치해야 합니다. 다음은 이 정보를 포함하는 특정 노드입니다.
+이제 DevDetail CSP는 HoloLens 디바이스에서 사용 여유 스토리지 공간도 보고합니다. 이 값은 설정 앱의 Storage 페이지에 표시된 값과 거의 일치해야 합니다. 다음은 이 정보를 포함하는 특정 노드입니다.
 
 - ./DevDetail/Ext/Microsoft/FreeStorage(GET 작업만 해당)
 
@@ -122,13 +123,17 @@ Windows Insider 빌드 20348.1405에 도입되었습니다. 이제 .pfx 인증�
 
 이 새로운 기능은 디바이스가 업데이트될 때 사용하도록 설정되며 사용하도록 설정하거나 관리하지 않아도 됩니다. 이 새 피드백을 표시하거나 들어 볼 수 없는 경우에도 오프라인 진단이 계속 생성됩니다.
 
-이 새로운 오디오시각 피드백 추가를 통해 진단 데이터를 더 쉽게 수집하고 문제를 보다 신속하게 해결할 수 있기를 바랍니다.
+이 새로운 고급 시각적 피드백 추가를 사용 하 여 진단 데이터를 수집 하는 것이 더 쉽고 신속 하 게 문제를 해결할 수 있습니다.
 
-### <a name="use-only-private-store-apps-for-microsoft-store"></a>Microsoft Store 프라이빗 스토어 앱만 사용
+### <a name="use-only-private-store-apps-for-microsoft-store"></a>Microsoft Store에 대 한 개인 저장소 앱만 사용
 
-RequirePrivateStoreOnly 정책이 HoloLens 사용하도록 설정되었습니다. 이 정책을 사용하면 Microsoft Store 앱이 조직에 대해 구성된 프라이빗 저장소만 표시하도록 구성할 수 있습니다. 사용 가능한 앱에 대 한 액세스만 제한 합니다.
+HoloLens에 대해 RequirePrivateStoreOnly 정책을 사용 하도록 설정 했습니다. 이 정책을 사용 하면 조직에 대해 구성 된 개인 저장소만 표시 하도록 Microsoft Store 앱을 구성할 수 있습니다. 사용 가능한 앱에 대 한 액세스만 제한 합니다.
 
 [Applicationmanagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly) 에 대 한 자세한 정보
+
+### <a name="low-storage-log-collection-improvements"></a>저장소 로그 수집 기능이 향상 되었습니다.
+
+진단 로그가 수집 될 때 장치의 디스크 공간이 부족 한 경우에는 **StorageDiagnostics.zip** 이라는 추가 보고서가 만들어집니다. 저장소의 임계값은 [저장소 센스](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)Windows 의해 자동으로 결정 됩니다.
 
 ### <a name="fixes-and-improvements"></a>수정 사항 및 향상 된 기능
 
@@ -136,7 +141,6 @@ RequirePrivateStoreOnly 정책이 HoloLens 사용하도록 설정되었습니다
 - [파일 업로드 및 다운로드 시간 제한이 있는 장치 포털의 알려진 문제를 수정 했습니다.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
 - HoloLens 장치에서 준수 속성을 보고 하는 문제를 해결 합니다. 올바른 보고가 Insider 빌드에서 트리거되도록 하려면 다시 부팅 해야 할 수 있습니다.  
 - 새 깜박이에 설치 된 원격 지원의 기본 버전을 업데이트 했습니다.
-
 
 ## <a name="start-receiving-insider-builds"></a>Insider 빌드 수신을 시작 합니다.
 
