@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a5c0e28eff9bb71135309ec5e484fc5b88f02d08
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: ef2f8723868e14beaf19cb057fffbcbd9e9f51f9
+ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636678"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114659351"
 ---
 # <a name="set-up-your-hololens-2"></a>HoloLens 2 설정
 
@@ -39,41 +39,44 @@ HoloLens와 함께 제공되는 **편안한 액세서리(선택 사항)** 로 �
 
 ## <a name="set-up-windows"></a>Windows 설치
 
-HoloLens 2를 처음 시작할 때 가장 먼저 할 작업은 Windows Holographic을 설정하는 것입니다.  HoloLens를 시작하면 음악이 들리고 Windows 로고가 표시됩니다.
+HoloLens 2를 처음 시작할 때 가장 먼저 할 작업은 Windows Holographic을 설정하는 것입니다.  HoloLens를 시작하면 음악이 들리고 Microsoft 로고가 표시됩니다.
 
-![처음 부팅 시 첫 번째 화면](images/01-magic-moment.png)
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGGGk]
+
+<br/>
+<img src="images/01-magic-moment.png" width="500px" alt="First screen during first boot">
 
 주변을 날아다니는 벌새가 보입니다.
 
-![날고 있는 벌새](images/hummingbird-1.png)
+<img src="images/hummingbird-1.png" width="500px" alt="Hummingbird flying">
 
-손으로 벌새를 따라가세요.
+팔로우하게 됩니다.
 
-![날고 있는 벌새 확대](images/hummingbird-2.png)
+<img src="images/hummingbird-2.png" width="500px" alt="Hummingbird flying close up">
 
-HoloLens 2에서 다음 단계를 안내합니다.
+Microsoft 로고가 있는 단추가 표시됩니다. 단추를 누르면 HoloLens 2에서 다음 단계를 안내합니다.
 
 1. 언어를 선택합니다.
 
-    ![언어 선택](images/04-language.png)
+    <img src="images/04-language.png" width="500px" alt="Select language">
 
 1. 지역을 선택합니다.
 
-    ![지역 선택](images/05-region.png)
+    <img src="images/05-region.png" width="500px" alt="Select region">
 
 1. 눈에 맞춰 HoloLens를 보정합니다.  보정을 건너뛰도록 선택하면 다음에 로그인할 때 메시지가 표시됩니다. 
 
     1. 먼저 바이저를 조정합니다.
     
-        ![보정 선택 화면](images/06-et-corners.png)
-
+    <img src="images/06-et-corners.png" width="500px" alt="Calibration selection screen">
+    
     2. 보정하려면 대상 세트(보석이라고 함)를 보게 됩니다. 보정을 하는 동안 눈을 깜빡이거나 눈을 감아도 괜찮지만 방에 있는 다른 물체를 응시하지 않도록 합니다. HoloLens는 이 프로세스를 사용하여 홀로그램 세계를 렌더링하기 위해 눈 위치를 학습할 수 있습니다. 
 
-        ![눈에 맞게 조정](images/07-adjust-eyes.png)
+        <img src="images/07-adjust-eyes.png" width="500px" alt="Adjust for your eyes">
 
         보정이 완료되면 바이저가 머리 위에서 움직여도 홀로그램이 올바르게 나타납니다. 보정 정보는 장치에 로컬로 저장되며 계정 정보와 연결되지 않습니다. 자세한 내용은 [보정 데이터 및 보안](hololens-calibration.md#calibration-data-and-security)을 참조하세요.
 
-        ![보정 완료](images/calibration-complete.png)
+        <img src="images/calibration-complete.png" width="500px" alt="Calibration is complete">
 
 1. 인터넷에 연결합니다(Wi-Fi 또는 이더넷 연결 선택).
 
@@ -110,9 +113,12 @@ HoloLens 2에서 다음 단계를 안내합니다.
         2. 암호를 입력합니다. Microsoft 계정에 [2FA(2단계 인증)](https://blogs.technet.microsoft.com/microsoft_blog/2013/04/17/microsoft-account-gets-more-secure/)가 필요한 경우 인증 프로세스를 완료합니다.
 
         
-1. **다음** 을 선택하여 홍채 로그인을 설정합니다. 눈 보정과 비슷하게 진행됩니다. 검색이 완료되면 **완료** 를 선택합니다. **건너뛰기** 를 선택하여 이 단계를 건너뛸 수도 있습니다.
+1. **다음** 을 선택하여 아이리스 로그인을 설정합니다. 눈 보정과 비슷하게 진행됩니다. 검색이 완료되면 **완료** 를 선택합니다. **건너뛰기** 를 선택하여 이 단계를 건너뛸 수도 있습니다.
     
-    ![홍채 설정](images/setup-iris.png) ![홍채 설정 완료](images/iris-setup-complete.png) 
+    <img src="images/setup-iris.png" width="500px" alt="Iris setup">
+
+    <img src="images/iris-setup-complete.png" width="500px" alt="Iris setup completion">
+
      
   
 1. 장치에 로그인할 PIN을 설정합니다. 이 PIN은 장치별로 지정됩니다. 
@@ -122,26 +128,30 @@ HoloLens 2에서 다음 단계를 안내합니다.
     ![Windows Hello PIN 설정](images/windows-hello-pin.png)
 
     ![Windows Hello 설정 성공](images/windows-hello-successful.png) 
+
     
 1. HoloLens 2 음성 사용 여부를 선택합니다.
 
-    ![Cortana 사용](images/22-do-more-with-voice.png)
+    <img src="images/22-do-more-with-voice.png" width="500px" alt="Enable Cortana">
 
 1. HoloLens 2에서 위치를 사용할지를 선택합니다.
     
-    ![위치 서비스 사용](images/setup-location-services.png)
+    <img src="images/setup-location-services.png" width="500px" alt="Enable location services">
 
 1. 원격 분석 수준을 선택합니다. 가능한 경우 선택 사항인 원격 분석을 사용하도록 설정하세요. 이 정보는 HoloLens 엔지니어링 팀에게 매우 유용합니다.
 
-     ![원격 분석 수준](images/24-telemetry.png)
+    <img src="images/24-telemetry.png" width="500px" alt="Telemetry level">
+
 
 1. HoloLens 2에서 시작 제스처를 사용하는 방법을 알아봅니다.
 
-     ![이미지 1에서 시작 제스처를 사용하는 방법을 알아보기](images/26-01-startmenu-learning.png)
+    <img src="images/26-01-startmenu-learning.png" width="500px" alt="Learn how to use the start gesture, image 1">
 
-     ![이미지 2에서 시작 제스처를 사용하는 방법을 알아보기](images/26-02-startmenu-learning.png)
-
-축하합니다!  설치가 완료되었으며 HoloLens를 사용할 준비가 되었습니다!
+    <img src="images/26-02-startmenu-learning.png" width="500px" alt="Learn how to use the start gesture, image 2">
+    
+    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3Wxng]
+    
+    축하합니다!  설치가 완료되었으며 HoloLens를 사용할 준비가 되었습니다!
 
 ## <a name="next-steps"></a>다음 단계
 
