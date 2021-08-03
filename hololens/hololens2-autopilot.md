@@ -13,21 +13,23 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: jarrettr
-ms.openlocfilehash: cc73f5cbb438119f4c626ae76db9c91373e19aff
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 273dcd2180225cf953686ed1c2e5b6524996dba3
+ms.sourcegitcommit: 78e5f26014e55c13fee9c2b75a80810fd2e77877
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635367"
+ms.lasthandoff: 07/31/2021
+ms.locfileid: "115009360"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>HoloLens 2용 Windows Autopilot
+
+> [!NOTE]
+> Microsoft Endpoint Manager의 HoloLens에 대한 Autopilot 구성이 **공개 미리 보기** 에서 **일반 공급** 으로 전환됩니다. 모든 테넌트는 MEM 관리 센터에서 Autopilot을 설정할 수 있습니다.
 
 Windows Holographic 버전 2004부터 HoloLens 2는 Microsoft Intune(타사 MDM은 지원되지 않음)에서 Windows Autopilot [자체 배포 모드](/mem/autopilot/self-deploying)를 지원합니다. 관리자는 Microsoft Endpoint Manager에서 OOBE(첫 실행 경험)를 구성하여 최종 사용자가 상호 작용을 거의 또는 전혀 하지 않고도 비즈니스용 장치를 준비할 수 있도록 할 수 있습니다. 이를 통해 인벤토리 관리 오버헤드, 실습 장치 준비 비용 및 설치하는 동안 직원의 지원 요청을 줄일 수 있습니다. 자세한 내용은 [Windows Autopilot](/mem/autopilot/windows-autopilot) 설명서를 참조하세요.
 
 Surface 장치와 마찬가지로 고객은 Microsoft [클라우드 솔루션 공급자](https://partner.microsoft.com/cloud-solution-provider)(재판매인 또는 배포자)와 협력하여 파트너 센터를 통해 Autopilot 서비스에 등록된 장치를 구입하는 것이 좋습니다. Microsoft의 채널 파트너를 활용하면 가장 효과적인 엔드투엔드 경로가 보장되지만, 장치 등록을 위한 다른 방법은 [장치 추가](/mem/autopilot/add-devices) 설명서에 간략하게 설명되어 있습니다.
 
-> [!NOTE]
-> 2020년 11월 20일 현재 Microsoft Endpoint Manager의 HoloLens용 Autopilot 구성은 **공개 미리 보기** 로 전환되고 있습니다. 고객이 더 이상 비공개 미리 보기에 등록할 필요가 없으며 모든 테넌트는 MEM 관리 센터에서 Autopilot을 설정할 수 있습니다.
+
 
 사용자가 Autopilot 자체 배포 프로세스를 시작하면 Autopilot에서 다음 단계를 완료합니다.
 
@@ -329,3 +331,7 @@ Autopilot 프로필이 다운로드될 때까지 OOBE가 무기한 대기하고 
 - 장치가 Autopilot 서비스에 등록되어 있고 프로필이 MEM 포털에 할당된 경우 HoloLens [고객 지원팀](/hololens/)('지원' 카드 참조)에 문의하세요. 지원 티켓을 열고 해당하는 경우 OOBE(첫 실행 경험) 중에 [오프라인 진단 로그](hololens-diagnostic-logs.md#offline-diagnostics)를 캡처하여 스크린샷과 로그를 포함하세요.
 - 장치에서 문제를 보고하려면 HoloLens의 피드백 허브 앱을 사용합니다. 피드백 허브에서 **Enterprise Management** > **장치** 범주를 선택합니다.
 - HoloLens용 Autopilot에 대한 일반적인 피드백을 제공하려면 이 [설문 조사](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7vUmjNI0XhCp1T72ODD84xUMEM3TVJPOURBRkNVWkYwM0RWWEhJNVdJSi4u&wdLOR=cEF1F57F6-AD9B-4CCE-B919-AB5AE320A993)를 제출하세요.
+
+## <a name="delete-autopilot-devices"></a>Autopilot 디바이스 삭제
+
+더 이상 Autopilot에 디바이스를 사용하지 않거나 디바이스를 다른 테넌트에 등록하지 않을 수 있습니다. 이 작업을 수행하려면 [Autopilot 디바이스를 삭제하는 방법](/mem/autopilot/add-devices#delete-autopilot-devices)을 읽어보세요.
