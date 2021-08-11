@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 88e7d0614cf95f32eaa0434724eddbcb5b8cf863
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 76513c2f2458119785b64d8cccac4e42c2957b5af966dfdb0c165ebeda12e069
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113636982"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660087"
 ---
 # <a name="prepare---corporate-connected-guide"></a>준비-회사에 연결 된 가이드
 ## <a name="infrastructure-essentials"></a>인프라 Essentials

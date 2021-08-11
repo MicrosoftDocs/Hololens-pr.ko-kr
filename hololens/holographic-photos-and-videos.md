@@ -1,6 +1,6 @@
 ---
 title: 혼합 현실 사진 및 비디오 캡처, 기록 및 공유
-description: HoloLens 혼합 현실 디바이스를 사용하여 혼합 현실 사진 및 비디오를 캡처, 녹화 및 보는 방법을 알아봅니다. Miracast 또는 수집된 파일을 통해 공유하는 방법을 알아봅니다.
+description: HoloLens 혼합 현실 디바이스를 사용하여 혼합 현실 사진 및 비디오를 캡처, 기록 및 보는 방법을 알아봅니다. Miracast 또는 수집된 파일을 통해 공유하는 방법을 알아봅니다.
 keywords: hololens, photo, video, capture, mrc, mixed reality capture, photos, camera, miracast, stream, livestream, demo, record
 ms.assetid: 1b636ec3-6186-4fbb-81b2-71155aef0593
 ms.prod: hololens
@@ -15,12 +15,12 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: daced6fab65f779b7bd670bf1275f99ae5311d3f
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 54e9959c03b69db39ff2738e5d4f41f9740ae562b38e8d85998521a4733edad7
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635962"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664862"
 ---
 # <a name="create-mixed-reality-photos-and-videos"></a>혼합 현실 사진 및 비디오 만들기
 
@@ -67,7 +67,7 @@ HoloLens 혼합 현실 비디오를 녹화하는 방법에는 여러 가지가 �
 
 ### <a name="hardware-buttons-to-record-videos"></a>비디오를 녹화하는 하드웨어 단추
 
-비디오를 녹화하는 가장 빠른 방법은 3초 카운트다운이 시작될 때까지 **볼륨을 길게** 누르고 볼륨 **다운** 단추를 동시에 누르는 것입니다. 기록을 중지하려면 두 단추를 동시에 탭합니다.
+비디오를 녹화하는 가장 빠른 방법은 3초 카운트다운이 시작될 때까지 **볼륨을 길게** 누르고 **볼륨 다운** 단추를 동시에 누르는 것입니다. 기록을 중지하려면 두 단추를 동시에 탭합니다.
 
 > [!NOTE]
 > **볼륨을** 빠르게 누르고 동시에 **볼륨을 줄이면** 비디오를 녹화하는 대신 사진을 찍습니다.
@@ -125,7 +125,7 @@ Microsoft HoloLens 도우미 앱을 통해 공유하려면 HoloLens 개발자 �
 
 HoloLens 미리 설치된 사진 앱에서 혼합 현실 사진 및 비디오를 볼 수도 있습니다. 세계에 사진을 고정하려면 사진 앱에서 선택하고 **혼합 세계 에 배치를** 선택합니다. 사진을 배치한 후 전 세계로 이동할 수 있습니다.
 
-HoloLens 연결된 PC에서 혼합 현실 사진 및 비디오를 보거나/또는 저장하려면 [MTP를 통해](/windows/mixed-reality/release-notes-april-2018#new-features-for-hololens) [Windows 장치 포털](/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture) 또는 PC의 파일 탐색기 사용할 수 있습니다.
+HoloLens 연결된 PC에서 혼합 현실 사진 및 비디오를 보거나 저장하려면 [MTP를 통해](/windows/mixed-reality/release-notes-april-2018#new-features-for-hololens) [Windows 장치 포털](/windows/mixed-reality/using-the-windows-device-portal#mixed-reality-capture) 또는 PC의 파일 탐색기 사용할 수 있습니다.
 
 ### <a name="use-file-explorer-to-get-your-pictures-videos-and-files"></a>파일 탐색기 사용하여 사진, 비디오 및 파일 다운로드
 
@@ -175,14 +175,14 @@ Windows Holographic, 버전 20h2 이전의 HoloLens 2 장치에서는 장치에 
 
 ### <a name="default-photo-format-and-resolution"></a>기본 사진 형식 및 해상도
 
-|  디바이스  |  서식  |  확장명  |  해결 방법  |
+|  디바이스  |  서식  |  내선 번호  |  해결 방법  |
 |----------|----------|----------|----------|
 | HoloLens 2 | [JPEG](https://en.wikipedia.org/wiki/JPEG) | .jpg | 3904x2196px |
 | HoloLens(1세대) | [JPEG](https://en.wikipedia.org/wiki/JPEG) | .jpg | 1408x792px |
 
 ### <a name="recorded-video-format-and-resolution"></a>녹화 된 비디오 형식 및 해상도
 
-| 디바이스 | 서식 | 확장명 | 해결 방법 | 속도 | 오디오 |
+| 디바이스 | 서식 | 내선 번호 | 해결 방법 | 속도 | 오디오 |
 |----------|----------|----------|----------|----------|----------|
 | HoloLens 2 | [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1920x1080px | 30fps | 48kHz 스테레오 |
 | HoloLens(1세대) |  [MPEG-4](https://en.wikipedia.org/wiki/MPEG-4) | .mp4 | 1216x684px | 24fps | 48kHz 스테레오 |

@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 26fd2def8ce1fa8f960ab930e209c74fb37e2e0a
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 8bba313e7b5ee3d055c2b6ff2c60810baf428ecfa7d5554a1efb4e0aa9e1e98b
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639763"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660322"
 ---
 # <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>배포 가이드 – Remote Assist 있는 클라우드 연결 HoloLens 2 - 개요
 
@@ -27,7 +27,7 @@ ms.locfileid: "113639763"
 
 이 가이드에서는 디바이스를 디바이스 관리에 등록하고, 필요에 따라 라이선스를 적용하고, 최종 사용자가 디바이스 설정 시 Remote Assist 즉시 사용할 수 있는지 확인하는 방법을 설명합니다. 이를 위해 설정하고 실행하는 데 필요한 인프라의 중요한 부분을 살펴보며 HoloLens 2 사용하여 대규모 배포를 달성합니다. 이 가이드에는 다른 디바이스 제한 또는 구성이 적용되지 않습니다. 그러나 완료한 후에는 이러한 옵션을 살펴보는 것이 좋습니다.
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
 
 HoloLens 2 배포하려면 다음 인프라가 있어야 합니다. 그렇지 않은 경우 Azure 및 Intune 설정이 이 가이드에 포함되어 있습니다.
 
@@ -43,14 +43,14 @@ HoloLens 2 배포하려면 다음 인프라가 있어야 합니다. 그렇지 �
 
 ## <a name="learn-about-remote-assist"></a>Remote Assist 대해 알아보기
 
-Remote Assist 통해 공동 유지 관리 및 복구, 원격 검사, 지식 공유 및 학습이 가능합니다. 다른 역할 및 위치에 있는 사람들을 연결하여 Remote Assist 사용하는 기술자는 Microsoft Teams 원격 협력자와 연결할 수 있습니다. 비디오, 스크린샷 및 주석을 결합하여 동일한 위치에 있지 않은 경우에도 실시간으로 문제를 해결할 수 있습니다. 원격 협력자는 참조 이미지, 회로도 및 기타 유용한 정보를 기술자의 물리적 공간에 삽입할 수 있으므로 HoloLens 작업을 진행하면서 정형을 참조할 수 있습니다.
+Remote Assist 통해 공동 유지 관리 및 복구, 원격 검사뿐만 아니라 지식 공유 및 학습도 가능합니다. 다른 역할 및 위치에 있는 사람들을 연결하여 Remote Assist 사용하는 기술자는 Microsoft Teams 원격 협력자와 연결할 수 있습니다. 비디오, 스크린샷 및 주석을 결합하여 동일한 위치에 있지 않은 경우에도 실시간으로 문제를 해결할 수 있습니다. 원격 협력자는 참조 이미지, 회로도 및 기타 유용한 정보를 기술자의 물리적 공간에 삽입할 수 있으므로 HoloLens 작업을 진행하면서 정형을 참조할 수 있습니다.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### <a name="remote-assist-licensing-and-requirements"></a>Remote Assist 라이선스 및 요구 사항
 
-- Azure AD 계정(구독 구매 및 라이선스 할당에 필요)
-- [Remote Assist 구독(또는](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist) [Remote Assist 평가판)](/dynamics365/mixed-reality/remote-assist/try-remote-assist)
+- Azure AD 계정(구독을 구매하고 라이선스를 할당하는 데 필요)
+- [Remote Assist 구독](/dynamics365/mixed-reality/remote-assist/buy-and-deploy-remote-assist)(또는 [Remote Assist 평가판](/dynamics365/mixed-reality/remote-assist/try-remote-assist))
     
 #### <a name="dynamics-365-remote-assist-user"></a>Dynamics 365 Remote Assist 사용자
 
@@ -59,10 +59,10 @@ Remote Assist 통해 공동 유지 관리 및 복구, 원격 검사, 지식 공�
 
 #### <a name="microsoft-teams-user"></a>Microsoft Teams 사용자
 
-- [freemium](https://products.office.com/microsoft-teams/free)을 Microsoft Teams 또는 Teams.
+- Microsoft Teams 또는 [Teams Freemium](https://products.office.com/microsoft-teams/free).
 - 네트워크 연결
 
-이 [테넌트 간 시나리오를](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)구현하려는 경우 Information Barriers 라이선스가 필요할 수 있습니다. Information Barrier 라이선스가 필요한지 확인하려면 [공급업체 및 고객이 전체 Dynamics 365 Remote Assist 기능 사용을 참조하세요.](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation)
+이 [교차 테넌트 시나리오](/dynamics365/mixed-reality/remote-assist/cross-tenant-overview#scenario-2-leasing-services-to-other-tenants)를 구현할 계획이라면 정보 장벽 라이선스가 필요할 수 있습니다. Information Barrier 라이선스가 필요한지 확인하려면 [공급업체 및 고객이 전체 Dynamics 365 Remote Assist 기능 사용을 참조하세요.](/dynamics365/mixed-reality/remote-assist/cross-tenant-licensing-implementation)
 
 ## <a name="in-this-guide-you-will"></a>이 가이드에서는 다음을 수행합니다.
 

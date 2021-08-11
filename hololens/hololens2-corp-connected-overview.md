@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f2f7e1425a208e1f466d995f66118b7e68984242
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 67e34ea275ef73adda840ee4f44d9c0c3c9440ef0bd2aef48cb7aaa971219220
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637016"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660121"
 ---
 # <a name="deployment-guide---corporate-connected-hololens-2-with-dynamics-365-guides---overview"></a>배포 가이드-Dynamics 365 Guides를 사용 하 여 회사에 연결 된 HoloLens 2-개요
 
@@ -27,7 +27,7 @@ ms.locfileid: "113637016"
 
 이 가이드에서는 기존 장치 관리에 장치를 등록 하 고, 필요에 따라 라이선스를 적용 하 고, 최종 사용자가 장치 설정 후 사용자 지정 lob (기간 업무) 앱을 사용할 365 수 있는지 확인 하는 방법에 대해 설명 합니다. 
 
-## <a name="prerequisites"></a>사전 요구 사항
+## <a name="prerequisites"></a>필수 조건
 
 다음 인프라는 이미 준비 되어 있어야 합니다.
 - Wi-Fi

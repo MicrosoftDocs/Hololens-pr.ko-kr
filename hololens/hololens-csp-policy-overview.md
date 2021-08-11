@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b312f9d20c9a75c5e4c1906c4ec55f42fda977f6
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: ed28033f10f7a6d0e826775e95d040d0cac7f9e9c6266acd6975d3532f6d8067
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640460"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664244"
 ---
 # <a name="configure-csps-and-device-management-overview"></a>CSP 및 디바이스 관리 구성 개요
 
@@ -53,7 +53,7 @@ HoloLens 2는 사용자 지정 프로 비전 패키지를 통해 HoloLens 2 장�
 
 이 기능은 현재 [Windows Insider 빌드에서만](hololens-insider.md)사용할 수 있습니다. 이 기능을 사용 하려는 장치가 빌드 19041.1349 +에 있는지 확인 합니다.
 
-### <a name="wdac"></a>설정만
+### <a name="wdac"></a>WDAC
 
 WDAC 구성을 사용 하 여 시스템이 키오스크 모드 인지 여부와 관계 없이 시작할 수 있거나 허용 되지 않는 앱/프로세스를 제어 합니다.
 [WDAC에 대 한 개요를 참조 하세요.](windows-defender-application-control-wdac.md)

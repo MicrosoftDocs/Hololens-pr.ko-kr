@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 6c279664fa6051fab2f5e2e8f61e70b55704ae7c
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 3c17ad2397d87660cb2013604029864f9c36abdbf520710c4fe5952e3440e3a5
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640409"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664238"
 ---
 # <a name="enroll-hololens-in-mdm"></a>MDM에 HoloLens 등록
 
@@ -40,7 +40,7 @@ OOBE 또는 로그인 후 선택한 [ID](hololens-identity.md) 유형에 따라 
     - Azure AD의 경우 [자동 MDM 등록은](hololens-enroll-mdm.md#auto-enrollment-in-mdm) Azure AD가 등록 URL로 구성된 경우에만 발생합니다.
      
 - ID가 Azure AD이고 디바이스가 할당된 특정 구성 프로필이 있는 Intune MDM 서버에 미리 등록된 경우 OOBE 중에 Azure AD-Join [및 자동 MDM 등록이](hololens-enroll-mdm.md#auto-enrollment-in-mdm) 발생합니다.
-    - [Autopilot flow](hololens2-autopilot.md) Available in [19041.1103+(19041.1103 이상에서](hololens-release-notes.md#windows-holographic-version-2004)사용 가능)이라고도 합니다.
+    - [Autopilot 흐름이라고도](hololens2-autopilot.md) [하며, 19041.1103 이상에서는 를 빌드합니다.](hololens-release-notes.md#windows-holographic-version-2004)
     
 
 - ID가 MSA인 경우 **설정 앱**  ->  **액세스 작업 또는 학교**  ->  **커넥트** 단추를 사용하세요.

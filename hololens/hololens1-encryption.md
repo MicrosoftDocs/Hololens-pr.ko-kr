@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 37efab3ef3d68a9641320e144619008612f6efa2
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 4b07bb87b34ec966472bcbde000106590570fd7e7063ab503724884fa266bb34
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635248"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662675"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>HoloLens(1세대) BitLocker 암호화
 
@@ -48,7 +48,7 @@ MDM(모바일 장치 관리) 공급자를 사용하여 디바이스 암호화가
 
 ### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition-and-enables-encryption"></a>Windows Holographic 버전을 업그레이드하고 암호화를 사용하도록 설정하는 프로비전 패키지 만들기
 
-1. [HoloLens 대한 프로비저닝 패키지를 만듭니다.](hololens-provisioning.md)
+1. [HoloLens 대한 프로비전 패키지를 만듭니다.](hololens-provisioning.md)
 1. **런타임 설정** 정책 보안 로 이동하여  >    >   **RequireDeviceEncryption을** 선택합니다.
 
     ![디바이스 암호화 설정이 '예'로 구성되어야 함](images/device-encryption.png)

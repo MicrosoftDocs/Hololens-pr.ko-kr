@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: b5ae9b0d6859c0f916b5b906e2e9ec54cad6cbd9
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 7cf35a10a5f18dc0ccca876230b1677c6eca54ad116f0b2045fc1b269ac6c4b0
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635197"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115661895"
 ---
 # <a name="unlock-windows-holographic-for-business-features"></a>Windows Holographic for Business 기능 잠금 해제
 
@@ -29,7 +29,7 @@ Microsoft HoloLens Holographic(HoloLens 위해 설계된 Windows 10 버전)Windo
 Commercial Suite를 구매하면 holographic을 Windows Windows Holographic for Business 업그레이드하는 라이선스가 제공됩니다. 조직의 [MDM(모바일 디바이스 관리) 공급자](#edition-upgrade-by-using-mdm) 또는 [프로비전 패키지를](#edition-upgrade-by-using-a-provisioning-package)사용하여 디바이스에 이 라이선스를 적용할 수 있습니다.
 
 > [!TIP]
-> Windows 10 버전 1803에서는 설정 시스템을 선택하여 HoloLens 비즈니스 버전으로 업그레이드되었는지 확인할 수   >  있습니다.
+> Windows 10 버전 1803에서는 설정 System 을 선택하여 **HoloLens** 비즈니스 버전으로 업그레이드되었는지 확인할 수  >  있습니다.
 
 ## <a name="edition-upgrade-by-using-mdm"></a>MDM을 사용하여 버전 업그레이드
 
@@ -45,7 +45,7 @@ Microsoft Intune 사용하여 HoloLens 업그레이드하는 단계별 지침은
 
 ### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition"></a>Windows Holographic 버전을 업그레이드하는 프로비저닝 패키지 만들기
 
-1. [HoloLens 대한 프로비저닝 패키지를 만듭니다.](hololens-provisioning.md)
+1. [HoloLens 대한 프로비전 패키지를 만듭니다.](hololens-provisioning.md)
 1. **런타임 설정**  >  **버전업그레이드로** 이동하여 **EditionUpgradeWithLicense** 를 선택합니다.
 
     ![라이선스 설정이 선택된 버전 업그레이드](images/icd1.png)
@@ -77,7 +77,7 @@ Microsoft Intune 사용하여 HoloLens 업그레이드하는 단계별 지침은
 
     필요에 따라 **찾아보기를** 선택하여 기본 출력 위치를 변경할 수 있습니다.
 
-1. **다음** 을 선택합니다.
+1. **새로 만들기** 를 선택합니다.
 
 1. **빌드를** 선택하여 패키지 빌드를 시작합니다. 빌드 페이지에 프로젝트 정보가 표시되고 진행률 표시줄에 빌드 상태가 표시됩니다.
 
@@ -92,7 +92,7 @@ Microsoft Intune 사용하여 HoloLens 업그레이드하는 단계별 지침은
 
 1. 파일 탐색기 프로비전 패키지(.ppkg)를 디바이스 스토리지로 끌어서 놓습니다.
 
-1. HoloLens **여전히 적합** 페이지에 있는 동안 잠시 누르고 **볼륨 다운** 및 **전원** 단추를 동시에 해제합니다.
+1. HoloLens **여전히 맞춤** 페이지에 있는 동안 볼륨 **다운** 및 **전원** 단추를 동시에 잠시 누르고 놓습니다.
 
 1. HoloLens 패키지를 신뢰하고 적용할지 묻는 메시지가 표시됩니다. 패키지를 신뢰하는지 확인합니다.
 

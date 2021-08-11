@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 684a97a4fcdc3aaf830f164c54fb3079e296c78c
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 3365e69c8408b75a5d4e1177df938f435dec05d9dc181c698d7991159645d15a
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113637118"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115660158"
 ---
 # <a name="hololens-2-privacy-statement"></a>HoloLens 2 개인정보처리방침
 
@@ -40,7 +40,7 @@ HoloLens 2는 몰입 형 혼합 현실 환경에서 앱 및 솔루션을 실행 
 ## <a name="network-security"></a>네트워크 보안
 HoloLens 2 [일반적인 배포 시나리오](/hololens/common-scenarios)를 수행 하 여 데이터는 법적/규제 표준 통합과 함께 [Azure의 세계적인 규정 준수](/azure/compliance/) 에 의해 보호 됩니다. azure AD 및 Dynamics 365 Remote Assist를 처음 접하는 경우 [gdpr에 대 한 azure 및 Dynamics 365 책임 준비 검사 목록을](/compliance/regulatory/gdpr-arc-azure-dynamics)참조 하세요.
 
-또한 Windows Defender 방화벽은 장치 연결을 보호 하기 위한 중요 한 기능을 제공 합니다. HoloLens 2 사용 하는 경우 방화벽은 항상 사용 하도록 설정 되며 프로그래밍 방식으로 또는 UI를 통해 사용 하지 않도록 설정할 수 있는 방법이 없습니다. HoloLens 2 [Intune](/mem/intune/protect/device-compliance-get-started)을 사용 하 여 관리 되는 장치로 배포 되는 경우 모바일 위협 방어 솔루션으로 [Microsoft Intune를 사용](/mem/intune/protect/advanced-threat-protection) 하는 끝점에 대 한 통합에서 더 많은 준수 기능을 사용할 수 있습니다.
+또한 Windows Defender 방화벽은 장치 연결을 보호 하기 위한 중요 한 기능을 제공 합니다. HoloLens 2를 사용하면 방화벽이 항상 사용되고 있으며 이것을 프로그래밍 방식으로 또는 UI를 통해 사용하지 않도록 설정할 방법이 없습니다. HoloLens 2 [Intune](/mem/intune/protect/device-compliance-get-started)을 사용 하 여 관리 되는 장치로 배포 되는 경우 모바일 위협 방어 솔루션으로 [Microsoft Intune를 사용](/mem/intune/protect/advanced-threat-protection) 하는 끝점에 대 한 통합에서 더 많은 준수 기능을 사용할 수 있습니다.
 
 HoloLens 2 [보안 및 아키텍처](/hololens/security-architecture)에 대해 자세히 알아보세요.
 

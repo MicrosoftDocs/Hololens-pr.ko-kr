@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: bbbc60decb74942bd7930afb04297f78df33028a
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: c26c3a236a1047e62d480c27ec1bbb09faa63630eb29e0e1103546842d6a76d3
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635860"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664794"
 ---
 # <a name="find-install-and-uninstall-applications-from-the-microsoft-store"></a>Microsoft Store에서 애플리케이션 찾기, 설치 및 제거
 

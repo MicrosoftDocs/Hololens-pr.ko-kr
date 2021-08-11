@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a27a16913873c5245f734dbe084eb2b7ed007c20
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: ab05f1bbe1570d4966932d6f8ac857e5bd2d8a7d3a8f5b93aaba0335eda05b01
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639933"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665559"
 ---
 # <a name="windows-defender-application-control---wdac"></a>Windows Defender 애플리케이션 제어 - WDAC
 
@@ -63,7 +63,7 @@ Get-AppxPackage -name *edge*
 | 파일 탐색기              | c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy |
 | Mail                       | microsoft.windowscommunicationsapps_8wekyb3d8bbwe  |
 | Microsoft Store            | Microsoft.WindowsStore_8wekyb3d8bbwe               |
-| 영화 & TV                | Microsoft.ZuneVideo_8wekyb3d8bbwe                  |
+| 영화 및 TV                | Microsoft.ZuneVideo_8wekyb3d8bbwe                  |
 | OneDrive                   | microsoft.microsoftskydrive_8wekyb3d8bbwe          |
 | 사진                     | Microsoft. Windows. Photos_8wekyb3d8bbwe             |
 | 설정                   | HolographicSystemSettings_cw5n1h2txyewy            |

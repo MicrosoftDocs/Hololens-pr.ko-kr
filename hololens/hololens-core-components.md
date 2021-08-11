@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 05/21/2021
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 43162389eae82bc09135c62acd40d71048d14db1
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 8273813d85c3b2df2c1a551fb0322a867a5a9c64fdd05e9a85a2097b1590fb62
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639083"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115664392"
 ---
 # <a name="planning-hololens-2-deployment-in-a-commercial-environment"></a>상용 환경에서 HoloLens 2 배포 계획
 
@@ -46,7 +46,7 @@ HoloLens 2는 강력 하 고 유연 하며 기본 제공 되는 모바일 장치
 
 전체 HoloLens 2 기능 집합을 지 원하는 데 필요한 필수 인프라 서비스에 대해 알아봅니다.
 
-| 구성 요소 | Description |
+| 구성 요소 | 설명 |
 |-----------|------------|
 | [Azure AD](hololens-identity.md) | HoloLens 2에 대 한 id 및 액세스 관리를 제공 합니다.  |
 | [모바일 디바이스 관리](hololens-mdm-configure.md)| 테 넌 트에 연결 된 HoloLens 2 장치를 관리 합니다.  |
@@ -56,7 +56,7 @@ HoloLens 2는 강력 하 고 유연 하며 기본 제공 되는 모바일 장치
 
 Intune 및 Autopilot를 사용 하 여 조직의 Azure AD 테 넌 트 및 MDM에 HoloLens 2를 등록 하 고 구성할 수 있습니다.
 
-| 구성 요소 | Description |
+| 구성 요소 | 설명 |
 |-----------|------------|
 | [자동 등록](hololens-enroll-mdm.md#auto-enrollment-in-mdm) | 초기 로그인 후 장치는 Azure AD에 자동으로 등록 되 고 MDM에 등록 됩니다.  |
 | [응용 프로그램 라이선스](hololens2-cloud-connected-configure.md#application-licenses)| 사용자, 사용자 그룹 또는 장치 그룹에 적용할 수 있습니다.  |
@@ -66,7 +66,7 @@ Intune 및 Autopilot를 사용 하 여 조직의 Azure AD 테 넌 트 및 MDM에
 
 HoloLens 2 장치를 배포 하 고 구성의 유효성을 검사 합니다. 
 
-| 구성 요소 | Description |
+| 구성 요소 | 설명 |
 |-----------|------------|
 | [등록 유효성 검사](hololens2-corp-connected-deploy.md#enrollment-validation) | 장치가 설정 또는 Azure Portal에서 Azure AD에 연결 되어 있는지 확인 합니다. |
 | [인증서 유효성 검사](hololens2-corp-connected-deploy.md#wi-fi-certificate-validation) | 설정을 확인 하 고 올바르게 배포 되었는지 확인 합니다. |
@@ -76,7 +76,7 @@ HoloLens 2 장치를 배포 하 고 구성의 유효성을 검사 합니다.
 
 MDM 시스템 또는 Microsoft Store와 함께 비즈니스에 대 한 Windows 업데이트를 사용 하 여 HoloLens 2와 앱의 업데이트를 유지 합니다.
 
-| 구성 요소 | Description |
+| 구성 요소 | 설명 |
 |-----------|------------|
 | [업데이트 HoloLens 2](hololens-updates.md) | 비즈니스에 대 한 Windows 업데이트를 통해 필요에 따라 업데이트 구성 |
 | [앱 업데이트](app-deploy-overview.md) | MDM 시스템 또는 Microsoft Store를 통해 구성

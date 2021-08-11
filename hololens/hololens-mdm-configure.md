@@ -13,12 +13,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5485a4b2558a11a6c0545ec8b3405c120cff287c
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 0a0f26750ff6ea881babfab44af95cbbefa0574674336934ccf1443df1701a96
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113640283"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115663258"
 ---
 # <a name="using-microsofts-endpoint-manager-intune-to-manage-hololens-devices"></a>Microsoft의 Endpoint Manager Intune을 사용하여 HoloLens 디바이스 관리
 
@@ -52,7 +52,7 @@ MDM을 사용하여 디바이스를 관리하면 선택할 수 있는 다양한 
 ### <a name="vpn"></a>VPN
 조직에서는 종종 VPN을 사용하여 회사 인트라넷의 앱 및 리소스에 대한 액세스를 제어합니다. HoloLens 2 SSL VPN 연결을 지원합니다. 이 연결은 Microsoft Store 다운로드 가능한 플러그 인이 필요하며 선택한 VPN 공급업체와 관련이 있습니다. 
 - [HoloLens VPN에 대해](hololens-network.md#vpn)자세히 읽어보십시오.
-- VPN 프로필에 대한 자세한 내용은 [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)를 참조하세요.
+- VPN 프로필에 대한 자세한 내용은 [VPNv2 CSP 를 참조하세요.](/windows/client-management/mdm/vpnv2-csp)
 
 ### <a name="deploy-and-manage-apps"></a>앱 배포 및 관리
 Intune을 사용하여 Windows Holographic for Business를 실행하는 디바이스에 앱을 추가할 수 있습니다. MDM 솔루션을 사용하면 IT 의사 결정자와 관리자가 사내, 사업장 앱을 비공개로 자동 설치(푸시)하거나 사용자 그룹을 위해 스토어를 통해 앱을 구매할 수 있습니다. 다음을 포함하여 앱을 배포하는 방법은 많습니다.

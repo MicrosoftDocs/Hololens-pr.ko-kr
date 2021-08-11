@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 manager: yannisle
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4840535030cc81f222cb25357474f1c751426e91
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: d6eb706c50e97a81910180c70be1d9dbc52bc6603cbc77ad130c1dd3b6a9010e
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635231"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115661812"
 ---
 # <a name="restart-reset-or-recover-hololens-1st-gen"></a>다시 시작, 다시 설정 또는 복구 HoloLens (첫 번째 Gen)
 
@@ -91,15 +91,15 @@ HoloLens를 다시 시작 하는 가장 안전한 방법은 Cortana를 사용 �
 
 1. 휴대폰 또는 Windows 장치가 PC에 연결 되어 있지 않은지 확인 합니다.
 1. PC에서 [wdrt (Windows 장치 복구 도구)](https://support.microsoft.com/help/12379)를 다운로드 합니다.
-1. [HoloLens 기념일 업데이트 복구 패키지](https://aka.ms/hololensrecovery)를 다운로드 합니다.
+1. [HoloLens 1주년 업데이트 복구 패키지](https://aka.ms/hololensrecovery)를 다운로드합니다.
 1. 다운로드가 완료 되 면 **파일 탐색기**  >  **다운로드** 를 엽니다. 방금 다운로드 한 압축 폴더를 마우스 오른쪽 단추로 클릭 하 고 **압축 풀기**  >  를 선택 하 여 압축을 **풉니다** .
 1. 제공 된 마이크로 USB 케이블을 사용 하 여 PC에 HoloLens를 커넥트 합니다. HoloLens 연결 하는 데 다른 케이블을 사용한 경우에도이 방법이 가장 잘 작동 합니다.
-1. WDRT는 HoloLens를 자동으로 검색 합니다. **Microsoft HoloLens** 타일을 선택 합니다.
+1. WDRT는 HoloLens를 자동으로 검색 합니다. **Microsoft HoloLens** 타일을 선택합니다.
 1. 다음 화면에서 **수동 패키지 선택** 을 선택 하 고 4 단계에서 압축을 푼 폴더에 포함 된 설치 파일을 선택 합니다. (.Ffu 확장명을 가진 파일을 찾습니다.)
 1. **소프트웨어 설치** 를 선택 하 고 지침을 따릅니다.
 
 > [!NOTE]
-> wdrt가 HoloLens를 검색 하지 않으면 PC를 다시 시작 해 보세요. 그래도 작동 하지 않으면 **내 장치를 찾을 수 없음** 을 선택 하 고 **Microsoft HoloLens** 를 선택한 후 지침을 따릅니다.
+> wdrt가 HoloLens를 검색 하지 않으면 PC를 다시 시작 해 보세요. 그래도 작동하지 않으면 **My device was not detected** 를 선택하고 **Microsoft HoloLens** 를 선택한 후 지침을 따릅니다.
 
 ## <a name="reset-to-factory-settings"></a>공장 설정으로 다시 설정
 
@@ -142,8 +142,8 @@ HoloLens (첫 번째 gen)가 자동으로 검색 되지 않는 경우 **내 장�
 
 1. 전원에서 장치를 분리 합니다.
 1. 장치가 켜져 있으면 완전히 꺼질 때까지 **전원** 단추를 누릅니다.
-2. **볼륨 위로** 단추를 누른 상태에서 **전원** 단추를 잠시 누릅니다. 장치가 시작 되 고 중간 LED만 표시 됩니다.
-3. 장치를 PC에 연결 합니다.
-4. Windows 장치 복구 도구를 엽니다.
-5. [ **내 장치]를 검색 하지** 않았습니다 .를 선택 하 고 **HoloLens** 합니다. 
-6. 지침에 따라 장치를 복구 합니다.
+2. 볼륨 **위로** 단추를 누르고 **전원** 단추를 잠깐 탭합니다. 디바이스가 시작되고 중간 LED만 표시되어야 합니다.
+3. 디바이스를 PC에 연결합니다.
+4. Windows Device Recovery 도구를 엽니다.
+5. **내 디바이스가 검색되지 않음을** 선택한 다음, **를 HoloLens.** 
+6. 지침에 따라 디바이스를 복구합니다.

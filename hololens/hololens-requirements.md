@@ -12,12 +12,12 @@ ms.localizationpriority: medium
 ms.date: 11/04/2020
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 529dde590c30d4a51fa8ae61e9d37d22170dc271
-ms.sourcegitcommit: 5130823947caffd2a444e9d8fb15cd24cbb6414c
+ms.openlocfilehash: 27fd7f81d2868134344c7563ebc0a93133a18c0a217d6eff820b5f322e9271a7
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/24/2021
-ms.locfileid: "114659066"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115662920"
 ---
 # <a name="common-deployment-scenarios"></a>일반 배포 시나리오
 
@@ -39,7 +39,7 @@ ms.locfileid: "114659066"
 
 이 시나리오는 회사 내에서 관리되는 모바일 디바이스를 배포하는 것과 비슷합니다. HoloLens 2 주로 회사 네트워크 외부 환경에서 사용하기 위해 배포됩니다. 회사 리소스는 액세스되지 않거나 VPN을 통해 제한될 수 있습니다.
 
-[![시나리오 A 다이어그램](images/deployment-guides-revised-scenario-a.png)](images/deployment-guides-revised-scenario-a.png#lightbox)
+[![시나리오 다이어그램](images/deployment-guides-revised-scenario-a.png)](images/deployment-guides-revised-scenario-a.png#lightbox)
 
 ### <a name="when-to-use"></a>사용 시기
 
@@ -66,7 +66,7 @@ ms.locfileid: "114659066"
 > [!div class="nextstepaction"]
 > [클라우드 연결 배포 가이드](hololens2-cloud-connected-overview.md)
 
-외부 클라이언트 가이드를 사용하여 단기 또는 장기 외부 사용을 위해 원격 사이트에 디바이스를 배포합니다.
+단기 또는 장기 외부 사용을 위해 외부 클라이언트 가이드를 사용하여 원격 사이트에 디바이스를 배포합니다.
 
 > [!div class="nextstepaction"]
 > [클라우드 연결(외부 클라이언트) 배포 가이드](hololens2-deployment-guide.md)

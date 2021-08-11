@@ -1,6 +1,6 @@
 ---
 title: 프로비전 패키지
-description: HoloLens 디바이스용 앱 패키징, 프로비저닝, 배포 및 엔터프라이즈 앱 배포에 대해 알아봅니다.
+description: HoloLens 디바이스에 대한 앱 패키징, 프로비저닝, 배포 및 엔터프라이즈 앱 배포에 대해 알아봅니다.
 keywords: 앱, 앱 배포, 엔터프라이즈 앱 배포, 프로비전
 author: evmill
 ms.author: v-evmill
@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5aa554f9e7fdc09c3112b628e0978ac3332bc57d
-ms.sourcegitcommit: c43cd2f450b643ad4fc8e749235d03ec5aa3ffcf
+ms.openlocfilehash: 2cb497d850ff7ba2de66f69e8ec53e6dd36b773cc13d01b038def8d539e3b0c1
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113635520"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665219"
 ---
 # <a name="provisioning-package"></a>프로비전 패키지
 
@@ -31,7 +31,7 @@ ms.locfileid: "113635520"
 * USB 쪽 로드 전용
 * 자동 업데이트 없음(PPKG를 통한 수동 업데이트 필요)
 
-프로비전 패키지를 통해 설치된 앱은 로컬 머신 저장소의 인증서로 서명해야 합니다. 프로비전 패키지는 디바이스(로컬 머신) 저장소에만 인증서를 설치할 수 있으므로 동일한 프로비전 패키지를 통해 앱과 인증서를 설치할 수 있습니다. MDM에서 인증서를 배포하거나 [인증서 관리자를](certificate-manager.md)통해 설치하는 경우 로컬 컴퓨터 저장소에 인증서를 배포하여 이러한 방식으로 설치된 앱에 서명해야 합니다.
+프로비전 패키지를 통해 설치된 앱은 로컬 머신 저장소의 인증서로 서명해야 합니다. 프로비전 패키지는 디바이스(로컬 컴퓨터) 저장소에만 인증서를 설치할 수 있으므로 동일한 프로비전 패키지를 통해 앱과 인증서를 설치할 수 있습니다. MDM에서 인증서를 배포하거나 [인증서 관리자를](certificate-manager.md)통해 설치하는 경우 로컬 컴퓨터 저장소에 인증서를 배포하여 이러한 방식으로 설치된 앱에 서명해야 합니다.
 
 HoloLens 디바이스용 프로비저닝 패키지를 만드는 기본 사항 알아보려면 [HoloLens 프로비전 을](/hololens/hololens-provisioning)방문하세요. 앱을 배포하려면 고급 프로비저닝으로 시작해야 합니다.
 

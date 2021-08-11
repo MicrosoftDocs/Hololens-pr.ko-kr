@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7938a433921a096913986f5eccff953fd17f1534
-ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+ms.openlocfilehash: 1be1a8aa021c2a588b120fc9fa148b6c5dafd2840bbefa0d8ea9701751834521
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113639440"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115665589"
 ---
 # <a name="enterprise-enrollment-of-hololens-devices-in-mac-address-restricted-wi-fi-environment"></a>MAC 주소가 제한된 Wi-Fi 환경에서 HoloLens 디바이스의 엔터프라이즈 등록
 

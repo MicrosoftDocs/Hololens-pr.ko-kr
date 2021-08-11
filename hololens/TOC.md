@@ -25,6 +25,8 @@
 #### [음성을 사용하여 HoloLens 작동](hololens-cortana.md)
 #### [HoloLens에서 파일 찾기, 열기 및 저장](holographic-data.md)
 #### [혼합 현실 사진 및 비디오 만들기](holographic-photos-and-videos.md)
+#### [새 설정 앱](hololens-new-settings.md)
+#### [새로운 Microsoft Edge](hololens-new-edge.md)
 ### 애플리케이션 관리
 #### [애플리케이션 찾기, 설치 및 제거](holographic-store-apps.md)
 #### [HoloLens 2에 대한 사용자 지정 앱 관리](hololens2-holographic-custom-apps.md)
