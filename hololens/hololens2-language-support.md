@@ -1,6 +1,6 @@
 ---
-title: HoloLens 2에 대해 지원 되는 언어 2
-description: HoloLens 2에서 지 원하는 모든 언어에 대해 알아보고, 키보드 레이아웃을 변경 하 고, Windows 표시 언어를 업데이트 합니다.
+title: HoloLens 2에 지원되는 언어
+description: 지원, 키보드 레이아웃 변경, Windows 표시 언어 업데이트 HoloLens 2 모든 언어에 대해 알아봅니다.
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -17,14 +17,14 @@ ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: dc3de0c95f17c821816bad278de5717bc24a2c29
-ms.sourcegitcommit: ad53ba5edd567a18f0c172578d78db3190701650
+ms.openlocfilehash: 32f4cce668b2f8a483dbef3f4b41a0ceb8267dcc202f2be9d32ecec4061d0c21
+ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "108309770"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115659566"
 ---
-# <a name="supported-languages-for-hololens-2"></a>HoloLens 2에 대해 지원 되는 언어 2
+# <a name="supported-languages-for-hololens-2"></a>HoloLens 2에 지원되는 언어
 
 HoloLens 2는 다음 언어로 지역화 됩니다. 지역화 기능에는 음성 명령과 받아쓰기, 키보드 레이아웃, 앱 내 OCR 인식이 포함 됩니다.
 
@@ -35,7 +35,7 @@ HoloLens 2는 다음 언어로 지역화 됩니다. 지역화 기능에는 음�
 - 영어(미국)
 - 프랑스어(캐나다)
 - 프랑스어(프랑스)
-- 독일어 (독일)
+- 독일어(독일)
 - 이탈리아어(이탈리아)
 - 일본어(일본)
 - 스페인어(스페인)
@@ -46,7 +46,7 @@ HoloLens 2는 다음 언어도 지원 합니다. 그러나이 지원에는 음�
 - 네덜란드어(네덜란드)
 - 한국어(한국)
 
-HoloLens 2의 일부 기능은 Windows 표시 언어를 사용 합니다. Windows 표시 언어는 지역화를 지 원하는 응용 프로그램 및 Windows에 대 한 다음 설정에 영향을 줍니다.
+HoloLens 2의 일부 기능은 Windows 표시 언어를 사용 합니다. Windows 표시 언어는 지역화를 지 원하는 앱 및 Windows에 대 한 다음 설정에 영향을 줍니다.
 
 - 사용자 인터페이스 텍스트 언어입니다.
 - 음성 언어입니다.
@@ -72,11 +72,11 @@ HoloLens 2의 일부 기능은 Windows 표시 언어를 사용 합니다. Window
 
 ### <a name="to-change-the-keyboard-layout"></a>자판 배열을 변경 하려면
 
-키보드 레이아웃을 추가 하거나 제거 하려면 **시작** 메뉴를 열고 **설정**  >  **시간 & 언어**  >  **키보드** 를 선택 합니다.
+키보드 레이아웃을 추가 하거나 제거 하려면 **시작** 메뉴를 연 후 **설정**  >  **시간 & 언어**  >  **키보드** 를 선택 합니다.
 
-HoloLens에 키보드 레이아웃이 두 개 이상 있는 경우 **레이아웃** 키를 사용 하 여 둘 사이를 전환 합니다. 화면 키보드의 오른쪽 아래 모퉁이에 **레이아웃** 키가 있습니다.
+HoloLens에 두 개 이상의 자판 레이아웃이 있는 경우 **레이아웃** 키를 사용 하 여 둘 사이를 전환 합니다. 화면 키보드의 오른쪽 아래 모퉁이에 **레이아웃** 키가 있습니다.
 
 > [!NOTE]  
 > 화상 키보드는 IME (입력기)를 사용 하 여 일본어와 같은 언어로 문자를 입력할 수 있습니다. 그러나 HoloLens는 IME를 사용 하는 외부 Bluetooth 키보드를 지원 하지 않습니다.
 >  
-> 화상 키보드와 함께 IME를 사용 하는 동안 Bluetooth 키보드를 사용 하 여 계속 해 서 영어로 입력할 수 있습니다. 키보드 간을 전환 하려면 물결표 문자 단추 ()를 누릅니다 **~** .
+> 화상 키보드와 함께 IME를 사용 하는 동안 계속 해 서 Bluetooth 키보드를 사용 하 여 영어로 입력할 수 있습니다. 키보드 간을 전환 하려면 물결표 문자 단추 ()를 누릅니다 **~** .

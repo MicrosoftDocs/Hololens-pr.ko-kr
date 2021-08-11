@@ -15,12 +15,12 @@ metadata:
   manager: yannisle
   appliesto:
   - HoloLens 2
-  ms.openlocfilehash: be152373fadb6f2b5778616bae0f9bff9356af3d
-  ms.sourcegitcommit: 4c15afc772fba26683d9b75e38c44a018b4889f6
+  ms.openlocfilehash: 92a7afe20808afa57282a1f073c326bbf9550d6b345cd27a236c59300f7dcbf9
+  ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
   ms.translationtype: MT
   ms.contentlocale: ko-KR
-  ms.lasthandoff: 07/12/2021
-  ms.locfileid: "113639695"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "115659753"
 title: HoloLens 2 개발 버전 FAQ
 summary: ''
 sections:
@@ -73,7 +73,7 @@ sections:
       모든 판매는 최종 판매이며 HoloLens 2 Development Edition에서 사용할 수 있는 환불이 없습니다.
   - question: >
       Developer Edition에는 HoloLens 2 다른 하드웨어 요구 사항이 있나요?
-    answer: "아니요, 이 디바이스는 하드웨어 요구 사항 관점에서 동일합니다. 개발 버전은 상용 설정에서 애플리케이션의 개발 및/또는 테스트를 지원하도록 허용됩니다. \n"
+    answer: "아니요, 이 디바이스는 하드웨어 요구 사항 관점에서 동일합니다. Development Edition은 상업용 환경에서 응용 프로그램의 개발 및/또는 테스트를 지원하기 위해 배포할 수 있습니다. \n"
   - question: >
       HoloLens 2 Development Edition에서 개발하기 위해 Mixed Reality Toolkit – Unity를 어떻게 사용할 수 있나요?
     answer: >
@@ -127,7 +127,7 @@ sections:
 
       3. 제품 코드&#39; &#39;사용 선택
 
-      4. 제품 코드를 입력하고 제품 코드&#39; &#39;교환을 선택합니다.
+      4. 제품 코드를 입력하고 제품 코드&#39; &#39;선택을 선택합니다.
 
 
       자세한 [내용은](hololens2-options.md?tabs=device) HoloLens 2 Development Edition 설명서를 참조하세요.
@@ -170,24 +170,24 @@ sections:
       Unity ID, 계정, 조직 및 구독에 대한 질문에 대한 도움을 받으려면 support.unity3d.com
 
 
-      평가판을 교환한 후 Pixyz 관련 지원은 [Pixyz-software.com/support](http://pixyz-software.com/support)
+      Pixyz에 대 한 지원이 필요한 경우 (평가판을 교환 후) [Pixyz-software.com/support](http://pixyz-software.com/support) 을 방문 하세요.
 - name: Azure
   questions:
   - question: >
-      내 $500 Azure 크레딧을 어떻게 상환할 수 있나요?
+      $500 Azure 크레딧을 어떻게 사용할 수 있나요?
     answer: >
-      $500 Azure 크레딧을 사용하려면 Azure Pass 프로모션 코드를 사용하고 구독을 활성화합니다. [자세한 정보](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
+      $500 Azure 크레딧을 홍보 하려면 Azure Pass 프로 모션 코드를 교환 하 고 구독을 활성화 하세요. [자세한 정보](https://www.microsoftazurepass.com/Home/HowTo?Length=5)
 
 
-      Azure Pass [구독 계약](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) 및 제품 [세부 정보를](https://azure.microsoft.com/en-us/offers/azure-pass/)검토합니다.
+      Azure Pass [구독 계약](https://azure.microsoft.com/support/legal/subscription-agreement/?country=US) 및 [제안 세부 정보](https://azure.microsoft.com/en-us/offers/azure-pass/)를 검토 합니다.
   - question: >
-      내 $500 Azure 크레딧은 언제 만료됩니까?
+      내 $500 Azure 크레딧이 만료 되는 경우는 언제 인가요?
     answer: >
-      $500 Azure 크레딧은 Azure 키 코드를 활성화한 후 90일 후에 만료됩니다.
+      $500 Azure 크레딧은 Azure 키 코드를 활성화 한 후 90 일 후에 만료 됩니다.
   - question: >
-      내 Azure 크레딧으로 무엇을 할 수 있나요?
+      Azure 크레딧을 사용 하 여 무엇을 할 수 있나요?
     answer: >
-      Azure 크레딧을 사용하면 Microsoft&#39;계속 확장 중인 클라우드 서비스 집합으로 빌드를 시작할 수 있습니다. HoloLens 2 Development Edition에 포함된 Azure 크레딧은 고객이 Azure에서 혼합 현실 애플리케이션 빌드 및 테스트를 빠르게 시작할 수 있도록 하는 것입니다. Azure에서 빌드하는 자세한 내용은 [Azure 리소스를 방문하세요.](https://azure.microsoft.com/en-us/resources/)
+      Azure 크레딧을 사용 하 여 Microsoft&#39;s를 확장 하는 클라우드 서비스 집합으로 빌드를 시작할 수 있습니다. HoloLens 2 Development Edition에 포함 된 azure 크레딧을 통해 고객은 azure에서 혼합 현실 응용 프로그램 빌드 및 테스트를 신속 하 게 시작할 수 있습니다. Azure에서 빌드하는 방법에 대 한 자세한 내용은 [azure 리소스](https://azure.microsoft.com/en-us/resources/) 를 참조 하세요.
   - question: >
-      Azure 혼합 현실 서비스에 대해 자세히 알아볼 수 있는 위치는 어디인가요?
-    answer: Microsoft는 개발자가 혼합 현실 솔루션을 빌드하고 테스트할 수 있도록 혼합 현실 서비스 세트를 제공합니다. [자세한 정보](/windows/mixed-reality/develop/mixed-reality-cloud-services)
+      Azure mixed reality 서비스에 대 한 자세한 내용은 어디서 확인할 수 있나요?
+    answer: Microsoft는 개발자가 혼합 현실 솔루션을 빌드 및 테스트할 수 있도록 하는 혼합 현실 서비스 집합을 제공 합니다. [자세한 정보](/windows/mixed-reality/develop/mixed-reality-cloud-services)
