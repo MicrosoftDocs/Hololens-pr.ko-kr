@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: de5b8f052cfdd176f5b883661b2339764fd8ec24113e06b1286d9406acf3790f
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: df0cb555c8445ef4d8f8165996a33e0f8c1a38653b45514594f893e3c761f65a
+ms.sourcegitcommit: 9615ed824bdf3f1747ec346da6136704d8eed015
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664083"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120364288"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens에 대한 참가자 미리 보기
 
@@ -29,18 +29,19 @@ HoloLens 위한 최신 Insider Preview 빌드를 시작합니다. HoloLens 대�
 
 ## <a name="windows-insider-release-notes"></a>Windows 참가자 릴리스 정보
 
-새로운 기능을 Windows 참가자에게 다시 플라이팅을 시작하게 되어 기쁩니다. 새 빌드는 최신 업데이트를 위해 개발 및 베타 채널로 플라이팅됩니다. Windows 참가자 빌드에 더 많은 기능 및 업데이트를 추가함에 따라 이 페이지를 계속 업데이트할 예정입니다. 이러한 업데이트를 현실에 혼합할 준비가 되어 있습니다.
+새 기능을 다시 Windows 위해 플라이팅을 시작하게 되어 기쁩니다. 새 빌드는 최신 업데이트를 위해 개발 및 베타 채널로 플라이팅됩니다. Windows 참가자 빌드에 더 많은 기능 및 업데이트를 추가함에 따라 이 페이지를 계속 업데이트할 예정입니다. 이러한 업데이트를 현실에 혼합할 준비가 되어 있습니다.
 
-| 기능                 | 설명                | 사용자 또는 시나리오 | 빌드 소개 |
+| 기능                 | Description                | 사용자 또는 시나리오 | 빌드 소개 |
 |-------------------------|----------------------------|--------------|------------------|
-| [HoloLens 세부 정보를 보고하기 위한 CSP 변경 내용](#csp-changes-for-reporting-hololens-details) | 데이터를 쿼리하는 에 대한 새 CSP | IT 관리자    | 20348.1403                 |
+| [HoloLens 세부 정보를 보고하기 위한 CSP 변경 내용](#csp-changes-for-reporting-hololens-details) | 데이터를 쿼리하기 위한 의 새 CSP | IT 관리자    | 20348.1403                 |
 | [CSP에서 제어하는 자동 로그인 정책](#auto-login-policy-controlled-by-csp) | 자동으로 계정에 로그인하는 데 사용 | IT 관리자 | 20348.1405 |
 | [인증서 관리자에 대한 PFX 파일 지원](#pfx-file-support-for-certificate-manager) | 설정 UI를 통해 PFX 인증서 추가 | 최종 사용자 | 20348.1405 |
 | [HoloLens 설정 고급 진단 보고서 보기](#view-advanced-diagnostic-report-in-settings-on-hololens) | 디바이스에서 MDM 진단 로그 보기 | 문제 해결 | 20348.1405 |
-| [오프라인 진단 알림](#offline-diagnostics-notifications) | 로그 수집에 대한 시청각 피드백 | 문제 해결 | 20348.1405 |
+| [오프라인 진단 알림](#offline-diagnostics-notifications) | 로그 수집에 대한 오디오바이저 피드백 | 문제 해결 | 20348.1405 |
 | [프라이빗 스토어 앱만 Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | 조직의 앱만 표시하도록 스토어 앱 구성 | IT 관리자 | 20348.1408 |
 | [낮은 스토리지 로그 수집 개선](#low-storage-log-collection-improvements) | 스토리지 부족 상황에서 로그 수집 시나리오가 개선되었습니다. | IT 관리자 | 20348.1412 |
-| [수정 및 개선](hololens-insider.md#fixes-and-improvements) | HoloLens 대한 수정 및 개선 | 모두 | 20348.1411 |
+| [플랫폼 모드 이동](#moving-platform-mode) | 구성된 경우 동적이 낮은 동작을 경험하는 큰 배선에서 HoloLens 2 사용할 수 있도록 하는 이동 플랫폼 모드 베타가 도입되었습니다. | 모두 | 20348.1411 |
+| [수정 및 개선](#fixes-and-improvements) | HoloLens 대한 수정 및 개선 | 모두 | 20348.1411 |
 
 ### <a name="csp-changes-for-reporting-hololens-details"></a>HoloLens 세부 정보를 보고하기 위한 CSP 변경 내용
 
@@ -99,21 +100,21 @@ NetworkIdentifiers를 쿼리하는 syncml Blob 예제(MDM 공급업체용)
 
 ### <a name="pfx-file-support-for-certificate-manager"></a>인증서 관리자에 대한 PFX 파일 지원
 
-Windows Insider 빌드 20348.1405에 도입되었습니다. 이제 .pfx 인증서를 사용할 수 있도록 [인증서 관리자에](certificate-manager.md) 대한 지원이 추가되었습니다. 사용자가 **설정** 업데이트 & 보안 인증서 로 이동하고  >    >   **인증서 설치를** 선택하면 이제 UI에서 .pfx 인증서 파일을 지원합니다.
+Windows Insider 빌드 20348.1405에 도입되었습니다. 이제 .pfx 인증서를 사용할 수 있도록 [인증서 관리자에](certificate-manager.md) 대한 지원이 추가되었습니다. 사용자가 **설정** 업데이트 & 보안 인증서 로 이동하고  >    >   **인증서 설치를** 선택하면 UI에서 이제 .pfx 인증서 파일을 지원합니다.
 사용자는 프라이빗 키가 있는 .pfx 인증서를 사용자 저장소 또는 컴퓨터 저장소로 가져올 수 있습니다.
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>HoloLens 설정 고급 진단 보고서 보기
 
 동작 문제를 해결할 때 관리되는 디바이스의 경우 예상되는 정책 구성이 적용되는지 확인하는 것이 중요한 단계입니다. 이전에는 이 새로운 기능을 사용하려면 MDM을 통해 디바이스에서 또는 디바이스 근처에서 수행되어야 했습니다. **이** 작업은 설정 계정을 통해 수집된 MDM 진단 로그를 내보낸 후 작업 또는 학교 에  ->    >  **액세스하고** **관리 로그 내보내기를** 선택하여 주변 PC에서 볼 수 있었습니다.
 
-이제 Edge 브라우저를 사용하여 디바이스에서 MDM 진단을 볼 수 있습니다. MDM 진단 보고서를 보다 쉽게 보려면 작업 또는 학교 액세스 페이지로 이동하고 **고급 진단 보고서 보기를** 선택합니다. 그러면 새 Edge 창에서 보고서가 생성되고 열립니다.
+이제 Edge 브라우저를 사용하여 디바이스에서 MDM 진단을 볼 수 있습니다. MDM 진단 보고서를 더 쉽게 보려면 작업 또는 학교 액세스 페이지로 이동하고 **고급 진단 보고서 보기를** 선택합니다. 그러면 새 Edge 창에서 보고서가 생성되고 열립니다.
 
 ![설정 앱에서 고급 진단 보고서를 봅니다.](./images/view-advanced-diagnostic-report.jpg)
 
 ### <a name="offline-diagnostics-notifications"></a>오프라인 진단 알림
 
 오프라인 진단이라는 기존 기능에 대한 [업데이트입니다.](hololens-diagnostic-logs.md#offline-diagnostics) 이전에는 사용자에게 진단 수집을 트리거했거나 완료되었다는 명확한 표시기가 없었습니다.
-이제 Windows 참가자 빌드에 추가되었습니다. 오프라인 진단에 대한 두 가지 형태의 시청각 피드백이 있습니다. 첫 번째는 컬렉션이 시작되고 완료될 때 둘 다에 대해 표시되는 알림 메시지입니다. 사용자가 로그인하고 시각적 개체를 가지고 있을 때 표시됩니다.
+이제 Windows Insider 빌드에 추가되었습니다. 오프라인 진단에 대한 두 가지 형태의 시청각 피드백이 있습니다. 첫 번째는 컬렉션이 시작되고 완료될 때 둘 다에 대해 표시되는 알림 메시지입니다. 사용자가 로그인하고 시각적 개체를 가지고 있을 때 표시됩니다.
 
 ![로그를 수집하기 위한 알림입니다.](./images/logcollection1.jpg)
 
@@ -133,13 +134,20 @@ RequirePrivateStoreOnly 정책이 HoloLens 사용하도록 설정되었습니다
 
 ### <a name="low-storage-log-collection-improvements"></a>낮은 스토리지 로그 수집 개선
 
-진단 로그를 수집할 때 디바이스의 디스크 공간이 부족한 것으로 보이는 시나리오에서는 **StorageDiagnostics.zip** 라는 추가 보고서가 만들어집니다. 낮은 스토리지의 임계값은 스토리지 Windows 따라 자동으로 [결정됩니다.](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)
+진단 로그를 수집할 때 디바이스의 디스크 공간이 부족한 것으로 보이는 시나리오에서는 **StorageDiagnostics.zip** 라는 추가 보고서가 만들어집니다. 낮은 스토리지의 임계값은 Windows 스토리지에 의해 자동으로 [결정됩니다.](https://support.microsoft.com/office/use-onedrive-and-storage-sense-in-windows-10-to-manage-disk-space-de5faa9a-6108-4be1-87a6-d90688d08a48)
+
+### <a name="moving-platform-mode"></a>플랫폼 모드 이동
+
+참가자 **빌드 20348.1411을** 기준으로 HoloLens 2 저동적 동작 이동 플랫폼을 추적하기 위한 베타 지원이 추가되었습니다. 빌드를 설치하고 플랫폼 모드 이동을 사용하도록 설정한 후에는 대형 배 및 대형 배선과 같이 이전에 액세스할 수 없었던 환경에서 HoloLens 2 사용할 수 있습니다. 현재 이 기능은 이러한 특정 이동 플랫폼만 사용하도록 설정하는 것을 목표로 합니다. 다른 환경에서 이 기능을 사용할 수 있는 것은 없지만, 이 기능은 먼저 이러한 환경에 대한 지원을 추가하는 데 중점을 두고 있습니다.
+
+지원되는 기능 및 이 새로운 기능을 사용하도록 설정하는 방법에 대한 자세한 내용은 [이동 플랫폼 페이지를 방문하세요.](hololens2-moving-platform.md)
 
 ### <a name="fixes-and-improvements"></a>수정 및 개선
 
-- 잠긴 [파일을 다운로드하라는 프롬프트가 없는 장치 포털 대해 알려진 문제가 해결되었습니다.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
-- 파일 [업로드 및 다운로드 시간 장치 포털 대한 알려진 문제를 해결했습니다.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
-- HoloLens 디바이스에서 준수 속성 보고와 관련된 문제를 해결합니다. 참가자 빌드에서 올바른 보고를 트리거하려면 다시 부팅해야 할 수 있습니다.  
+- 잠긴 [파일을 다운로드하라는 프롬프트가 없는 장치 포털 알려진 문제가 해결되었습니다.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
+- 파일 [업로드 및 다운로드 시간 장치 포털 알려진 문제가 해결되었습니다.](hololens-troubleshooting.md#device-portal-file-uploaddownload-times-out)
+- HoloLens 디바이스의 준수 속성 보고와 관련된 문제를 해결합니다. 참가자 빌드에서 올바른 보고를 트리거하려면 다시 부팅해야 할 수 있습니다.  
+- 앱이 HoloLens 로그인한 사용자의 키오스크 모드에서 HoloLens 실행 중인지 확인할 수 있도록 [할당된 액세스 API를](/uwp/api/windows.system.userprofile.assignedaccesssettings?view=winrt-20348) 사용하도록 설정했습니다.
 - 새 플래시에 설치된 Remote Assist 첫 번째 버전이 업데이트되었습니다.
 
 ## <a name="start-receiving-insider-builds"></a>참가자 빌드 수신 시작
@@ -149,17 +157,17 @@ RequirePrivateStoreOnly 정책이 HoloLens 사용하도록 설정되었습니다
 > - "디바이스 다시 부팅" 음성 명령이 제대로 작동합니다. 
 > - 설정/Windows 참가자 프로그램 다시 시작 단추를 선택할 수도 있습니다.
 >
-> 발생한 백 엔드 버그가 있으므로 다시 추적할 수 있습니다.
+> 발생한 백 엔드에 버그가 있으므로 다시 추적할 수 있습니다.
 
-HoloLens 2 디바이스에서 **설정** 업데이트 & 보안 Windows 참가자 프로그램 이동하여  >    >   **시작을** 선택합니다. Windows 참가자로 등록하는 데 사용한 계정을 연결합니다.
+HoloLens 2 디바이스에서 설정 업데이트   >  **& 보안** Windows 참가자 프로그램 이동하여  >   **시작을** 선택합니다. Windows 참가자로 등록하는 데 사용한 계정을 연결합니다.
 
-Windows 참가자가 이제 채널로 이동하고 있습니다. **빠른** 링이 **개발 채널이** **되고, 느린** 링이 **베타 채널** 되고, 릴리스 **미리 보기** 링이 릴리스 미리 **보기 채널** 이 됩니다. 매핑은 다음과 같습니다.
+Windows 참가자는 이제 채널로 이동하고 있습니다. **빠른** 링이 **개발 채널이** **되고, 느린** 링이 **베타 채널** 되고, 릴리스 **미리 보기** 링이 릴리스 미리 **보기 채널** 이 됩니다. 매핑은 다음과 같습니다.
 
 ![Windows 참가자 채널 설명](images/WindowsInsiderChannels.png)
 
 자세한 내용은 Windows 블로그에서 [Windows 참가자 채널 소개를](https://blogs.windows.com/windowsexperience/2020/06/15/introducing-windows-insider-channels) 참조하세요.
 그런 다음, **Windows 활성 개발을** **선택하고, 개발 채널** 또는 **베타 채널** 빌드를 받을지 선택하고, 프로그램 용어를 검토합니다.
-확인을 > **지금 다시 시작을** 선택하여 완료합니다. 디바이스가 다시 부팅된 후 설정 > 업데이트 & 보안 > 업데이트 확인으로 이동하여 최신 빌드를 **확인합니다.**
+**확인을 > 지금 다시 시작을** 선택하여 완료합니다. 디바이스가 다시 부팅된 후 설정 > 업데이트 & 보안 > 업데이트 확인으로 이동하여 최신 빌드를 **확인합니다.**
 
 ### <a name="update-error-0x80070490-work-around"></a>업데이트 오류 0x80070490 해결
 
@@ -167,7 +175,7 @@ Dev 또는 Beta 채널에서 업데이트할 때 업데이트 오류 0x80070490 
 
 #### <a name="stage-one---release-preview"></a>1단계 - 릴리스 미리 보기
 
-1.  설정 & 보안 업데이트 Windows 참가자 프로그램 **릴리스 미리 보기 채널을** 선택합니다.
+1.  설정 & 보안을 업데이트하고 Windows 참가자 프로그램 **릴리스 미리 보기 채널을** 선택합니다.
 
 2.  설정, 업데이트 & 보안, Windows 업데이트, 업데이트 **확인.** 업데이트 후 2단계로 계속 진행합니다.
 
@@ -203,7 +211,7 @@ HoloLens 참가자 빌드를 사용하여 애플리케이션을 개발하는 것
 
 ## <a name="stop-receiving-insider-builds"></a>참가자 빌드 수신 중지
 
-더 이상 Windows Holographic의 참가자 빌드를 수신하지 않으려는 경우 HoloLens 프로덕션 빌드를 실행할 때 옵트아웃하거나 고급 복구 도우미를 사용하여 [디바이스를](hololens-recovery.md) 비 참가자 버전의 Windows Holographic으로 복구할 수 있습니다.
+더 이상 Windows Holographic의 참가자 빌드를 수신하지 않으려는 경우 HoloLens 프로덕션 빌드를 실행할 때 옵트아웃하거나 고급 복구 도우미를 사용하여 [디바이스를](hololens-recovery.md) 비인더 버전의 Windows Holographic으로 복구할 수 있습니다.
 
 > [!CAUTION]
 > 새 미리 보기 빌드를 수동으로 다시 설치한 후 Insider Preview 빌드에서 등록을 취소하는 사용자에게 파란색 화면이 발생하는 알려진 문제가 있습니다. 그런 다음 디바이스를 수동으로 복구해야 합니다. 영향을 받을지 여부에 대한 자세한 내용은 이 [알려진 문제에](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)대한 자세한 내용을 확인하세요.
@@ -216,6 +224,6 @@ HoloLens 프로덕션 빌드를 실행하고 있는지 확인하려면 다음을
 
 참가자 빌드를 옵트아웃하려면 다음을 수행합니다.
 
-1. 프로덕션 빌드를 실행하는 HoloLens 설정 > 업데이트 **& 보안 > Windows 참가자 프로그램** 로 이동하고 **참가자 빌드 중지를** 선택합니다.
+1. 프로덕션 빌드를 실행하는 HoloLens **설정 > 업데이트 & 보안 > Windows 참가자 프로그램** 로 이동하고 참가자 빌드 **중지를** 선택합니다.
 
 1. 지침에 따라 디바이스를 옵트아웃합니다.
