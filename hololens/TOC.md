@@ -34,6 +34,7 @@
 #### [시각적 품질과 편안함 개선](hololens-calibration.md)
 #### [HoloLens를 사용하여 물리적 공간 매핑](hololens-spaces.md)
 #### [HoloLens 환경 고려 사항](hololens-environment-considerations.md)
+#### [플랫폼 이동](hololens2-moving-platform.md)
 ### HoloLens 2 연결
 #### [네트워크에 HoloLens 연결](hololens-network.md)
 #### [Bluetooth 및 USB-C 디바이스에 연결](hololens-connect-devices.md)
