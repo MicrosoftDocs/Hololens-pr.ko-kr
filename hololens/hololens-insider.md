@@ -1,6 +1,6 @@
 ---
 title: Microsoft HoloLens에 대한 참가자 미리 보기
-description: Insider 빌드를 시작 하 고 HoloLens에 대 한 다음 주요 운영 체제 업데이트에 대 한 귀중 한 피드백을 제공 하는 방법을 알아봅니다.
+description: 참가자 빌드를 시작하고 HoloLens 대한 다음 주요 운영 체제 업데이트에 대한 중요한 피드백을 제공하는 방법을 알아봅니다.
 ms.prod: hololens
 ms.sitesec: library
 author: scooley
@@ -11,60 +11,60 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 04/01/2021
+ms.date: 08/19/2021
 ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 86a763adb233b45242182d069a56692aeddc2e59
-ms.sourcegitcommit: 5cb3230e02e703584e50358cb0f0b5f33a51b169
+ms.openlocfilehash: 3ccb9d0f7175a358262c39c76d364aee464c5469
+ms.sourcegitcommit: e2a3e85882b7c594d73d08fbd7ae85856d22f8c5
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121858576"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "122213913"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens에 대한 참가자 미리 보기
 
-HoloLens에 대 한 최신 Insider Preview 빌드를 시작 합니다. 간단 하 게 [시작](hololens-insider.md#start-receiving-insider-builds) 하 고 HoloLens에 대 한 다음 주요 운영 체제 업데이트에 대 한 유용한 피드백을 제공할 수 있습니다.
+HoloLens 위한 최신 Insider Preview 빌드를 시작합니다. HoloLens 대한 다음 주요 운영 체제 업데이트에 대한 중요한 피드백을 [간단하게 시작하고](hololens-insider.md#start-receiving-insider-builds) 제공할 수 있습니다.
 
 ## <a name="windows-insider-release-notes"></a>Windows 참가자 릴리스 정보
 
-새 기능을 시작 하 여 참가자를 다시 Windows 하 고 있습니다. 새 빌드는 최신 업데이트에 대 한 개발 및 베타 채널에 대 한 플 라이팅 받게 됩니다. Windows Insider 빌드에 더 많은 기능과 업데이트를 추가 하므로이 페이지를 계속 업데이트할 예정입니다. 이러한 업데이트를 현실에 맞게 혼합할 수 있습니다.
+새로운 기능을 다시 Windows 참가자를 위해 플라이팅을 시작하게 되어 기쁩니다. 새 빌드는 최신 업데이트를 위해 개발 및 베타 채널로 플라이팅됩니다. Windows 참가자 빌드에 더 많은 기능 및 업데이트를 추가함에 따라 이 페이지를 계속 업데이트할 예정입니다. 이러한 업데이트를 현실에 혼합할 준비가 되어 있습니다.
 
-| 기능                 | 설명                | 사용자 또는 시나리오 | 빌드 도입 |
+| 기능                 | 설명                | 사용자 또는 시나리오 | 빌드 소개 |
 |-------------------------|----------------------------|--------------|------------------|
-| [보고 HoloLens 세부 정보에 대 한 CSP 변경 내용](#csp-changes-for-reporting-hololens-details) | 에서 데이터를 쿼리 하는 새 Csp | IT 관리자    | 20348.1403                 |
-| [CSP에서 자동 로그인 정책을 제어 합니다.](#auto-login-policy-controlled-by-csp) | 계정에 자동으로 로그인 하는 데 사용 됩니다. | IT 관리자 | 20348.1405 |
-| [향상 된 업데이트 다시 시작 검색 및 알림](#improved-update-restart-detection-and-notifications) | 업데이트에 대 한 새로운 사용 정책 및 UX. | IT 관리자 | 20348.1405 |
-| [인증서 관리자에 대 한 PFX 파일 지원](#pfx-file-support-for-certificate-manager) | 설정 UI를 통해 PFX 인증서 추가 | 최종 사용자 | 20348.1405 |
-| [앱 업데이트에 대 한 스마트 재시도](#smart-retry-for-app-updates) | IT 관리자가 앱을 업데이트 하기 위해 예약 된 다시 시도를 허용 합니다. | IT 관리자 | 20348.1405 |
-| [HoloLens에서 설정 고급 진단 보고서 보기](#view-advanced-diagnostic-report-in-settings-on-hololens) | 장치에서 MDM 진단 로그 보기 | 문제 해결 | 20348.1405 |
-| [오프 라인 진단 알림](#offline-diagnostics-notifications) | 로그 수집에 대 한 오디오 시각적 피드백 | 문제 해결 | 20348.1405 |
-| [Microsoft Store에 대해서만 개인 저장소 앱 사용](#use-only-private-store-apps-for-microsoft-store) | 조직의 앱만 표시 하도록 스토어 앱 구성 | IT 관리자 | 20348.1408 |
-| [저장소 로그 수집 기능이 향상 되었습니다.](#low-storage-log-collection-improvements) | 낮은 저장소 상황에서 로그 수집 시나리오에 대 한 향상 된 기능 | IT 관리자 | 20348.1412 |
-| [플랫폼 모드 이동](#moving-platform-mode) | 는 구성 된 경우 동적 이동이 발생 하는 대량 해병대 용기에 HoloLens 2를 사용할 수 있도록 하는 플랫폼 모드 베타 이동 기능을 도입 했습니다. | 모두 | 20348.1411 |
-| [수정 사항 및 향상 된 기능](#fixes-and-improvements) | HoloLens에 대 한 수정 및 개선 사항 | 모두 | 20348.1411 |
+| [HoloLens 세부 정보를 보고하기 위한 CSP 변경 내용](#csp-changes-for-reporting-hololens-details) | 데이터를 쿼리하기 위한 의 새 CSP | IT 관리자    | 20348.1403                 |
+| [CSP에서 제어하는 자동 로그인 정책](#auto-login-policy-controlled-by-csp) | 자동으로 계정에 로그인하는 데 사용 | IT 관리자 | 20348.1405 |
+| [향상된 업데이트 다시 시작 검색 및 알림](#improved-update-restart-detection-and-notifications) | 업데이트에 사용할 수 있는 새로운 및 UX입니다. | IT 관리자 | 20348.1405 |
+| [인증서 관리자에 대한 PFX 파일 지원](#pfx-file-support-for-certificate-manager) | 설정 UI를 통해 PFX 인증서 추가 | 최종 사용자 | 20348.1405 |
+| [앱 업데이트에 대한 스마트 다시 시도](#smart-retry-for-app-updates) | IT 관리자가 앱을 업데이트하도록 예약된 재시도를 허용합니다. | IT 관리자 | 20348.1405 |
+| [HoloLens 설정 고급 진단 보고서 보기](#view-advanced-diagnostic-report-in-settings-on-hololens) | 디바이스에서 MDM 진단 로그 보기 | 문제 해결 | 20348.1405 |
+| [오프라인 진단 알림](#offline-diagnostics-notifications) | 로그 수집에 대한 시청각 피드백 | 문제 해결 | 20348.1405 |
+| [프라이빗 스토어 앱만 Microsoft Store](#use-only-private-store-apps-for-microsoft-store) | 조직의 앱만 표시하도록 스토어 앱 구성 | IT 관리자 | 20348.1408 |
+| [낮은 스토리지 로그 수집 개선](#low-storage-log-collection-improvements) | 스토리지 부족 상황에서 로그 수집 시나리오가 개선되었습니다. | IT 관리자 | 20348.1412 |
+| [플랫폼 모드 이동](#moving-platform-mode) | 구성된 경우 동적이 낮은 동작을 경험하는 큰 배선에서 HoloLens 2 사용할 수 있도록 하는 이동 플랫폼 모드 베타가 도입되었습니다. | 모두 | 20348.1411 |
+| [수정 및 개선](#fixes-and-improvements) | HoloLens 대한 수정 및 개선 | 모두 | 20348.1411 |
 
-### <a name="csp-changes-for-reporting-hololens-details"></a>보고 HoloLens 세부 정보에 대 한 CSP 변경 내용
+### <a name="csp-changes-for-reporting-hololens-details"></a>HoloLens 세부 정보를 보고하기 위한 CSP 변경 내용
 
-- Windows Insider build, 20348.1403에 도입 되었습니다.
+- Windows Insider 빌드에 도입된 20348.1403
 
-다음 csp는 HoloLens 장치에서 정보를 보고 하는 새로운 방법으로 업데이트 되었습니다.
+다음 CSP는 HoloLens 디바이스에서 정보를 보고하는 새로운 방법으로 업데이트되었습니다.
 
-#### <a name="devdetail-csp---free-storage"></a>DevDetail CSP-무료 Storage
+#### <a name="devdetail-csp---free-storage"></a>DevDetail CSP - 무료 Storage
 
-이제 devdetail CSP는 HoloLens 장치에서 사용 가능한 저장소 공간을 보고 합니다. 이는 설정 앱의 Storage 페이지에 표시 된 값과 거의 일치 해야 합니다. 다음은이 정보를 포함 하는 특정 노드입니다.
+이제 DevDetail CSP는 HoloLens 디바이스에서 사용 여유 스토리지 공간도 보고합니다. 이 값은 설정 앱의 Storage 페이지에 표시된 값과 거의 일치해야 합니다. 다음은 이 정보를 포함하는 특정 노드입니다.
 
-- ./DevDetail/Ext/Microsoft/FreeStorage (GET 작업에만 해당)
+- ./DevDetail/Ext/Microsoft/FreeStorage(GET 작업만 해당)
 
-#### <a name="devicestatus-csp---ssid-and-bssid"></a>DeviceStatus CSP-SSID 및 BSSID
+#### <a name="devicestatus-csp---ssid-and-bssid"></a>DeviceStatus CSP - SSID 및 BSSID
 
-DeviceStatus CSP는 HoloLens 현재 연결 되어 있는 Wi-Fi 네트워크의 SSID 및 BSSID도 보고 합니다. 다음은이 정보를 포함 하는 특정 노드입니다.
+이제 DeviceStatus CSP는 HoloLens 능동적으로 연결된 Wi-Fi 네트워크의 SSID 및 BSSID도 보고합니다. 다음은 이 정보를 포함하는 특정 노드입니다.
 
-- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*Wi-Fi 어댑터의 mac 주소 (*/ssid)
-- Wi-Fi 어댑터/Bssid의./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac 주소*
+- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac address of Wi-Fi adapter*/SSID
+- ./Vendor/MSFT/DeviceStatus/NetworkIdentifiers/*mac address of Wi-Fi adapter*/BSSID
 
-NetworkIdentifiers (MDM 공급 업체) 예제를 통해 NetworkIdentifiers 쿼리
+NetworkIdentifiers를 쿼리하는 syncml Blob 예제(MDM 공급업체용)
 
 ```xml
 <SyncML>
@@ -84,60 +84,60 @@ NetworkIdentifiers (MDM 공급 업체) 예제를 통해 NetworkIdentifiers 쿼�
 </SyncML>
 ```
 
-### <a name="auto-login-policy-controlled-by-csp"></a>CSP에서 자동 로그인 정책을 제어 합니다.
+### <a name="auto-login-policy-controlled-by-csp"></a>CSP에서 제어하는 자동 로그인 정책
 
-이 새 AutoLogonUser 정책은 사용자가 자동으로 로그인 되는지 여부를 제어 합니다. 일부 고객은 id에 연결 되었지만 로그인 환경을 원하지 않는 장치를 설정 하려고 합니다. 장치를 선택 하 고 원격 지원을 즉시 사용할 Imagine. 또는 HoloLens 장치를 신속 하 게 배포 하 고 최종 사용자가 신속 하 게 로그인 할 수 있도록 하는 이점을 누릴 수 있습니다.
+이 새로운 AutoLogonUser 정책은 사용자가 자동으로 로그온되는지 여부를 제어합니다. 일부 고객은 ID에 연결되어 있지만 로그인 환경을 원하지 않는 디바이스를 설정하려고 합니다. 디바이스를 선택하고 원격 지원을 즉시 사용하는 Imagine. 또는 HoloLens 디바이스를 신속하게 배포하고 최종 사용자가 로그인을 신속하게 수행할 수 있다는 이점이 있습니다.
 
-정책이 비어 있지 않은 값으로 설정 된 경우 자동 로그온 사용자의 전자 메일 주소를 지정 합니다. 자동 로그온을 사용 하려면 지정 된 사용자가 한 번 이상 장치에 로그온 해야 합니다.
+정책이 비어있지 않은 값으로 설정된 경우 자동 로그온 사용자의 이메일 주소를 지정합니다. 자동 로그온을 사용하려면 지정된 사용자가 디바이스에 한 번 이상 로그온해야 합니다.
 
-새 정책 문자열 값의 OMA-URI입니다. `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser`
+새 정책 문자열 값의 OMA-URI `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser`
 
-- 동일한 전자 메일 주소를 가진 사용자는 자동 로그온을 사용 하도록 설정 합니다.
+- 이메일 주소가 동일한 사용자는 자동 로그온을 사용하도록 설정됩니다.
 
-이 정책이 구성 된 장치에서 정책에 지정 된 사용자가 한 번 이상 로그온 해야 합니다. 첫 번째 로그온 후 장치를 다시 부팅 하면 지정 된 사용자가 자동으로 로그온 됩니다. 단일 자동 로그온 사용자만 지원 됩니다. 사용 하도록 설정 되 면 자동으로 로그온 한 사용자는 수동으로 로그 아웃할 수 없습니다. 다른 사용자로 로그온 하려면 먼저 정책을 사용 하지 않도록 설정 해야 합니다.
+이 정책이 구성된 디바이스에서 정책에 지정된 사용자는 한 번 이상 로그온해야 합니다. 첫 번째 로그온 후 디바이스를 다시 부팅하면 지정된 사용자가 자동으로 로그온됩니다. 단일 자동 로그온 사용자만 지원됩니다. 사용하도록 설정하면 자동으로 로그온된 사용자는 수동으로 로그아웃할 수 없습니다. 다른 사용자로 로그온하려면 먼저 정책을 사용하지 않도록 설정해야 합니다.
 
 > [!NOTE]
 >
-> - 주 OS 업데이트와 같은 일부 이벤트의 경우에는 지정 된 사용자가 자동 로그온 동작을 다시 시작 하기 위해 장치에 다시 로그온 해야 할 수 있습니다.
-> - 자동 로그온은 MSA 및 AAD 사용자에 대해서만 지원 됩니다.
+> - 주요 OS 업데이트와 같은 일부 이벤트는 지정된 사용자가 디바이스에 다시 로그온하여 자동 로그온 동작을 다시 시작하도록 요구할 수 있습니다.
+> - 자동 로그온은 MSA 및 AAD 사용자에 대해서만 지원됩니다.
 
-### <a name="improved-update-restart-detection-and-notifications"></a>향상 된 업데이트 다시 시작 검색 및 알림
+### <a name="improved-update-restart-detection-and-notifications"></a>업데이트 다시 시작 검색 및 알림 개선
 
-활성 시간과 설치 시간 정책 사이에 사용 중일 때 HoloLens 장치가 다시 부팅 되는 것을 방지할 수 있습니다. 그러나 필요한 업데이트의 설치를 완료 하기 위해 다시 부팅이 발생 하지 않는 경우 업데이트 채택을 지연 시킬 수도 있습니다. 이제 최종 기한을 적용 하 고 다시 부팅 하는 데 사용할 수 있는 정책을 추가 하 고 업데이트 설치가 적시에 완료 되도록 합니다. 다시 부팅을 시작 하기 전에 사용자에 게 알릴 수 있으며 IT 정책에 따라 다시 부팅을 연기할 수 있습니다.
+활성 시간과 설치 시간 정책 사이에 디바이스가 사용 중일 때 HoloLens 다시 부팅하지 않도록 방지할 수 있습니다. 그러나 필요한 업데이트 설치를 완료하기 위해 다시 부팅이 발생하지 않는 경우에도 업데이트 채택이 지연됩니다. 이제 IT에서 최종 기한 및 필요한 다시 부팅을 적용하고 업데이트 설치가 적시에 완료되도록 하는 정책을 추가했습니다. 재부팅이 시작되기 전에 사용자에게 알림을 받을 수 있으며 IT 정책에 따라 다시 부팅을 지연할 수 있습니다.
 
-다음 업데이트 정책이 추가 되었습니다.
+다음 업데이트 정책이 추가되었습니다.
 
-- [업데이트/AutoRestartNotificationSchedule](/windows/client-management/mdm/policy-csp-update#update-autorestartnotificationschedule)
+- [Update/AutoRestartNotificationSchedule](/windows/client-management/mdm/policy-csp-update#update-autorestartnotificationschedule)
 - [Update/AutoRestartRequiredNotificationDismissal](/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
-- [업데이트/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)
-- [업데이트/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
-- [업데이트/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
-- [업데이트/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
+- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)
+- [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
 - [Update/ScheduleImminentRestartWarning](/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning)
 - [Update/ScheduleRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)
 - [Update/UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
 
 ### <a name="pfx-file-support-for-certificate-manager"></a>인증서 관리자에 대한 PFX 파일 지원
 
-Windows Insider 빌드 20348.1405에 도입되었습니다. 이제 .pfx 인증서를 사용할 수 있도록 [인증서 관리자에](certificate-manager.md) 대한 지원이 추가되었습니다. 사용자가 **설정** 업데이트 & 보안 인증서 로 이동하고  >    >   **인증서 설치를** 선택하면 이제 UI에서 .pfx 인증서 파일을 지원합니다.
+Windows Insider 빌드 20348.1405에 도입되었습니다. 이제 .pfx 인증서를 사용할 수 있도록 [인증서 관리자에](certificate-manager.md) 대한 지원이 추가되었습니다. 사용자가 **설정** 업데이트 & 보안 인증서 로 이동하고  >    >  인증서 **설치를** 선택하면 UI에서 이제 .pfx 인증서 파일을 지원합니다.
 사용자는 프라이빗 키가 있는 .pfx 인증서를 사용자 저장소 또는 컴퓨터 저장소로 가져올 수 있습니다.
 
 ### <a name="smart-retry-for-app-updates"></a>앱 업데이트에 대한 스마트 다시 시도
 
-이제 HoloLens 사용하도록 설정된 것은 IT 관리자가 업데이트를 적용할 수 있는 앱 사용 중으로 인해 업데이트가 실패한 앱을 다시 시작하기 위해 되풀이 또는 한 번 날짜를 설정할 수 있도록 하는 새로운 정책입니다. 예약된 시간 또는 로그인과 같은 몇 가지 다른 트리거에 따라 설정할 수 있습니다. 이 정책을 사용하는 방법에 대한 자세한 내용은 [ApplicationManagement/ScheduleForceRestartForUpdateFailures 를 확인하세요.](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
+이제 HoloLens 사용하도록 설정된 것은 IT 관리자가 업데이트를 적용할 수 있는 앱 사용 중으로 인해 업데이트가 실패한 앱을 다시 시작하는 되풀이 또는 일회성 날짜를 설정할 수 있는 새로운 정책입니다. 예약된 시간 또는 로그인과 같은 몇 가지 트리거에 따라 설정할 수 있습니다. 이 정책을 사용하는 방법에 대한 자세한 내용은 [ApplicationManagement/ScheduleForceRestartForUpdateFailures 를 확인하세요.](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>HoloLens 설정 고급 진단 보고서 보기
 
 동작 문제를 해결할 때 관리되는 디바이스의 경우 예상되는 정책 구성이 적용되는지 확인하는 것이 중요한 단계입니다. 이전에는 이 새로운 기능을 사용하려면 MDM을 통해 디바이스에서 또는 디바이스 근처에서 수행되어야 했습니다. **이** 작업은 설정 계정을 통해 수집된 MDM 진단 로그를 내보낸 후 작업 또는 학교 에  ->    >  **액세스하고** **관리 로그 내보내기를** 선택하여 주변 PC에서 볼 수 있었습니다.
 
-이제 Edge 브라우저를 사용하여 디바이스에서 MDM 진단을 볼 수 있습니다. MDM 진단 보고서를 더 쉽게 보려면 작업 또는 학교 액세스 페이지로 이동하고 **고급 진단 보고서 보기를** 선택합니다. 그러면 새 Edge 창에서 보고서가 생성되고 열립니다.
+이제 Edge 브라우저를 사용하여 디바이스에서 MDM 진단을 볼 수 있습니다. MDM 진단 보고서를 보다 쉽게 보려면 작업 또는 학교 액세스 페이지로 이동하고 **고급 진단 보고서 보기를** 선택합니다. 그러면 새 Edge 창에서 보고서가 생성되고 열립니다.
 
 ![설정 앱에서 고급 진단 보고서를 봅니다.](./images/view-advanced-diagnostic-report.jpg)
 
 ### <a name="offline-diagnostics-notifications"></a>오프라인 진단 알림
 
 오프라인 진단이라는 기존 기능에 대한 [업데이트입니다.](hololens-diagnostic-logs.md#offline-diagnostics) 이전에는 사용자에게 진단 수집을 트리거했거나 완료되었다는 명확한 표시기가 없었습니다.
-이제 Windows Insider 빌드에 추가되었습니다. 오프라인 진단에 대한 두 가지 형태의 시청각 피드백이 있습니다. 첫 번째는 컬렉션이 시작되고 완료될 때 둘 다에 대해 표시되는 알림 메시지입니다. 사용자가 로그인하고 시각적 개체를 가지고 있을 때 표시됩니다.
+이제 Windows 참가자 빌드에 추가되었습니다. 오프라인 진단에 대한 두 가지 형태의 시청각 피드백이 있습니다. 첫 번째는 컬렉션이 시작되고 완료될 때 둘 다에 대해 표시되는 알림 메시지입니다. 사용자가 로그인하고 시각적 개체를 가지고 있을 때 표시됩니다.
 
 ![로그를 수집하기 위한 알림입니다.](./images/logcollection1.jpg)
 
