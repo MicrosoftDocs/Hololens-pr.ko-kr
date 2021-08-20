@@ -53,7 +53,7 @@
 #### [구성](hololens2-cloud-connected-configure.md)
 #### [배포](hololens2-cloud-connected-deploy.md)
 #### [유지 관리](hololens2-cloud-connected-maintain.md)
-#### [클라우드 연결 환경(외부 클라이언트) 배포 가이드](hololens2-deployment-guide.md)
+#### [외부 클라이언트](hololens2-deployment-guide.md)
 ### 회사 네트워크 배포 가이드
 #### [개요](hololens2-corp-connected-overview.md)
 #### [준비](hololens2-corp-connected-prepare.md)
@@ -75,7 +75,7 @@
 ### [암호화 및 데이터 보호](security-encryption-data-protection.md)
 ### [네트워크 보안](security-network-security.md)
 ### [보안 엔지니어링](security-engineering.md)
-### [HoloLens 2 개인정보처리방침](hololens2-compliance.md)
+### [HoloLens 2 개인 정보 및 데이터 보호](hololens2-privacy.md)
 ## 디바이스 관리
 ### [MDM을 사용하여 HoloLens 디바이스 관리](hololens-mdm-configure.md)
 ## 디바이스 등록
