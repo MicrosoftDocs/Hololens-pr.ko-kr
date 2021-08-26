@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 19035c53fec64ec19243ab5edc79bf77acbf400a
-ms.sourcegitcommit: d99de8d5afbe2585fdb5396bd0165ac74734b281
+ms.openlocfilehash: 80346fd74c9b38ed557d815ed138b1da5702609e
+ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "122277157"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122859020"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens에 대한 참가자 미리 보기
 
@@ -42,9 +42,10 @@ HoloLens에 대 한 최신 Insider Preview 빌드를 시작 합니다. 간단 �
 | [저장소 로그 수집 기능이 향상 되었습니다.](#low-storage-log-collection-improvements) | 낮은 저장소 상황에서 로그 수집 시나리오에 대 한 향상 된 기능 | 문제 해결 | 20348.1412 |
 | [보고 HoloLens 세부 정보에 대 한 CSP 변경 내용](#csp-changes-for-reporting-hololens-details) | 에서 데이터를 쿼리 하는 새 Csp | IT 관리자    | 20348.1403                 |
 | [CSP에서 자동 로그인 정책을 제어 합니다.](#auto-login-policy-controlled-by-csp) | 계정에 자동으로 로그인 하는 데 사용 됩니다. | IT 관리자 | 20348.1405 |
-| [향상 된 업데이트 다시 시작 검색 및 알림](#improved-update-restart-detection-and-notifications) | 업데이트에 대 한 새로운 사용 정책 및 UX. | IT 관리자 | 20348.1405 |
+| [향상 된 업데이트 다시 시작 검색 및 알림](#improved-update-restart-detection-and-notifications) | 업데이트에 사용할 수 있는 새로운 정책 및 UX. | IT 관리자 | 20348.1405 |
 | [앱 업데이트에 대 한 스마트 재시도](#smart-retry-for-app-updates) | IT 관리자가 앱을 업데이트 하기 위해 예약 된 다시 시도를 허용 합니다. | IT 관리자 | 20348.1405 |
 | [Microsoft Store에 대해서만 개인 저장소 앱 사용](#use-only-private-store-apps-for-microsoft-store) | 조직의 앱만 표시 하도록 스토어 앱 구성 | IT 관리자 | 20348.1408 |
+| [WDAC 및 LOB 앱 사용](#use-wdac-and-lob-apps) | IT 관리자가 자신의 앱을 사용 하도록 허용 하 고 계속 해 서 WDAC를 사용 하 여 다른 앱을 차단 합니다. | IT 관리자 | 20348.1405 |
 | [수정 사항 및 향상 된 기능](#fixes-and-improvements) | HoloLens에 대 한 수정 및 개선 사항 | 모두 | 20348.1411 |
 
 ### <a name="it-admin-insider-feature-checklist"></a>IT 관리자 참가자 기능 검사 목록
@@ -53,13 +54,14 @@ HoloLens에 대 한 최신 Insider Preview 빌드를 시작 합니다. 간단 �
 ✔️ 업데이트가 실패 한 후 자동으로 업데이트를 시도 하도록 앱을 구성 하려면 [이 새 CSP를 스마트 다시 시도로 설정 합니다.](#smart-retry-for-app-updates) <br>
 ✔️ OS 업데이트를 보다 효율적으로 제어 하려면 [새로 사용 하도록 설정 된 업데이트 정책을](#improved-update-restart-detection-and-notifications) 확인 하세요. <br>
 ✔️ Microsoft Store를 통해 조직의 앱을 회사 스토어에서 사용할 수 있도록 해야 하지만 전체 저장소가 아닌 조직의 앱에만 액세스를 허용 하려는 경우 [이 정책을 설정 합니다.](#use-only-private-store-apps-for-microsoft-store) <br>
-✔️ 사용 가능한 저장소 공간을 알고 싶으면 HoloLens 장치의 SSID 또는 BSSID는 이러한 [보고 csp를 확인 합니다.](#csp-changes-for-reporting-hololens-details)
+✔️ 사용 가능한 저장소 공간을 알고 싶으면 HoloLens 장치의 SSID 또는 BSSID는 이러한 [보고 csp를 확인 합니다.](#csp-changes-for-reporting-hololens-details) <br>
+✔️에서 WDAC를 사용 하 여 앱 또는 프로세스를 시작 하는 것을 차단 하 고 사용자 고유의 bushiness apps 줄을 사용 해야 하는 경우 이제 [wdac 정책에서 LOB를 허용할](#use-wdac-and-lob-apps)수 있습니다.
 
 ### <a name="moving-platform-mode"></a>플랫폼 모드 이동
 
-**Insider build 20348.1411** 에 따라 HoloLens 2에서 낮은 동적 동작 이동 플랫폼에 대 한 추적에 대 한 베타 지원을 추가 했습니다. 빌드를 설치 하 고 플랫폼 모드를 전환 하 고 나면 이전에는 액세스할 수 없는 환경 (예: 대량 배송 및 대기업 해병대)에서 HoloLens 2를 사용할 수 있습니다. 현재이 기능은 이러한 특정 이동 플랫폼을 사용 하도록 설정 하는 것을 목표로 합니다. 다른 환경에서 기능을 사용 하는 것을 방지 하는 것은 아니지만이 기능은 먼저 이러한 환경에 대 한 지원을 추가 하는 데 중점을 두었습니다.
+**Insider build 20348.1411** 에 따라 HoloLens 2에서 낮은 동적 동작 이동 플랫폼에 대 한 추적에 대 한 베타 지원을 추가 했습니다. 빌드를 설치 하 고 플랫폼 모드를 전환 하 고 나면 이전에는 액세스할 수 없는 환경 (예: 대량 배송 및 대기업 해병대)에서 HoloLens 2를 사용할 수 있습니다. 현재 이 기능은 이러한 특정 이동 플랫폼만 사용하는 것을 목표로 합니다. 다른 환경에서 기능을 사용해도 무방하지만, 이 기능은 우선 이러한 환경에 대한 지원을 추가하는 데 중점을 둡니다.
 
-지원 되는 기능과이 새로운 기능을 사용 하도록 설정 하는 방법에 대 한 자세한 내용은 [플랫폼 이동 페이지를 참조 하세요.](hololens2-moving-platform.md)
+지원 되는 기능 및이 새로운 기능을 사용 하도록 설정 하는 방법에 대 한 자세한 내용은 [플랫폼 이동 페이지를 참조 하세요.](hololens2-moving-platform.md)
 
 ### <a name="pfx-file-support-for-certificate-manager"></a>인증서 관리자에 대 한 PFX 파일 지원
 
@@ -68,7 +70,7 @@ Windows Insider build 20348.1405에 도입 되었습니다. 이제 .pfx 인증�
 
 ### <a name="view-advanced-diagnostic-report-in-settings-on-hololens"></a>HoloLens에서 설정 고급 진단 보고서 보기
 
-동작 문제를 해결할 때 관리 되는 장치의 경우 예상 되는 정책 구성이 적용 되는지 확인 하는 것은 중요 한 단계입니다. 이전에는이 새로운 기능으로, **설정** 계정을 통해 수집 된 mdm 진단 로그를 내보내고 회사 또는 학교에 액세스 한 후 mdm을 통해 장치를 끄거나 장치 근처에서이를 수행 해야 했습니다  ->    >  . 그리고 **관리 로그 내보내기** 및 주변 PC에서 보기를 선택 합니다.
+동작 문제를 해결할 때 관리 되는 장치의 경우 예상 되는 정책 구성이 적용 되는지 확인 하는 것은 중요 한 단계입니다. 이전에는이 새로운 기능을 사용 하 여이 정보를 확인 하는 것은 **설정** 계정을 통해 수집 된 mdm 진단 로그를 내보낸 후 mdm을 사용 하 여 장치를 끄거나 장치 근처에서 작업을 수행 해야 했습니다  ->    >  . 
 
 이제 Edge 브라우저를 사용 하 여 장치에서 MDM 진단을 볼 수 있습니다. MDM 진단 보고서를 더 쉽게 보려면 회사 또는 학교 액세스 페이지로 이동 하 고 **고급 진단 보고서 보기** 를 선택 합니다. 그러면 보고서가 생성 되어 새에 지 창에 열립니다.
 
@@ -175,6 +177,10 @@ HoloLens에 대해 RequirePrivateStoreOnly 정책을 사용 하도록 설정 했
 
 [Applicationmanagement/RequirePrivateStoreOnly](http://windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly) 에 대 한 자세한 정보
 
+### <a name="use-wdac-and-lob-apps"></a>WDAC 및 LOB 앱 사용
+
+이제 WDAC를 사용 하 여 앱 또는 프로세스가 시작 되지 않도록 차단 하 고 계속 해 서 bushiness 앱의 줄을 사용할 수 있습니다. 이제 WDAC 정책에서 허용할 수 있습니다. 이 정책을 사용 하려면 WDAC 정책을 만들 때 PowerShell에서 추가 코드 줄을 실행 해야 합니다. [여기에서 단계를 검토 합니다.](/mem/intune/configuration/custom-profile-hololens)
+
 ### <a name="fixes-and-improvements"></a>수정 사항 및 향상 된 기능
 
 - [잠긴 파일 다운로드 프롬프트가 없는 장치 포털의 알려진 문제를 수정 했습니다.](hololens-troubleshooting.md#downloading-locked-files-doesnt-error)
@@ -205,7 +211,7 @@ HoloLens 2 장치에서 **설정**  >  **업데이트 & 보안**  >  **Windows I
 
 ### <a name="update-error-0x80070490-work-around"></a>업데이트 오류 0x80070490 문제 해결
 
-Dev 또는 Beta 채널에서 업데이트할 때 0x80070490 업데이트 오류가 발생 하는 경우 다음 단기 작업을 수행해 보세요. 여기에는 insider channel을 이동 하 고, 업데이트를 선택한 다음, Insider channel을 다시 이동 하는 작업이 포함 됩니다.
+Dev 또는 Beta 채널에서 업데이트할 때 0x80070490 업데이트 오류가 발생 하는 경우 다음과 같은 단기 해결 방법을 시도해 보세요. 여기에는 insider channel을 이동 하 고, 업데이트를 선택한 다음, Insider channel을 다시 이동 하는 작업이 포함 됩니다.
 
 #### <a name="stage-one---release-preview"></a>1 단계 릴리스 미리 보기
 
@@ -241,23 +247,23 @@ Dev 또는 Beta 채널에서 업데이트할 때 0x80070490 업데이트 오류�
 
 ## <a name="note-for-developers"></a>개발자를 위한 정보
 
-HoloLens의 참가자 빌드를 사용 하 여 응용 프로그램을 개발 하는 것이 좋습니다.  [시작하려면 HoloLens 개발자 설명서를](https://developer.microsoft.com/windows/mixed-reality/development) 확인하세요. 이러한 동일한 지침은 HoloLens 참가자 빌드에서 작동합니다.  HoloLens 개발에 이미 사용 중인 Unity 및 Visual Studio 동일한 빌드를 사용할 수 있습니다.
+HoloLens의 참가자 빌드를 사용 하 여 응용 프로그램을 개발 하는 것이 좋습니다.  [HoloLens 개발자 설명서](https://developer.microsoft.com/windows/mixed-reality/development) 를 확인 하 여 시작 하세요. 이와 동일한 지침은 HoloLens의 참가자 빌드와 함께 작동 합니다.  이미 HoloLens 개발에 사용 하 고 있는 것과 동일한 Unity 및 Visual Studio 빌드를 사용할 수 있습니다.
 
-## <a name="stop-receiving-insider-builds"></a>참가자 빌드 수신 중지
+## <a name="stop-receiving-insider-builds"></a>Insider 빌드 수신을 중지 합니다.
 
-더 이상 Windows Holographic의 참가자 빌드를 수신하지 않으려는 경우 HoloLens 프로덕션 빌드를 실행할 때 옵트아웃하거나 고급 복구 도우미를 사용하여 [디바이스를](hololens-recovery.md) Windows Holographic의 참가자가 아닌 버전으로 복구할 수 있습니다.
+Windows Holographic의 참가자 빌드를 더 이상 수신 하지 않으려는 경우, HoloLens 프로덕션 빌드를 실행 하 고 있을 때 옵트아웃 하거나, 고급 복구 도우미를 사용 하 여 장치를 [복구](hololens-recovery.md) 하 고 Windows Holographic의 비-insider 버전으로 장치를 복구할 수 있습니다.
 
 > [!CAUTION]
-> 새 미리 보기 빌드를 수동으로 다시 설치한 후 Insider Preview 빌드에서 등록을 취소하는 사용자에게 파란색 화면이 발생하는 알려진 문제가 있습니다. 그런 다음 디바이스를 수동으로 복구해야 합니다. 영향을 받을지 여부에 대한 자세한 내용은 이 [알려진 문제에](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)대한 자세한 내용을 확인하세요.
+> 새 미리 보기 빌드를 수동으로 다시 설치 하면 사용자에 게 Insider Preview 빌드에서 등록을 취소 하는 알려진 문제가 있습니다. 이후에는 장치를 수동으로 복구 해야 합니다. 영향을 받는 경우에 대 한 자세한 내용은이 [알려진 문제](hololens-troubleshooting.md#blue-screen-after-unenrolling-from-insider-preview-on-a-device-flashed-with-an-insider-build)에 대 한 자세한 내용을 확인 하세요.
 
-HoloLens 프로덕션 빌드를 실행하고 있는지 확인하려면 다음을 수행합니다.
+HoloLens에서 프로덕션 빌드를 실행 하 고 있는지 확인 하려면 다음을 수행 합니다.
 
-1. 설정 > **시스템 > 정보로** 이동하여 빌드 번호를 찾습니다.
+1. **설정 > System > 정보** 로 이동 하 여 빌드 번호를 찾습니다.
 
-1. [프로덕션 빌드 번호는 릴리스 정보 를 참조하세요.](hololens-release-notes.md)
+1. [프로덕션 빌드 번호에 대 한 릴리스 정보를 참조](hololens-release-notes.md)하세요.
 
-참가자 빌드를 옵트아웃하려면 다음을 수행합니다.
+참가자 빌드를 옵트아웃 (opt out) 하려면 다음을 수행 합니다.
 
-1. 프로덕션 빌드를 실행하는 HoloLens **설정 > 업데이트 & 보안 > Windows 참가자 프로그램** 로 이동하고 참가자 빌드 **중지를** 선택합니다.
+1. 프로덕션 빌드를 실행 하는 HoloLens에서 **설정 > 업데이트 & 보안 > insider Program** 로 이동 하 여 insider build **중지** 를 선택 합니다.
 
-1. 지침에 따라 디바이스를 옵트아웃합니다.
+1. 지침에 따라 장치를 옵트아웃 합니다.
