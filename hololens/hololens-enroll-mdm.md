@@ -14,12 +14,12 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 5ded375d88740b9367eec87e4e902c423f131689
-ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
+ms.openlocfilehash: a368c622c137374ea9cc544490d3492fa9d3f8c1
+ms.sourcegitcommit: 749d617f3f0ce3e6363ff6cd1a03f87b9280f418
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122858986"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122979358"
 ---
 # <a name="enroll-hololens-in-mdm"></a>MDM에 HoloLens 등록
 
@@ -45,10 +45,10 @@ OOBE 또는 로그인 후 선택한 [ID](hololens-identity.md) 유형에 따라 
 
 - ID가 MSA인 경우 **설정 앱**  ->  **액세스 작업 또는 학교**  ->  **커넥트** 단추를 사용하세요.
     - AWA(작업 계정 추가) 흐름이라고도 합니다.
-- ID가 로컬 사용자인 경우 **디바이스** 관리  ->    ->  **링크에서만** 설정 앱 액세스 작업 또는 학교 등록을 사용하세요.
+- ID가 로컬 사용자인 경우 디바이스 관리 링크에서만 **설정 앱** 액세스  ->  **작업 또는 학교**  ->  **등록을** 사용하세요.
     - 순수 MDM 등록 흐름이라고도 합니다.
 
-디바이스가 MDM 서버에 등록되면 이제 디바이스가 디바이스 관리에 등록되었다는 설정 앱이 반영됩니다.
+디바이스가 MDM 서버에 등록되면 이제 설정 앱은 디바이스가 디바이스 관리에 등록되었다는 것을 반영합니다.
 
 ## <a name="auto-enrollment-in-mdm"></a>MDM의 자동 등록
 
@@ -62,10 +62,10 @@ OOBE 또는 로그인 후 선택한 [ID](hololens-identity.md) 유형에 따라 
 
 등록 방법에 따라 디바이스 등록 취소를 사용할 수 없습니다.
 
-디바이스가 Azure AD 계정 또는 Autopilot에 등록된 경우 Intune에서 등록을 취소할 수 없습니다. Azure AD에서 HoloLens 조인을 해제하거나 Azure AD 테넌트에서 다른 테넌트로 다시 조인하려면 디바이스를 [다시 설정/리플래시해야](hololens-recovery.md#reset-the-device) 합니다.
+디바이스가 Azure AD 계정 또는 Autopilot에 등록된 경우 Intune에서 등록을 취소할 수 없습니다. Azure AD에서 HoloLens 조인을 해제하거나 Azure AD 테넌트에서 다른 테넌트로 다시 조인하려는 경우 디바이스를 [다시 설정/리플래시해야](hololens-recovery.md#reset-the-device) 합니다.
 
-디바이스가 작업 계정을 추가한 MSA 계정 또는 디바이스 관리에만 등록된 로컬 계정에서 등록된 경우 디바이스 등록을 취소할 수 있습니다. 시작 메뉴 연 다음 **앱**  ->  **액세스 작업 또는 학교**  ->  *사용자계정* 연결  ->  **끊기** 단추를 설정 선택합니다.
+디바이스가 작업 계정을 추가한 MSA 계정 또는 디바이스 관리에만 등록된 로컬 계정에서 등록된 경우 디바이스 등록을 취소할 수 있습니다. 시작 메뉴 연 **다음, 설정 앱**  ->  **액세스 작업 또는 학교**  ->  *사용자계정* 연결  ->  **끊기** 단추를 선택합니다.
 
 ## <a name="ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>Windows 디바이스에 대해 MDM 등록이 차단되지 않았는지 확인합니다.
 
-Autopilot이 성공하려면 HoloLens 디바이스가 등록할 수 있는지 확인해야 합니다. HoloLens Windows 디바이스로 간주되므로 배포를 차단할 수 있는 등록 제한이 필요하지 않습니다. [이 제한 사항 목록을 검토하고](/mem/intune/enrollment/enrollment-restrictions-set) 디바이스를 등록할 수 있는지 확인합니다.
+등록에 성공하려면 HoloLens 디바이스가 등록할 수 있는지 확인해야 합니다. HoloLens Windows 디바이스로 간주되므로 배포를 차단할 수 있는 등록 제한이 필요하지 않습니다. [이 제한 사항 목록을 검토하고](/mem/intune/enrollment/enrollment-restrictions-set) 디바이스를 등록할 수 있는지 확인합니다.
