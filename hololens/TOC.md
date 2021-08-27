@@ -93,7 +93,7 @@
 ### [프로비전 패키지를 사용하여 HoloLens 구성](hololens-provisioning.md)
 ### [일반적인 디바이스 제한 사항](hololens-common-device-restrictions.md)
 ### [HoloLens를 키오스크로 설정](hololens-kiosk.md)
-### [전역 할당 액세스 - 키오스크](hololens-global-assigned-access-kiosk.md)
+### [HoloLens 키오스크 참조 정보](hololens-kiosk-reference.md)
 ### [Windows Defender 애플리케이션 제어 - WDAC](windows-defender-application-control-wdac.md)
 ### [HoloLens에 대한 페이지 설정 CSP 및 URI](settings-uri-list.md)
 ## 네트워크 및 연결
