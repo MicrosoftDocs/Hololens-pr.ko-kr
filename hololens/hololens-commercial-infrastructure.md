@@ -14,12 +14,12 @@ manager: bradke
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 3aa5ed676a9f8864904752da3d965cba5fab7ce98db51abb4ff9444f1a0a370b
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 9b306b10ff82603fd238f195beacc300f1a82bf6
+ms.sourcegitcommit: 6ce962ede986ebfab21d1665722694eaee13c280
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664430"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122859003"
 ---
 # <a name="configure-your-network-for-hololens"></a>HoloLens용 네트워크 구성
 
@@ -180,7 +180,7 @@ MDM 공급자를 통해 인증서를 배포할 수 있습니다. 회사에 인�
 
 ![Intune에서 키오스크 모드 구성을 보여주는 이미지](images/aad-kioskmode.png)
 
-다른 MDM 서비스의 경우 공급자의 설명서에서 지침을 확인하세요. 사용자 지정 설정 및 전체 XML 구성을 사용하여 MDM 서비스에서 키오스크를 설정해야 하는 경우 [HoloLens 키오스크](hololens-kiosk.md#use-microsoft-intune-or-other-mdm-to-set-up-a-single-app-or-multi-app-kiosk) 지침을 참조하세요.
+다른 MDM 서비스의 경우 공급자의 설명서에서 지침을 확인하세요. 사용자 지정 설정 및 전체 XML 구성을 사용하여 MDM 서비스에서 키오스크를 설정해야 하는 경우 [HoloLens 키오스크](hololens-kiosk.md?tabs=intunecustom#steps-in-configuring-kiosk-mode-for-hololens) 지침을 참조하세요.
 
 ## <a name="certificates-and-authentication"></a>인증서 및 인증
 

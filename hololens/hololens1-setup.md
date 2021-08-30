@@ -12,12 +12,12 @@ ms.reviewer: ''
 manager: jarrettr
 appliesto:
 - Hololens (1st gen)
-ms.openlocfilehash: 03a84f1035154660fe51ec5be07c3f32f4746564b95616ec45ef3978fb49b911
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5918e3dcb7f2504ae6e85cb584aaf21bc87217bc
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662314"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189259"
 ---
 # <a name="get-your-hololens-1st-gen-ready-to-use"></a>HoloLens(1세대) 사용 준비
 
@@ -27,7 +27,7 @@ ms.locfileid: "115662314"
 
 HoloLens 요금을 청구 하려면 포함 된 마이크로 USB 케이블을 사용 하 여 충전 포트에 전원 공급 장치를 연결 합니다. 그런 다음 전원 공급 장치를 전원 콘센트에 연결 합니다. 장치가 충전 될 때 배터리 표시기는 웨이브 패턴으로 표시 됩니다.
 
-![마이크로 USB 케이블을 HoloLens에 연결 하는 방법을 보여 주는 이미지](./images/hololens-charging.png)
+![마이크로 USB 케이블을 HoloLens에 연결 하는 방법을 보여 주는 이미지입니다.](./images/hololens-charging.png)
 
 HoloLens 켜져 있으면 배터리 표시기는 배터리 수준을 증분 단위로 표시 합니다. 5개의 표시등 중 하나만 켜져 있으면 배터리 잔량이 20% 미만입니다. 배터리 잔량이 매우 낮은 상태에서 장치를 켜려고 하면 표시등 1개가 잠깐 깜박인 다음 꺼집니다.
 
@@ -44,17 +44,17 @@ HoloLens 켜져 있으면 배터리 표시기는 배터리 수준을 증분 단�
 
 | &nbsp; | &nbsp; |
 |:--- |:--- |
-|1. 헤드 밴드를 최대 20-30도로 회전 합니다.|![1 단계, 헤드 밴드 회전](./images/FitGuideStep1.png)|
-|2. 헤드 밴드를 다시 푸시합니다. 시간이 지남에 따라 대역을 손상 시킬 수 있으므로, 다시 끌어오거나, 힌지 뒤의 대역을 조작 하지 마세요.|![2 단계, 헤드 밴드 다시 푸시](./images/FitGuideStep2.png)|
-|3. 조정 휠을 켜서 헤드 밴드를 모두 확장 합니다. |![3 단계, 조정 휠을 사용 하 여 헤드 밴드 확장](./images/FitGuideStep3.png)|
-|4. 장치 arm에서 장치를 잡고 헤드에 저장 합니다. 헤드 밴드가 forehead 위쪽에 있는지 확인 하 고 조정 휠을 강화 합니다.|![4 단계, 장치에 배치 및 헤드 밴드 조정](./images/FitGuideStep4.png)|
+|1. 헤드 밴드를 최대 20-30도로 회전 합니다.|![1 단계, 헤드 밴드를 회전 합니다.](./images/FitGuideStep1.png)|
+|2. 헤드 밴드를 다시 푸시합니다. 시간이 지남에 따라 대역을 손상 시킬 수 있으므로, 다시 끌어오거나, 힌지 뒤의 대역을 조작 하지 마세요.|![2 단계, 헤드 밴드를 다시 푸시합니다.](./images/FitGuideStep2.png)|
+|3. 조정 휠을 켜서 헤드 밴드를 모두 확장 합니다. |![3 단계, 조정 휠을 사용 하 여 헤드 밴드를 확장 합니다.](./images/FitGuideStep3.png)|
+|4. 장치 arm에서 장치를 잡고 헤드에 저장 합니다. 헤드 밴드가 forehead 위쪽에 있는지 확인 하 고 조정 휠을 강화 합니다.|![4 단계, 장치에 배치 및 헤드 밴드를 조정 합니다.](./images/FitGuideStep4.png)|
 |5. 센터를 뒤로 이동 하 고 장치에 맞추기를 확인 합니다. 헤드 밴드는 forehead 위쪽에 있고, 선 바로 아래에 앉아 귀 위에 스피커가 배치 되어야 합니다. Lenses는 눈에 맞게 가운데에 배치 해야 합니다.|![5 단계, 센터를 뒤로 이동 하 고 맞추기를 확인 합니다.](./images/FitGuideSetep5.png)|
 
 ## <a name="turn-on-your-hololens"></a>HoloLens 설정
 
 전원 단추를 사용 하 여 HoloLens 켜고 끄거나 대기 모드로 전환 합니다.
 
-![HoloLens 전원 단추를 표시 하는 이미지](./images/hololens-power.png)
+![HoloLens 전원 단추를 표시 하는 이미지입니다.](./images/hololens-power.png)
 
 장치가 응답 하지 않거나 시작 되지 않는 경우 [다시 시작, 다시 설정 또는 복구 HoloLens](hololens-restart-recover.md)를 참조 하세요.
 
@@ -79,15 +79,15 @@ HoloLens은 (는) 연결 된 경우에도 배터리 레벨이 1%로 떨어지면
 
 밝기 및 볼륨 단추는 장치 arm 볼륨의 맨 위에 &mdash; 오른쪽으로, 밝기는 왼쪽에 있습니다.
 
-![HoloLens 단추를 표시 하는 이미지](./images/hololens-buttons.jpg)
+![HoloLens 단추를 표시 하는 이미지입니다.](./images/hololens-buttons.jpg)
 
 ## <a name="hololens-indicator-lights"></a>HoloLens 표시기 표시등
 
-![HoloLens 표시기 조명을 표시 하는 이미지](./images/hololens-lights.png)
+![HoloLens 표시기 조명을 표시 하는 이미지입니다.](./images/hololens-lights.png)
 
 HoloLens의 표시등이 무슨 의미인지 확실하지 않나요? 다음은 몇 가지 도움말입니다.
 
-|조명이이 작업을 수행 하는 경우 |즉, |
+|조명이이 작업을 수행 하는 경우 |의미 |
 |---|---|
 |가운데에서 바깥쪽으로 스크롤합니다. |HoloLens를 시작 하는 중입니다. |
 |계속 (전체 또는 일부) 합니다. |HoloLens 설정 되어 사용할 준비가 되었습니다. 배터리 수명은 20% 증분으로 표시 됩니다. |

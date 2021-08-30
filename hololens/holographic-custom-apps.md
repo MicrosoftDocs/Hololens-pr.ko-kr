@@ -1,10 +1,10 @@
 ---
-title: HoloLens에 대 한 사용자 지정 앱 관리 (첫 번째 gen)
-description: 장치 포털 및 Visual Studio를 사용 하 여 HoloLens 장치에 사용자 지정 holographic apps를 설치, 제거 및 함께 로드 하는 방법을 알아봅니다.
+title: HoloLens(1세대)용 사용자 지정 앱 관리
+description: 장치 포털 및 Visual Studio 사용하여 HoloLens 디바이스에서 사용자 지정 홀로그램 앱을 설치, 제거 및 사이드로드하는 방법을 알아봅니다.
 ms.assetid: 6bd124c4-731c-4bcc-86c7-23f9b67ff616
 ms.date: 12/10/2020
 manager: v-miegge
-keywords: hololens, 테스트용으로 로드, 부하, 테스트용 부하, 스토어, uwp, 앱, 설치
+keywords: hololens, sideload, side load, side-load, store, uwp, app, install
 ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
@@ -16,65 +16,65 @@ ms.custom:
 - CSSTroubleshooting
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 7d564fd00567033060428d5b47b34ddf827dea2fdeeb8955c73bc22e4ba87164
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b6769c36f821ee3619ac9b62efd637ac561192bb
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664960"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188851"
 ---
-# <a name="manage-custom-apps-for-hololens-1st-gen"></a>HoloLens에 대 한 사용자 지정 앱 관리 (첫 번째 gen)
+# <a name="manage-custom-apps-for-hololens-1st-gen"></a>HoloLens(1세대)용 사용자 지정 앱 관리
 
-HoloLens은 Microsoft Store에서 많은 기존 응용 프로그램을 지원 하 고 HoloLens 용으로 작성 된 새 앱도 지원 합니다. 이 문서에서는 사용자 지정 holographic 응용 프로그램에 대해 집중적으로 설명 합니다.  
+HoloLens Microsoft Store 많은 기존 애플리케이션뿐만 아니라 HoloLens 위해 특별히 빌드된 새 앱을 지원합니다. 이 문서에서는 사용자 지정 홀로그램 애플리케이션에 중점을 둡니다.  
 
-스토어 앱에 대 한 자세한 내용은 [스토어를 사용 하 여 앱 관리](holographic-store-apps.md)를 참조 하세요.
+스토어 앱에 대한 자세한 내용은 [스토어를](holographic-store-apps.md)통해 앱 관리를 참조하세요.
 
 > [!IMPORTANT]
-> 다음 정보는 HoloLens Developer Edition이 라고도 하는 HoloLens (첫 번째 gen)에 대해 만들어졌습니다. 장치 포털을 통해 이러한 테스트용 로드 앱을 설치 하 고 Visual Studio를 통해 앱을 설치 하는 것이 일반적 이었습니다. 엔터프라이즈 배포의 경우 두 방법 모두를 사용 하는 개발자 모드를 사용 하지 않는 것이 좋습니다. 보안 앱 배포 방법에 관심이 있는 경우 [앱 관리: 개요](app-deploy-overview.md)를 참조 하세요.
+> 다음 정보는 당시 HoloLens Developer Edition이라고도 하는 HoloLens(1세대)에 대해 만들어졌습니다. 따라서 디바이스 포털을 통해 앱을 테스트용으로 로드하고 Visual Studio 통해 앱을 설치하는 것이 일반적이었습니다. 엔터프라이즈 배포의 경우 두 방법 모두에 사용되는 개발자 모드를 사용하도록 설정하지 않는 것이 좋습니다. 보안 앱 배포 방법에 관심이 있는 경우 [앱 관리: 개요를](app-deploy-overview.md)검토하세요.
 >
-> HoloLens 2 장치에 대 한 앱 설치 개발자 방법을 찾고 있는 경우 다음을 참조 하세요.
+> HoloLens 2 디바이스에 대한 앱 설치의 개발자 방법을 원하는 경우 다음을 참조하세요.
 >
 > - [장치 포털: 앱 설치](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#installing-an-app)
-> - [Visual Studio를 사용 하 여 응용 프로그램 배포 및 디버그](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
+> - [Visual Studio 사용하여 앱 배포 및 디버그](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio)
 
 ## <a name="install-custom-apps"></a>사용자 지정 앱 설치
 
-장치 포털을 사용 하거나 Visual Studio에서 앱을 배포 하 여 HoloLens에서 사용자 고유의 응용 프로그램을 설치할 수 있습니다.
+장치 포털 사용하거나 Visual Studio 앱을 배포하여 HoloLens 고유한 애플리케이션을 설치할 수 있습니다.
 
-### <a name="installing-an-application-package-with-the-device-portal"></a>장치 포털을 사용 하 여 응용 프로그램 패키지 설치
+### <a name="installing-an-application-package-with-the-device-portal"></a>장치 포털 애플리케이션 패키지 설치
 
-1. [장치 포털](/windows/mixed-reality/using-the-windows-device-portal) 에서 대상 HoloLens에 대 한 연결을 설정 합니다.
+1. 장치 포털 대상 [HoloLens](/windows/mixed-reality/using-the-windows-device-portal) 연결을 설정합니다.
 
-1. 왼쪽 탐색 영역에서 **앱** 페이지로 이동 합니다.
+1. 왼쪽 탐색 창에서 **앱** 페이지로 이동합니다.
 
-1. **앱 패키지** 아래에서 응용 프로그램과 연결 된 .appx 파일을 찾습니다.
+1. **앱 패키지** 아래에서 애플리케이션과 연결된 .appx 파일을 찾습니다.
 
    > [!IMPORTANT]
-   > 연결 된 종속성 및 인증서 파일을 모두 참조 해야 합니다.
+   > 연결된 종속성 및 인증서 파일을 참조해야 합니다.
 
 1. **이동** 을 선택합니다.
 
    > [!div class="mx-imgBorder"]
-   > ![Microsoft HoloLens에서 Windows 장치 포털에 앱 양식 설치](images/deviceportal-appmanager.jpg)
+   > ![Microsoft HoloLens Windows 장치 포털 앱 양식을 설치합니다.](images/deviceportal-appmanager.jpg)
 
 ### <a name="deploying-from-microsoft-visual-studio-2015"></a>Microsoft Visual Studio 2015에서 배포
 
-1. 앱의 Visual Studio 솔루션 (.sln 파일)을 엽니다.
+1. 앱의 Visual Studio 솔루션(.sln 파일)을 엽니다.
 
 1. 프로젝트의 **속성** 을 엽니다.
 
-1. 빌드 구성: **Master/x86/원격 컴퓨터** 를 선택 합니다.
+1. 다음 빌드 구성을 선택합니다. **Master/x86/Remote Machine.**
 
-1. **원격 컴퓨터** 를 선택 하는 경우:
-   - 주소가 HoloLens의 Wi-Fi IP 주소를 가리키는지 확인 합니다.
-   - 인증을 **유니버설 (암호화 되지 않은 프로토콜)** 로 설정 합니다.
+1. **원격 컴퓨터** 를 선택하는 경우:
+   - 주소가 HoloLens Wi-Fi IP 주소를 가리키는지 확인합니다.
+   - 인증을 **유니버설(암호화되지 않은 프로토콜) 로** 설정합니다.
    
 1. 솔루션을 빌드합니다.
 
-1. 개발 PC에서 HoloLens 앱을 배포 하려면 **원격 컴퓨터** 를 선택 합니다. HoloLens에 기존 빌드가 이미 있는 경우 **예** 를 선택 하 여이 최신 버전을 설치 합니다.  
+1. 개발 PC에서 HoloLens 앱을 배포하려면 원격 **컴퓨터** 를 선택합니다. HoloLens 기존 빌드가 이미 있는 경우 **예를** 선택하여 이 최신 버전을 설치합니다.  
 
-   ![Visual Studio에서 Microsoft HoloLens 앱에 대 한 원격 컴퓨터 배포](images/vs2015-remotedeployment.jpg)  
+   ![Visual Studio Microsoft HoloLens 앱에 대한 원격 컴퓨터 배포](images/vs2015-remotedeployment.jpg)  
    
-1. 응용 프로그램이 설치 되 고 HoloLens 자동으로 실행 됩니다.
+1. 애플리케이션이 HoloLens 설치 및 자동 시작됩니다.
 
-앱을 설치한 후에는 **모든 앱** 목록 (  >  **모든 앱** 시작)에서 찾을 수 있습니다.
+앱을 설치한 후 모든 앱 목록에서 찾을 수 **있습니다(모든 앱**   >  시작).

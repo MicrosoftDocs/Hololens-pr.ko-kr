@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 76513c2f2458119785b64d8cccac4e42c2957b5af966dfdb0c165ebeda12e069
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 5d8fc2eb0a8dafaae0e1b222b7451877975cf90b
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660087"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190211"
 ---
 # <a name="prepare---corporate-connected-guide"></a>준비-회사에 연결 된 가이드
 ## <a name="infrastructure-essentials"></a>인프라 Essentials
@@ -73,7 +73,7 @@ MDM 시스템이 이미 인증서에 대해 구성 된 경우에는 [HoloLens 2�
 
 또한 [AZURE AD 응용 프로그램 프록시 또는 웹 액세스 프록시](/azure/active-directory/manage-apps/application-proxy-add-on-premises-application)를 사용 하 여 회사 네트워크 외부에 NDES URL을 게시 해야 합니다. 선택한 다른 역방향 프록시를 사용할 수도 있습니다.
 
-![SCEP 데이터 흐름](./images/hololens2-scep-info-flow.png)
+![SCEP 데이터 흐름입니다.](./images/hololens2-scep-info-flow.png)
 
 네트워크에서 SCEP를 아직 지원 하지 않거나 네트워크가 Intune과 함께 SCEP에 올바르게 설정 되었는지 확신할 수 없는 경우  [intune을 사용 하 여 scep를 지원 하도록 인프라 구성](/mem/intune/protect/certificates-scep-configure)을 참조 하세요.
 

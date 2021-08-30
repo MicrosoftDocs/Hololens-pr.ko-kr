@@ -6,12 +6,12 @@ ms.author: mattwoj
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: hololens
-ms.openlocfilehash: cbf0b2e4b61f006d0b5d7d74d3d81a4b33cfd6d8c2e124288b17959d54a5a1ad
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d511156d6940574deda7448a6f634c0004b8f053
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665069"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188987"
 ---
 # <a name="contributing-to-the-hololens-documentation"></a>HoloLens 설명서에 기여
 
@@ -43,7 +43,7 @@ GitHub 계정을 설정하는 경우 다음과 같은 보안 예방 조치도 �
 - 공개 [프로필 설정을](https://github.com/settings/profile)업데이트합니다.
    - 이름을 설정하고 *공용 메일을* 내 이메일 *주소를 표시 안* 으로 설정하는 것이 좋습니다.
    - 기여하는 문서 페이지에 미리 보기가 표시되므로 프로필 사진을 업로드하는 것이 좋습니다.
-- 명령줄을 사용하려는 경우 [Windows 에 대한 Git 자격 증명 관리자](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest)설정하는 것이 좋습니다. 이렇게 하면 기여할 때마다 암호를 입력할 필요가 없습니다.
+- 명령줄을 사용하려는 경우 Windows [Git 자격 증명 관리자](https://github.com/Microsoft/Git-Credential-Manager-for-Windows/releases/latest)설정하는 것이 좋습니다. 이렇게 하면 기여할 때마다 암호를 입력할 필요가 없습니다.
 
 게시 시스템은 GitHub 연결되므로 이러한 단계가 중요합니다. GitHub 별칭을 사용하여 각 문서의 작성자 또는 기여자로 나열됩니다.
 
@@ -60,7 +60,7 @@ GitHub 계정을 설정하는 경우 다음과 같은 보안 예방 조치도 �
    그러면 삭제 가능한 분기가 기본 _분기인 마스터_ 에서 자동으로 분기됩니다.
 
    > [!NOTE]
-   > 이 문서에는 Microsoft에서 더 이상 사용하지 않는 용어인 _master에_ 대한 참조가 포함되어 있습니다. 소프트웨어에서 용어가 제거되면 이 문서에서 해당 용어가 제거됩니다.
+   > 이 문서에는 Microsoft에서 더 이상 사용하지 않는 용어인 _마스터에_ 대한 참조가 포함되어 있습니다. 소프트웨어에서 용어가 제거되면 이 문서에서 해당 용어가 제거됩니다.
    
 3. Markdown 기본 사항 에 따라 문서의 내용을 [편집합니다.](#markdown-basics)
 
@@ -68,14 +68,14 @@ GitHub 계정을 설정하는 경우 다음과 같은 보안 예방 조치도 �
 
    * **title**: 문서를 볼 때 브라우저 탭에 표시되는 페이지 제목입니다. 페이지 제목은 SEO 및 인덱싱에 사용되므로 필요한 경우가 아니면 제목을 변경하지 마세요(설명서를 공개하기 전에 덜 중요함).
    * **description:** 문서의 콘텐츠에 대한 간략한 설명을 작성하여 SEO 및 검색을 향상시킵니다.
-   * **author**: 페이지의 기본 소유자인 경우 여기에 GitHub 별칭을 추가합니다.
-   * **ms.author:** 페이지의 기본 소유자인 경우 여기에 Microsoft 별칭을 추가합니다(은 필요하지 않으며 @microsoft.com 별칭만 필요).
+   * **author:** 페이지의 기본 소유자인 경우 여기에 GitHub 별칭을 추가합니다.
+   * **ms.author:** 페이지의 기본 소유자인 경우 여기에 Microsoft 별칭을 추가합니다(은 필요하지 않으며 @microsoft.com 별칭만 필요함).
    * **ms.date:** 페이지에 주요 콘텐츠를 추가하는 경우 날짜를 업데이트하지만 설명, 서식 지정, 문법 또는 맞춤법과 같은 수정은 업데이트하지 않습니다.
    * **키워드:** 키워드는 SEO(검색 엔진 최적화)를 지원합니다. 쉼표와 공백으로 구분된 키워드를 추가합니다. 이 키워드는 문서에만 해당되지만 목록의 마지막 키워드 뒤의 문장 부호는 추가하지 않습니다. 모든 아티클에 적용되는 전역 키워드는 다른 곳에서 관리되기 때문에 추가할 필요가 없습니다. 
    
 5. 문서 편집을 완료했으면 아래로 스크롤하여 **파일 변경 제안을** 선택합니다.
 
-6. 다음 페이지에서 **끌어오기 요청 만들기를** 선택하여 자동으로 생성된 분기를 기본 _분기인 마스터_ 에 병합합니다.
+6. 다음 페이지에서 **끌어오기 요청 만들기를** 선택하여 자동으로 생성된 분기를 기본 분기인 _마스터_ 에 병합합니다.
 
 7. 편집하려는 다음 문서에 대해 위의 단계를 반복합니다.
 
@@ -99,7 +99,7 @@ GitHub 계정을 설정하는 경우 다음과 같은 보안 예방 조치도 �
 
 - `redirect_url`는 이전 문서에서 새 아티클까지의 상대 공용 URL입니다. 이 **URL은** `mixed-reality-docs` `.md` 리포지토리 경로가 아닌 공용 URL을 참조하기 때문에 또는 을 포함하지 않도록 합니다. 를 사용하여 새 아티클 내의 섹션에 연결할 `#section` 수 있습니다. 필요한 경우 여기에서 다른 사이트에 대한 절대 경로를 사용할 수도 있습니다.
 
-- `redirect_document_id` 는 이전 파일의 문서 ID를 유지할지 여부를 나타냅니다. 기본값은 `false`입니다. `true` `ms.documentid` 리디렉션된 아티클에서 특성 값을 유지하려면 를 사용합니다. 문서 ID를 유지하면 페이지 보기 및 순위와 같은 데이터가 대상 문서로 전송됩니다. 리디렉션이 동일한 콘텐츠의 일부만 포함하는 다른 문서에 대한 포인터가 아니라 주로 이름 바꾸기인 경우 이 작업을 수행하세요.
+- `redirect_document_id` 는 이전 파일의 문서 ID를 유지할지 여부를 나타냅니다. 기본값은 `false`입니다. `true`리디렉션된 아티클에서 특성 값을 유지하려는 경우 `ms.documentid` 를 사용합니다. 문서 ID를 유지하면 페이지 보기 및 순위와 같은 데이터가 대상 문서로 전송됩니다. 리디렉션이 동일한 콘텐츠의 일부만 포함하는 다른 문서에 대한 포인터가 아니라 주로 이름 바꾸기인 경우 이 작업을 수행하세요.
 
 리디렉션을 추가하는 경우 이전 파일도 삭제해야 합니다.
 
@@ -112,7 +112,7 @@ GitHub 계정을 설정하는 경우 다음과 같은 보안 예방 조치도 �
    ![현재 이름이 "master"인 기본 분기를 포크합니다.](images/forkbranch.png)
 
    > [!NOTE]
-   > 이 문서에는 Microsoft에서 더 이상 사용하지 않는 용어인 _master에_ 대한 참조가 포함되어 있습니다. 소프트웨어에서 용어가 제거되면 이 문서에서 해당 용어가 제거됩니다.
+   > 이 문서에는 Microsoft에서 더 이상 사용하지 않는 용어인 _마스터에_ 대한 참조가 포함되어 있습니다. 소프트웨어에서 용어가 제거되면 이 문서에서 해당 용어가 제거됩니다.
    
 2. "mixed-reality-docs" 폴더의 오른쪽 위에서 **새 파일 만들기를** 선택합니다.
 
@@ -137,7 +137,7 @@ GitHub 계정을 설정하는 경우 다음과 같은 보안 예방 조치도 �
    ---
    ```
 
-5. [기존 문서 편집에서](#editing-an-existing-article)설명한 대로 관련 메타데이터 필드를 입력합니다.
+5. 기존 문서 편집에서 설명한 대로 관련 메타데이터 필드를 [입력합니다.](#editing-an-existing-article)
 
 6. [Markdown 기본 을](#markdown-basics)사용하여 문서 콘텐츠를 작성합니다.
 
@@ -147,7 +147,7 @@ GitHub 계정을 설정하는 경우 다음과 같은 보안 예방 조치도 �
 
 9. **새 끌어오기 요청을** 선택하고 포크의 _마스터_ 분기를 MicrosoftDocs/mixed-reality _master에_ 병합합니다(화살표가 올바른 대상을 가리키는지 확인).
 
-   ![포크에서 MicrosoftDocs/mixed-reality로 끌어오기 요청 만들기](images/pr-to-master.png)
+   ![포크에서 MicrosoftDocs/mixed-reality로 끌어오기 요청을 만듭니다.](images/pr-to-master.png)
 
 ## <a name="markdown-basics"></a>Markdown 기본 사항
 
@@ -174,7 +174,7 @@ docs.microsoft.com 스타일 테이블의 방식 때문에 인라인 CSS를 사�
 >3. 문서에서 참조하는 이미지를 포크의 "mixed-reality-docs/images" 폴더에 업로드했습니다.
 >4. 포크를 MicrosoftDocs/mixed-reality _마스터_ 분기에 병합하는 **끌어오기 요청을** 만들었습니다.
 >
->고유한 포크된 리포지던스를 설정하는 방법을 알아보려면 [새 문서 를 만들기](#creating-a-new-article)위한 지침을 따르세요.
+>고유한 포크된 리포지던스를 설정하는 방법을 알아보려면 [새 문서](#creating-a-new-article)를 만들기 위한 지침을 따르세요.
 
 ## <a name="previewing-your-work"></a>작업 미리 보기
 
@@ -183,7 +183,7 @@ docs.microsoft.com 스타일 테이블의 방식 때문에 인라인 CSS를 사�
 >[!NOTE]
 >review.docs.microsoft.com 변경 내용 미리 보기는 Microsoft 직원에게만 제공됩니다.
 
-Microsoft 직원: 기여가 기본 분기인 _마스터_ 에 병합된 경우 콘텐츠를 검토한 후 /hololens?branch=master> <공개할 수 있습니다. 왼쪽 열의 목차를 사용하여 문서를 찾습니다.
+Microsoft 직원: 기여가 기본 분기인 _마스터_ 에 병합된 경우 콘텐츠를 검토한 후 </hololens?branch=master> 공개할 수 있습니다. 왼쪽 열의 목차를 사용하여 문서를 찾습니다.
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>브라우저에서 편집 및 데스크톱 클라이언트를 사용하여 편집
 
@@ -193,7 +193,7 @@ Microsoft 직원: 기여가 기본 분기인 _마스터_ 에 병합된 경우 �
 - 다른 문서에 대한 스마트 링크는 얻을 수 없습니다(문서의 파일 이름을 수동으로 입력해야 합니다).
 - 이미지를 업로드하고 참조하는 것은 번거로울 수 있습니다.
 
-이러한 문제를 처리하지 않려면 기여할 때 몇 가지 [유용한 확장이](#useful-extensions) 있는 [Visual Studio Code](https://code.visualstudio.com/) 같은 데스크톱 클라이언트를 사용합니다.
+이러한 문제를 처리하지 않려면 기여할 때 몇 가지 유용한 확장이 [있는 Visual Studio Code](https://code.visualstudio.com/) 같은 데스크톱 [클라이언트를](#useful-extensions) 사용합니다.
 
 ## <a name="using-visual-studio-code"></a>Visual Studio Code 사용
 
@@ -201,7 +201,7 @@ Microsoft 직원: 기여가 기본 분기인 _마스터_ 에 병합된 경우 �
 
 ### <a name="setup"></a>설치 프로그램
 
-다음 단계에 따라 이 리포지 작동하도록 Visual Studio Code 구성합니다.
+다음 단계에 따라 Visual Studio Code 구성하여 이 리포지 작동하도록 합니다.
 
 1. 웹 브라우저에서:
     1. [PC용 Git을 설치합니다.](https://git-scm.com/downloads)
@@ -220,13 +220,13 @@ Microsoft 직원: 기여가 기본 분기인 _마스터_ 에 병합된 경우 �
 다음 워크플로를 사용하여 Visual Studio Code 설명서를 변경합니다.
 
 >[!NOTE]
->문서를 [편집](#editing-an-existing-article) 및 [만들기](#creating-a-new-article) 위한 모든 지침과 위의 [Markdown 편집 기본 사항도](#markdown-basics)Visual Studio Code 사용할 때 적용됩니다.
+>문서를 [편집하고](#editing-an-existing-article) [만들기](#creating-a-new-article) 위한 모든 지침과 위의 [Markdown 편집 기본 사항도](#markdown-basics)Visual Studio Code 사용할 때 적용됩니다.
 
 1. 복제된 포크가 공식 리포지토와 함께 최신인지 확인합니다.
 
    1. 웹 브라우저에서 끌어오기 요청을 만들어 MicrosoftDocs/mixed-reality, _master_ 의 기본 분기에 있는 다른 기여자의 최근 변경 내용을 포크로 동기화합니다(화살표가 올바른 대상을 가리키는지 확인).
       
-      ![MicrosoftDocs/mixed-reality에서 포크로 변경 내용 동기화](images/sync-repos.png)
+      ![MicrosoftDocs/mixed-reality에서 포크로 변경 내용을 동기화합니다.](images/sync-repos.png)
       
    2. Visual Studio Code 동기화 단추를 선택하여 새로 업데이트된 포크를 로컬 복제본에 동기화합니다.
       
@@ -244,21 +244,21 @@ Microsoft 직원: 기여가 기본 분기인 _마스터_ 에 병합된 경우 �
    
       ![소스 제어에서 "모두 커밋" 선택](images/source-control-commit.png)
       
-   4. **동기화** 단추를 선택하여 변경 내용을 원본(GitHub 포크)으로 다시 동기화합니다.
+   4. **동기화** 단추를 선택하여 변경 내용을 원본으로 다시 동기화합니다(GitHub 포크).
       
       ![동기화 단추를 클릭합니다.](images/sync-back.png)
       
 3. 웹 브라우저에서 끌어오기 요청을 만들어 포크의 새 변경 내용을 MicrosoftDocs/mixed-reality _master에_ 다시 동기화합니다(화살표가 올바른 대상을 가리키는지 확인).
 
-   ![포크에서 MicrosoftDocs/mixed-reality로 끌어오기 요청 만들기](images/pr-to-master.png)
+   ![포크에서 MicrosoftDocs/mixed-reality로 끌어오기 요청을 만듭니다.](images/pr-to-master.png)
 
 ### <a name="useful-extensions"></a>유용한 확장
 
 다음 Visual Studio Code 확장은 설명서를 편집할 때 유용합니다.
 
-- [Visual Studio Code 대한 Docs Markdown 확장](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) - **Alt+M을** 사용하여 다음과 같은 문서 제작 옵션 메뉴를 표시합니다.
+- [Visual Studio Code 대한 Docs Markdown 확장](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) - **Alt+M을** 사용하여 다음과 같은 문서 작성 옵션 메뉴를 표시합니다.
    - 업로드한 이미지를 검색하고 참조합니다.
    - 목록, 테이블 및 문서별 호출(예: )과 같은 서식 지정을 `>[!NOTE]` 추가합니다.
    - 내부 링크 및 책갈피(페이지 내의 특정 섹션에 대한 링크)를 검색하고 참조합니다.
-   - 서식 지정 오류가 강조 표시되어 있습니다(자세한 내용을 보려면 오류 위로 마우스를 가져가세요).
+   - 서식 지정 오류가 강조 표시되어 있습니다(자세한 내용은 오류 위로 마우스를 가져가세요).
 - [코드 맞춤법 검사기](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) - 철자가 잘못된 단어에 밑줄이 표시됩니다. 철자가 잘못된 단어를 마우스 오른쪽 단추로 클릭하여 변경하거나 사전에 저장합니다.

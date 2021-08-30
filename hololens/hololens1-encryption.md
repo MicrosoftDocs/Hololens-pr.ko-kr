@@ -13,12 +13,12 @@ ms.reviewer: ''
 manager: laurawi
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 4b07bb87b34ec966472bcbde000106590570fd7e7063ab503724884fa266bb34
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: d5cf7385dd0a53c6b17f79e16364e84ab6ec867d
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662675"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189939"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>HoloLens(1세대) BitLocker 암호화
 
@@ -32,7 +32,7 @@ HoloLens(1세대)에서는 수동으로 또는 MDM(모바일 디바이스 관리
 
 MDM(모바일 장치 관리) 공급자를 사용하여 디바이스 암호화가 필요한 정책을 적용할 수 있습니다. 사용할 정책은 정책 CSP의 [Security/RequireDeviceEncryption 설정입니다.](/windows/client-management/mdm/policy-csp-security#security-requiredeviceencryption)
 
-[Microsoft Intune 사용하여 디바이스 암호화를 사용하도록 설정하는 방법에 대한 지침을 참조하세요.](/intune/compliance-policy-create-windows#windows-holographic-for-business)
+[Microsoft Intune 사용하여 디바이스 암호화를 사용하도록 설정하기 위한 지침을 참조하세요.](/intune/compliance-policy-create-windows#windows-holographic-for-business)
 
 다른 MDM 도구에 대한 지침은 MDM 공급자의 설명서를 참조하세요. MDM 공급자에 디바이스 암호화에 대한 사용자 지정 URI가 필요한 경우 다음 구성을 사용합니다.
 
@@ -51,7 +51,7 @@ MDM(모바일 장치 관리) 공급자를 사용하여 디바이스 암호화가
 1. [HoloLens 대한 프로비전 패키지를 만듭니다.](hololens-provisioning.md)
 1. **런타임 설정** 정책 보안 로 이동하여  >    >   **RequireDeviceEncryption을** 선택합니다.
 
-    ![디바이스 암호화 설정이 '예'로 구성되어야 함](images/device-encryption.png)
+    ![디바이스 암호화 설정을 '예'로 구성해야 합니다.](images/device-encryption.png)
 
 1. Commercial Suite를 구매할 때 제공된 XML 라이선스 파일을 찾습니다.
 
@@ -67,7 +67,7 @@ MDM(모바일 장치 관리) 공급자를 사용하여 디바이스 암호화가
     > 프로비전 패키지를 빌드할 때 프로젝트 파일 및 프로비전 패키지(.ppkg) 파일에 중요한 정보를 포함할 수 있습니다. .ppkg 파일을 암호화하는 옵션이 있지만 프로젝트 파일은 암호화되지 않습니다. 프로젝트 파일을 안전한 위치에 저장하고 더 이상 필요하지 않은 경우 프로젝트 파일을 삭제해야 합니다.
 
 1. **내보내기** 메뉴에서 **패키지 프로비저닝을** 클릭합니다.
-1. **소유자를** **IT 관리자** 로 변경합니다. 이 프로비전 패키지의 우선 순위는 다른 원본에서 이 디바이스에 적용된 프로비저닝 패키지보다 높게 설정한 후 **다음을** 선택합니다.
+1. **소유자를** **IT 관리자** 로 변경합니다. 그러면 이 프로비전 패키지의 우선 순위가 다른 원본에서 이 디바이스에 적용된 프로비전 패키지보다 높게 설정되고 **다음을** 선택합니다.
 1. **패키지 버전** 에 대한 값을 설정합니다.
 
     > [!TIP]
@@ -99,6 +99,6 @@ MDM(모바일 장치 관리) 공급자를 사용하여 디바이스 암호화가
 
 암호화는 HoloLens 자동입니다. 디바이스 암호화 상태를 확인하려면 다음을 수행합니다.
 
-- HoloLens 설정   >  **시스템**  >  **정보로** 이동합니다. 디바이스가 **암호화된** 경우 **BitLocker를** 사용할 수 있습니다. 
+- HoloLens **설정**  >  **시스템**  >  **정보로** 이동합니다. 디바이스가 **암호화된** 경우 **BitLocker를** 사용할 수 있습니다. 
 
-    ![BitLocker를 사용하도록 설정된 화면 정보](images/about-encryption.png)
+    ![BitLocker를 사용하도록 설정된 화면 정보입니다.](images/about-encryption.png)

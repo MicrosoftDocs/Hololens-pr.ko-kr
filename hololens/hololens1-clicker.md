@@ -13,12 +13,12 @@ ms.topic: article
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 6e98918c89da7e74157d8fc003e6997f1e44b8538e9006a835707e85c5fd3307
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 98ec5795974fa242225bb1048ead41892d8296e4
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662688"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189956"
 ---
 # <a name="use-the-hololens-1st-gen-clicker"></a>HoloLens(1세대) 클릭커 사용
 
@@ -30,7 +30,7 @@ clicker는 HoloLens (첫 번째 gen)을 위해 특별히 설계 되었으며 hol
 
 HoloLens (첫 번째 gen) clicker에는 더 쉽게 유지할 수 있는 손가락 루프와 표시기 표시등이 있습니다.
 
-![HoloLens Clicker](images/use-hololens-clicker-1.png)
+![HoloLens Clicker입니다.](images/use-hololens-clicker-1.png)
 
 ### <a name="clicker-indicator-lights"></a>Clicker 표시등
 

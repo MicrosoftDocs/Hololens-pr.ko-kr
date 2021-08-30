@@ -11,12 +11,12 @@ manager: jarrettr
 ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
-ms.openlocfilehash: 9e09ba1a022428b098392464e5cd2abf84911bd6a86d8e699036b8fc4f91470a
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 06b7142be471d0db3f45812654288a33425abd60
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661872"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189871"
 ---
 # <a name="set-up-your-hololens-1st-gen"></a>HoloLens(1세대) 설정
 
@@ -65,9 +65,9 @@ Cortana 자신을 소개한 후 다음 설정 단계는 보정입니다. 최상�
 
 HoloLens(1세대)는 눈동자 간 거리(IPD 또는 [보조 거리)를](https://en.wikipedia.org/wiki/Interpupillary_distance)사용하여 홀로그램을 명확하고 쉽게 상호 작용할 수 있도록 합니다. IPD가 올바르지 않으면 홀로그램이 불안정하거나 잘못된 거리에 있는 것처럼 보일 수 있습니다.
 
-보정하는 동안 HoloLens 손가락에 눈당 6개의 대상을 맞추도록 요청합니다. HoloLens 이 프로세스를 사용하여 눈의 올바른 IPD를 설정합니다. 새 사용자에 대해 보정을 업데이트하거나 조정해야 하는 경우 새 사용자는 설정 외부에서 보정 앱을 실행할 수 있습니다.
+보정하는 동안 HoloLens 눈당 6개의 대상에 손가락을 맞춥니다. HoloLens 이 프로세스를 사용하여 눈의 올바른 IPD를 설정합니다. 새 사용자에 대해 보정을 업데이트하거나 조정해야 하는 경우 새 사용자는 설정 외부에서 보정 앱을 실행할 수 있습니다.
 
-![두 번째 단계에서 IPD 손가락 정렬 화면](./images/ipd-finger-alignment-300px.jpg)
+![두 번째 단계의 IPD 손가락 맞춤 화면.](./images/ipd-finger-alignment-300px.jpg)
 
 *두 번째 단계에서 IPD 손가락 정렬 화면*
 

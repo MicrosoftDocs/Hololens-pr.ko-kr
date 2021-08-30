@@ -14,20 +14,20 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8bba313e7b5ee3d055c2b6ff2c60810baf428ecfa7d5554a1efb4e0aa9e1e98b
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 66e543dd699edbd54ab41474f3ea86fa313bf6ba
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660322"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189650"
 ---
-# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>배포 가이드 – Remote Assist 있는 클라우드 연결 HoloLens 2 - 개요
+# <a name="deployment-guide--cloud-connected-hololens-2-with-remote-assist--overview"></a>배포 가이드 – Remote Assist 클라우드 연결 HoloLens 2 - 개요
 
-이 가이드는 IT 전문가가 Remote Assist Microsoft HoloLens 2개 디바이스를 계획하고 조직에 배포하는 데 도움이 됩니다. 다양한 HoloLens 2 사용 사례에서 조직에 개념 증명 배포를 위한 모델로 사용할 수 있습니다. 설정은 시나리오 [A: 클라우드 연결 디바이스에 배포와](common-scenarios.md#scenario-a)비슷합니다. 
+이 가이드는 IT 전문가가 Remote Assist Microsoft HoloLens 2 디바이스를 계획하고 조직에 배포하는 데 도움이 됩니다. 다양한 HoloLens 2 사용 사례에서 조직에 개념 증명 배포를 위한 모델로 사용할 수 있습니다. 설정은 시나리오 [A: 클라우드 연결 디바이스에 배포와](common-scenarios.md#scenario-a)비슷합니다. 
 
-이 가이드에서는 디바이스를 디바이스 관리에 등록하고, 필요에 따라 라이선스를 적용하고, 최종 사용자가 디바이스 설정 시 Remote Assist 즉시 사용할 수 있는지 확인하는 방법을 설명합니다. 이를 위해 설정하고 실행하는 데 필요한 인프라의 중요한 부분을 살펴보며 HoloLens 2 사용하여 대규모 배포를 달성합니다. 이 가이드에는 다른 디바이스 제한 또는 구성이 적용되지 않습니다. 그러나 완료한 후에는 이러한 옵션을 살펴보는 것이 좋습니다.
+이 가이드에서는 디바이스를 디바이스 관리에 등록하고, 필요에 따라 라이선스를 적용하고, 최종 사용자가 디바이스 설정 시 Remote Assist 즉시 사용할 수 있는지 확인하는 방법을 설명합니다. 이를 위해 설정하고 실행하는 데 필요한 인프라의 중요한 부분을 살펴보면서 HoloLens 2 대규모로 배포할 수 있습니다. 이 가이드에는 다른 디바이스 제한 또는 구성이 적용되지 않습니다. 그러나 완료한 후에는 이러한 옵션을 살펴보는 것이 좋습니다.
 
-## <a name="prerequisites"></a>필수 조건
+## <a name="prerequisites"></a>사전 요구 사항
 
 HoloLens 2 배포하려면 다음 인프라가 있어야 합니다. 그렇지 않은 경우 Azure 및 Intune 설정이 이 가이드에 포함되어 있습니다.
 
@@ -38,12 +38,12 @@ HoloLens 2 배포하려면 다음 인프라가 있어야 합니다. 그렇지 �
 - 사용자가 자신의 회사 계정(Azure AD)으로 로그인합니다.
     - 디바이스당 단일 또는 여러 사용자가 지원됩니다.
 
-:::image type="content" alt-text="클라우드 연결 시나리오" source="./images/deployment-guides-revised-scenario-a.png" lightbox="./images/deployment-guides-revised-scenario-a.png":::
+:::image type="content" alt-text="클라우드 연결 시나리오." source="./images/deployment-guides-revised-scenario-a.png" lightbox="./images/deployment-guides-revised-scenario-a.png":::
 
 
 ## <a name="learn-about-remote-assist"></a>Remote Assist 대해 알아보기
 
-Remote Assist 통해 공동 유지 관리 및 복구, 원격 검사뿐만 아니라 지식 공유 및 학습도 가능합니다. 다른 역할 및 위치에 있는 사람들을 연결하여 Remote Assist 사용하는 기술자는 Microsoft Teams 원격 협력자와 연결할 수 있습니다. 비디오, 스크린샷 및 주석을 결합하여 동일한 위치에 있지 않은 경우에도 실시간으로 문제를 해결할 수 있습니다. 원격 협력자는 참조 이미지, 회로도 및 기타 유용한 정보를 기술자의 물리적 공간에 삽입할 수 있으므로 HoloLens 작업을 진행하면서 정형을 참조할 수 있습니다.
+Remote Assist 통해 공동 유지 관리 및 복구, 원격 검사, 지식 공유 및 학습이 가능합니다. 다른 역할 및 위치에 있는 사람들을 연결하면 Remote Assist 사용하는 기술자가 Microsoft Teams 원격 협력자와 연결할 수 있습니다. 비디오, 스크린샷 및 주석을 결합하여 동일한 위치에 있지 않은 경우에도 실시간으로 문제를 해결할 수 있습니다. 원격 협력자는 참조 이미지, 도형 및 기타 유용한 정보를 기술자의 물리적 공간에 삽입할 수 있으므로 HoloLens 헤드업 및 실습을 진행하면서 도형을 참조할 수 있습니다.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d3YT8j0yYl0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -70,9 +70,9 @@ Remote Assist 통해 공동 유지 관리 및 복구, 원격 검사뿐만 아니
 
 > [!div class="checklist"]
 > - [HoloLens 2 디바이스의 인프라 필수 요소에 대해 알아봅니다.](hololens2-cloud-connected-prepare.md#infrastructure-essentials)
-> - [Azure AD에 대해 자세히 알아보고, Azure AD가&#39;없는 경우 설정합니다.](hololens2-cloud-connected-prepare.md#azure-active-directory)
+> - [Azure AD에 대해 자세히 알아보고, Azure AD가 없으면 설정해야&#39;.](hololens2-cloud-connected-prepare.md#azure-active-directory)
 > - [ID 관리 및 Azure AD 계정을 가장 잘 설정하는 방법에 대해 알아봅니다.](hololens2-cloud-connected-prepare.md#identity-management)
-> - [MDM에 대해 자세히 알아보고, 준비되지 않은 경우 intune을&#39;설정합니다.](hololens2-cloud-connected-prepare.md#mobile-device-management)
+> - [MDM에 대해 자세히 알아보고, 준비되지&#39;Intune으로 설정합니다.](hololens2-cloud-connected-prepare.md#mobile-device-management)
 > - [Remote Assist 네트워킹 요구 사항에 대해 알아봅니다.](hololens2-cloud-connected-prepare.md#network)
 > - [선택 사항: 조직 리소스에 연결하는 VPN](hololens2-cloud-connected-prepare.md#optional-connect-your-hololens-to-vpn)
 
