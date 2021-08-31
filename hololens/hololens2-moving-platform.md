@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 5104a489cebee56938cb1968f253e7e9447e2452
-ms.sourcegitcommit: 6b3b455f66a2b4d5b42f4674a5ff940a2a01c294
+ms.openlocfilehash: cd46e162971ea709d865b2ac998cc7a517d231ec
+ms.sourcegitcommit: 18f6c00a57a6b4608dadcec418d1970455d8ee3a
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122610137"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122989206"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>저 동적 모션 이동 플랫폼의 이동 플랫폼 모드
 
@@ -27,6 +27,8 @@ ms.locfileid: "122610137"
 
 > [!NOTE]
 > 이 기능은 현재 [Windows 참가자](hololens-insider.md)를 통해서만 사용할 수 있습니다.
+
+![이동 플랫폼 예.](./images/mpm-compare.gif)
 
 이 문서에서는 다음 내용을 설명합니다.
 

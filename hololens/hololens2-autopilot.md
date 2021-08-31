@@ -13,21 +13,21 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: jarrettr
-ms.openlocfilehash: b8bfa5359436151bcae9579c78674a93ae0db88d
-ms.sourcegitcommit: dab46153e0948310a96b1a6f47d788b7130cfa14
+ms.openlocfilehash: 7dbe77c8c5999d5be1a61ca9deaa8071d152c87a
+ms.sourcegitcommit: d0c7bf5b055fa1fa8ac5562eef904583a655da99
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122620814"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122782810"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>HoloLens 2용 Windows Autopilot
 
 > [!NOTE]
 > Microsoft Endpoint Manager의 HoloLens에 대한 Autopilot 구성이 **공개 미리 보기** 에서 **일반 공급** 으로 전환됩니다. 모든 테넌트는 MEM 관리 센터에서 Autopilot을 설정할 수 있습니다.
 
-Windows Holographic 버전 2004부터 HoloLens 2는 Microsoft Intune(타사 MDM은 지원되지 않음)에서 Windows Autopilot [자체 배포 모드](/mem/autopilot/self-deploying)를 지원합니다. 관리자는 Microsoft Endpoint Manager에서 OOBE(첫 실행 경험)를 구성하여 최종 사용자가 상호 작용을 거의 또는 전혀 하지 않고도 비즈니스용 장치를 준비할 수 있도록 할 수 있습니다. 이를 통해 인벤토리 관리 오버헤드, 실습 장치 준비 비용 및 설치하는 동안 직원의 지원 요청을 줄일 수 있습니다. 자세한 내용은 [Windows Autopilot](/mem/autopilot/windows-autopilot) 설명서를 참조하세요.
+Windows Holographic 버전 2004부터 HoloLens 2는 Microsoft Intune(타사 MDM은 지원되지 않음)에서 Windows Autopilot [자체 배포 모드](/mem/autopilot/self-deploying)를 지원합니다. 관리자는 Microsoft Endpoint Manager에서 OOBE(첫 실행 경험)를 구성하여 최종 사용자가 상호 작용을 거의 또는 전혀 하지 않고도 비즈니스용 디바이스를 준비할 수 있도록 할 수 있습니다. 이를 구성하면 인벤토리 관리 오버헤드, 실습 디바이스 준비 비용 및 설치하는 동안 직원의 지원 요청을 줄일 수 있습니다. 자세한 내용은 [Windows Autopilot](/mem/autopilot/windows-autopilot) 설명서를 참조하세요.
 
-Surface 장치와 마찬가지로 고객은 Microsoft [클라우드 솔루션 공급자](https://partner.microsoft.com/cloud-solution-provider)(재판매인 또는 배포자)와 협력하여 파트너 센터를 통해 Autopilot 서비스에 등록된 장치를 구입하는 것이 좋습니다. Microsoft의 채널 파트너를 활용하면 가장 효과적인 엔드투엔드 경로가 보장되지만, 장치 등록을 위한 다른 방법은 [장치 추가](/mem/autopilot/add-devices) 설명서에 간략하게 설명되어 있습니다.
+Surface 장치와 마찬가지로 고객은 Microsoft [클라우드 솔루션 공급자](https://partner.microsoft.com/cloud-solution-provider)(재판매인 또는 배포자)와 협력하여 파트너 센터를 통해 Autopilot 서비스에 등록된 장치를 구입하는 것이 좋습니다. Microsoft의 채널 파트너를 사용하면 가장 효과적인 엔드투엔드 경로가 보장되지만, 디바이스 등록을 위한 다른 방법은 [디바이스 추가](/mem/autopilot/add-devices) 설명서에 간략하게 설명되어 있습니다.
 
 
 
@@ -45,21 +45,23 @@ Surface 장치와 마찬가지로 고객은 Microsoft [클라우드 솔루션 �
 
 ## <a name="configuring-autopilot-for-hololens-2"></a>HoloLens 2용 Autopilot 구성
 
-환경을 설정하려면 다음 단계를 따르세요.
+환경을 설정하려면 다음 단계를 따릅니다.
 
 1. [HoloLens 2용 Windows Autopilot의 요구 사항을 검토합니다.](#1-review-requirements-for-windows-autopilot-for-hololens-2)
 
 1. [자동 MDM 등록을 사용하도록 설정합니다.](#2-enable-automatic-mdm-enrollment)
 
-1. [Windows Autopilot에서 장치를 등록합니다.](#3-register-devices-in-windows-autopilot)
+1. (Intune에만 해당) [Windows 디바이스에 대해 MDM 등록이 차단되지 않았는지 확인하세요.](/mem/intune/enrollment/enrollment-restrictions-set)
 
-1. [장치 그룹을 만듭니다.](#4-create-a-device-group)
+1. [Windows Autopilot에서 장치를 등록합니다.](#4-register-devices-in-windows-autopilot)
 
-1. [배포 프로필을 만듭니다.](#5-create-a-deployment-profile)
+1. [장치 그룹을 만듭니다.](#5-create-a-device-group)
 
-1. [ESP(등록 상태 페이지) 구성을 확인합니다.](#6-verify-the-esp-configuration)
+1. [배포 프로필을 만듭니다.](#6-create-a-deployment-profile)
 
-1. [HoloLens 장치의 프로필 상태를 확인합니다.](#7-verify-the-profile-status-of-the-hololens-devices)
+1. [ESP(등록 상태 페이지) 구성을 확인합니다.](#7-verify-the-esp-configuration)
+
+1. [HoloLens 장치의 프로필 상태를 확인합니다.](#8-verify-the-profile-status-of-the-hololens-devices)
 
 ### <a name="1-review-requirements-for-windows-autopilot-for-hololens-2"></a>1. HoloLens 2용 Windows Autopilot 요구 사항 검토
 
@@ -71,11 +73,11 @@ Surface 장치와 마찬가지로 고객은 Microsoft [클라우드 솔루션 �
 
 **Windows Autopilot 자체 배포 모드 문서의 "[요구 사항](/windows/deployment/windows-autopilot/self-deploying#requirements)" 섹션을 검토합니다.** 사용자 환경은 표준 Windows Autopilot 요구 사항뿐만 아니라 이러한 요구 사항도 충족해야 합니다. 문서의 "단계별 안내" 및 "유효성 검사" 섹션은 검토할 필요가 없습니다. 이 문서의 뒷부분에 나오는 절차는 HoloLens와 관련된 해당 단계를 제공합니다.
 
-장치를 등록하고 프로필을 구성하는 방법에 대한 자세한 내용은 이 문서의 [2. Windows Autopilot에서 장치 등록](#3-register-devices-in-windows-autopilot)과 [4. 배포 프로필 만들기](#5-create-a-deployment-profile)를 참조하세요. Autopilot 자체 배포 모드 프로필을 구성하고 관리하려면 [Microsoft Endpoint Manager 관리 센터](https://endpoint.microsoft.com)에 액세스할 수 있어야 합니다.
+디바이스를 등록하고 프로필을 구성하는 방법에 대한 자세한 내용은 이 문서의 [4. Windows Autopilot에서 디바이스 등록](#4-register-devices-in-windows-autopilot)과 [6. 배포 프로필 만들기](#6-create-a-deployment-profile)를 참조하세요. Autopilot 자체 배포 모드 프로필을 구성하고 관리하려면 [Microsoft Endpoint Manager 관리 센터](https://endpoint.microsoft.com)에 액세스할 수 있어야 합니다.
 
 #### <a name="review-hololens-os-requirements"></a>다음과 같은 HoloLens OS 요구 사항을 검토합니다.
 
-- 장치가 [Windows Holographic, 버전 2004](hololens-release-notes.md#windows-holographic-version-2004)(빌드 19041.1103) 이상이어야 합니다. 장치에서 빌드 버전을 확인하거나 최신 OS로 다시 플래시하려면 [ARC(고급 복구 도우미)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab) 및 [장치 리플래시 지침](/hololens/hololens-recovery#clean-reflash-the-device)을 사용하세요. 2020년 9월 말까지 제공되는 장치에는 Windows Holographic 버전 1903이 사전 설치되어 있습니다. Autopilot 지원 장치가 배송되는지 확인하려면 재판매인에게 문의하세요.
+- 장치가 [Windows Holographic, 버전 2004](hololens-release-notes.md#windows-holographic-version-2004)(빌드 19041.1103) 이상이어야 합니다. 디바이스에서 빌드 버전을 확인하거나 최신 OS로 다시 플래시하려면 [ARC(고급 복구 도우미)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=1&activetab=pivot:overviewtab) 및 [디바이스 리플래시 지침](/hololens/hololens-recovery#clean-reflash-the-device)을 사용합니다. 2020년 9월 말까지 제공되는 장치에는 Windows Holographic 버전 1903이 사전 설치되어 있습니다. Autopilot 지원 디바이스가 배송되는지 확인하려면 재판매인에게 문의합니다.
 
 - Windows Holographic, 버전 2004는 이더넷 연결을 통해서만 Autopilot을 지원합니다. HoloLens를 **켜기 전** 에 "USB-C to Ethernet" 어댑터를 사용하여 HoloLens가 이더넷에 연결되어 있는지 확인합니다. 장치 부팅 시 사용자 상호 작용이 필요하지 않습니다. 다수의 HoloLens 장치에 대한 Autopilot 롤아웃을 계획하고 있는 경우 어댑터 인프라에 대한 계획을 세우는 것이 좋습니다. USB 허브는 HoloLens에서 지원되지 않는 타사 드라이버를 추가로 설치해야 하는 경우가 많기 때문에 권장하지 않습니다.
 
@@ -96,9 +98,13 @@ Autopilot이 성공하려면 Azure Portal에서 자동 MDM 등록을 활성화�
 
 [Azure Portal](https://portal.azure.com/#home)에 로그인하고, **Azure Active Directory** -> **Mobility(MDM 및 MAM)**  -> **Microsoft Intune** 을 선택합니다. 그런 다음 **MDM 사용자 범위** 를 구성하고 **모두** 를 선택해야 합니다.
 
-간단한 다음 [MDM 자동 등록 사용 설정 가이드](/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) 또는 [자동 등록 빠른 시작 가이드](/mem/intune/enrollment/quickstart-setup-auto-enrollment)를 검토하여 설정에 대한 자세한 내용을 확인하세요.
+간단한 다음 [MDM 자동 등록 사용 설정 가이드](/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) 또는 [자동 등록 빠른 시작 가이드](/mem/intune/enrollment/quickstart-setup-auto-enrollment)를 검토하여 설정에 대한 자세한 내용을 확인합니다.
 
-### <a name="3-register-devices-in-windows-autopilot"></a>3. Windows Autopilot에서 장치 등록
+### <a name="3-ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>3. Windows 디바이스에 대해 MDM 등록이 차단되지 않았는지 확인합니다.
+
+Autopilot이 성공하려면 HoloLens 디바이스를 등록할 수 있는지 확인해야 합니다. HoloLens는 Windows 디바이스로 간주되므로 배포를 차단할 수 있는 등록 제한이 없어야 합니다. [이 제한 목록을 검토](/mem/intune/enrollment/enrollment-restrictions-set)하고 디바이스를 등록할 수 있는지 확인하세요.
+
+### <a name="4-register-devices-in-windows-autopilot"></a>4. Windows Autopilot에서 디바이스 등록
 
 장치를 처음 설치하기 전에 Windows Autopilot에 등록해야 합니다. 장치 등록에 대한 MEM 설명서는 [Autopilot에 장치 추가](/mem/autopilot/add-devices)를 참조하세요.  
 
@@ -156,7 +162,7 @@ HoloLens 장치를 등록하는 기본 방법은 다음 세 가지가 있습니�
    > [!div class="mx-imgBorder"]
    > ![동기화 및 새로 고침 명령을 사용하여 장치 목록을 표시합니다.](./images/hololens-ap-devices-sync.png)  
 
-### <a name="4-create-a-device-group"></a>4. 장치 그룹 만들기
+### <a name="5-create-a-device-group"></a>5. 장치 그룹 만들기
 
 1. [Microsoft Endpoint Manager 관리 센터](https://endpoint.microsoft.com)에서 **그룹** > **새 그룹** 을 선택합니다.
 
@@ -176,7 +182,7 @@ HoloLens 장치를 등록하는 기본 방법은 다음 세 가지가 있습니�
      > 이러한 규칙은 Autopilot 장치에 고유한 특성을 대상으로 합니다.
 1. **저장** 을 선택한 후 **Create** 를 선택합니다.
 
-### <a name="5-create-a-deployment-profile"></a>5. 배포 프로필 만들기
+### <a name="6-create-a-deployment-profile"></a>6. 배포 프로필 만들기
 
 1. [Microsoft Endpoint Manager 관리 센터](https://endpoint.microsoft.com)에서 **장치** > **Windows** > **Windows enrollment** > **Windows Autopilot deployment profiles** > **Create profile** > **HoloLens** 를 선택합니다.
    ![프로필 만들기 드롭다운에는 HoloLens 항목이 포함됩니다.](./images/hololens-ap-enrollment-profiles.png)
@@ -214,14 +220,14 @@ HoloLens 장치를 등록하는 기본 방법은 다음 세 가지가 있습니�
    > [!div class="mx-imgBorder"]
    > ![검토 + 만들기](./images/hololens-ap-profile-summ.png)
 
-### <a name="6-verify-the-esp-configuration"></a>6. ESP 구성 확인
+### <a name="7-verify-the-esp-configuration"></a>7. ESP 구성 확인
 
 ESP(등록 상태 페이지)는 MDM 관리 사용자가 처음으로 장치에 로그인할 때 실행되는 전체 장치 구성 프로세스의 상태를 표시합니다. ESP 구성이 다음과 유사한지 확인하고 할당이 올바른지 확인합니다.  
 
 > [!div class="mx-imgBorder"]
 > ![ESP 구성](./images/hololens-ap-profile-settings.png)
 
-### <a name="7-verify-the-profile-status-of-the-hololens-devices"></a>7. HoloLens 장치의 프로필 상태 확인
+### <a name="8-verify-the-profile-status-of-the-hololens-devices"></a>8. HoloLens 디바이스의 프로필 상태 확인
 
 1. Microsoft Endpoint Manager 관리 센터에서 **장치** > **Windows** > **Windows enrollment** > **장치** 를 선택합니다.
 
@@ -237,13 +243,13 @@ ESP(등록 상태 페이지)는 MDM 관리 사용자가 처음으로 장치에 �
 
 위의 지침이 완료되면 HoloLens 2 사용자는 다음과 같은 환경을 통해 HoloLens 장치를 프로비전할 수 있습니다.  
 
-1. Autopilot 환경에는 인터넷 액세스가 필요합니다. 다음 옵션 중 하나를 사용하여 인터넷 액세스를 제공하세요.
+1. Autopilot 환경에는 인터넷 액세스가 필요합니다. 다음 옵션 중 하나를 사용하여 인터넷 액세스를 제공합니다.
 
-    - OOBE의 Wi-Fi 네트워크에 장치를 연결한 다음 자동으로 Autopilot 환경을 감지하도록 합니다. 이는 Autopilot 환경이 자체적으로 완료될 때까지 OOBE와 상호 작용해야 할 때만 필요합니다. 기본적으로 HoloLens 2는 인터넷 감지 후 Autopilot을 감지하기 위해 10초 동안 대기합니다. 10초 이내에 Autopilot 프로필이 검색되지 않으면 OOBE에 EULA가 표시됩니다. 이 문제가 발생하는 경우 장치를 다시 부팅하여 다시 Autopilot을 검색해 보세요. 또한 장치에 TenantLockdown 정책이 설정된 경우에만 OOBE가 Autopilot을 무기한 대기할 수 있으므로 유의하세요.
+    - OOBE의 Wi-Fi 네트워크에 장치를 연결한 다음 자동으로 Autopilot 환경을 감지하도록 합니다. 이는 Autopilot 환경이 자체적으로 완료될 때까지 OOBE와 상호 작용해야 할 때만 필요합니다. 기본적으로 HoloLens 2는 인터넷 감지 후 Autopilot을 감지하기 위해 10초 동안 대기합니다. 10초 이내에 Autopilot 프로필이 검색되지 않으면 OOBE에 EULA가 표시됩니다. 이 문제가 발생하는 경우 장치를 다시 부팅하여 다시 Autopilot을 검색해 보세요. 또한 디바이스에 TenantLockdown 정책이 설정된 경우에만 OOBE가 Autopilot을 무기한 대기할 수 있으므로 유의하세요.
 
     - 유선 인터넷 연결에 "USB-C to Ethernet" 어댑터를 사용하여 장치를 이더넷에 연결하고 HoloLens 2 완전 Autopilot 환경을 자동으로 사용하도록 합니다.
 
-    - 무선 인터넷 연결에 "USB-C to Wifi" 어댑터를 사용하여 장치를 연결하고 HoloLens 2 완전 Autopilot 환경을 자동으로 사용하도록 합니다.
+    - 무선 인터넷 연결에 "USB-C to Wi-Fi" 어댑터를 사용하여 디바이스를 연결하고 HoloLens 2 완전 Autopilot 환경을 자동으로 사용하도록 합니다.
 
         > [!IMPORTANT]  
        > Autopilot을 위해 OOBE에서 Wi-Fi 네트워크를 사용하려는 장치는 [Windows Holographic, 버전 20H2](hololens-release-notes.md#windows-holographic-version-20h2)에 있어야 합니다.
@@ -269,7 +275,7 @@ ESP(등록 상태 페이지)는 MDM 관리 사용자가 처음으로 장치에 �
 
 HoloLens 2 장치는 Windows Holographic, 버전 20H2의 TenantLockdown CSP를 지원합니다. 이 CSP는 장치 초기화나 리플래시를 통해 장치를 조직의 테넌트에 잠가 장치를 해당 테넌트에 유지합니다.
 
-[TenantLockdown](/windows/client-management/mdm/tenantlockdown-csp) CSP는 Autopilot만 사용하여 HoloLens 2를 MDM 등록에 연결할 수 있습니다. TenantLockdown CSP의 RequireNetworkInOOBE 노드는 HoloLens 2에서 true 또는 false(초기 설정) 값으로 설정되면 리플래시, OS 업데이트 등을 수행해도 해당 값이 장치에 그대로 유지됩니다.
+[TenantLockdown](/windows/client-management/mdm/tenantlockdown-csp) CSP는 Autopilot만 사용하여 HoloLens 2를 MDM 등록에 연결할 수 있습니다. TenantLockdown CSP의 RequireNetworkInOOBE 노드는 HoloLens 2에서 true 또는 false(초기 설정) 값으로 설정되면 리플래시, OS 업데이트 등을 수행해도 해당 값이 디바이스에 그대로 유지됩니다.
 
 HoloLens 2에서 TenantLockdown CSP의 RequireNetworkInOOBE 노드가 true로 설정되면, OOBE는 네트워크 연결 후에 Autopilot 프로필이 성공적으로 다운로드되고 적용될 때까지 무기한 대기합니다.
 
