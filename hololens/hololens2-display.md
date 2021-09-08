@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.reviewer: ''
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 3567c1f33f10240a9cacbf258669a0e3274f4c6bb3c90fc1317a57a3a415fc7f
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 38bab16d2d0d4ace5879f00c133d66b9974e4b2a
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659969"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190364"
 ---
 # <a name="hololens-2-display-troubleshooting"></a>HoloLens 2 디스플레이 문제 해결
 
@@ -46,7 +46,7 @@ HoloLens 2 디스플레이는 도파관과 투광기의 조합입니다. 사용�
     > 환경에서 어둡게 표시된 장면을 보는 데 문제가 있는 경우 장치 왼쪽의 밝기 단추를 사용하여 HoloLens 2 밝기 수준을 수동으로 조정할 수 있습니다.
 1. 단추 1~6을 선택하여 각 색 프로필을 즉시 사용해 보고 눈에 가장 잘 맞는 프로필을 찾습니다(이는 일반적으로 장면이 가장 중립적으로 표시되고 회색조 패턴과 피부색은 예상대로 표시된다는 의미임).
 
-    ![디스플레이 색 보정 장면](images/color-cal-ui.png)
+    ![디스플레이 색 보정 장면.](images/color-cal-ui.png)
     
 6. 선택한 프로필에 만족하면 **Save & Exit** 단추 선택
 1. 변경하지 않으려면 **Cancel & Exit** 단추를 선택하여 변경 내용 되돌리기
@@ -79,7 +79,7 @@ HoloLens 2에 저장된 사용자 지정 색 프로필이 만족스럽지 않으
 
 때로는 HoloLens 2에 디스플레이의 왼쪽 아래 모서리와 오른쪽 모서리에 서로 다른 패턴이 표시됩니다. 아래에 예시가 나와 있습니다(애니메이션 GIF). 이 패턴은 최적의 환경을 위해 HoloLens 2 장치가 디스플레이를 보정하는 정상적인 작동의 일부입니다.
 
-![2상 패턴](./images/DAT-Biphase-Fiducial.gif) ![GEO 패턴](./images/DAT-GEO-Fiducial.gif)
+![2상 패턴.](./images/DAT-Biphase-Fiducial.gif) ![GEO 패턴](./images/DAT-GEO-Fiducial.gif)
 
 ### <a name="why-am-i-unable-to-take-an-accurate-photograph-of-my-hololens-2-display"></a>내 HoloLens 2 디스플레이의 정확한 사진을 찍을 수 없는 이유는 무엇인가요?
 

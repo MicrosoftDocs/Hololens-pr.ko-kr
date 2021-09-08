@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 6f50874c39d8bffa43ff94101c81dcffe3dc1b3c34c69e940ed503dc7bd8b4ba
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 8f07ed42c873b62b3b4201c2756b55bbb29707d3
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659508"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189769"
 ---
 # <a name="set-up-your-hololens-2"></a>HoloLens 2 설정
 
@@ -82,7 +82,7 @@ Microsoft 로고가 있는 단추가 표시됩니다. 단추를 누르면 HoloLe
 
      HoloLens는 Wi-Fi 네트워크에서 얻은 정보에 따라 자동으로 표준 시간대를 설정합니다. 설치가 완료되면 설정 앱을 사용하여 표준 시간대를 변경할 수 있습니다.
 
-    ![Wi-Fi에 연결](images/11-network.png)
+    ![Wi-Fi에 연결.](images/11-network.png)
 
     > [!NOTE] 
     > 2019년 10월 이후 OS 버전을 실행하는 경우 Wi-Fi 단계를 완료한 후에도 설치 중에 다른 네트워크로 전환해야 하는 경우에는 **Volume Down** 및 **전원** 단추를 동시에 눌러 이 단계로 돌아올 수 있습니다. 이전 버전의 경우 [장치를 다시 설정](hololens-recovery.md)하거나 Wi-Fi 네트워크를 사용할 수 없는 위치에서 다시 시작하여 자동으로 연결되지 않도록 해야 할 수 있습니다.
@@ -91,15 +91,15 @@ Microsoft 로고가 있는 단추가 표시됩니다. 단추를 누르면 HoloLe
 
 1. Autopilot 프로필이 있으면 HoloLens 2에서 검색하여 적용합니다. 이 화면에서는 작업이 필요하지 않습니다.
  
-    ![Autopilot 프로필 검색](images/autopilot-profile-search.png) 
+    ![Autopilot 프로필 검색.](images/autopilot-profile-search.png) 
 
 1. 라이선스 화면에서 **Accept** 를 클릭합니다.
 
-    ![Windows 사용권 계약](images/windows-license-agreement.png)
+    ![Windows 사용권 계약.](images/windows-license-agreement.png)
 
 1. 사용자 계정에 로그인합니다. **My work or school owns it** 및 **I own it** 중에서 선택합니다.
 
-    ![사용자 설정](images/13-device-owner.png)
+    ![사용자 설정.](images/13-device-owner.png)
     - **회사 또는 학교 소유** 를 선택하면 Azure AD 계정을 사용하여 로그인합니다. 조직에서 Azure AD Premium을 사용하고 자동 MDM 등록을 구성한 경우 HoloLens가 MDM에 자동으로 등록됩니다. 조직에서 Azure AD Premium을 사용하지 않는 경우 자동 MDM 등록을 사용할 수 없습니다. 이 경우 [장치 관리에서 HoloLens를 수동으로 등록](hololens-enroll-mdm.md#different-ways-to-enroll)해야 합니다.
 
         1. 조직 계정 정보를 입력합니다.
@@ -123,11 +123,11 @@ Microsoft 로고가 있는 단추가 표시됩니다. 단추를 누르면 HoloLe
   
 1. 장치에 로그인할 PIN을 설정합니다. 이 PIN은 장치별로 지정됩니다. 
 
-    ![Windows Hello 설정](images/setup-windows-hello.png)
+    ![Windows Hello 설정.](images/setup-windows-hello.png)
 
-    ![Windows Hello PIN 설정](images/windows-hello-pin.png)
+    ![Windows Hello PIN 설정.](images/windows-hello-pin.png)
 
-    ![Windows Hello 설정 성공](images/windows-hello-successful.png) 
+    ![Windows Hello 설정 성공.](images/windows-hello-successful.png) 
 
     
 1. HoloLens 2 음성 사용 여부를 선택합니다.

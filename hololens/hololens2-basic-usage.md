@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 452a032896d7b1959e706313d83f023588507c0882962cf689508edc63921bdb
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: cf3770dd55498dbe98abf88d002247646e4db9be
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115661996"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189888"
 ---
 # <a name="getting-around-hololens-2"></a>HoloLens 2 둘러보기
 
@@ -47,7 +47,7 @@ HoloLens를 다루는 것은 스마트폰을 사용하는 것과 아주 비슷�
 
 HoloLens는 사용자 양쪽으로 몇 피트까지 볼 수 있는 센서를 가지고 있습니다. 손을 사용할 때는 해당 프레임 안에 손을 두어야 합니다. 그렇지 않으면 HoloLens가 손을 보지 못합니다. 그러나 프레임은 사용자가 이동함에 따라 함께 움직입니다.  
 
-![HoloLens 손 추적 프레임을 보여주는 이미지](./images/hololens-2-gesture-frame.png)
+![HoloLens 손 추적 프레임을 보여주는 이미지.](./images/hololens-2-gesture-frame.png)
 
 ## <a name="touch-holograms-near-you"></a>가까이 있는 홀로그램 터치
 
@@ -74,7 +74,7 @@ HoloLens는 사용자 양쪽으로 몇 피트까지 볼 수 있는 센서를 가
 1. 집게손가락을 천장을 향해 위로 가리킵니다.
 1. **에어 탭** 을 수행하려면 엄지손가락과 집게손가락을 모았다가 빠르게 놓습니다.
 
-   ![에어 탭 동작 애니메이션](./images/hololens-air-tap.gif)
+   ![에어 탭 동작 애니메이션.](./images/hololens-air-tap.gif)
 
 ### <a name="grab-using-air-tap-and-hold"></a>에어 탭하고 잡기를 사용하여 잡기
 
@@ -101,7 +101,7 @@ HoloLens는 사용자 양쪽으로 몇 피트까지 볼 수 있는 센서를 가
 > - 시작 메뉴의 작은 텍스트를 읽는 데 문제가 있으면 텍스트가 열린 후에 더 가까이 다가갑니다.
 > - 손이 프레임 옆으로 약간 떨어져 있는 경우 아이콘이 보이지 않더라도 손목 안쪽을 탭하여 시작 메뉴를 볼 수 있습니다.
 
-![시작 아이콘과 시작 제스처를 보여주는 이미지](./images/hololens-2-start-gesture.png)
+![시작 아이콘과 시작 제스처를 보여주는 이미지.](./images/hololens-2-start-gesture.png)
 
 시작 메뉴를 **닫으려면** 시작 메뉴가 열렸을 때 시작 제스처를 수행합니다.  시작 메뉴를 보고 "Close"라고 말할 수도 있습니다.
 
@@ -115,7 +115,7 @@ HoloLens는 사용자 양쪽으로 몇 피트까지 볼 수 있는 센서를 가
 
 한 손으로만 시작 제스처를 수행할 수도 있습니다. 이를 위해 손바닥을 마주 보는 쪽으로 놓고 그대로 있으면서 손목 안쪽의 **시작 아이콘** 을 봅니다. **아이콘을 주시하면서** 엄지손가락과 집게손가락을 함께 모읍니다.
 
-![시작 아이콘과 한 손 시작 제스처를 보여주는 이미지](./images/hololens-2-start-alternative.png)
+![시작 아이콘과 한 손 시작 제스처를 보여주는 이미지.](./images/hololens-2-start-alternative.png)
 
 ## <a name="start-menu-mixed-reality-home-and-apps"></a>시작 메뉴, 혼합 현실 홈 및 앱
 

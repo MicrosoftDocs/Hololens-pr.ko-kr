@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 13f7000f608e6375efce201f1edd1627900ecdda2f86ddca8a174ac0b8e43ceb
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 77c061c53806e7410d73ecf3aaa20d74c217ea33
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658940"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190415"
 ---
 # <a name="get-your-hololens-2-ready-to-use"></a>HoloLens 2 사용 준비
 
@@ -42,7 +42,7 @@ HoloLens 2를 머리에 씁니다. 안경을 쓰고 있는 경우 착용한 상�
 
 필요한 경우, 조정 휠을 돌려 헤드밴드를 확장한 다음 오버헤드 스트랩을 풉니다.
 
-![HoloLens 2 핏 및 조정](images/hololens2-fit.png)
+![HoloLens 2 핏 및 조정.](images/hololens2-fit.png)
 
 ### <a name="attach-and-detach-the-overhead-strap"></a>오버헤드 스트랩 연결 및 분리
 
@@ -52,7 +52,7 @@ HoloLens 2를 머리에 씁니다. 안경을 쓰고 있는 경우 착용한 상�
 
 오버헤드 스트랩의 뒤쪽을 분리하려면 각 연결 탭 아래 있는 단추를 누르고 가볍게 당깁니다. 다시 연결하려면 딸깍 소리가 날 때까지 연결 탭을 슬롯으로 다시 밀어 넣습니다.
 
-![HoloLens 2 헤드 스트랩 연결 또는 제거](images/hololens2-headstrap.png)
+![HoloLens 2 헤드 스트랩 연결 또는 제거.](images/hololens2-headstrap.png)
 
 ## <a name="turn-on-the-hololens-2"></a>HoloLens 2 켜기
 

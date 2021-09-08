@@ -12,12 +12,12 @@ ms.date: 05/14/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b117542704968150639a47956a8142d7232fcc66d696feb61ec4fffdaa49df59
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b4692468942da88877370864eda2ce173cc499af
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660584"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189803"
 ---
 # <a name="hololens-2-battery-and-charging"></a>HoloLens 2 배터리 및 충전
 
@@ -41,7 +41,7 @@ HoloLens 2와 함께 제공된 [충전기와 USB Type-C 케이블](https://www.m
     - 배터리 잔량이 매우 낮은 상태에서 장치를 켜려고 하면 표시등 1개가 잠깐 깜박인 다음 꺼집니다.
 - 호스트 PC에서 **파일 탐색기** 를 열고 **이 PC** 아래의 왼쪽에서 HoloLens 2 장치를 찾습니다. 장치를 마우스 오른쪽 단추로 클릭하고 **속성** 을 선택합니다. 대화 상자에 배터리 충전 잔량이 표시됩니다.
 
-   ![HoloLens 2 속성 화면에 배터리 충전 수준이 표시됨](images/ResetRecovery2.png)
+   ![HoloLens 2 속성 화면에 배터리 충전 수준이 표시됩니다.](images/ResetRecovery2.png)
 
 ## <a name="alternative-charging-specifications"></a>대체 충전 사양
 

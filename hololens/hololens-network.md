@@ -10,12 +10,12 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: jarrettr
-ms.openlocfilehash: a230538a2bbf33481ef33c992a5b6c76107bb3829774744bc7e9a888f9102692
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: fe1c47de48e413a6f45921ba1e247016873ca996
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663109"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189106"
 ---
 # <a name="connect-hololens-to-a-network"></a>네트워크에 HoloLens 연결
 
@@ -39,7 +39,7 @@ HoloLens 2 장치에서 사용자는 [USB-C-이더넷 어댑터를 사용](holol
 1. 네트워크를 선택하고 **연결** 을 선택합니다.
 1. 네트워크 암호를 묻는 메시지가 표시되면 입력하고 **다음** 을 선택합니다.
 
-![HoloLens Wi-Fi 설정](./images/hololens-2-wifi-settings.jpg)
+![HoloLens Wi-Fi 설정.](./images/hololens-2-wifi-settings.jpg)
 
 Wi-Fi 네트워크에 연결되어 있는지 확인하려면 **시작** 메뉴에서 Wi-Fi 상태를 확인합니다.
 
@@ -211,7 +211,7 @@ VPN은 기본적으로 사용되지 않지만 **설정** 앱을 열고 **네트�
 1. 필요에 따라 사용자 이름과 암호를 추가합니다.
 1. VPN 설정을 적용합니다. 
 
-![HoloLens VPN 설정](./images/vpn-settings-ui.jpg)
+![HoloLens VPN 설정.](./images/vpn-settings-ui.jpg)
 
 ### <a name="vpn-set-via-provisioning-package"></a>프로비전 패키지를 통해 설정된 VPN
 
@@ -354,7 +354,7 @@ VPN은 기본적으로 사용되지 않지만 **설정** 앱을 열고 **네트�
 1. **네트워크 및 인터넷** 을 선택합니다.
 1. 사용할 수 있는 Wi-Fi 네트워크 목록 아래까지 아래로 스크롤하고 **하드웨어 속성** 을 선택합니다.
 
-    ![Wi-Fi 설정의 하드웨어 속성](./images/wifi-hololens-hwdetails.jpg)
+    ![Wi-Fi 설정의 하드웨어 속성.](./images/wifi-hololens-hwdetails.jpg)
 
    IP 주소가 **IPv4 주소** 옆에 나타납니다.
 

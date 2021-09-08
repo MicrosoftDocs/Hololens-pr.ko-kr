@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: 보정, 편안함, 시각적 개체, 품질, ipd, HoloLens, Windows Mixed Reality, VR 헤드셋
-ms.openlocfilehash: 5ba00d873b8a42c3397315a62492b14ab04ded367ccdd05af8be4f68c56627e2
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b3d917c71ac7441aeaf8dcbc25748ee07b9fbfa3
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664695"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189208"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>시각적 품질과 편안함 개선
 
@@ -64,7 +64,7 @@ HoloLens 2는 사용자에게 다음과 같은 상황에서 장치를 보정하�
 1. 설정 앱이 **시작** 에 고정되지 않은 경우 **모든 앱** 을 선택합니다.
 1. **설정** 을 선택한 다음, **시스템** > **보정** > **Eye Calibration** > **Run eye calibration** 을 선택합니다.
 
-   ![눈 보정 실행 옵션을 보여주는 설정 앱](./images/C-Settings.Calibration.png)
+   ![눈 보정 실행 옵션을 보여주는 설정 앱.](./images/C-Settings.Calibration.png)
 
 ### <a name="auto-eye-position-support"></a>자동 눈 위치 지원
 
@@ -131,7 +131,7 @@ HoloLens(1세대) 장치를 설정하면 Cortana의 자기 소개 후 시각적 
 
 보정 프로세스 중에 HoloLens에서 눈 하나당 연속되는 6개의 대상에 손가락을 정렬하도록 요청합니다. HoloLens는 이 프로세스를 사용하여 IPD를 눈에 정확하게 설정합니다.
 
-![두 번째 단계에서 IPD 손가락 정렬 화면](./images/ipd-finger-alignment-300px.jpg)
+![두 번째 단계에서 IPD 손가락 정렬 화면.](./images/ipd-finger-alignment-300px.jpg)
 
 ### <a name="manually-start-the-calibration-process"></a>수동으로 보정 프로세스 시작
 
@@ -143,9 +143,9 @@ HoloLens(1세대) 장치를 설정하면 Cortana의 자기 소개 후 시각적 
 1. 모든 앱을 보려면 **+** 을(를) 선택합니다.
 1. **보정** 을 선택합니다.
 
-   ![셸에서 보정 앱 액세스](./images/calibration-shell.png)
+   ![셸에서 보정 앱 액세스.](./images/calibration-shell.png)
 
-   ![시작된 후에 라이브 큐브로 표시된 보정 앱](./images/calibration-livecube-200px.png)
+   ![시작된 후에 라이브 큐브로 표시된 보정 앱.](./images/calibration-livecube-200px.png)
 
 설정 앱을 사용하여 보정 앱을 실행하려면 다음 단계를 수행합니다.
 
@@ -154,7 +154,7 @@ HoloLens(1세대) 장치를 설정하면 Cortana의 자기 소개 후 시각적 
 1. **설정** 을 선택합니다.
 1. **시스템** > **유틸리티** > **보정 열기** 를 선택합니다.
 
-   ![설정 앱에서 보정 앱 시작](./images/calibration-settings-500px.jpg)
+   ![설정 앱에서 보정 앱 시작.](./images/calibration-settings-500px.jpg)
 
 ## <a name="immersive-headsets"></a>몰입형 헤드셋
 

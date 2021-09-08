@@ -12,16 +12,16 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 759ef671e9a831e23809d5974595ce5928433e3e50ddb26e25a7a74ebe2559a3
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: c1d83577400126903a80999c46ddaeabddaba029
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659977"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190381"
 ---
 # <a name="about-hololens-2"></a>HoloLens 정보 2
 
-![HoloLens 2 측면 보기](images/hololens2-breakdown.png)
+![HoloLens 2 측면 보기.](images/hololens2-breakdown.png)
 
 Microsoft HoloLens 2는 테더링되지 않은 홀로그램 컴퓨터입니다.  HoloLens(1세대)에서 시작된 홀로그램 컴퓨팅 여정을 조정하여 혼합 현실에서 협업할 수 있는 더 많은 옵션과 함께 보다 편안하고 몰입감 있는 환경을 제공합니다. HoloLens 2는 [Windows Holographic OS](hololens-release-notes.md)에서 실행됩니다. 이 OS는 사용자, 관리자 및 개발자에게 강력하고, 성능이 뛰어나며, 안전한 플랫폼을 제공하는 Windows 10 "버전"을 기반으로 합니다. 
 
@@ -75,7 +75,7 @@ HoloLens 2를 사용하려면 사용자 계정이 필요합니다.
 | **IMU(관성 측정 장치)** | 가속도계, 자이로스코프, 자력계 |
 | **카메라** | 8-MP 스틸, 1080p30 비디오 |
 
-![HoloLens 2 센서](images/hololens2-front-view.png)
+![HoloLens 2 센서.](images/hololens2-front-view.png)
 
 > [!NOTE]
 > 사진에서 호출된 어떤 센서도 덮지 마세요. 머리 추적 카메라는 FOV가 매우 넓습니다. 카메라를 덮지 않을 뿐만 아니라 주변에 아무것도 없어야 합니다.

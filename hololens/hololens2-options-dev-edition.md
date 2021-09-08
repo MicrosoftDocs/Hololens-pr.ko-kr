@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: a4e2bc30d1141fcc1c6a648ccc7c3573f6afda2ba3f5cd413a8e9a69203ea617
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: ee2b87823324f3183d86763d47b38ca0503f0aeb
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115658883"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190347"
 ---
 # <a name="hololens-2-development-edition"></a>HoloLens 2 개발 버전
 
@@ -38,7 +38,7 @@ HoloLens 2 Development Edition에는 HoloLens 2, 500달러의 Azure 크레딧, 3
 |  [Unity용 Pixyz 플러그인](https://www.pixyz-software.com/plugin/) | 엔지니어링 &amp; CAD 세계와 개발 세계를 연결하기 위한 브리지입니다.   |
 | [Azure 서비스용 Azure 크레딧 500달러](https://azure.microsoft.com/resources/) | HoloLens 2 Development Edition에 포함된 Azure 크레딧은 Azure에서 혼합 현실 응용 프로그램의 빌드 및 테스트를 빠르게 시작하기 위해 제공됩니다. |
 
-![HoloLens 2 개발 버전](./images/hololens-2-dev-ed.png)
+![HoloLens 2 Development Edition.](./images/hololens-2-dev-ed.png)
 
 ## <a name="redeem-your-credits"></a>크레딧 사용
 

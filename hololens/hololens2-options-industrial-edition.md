@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7d9af1fb7d2c87b13cee926c3172ed2ce5411d9da73ab4b880efb1bd837ca3e5
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 51306755da5500d22829f359d2bf1467980892ea
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115659007"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123188868"
 ---
 # <a name="hololens-2-industrial-edition"></a>HoloLens 2 인더스트리얼 버전
 
@@ -34,7 +34,7 @@ HoloLens 2 Industrial Edition은 다음과 같은 광범위한 산업 환경을 
 
 업그레이드된 장치 외에도 HoloLens 2 Industrial Edition은 2년 보증 및 신속한 교체 프로그램을 제공합니다.
 
-![청정실에 사용되는 Industrial Edition](./images/ie-small-pic.png)
+![청정실에 사용되는 Industrial Edition.](./images/ie-small-pic.png)
 
 [HoloLens 2 Industrial Edition FAQ](hololens2-industrial-edition-faq.md)를 검토합니다.
 

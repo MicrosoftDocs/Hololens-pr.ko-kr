@@ -19,12 +19,12 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 635e2cc274101fcf08fd05f2b3b54ce6c2f79182011d76409a51c722ea47ecc7
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 3afe3d2aecd64c2b4724f4805571cb3c46112875
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115662769"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190041"
 ---
 # <a name="manage-hololens-updates"></a>HoloLens 업데이트 관리
 
@@ -122,7 +122,7 @@ HoloLens 2는 HoloLens(1세대)보다 더 많은 업데이트 자동화 기능�
 
 다음은 시간에 따라 전체 조직에서 출시가 진행되는 방식입니다.
 
-![업데이트를 배포하기 위한 타임라인](./images/hololens-updates-timeline.png)
+![업데이트를 배포하기 위한 타임라인.](./images/hololens-updates-timeline.png)
 
 #### <a name="configure-an-update-deferral-policy"></a>업데이트 지연 정책 구성
 

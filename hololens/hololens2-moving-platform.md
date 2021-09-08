@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: cd46e162971ea709d865b2ac998cc7a517d231ec
-ms.sourcegitcommit: 18f6c00a57a6b4608dadcec418d1970455d8ee3a
+ms.openlocfilehash: a0717524cd1f762c92a5b821ae90acb8474dafd2
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122989206"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190398"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>저 동적 모션 이동 플랫폼의 이동 플랫폼 모드
 
@@ -75,19 +75,19 @@ HoloLens는 안정적인 홀로그램을 표시하기 위해 [6도의 자유도]
 
 1. 왼쪽 메뉴에서 **시스템** 아코디언을 선택합니다.
 
-   ![첫 번째 이미지](.\images\moving-platform-1w.png)
+   ![첫 번째 이미지.](.\images\moving-platform-1w.png)
 
 2. **이동 플랫폼 모드** 페이지를 선택하고 **이동 플랫폼 모드** 확인란을 선택합니다.
 
-    ![두 번째 이미지](.\images\moving-platform-2z.png)
+    ![두 번째 이미지.](.\images\moving-platform-2z.png)
 
 3. 경고 메시지가 표시되면 **확인** 을 선택합니다.
 
-   ![세 번째 이미지](.\images\moving-platform-3w.png)
+   ![세 번째 이미지.](.\images\moving-platform-3w.png)
 
 4. 오른쪽 위에 있는 장치 포털 **전원** 메뉴를 통해 수행하거나 다음의 음성 명령 &quot;디바이스 재부팅&quot;을 실행하고 &quot;예&quot;를 선택하여 디바이스를 재부팅합니다.
 
-   ![네 번째 이미지](.\images\moving-platform-4z.png)
+   ![네 번째 이미지.](.\images\moving-platform-4z.png)
 
 장치 포털에서 이동 플랫폼 모드 옵션이 보이지 않으면 적절한 빌드가 아닐 수 있습니다. [필수 구성 요소](#prerequisites) 섹션을 참조하세요.
 

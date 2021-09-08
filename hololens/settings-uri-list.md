@@ -13,12 +13,12 @@ ms.reviewer: widuff
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d2747da37ae198f7a2c051593da3ffd4cb4476dfaa7a3078a7749fa1fc912ba2
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 92040019b093c5ef63d74f095dcb3809112ae7a0
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665627"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190432"
 ---
 # <a name="page-settings-visibility"></a>페이지 설정 표시
 
@@ -74,7 +74,7 @@ Intune 그룹 및 장치 구성에 대한 자세한 내용은 [HoloLens MDM 구�
 
 선택한 방법에 관계없이 이제 장치가 변경 내용을 수신해야 하고 사용자에게 다음과 같은 설정 앱이 표시됩니다.
 
-![설정 앱에서 수정되는 활성 시간의 스크린샷](images/hololens-page-visibility-list.jpg)
+![설정 앱에서 수정되는 활성 시간의 스크린샷.](images/hololens-page-visibility-list.jpg)
 
 사용자가 선택한 페이지를 표시하거나 숨기도록 설정 앱 페이지를 구성하려면 HoloLens에서 사용 가능한 설정 URI를 확인합니다.
 

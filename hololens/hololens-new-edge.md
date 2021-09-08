@@ -9,16 +9,16 @@ ms.sitesec: library
 ms.localizationpriority: high
 ms.reviewer: ''
 manager: yannisle
-ms.openlocfilehash: 35d3b38cd442198aec8aaabf46ff7d842c1bf599dbada68718c1d0fa548b2030
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 8ef73733b9fa4f422335977be860371b9570d549
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663160"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189701"
 ---
 # <a name="introducing-the-new-microsoft-edge"></a>새 Microsoft Edge 소개
 
-![레거시 Microsoft Edge 로고를 새 Microsoft Edge 로고로 애니메이션](images/new-edge.gif)
+![레거시 Microsoft Edge 로고를 새 Microsoft Edge 로고로 애니메이션.](images/new-edge.gif)
 
 새 Microsoft Edge는 [Chromium 오픈 소스 프로젝트를 채택](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/)하여 고객을 위해 호환성을 높이고 웹 개발자를 위해 웹의 조각화를 줄입니다.
 
@@ -27,11 +27,11 @@ ms.locfileid: "115663160"
 > [!IMPORTANT]
 > 이 새 Microsoft Edge는 새 릴리스에서 [더 이상 지원되지 않는](https://blogs.windows.com/msedgedev/2021/03/09/microsoft-edge-legacy-end-of-support/) 레거시 Microsoft Edge를 자동으로 대체합니다.
 
-![새 Microsoft Edge 스크린샷](images/new-edge-ui.png)
+![새 Microsoft Edge 스크린샷.](images/new-edge-ui.png)
 
 ## <a name="launching-the-new-microsoft-edge"></a>새 Microsoft Edge 시작
 
-새로운 Microsoft Edge ![새 Microsoft Edge 아이콘](images/new_edge_logo.png) (파란색 및 녹색 소용돌이 아이콘으로 표시됨)은 시작 메뉴에 고정되어 있으며 웹 링크를 활성화할 때 자동으로 시작됩니다.
+새로운 Microsoft Edge ![새 Microsoft Edge 아이콘.](images/new_edge_logo.png) (파란색 및 녹색 소용돌이 아이콘으로 표시됨)은 시작 메뉴에 고정되어 있으며 웹 링크를 활성화할 때 자동으로 시작됩니다.
 
 > [!NOTE]
 > HoloLens 2에서 새 Microsoft Edge를 처음 시작하면 기존 Microsoft Edge에서 설정 및 데이터를 가져옵니다.
@@ -139,7 +139,7 @@ HoloLens 2에 Microsoft Edge Insider Channels를 설치하는 데 사용할 수 
 1. WebXR가 지원되는 웹 사이트로 이동합니다.
 1. 웹 사이트에서 **Enter VR** 단추를 선택합니다. 이 단추의 위치와 표시되는 모양은 웹 사이트별로 다를 수 있지만 다음과 유사할 것입니다.
 
-    ![Enter VR 입력 예제](images/75px-enter-vr.png)
+    ![VR 단추 입력 예.](images/75px-enter-vr.png)
 
 1. 특정 도메인에서 WebXR 환경을 처음 시작하는 경우 브라우저에서 몰입형 보기 입력에 대한 동의를 요청하므로 **허용** 을 선택합니다.
 1. 환경을 조작하려면 [HoloLens 2 제스처](hololens2-basic-usage.md#the-hand-tracking-frame)를 사용합니다.
@@ -156,7 +156,7 @@ HoloLens 2에 Microsoft Edge Insider Channels를 설치하는 데 사용할 수 
 1. YouTube에서 360도 비디오로 이동합니다.
 1. 비디오 프레임에서 혼합 현실 헤드셋 단추를 선택합니다.
 
-    ![360 뷰어를 활성화하는 단추](images/enter-360-viewer.jpg)
+    ![360 뷰어를 활성화하는 단추.](images/enter-360-viewer.jpg)
 
 1. 특정 도메인에서 처음 360 뷰어를 시작하려고 하면 브라우저에서 몰입형 보기에 대한 동의를 요청합니다. **허용** 을 선택합니다.
 1. [에어 탭](hololens2-basic-usage.md#select-using-air-tap)하여 재생 컨트롤을 표시합니다. [손 광선 및 에어 탭](hololens2-basic-usage.md#select-using-air-tap)을 사용하여 재생/일시 중지, 앞으로/뒤로 건너뛰기, 캡션 설정/해제, 경험 중지(몰입형 보기 끝내기)를 사용합니다. 몇 초 동안 활동이 없으면 재생 컨트롤이 사라집니다.

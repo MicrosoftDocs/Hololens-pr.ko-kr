@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: a4ceaa1a741ec63153cd9112d04547165b46b0fa72c32ee7f9580f15368a2f88
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 24cd9b81d0d99afaa0479787b846b423310c6739
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665455"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190466"
 ---
 # <a name="limiting-password-use"></a>암호 사용 제한
 
@@ -52,7 +52,7 @@ Windows Hello 자격 증명이 만들어지면 ID 공급자와 신뢰할 수 있
 
 자세한 내용은 다음 인포그래픽을 참조하세요.
 
-  ![Windows Hello 로그인](images/security-hello-sign-in.png)
+  ![Windows Hello 로그인.](images/security-hello-sign-in.png)
   
 위에 제공된 그래픽에서 nonce는 "number once"를 의미하며 임의 또는 반 임의 생성 숫자입니다. Windows Hello 생체 인식 또는 PIN 자격 증명이 설정되면 프로비전된 디바이스를 벗어나지 않습니다. 피싱 공격을 통해 사용자의 Windows Hello PIN을 도난당한 경우에도 [사용자의 물리적 디바이스가 없으면](/windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password) 소용이 없습니다.
 
@@ -68,7 +68,7 @@ SSO(Single Sign-On)를 사용하면 암호 없는 사용자가 사용자의 개�
 
 웹 계정 관리자 API 구현에 대한 자세한 내용은 [웹 계정 관리자 API 구현](/windows/uwp/security/web-account-manager)을 참조하세요.
 
-  ![보안 API](images/security-api-img.png)
+  ![보안 API.](images/security-api-img.png)
   
 특수 인증 요구 사항이 있는 앱 제품군의 경우 WAM(Web Account Manager) 프레임워크를 사용자 지정 ID 공급자로 확장할 수 있습니다. 사용자는 Microsoft Store에서 UWP(유니버설 Windows 플랫폼) 앱으로 패키지된 사용자 지정 ID 공급자를 다운로드하여 해당 ID 공급자와 통합된 다른 앱에서 SSO를 활성화할 수 있습니다.
 
@@ -91,7 +91,7 @@ Windows Hello 및 FIDO2 디바이스는 HoloLens 디바이스, 특히 기본 제
 
 ### <a name="strong-authentication-with-fido2-security-key"></a>FIDO2 보안 키를 사용하는 강력한 인증
 
-  ![FIDO img](images/security-fido2-whfb-smaller.png)
+  ![FIDO img.](images/security-fido2-whfb-smaller.png)
 
 1. 사용자가 FIDO2 보안 키를 HoloLens 2에 연결합니다.
 1. Windows가 FIDO2 보안 키를 감지합니다.

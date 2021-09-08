@@ -13,12 +13,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: c510738595e234b30395aafa309d42bd33affb7889a3174f2e708ba1aac56626
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: f9a6f1692df05e5fd8faec3da07cc85f7c6a32c7
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664906"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123189174"
 ---
 # <a name="use-the-start-menu-and-mixed-reality-home"></a>시작 메뉴 및 혼합 현실 홈 사용
 
@@ -91,7 +91,7 @@ HoloLens 2에서는 혼합 현실 홈에서 앱 창을 사용할 뿐 아니라 �
 
 [Windows Holographic, 버전 21H1](hololens-release-notes.md#windows-holographic-version-21h1)을 사용하면 하이퍼링크를 활성화하거나 두 가지 이상의 설치된 앱에서 열 수 있는 파일 형식을 열 때 설치된 앱 중 파일 또는 링크 유형을 처리해야 하는 앱을 선택하라는 새로운 창이 열립니다. 이 창에서 선택한 앱이 해당 파일 또는 링크 유형을 "한 번" 또는 "항상" 처리하도록 선택할 수도 있습니다.
 
-![앱 선택기 창](images/default-app-picker.png)
+![앱 선택기 창.](images/default-app-picker.png)
 
 "항상"을 선택했지만 나중에 특정 파일 또는 링크 유형을 처리하는 앱을 변경하려면 **설정 > 앱** 에서 저장된 기본값을 다시 설정할 수 있습니다. 페이지 아래쪽으로 스크롤하여 "Default apps for file types" 및/또는 "Default apps for link types" 아래에서 **지우기** 단추를 선택합니다. 데스크톱 PC의 비슷한 설정과 달리 개별 파일 형식 기본값은 다시 설정할 수 없습니다.
 

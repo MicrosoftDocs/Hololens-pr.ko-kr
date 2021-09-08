@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: jarrettr
-ms.openlocfilehash: 7dbe77c8c5999d5be1a61ca9deaa8071d152c87a
-ms.sourcegitcommit: d0c7bf5b055fa1fa8ac5562eef904583a655da99
+ms.openlocfilehash: 4782b5d4d3c51038f7810c57d2144758ce0dc1ac
+ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122782810"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123190194"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>HoloLens 2용 Windows Autopilot
 
@@ -191,7 +191,7 @@ HoloLens 장치를 등록하는 기본 방법은 다음 세 가지가 있습니�
    **HoloLens** 를 포함하는 목록이 표시됩니다. 이 옵션이 표시되지 않는 경우 [피드백](hololens2-autopilot.md#feedback-and-support-for-autopilot) 옵션 중 하나를 사용하여 문의하세요.
 
    > [!div class="mx-imgBorder"]
-   > ![프로필 이름 및 설명 추가](./images/hololens-ap-profile-name.png)
+   > ![프로필 이름 및 설명 추가.](./images/hololens-ap-profile-name.png)
 
 1. **OOBE(첫 실행 경험)** 페이지에서 대부분의 설정은 이 평가를 위해 OOBE를 간소화하도록 미리 구성되어 있습니다. 필요에 따라 선택하여 구성할 수 있는 설정은 다음과 같습니다.  
 
@@ -202,7 +202,7 @@ HoloLens 장치를 등록하는 기본 방법은 다음 세 가지가 있습니�
      > 장치 이름 템플릿을 사용하는 경우 OOBE 프로세스는 장치 이름을 적용한 후 장치를 Azure AD에 조인하기 전에 장치를 한 번 더 다시 시작합니다. 다시 시작하면 새 이름이 적용됩니다.  
 
    > [!div class="mx-imgBorder"]
-   > ![OOBE 설정 구성](./images/hololens-ap-profile-oobe.png)
+   > ![OOBE 설정 구성.](./images/hololens-ap-profile-oobe.png)
 
 1. 설정을 구성한 후 **다음** 을 선택합니다.
 1. **범위 태그** 페이지에서 필요에 따라 이 프로필에 적용하려는 범위 태그를 추가합니다. 범위 태그에 대한 자세한 내용은 [분산형 IT에 역할 기반 액세스 제어 및 범위 태그 사용](/mem/intune/fundamentals/scope-tags.md)을 참조하세요. 완료되면 **다음** 을 선택합니다.
@@ -218,14 +218,14 @@ HoloLens 장치를 등록하는 기본 방법은 다음 세 가지가 있습니�
 1. **검토 + 만들기** 페이지에서 설정을 검토한 다음 **Create** 를 선택하여 프로필을 만듭니다.  
 
    > [!div class="mx-imgBorder"]
-   > ![검토 + 만들기](./images/hololens-ap-profile-summ.png)
+   > ![검토 + 만들기.](./images/hololens-ap-profile-summ.png)
 
 ### <a name="7-verify-the-esp-configuration"></a>7. ESP 구성 확인
 
 ESP(등록 상태 페이지)는 MDM 관리 사용자가 처음으로 장치에 로그인할 때 실행되는 전체 장치 구성 프로세스의 상태를 표시합니다. ESP 구성이 다음과 유사한지 확인하고 할당이 올바른지 확인합니다.  
 
 > [!div class="mx-imgBorder"]
-> ![ESP 구성](./images/hololens-ap-profile-settings.png)
+> ![ESP 구성.](./images/hololens-ap-profile-settings.png)
 
 ### <a name="8-verify-the-profile-status-of-the-hololens-devices"></a>8. HoloLens 디바이스의 프로필 상태 확인
 
@@ -263,9 +263,9 @@ ESP(등록 상태 페이지)는 MDM 관리 사용자가 처음으로 장치에 �
 
    HoloLens 2에서 네트워크 연결을 검색하여 OOBE를 자동으로 완료할 수 있도록 합니다. OOBE가 진행되는 동안 장치가 다시 시작될 수 있습니다. OOBE 화면은 다음과 유사합니다.
 
-   ![OOBE 1단계](./images/autopilot-welcome.jpg)
-   ![OOBE 2단계](./images/autopilot-step-complete.jpg)
-   ![OOBE 3단계](./images/autopilot-device-setup.jpg)
+   ![OOBE 1단계.](./images/autopilot-welcome.jpg)
+   ![OOBE 2단계.](./images/autopilot-step-complete.jpg)
+   ![OOBE 3단계.](./images/autopilot-device-setup.jpg)
 
 1. OOBE가 끝나면 사용자 이름과 암호를 사용하여 장치에 로그인할 수 있습니다.
 
@@ -290,7 +290,7 @@ HoloLens 2에서 TenantLockdown CSP의 RequireNetworkInOOBE 노드가 true로 �
 OMA URI 값은 /Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE여야 합니다.
 
    > [!div class="mx-imgBorder"]
-   > ![OMA-URI를 통해 테넌트 잠금 설정](images/hololens-tenant-lockdown.png)
+   > ![OMA-URI를 통해 테넌트 잠금 설정.](images/hololens-tenant-lockdown.png)
 
 1. 그룹을 만들고 해당 장치 그룹에 장치 구성 프로필을 할당합니다.
 
@@ -306,7 +306,7 @@ Intune 포털에서 장치 구성이 성공적으로 적용되었는지 확인�
 OMA URI 값은 /Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE여야 합니다.
 
    > [!div class="mx-imgBorder"]
-   > ![Intune에서 OMA URI를 통해 RequireNetworkInOOBE를 false로 설정하는 스크린샷](images/hololens-tenant-lockdown-false.png)
+   > ![Intune에서 OMA URI를 통해 RequireNetworkInOOBE를 false로 설정하는 스크린샷.](images/hololens-tenant-lockdown-false.png)
 
 1. 그룹을 만들고 해당 장치 그룹에 장치 구성 프로필을 할당합니다. 
 

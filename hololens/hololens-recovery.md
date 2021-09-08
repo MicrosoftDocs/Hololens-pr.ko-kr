@@ -7,7 +7,7 @@ ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
 ms.author: mazeller
-ms.date: 04/27/2020
+ms.date: 08/30/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7d8f2f8bf6aaaeb7f6f0ddbd339d428dad9335faeb99bfca48a19e68929921ed
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: e9aad32891bb093cbce18671b76549788b19afcb
+ms.sourcegitcommit: c4fe077e9e19a3b0a9fad8defa4b51547c5ae3c8
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663011"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123261926"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>HoloLens 2 다시 시작, 초기화 또는 복구
 
@@ -43,7 +43,7 @@ HoloLens 2와 함께 제공된 [충전기와 USB Type-C 케이블](https://www.m
     - 배터리 잔량이 매우 낮은 상태에서 장치를 켜려고 하면 표시등 1개가 잠깐 깜박인 다음 꺼집니다.
 - 호스트 PC에서 **파일 탐색기** 를 열고 **이 PC** 아래의 왼쪽에서 HoloLens 2 장치를 찾습니다. 장치를 마우스 오른쪽 단추로 클릭하고 **속성** 을 선택합니다. 대화 상자에 배터리 충전 잔량이 표시됩니다.
 
-   ![HoloLens 2 속성 화면에 배터리 충전 수준이 표시됨](images/ResetRecovery2.png)
+   ![HoloLens 2 속성 화면에 배터리 충전 수준이 표시됩니다.](images/ResetRecovery2.png)
 
 장치가 시작 메뉴로 부팅할 수 없는 경우 호스트 PC의 LED 모양과 장치 열거형을 기록해 둡니다. 그런 다음, [문제 해결 가이드](hololens-troubleshooting.md)를 따릅니다. 장치 상태가 문제 해결 가이드에 나열된 상태에 해당하지 않으면 장치를 호스트 PC가 아닌 전원 공급 장치에 연결하고 [하드 리셋 절차](hololens-recovery.md#hard-reset-procedure)를 수행합니다. 장치가 충전될 때까지 1시간 이상 기다립니다.
 
@@ -61,7 +61,7 @@ HoloLens 2와 함께 제공된 [충전기와 USB Type-C 케이블](https://www.m
 
 4. 호스트 PC에 장치를 연결한 다음 장치 관리자를 엽니다. (Windows 10의 경우 **Windows** 키를 누른 후 **X** 키를 누른 다음 **장치 관리자** 를 선택합니다.) 아래 이미지에 표시된 것처럼 장치가 *Microsoft HoloLens* 로 제대로 열거되는지 확인합니다.
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery 장치 관리자](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery 디바이스 관리자.](images/MicrosoftHoloLens_DeviceManager.png)
 
 ### <a name="hard-reset-procedure"></a>하드 리셋 절차
 
@@ -69,18 +69,18 @@ HoloLens 2와 함께 제공된 [충전기와 USB Type-C 케이블](https://www.m
 
 1. Type-C 케이블을 뽑아 전원 공급 장치 또는 호스트 PC에서 장치 연결을 해제합니다.
 
-2. **Volume down** + **전원** 단추를 15초 동안 길게 누릅니다. 장치가 자동으로 다시 시작합니다.
+1. **Volume down** + **전원** 단추를 15초 동안 길게 누릅니다. 장치가 자동으로 다시 시작합니다.
 
-4. 호스트 PC에 장치를 연결합니다.
+1. 호스트 PC에 장치를 연결합니다.
 
+1. 장치 관리자를 엽니다(Windows 10의 경우 **Windows** 키를 누른 후 **X** 키를 누른 다음 **장치 관리자** 를 선택). 아래 이미지에 표시된 것처럼 장치에서 *Microsoft HoloLens* 로 제대로 열거되는지 확인합니다.
 
-5. 장치 관리자를 엽니다(Windows 10의 경우 **Windows** 키를 누른 후 **X** 키를 누른 다음 **장치 관리자** 를 선택). 아래 이미지에 표시된 것처럼 장치에서 *Microsoft HoloLens* 로 제대로 열거되는지 확인합니다.
-
-   ![HoloLens 2 MicrosoftHoloLensRecovery 장치 관리자 2](images/MicrosoftHoloLens_DeviceManager.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery 디바이스 관리자 2.](images/MicrosoftHoloLens_DeviceManager.png)
 
 ## <a name="clean-reflash-the-device"></a>장치 클린 리플래시
 
 드문 상황에서 HoloLens 2를 "클린 플래시"해야 할 수 있습니다. 클린 리플래시는 다음 문제에 영향을 주지 않을 것으로 예상됩니다.
+
 - [색 균일성 표시](hololens2-display.md)
 - 부팅 시 소리가 나지만 디스플레이 출력이 없음
 - [1-3-5-LED 패턴](hololens2-setup.md#lights-to-indicate-problems)
@@ -92,25 +92,29 @@ HoloLens 2와 함께 제공된 [충전기와 USB Type-C 케이블](https://www.m
 >[!WARNING]
 >장치를 리플래시하면 TPM 초기화 정보를 포함하여 모든 개인 데이터, 앱 및 설정 내용이 지워집니다.
 
-기본적으로 고급 복구 도우미는 최신 기능 릴리스 빌드를 다운로드하도록 설정되어 있습니다. 여기를 확인하여 [릴리스 정보](hololens-release-notes.md#)를 읽어보고 최신 기능 릴리스에 대해 알아보세요. 최신 HoloLens 2 FFU(Full Flash Update) 패키지를 다운로드하여 고급 복구 도우미를 통해 장치를 리플래시하려면 [여기를 클릭하여 최신 월별 HoloLens 2 이미지를 다운로드합니다](https://aka.ms/hololens2download). 이 버전은 일반적으로 사용 가능한 최신 빌드입니다.
+기본적으로 고급 복구 도우미는 최신 기능 릴리스 빌드를 다운로드하도록 설정되어 있습니다. 최신 기능 릴리스에 대해 알아보려면 [HoloLens 2 릴리스 정보](hololens-release-notes.md)를 참조하세요. 최신 HoloLens 2 FFU(Full Flash Update) 패키지를 다운로드하여 고급 복구 도우미를 통해 디바이스를 리플래시하려면 최신 월별 HoloLens 2 이미지를 다운로드합니다[https://aka.ms/hololens2download](https://aka.ms/hololens2download). 이 버전은 일반적으로 사용 가능한 최신 빌드입니다.
 
 리플래시 절차를 시작하기 전에 앱이 Windows 10 PC에 설치되어 실행 중인지 확인하고 장치를 탐지할 준비가 되었는지 확인합니다. 또한 HoloLens가 최소 40%까지 충전되는지 확인합니다.
 
-![HoloLens 2 클린 리플래시 스크린샷](images/ARC1.png)
+![HoloLens 2 클린 리플래시 스크린샷.](images/ARC1.png)
 
 ### <a name="normal-procedure"></a>일반 절차
 
 1. HoloLens 장치가 실행 중일 때 이전에 고급 복구 도우미 앱을 열었던 Windows 10 PC에 연결합니다.
- 
+
    장치가 자동으로 탐지되고 고급 복구 도우미 앱 UI가 다음과 같이 업데이트 프로세스를 시작합니다.
 
-   ![HoloLens 2 클린 리플래시 초기 화면](images/ARC2.png)
+   ![HoloLens 2 클린 리플래시 초기 화면.](images/ARC2.png)
 
-3. 고급 복구 도우미 앱 UI에서 HoloLens 2 장치를 선택하고 지침에 따라 리플래시를 완료합니다.
+1. 고급 복구 도우미 앱 UI에서 HoloLens 2 장치를 선택하고 지침에 따라 리플래시를 완료합니다.
 
 ### <a name="manual-procedure"></a>수동 절차
 
-HoloLens 2가 올바르게 시작되지 않거나 고급 복구 도우미가 장치를 탐지할 수 없는 경우 장치를 복구 모드로 전환해야 할 수 있습니다.
+다음과 같은 경우 디바이스를 복구 모드로 전환해야 할 수 있습니다.
+
+- HoloLens 2 올바르게 시작되지 않는 경우
+- 고급 복구 도우미가 디바이스를 검색할 수 없는 경우
+- 사용자가 한 명뿐인 디바이스의 암호/PIN을 더 이상 알지 못하는 경우
 
 1. Type-C 케이블을 뽑아 전원 공급 장치 또는 호스트 PC에서 장치 연결을 해제합니다.
 
@@ -120,11 +124,11 @@ HoloLens 2가 올바르게 시작되지 않거나 고급 복구 도우미가 장
 
 4. 장치를 호스트 PC에 연결하고 장치 관리자를 엽니다. (Windows 10의 경우 **Windows** 키를 누른 후 **X** 키를 누른 다음 **장치 관리자** 선택합니다.) 아래 이미지에 표시된 것처럼 장치가 Microsoft HoloLens로 제대로 열거되는지 확인합니다.
 
-   ![HoloLens 2 MicrosoftHoloLensRecovery](images/MicrosoftHoloLensRecovery.png)
+   ![HoloLens 2 MicrosoftHoloLensRecovery.](images/MicrosoftHoloLensRecovery.png)
 
    장치가 자동으로 탐지되고 고급 복구 도우미 앱 UI가 다음과 같이 업데이트 프로세스를 시작합니다.
 
-   ![HoloLens 2 클린 리플래시 화면](images/ARC2.png)
+   ![HoloLens 2 클린 리플래시 화면.](images/ARC2.png)
 
 6. 고급 복구 도우미 앱 UI에서 HoloLens 2 장치를 선택하고 지침에 따라 리플래시를 완료합니다.
 
@@ -132,18 +136,18 @@ HoloLens 2가 올바르게 시작되지 않거나 고급 복구 도우미가 장
 
 1. 플래시를 시도하기 전에 장치가 40% 이상 충전되었는지 확인합니다.
 
-2. 디바이스가 잠금 해제되어 있는지 확인합니다.
+1. 디바이스가 잠금 해제되어 있는지 확인합니다.
 
 1. 디바이스가 허브가 아닌 호스트 PC에 직접 연결되어 있는지 확인합니다.
 
 1. 디바이스가 범용 직렬 버스 드라이버에서 HoloLens/HoloLens 복구 디바이스로 표시되지 않는 경우 다음을 확인합니다.
     1. Qualcomm HS-USB 디바이스로서의 **포트**
-    1.   QUSB_BULK 디바이스로서의 **기타 디바이스** - 호스트 PC에 HoloLens를 감지하는 데 필요한 드라이버가 없습니다. 마우스 오른쪽 단추를 클릭하고 드라이버 업데이트를 선택하여 온라인으로 드라이버를 검색하거나 [Windows 업데이트 설정에서 선택적 업데이트를 확인합니다](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674). 드라이버가 다운로드되면 ARC가 이를 검색할 수 있어야 합니다.
- 
+    1. QUSB_BULK 디바이스로서의 **기타 디바이스** - 호스트 PC에 HoloLens를 감지하는 데 필요한 드라이버가 없습니다. 마우스 오른쪽 단추를 클릭하고 드라이버 업데이트를 선택하여 온라인으로 드라이버를 검색하거나 [Windows 업데이트 설정에서 선택적 업데이트를 확인합니다](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/improving-the-update-discoverability-experience/ba-p/1585674). 드라이버가 다운로드되면 ARC가 이를 검색할 수 있어야 합니다.
+
 1. ARC가 장치를 탐지하지 못하는 경우 PC의 파일 탐색기를 통해 장치에 연결할 수 있는지 확인합니다. 연결할 수 없는 경우, 다음과 같이 합니다.
 
-    1.  장치에 해당 연결을 사용하지 않도록 설정하는 USB 정책이 있을 수 있습니다. 이 경우 [수동 플래싱 모드](hololens-recovery.md#manual-procedure)를 사용해 보세요.
-    2.  정책이 없으면 다른 USB 케이블을 사용해 보세요.
+    1. 장치에 해당 연결을 사용하지 않도록 설정하는 USB 정책이 있을 수 있습니다. 이 경우 [수동 플래싱 모드](hololens-recovery.md#manual-procedure)를 사용해 보세요.
+    2. 정책이 없으면 다른 USB 케이블을 사용해 보세요.
 
 1. 장치가 [1-3-5-LED 패턴](hololens2-setup.md#lights-to-indicate-problems)을 표시하지 않는지 확인합니다.
 
@@ -183,7 +187,7 @@ IT 환경에서 Windows 스토어 앱을 사용하지 못하도록 하거나 소
 > [!TIP]
 > 고급 복구 도우미를 사용하여 오프라인으로 FFU를 설치하려는 경우 플래시 이미지를 다운로드하면 유용할 수 있습니다. [**HoloLens 2에 대한 현재 이미지를 다운로드합니다**](https://aka.ms/hololens2download).
 
-
 기타 리소스:
+
 - [오프라인 앱 배포](/microsoft-store/distribute-offline-apps) 
 - [DISM 앱 패키지(.appx 또는 .appxbundle) 서비스 명령줄 옵션](/windows-hardware/manufacture/desktop/dism-app-package--appx-or-appxbundle--servicing-command-line-options)

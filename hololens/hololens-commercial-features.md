@@ -1,9 +1,9 @@
 ---
 title: HoloLens 2 기능 및 솔루션
-description: 기업에서 HoloLens 디바이스를 보다 쉽게 관리할 수 있는 Microsoft HoloLens Commercial 기능에 대해 알아봅니다.
-author: joyjaz
-ms.author: v-jjaswinski
-ms.date: 06/28/2021
+description: 기업에서 HoloLens 디바이스를 관리할 수 있게 해주는 Microsoft HoloLens Commercial 기능에 대해 알아봅니다.
+author: qianw211
+ms.author: v-qianwen
+ms.date: 9/1/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
@@ -17,20 +17,22 @@ manager: skerewa
 appliesto:
 - HoloLens 2
 keywords: HoloLens 2, 상업용, 기능, mdm, 모바일 장치 관리, 키오스크 모드, 애플리케이션, ID, Bitlocker, 홍채, Windows Hello, Azure 지원, Autopilot, 혼합 현실, WDAC
-ms.openlocfilehash: 88a75224909fd64e387cfb5677056e2ae5d62e4b3518aa758f22ec66a86a8355
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 0c47eedad0d5a23249c48356765b74e4dbeac33e
+ms.sourcegitcommit: 58b124ba1722b2dff31d93723dd269df0f8319c4
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665348"
+ms.lasthandoff: 09/04/2021
+ms.locfileid: "123483201"
 ---
 # <a name="hololens-2-capabilities-and-solutions"></a>HoloLens 2 기능 및 솔루션
 
-## <a name="what-can-hololens-2-do-for-you"></a>HoloLens 2로 무엇을 할 수 있나요?
+## <a name="why-hololens"></a>HoloLens를 사용해야 하는 이유는 무엇인가요?
 
-HoloLens 2의 혼합 현실 애플리케이션을 사용하여 경계 없이 협업하고 정확하게 작업하여 직원 생산성을 높일 수 있습니다. 오류 없이 안전하게 작업을 완료하는 데 지속적으로 집중할 수 있도록 기본 제공 음성 명령, 시선 추적 및 월드 앵커링으로 헤드업, 핸즈프리, 더 길고 더 편안하게 사용할 수 있습니다. 원격 동료와 실시간으로 연결하고 물리적 환경에 오버레이된 광범위한 홀로그램 캔버스에서 함께 작업하여 작업 지점에서 문제를 신속하게 해결할 수 있습니다. Microsoft의 보안, 안정성 및 확장성을 지원하는 강력한 애플리케이션 에코시스템을 통해 즉시 ROI를 실현할 수 있습니다.  
+HoloLens 2 및 Mixed Reality 애플리케이션 덕분에 이제 작업자는 경계 없이 협업하고, 정확하게 작업하고, 생산성을 높일 수 있습니다.
 
-[!INCLUDE [solutions](includes/hlsolutions.md)]
+HoloLens 2의 혼합 현실 애플리케이션을 사용하여 경계 없이 협업하고 정확하게 작업하여 직원 생산성을 높일 수 있습니다. 오류 없이 안전하게 작업을 완료하는 데 지속적으로 집중할 수 있도록 기본 제공 음성 명령, 시선 추적 및 월드 앵커링으로 헤드업, 핸즈프리, 더 길고 더 편안하게 사용할 수 있습니다. 원격 동료와 실시간으로 연결하고 물리적 환경에 오버레이된 광범위한 홀로그램 캔버스에서 함께 작업하여 작업 지점에서 문제를 신속하게 해결할 수 있습니다. Microsoft의 보안, 안정성 및 확장성을 지원하는 강력한 애플리케이션 에코시스템을 통해 즉시 ROI(투자 수익률)를 실현할 수 있습니다.  
+
+이 문서를 통해 MR(혼합 현실)이 비즈니스에 제공하는 모든 이점을 생각해 볼 수 있기를 바랍니다.
 
 ## <a name="hololens-2-capabilities"></a>HoloLens 2 기능
 
@@ -53,15 +55,80 @@ HoloLens 2가 강력한 이유는 무엇입니까?
 | 손쉬운 디바이스 관리 | Microsoft Intune, VMware Workspace One, MobileIron 등과 같은 솔루션을 사용하여 여러 HoloLens 2 디바이스를 동시에 관리합니다. |
 | 규제된 환경에서 작동 | HoloLens 2는 ISO Class 5.0 및 UL Class I, Division 2로 지정된 환경을 포함하여 규제가 심한 환경을 지원하는 광범위한 디바이스 포트폴리오를 갖추고 있습니다. |
 
+[!INCLUDE [solutions](includes/hlsolutions.md)]
+
+## <a name="how-hololens-2-is-transforming-industries"></a>HoloLens 2가 업계를 혁신하는 방법
+
+:::row:::
+    :::column:::
+        [<img src="images/eaton.png" alt="Eaton Vehicle Group" width=350px>](https://customers.microsoft.com/en-us/story/1406696349549504197-eaton-vehicle-group-dynamics-365-mixed-reality)
+    :::column-end:::
+    :::column span="2":::
+        ### <a name="eatons-vehicle-group-uses-dynamics-365-mixed-reality-to-drive-savings-efficiencies"></a>[Eaton’s Vehicle Group은 Dynamics 365 혼합 현실을 사용하여 비용을 절감하고, 효율을 높입니다.](https://customers.microsoft.com/en-us/story/1406696349549504197-eaton-vehicle-group-dynamics-365-mixed-reality)
+        "문제를 설명할 때 상대방과 다른 언어를 사용한다고 생각해 보세요. 말로 설명할 때는 상대방이 의미를 정확히 이해하지 못할 수 있지만 HoloLens를 통해 실시간으로 보여주면 이해하게 됩니다." <br> - Alexandre M. Moraes: Eaton의 Plant Manager.
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+        [<img src="images/sheba.png" alt="Sheba Medical Center" width=350px>](https://customers.microsoft.com/en-us/story/1388628932382960935-sheba-health-provider-azure-en-israel)
+    :::column-end:::
+    :::column span="2":::
+        ### <a name="sheba-medical-center-uses-microsofts-hololens-for-ventilators-training"></a>[Sheba Medical Center는 산소 호흡기 교육에 Microsoft의 HoloLens를 사용합니다.](https://customers.microsoft.com/en-us/story/1388628932382960935-sheba-health-provider-azure-en-israel)
+        응급 상황 의료 교육 서비스에 사용되는 HoloLens.
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+        [<img src="images/zf-group.jpg" alt="ZF Group" width=350px>](https://customers.microsoft.com/en-us/story/1341470537472393895-zfgroup-gray-court-chapter-automotive-microsoft365)
+    :::column-end:::
+    :::column span="2":::
+        ### <a name="zf-builds-agile-facility-at-gray-court-with-microsoft-365-improves-operational-equipment-efficiency"></a>[ZF는 Microsoft 365로 Gray Court에 애자일 시설을 구축하여 운영 장비 효율을 개선합니다.](https://customers.microsoft.com/en-us/story/1341470537472393895-zfgroup-gray-court-chapter-automotive-microsoft365)
+        ZF Group의 직원은 Microsoft 365를 통해 실시간으로 지식을 공유하고, 문제를 해결하고, 커뮤니케이션할 수 있습니다. 
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+        [<img src="images/tokyu.png" alt="Tokyu Construction" width=350px>](https://customers.microsoft.com/en-us/story/1333933369626897988-tokyu-construction-manufacturing-azure-holo-lens-2)
+    :::column-end:::
+    :::column span="2":::
+        ### <a name="tokyu-construction-improves-engineering-precision-and-increases-productivity-with-azure-remote-rendering-on-hololens-2"></a>[Tokyu Construction은 HoloLens 2에 Azure Remote Rendering을 사용하여 엔지니어링 정밀도를 높이고 생산성을 개선합니다.](https://customers.microsoft.com/en-us/story/1333933369626897988-tokyu-construction-manufacturing-azure-holo-lens-2)
+        숙련된 아키텍처 엔지니어가 아니라면 2D 청사진을 보고 실제 건물 모양을 3D로 시각화하는 것이 어려울 수 있습니다. 
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+        [<img src="images/mda-hl2.jpg" alt="MDA" width=350px>](https://customers.microsoft.com/en-us/story/1377057233739728271-mda-manufacturing-hololens-canada)
+    :::column-end:::
+    :::column span="2":::
+        ### <a name="mda-takes-mixed-reality-into-orbit-with-hololens-2"></a>[MDA는 HoloLens 2로 혼합 현실을 구현합니다.](https://customers.microsoft.com/en-us/story/1377057233739728271-mda-manufacturing-hololens-canada)
+        MDA는 몰입형 혼합 현실 환경을 사용하여 엔지니어가 디자인을 시각화하고, 진단 문제를 가속화하고, 우주 비행사와 지상 통제관을 훈련시키도록 도와줍니다.
+    :::column-end:::
+:::row-end:::
+<br>
+
+---
 
 ## <a name="managing-hololens-2-in-your-organization"></a>조직에서 HoloLens 2 관리
+
 HoloLens 2에는 조직에서 HoloLens 디바이스를 더 쉽게 관리하고 사용할 수 있는 기능이 포함되어 있습니다. 일부 기능은 디바이스에 포함되어 있지만 다른 기능은 [HoloLens용 MDM(모바일 장치 관리)](hololens-mdm-configure.md) 또는 [Windows 구성 디자이너](app-deploy-provisioning-package.md#setup)를 사용하는 [프로비전 패키지](hololens-provisioning.md)를 통해 사용할 수 있습니다.
 
 | 다음 작업을 수행하려고 합니다. | 해결 방법 | Description |  
 |---------| ------------|------------|
 내 최종 사용자가 로그인하는 방법 관리 | [**ID**](hololens-identity.md) | HoloLens 2는 AAD(Azure Active Directory), MSA(Microsoft 계정) 및 로컬 계정과 같은 여러 종류의 사용자 ID를 지원합니다.  |
 | 사용자 데이터 암호화 | [**데이터 보안**](security-encryption-data-protection.md) | BitLocker 데이터 암호화는 HoloLens 2에서 사용되어 다른 Windows 디바이스와 동일한 수준의 보안 보호를 제공합니다. | 
-내 조직에서 Hololens 디바이스 관리 | [**Mobile Device Management**](hololens-mdm-configure.md) | 설정을 관리하고 설치할 앱을 선택하고 중앙 위치에서 여러 HoloLens 2 디바이스에 조직의 요구 사항에 맞는 보안 구성을 설정합니다. | 
+내 조직에서 HoloLens 디바이스 관리 | [**Mobile Device Management**](hololens-mdm-configure.md) | 설정을 관리하고 설치할 앱을 선택하고 중앙 위치에서 여러 HoloLens 2 디바이스에 조직의 요구 사항에 맞는 보안 구성을 설정합니다. | 
 |신규 사용자 및 디바이스에 대한 설정 시간 최소화 | [**Autopilot**](hololens2-autopilot.md) | Microsoft Endpoint Manager에서 OOBE(첫 실행 경험)를 구성하여 최종 사용자가 상호 작용을 거의 또는 전혀 하지 않고도 비즈니스용 디바이스를 준비할 수 있도록 합니다. |  
 | 내 디바이스에 대한 OS 업데이트 제어 | [**비즈니스용 Windows 업데이트**](hololens-updates.md#managing-updates-by-using-windows-update-for-business) | 비즈니스용 Windows 업데이트는 장치 및 장기 서비스 채널 지원에 제어된 운영 체제 업데이트를 제공합니다. |  
 | 특정 및 LOB 앱을 다운로드할 수 있도록 허용 |[**애플리케이션 관리**](app-deploy-overview.md) | 선택한 HoloLens 2 사용자 그룹의 앱을 배포하고 제어하는 방법을 선택합니다. | 
