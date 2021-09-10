@@ -18,11 +18,11 @@ appliesto:
 - HoloLens 2
 keywords: HoloLens 2, 상업용, 기능, mdm, 모바일 장치 관리, 키오스크 모드, 애플리케이션, ID, Bitlocker, 홍채, Windows Hello, Azure 지원, Autopilot, 혼합 현실, WDAC
 ms.openlocfilehash: 0c47eedad0d5a23249c48356765b74e4dbeac33e
-ms.sourcegitcommit: 58b124ba1722b2dff31d93723dd269df0f8319c4
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/04/2021
-ms.locfileid: "123483201"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427208"
 ---
 # <a name="hololens-2-capabilities-and-solutions"></a>HoloLens 2 기능 및 솔루션
 
