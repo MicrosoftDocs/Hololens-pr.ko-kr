@@ -13,11 +13,11 @@ manager: evmill
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: b4692468942da88877370864eda2ce173cc499af
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189803"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "124427286"
 ---
 # <a name="hololens-2-battery-and-charging"></a>HoloLens 2 배터리 및 충전
 
