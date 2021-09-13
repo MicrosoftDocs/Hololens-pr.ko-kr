@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 81b3231827fce9a2ae2d5e3105800685fedb917b
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124428693"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126034561"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>저 동적 모션 이동 플랫폼의 이동 플랫폼 모드
 

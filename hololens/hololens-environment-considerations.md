@@ -11,11 +11,11 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: 홀로그램 프레임, 시야, fov, 보정, 공간, 환경, 방법, HoloLens, 혼합 현실, 혼합 현실 헤드셋
 ms.openlocfilehash: 6976527d759e768fa5da72f96395a8b7b390cefd
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427840"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126034519"
 ---
 # <a name="hololens-environment-considerations"></a>HoloLens 환경 고려 사항
 
