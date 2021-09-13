@@ -12,11 +12,11 @@ ms.localizationpriority: medium
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: 06b7142be471d0db3f45812654288a33425abd60
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189871"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033631"
 ---
 # <a name="set-up-your-hololens-1st-gen"></a>HoloLens(1세대) 설정
 
@@ -38,7 +38,7 @@ HoloLens와 함께 제공되는 **편안한 액세서리(선택 사항)** 로 �
 
 > [!NOTE]
 >  
-> - HoloLens 처음 사용하는 [경우 Cortana](hololens-cortana.md) 이미 시작되어 안내할 준비가 된 것입니다(디바이스를 설정한 후에야 질문에 응답할 수 없음). Cortana 설정에서 언제든지 Cortana 해제할 수 있습니다.
+> - HoloLens 처음 사용하는 [경우 Cortana](hololens-cortana.md) 이미 사용 중이며 안내할 준비가 된 것입니다(디바이스를 설정한 후에야 질문에 응답할 수 없음). Cortana 설정에서 언제든지 Cortana 해제할 수 있습니다.
 > - 중국어 또는 일본어 버전의 HoloLens 전환하려면 PC에서 언어에 대한 빌드를 다운로드한 다음 HoloLens 설치해야 합니다. 자세한 내용은 [지역화된 버전의 HoloLens(1세대) 설치를](hololens1-install-localized.md)참조하세요.
 
 ## <a name="start-your-hololens-and-set-up-windows"></a>Hololens 시작 및 Windows 설정
@@ -67,9 +67,9 @@ HoloLens(1세대)는 눈동자 간 거리(IPD 또는 [보조 거리)를](https:/
 
 보정하는 동안 HoloLens 눈당 6개의 대상에 손가락을 맞춥니다. HoloLens 이 프로세스를 사용하여 눈의 올바른 IPD를 설정합니다. 새 사용자에 대해 보정을 업데이트하거나 조정해야 하는 경우 새 사용자는 설정 외부에서 보정 앱을 실행할 수 있습니다.
 
-![두 번째 단계의 IPD 손가락 맞춤 화면.](./images/ipd-finger-alignment-300px.jpg)
+![두 번째 단계에서 IPD 손가락 정렬 화면.](./images/ipd-finger-alignment-300px.jpg)
 
-*두 번째 단계에서 IPD 손가락 정렬 화면*
+*두 번째 단계의 IPD 손가락 맞춤 화면*
 
 축하합니다! 설치가 완료되었으며 HoloLens 사용을 시작할 수 있습니다.
 

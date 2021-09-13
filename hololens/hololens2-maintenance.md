@@ -15,12 +15,12 @@ keywords: ''
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 8b14ebd9639495d2b174678518b4562a2b3c85fa
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.openlocfilehash: 286e90fab7be0c4132cfab15306cc57c52607ccf
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189446"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033349"
 ---
 # <a name="hololens-2-cleaning-faq"></a>HoloLens 2 정리 FAQ
 
@@ -35,11 +35,11 @@ ms.locfileid: "123189446"
 
 **디바이스를 정리하려면**
 
-1. 건성 lint-free 마이크로Fiber 의류를 사용하여 디바이스 표면을 돋보기로 하여 모든 미세먼지를 제거합니다.
+1. 건성 lint-free 마이크로Fiber 의류를 사용하여 디바이스 표면을 돋보기에 사용하여 모든 미세먼지를 제거합니다.
 
    ![Brow Pad에서 보관하는 동안 정리합니다.](images/hl2-cleaning.png)
 
-2. 의료 "70%" 이옵폴로필 목을 사용하여 의류를 살짝 습한 다음, 모이스팅된 의류를 사용하여 디바이스 표면을 웁니다.
+2. 의료 "70%" 이옵폴로필 농도를 사용하여 의류를 살짝 습한 다음, 모이스팅된 의류를 사용하여 디바이스 표면을 웁니다.
 
 3. 디바이스를 완전히 시험해 봅시다.
 
@@ -50,9 +50,9 @@ ms.locfileid: "123189446"
 
 ## <a name="can-i-use-any-lens-cleaner-for-cleaning-the-hololens-visor"></a>HoloLens 바이저를 청소하는 데 렌즈 클리너를 사용할 수 있나요?
 
-아니요. 렌즈 클리너는 바이저의 클리핑에 대한 브랜드가 될 수 있습니다. 바이저를 정리하려면 다음 단계를 수행합니다.  
+아니요. 렌즈 클리너는 바이저의 진동에 대한 진동이 될 수 있습니다. 바이저를 정리하려면 다음 단계를 수행합니다.  
 
-1. 건성 lint-free 마이크로Fiber 의류를 사용하여 바이저를 완전히 초기화하여 모든 미세먼지를 제거합니다.
+1. 건성 lint-free 마이크로Fiber 의류를 사용하여 바이저를 균등하게 초기화하여 모든 미세먼지를 제거합니다.
 1. 의료 "70%" 이음파를 사용하여 의류를 약간 습한 다음, 바이저를 능동적으로 지웁니다.
 1. 바이저를 완전히 시험해 봅시다.
 
@@ -61,13 +61,13 @@ ms.locfileid: "123189446"
 예, 초기화에 은(는) 포함되지 않습니다. 비수소 초기화 를 사용하여 [HoloLens 표면을 지울](#hololens-2-use-and-care)수 있습니다.  
 
 > [!CAUTION]  
-> HoloLens 표면을 정리하기 위해 비움이 포함된 초기화는 사용하지 마십시오. 다른 어떤 것도 사용할 수 없는 중요한 상황에서는 지우기를 사용할 수 있습니다. 그러나 HoloLens visor 또는 다른 표면이 손상되었을 수 있습니다.
+> HoloLens 표면을 정리하기 위해 지우기를 포함하는 초기화는 사용하지 마십시오. 다른 어떤 것도 사용할 수 없는 중요한 상황에서는 지우기를 사용할 수 있습니다. 그러나 HoloLens visor 또는 다른 표면이 손상되었을 수 있습니다.
 
 ## <a name="can-i-use-alcohol-to-clean-the-device"></a>디바이스를 정리하는 데 사용할 수 있나요?
 
 예. "70%" 이음파일 식음료 및 물 솔루션을 사용하여 바이저를 비롯한 디바이스의 하드 표면을 정리할 수 있습니다. 이음파일과 물의 혼합을 사용하여 의류를 약간 습성화한 다음, 디바이스 표면을 섞어 주세요.
 
-## <a name="is-the-brow-pad-replaceable"></a>Brow Pad를 바꿀 수 있나요?
+## <a name="is-the-brow-pad-replaceable"></a>brow Pad를 바꿀 수 있나요?
 
 예. Brow Pad는 디바이스에 자기적으로 연결됩니다. 분리하려면 헤드 밴드에서 끌어와야 합니다. 바꾸려면 다시 위치에 맞도록 합니다.
 
@@ -77,15 +77,15 @@ ms.locfileid: "123189446"
 
 Brow Pad를 정리하려면 물과 빗자루를 사용하여 보습된 의류를 사용하여 이 패드를 초기화합니다. 다시 사용하기 전에 눈금 패드를 완전히 비워 주세요.
 
-## <a name="can-i-use-ultraviolet-uv-light-to-sanitize-the-device"></a>UV(UltraViolet) 광원을 사용하여 디바이스를 소독할 수 있나요?
+## <a name="can-i-use-ultraviolet-uv-light-to-sanitize-the-device"></a>UV(UltraViolet) 광원을 사용하여 디바이스를 sanitize할 수 있나요?
 
-강도 수준 0.5-0.6mW/cm 2에서 265nm에서 작동하고 오존을 내보내지 않는 UVC LED를 사용하는<sup>UVC</sup>불경한 은 HoloLens2를 sanitize하는 데 사용할 수 있습니다. 처리 및 노출 시간에 대한 제조업체의 사양을 따르세요.
+강도 수준 0.5-0.6mW/cm2에서 작동하고 오존을 내보내지 않는 UVC LED 또는 필터링된 Fluorescent UVC 광원을 사용하는 UVC 반경은 HoloLens 2 sanitize하는 데 사용할 수 있습니다. 처리 및 노출 시간에 대한 제조업체의 사양을 따르세요.
 
 > [!CAUTION]  
-> 높은 수준의 UV-A 및 UV-B 노출은 디바이스의 디스플레이 품질을 저하시키고 바이저 진동을 손상시킬 수 있습니다. UV-A 및 UV-B 배에 과도하게 노출하면 노출 기간 및 강도 순으로 다음과 같은 효과가 있습니다.
+> 높은 수준의 UV-A 및 UV-B 노출은 디바이스의 디스플레이 품질을 저하시키고 바이저 진동을 손상시킬 수 있습니다. UV-A 및 UV-B 광선에 대한 과다 노출은 노출 기간 및 강도 순으로 다음과 같은 영향을 미칩니다.
 >  
 > 1. Brow Pad 및 디바이스 클로저가 변색됩니다.
-> 1. 결함은 바이저 및 센서 창의 AR(반사 방지)에 나타납니다.
+> 1. 결함은 바이저와 센서 창에서 AR(반사 방지) 진동에 나타납니다.
 > 1. 결함은 바이저의 기본 재질과 센서 창에 나타납니다.
 > 1. 표시 성능이 저하되었습니다.
 

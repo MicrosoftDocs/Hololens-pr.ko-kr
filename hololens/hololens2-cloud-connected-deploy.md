@@ -15,11 +15,11 @@ manager: yannisle
 appliesto:
 - HoloLens 2
 ms.openlocfilehash: 519770badab9f260316fe4cfff4bf453a7c971a7
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189752"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033541"
 ---
 # <a name="deploy---cloud-connected-guide"></a>배포-클라우드 연결 가이드
 

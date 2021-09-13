@@ -17,11 +17,11 @@ ms.custom:
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: b6769c36f821ee3619ac9b62efd637ac561192bb
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123188851"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033106"
 ---
 # <a name="manage-custom-apps-for-hololens-1st-gen"></a>HoloLens(1세대)용 사용자 지정 앱 관리
 
@@ -71,7 +71,7 @@ HoloLens Microsoft Store 많은 기존 애플리케이션뿐만 아니라 HoloLe
    
 1. 솔루션을 빌드합니다.
 
-1. 개발 PC에서 HoloLens 앱을 배포하려면 원격 **컴퓨터** 를 선택합니다. HoloLens 기존 빌드가 이미 있는 경우 **예를** 선택하여 이 최신 버전을 설치합니다.  
+1. 개발 PC에서 HoloLens 앱을 배포하려면 **원격 컴퓨터** 를 선택합니다. HoloLens 기존 빌드가 이미 있는 경우 **예를** 선택하여 이 최신 버전을 설치합니다.  
 
    ![Visual Studio Microsoft HoloLens 앱에 대한 원격 컴퓨터 배포](images/vs2015-remotedeployment.jpg)  
    

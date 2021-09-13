@@ -1,7 +1,7 @@
 ---
-title: HoloLens 디바이스 및 홀로그램에 대한 질문과 대답
-description: 홀로그램을 HoloLens 또는 상호 작용하는 것에 대한 빠른 질문이 있나요?  이 문서에서는 빠른 답변과 더 많은 리소스를 제공합니다.
-keywords: hololens, faq, known issue, help
+title: HoloLens 장치 및 holograms에 대 한 질문과 대답
+description: HoloLens에 대 한 빠른 질문이 있거나 holograms와 상호 작용 하나요?  이 문서에서는 빠른 응답 및 추가 리소스를 제공 합니다.
+keywords: hololens, faq, 알려진 문제, 도움말
 ms.prod: hololens
 ms.sitesec: library
 author: Teresa-Motiv
@@ -18,136 +18,136 @@ manager: jarrettr
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: b20e5784711fdbae0602943cbad35a37f5be72fdd2a709ec8c04d95b05e75ada
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: ae44ae1d9a2e088a1ef746f4e929e8fae73880bf
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115664624"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033093"
 ---
 # <a name="holograms-and-interactions-troubleshooting"></a>홀로그램스 및 상호 작용 문제 해결
 
-이 문서에서는 홀로그램 배치, 공백 작업 및 홀로그램 관련 문제 보고와 관련된 문제를 해결합니다.
+이 문서에서는 holograms를 배치 하 고, 공백과 작업 하 고, holograms와 관련 된 문제를 보고 하는 문제를 해결 합니다.
 
-문제가 발생할 때마다 다음을 확인합니다.
-- [다시 시작하여](hololens-restart-recover.md) 이 문제를 해결하는지 확인합니다.
-- 문제를 해결하기 전에 HoloLens [요금이 청구되는지](hololens2-charging.md) 확인합니다(1시간 이상 청구됨). 
+언제 든 지 문제가 발생 하면 다음을 확인 합니다.
+- 작업을 [다시 시작](hololens-restart-recover.md) 하 여이 문제를 수정 하는지 확인 하십시오.
+- 문제를 해결 하기 전에 HoloLens [요금이 부과](hololens2-charging.md) 되는지 확인 합니다 (최소 1 시간 동안 요금이 부과 됨). 
 
 
-피드백 앱을 사용하여 문제에 대한 정보를 보내주세요. [ **시작** 메뉴](holographic-home.md)에서 피드백 앱을 찾을 수 있습니다. 
+피드백 앱을 사용 하 여 문제에 대 한 정보를 보내 주세요. [ **시작** 메뉴](holographic-home.md)에서 피드백 앱을 찾을 수 있습니다. 
 
-HoloLens 착용하는 방법에 대한 팁은 [조정 맞춤을](hololens2-setup.md#adjust-fit)참조하세요.
+HoloLens를 활용 하는 방법에 대 한 팁은 [맞춤 조정](hololens2-setup.md#adjust-fit)을 참조 하세요.
 
 <a id="list"></a>
-- [새 공백을 만들 수 없습니다.](#new-spaces-cant-be-created)
-- [공백을 식별하거나 로드할 수 없습니다.](#spaces-cant-be-identified-or-loaded)
-- [모든 공백을 삭제할 어떻게 할까요? 있나요?](#how-do-i-delete-all-spaces)
-- [홀로그램스 제대로 보이지 않거나 이동하고 있습니다.](#holograms-dont-look-right-or-are-moving-around)
-- ["공간 찾기" 메시지](#finding-your-space-message)
-- [예상 홀로그램이 내 공간에 표시되지 않습니다.](#expected-holograms-arent-showing-in-my-space)
-- [홀로그램을 배치하거나 이전에 배치된 홀로그램을 볼 수 없습니다.](#cant-place-holograms-or-see-previously-placed-holograms)
-- [홀로그램스 사라지거나 다른 홀로그램 또는 개체에 얽힌 경우](#holograms-disappear-or-are-encased-in-other-holograms-or-objects)
-- [홀로그램스 벽의 다른 쪽에 표시됩니다.](#holograms-are-appearing-on-the-other-side-of-a-wall)
-- [홀로그램을 벽 위에 놓은 후 부동으로 보입니다.](#after-placing-a-hologram-on-a-wall-it-seems-to-float)
-- [앱을 이동한 후 앱이 너무 가깝게 표시](#apps-appear-too-close-after-moving-them)
-- [불안정하거나 부정확한 홀로그램 관련 문제 보고](#reporting-issues-with-unstable-or-inexact-holograms)
+- [새 공간을 만들 수 없습니다.](#new-spaces-cant-be-created)
+- [공백을 식별 하거나 로드할 수 없습니다.](#spaces-cant-be-identified-or-loaded)
+- [모든 공백을 삭제 어떻게 할까요? 시겠습니까?](#how-do-i-delete-all-spaces)
+- [바로 보이지 않거나 이동 하지 홀로그램스](#holograms-dont-look-right-or-are-moving-around)
+- ["스페이스 찾기" 메시지](#finding-your-space-message)
+- [필요한 holograms는 내 공간에 표시 되지 않습니다.](#expected-holograms-arent-showing-in-my-space)
+- [Holograms를 배치 하거나 이전에 배치한 holograms을 확인할 수 없습니다.](#cant-place-holograms-or-see-previously-placed-holograms)
+- [홀로그램스 다른 Holograms 또는 개체에서 사라질 수 있습니다.](#holograms-disappear-or-are-encased-in-other-holograms-or-objects)
+- [벽의 반대쪽에 홀로그램스 표시 됩니다.](#holograms-are-appearing-on-the-other-side-of-a-wall)
+- [벽에 홀로그램을 배치 하면 부동으로 보입니다.](#after-placing-a-hologram-on-a-wall-it-seems-to-float)
+- [앱을 이동한 후 너무 가까이 표시](#apps-appear-too-close-after-moving-them)
+- [불안정 하거나 부정확 한 holograms 문제 보고](#reporting-issues-with-unstable-or-inexact-holograms)
 
-## <a name="new-spaces-cant-be-created"></a>새 공백을 만들 수 없습니다.
+## <a name="new-spaces-cant-be-created"></a>새 공간을 만들 수 없습니다.
 
-가장 가능성이 높은 문제는 스토리지 공간이 부족하다는 것입니다. [일부 디스크 공간을 확보한](hololens-troubleshooting.md#low-disk-space-error) 다음 다시 시도합니다.
-
-[목록으로 돌아가기](#list)
-
-## <a name="spaces-cant-be-identified-or-loaded"></a>공백을 식별하거나 로드할 수 없습니다.
-
-HoloLens 자동으로 있는 공간을 식별하고 로드할 수 없는 경우 다음 요소를 확인합니다.
-
-- Wi-Fi 연결되어 있는지 확인합니다.
-- 실내에 충분한 조명이 있는지 확인합니다.
-- 주변 환경이 크게 변경되지 않았는지 확인합니다.
-
-또한 시스템 공간 설정 **으로** 가서 공간을 수동으로 로드하거나 공간을 관리할 수도  >    >  **있습니다.**
+가장 가능성이 높은 문제는 저장소 공간이 부족 하다는 것입니다. [디스크 공간을 확보](hololens-troubleshooting.md#low-disk-space-error) 한 후 다시 시도 하십시오.
 
 [목록으로 돌아가기](#list)
 
-## <a name="how-do-i-delete-all-spaces"></a>모든 공백을 삭제할 어떻게 할까요? 있나요?
+## <a name="spaces-cant-be-identified-or-loaded"></a>공백을 식별 하거나 로드할 수 없습니다.
+
+HoloLens에서 자동으로 사용할 공간을 식별 하 고 로드할 수 없는 경우 다음 요소를 확인 합니다.
+
+- Wi-Fi에 연결 되어 있는지 확인 하세요.
+- 대화방에 충분 한 빛이 있는지 확인 합니다.
+- 환경에 대 한 중요 한 변경 내용이 없는지 확인 합니다.
+
+**설정**  >  **시스템**  >  **공간** 으로 이동 하 여 공간을 수동으로 로드 하거나 공간을 관리할 수도 있습니다.
+
+[목록으로 돌아가기](#list)
+
+## <a name="how-do-i-delete-all-spaces"></a>모든 공백을 삭제 어떻게 할까요? 시겠습니까?
 
 *제공 예정*
 
 [목록으로 돌아가기](#list)
 
-## <a name="holograms-dont-look-right-or-are-moving-around"></a>홀로그램스 제대로 보이지 않거나 이동하고 있습니다.
+## <a name="holograms-dont-look-right-or-are-moving-around"></a>바로 보이지 않거나 이동 하지 홀로그램스
 
-홀로그램이 제대로 보이지 않는 경우(예: 지터링 또는 깔끔하거나 그 위에 검은색 패치가 표시되는 경우) 다음 수정 사항 중 하나를 시도합니다.
+Holograms 적절 하지 않은 경우 (예: 떨림 또는 흔들리는 또는 그 위에 검정색 패치가 표시 되는 경우) 다음 해결 방법 중 하나를 시도해 보세요.
 
-- [디바이스 바이저를 정리하고 센서를](hololens1-hardware.md#care-and-cleaning) 차단하는 것이 없는지 확인합니다.
-- 직접 스로가 많지 않은 조명이 잘 켜진 공간에 있는지 확인합니다.
-- HoloLens 좀 더 완벽하게 스캔할 수 있도록 주변을 둘러보고 둘러보세요.
-- 홀로그램을 많이 배치한 경우 일부 홀로그램을 제거해 보세요.
+- [장치 센터를 청소](hololens1-hardware.md#care-and-cleaning) 하 고 어떤 것도 센서를 차단 하지 않는지 확인 합니다.
+- 직접 햇빛을 많이 사용 하지 않는 올바른 방에 있는지 확인 합니다.
+- HoloLens에서이를 보다 완벽 하 게 검색할 수 있도록 주변을 탐색 해 보세요.
+- Holograms을 많이 배치한 경우 일부를 제거해 보세요.
 
-여전히 문제가 있는 경우 보정 앱을 실행해 보세요. 이 앱은 홀로그램이 최상의 상태로 유지하도록 HoloLens 보정합니다. 이렇게 하려면 **설정**  >  **시스템**  >  **유틸리티 로** 이동합니다. **보정에서** **보정 열기를** 선택합니다.
-
-[목록으로 돌아가기](#list)
-
-## <a name="finding-your-space-message"></a>"공간 찾기" 메시지
-
-HoloLens 공간을 학습하거나 로드하는 경우 "공간 찾기"라는 간단한 메시지가 표시되었을 수 있습니다. 이 메시지가 몇 초 이상 표시되면 시작 메뉴 "여전히 공간을 찾고 있습니다."라는 다른 메시지가 표시됩니다.
-
-이러한 메시지는 HoloLens 공간을 매핑하는 데 문제가 있음을 의미합니다. 이 경우 앱을 열 수 있지만 사용자 환경에 홀로그램을 배치할 수는 없습니다.
-
-이러한 메시지가 자주 표시되는 경우 다음 수정 사항 중 하나 이상을 시도합니다.
-
-- 직접 스로가 많지 않은 조명이 잘 켜진 공간에 있는지 확인합니다.
-- 디바이스 바이저가 정리되어 있는지 확인합니다. [visor를 정리하는 방법을 알아봅니다.](hololens1-hardware.md#care-and-cleaning)
-- 강력한 Wi-Fi 신호가 있는지 확인합니다. Wi-Fi 또는 약한 Wi-Fi 신호가 없는 새 환경에 들어가면 HoloLens 공간을 찾을 수 없습니다. 설정   >  **네트워크 &amp; 인터넷**  >  **Wi-Fi로** 가서 Wi-Fi 연결을 확인합니다.
-- 더 느리게 이동해 보세요.
+여전히 문제가 발생 하는 경우 보정 앱을 실행 하려고 합니다. 이 앱은 사용자의 HoloLens을 보정 하 여 holograms을 최대한 활용 하는 데 도움을 줍니다. 이렇게 하려면 **설정**  >  **시스템**  >  **유틸리티** 로 이동 합니다. **보정** 아래에서 **보정 열기** 를 선택 합니다.
 
 [목록으로 돌아가기](#list)
 
-## <a name="expected-holograms-arent-showing-in-my-space"></a>예상 홀로그램이 내 공간에 표시되지 않습니다.
+## <a name="finding-your-space-message"></a>"스페이스 찾기" 메시지
 
-배치한 홀로그램이 표시되지 않거나 예상하지 못한 내용이 표시되는 경우 다음 수정 사항 중 하나 이상을 시도합니다.
+HoloLens에서 학습 하거나 공간을 로드 하는 경우 "공간을 찾고 있습니다." 라는 간단한 메시지가 표시 될 수 있습니다. 이 메시지가 몇 초 이상 표시 되 면 "공간을 찾고 있습니다." 라는 또 다른 메시지가 표시 되는 시작 메뉴 합니다.
 
-- 일부 조명을 켭니다. HoloLens 조명이 잘 켜진 공간에서 가장 잘 작동합니다.
-- 시스템 **설정** 홀로그램스 주변 홀로그램 제거로 이동하면 필요하지 않은  >    >    >  **홀로그램을 제거합니다.** 또는 필요한 경우 **모든 홀로그램 제거를 선택합니다.**
+이러한 메시지는 HoloLens 사용자의 공간을 매핑하는 데 문제가 있음을 의미 합니다. 이 경우 앱을 열 수는 있지만 사용자 환경에 holograms를 추가할 수는 없습니다.
+
+이러한 메시지가 자주 표시 되는 경우 다음 해결 방법 중 하나 이상을 시도 합니다.
+
+- 직접 햇빛을 많이 사용 하지 않는 올바른 방에 있는지 확인 합니다.
+- 장치 센터를 정리 해야 합니다. [센터를 정리 하는 방법을 알아봅니다](hololens1-hardware.md#care-and-cleaning).
+- 강력한 Wi-Fi 신호가 있는지 확인 합니다. Wi-Fi 또는 약한 Wi-Fi 신호를 포함 하지 않는 새 환경을 입력 하는 경우 HoloLens에서 사용자의 공간을 찾을 수 없습니다. **설정**  >  **Network &amp; Internet** wi-fi로 이동 하 여 Wi-Fi 연결을 확인  >  합니다.
+- 더 느리게 이동 해 보세요.
+
+[목록으로 돌아가기](#list)
+
+## <a name="expected-holograms-arent-showing-in-my-space"></a>필요한 holograms는 내 공간에 표시 되지 않습니다.
+
+사용자가 배치한 holograms 표시 되지 않거나 예기치 않은 내용이 표시 되는 경우 다음 해결 방법 중 하나 이상을 시도 합니다.
+
+- 일부 조명을 켭니다. HoloLens는 잘 켜진 공간에서 가장 잘 작동 합니다.
+- **설정** 시스템으로 이동 하 여 필요 하지 않은 holograms을 제거 하 여  >    >    >  **근처 holograms 홀로그램스 제거** 합니다. 또는 필요한 경우 **모두 제거 holograms** 를 선택 합니다.
 
   > [!NOTE]
-  > 공간의 레이아웃 또는 조명이 크게 변경되면 디바이스에서 공간을 식별하고 홀로그램을 표시하는 데 문제가 있을 수 있습니다.
+  > 공간의 레이아웃 또는 조명이 현저 하 게 변경 되 면 장치에서 사용자의 공간을 식별 하 고 holograms을 표시 하는 데 문제가 있을 수 있습니다.
 
 [목록으로 돌아가기](#list)
 
-## <a name="cant-place-holograms-or-see-previously-placed-holograms"></a>홀로그램을 배치하거나 이전에 배치된 홀로그램을 볼 수 없습니다.
+## <a name="cant-place-holograms-or-see-previously-placed-holograms"></a>Holograms를 배치 하거나 이전에 배치한 holograms을 확인할 수 없습니다.
 
-HoloLens 공간을 매핑하거나 로드할 수 없는 경우 제한 모드로 들어가고 홀로그램을 배치하거나 배치한 홀로그램을 볼 수 없습니다. 다음은 시도해 보기 위한 몇 가지 사항입니다.
+HoloLens 공간을 매핑하거나 로드할 수 없는 경우 제한 된 모드로 전환 되 고 holograms를 배치 하거나 holograms를 볼 수 없습니다. 다음은 시도해 볼 수 있는 몇 가지 사항입니다.
 
-- HoloLens 공간을 보고 매핑할 수 있도록 환경에 충분한 조명이 있는지 확인합니다.
-- 홀로그램을 배치하려는 위치에서 1~3미터 사이에 서 있습니다.
-- 홀로그램을 검은색 또는 반사 표면에 배치하지 마세요.
-- Wi-Fi 네트워크에 연결되어 있는지 확인합니다. Wi-Fi에 연결되지 않은 경우 HoloLens 알려진 공간을 식별하고 로드할 수 없습니다.
-- HoloLens 주변을 다시 검색할 수 있도록 방 주변을 둘러 봅니다. 이미 검사된 항목을 보려면 에어 탭을 눌러 매핑 메시 그래픽을 표시합니다.
-- 새 공간을 만들어야 하는 경우 Wi-Fi에 연결한 다음, HoloLens 다시 시작합니다.
-- 올바른 공간이 활성 상태인지 확인하거나 공간을 수동으로 로드하려면 **설정** 시스템 공간 으로  >    >  이동합니다.
-- 올바른 공간이 로드되고 여전히 문제가 있는 경우 공간이 손상될 수 있습니다. 이 문제를 해결하려면 공간을 선택한 다음, **제거를** 선택합니다. 공간을 제거한 후 HoloLens 주변을 매핑하고 새 공간을 만들기 시작합니다.
+- 사용자 환경에 충분 한 조명이 있는지 확인 하 여 공간을 보고 매핑할 수 HoloLens.
+- 홀로그램을 넣을 위치에서 1 ~ 3 미터 사이를 이동 합니다.
+- 검은색 또는 반사 표면에 holograms을 두지 않습니다.
+- Wi-Fi 네트워크에 연결 되어 있는지 확인 합니다. wi-fi에 연결 되지 않은 경우 HoloLens는 알려진 공간을 식별 하 고 로드할 수 없습니다.
+- 주변을 다시 검사할 수 있도록 방을 탐색 HoloLens. 이미 검사 된 항목을 보려면 마우스를 탭 하 여 매핑 메시 그래픽을 표시 합니다.
+- 새 공간을 만들어야 하는 경우 Wi-fi에 연결 하 고 HoloLens를 다시 시작 합니다.
+- 올바른 공간이 활성화 되어 있는지 확인 하거나 공간을 수동으로 로드 하려면 **설정**  >  **시스템**  >  **공간** 으로 이동 합니다.
+- 올바른 공간이 로드 되 고 문제가 여전히 발생 하는 경우 공간이 손상 된 것일 수 있습니다. 이 문제를 해결 하려면 공간을 선택 하 고 **제거** 를 선택 합니다. 공간을 제거한 후에는 HoloLens를 시작 하 여 환경을 매핑하고 새 공간을 만듭니다.
 
 [목록으로 돌아가기](#list)
 
-## <a name="holograms-disappear-or-are-encased-in-other-holograms-or-objects"></a>홀로그램스 사라지거나 다른 홀로그램 또는 개체에 얽힌 경우
+## <a name="holograms-disappear-or-are-encased-in-other-holograms-or-objects"></a>홀로그램스 다른 Holograms 또는 개체에서 사라질 수 있습니다.
 
-홀로그램에 너무 가까이 있으면 홀로그램을 복원하기 위해 일시적으로 &mdash; 사라집니다. 홀로그램에서 벗어나기만 하면 됩니다. 또한 여러 홀로그램을 가까이 배치한 경우 일부는 사라질 수 있습니다. 몇 가지를 제거해 보세요.
+홀로그램에 너무 가까이 있으면 홀로그램을 복원 하기 위해 일시적으로 사라지고 &mdash; 홀로그램에서 다른 곳으로 이동 합니다. 또한 여러 holograms 가까이 배치 하면 일부가 사라질 수 있습니다. 몇 가지를 제거해 보세요.
 
-홀로그램스 다른 홀로그램이나 벽과 같은 개체에 의해 차단되거나 둘러싸일 수도 있습니다. 이 경우 다음 수정 사항 중 하나를 시도합니다.
+다른 Holograms 또는 벽 등의 개체를 통해 홀로그램스를 차단 하거나 볼 수도 있습니다. 이 경우 다음 해결 방법 중 하나를 수행 합니다.
 
-- 홀로그램이 다른 홀로그램에 얽힌 경우, 캡슐된 홀로그램을 다른 위치로 이동합니다. 이렇게 하려면 **조정을** 선택한 다음, 길게 눌러 위치를 지정합니다.
-- 홀로그램이 벽으로 얽힌 경우 **조정을** 선택한 다음, 홀로그램이 나타날 때까지 벽 쪽으로 안내합니다. 길게 누운 다음 홀로그램을 벽 밖으로 끌어와서 내보냅니다.
-- 제스처를 사용하여 홀로그램을 이동할 수 없는 경우 음성을 사용하여 제거합니다. 홀로그램을 응시한 다음, "제거"라고 말합니다. 그런 다음 홀로그램을 다시 열고 새 위치에 배치합니다.
+- 홀로그램을 다른 홀로그램에 배치 하는 경우에는 encased 홀로그램을 다른 위치로 이동 합니다. 이렇게 하려면 **조정** 을 선택 하 고 길게를 눌러 위치를 선택 합니다.
+- 홀로그램이 벽에 있는 경우 **조정** 을 선택 하 고 홀로그램이 나타날 때까지 벽을 탐색 합니다. 길게 누른 다음 벽을 앞으로 또는 벽 밖으로 끌어옵니다.
+- 제스처를 사용 하 여 홀로그램을 이동할 수 없는 경우 음성을 사용 하 여 제거 합니다. 홀로그램을 응시 한 다음 "제거" 라고 말합니다. 그런 다음 홀로그램을 다시 열고 새 위치에 배치 합니다.
 
 [목록으로 돌아가기](#list)
 
 ## <a name="holograms-are-appearing-on-the-other-side-of-a-wall"></a>홀로그램스 벽의 반대쪽에 표시됩니다.
 
-벽과 매우 가깝거나 HoloLens 아직 벽에서 스캔하지 않은 경우 다음 방의 홀로그램을 볼 수 있습니다. 벽면을 스캔하려면 벽에서 1~3미터 사이에 서서 벽면을 응시합니다.
+벽과 매우 가깝거나 HoloLens 아직 벽면을 검사하지 않은 경우 다음 방의 홀로그램을 볼 수 있습니다. 벽면을 스캔하려면 벽에서 1~3미터 사이에 서서 벽면을 응시합니다.
 
-벽 근처에 있는 검은색 또는 반사 개체(예: 검은색 벽면 또는 무해한강 냉동)는 HoloLens 벽 스캔을 시도할 때 문제를 일으킬 수 있습니다. 이러한 개체가 있는 경우 벽의 다른 쪽을 스캔합니다.
+벽 근처에 있는 검은색 또는 반사 개체(예: 검은색 코로바 또는 무해한강 냉동)는 HoloLens 벽 스캔을 시도할 때 문제를 일으킬 수 있습니다. 이러한 개체가 있는 경우 벽의 다른 쪽을 스캔합니다.
 
 [목록으로 돌아가기](#list)
 
@@ -163,7 +163,7 @@ HoloLens 공간을 매핑하거나 로드할 수 없는 경우 제한 모드로 
 
 ## <a name="apps-appear-too-close-after-moving-them"></a>앱을 이동한 후 앱이 너무 가깝게 표시
 
-HoloLens 다른 각도에서 영역을 검사할 수 있도록 앱을 배치하는 영역을 살펴보고 살펴보십시오. [디바이스 바이저를 정리하는](hololens1-hardware.md#care-and-cleaning) 것도 도움이 될 수 있습니다.
+HoloLens 다양한 각도에서 영역을 검사할 수 있도록 앱을 배치하는 영역을 둘러보고 살펴보십시오. [디바이스 바이저를 정리하는](hololens1-hardware.md#care-and-cleaning) 것도 도움이 될 수 있습니다.
 
 [목록으로 돌아가기](#list)
 

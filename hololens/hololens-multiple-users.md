@@ -3,26 +3,33 @@ title: 여러 사람과 HoloLens 공유
 description: 여러 Azure Active Directory 계정이 나 단일 계정을 사용 하는 여러 사용자가 공유 하도록 HoloLens를 구성할 수 있습니다.
 ms.prod: hololens
 ms.sitesec: library
-author: scooley
-ms.author: scooley
+author: qianw211
+ms.author: v-qianwen
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 09/16/2019
+ms.date: 9/3/2021
 ms.reviewer: ''
-manager: laurawi
+manager: sekerawa
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 821ef2d17531226177e508b1428af82012c16406e9fbce3ed1a5617c767adfe8
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: e3acd2665e93e44bce2c5dad467c825dc768bfed
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115663080"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033913"
 ---
 # <a name="share-your-hololens-with-multiple-people"></a>여러 사람과 HoloLens 공유
 
-일반적으로 많은 사용자와 한 HoloLens를 공유 하거나 여러 사람이 HoloLens 장치 집합을 공유할 수 있습니다.  이 문서에서는 장치를 공유할 수 있는 여러 가지 방법을 설명 합니다.
+## <a name="overview"></a>개요
+기업은 종종 많은 공유 HoloLens 장치에 투자 합니다. HoloLens 사용 하는 방법은 개별 요구 사항에 따라 보드에서 유연 합니다. 몇 가지 다중 사용자 환경의 예는 다음과 같습니다. 
+
+- 요금이 청구 되 고 Dynamics 365 Guides 된 장치 이며 직원이 설정 앱을 열어 필요한 Wi-Fi를 조정할 수 있도록 허용 하지만 페이지 설정 표시 유형 정책은 설정 앱에서 사용할 수 있는 페이지 수를 제한 하는 데 사용 됩니다.
+- 원격 지원을 위한 장치 및 다른 회사에 임대 하는 기간 업무 앱입니다. 이러한 장치에는 앱 및 원격 지원만 포함 된 키오스크가 있습니다. WDAC는 설정 앱과 Microsoft Edge를 시작 하는 데 사용 됩니다. 장치를 여러 번의 이동에 대 한 완전 한 요금으로 유지 하기 위한 USB-C 배터리 팩이 포함 되어 있습니다.
+- 모든 장치가 Autopilot에 대해 설정 되 고 모든 회사 앱을 다운로드 합니다. 서로 다른 Azure AD 그룹을 대상으로 하는 몇 가지 다른 키오스크 프로필을 설정 했습니다. 각 사용자는 FIDO2 키를 사용 하 고 고유한 Azure AD 계정에 로그인 하 여 HoloLens에 로그인 하 고 맞춤식 환경으로 제공 됩니다.
+
+
 
 ## <a name="share-with-multiple-people-each-using-their-own-account"></a>각자의 계정을 사용 하 여 여러 사람과 공유
 
@@ -40,7 +47,7 @@ ms.locfileid: "115663080"
 
 HoloLens 사용 하기 위해 각 사용자는 다음 단계를 따릅니다.
 
-1. 다른 사용자가 장치를 사용 하 고 있는 경우 다음 중 하나를 수행 합니다.
+1. 다른 사용자가 장치를 사용 하 고 있는 경우 다음 옵션 중 하나를 선택 합니다.
    - 전원 단추를 한 번 눌러 대기로 이동한 다음 전원 단추를 다시 클릭 하 여 잠금 화면으로 돌아갑니다.
    - HoloLens 2 사용자는 시작 메뉴에서 사용자 타일을 선택 하 여 현재 사용자를 로그 아웃할 수 있습니다.
 

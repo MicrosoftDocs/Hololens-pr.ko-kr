@@ -14,11 +14,11 @@ manager: laurawi
 appliesto:
 - HoloLens (1st gen)
 ms.openlocfilehash: d5cf7385dd0a53c6b17f79e16364e84ab6ec867d
-ms.sourcegitcommit: f04f631fbe7798a82a57cc01fc56dc2edf13c5f2
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123189939"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033780"
 ---
 # <a name="hololens-1st-gen-bitlocker-encryption"></a>HoloLens(1세대) BitLocker 암호화
 
@@ -48,7 +48,7 @@ MDM(모바일 장치 관리) 공급자를 사용하여 디바이스 암호화가
 
 ### <a name="create-a-provisioning-package-that-upgrades-the-windows-holographic-edition-and-enables-encryption"></a>Windows Holographic 버전을 업그레이드하고 암호화를 사용하도록 설정하는 프로비전 패키지 만들기
 
-1. [HoloLens 대한 프로비전 패키지를 만듭니다.](hololens-provisioning.md)
+1. [HoloLens 대한 프로비저닝 패키지를 만듭니다.](hololens-provisioning.md)
 1. **런타임 설정** 정책 보안 로 이동하여  >    >   **RequireDeviceEncryption을** 선택합니다.
 
     ![디바이스 암호화 설정을 '예'로 구성해야 합니다.](images/device-encryption.png)
@@ -99,6 +99,6 @@ MDM(모바일 장치 관리) 공급자를 사용하여 디바이스 암호화가
 
 암호화는 HoloLens 자동입니다. 디바이스 암호화 상태를 확인하려면 다음을 수행합니다.
 
-- HoloLens **설정**  >  **시스템**  >  **정보로** 이동합니다. 디바이스가 **암호화된** 경우 **BitLocker를** 사용할 수 있습니다. 
+- HoloLens 설정   >  **시스템**  >  **정보로** 이동합니다. 디바이스가 **암호화된** 경우 **BitLocker를** 사용할 수 있습니다. 
 
-    ![BitLocker를 사용하도록 설정된 화면 정보입니다.](images/about-encryption.png)
+    ![BitLocker 사용이 표시된 화면 정보입니다.](images/about-encryption.png)

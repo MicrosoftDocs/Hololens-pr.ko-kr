@@ -14,12 +14,12 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: 019700c7e35f31c234c9fe69870cae54b3364b631253c37a17d8eaa0fe3053bd
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: ca87f34718319d489b69ba33ad24731628d87fac
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665236"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033061"
 ---
 # <a name="app-management-overview"></a>앱 관리: 개요
 
@@ -27,7 +27,7 @@ ms.locfileid: "115665236"
 
 ## <a name="mobile-device-management-mdm"></a>MDM(모바일 디바이스 관리)
 
-MDM 솔루션을 사용하면 IT 의사 결정자와 관리자가 사내, 사업장 앱을 비공개로 자동 설치(푸시)하거나 사용자 그룹을 위해 스토어를 통해 앱을 구매할 수 있습니다. HoloLens 디바이스는 [애플리케이션 관리를](app-deploy-intune.md)위해 Microsoft Endpoint Manager(Intune)에서 가장 잘 작동합니다. 또한 Intune은 회사 포털 다운로드 가능한 환경을 통해 IT 관리 앱에 대한 세밀한 제어를 사용자에게 제공합니다.
+MDM 솔루션을 사용하면 IT 의사 결정자와 관리자가 사내, 사업체 앱을 비공개로 자동 설치(푸시)하거나 스토어를 통해 사용자 그룹을 위해 앱을 구매할 수 있습니다. HoloLens 디바이스는 [애플리케이션 관리를](app-deploy-intune.md)위해 Microsoft Endpoint Manager(Intune)에서 가장 잘 작동합니다. 또한 Intune은 회사 포털 다운로드 가능한 환경을 통해 IT 관리 앱에 대한 세밀한 제어를 사용자에게 제공합니다.
 
 > [!NOTE]
 > 다음 지침은 Intune을 사용하여 애플리케이션을 관리하려는 사용자를 위한 것입니다. 애플리케이션 및 디바이스 관리에 Intune을 사용하는 것이 좋습니다.
@@ -42,7 +42,7 @@ MDM(모바일 장치 관리)은 다음을 위해 적용됩니다.
 
 ## <a name="microsoft-store-for-business"></a>비즈니스용 Microsoft Store
 
-[이 비즈니스용 Microsoft Store](app-deploy-store-business.md) 비즈니스의 IT 의사 결정자와 관리자가 무료 및 유료 앱을 찾고, 획득하고, 관리하고, 배포할 수 있도록 합니다. IT 관리자는 하나의 인벤토리에서 Microsoft Store 앱 및 프라이빗 사업장 앱을 관리하고 필요에 따라 라이선스를 할당하고 다시 사용할 수 있습니다. 자세한 내용은 [비즈니스용 Microsoft Store 사용하기 위한 필수 구성요약을](/microsoft-store/prerequisites-microsoft-store-for-business)방문하세요.
+[이 비즈니스용 Microsoft Store](app-deploy-store-business.md) 비즈니스의 IT 의사 결정자와 관리자에게 무료 및 유료 앱을 찾고, 획득하고, 관리하고, 배포할 수 있도록 합니다. IT 관리자는 하나의 인벤토리에서 Microsoft Store 앱 및 프라이빗 사업장 앱을 관리하고 필요에 따라 라이선스를 할당하고 다시 사용할 수 있습니다. 자세한 내용은 [비즈니스용 Microsoft Store 사용하기 위한 필수 구성요약을](/microsoft-store/prerequisites-microsoft-store-for-business)방문하세요.
 
 비즈니스용 Microsoft Store 적용할 수 있는 내용은 다음과 같습니다.
 
@@ -51,7 +51,7 @@ MDM(모바일 장치 관리)은 다음을 위해 적용됩니다.
 * 사용자가 수동으로 앱 다운로드
 * 자동 업데이트
 
-## <a name="microsoft-store-apps"></a>Microsoft Store 앱
+## <a name="microsoft-store-apps"></a>Microsoft 스토어 앱
 
 이 Microsoft Store 기업에서 IT 의사 결정자와 관리자에게 퍼블릭 앱을 찾고, 획득하고, 관리하고, 배포할 수 있도록 합니다.
 
@@ -76,7 +76,7 @@ MDM(모바일 장치 관리)은 다음을 위해 적용됩니다.
 
 ## <a name="install-apps-on-hololens-2-via-app-installer"></a>앱 설치 관리자 통해 HoloLens 2 앱 설치
 
-[앱 설치 관리자](app-deploy-app-installer.md) 사용하면 로컬 디바이스에 앱을 설치하거나 HoloLens 다른 앱 설치 방법에 익숙하지 않은 다른 사용자와 앱을 공유하는 데 간단한 환경을 사용할 수 있습니다. 개발자 모드를 사용하도록 설정하거나 장치 포털 사용하지 않고도 이 작업을 수행할 수 있습니다. 완전히 빌드된 앱을 배포하는 간단한 방법입니다. 단순히 HoloLens 사용하여 앱을 다른 사용자에게 시연하려는 경우 또는 앱을 배포하려는 경우 이 방법이 쉽게 작동합니다.
+[앱 설치 관리자](app-deploy-app-installer.md) 사용하면 로컬 디바이스에 앱을 설치하거나 HoloLens 다른 앱 설치 방법에 익숙하지 않은 다른 사용자와 앱을 공유하는 간단한 환경을 사용할 수 있습니다. 개발자 모드를 사용하도록 설정하거나 장치 포털 사용하지 않고도 이 작업을 수행할 수 있습니다. 완전히 빌드된 앱을 배포하는 간단한 방법입니다. HoloLens 사용하여 앱을 다른 사용자에게 데모하려는 경우 또는 앱을 배포하려는 경우와 관계없이 이 방법은 쉽게 작동합니다.
 
 앱 설치 관리자 통해 설치하는 것은 다음을 위해 적용됩니다.
 

@@ -15,15 +15,15 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: a368c622c137374ea9cc544490d3492fa9d3f8c1
-ms.sourcegitcommit: 749d617f3f0ce3e6363ff6cd1a03f87b9280f418
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122979358"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126032933"
 ---
 # <a name="enroll-hololens-in-mdm"></a>MDM에 HoloLens 등록
 
-Microsoft Intune 같은 솔루션을 사용하여 여러 [Microsoft HoloLens](/intune/windows-holographic-for-business)디바이스를 동시에 관리할 수 있습니다. 설정을 관리하고, 앱을 선택하여 조직의 요구에 맞는 보안 구성을 설치하고 설정할 수 있습니다. [Microsoft Intune, Windows Holographic에서](/intune/windows-holographic-for-business) [지원되는 CSP(구성 서비스 공급자)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens)및 Windows Holographic for Business [에서 지원하는 정책을](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies)Windows Holographic을 실행하는 디바이스 관리를 참조하세요.
+Microsoft Intune 같은 솔루션을 사용하여 여러 [Microsoft HoloLens](/intune/windows-holographic-for-business)디바이스를 동시에 관리할 수 있습니다. 설정을 관리하고, 앱을 선택하여 조직의 요구에 맞는 보안 구성을 설치하고 설정할 수 있습니다. Microsoft Intune, Windows [Holographic에서 지원되는 CSP(구성 서비스 공급자)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference#hololens)및 Windows Holographic for Business [에서 지원하는 정책을](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#hololenspolicies)Windows [Holographic을 실행하는 디바이스 관리를](/intune/windows-holographic-for-business)참조하세요.
 
 > [!NOTE]
 > VPN, Bitlocker 및 키오스크 모드 기능을 포함한 MDM(모바일 디바이스 관리)은 [Windows Holographic for Business 로 업그레이드할](hololens1-upgrade-enterprise.md)때만 사용할 수 있습니다.
@@ -40,7 +40,7 @@ OOBE 또는 로그인 후 선택한 [ID](hololens-identity.md) 유형에 따라 
     - Azure AD의 경우 [자동 MDM 등록은](hololens-enroll-mdm.md#auto-enrollment-in-mdm) Azure AD가 등록 URL로 구성된 경우에만 발생합니다.
 
 - ID가 Azure AD이고 디바이스가 할당된 특정 구성 프로필이 있는 Intune MDM 서버에 미리 등록된 경우 OOBE 중에 Azure AD-Join [및 자동 MDM 등록이](hololens-enroll-mdm.md#auto-enrollment-in-mdm) 발생합니다.
-    - [Autopilot flow](hololens2-autopilot.md) Available in [19041.1103 이상](hololens-release-notes.md#windows-holographic-version-2004)빌드라고도 합니다.
+    - [Autopilot 흐름이라고도](hololens2-autopilot.md) [하며, 19041.1103 이상에서는 를 빌드합니다.](hololens-release-notes.md#windows-holographic-version-2004)
 
 
 - ID가 MSA인 경우 **설정 앱**  ->  **액세스 작업 또는 학교**  ->  **커넥트** 단추를 사용하세요.
@@ -48,7 +48,7 @@ OOBE 또는 로그인 후 선택한 [ID](hololens-identity.md) 유형에 따라 
 - ID가 로컬 사용자인 경우 디바이스 관리 링크에서만 **설정 앱** 액세스  ->  **작업 또는 학교**  ->  **등록을** 사용하세요.
     - 순수 MDM 등록 흐름이라고도 합니다.
 
-디바이스가 MDM 서버에 등록되면 이제 설정 앱은 디바이스가 디바이스 관리에 등록되었다는 것을 반영합니다.
+디바이스가 MDM 서버에 등록되면 이제 디바이스가 디바이스 관리에 등록되었다는 설정 앱이 반영됩니다.
 
 ## <a name="auto-enrollment-in-mdm"></a>MDM의 자동 등록
 
@@ -64,8 +64,8 @@ OOBE 또는 로그인 후 선택한 [ID](hololens-identity.md) 유형에 따라 
 
 디바이스가 Azure AD 계정 또는 Autopilot에 등록된 경우 Intune에서 등록을 취소할 수 없습니다. Azure AD에서 HoloLens 조인을 해제하거나 Azure AD 테넌트에서 다른 테넌트로 다시 조인하려는 경우 디바이스를 [다시 설정/리플래시해야](hololens-recovery.md#reset-the-device) 합니다.
 
-디바이스가 작업 계정을 추가한 MSA 계정 또는 디바이스 관리에만 등록된 로컬 계정에서 등록된 경우 디바이스 등록을 취소할 수 있습니다. 시작 메뉴 연 **다음, 설정 앱**  ->  **액세스 작업 또는 학교**  ->  *사용자계정* 연결  ->  **끊기** 단추를 선택합니다.
+디바이스가 작업 계정을 추가한 MSA 계정 또는 디바이스 관리에만 등록된 로컬 계정에서 등록된 경우 디바이스 등록을 취소할 수 있습니다. 시작 메뉴 연 **다음, 앱**  ->  **액세스 작업 또는 학교**  ->  *사용자계정* 연결  ->  **끊기** 단추를 설정 선택합니다.
 
 ## <a name="ensure-that-mdm-enrollment-isnt-blocked-for-windows-devices"></a>Windows 디바이스에 대해 MDM 등록이 차단되지 않았는지 확인합니다.
 
-등록에 성공하려면 HoloLens 디바이스가 등록할 수 있는지 확인해야 합니다. HoloLens Windows 디바이스로 간주되므로 배포를 차단할 수 있는 등록 제한이 필요하지 않습니다. [이 제한 사항 목록을 검토하고](/mem/intune/enrollment/enrollment-restrictions-set) 디바이스를 등록할 수 있는지 확인합니다.
+등록에 성공하려면 HoloLens 디바이스가 등록할 수 있는지 확인해야 합니다. HoloLens는 Windows 디바이스로 간주되므로 배포를 차단할 수 있는 등록 제한이 없어야 합니다. [이 제한 목록을 검토](/mem/intune/enrollment/enrollment-restrictions-set)하고 디바이스를 등록할 수 있는지 확인하세요.

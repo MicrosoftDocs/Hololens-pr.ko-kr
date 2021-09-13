@@ -1,7 +1,7 @@
 ---
 title: 배포 가이드 – Dynamics 365 Guides 통해 회사 연결 HoloLens 2 - 유지 관리
 description: Dynamics 365 Guides 사용하여 회사 연결된 네트워크를 통해 HoloLens 2 디바이스를 유지 관리하는 방법을 알아봅니다.
-keywords: HoloLens, 관리, 회사 연결, Dynamics 365 Guides, AAD, Azure AD, MDM, 모바일 장치 관리
+keywords: HoloLens, 관리, 회사 연결, Dynamics 365 Guides, AAD, Azure AD, MDM, Mobile 장치 관리
 author: joyjaz
 ms.author: v-jjaswinski
 ms.reviewer: aboeger
@@ -14,12 +14,12 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2649e370e98747562591c031b8ae262674c831e071f4ef228557dda66d2dc768
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: 0176e816f167499574607bc16c8fbd6bde757daf
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115660262"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033433"
 ---
 # <a name="maintain---corporate-connected-guide"></a>유지 관리 - 회사 연결 가이드
 
@@ -27,7 +27,7 @@ ms.locfileid: "115660262"
 
 Microsoft는 IT 관리자에게 디바이스 그룹에 업데이트를 배포하고 업데이트를 설치하기 위한 유지 관리 기간 정의 기능과 같은 추가 Windows 업데이트 중심 관리 기능을 제공하도록 비즈니스용 Windows 업데이트를 설계했습니다.
 
-업데이트를 관리하는 한 가지 인기 있는 방법은 30일의 기능 지연을 수행하는 것입니다. 이를 통해 관리자는 새로운 기능을 업데이트하고 미리 볼 수 있으며, 직접 지식을 얻고 지원 센터에게 새로운 변경 내용을 알릴 수 있습니다.
+업데이트를 관리하는 인기 있는 방법 중 하나는 30일의 기능 지연을 수행하는 것입니다. 이를 통해 관리자는 새로운 기능을 업데이트하고 미리 볼 수 있으며, 직접 지식을 얻고 지원 센터에게 새로운 변경 내용을 알릴 수 있습니다.
 
 작업 시간 외에 [업데이트되도록](/hololens/hololens-updates)예약된 일, 예약된 시간 및 디바이스에서 활성 시간 설정을 포함하여 HoloLens 업데이트를 관리하는 방법을 알아봅니다.
 
@@ -48,7 +48,7 @@ LOB 앱은 Intune에 추가된 것과 동일한 방식으로 업데이트할 수
 
 ## <a name="development-plan"></a>개발 계획
 
-디바이스가 성공적으로 등록되면 이제 더 많은 LOB 앱을 디바이스에 배포할 준비가 되었습니다. 이 가이드의 기간 동안 샘플 앱을 사용하지만 조직의 요구에 맞게 빌드된 사용자 지정 앱을 사용할 가능성이 더 높습니다.
+디바이스가 성공적으로 등록되면 이제 디바이스에 더 많은 LOB 앱을 배포할 준비가 되었습니다. 이 가이드의 기간 동안 샘플 앱을 사용하지만 조직의 요구에 맞게 빌드된 사용자 지정 앱을 사용할 가능성이 더 높습니다.
 
 LOB 앱이 이미 있는 경우 [MDM을 통해 앱을 배포할](/hololens/app-deploy-intune)준비가 된 것입니다. 다른 방법을 원하는 경우 HoloLens 2 대한 [애플리케이션 배포 개요를](/hololens/app-deploy-overview) 검토하여 디바이스에 LOB 앱을 배포하는 방법에 대해 자세히 알아보세요.
 
@@ -56,7 +56,7 @@ LOB 앱이 이미 있는 경우 [MDM을 통해 앱을 배포할](/hololens/app-d
 
 ## <a name="support-plan"></a>지원 플랜
 
-지원 플랜은 훌륭한 것입니다. HoloLens 디바이스에서 등록 프로세스 문제 해결에 대해 학습된 사용자 또는 그룹이 있고 조직 내에서 HoloLens 디바이스를 일반적으로 사용하는 것도 유용합니다. 사용자가 문제를 더 빠르게 해결할 수 있도록 에스컬레이션 프로세스가 이 순서와 비슷한 방식으로 처리되는 것이 좋습니다.
+지원 플랜은 훌륭한 것입니다. HoloLens 디바이스에서 등록 프로세스 문제를 해결하는 데 학습된 사용자 또는 그룹이 있고 조직 내의 HoloLens 디바이스를 일반적으로 사용하는 것도 유용합니다. 사용자가 문제를 더 빠르게 해결할 수 있도록 에스컬레이션 프로세스가 이 순서와 비슷한 방식으로 처리되는 것이 좋습니다.
 
 1. 지원 센터.
 2. HoloLens 전문가 팀
@@ -65,7 +65,7 @@ LOB 앱이 이미 있는 경우 [MDM을 통해 앱을 배포할](/hololens/app-d
 
 ## <a name="device-management"></a>디바이스 관리
 
-이 가이드에서는 MDM(모바일 장치 관리) 설정에 대해 설명했으며, 이를 사용하여 일부 디바이스 구성을 설정하고 설정을 적용하여 Wi-Fi 인증서 및 프록시 측면에서 액세스를 허용합니다. 그러나 MDM을 사용하여 CSP 및 정책을 통해 디바이스 제한을 적용할 수도 있습니다.
+이 가이드에서는 MDM(모바일 장치 관리) 설정에 대해 설명한 후 이를 사용하여 일부 디바이스 구성을 설정하고 설정을 적용하여 Wi-Fi 인증서 및 프록시 측면에서 액세스를 허용합니다. 그러나 MDM을 사용하여 CSP 및 정책을 통해 디바이스 제한을 적용할 수도 있습니다.
 
 대부분의 경우 디바이스에는 Bluetooth, VPN, USB 또는 카메라 또는 마이크에 대한 액세스 해제와 같은 연결 제한이 있을 수 있습니다. 이러한 관심 사항이 있는 경우 [일반적인 디바이스 제한 페이지](/hololens/hololens-common-device-restrictions)를 읽어 보시기 바랍니다.
 

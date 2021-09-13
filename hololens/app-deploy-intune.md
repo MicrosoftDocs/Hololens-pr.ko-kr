@@ -17,18 +17,18 @@ manager: yannisle
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f1c178c940224ed3cd07c58b886b176108614caf7a8463af089e2f2357f45553
-ms.sourcegitcommit: f8e7cc2fbdcdf8962700fd50b9c017bd83d1ad65
+ms.openlocfilehash: b192732f5e7edffaa1d0ab081454e4034c416191
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115665253"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033058"
 ---
 # <a name="intune--company-portal"></a>Intune 및 회사 포털
 
-MDM(모바일 장치 관리)을 사용하면 [Microsoft Endpoint Manager(Intune)를](/intune/windows-holographic-for-business) 통해 사용자 지정 앱을 사용하여 HoloLens 디바이스에 직접 배포할 수 있습니다. Microsoft Intune은 MDM(모바일 디바이스 관리) 및 MAM(모바일 응용 프로그램 관리)에 중점을 둔 클라우드 기반 서비스입니다. Intune은 Microsoft의 [Enterprise Mobility + Security(EMS) 제품군](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)에 포함되어 있으므로 사용자는 조직 데이터를 보호하면서 생산성을 높일 수 있습니다. Intune에 대한 자세한 내용은 [Intune이란?을](/mem/intune/fundamentals/what-is-intune)읽어보세요.
+MDM(모바일 장치 관리)을 사용하면 [Microsoft Endpoint Manager(Intune)를](/intune/windows-holographic-for-business) 통해 사용자 지정 앱을 사용하여 HoloLens 디바이스에 직접 배포할 수 있습니다. Microsoft Intune은 MDM(모바일 디바이스 관리) 및 MAM(모바일 응용 프로그램 관리)에 중점을 둔 클라우드 기반 서비스입니다. Intune은 Microsoft의 [Enterprise Mobility + Security(EMS) 제품군](https://www.microsoft.com/microsoft-365/enterprise-mobility-security)에 포함되어 있으므로 사용자는 조직 데이터를 보호하면서 생산성을 높일 수 있습니다. Intune에 대한 자세한 내용은 [Intune이란?을 읽어보세요.](/mem/intune/fundamentals/what-is-intune)
 
-## <a name="setup"></a>설치 프로그램
+## <a name="setup"></a>설정
 
 1. 앱을 사업 분야에 업로드 사용자 지정 앱을 Intune 테넌트로 업로드합니다. 앱 [관리 Enterprise](/windows/client-management/mdm/enterprise-app-management)참조하세요.
 
@@ -39,7 +39,7 @@ MDM(모바일 장치 관리)을 사용하면 [Microsoft Endpoint Manager(Intune)
 
 ## <a name="assignment-types"></a>할당 형식
 
-등록 후 디바이스에 앱을 자동으로 설치하려면 해당 그룹에 **대해 필수를** 선택해야 합니다.
+등록 후 디바이스에 앱을 자동으로 설치하려면 해당 그룹에 대해 **필수를** 선택해야 합니다.
 회사 포털을 통해 등록된 디바이스에 앱을 다운로드할 수 있도록 하려면 **등록된 디바이스에 사용 가능을** 선택합니다.
 
 ## <a name="end-user-experience"></a>최종 사용자 환경
@@ -50,7 +50,7 @@ Intune에서 구성을 설정하면 최종 사용자가 선택한 앱을 받을 
 
 1. 테넌트에서 디바이스를 등록합니다.
 2. 디바이스가 등록을 완료하면 디바이스에서 앱을 받아야 합니다.
-3. 앱이 즉시 표시되지 않으면 **설정**  >    >  **계정회사 또는 학교**  >  *계정* 정보로 이동하고 아래로 스크롤하여 설치된 앱 상태에 대한 정보를 확인합니다.
+3. 앱이 즉시 표시되지 않는 경우 **설정**  >    >  **계정회사 또는 학교**  >  *계정* 정보로 이동하고 아래로 스크롤하여 설치된 앱 상태에 대한 정보를 확인합니다.
 
 회사 포털 통해 앱에 액세스하는 방법:
 

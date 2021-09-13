@@ -18,11 +18,11 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 ms.openlocfilehash: e856ac74e959743e8d05ea6acf583700a6450373
-ms.sourcegitcommit: 37611ac0a4efaf69816a734e16b763c810655f1a
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123411347"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126033202"
 ---
 # <a name="set-up-hololens-as-a-kiosk"></a>HoloLens를 키오스크로 설정
 
