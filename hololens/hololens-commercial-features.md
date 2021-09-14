@@ -17,12 +17,12 @@ manager: skerewa
 appliesto:
 - HoloLens 2
 keywords: HoloLens 2, 상업용, 기능, mdm, 모바일 장치 관리, 키오스크 모드, 애플리케이션, ID, Bitlocker, 홍채, Windows Hello, Azure 지원, Autopilot, 혼합 현실, WDAC
-ms.openlocfilehash: 0c47eedad0d5a23249c48356765b74e4dbeac33e
-ms.sourcegitcommit: 05537014d27d9cb60d5485ce93654371d914d5e3
+ms.openlocfilehash: aef0bfd8672464eb71d147eeffa3e0ea245dbbd0
+ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "124427208"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126034255"
 ---
 # <a name="hololens-2-capabilities-and-solutions"></a>HoloLens 2 기능 및 솔루션
 
@@ -77,7 +77,7 @@ HoloLens 2가 강력한 이유는 무엇입니까?
     :::column-end:::
     :::column span="2":::
         ### <a name="sheba-medical-center-uses-microsofts-hololens-for-ventilators-training"></a>[Sheba Medical Center는 산소 호흡기 교육에 Microsoft의 HoloLens를 사용합니다.](https://customers.microsoft.com/en-us/story/1388628932382960935-sheba-health-provider-azure-en-israel)
-        응급 상황 의료 교육 서비스에 사용되는 HoloLens.
+        Sheba Medical Center의 직원은 HoloLens를 사용하여 코로나19 대유행 기간 동안 수백 명이 배치한 인공호흡기 사용 방법에 대해 간호사 및 기타 지원 직원을 교육했습니다.
     :::column-end:::
 :::row-end:::
 
