@@ -76,8 +76,6 @@
 ### [네트워크 보안](security-network-security.md)
 ### [보안 엔지니어링](security-engineering.md)
 ### [HoloLens 2 개인 정보 및 데이터 보호](hololens2-privacy.md)
-## 디바이스 관리
-### [MDM을 사용하여 HoloLens 디바이스 관리](hololens-mdm-configure.md)
 ## 디바이스 등록
 ### [MDM에 HoloLens 등록](hololens-enroll-mdm.md)
 ### [HoloLens 2용 Windows Autopilot](hololens2-autopilot.md) 
@@ -90,6 +88,7 @@
 ### [앱 설치 관리자](app-deploy-app-installer.md)
 ## 정책(CSP)
 ### [CSP 및 디바이스 관리 구성 개요](hololens-csp-policy-overview.md)
+### [MDM을 사용하여 HoloLens 디바이스 관리](hololens-mdm-configure.md)
 ### [프로비전 패키지를 사용하여 HoloLens 구성](hololens-provisioning.md)
 ### [일반적인 디바이스 제한 사항](hololens-common-device-restrictions.md)
 ### [HoloLens를 키오스크로 설정](hololens-kiosk.md)
