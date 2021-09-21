@@ -14,12 +14,12 @@ appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
 keywords: 보정, 편안함, 시각적 개체, 품질, ipd, HoloLens, Windows Mixed Reality, VR 헤드셋
-ms.openlocfilehash: b3d917c71ac7441aeaf8dcbc25748ee07b9fbfa3
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: cdeef216cbf6d1fb165737ae194071c60b31146a
+ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034242"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127833559"
 ---
 # <a name="improve-visual-quality-and-comfort"></a>시각적 품질과 편안함 개선
 
@@ -37,8 +37,7 @@ HoloLens 2는 사용자에게 다음과 같은 상황에서 장치를 보정하�
 - 사용자가 이전에 보정 프로세스에서 옵트아웃함
 - 사용자가 마지막으로 장치를 사용했을 때 보정 프로세스에 실패함
 - 사용자가 보정 프로필을 삭제함
-- 장치를 제거했다가 다시 착용하여 위의 상황이 적용됨 
-
+- 디바이스를 벗은 후 다시 착용하여 위의 상황 중 하나를 적용함 
 
 ![눈에 적응하는 보정 프롬프트.](./images/07-et-adjust-for-your-eyes.png)
 
@@ -96,7 +95,7 @@ HoloLens 2에서는 눈 위치를 통해 정확한 홀로그램 위치 지정, �
 
 ### <a name="calibration-data-and-security"></a>보정 데이터 및 보안
 
-보정 정보는 장치에 로컬로 저장되며 계정 정보와 연결되지 않습니다. 보정 없이 장치를 사용한 사람에 대한 기록이 없습니다. 다시 말해서, 새 사용자가 처음으로 장치를 사용할 때, 이전에 보정을 옵트아웃한 사용자 또는 보정에 실패한 사용자에게 시각적 개체를 보정하라는 메시지가 표시됩니다.
+보정 정보는 장치에 로컬로 저장되며 계정 정보와 연결되지 않습니다. 보정 없이 장치를 사용한 사람에 대한 기록이 없습니다. 이는 디바이스를 처음 사용하는 새 사용자 또는 이전에 보정을 옵트아웃한 사용자 또는 보정에 실패한 사용자에게 시각적 개체를 보정하라는 메시지가 표시됨을 의미합니다.
 
 장치는 최대 50개의 보정 프로필을 로컬에 저장할 수 있습니다. 최대 수치에 도달하면 장치에서 사용하지 않는 가장 오래된 프로필이 자동으로 삭제됩니다.
 
@@ -104,16 +103,23 @@ HoloLens 2에서는 눈 위치를 통해 정확한 홀로그램 위치 지정, �
 
 ### <a name="disable-calibration"></a>보정 사용 안 함
 
-다음 단계를 수행하여 보정 프롬프트를 사용하지 않도록 설정할 수도 있습니다.
+#### <a name="eye-calibration-behavior-on-hololens-2-builds-20h2-and-newer"></a>HoloLens 2 빌드 20H2 이상의 눈 보정 동작
+
+Windows Holographic 버전 20H2부터 [자동 시선 위치 지원](hololens-release-notes.md#auto-eye-position-support)이 시작되었으므로 보정을 사용하지 않도록 설정할 필요가 없습니다. 보정 프롬프트는 시선 추적 사용 앱을 사용하는 경우에만 자동으로 표시됩니다.
+
+#### <a name="disabling-eye-calibration-on-hololens-2-older-builds"></a>HoloLens 2 이전 빌드에서 눈 보정 사용 안 함
+
+헤드셋의 설정 스위치를 대칭 전환하여 보정을 사용하지 않도록 설정할 수 있지만, 스위치의 상태는 쉽게 확인할 수 없습니다. 색 보정 및 홀로그램 위치 지정을 제공하면서 보정을 지연하는 [자동 시선 위치 지원](hololens-release-notes.md#auto-eye-position-support)으로 대체되었습니다.
+
+#### <a name="disabling-eye-calibration-on-hololens-1st-gen"></a>HoloLens(1세대)에서 눈 보정 사용 안 함
+
+[HoloLens(1세대) 보정](#calibrating-your-hololens-1st-gen)의 경우 다음 단계에 따라 눈 보정 프롬프트를 사용하지 않도록 설정할 수 있습니다.
 
 1. **설정** > **시스템** > **보정** 을 선택합니다.
 1. **새 사용자가 이 HoloLens를 사용하는 경우 자동으로 눈 보정을 실행하도록 요청** 을 끕니다.
 
    > [!IMPORTANT]
    > 이 설정은 홀로그램 렌더링 품질과 편안함에 부정적인 영향을 줄 수 있습니다.  이 설정을 끄면 시선 추적에 의존하는 기능(예: 텍스트 스크롤)이 몰입형 응용 프로그램에서 더 이상 작동하지 않습니다.
-
-> [!NOTE]
-> 설정 스위치는 [자동 시선 위치 지원](hololens-release-notes.md#auto-eye-position-support)이 시작된 Windows Holographic, 버전 20H2부터 제거되었습니다. 보정 프롬프트는 조정되지 않은 사용자가 시선 추적 사용 앱을 사용하는 경우에만 자동으로 표시됩니다.
 
 ### <a name="hololens-2-eye-tracking-technology"></a>HoloLens 2 시선 추적 기술
 
