@@ -7,17 +7,17 @@ author: evmill
 ms.author: v-evmill
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 9/3/2021
+ms.date: 9/21/2021
 ms.reviewer: ''
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b5c3b55273346f330580b07e5294e7e8e65ea12d
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: efdc57b5e045c1669587ffc46dbe2132b6de6600
+ms.sourcegitcommit: 52ed453cace3851fbec0cfcc228fa2a79f1a2fec
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126033943"
+ms.lasthandoff: 09/22/2021
+ms.locfileid: "128075388"
 ---
 # <a name="windows-defender-application-control---wdac"></a>Windows Defender 애플리케이션 제어 - WDAC
 
@@ -28,7 +28,7 @@ WDAC를 사용 하면 앱의 시작을 차단 하도록 HoloLens를 구성할 �
 > [!NOTE]
 > 최종 사용자가 HoloLens에서 WDAC에 의해 차단 되는 앱을 시작 하려고 하면 앱을 시작할 수 없다는 알림이 표시 되지 않습니다.
 
-장치에 둘 이상의 WDAC 정책이 할당 될 수 있습니다. 시스템에 여러 개의 WDAC 정책이 설정 되어 있으면 대부분의 제한 사항이 적용 됩니다. 
+장치에 둘 이상의 WDAC 정책이 할당 될 수 있습니다. 시스템에 여러 개의 WDAC 정책이 설정 되어 있으면 대부분의 제한 사항이 적용 됩니다.
 
 다음은 [WDAC 및 Windows PowerShell를 사용 하 여 Microsoft Intune를 통해 HoloLens 2 장치에서 앱을 허용 하거나 차단](/mem/intune/configuration/custom-profile-hololens)하는 방법을 배울 수 있는 지침입니다.
 
@@ -36,7 +36,7 @@ WDAC를 사용 하면 앱의 시작을 차단 하도록 HoloLens를 구성할 �
 
 ```powershell
 $package1 = Get-AppxPackage -name *<applicationname>*
-``` 
+```
 
 패키지의 전체 이름을 모르는 경우 ' Add-appxpackage-name \* YourBestGuess '를 몇 번 실행 하 여 찾아야 할 수 있습니다 \* . 그런 다음 이름이 ' $package 1 = Get-AppxPackage-name Actual. PackageName '로 실행 됩니다.
 
@@ -44,7 +44,7 @@ $package1 = Get-AppxPackage -name *<applicationname>*
 
 ```powershell
 Get-AppxPackage -name *edge*
-``` 
+```
 
 ## <a name="package-family-names-for-apps-on-hololens"></a>HoloLens 앱의 패키지 패밀리 이름
 
@@ -54,34 +54,47 @@ Get-AppxPackage -name *edge*
 
 | 앱 이름                   | 패키지 패밀리 이름                                |
 |----------------------------|----------------------------------------------------|
-| 3D 뷰어                  | Microsoft.Microsoft3DViewer_8wekyb3d8bbwe          |
-| 앱 설치 관리자              | Microsoft.DesktopAppInstaller_8wekyb3d8bbwe <sup>1</sup>         |
-| 달력                   | microsoft.windowscommunicationsapps_8wekyb3d8bbwe  |
-| 카메라                     | HoloCamera_cw5n1h2txyewy                           |
-| Cortana                    | Microsoft.549981C3F5F10_8wekyb3d8bbwe              |
-| Dynamics 365 Guides        | Microsoft.Dynamics365.Guides_8wekyb3d8bbwe         |
-| Dynamics 365 Remote Assist | Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe      |
-| 피드백 허브               | Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe         |
-| 파일 탐색기              | c5e2524a-ea46-4f67 6a9465d9d515_cw5n1h2txyewy |
-| Mail                       | microsoft.windowscommunicationsapps_8wekyb3d8bbwe  |
-| Microsoft Store            | Microsoft.WindowsStore_8wekyb3d8bbwe               |
-| 영화 및 TV                | Microsoft.ZuneVideo_8wekyb3d8bbwe                  |
-| OneDrive                   | microsoft.microsoftskydrive_8wekyb3d8bbwe          |
-| 사진                     | Microsoft. Windows. Photos_8wekyb3d8bbwe             |
-| 설정                   | HolographicSystemSettings_cw5n1h2txyewy            |
-| 팁                       | Microsoft.HoloLensTips_8wekyb3d8bbwe               |
+| 3D 뷰어                  | `Microsoft.Microsoft3DViewer_8wekyb3d8bbwe`          |
+| 앱 설치 관리자              | `Microsoft.DesktopAppInstaller_8wekyb3d8bbwe` <sup>1</sup>         |
+| 달력                   | `microsoft.windowscommunicationsapps_8wekyb3d8bbwe`  |
+| 카메라                     | `HoloCamera_cw5n1h2txyewy`                          |
+| Cortana                    | `Microsoft.549981C3F5F10_8wekyb3d8bbwe`              |
+| Dynamics 365 Guides        | `Microsoft.Dynamics365.Guides_8wekyb3d8bbwe`         |
+| Dynamics 365 Remote Assist | `Microsoft.MicrosoftRemoteAssist_8wekyb3d8bbwe`      |
+| 피드백 허브               | `Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe`         |
+| 파일 탐색기              | `c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy` |
+| Mail                       | `microsoft.windowscommunicationsapps_8wekyb3d8bbwe`  |
+| Microsoft Store            | `Microsoft.WindowsStore_8wekyb3d8bbwe`               |
+| 영화 및 TV                | `Microsoft.ZuneVideo_8wekyb3d8bbwe`                  |
+| OneDrive                   | `microsoft.microsoftskydrive_8wekyb3d8bbwe`          |
+| 사진                     | `Microsoft.Windows.Photos_8wekyb3d8bbwe`             |
+| 설정                   | `HolographicSystemSettings_cw5n1h2txyewy`            |
+| 팁                       | `Microsoft.HoloLensTips_8wekyb3d8bbwe`               |
 
 - 1-앱 설치 관리자를 차단 하면 Microsoft Store 또는 MDM 솔루션과 같은 다른 원본에서 설치 된 앱이 아닌 앱 설치 관리자 앱만 차단 됩니다.
+
+### <a name="using-wdac-to-block-new-microsoft-edge"></a>WDAC를 사용하여 새 Microsoft Edge 차단
+
+[새 Microsoft Edge 앱](hololens-new-edge.md)을 차단 하도록 [WDAC 정책을](windows-defender-application-control-wdac.md) 업데이트 하려는 IT 관리자의 경우 정책에 다음을 추가 해야 합니다.
+
+```xml
+<Deny ID="ID_DENY_D_3_0" FriendlyName="C:\Data\Programs FileRule" PackageVersion="65535.65535.65535.65535" FileName="msedge.exe" />
+```
 
 ### <a name="how-to-find-a-package-family-name"></a>패키지 제품군 이름을 찾는 방법
 
 앱이이 목록에 없는 경우 사용자는 장치 포털을 사용 하 여 앱이 차단 되도록 설치한 HoloLens 2에 연결 하 여 PackageRelativeID를 확인 하 고 PackageFamilyName를 받을 수 있습니다.
 
-1. HoloLens 2 장치에 앱을 설치 합니다. 
-1. 개발자를 위해 설정-> 업데이트 & 보안 >를 열고 **개발자 모드** 를 사용 하도록 설정한 다음 **장치 포털** 을 엽니다. 
-    1. 자세한 내용은 [장치 포털의 설정 및 사용](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)에 대 한 자세한 내용을 참조 하세요.
-1. 장치 포털이 연결 되 면 **보기** , **앱** 으로 이동 합니다. 
-1. 설치 된 앱 패널 내에서 드롭다운을 사용 하 여 설치 된 앱을 선택 합니다. 
-1. PackageRelativeID를 찾습니다. 
-1. 전에 앱 문자를 복사 합니다 `!` . 이러한 문자는 PackageFamilyName 됩니다.
+1. HoloLens 2 장치에 앱을 설치 합니다.
 
+1. 개발자를 위해 설정-> 업데이트 & 보안 >를 열고 **개발자 모드** 를 사용 하도록 설정한 다음 **장치 포털** 을 엽니다.
+
+   자세한 내용과 지침은 [여기에서 장치 포털 설정 및 사용](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)을 참조 하세요.
+
+1. 장치 포털이 연결 되 면 **보기** , **앱** 으로 이동 합니다.
+
+1. 설치 된 앱 패널 내에서 드롭다운을 사용 하 여 설치 된 앱을 선택 합니다.
+
+1. PackageRelativeID를 찾습니다.
+
+1. 전에 앱 문자를 복사 합니다 `!` . 이러한 문자는 PackageFamilyName 됩니다.
