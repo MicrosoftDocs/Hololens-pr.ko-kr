@@ -4,23 +4,23 @@ description: 비즈니스용 Microsoft Store를 사용 하 여 혼합 현실 응
 keywords: 비즈니스용 Microsoft Store, msfb, 앱 배포, 스토어
 author: evmill
 ms.author: v-evmill
-ms.date: 6/22/2020
+ms.date: 9/22/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
 ms.localizationpriority: medium
 audience: HoloLens
 manager: yannisle
-ms.openlocfilehash: d7d5ad05dc675cf07afd075f4fb52d24cd4d3e15
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: b60795d7a5a4f9fab980ee16a23250faa6025bb5
+ms.sourcegitcommit: ab86b31357004726d8a28ebae76123728adc8e59
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126033045"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128306151"
 ---
 # <a name="microsoft-store-for-business"></a>비즈니스용 Microsoft Store
 
-비즈니스용 Microsoft Store는 주로 비즈니스 또는 조직의 IT 의사 결정권자와 관리자가 선택 된 시장에서 무료 및 유료 앱을 찾고, 획득 하 고, 관리 하 고, 배포 하 여 볼륨의 장치를 Windows 10 수 있도록 설계 되었습니다. 
+[비즈니스용 Microsoft Store](/microsoft-store/microsoft-store-for-business-overview) 는 주로 비즈니스 또는 조직의 IT 의사 결정권자와 관리자가 선택 된 시장에서 무료 및 유료 앱을 찾고, 획득 하 고, 관리 하 고, 배포 하 여 볼륨의 장치를 Windows 10 수 있도록 설계 되었습니다. 
 
 하나의 인벤토리에 있는 Microsoft Store 앱 및 개인 lob (기간 업무) 앱을 관리 하 고 필요에 따라 라이선스를 할당 하 고 다시 사용할 수 있습니다. 조직에 가장 적합 한 배포 방법을 선택할 수도 있습니다. 즉, 개인 및 팀에 앱을 직접 할당 하거나, Microsoft Store의 전용 페이지에 앱을 게시 하거나, 추가 옵션을 위해 관리 솔루션에 연결 합니다.
 
