@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: sekerawa
-ms.openlocfilehash: 28793b385bad58d44c6592a800c4f56b18d152ce
-ms.sourcegitcommit: 20ea1ed37772655504ccb11a7e185ed19d85f336
+ms.openlocfilehash: 10dc251bbeb204a6621ca0891029858c00c467bc
+ms.sourcegitcommit: d09556a101663ef5dfff865d4753e64a41032b78
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/16/2021
-ms.locfileid: "127833576"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128346777"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>HoloLens 2용 Windows Autopilot
 
@@ -244,7 +244,7 @@ ESP에 대한 자세한 내용은 [등록 상태 페이지 설정 - Microsoft In
 
 1. Autopilot 환경에는 인터넷 액세스가 필요합니다. 다음 옵션 중 하나를 사용하여 인터넷 액세스를 제공합니다.
 
-    - OOBE의 Wi-Fi 네트워크에 장치를 연결한 다음 자동으로 Autopilot 환경을 감지하도록 합니다. 이는 Autopilot 환경이 자체적으로 완료될 때까지 OOBE와 상호 작용해야 할 때만 필요합니다. 기본적으로 HoloLens 2는 인터넷을 검색한 후 Autopilot을 검색할 때까지 10초 동안 기다립니다. 10초 이내에 Autopilot 프로필이 검색되지 않으면 OOBE에 EULA가 표시됩니다. 이 시나리오가 발생하는 경우 디바이스를 다시 부팅하여 Autopilot을 다시 검색합니다. 또한 디바이스에 TenantLockdown 정책이 설정된 경우에만 OOBE가 Autopilot을 무기한 대기할 수 있으므로 유의하세요.
+    - OOBE의 Wi-Fi 네트워크에 장치를 연결한 다음 자동으로 Autopilot 환경을 감지하도록 합니다. 이는 Autopilot 환경이 자체적으로 완료될 때까지 OOBE와 상호 작용해야 할 때만 필요합니다.
 
     - 유선 인터넷 연결에 "USB-C to Ethernet" 어댑터를 사용하여 장치를 이더넷에 연결하고 HoloLens 2 완전 Autopilot 환경을 자동으로 사용하도록 합니다.
 
@@ -268,7 +268,7 @@ ESP에 대한 자세한 내용은 [등록 상태 페이지 설정 - Microsoft In
 
 1. OOBE가 끝나면 사용자 이름과 암호를 사용하여 장치에 로그인할 수 있습니다.
 
-   <br/><img src="./images/other-user.jpg" alt="Other user" width="450" height="700" />
+   <img src="./images/other-user.jpg" alt="Other user" width="450" height="700" />
 
 ## <a name="tenant-lockdown-csp-and-autopilot"></a>TenantLockdown CSP 및 Autopilot
 
@@ -318,7 +318,13 @@ Autopilot 프로필이 다운로드될 때까지 OOBE가 무기한 대기하고 
 
 ![장치에서 정책이 시행될 때의 장치 내 보기입니다.](images/hololens-autopilot-lockdown.png)
 
-## <a name="known-issues--limitations"></a>알려진 문제 및 제한 사항
+#### <a name="why-did-i-not-see-autopilot-experience-even-though-the-autopilot-profile-is-assigned-in-intune"></a>Autopilot 프로필이 Intune에 할당된 경우에도 Autopilot 환경이 표시되지 않는 이유는 무엇인가요?
+
+기본적으로 HoloLens 2는 인터넷을 검색한 후 Autopilot을 검색하기 위해 15초 동안 기다립니다. 15초 이내에 Autopilot 프로필이 검색되지 않으면, 이는 Autopilot이 올바르게 검색되지 않았다는 의미이며 EULA 페이지가 표시됩니다.
+
+디바이스를 다시 부팅한 후 다시 시도하세요. 자세한 내용은 [알려진 문제 및 제한 사항](hololens2-autopilot.md#known-issues-and-limitations) 또는 [문제 해결](hololens2-autopilot.md#troubleshooting)을 참조하세요.
+
+## <a name="known-issues-and-limitations"></a>알려진 문제 및 제한 사항
 
 - MEM에 구성된 디바이스 컨텍스트 기반 응용 프로그램 설치가 HoloLens에 적용되지 않는 문제를 조사 중입니다. [디바이스 컨텍스트 및 사용자 컨텍스트 설치에 대해 자세히 알아보세요.](/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
 - Wi-Fi를 통해 Autopilot을 설정하는 동안 인터넷 연결이 처음 설정될 때 Autopilot 프로필이 다운로드되지 않는 인스턴스가 있을 수 있습니다. 이 경우 EULA(최종 사용자 사용권 계약)가 표시되며 사용자가 Autopilot이 아닌 설치 환경을 진행할 수 있는 옵션이 있습니다. Autopilot을 사용하여 다시 설정하려면, 장치를 절전 모드로 전환한 다음 전원을 켜고 장치를 다시 부팅하여 다시 시도합니다.
