@@ -12,12 +12,12 @@ ms.date: 05/14/2021
 manager: evmill
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: b4692468942da88877370864eda2ce173cc499af
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: a0ae0ccade01d7df520cd6cb142a9b51e63a2b05
+ms.sourcegitcommit: c73cdefbdb4411f6a187cc38bb2570dadeb156bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034618"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129163984"
 ---
 # <a name="hololens-2-battery-and-charging"></a>HoloLens 2 배터리 및 충전
 
@@ -45,7 +45,7 @@ HoloLens 2와 함께 제공된 [충전기와 USB Type-C 케이블](https://www.m
 
 ## <a name="alternative-charging-specifications"></a>대체 충전 사양
 
-HoloLens 2는 최대 27W의 [USB 전력 전송](https://www.usb.org/usb-charger-pd) 소스로 충전할 수 있습니다. 소스에서 최소 10W를 제공할 수 있는 경우 HoloLens 작동 시간을 연장할 수 있습니다(일부 워크로드의 경우 거의 무기한). 
+HoloLens 2는 최대 27W의 [USB 전력 전송](https://www.usb.org/usb-charger-pd) 소스로 충전할 수 있습니다. 전원에서 최소 10W를 제공할 수 있는 경우 HoloLens 작동 시간이 연장될 수 있습니다(일부 워크로드의 경우 무기한). 
 
 > [!NOTE]
 > USB-A-USB-C 충전 케이블을 사용하면 충전이 7.5W로 제한됩니다. 작동 시간은 연장되지만, USB-C-C로 사용하는 만큼 길지 않습니다.

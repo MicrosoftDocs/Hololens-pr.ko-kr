@@ -12,12 +12,12 @@ ms.topic: article
 ms.localizationpriority: high
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: c1d83577400126903a80999c46ddaeabddaba029
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: f646e70c61bda17fb315670e94a6fbada010e1d5
+ms.sourcegitcommit: c73cdefbdb4411f6a187cc38bb2570dadeb156bf
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034591"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129164001"
 ---
 # <a name="about-hololens-2"></a>HoloLens 정보 2
 
@@ -48,7 +48,7 @@ HoloLens 2를 사용하려면 사용자 계정이 필요합니다.
 
 ### <a name="power-supply-details"></a>전원 공급 장치 세부 정보
 
-장치와 함께 제공되는 전원 공급 장치와 USB 케이블은 충전을 가장 잘 지원하는 메커니즘입니다. 전원 공급 장치는 18W 충전기입니다.  2A에서 9V를 공급합니다.
+장치와 함께 제공되는 전원 공급 장치와 USB 케이블은 충전을 가장 잘 지원하는 메커니즘입니다. 전원 공급 장치는 18W 충전기입니다.  2A의 9V를 공급합니다.
 
 충전율과 속도는 장치가 실행되는 환경에 따라 다를 수 있습니다.
 
