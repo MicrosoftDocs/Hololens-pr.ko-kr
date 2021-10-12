@@ -1,24 +1,24 @@
 ---
 title: HoloLens 장치 문제 해결
 description: 가장 일반적인 솔루션을 최신 상태로 유지 하 여 장치 문제 및 문제 해결 기법을 HoloLens 하세요.
-author: mattzmsft
-ms.author: mazeller
-ms.date: 9/30/2021
+author: evmill
+ms.author: v-evmill
+ms.date: 10/7/2021
 ms.prod: hololens
 ms.topic: article
 audience: HoloLens
 ms.localizationpriority: medium
-manager: jarrettr
+manager: ranjibb
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
 keywords: 문제, 버그, 문제 해결, 수정, 도움말, 지원, HoloLens, 에뮬레이터
-ms.openlocfilehash: 3c4d6e22660e365acd2c3aca3119632c73926391
-ms.sourcegitcommit: b9cd7ed5edb98249c609b547b90587863ea1cb9e
+ms.openlocfilehash: ceb6f2670b15f46d17a0cb36f6602ae3d4e3ec1d
+ms.sourcegitcommit: 8a3f925d2bda13c095b35f14d80afdd876aa859c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129364629"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "129800541"
 ---
 # <a name="device-troubleshooting"></a>장치 문제 해결
 
@@ -31,6 +31,7 @@ ms.locfileid: "129364629"
 
 **알려진 문제**
 - [전원이 18%로 이동 될 때마다 장치는 갑자기 자동으로 종료 됩니다.](#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)
+- [OneDrive UWP 앱이 Azure AD 사용자에 대해 작동 하지 않음](#onedrive-uwp-app-doesnt-work-for-azure-ad-users)
 - [20 분 후에 원격 지원 비디오가 정지 됨](#remote-assist-video-freezes-after-20-minutes)
 - [로그인에 대 한 자동 로그인 요청](#auto-login-asks-for-log-in)
 - [Microsoft Edge 시작 실패](#microsoft-edge-fails-to-launch)
@@ -70,6 +71,23 @@ ms.locfileid: "129364629"
 1. [피드백 허브](hololens-feedback.md) 문제 제출
 1. 피드백 발행 URL 공유
 1. [고객 지원 문의](https://aka.ms/hololenssupport)
+
+[목록으로 돌아가기](#list)
+
+## <a name="onedrive-uwp-app-doesnt-work-for-azure-ad-users"></a>OneDrive UWP 앱이 Azure AD 사용자에 대해 작동 하지 않음
+
+Azure AD 계정을 사용 하 여 비즈니스용 OneDrive를 사용 하는 경우 수신함 OneDrive 앱에 로그인 할 때 오류가 발생 했을 수 있습니다. OneDrive 앱에 로그인 할 수 없는 경우 카메라 앱에서 캡처한 이미지 및 비디오의 자동 업로드에 영향을 주지 않습니다. 비즈니스용 OneDrive 클라우드 저장소에서 파일을 저장 하 고 액세스할 수 있습니다. OneDrive 및 HoloLens 팀이 문제에 대해 작업 하 고 있습니다.
+
+### <a name="workarounds"></a>해결 방법
+
+필수 구성 요소: 고객이 Microsoft Edge를 사용 하 고 장치 OS를 Windows Holographic, 21h1 빌드 이상으로 업데이트할 수 있습니다.
+
+이 문제가 발생 하는 경우 다음 중 하나를 수행 합니다.
+
+- 사용자는 Microsoft Edge에서 비즈니스 OneDrive에 직접 액세스 하 고 브라우저에서 해당 웹 사이트와 상호 작용할 수 있습니다.
+- 사용자는 Microsoft Edge에서 다운로드 하 여 HoloLens에 OneDrive PWA 앱을 설치할 수 있습니다. 이렇게 하면 사용자가 장치에서 파일을 다시 보고 관리할 수 있습니다. [HoloLens에서 OneDrive PWA 앱을 설치 하는 방법에 대 한 다음 지침](holographic-store-apps.md#install-microsoft-onedrive-pwa-app) 을 읽고 따르세요.
+
+[목록으로 돌아가기](#list)
 
 ## <a name="remote-assist-video-freezes-after-20-minutes"></a>20 분 후에 원격 지원 비디오가 정지 됨
 
@@ -267,100 +285,100 @@ IPD 설정은 시스템에서 눈 위치를 계산 하므로 HoloLens 2에는 �
 [목록으로 돌아가기](#list)
 
 
-## <a name="unity-isnt-working"></a>Unity가 작동 하지 않음
+## <a name="unity-isnt-working"></a>Unity가 작동하지 않습니다.
 
-- HoloLens 개발에 권장 되는 최신 버전의 Unity 용 [도구 설치](/windows/mixed-reality/install-the-tools) 를 참조 하세요.
-- unity HoloLens Technical Preview의 알려진 문제는 [HoloLens unity 포럼](https://forum.unity3d.com/threads/known-issues.394627/)에 설명 되어 있습니다.
-
-[목록으로 돌아가기](#list)
-
-## <a name="windows-device-portal-isnt-working-correctly"></a>Windows 장치 포털이 제대로 작동 하지 않습니다.
-
-- 혼합 현실 캡처의 실시간 미리 보기 기능은 몇 초 동안 대기 시간을 나타낼 수 있습니다.
-
-- 가상 입력 페이지에서 가상 제스처 섹션 아래의 제스처 및 스크롤 컨트롤이 작동 하지 않습니다. 이를 사용 하면 아무런 영향을 주지 않습니다. 가상 입력 페이지의 가상 키보드가 제대로 작동 합니다.
-
-- 설정에서 개발자 모드를 사용 하도록 설정한 후 장치 포털을 켜는 스위치를 사용 하도록 설정 하는 데 몇 초 정도 걸릴 수 있습니다.
+- HoloLens 개발에 권장되는 최신 버전의 Unity용 [도구 설치를](/windows/mixed-reality/install-the-tools) 참조하세요.
+- Unity HoloLens Technical Preview의 알려진 문제는 HoloLens Unity 포럼 에 [설명되어 있습니다.](https://forum.unity3d.com/threads/known-issues.394627/)
 
 [목록으로 돌아가기](#list)
 
-## <a name="the-hololens-emulator-isnt-working"></a>HoloLens Emulator 작동 하지 않습니다.
+## <a name="windows-device-portal-isnt-working-correctly"></a>Windows 장치 포털 제대로 작동하지 않습니다.
 
-HoloLens 에뮬레이터에 대 한 정보는 개발자 설명서에 있습니다.  [HoloLens 에뮬레이터 문제 해결을](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting)참조 하세요.
+- Mixed Reality 캡처의 라이브 미리 보기 기능은 몇 초의 대기 시간을 나타낼 수 있습니다.
+
+- 가상 입력 페이지의 가상 제스처 섹션 아래에 있는 제스처 및 스크롤 컨트롤이 작동하지 않습니다. 이를 사용하면 아무런 영향을 미치지 않습니다. 가상 입력 페이지의 가상 키보드가 제대로 작동합니다.
+
+- 설정 개발자 모드를 사용하도록 설정한 후 스위치가 장치 포털 켜기까지 몇 초 정도 걸릴 수 있습니다.
+
+[목록으로 돌아가기](#list)
+
+## <a name="the-hololens-emulator-isnt-working"></a>HoloLens Emulator 작동하지 않습니다.
+
+HoloLens 에뮬레이터에 대한 정보는 개발자 설명서에 있습니다.  [HoloLens 에뮬레이터 문제 해결에](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator#troubleshooting)대해 자세히 읽어보십시오.
 
 
-- Microsoft Store의 모든 앱은 에뮬레이터와 호환 되지 않습니다. 예를 들어, 에뮬레이터에서 젊은 Conker 및 조각은 재생할 수 없습니다.
+- Microsoft Store 있는 모든 앱이 에뮬레이터와 호환되는 것은 아닙니다. 예를 들어 Young Conker 및 Fragments는 에뮬레이터에서 재생할 수 없습니다.
 - Emulator PC 웹캠을 사용할 수 없습니다.
-- Windows 장치 포털의 실시간 미리 보기 기능은 에뮬레이터에서 작동 하지 않습니다. 여전히 혼합 현실 비디오 및 이미지를 캡처할 수 있습니다.
+- Windows 장치 포털 라이브 미리 보기 기능은 에뮬레이터에서 작동하지 않습니다. Mixed Reality 비디오 및 이미지를 캡처할 수 있습니다.
 
 [목록으로 돌아가기](#list)
 
-## <a name="voice-commands-arent-working"></a>음성 명령이 작동 하지 않음
+## <a name="voice-commands-arent-working"></a>음성 명령이 작동하지 않습니다.
 
-Cortana 음성 명령에 응답 하지 않는 경우 Cortana 켜져 있는지 확인 합니다. 모든 앱 목록에서 **Cortana**  >  **Menu**  >  **노트북**  >  **설정** 를 선택 하 여 변경 합니다. 말할 수 있는 내용에 대 한 자세한 내용은 [HoloLens에 음성 사용](hololens-cortana.md)을 참조 하세요.
+Cortana 음성 명령에 응답하지 않는 경우 Cortana 켜져 있는지 확인합니다. 모든 앱 목록에서 **Cortana** 메뉴 Notebook 설정 선택하여  >    >    >   변경합니다. 할 수 있는 내용에 대한 자세한 내용은 [HoloLens 함께 음성 사용을 참조하세요.](hololens-cortana.md)
 
-HoloLens (첫 번째 gen)에서는 기본 제공 음성 인식을 구성할 수 없습니다. 항상 켜져 있습니다. HoloLens 2에서 장치를 설치 하는 동안 음성 인식 및 Cortana를 모두 켤 지 여부를 선택할 수 있습니다.
+HoloLens(1세대)에서는 기본 제공 음성 인식을 구성할 수 없습니다. 항상 켜져 있습니다. HoloLens 2 디바이스를 설정하는 동안 음성 인식과 Cortana 둘 다 설정할지 여부를 선택할 수 있습니다.
 
-HoloLens 2 음성에 응답 하지 않는 경우 음성 인식이 설정 되어 있는지 확인 합니다. **시작**  >  **설정**  >  **개인 정보**  >  **음성** 으로 이동 하 여 **음성 인식을** 켭니다.
-
-[목록으로 돌아가기](#list)
-
-## <a name="hand-input-isnt-working"></a>손으로 입력이 작동 하지 않음
-
-HoloLens 사용자의 손을 볼 수 있도록 하려면 제스처 프레임에 보관 해야 합니다.  혼합 현실 홈은 사용자가 손을 추적 하는 시기를 알 수 있는 피드백을 제공 합니다.  사용자 의견은 다양 한 버전의 HoloLens에서 다릅니다.
-
-- HoloLens (첫 번째 gen)에서 응시 커서는 점에서 링으로 바뀝니다.
-- HoloLens 2에서 손 모양이 슬레이트에 가까이 있을 때 fingertip 커서가 나타나고 슬레이트이 더 멀리 떨어져 있을 때 손 모양으로 나타납니다.
-
-많은 모던 앱은 혼합 현실 집과 비슷한 입력 패턴을 따릅니다.  [HoloLens (첫 번째 gen)](hololens1-basic-usage.md#use-hololens-with-your-hands) 및 [HoloLens 2](hololens2-basic-usage.md#the-hand-tracking-frame)에서 직접 입력을 사용 하는 방법에 대해 자세히 알아보세요.
-
-글러브를 입고 있는 경우 일부 종류의 장갑은 수동 추적에서 작동 하지 않습니다.  일반적인 예로는 검정 고무 장갑이 있습니다 .이는 적외선을 흡수 하 고 깊이 카메라에 의해 선택 되지 않습니다.  작업에 고무 장갑이 포함 되어 있는 경우 파란색 또는 회색 등의 더 밝은 색을 사용해 보는 것이 좋습니다.  또 다른 예로는 긴 baggy 장갑이 있습니다 .이를 통해 손 모양에는 경향이 있습니다. 최상의 결과를 위해 가능한 한 폼 피팅으로 글러브를 사용 하는 것이 좋습니다.
-
-센터에 지문 또는 얼룩이 있는 경우 HoloLens와 함께 제공 되는 마이크로 파이버 클리닝 천을 사용 하 여 센터를 천천히 정리 합니다.
+HoloLens 2 음성에 응답하지 않는 경우 음성 인식이 켜져 있는지 확인합니다. **개인** 정보 설정 시작으로 이동하여  >    >    >  **음성** **인식을** 켭니다.
 
 [목록으로 돌아가기](#list)
 
-## <a name="cant-connect-to-wi-fi"></a>Wi-Fi에 연결할 수 없음
+## <a name="hand-input-isnt-working"></a>손 입력이 작동하지 않습니다.
+
+HoloLens 손을 볼 수 있도록 제스처 프레임에 유지해야 합니다.  Mixed Reality 홈은 손을 추적하는 시기를 알려주는 피드백을 제공합니다.  피드백은 HoloLens 버전에 따라 다릅니다.
+
+- HoloLens(1세대)에서 응시 커서가 점에서 링으로 변경됩니다.
+- HoloLens 2 손을 슬레이트 가까이에 놓으면 손끝 커서가 나타나고 슬레이트가 더 멀리 있을 때 손 광선이 나타납니다.
+
+많은 몰입형 앱은 Mixed Reality Home과 유사한 입력 패턴을 따릅니다.  [HoloLens(1세대)](hololens1-basic-usage.md#use-hololens-with-your-hands) [및](hololens2-basic-usage.md#the-hand-tracking-frame)HoloLens 2 손 입력을 사용하는 방법에 대해 자세히 알아봅니다.
+
+글러브를 신고 있는 경우 일부 유형의 글러브가 손 추적에서 작동하지 않습니다.  일반적인 예로는 검정색 무중단 글러브가 있습니다. 이 블래스는 광원을 흡수하는 경향이 있으며 깊이 카메라에 의해 선택되지 않습니다.  작업에 글러브가 포함된 경우 파란색 또는 회색과 같은 밝은 색을 사용해보는 것이 좋습니다.  또 다른 예로는 손 모양이 가려지는 경향이 있는 큰 글러브가 있습니다. 최상의 결과를 위해 가능한 한 폼 맞춤인 글러브를 사용하는 것이 좋습니다.
+
+visor에 지문 또는 번짐이 있는 경우 HoloLens 함께 제공되는 마이크로Fiber 청소 의류를 사용하여 visor를 깔끔하게 정리합니다.
+
+[목록으로 돌아가기](#list)
+
+## <a name="cant-connect-to-wi-fi"></a>Wi-Fi 연결할 수 없습니다.
 
 HoloLens를 Wi-Fi 네트워크에 연결할 수 없는 경우 다음과 같은 작업을 시도해 볼 수 있습니다.
 
-- Wi-Fi가 켜져 있는지 확인하세요. 확인 하려면 시작 제스처를 사용 하 **설정**  >  **네트워크 &amp; 인터넷**  >  **wi-fi** 를 선택 합니다. Wi-Fi가 켜져 있으면 끈 다음 다시 켜보세요.
+- Wi-Fi가 켜져 있는지 확인하세요. 확인하려면 시작 제스처를 사용한 다음, **설정**  >  **네트워크 &amp; 인터넷**  >  **Wi-Fi를** 선택합니다. Wi-Fi가 켜져 있으면 끈 다음 다시 켜보세요.
 - 라우터 또는 액세스 지점에 좀 더 가깝게 이동하세요.
-- Wi-Fi 라우터를 다시 시작한 다음 [HoloLens를 다시 시작](hololens-recovery.md)합니다. 다시 연결해 보세요.
+- Wi-Fi 라우터를 다시 시작한 다음 HoloLens [다시 시작합니다.](hololens-recovery.md) 다시 연결해 보세요.
 - 이러한 작업을 수행할 수 없는 경우 라우터가 최신 펌웨어를 사용하고 있는지 확인합니다. 제조업체 웹 사이트에서 이 정보를 찾을 수 있습니다.
 
 [목록으로 돌아가기](#list)
 
-## <a name="bluetooth-devices-arent-pairing"></a>Bluetooth 장치가 페어링 하지 않음
+## <a name="bluetooth-devices-arent-pairing"></a>Bluetooth 디바이스가 페어링되지 않습니다.
 
-[Bluetooth 장치를 페어링 하는](hololens-connect-devices.md)데 문제가 있는 경우 다음을 시도 하세요.
+[Bluetooth 디바이스를 페어링하는 데](hololens-connect-devices.md)문제가 있는 경우 다음을 시도합니다.
 
-- **설정** 장치로 이동 하 여  >  Bluetooth 켜져 있는지 확인 합니다. 이 경우 다시 설정 하거나 해제 합니다.
-- Bluetooth 장치가 완전히 충전 되어 있거나 새 배터리가 있는지 확인 합니다.
-- 그래도 연결할 수 없으면 HoloLens를 [다시 시작](hololens-recovery.md)합니다.
+- **설정** 디바이스 로 이동하여 Bluetooth 켜져 있는지  >  **확인합니다.** 이 경우 해제했다가 다시 켭니다.
+- Bluetooth 디바이스에 완전히 요금이 부과되거나 배터리가 새로 설치되어 있는지 확인합니다.
+- 여전히 연결할 수 없는 경우 [HoloLens 다시 시작합니다.](hololens-recovery.md)
 
 [목록으로 돌아가기](#list)
 
-## <a name="usb-c-microphone-isnt-working"></a>USB-C 마이크가 작동 하지 않음
+## <a name="usb-c-microphone-isnt-working"></a>USB-C 마이크가 작동하지 않습니다.
 
-일부 USB-C 마이크는 마이크 *와* 스피커로 잘못 보고 합니다. 이는 HoloLens 아닌 마이크의 문제입니다. 이러한 마이크 중 하나를 HoloLens에 연결 하는 경우 소리가 손실 될 수 있습니다. 다행히 간단한 해결 방법이 있습니다.  
+일부 USB-C 마이크는 자신을 *마이크와* 스피커로 잘못 보고합니다. HoloLens 아닌 마이크에 문제가 있습니다. 이러한 마이크 중 하나를 HoloLens 연결하면 소리가 손실될 수 있습니다. 다행히 간단한 수정이 있습니다.  
 
-**설정**  ->  **시스템**  ->  **소리** 에서 기본 제공 스피커 **(아날로그 기능 오디오 드라이버)** 를 **기본 장치로** 명시적으로 설정 합니다. 마이크가 제거 되 고 나중에 다시 연결 된 경우에도이 설정을 기억할 HoloLens.
+**설정** 시스템 소리 에서  ->    ->  기본 제공 **스피커(아날로그 기능 오디오 드라이버)를** **기본 디바이스** 로 명시적으로 설정합니다. HoloLens 마이크가 제거되고 나중에 다시 연결되더라도 이 설정을 기억해야 합니다.
 
-![USB-C 마이크 문제 해결.](images/usbc-mic-4.png)
+![USB-C 마이크 문제 해결](images/usbc-mic-4.png)
 
-## <a name="devices-listed-as-available-in-settings-dont-work"></a>설정에서 사용 가능으로 나열 된 장치가 작동 하지 않음
+## <a name="devices-listed-as-available-in-settings-dont-work"></a>설정 사용할 수 있는 것으로 나열된 디바이스가 작동하지 않습니다.
 
-HoloLens (첫 번째 gen) Bluetooth 오디오 프로필을 지원 하지 않습니다. 스피커 및 헤드셋과 같은 Bluetooth 오디오 장치는 HoloLens 설정에서 사용할 수 있는 것 처럼 보일 수 있지만 지원 되지 않습니다.
+HoloLens(1세대)는 Bluetooth 오디오 프로필을 지원하지 않습니다. 스피커 및 헤드셋과 같은 Bluetooth 오디오 디바이스는 HoloLens 설정에서 사용할 수 있는 것으로 나타날 수 있지만 지원되지 않습니다.
 
-HoloLens 2은 스테레오 재생을 위한 Bluetooth A2DP 오디오 프로필을 지원 합니다. Bluetooth 주변 장치에서 마이크 캡처가 가능 하도록 하는 Bluetooth 손 무료 프로필은 HoloLens 2에서 지원 되지 않습니다.
+HoloLens 2 스테레오 재생을 위해 Bluetooth A2DP 오디오 프로필을 지원합니다. Bluetooth 주변 장치에서 마이크 캡처를 사용하도록 설정하는 Bluetooth Hands Free 프로필은 HoloLens 2 지원되지 않습니다.
 
-Bluetooth 장치를 사용 하는 데 문제가 있는 경우 지원 되는 장치 인지 확인 합니다. 지원 되는 장치는 다음과 같습니다.
+Bluetooth 디바이스를 사용하는 데 문제가 있는 경우 지원되는 디바이스인지 확인합니다. 지원되는 디바이스는 다음과 같습니다.
 
-- 영어 Bluetooth 키보드 (holographic 키보드를 사용 하는 모든 곳에서 사용할 수 있음)
-- Bluetooth 마우스.
-- [HoloLens clicker](hololens1-clicker.md)입니다.
+- 영어 QWERTY Bluetooth 키보드(홀로그램 키보드를 사용하는 모든 곳에서 사용할 수 있습니다).
+- 마우스를 Bluetooth.
+- [HoloLens 클릭하여 을 클릭합니다.](hololens1-clicker.md)
 
-다른 Bluetooth HID 및 GATT 장치를 HoloLens와 함께 연결할 수 있습니다. 그러나 실제로 장치를 사용 하려면 Microsoft Store에서 해당 하는 관련 앱을 설치 해야 할 수 있습니다.
+다른 Bluetooth HID 및 GATT 디바이스를 HoloLens 함께 페어링할 수 있습니다. 그러나 실제로 디바이스를 사용하려면 Microsoft Store 해당 도우미 앱을 설치해야 할 수 있습니다.
 
 [목록으로 돌아가기](#list)
