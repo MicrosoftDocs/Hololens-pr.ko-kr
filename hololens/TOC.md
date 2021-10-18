@@ -117,7 +117,7 @@
 ## [HoloLens 2 릴리스 정보](hololens-release-notes.md)
 ## [Microsoft HoloLens에 대한 참가자 미리 보기](hololens-insider.md)
 ## [지원되는 언어](hololens2-language-support.md)
-## [Microsoft Mesh(미리 보기)를 사용하여 개발](/mesh/overview)
+## [Microsoft Mesh에 대해 알아보기(미리 보기)](/mesh/overview)
 ## HoloLens(1세대)
 ### 처음 사용
 #### [HoloLens(1세대) 정보](hololens1-hardware.md)
