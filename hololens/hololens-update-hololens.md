@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 49036135ba13a93d2e8be97a7f3a95d50785c5c5
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 080fb184c7eca3fdb978e860a29764f5012a179e
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034266"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151694"
 ---
 # <a name="update-hololens-2"></a>업데이트 HoloLens 2
 
@@ -86,7 +86,11 @@ HoloLens은 한 번에 하나의 업데이트를 적용 합니다.  최신 버�
     1. [파일 피드백](hololens-feedback.md) 에는 가능한 한 설명으로 포함 됩니다. 제목을 기록 하거나 공유 기능을 사용 하 여 버그를 지원과 공유할 수 있습니다.
     1. [지원](https://aka.ms/hlsupport)담당자에 게 문의 하세요. 이전 버전으로 돌아가서 문제를 해결 해야 하는 경우에는 장치를 플래시 하기 위해 FFU를 제공할 수 있습니다.
 
-1. 이 문제가 해결 되지 않으면 [고급 복구 도우미를 사용 하 여 HoloLens 2 경감 하기 위해](hololens-recovery.md#clean-reflash-the-device).
+1. 또는 [고급 복구 도우미를 사용](hololens-recovery.md#clean-reflash-the-device)하 여 HoloLens 2를 경감 하기 위해 수 있습니다.
+    1.  플래시 하려는 버전 선택: 
+        1.  [최신 HoloLens 2 릴리스](https://aka.ms/hololens2download)를 다운로드할 수 있습니다.
+        1.  ARC가 호스트 하는 기본 빌드를 사용할 수 있습니다.
+        1.  에서 제공 하는 빌드 지원을 사용할 수 있습니다.
 
 > [!NOTE]
 > 이전 버전으로 돌아가서 개인 파일 및 설정이 삭제 됩니다.
