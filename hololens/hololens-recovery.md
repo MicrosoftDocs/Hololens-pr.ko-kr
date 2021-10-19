@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e9aad32891bb093cbce18671b76549788b19afcb
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 0efcfd0adf9bd380007e5ed4f905cb130b76d4b8
+ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034645"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130034237"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>HoloLens 2 다시 시작, 초기화 또는 복구
 
@@ -45,13 +45,19 @@ HoloLens 2와 함께 제공된 [충전기와 USB Type-C 케이블](https://www.m
 
    ![HoloLens 2 속성 화면에 배터리 충전 수준이 표시됩니다.](images/ResetRecovery2.png)
 
-장치가 시작 메뉴로 부팅할 수 없는 경우 호스트 PC의 LED 모양과 장치 열거형을 기록해 둡니다. 그런 다음, [문제 해결 가이드](hololens-troubleshooting.md)를 따릅니다. 장치 상태가 문제 해결 가이드에 나열된 상태에 해당하지 않으면 장치를 호스트 PC가 아닌 전원 공급 장치에 연결하고 [하드 리셋 절차](hololens-recovery.md#hard-reset-procedure)를 수행합니다. 장치가 충전될 때까지 1시간 이상 기다립니다.
+장치가 시작 메뉴로 부팅할 수 없는 경우 호스트 PC의 LED 모양과 장치 열거형을 기록해 둡니다. 그런 다음, [문제 해결 가이드](hololens-troubleshooting.md)를 따릅니다. 장치 상태가 문제 해결 가이드에 나열된 상태에 해당하지 않으면 장치를 호스트 PC가 아닌 전원 공급 장치에 연결하고 [하드 리셋 절차](hololens-recovery.md#hard-restart-procedure)를 수행합니다. 장치가 충전될 때까지 1시간 이상 기다립니다.
 
-## <a name="reset-the-device"></a>디바이스 재설정
+> [!NOTE]
+> 용어를 정의하면서 시작해 보겠습니다.\
+> "다시 시작"은 단순히 디바이스를 끄고 켜는 것을 의미합니다.\
+> "초기화"는 [설정] UI를 통해 디바이스를 기본값으로 복원하여 현재 이미지를 다시 설치하는 것을 의미합니다.\
+> "리플래시"는 디바이스가 PC에 연결되고 새 이미지(필요에 따라 다른 이미지)가 설치됨을 의미합니다.
 
-특정 상황에서는 소프트웨어 UI를 사용하지 않고 수동으로 장치를 초기화해야 할 수 있습니다.
+## <a name="restart-the-device"></a>디바이스를 다시 시작합니다.
 
-### <a name="standard-procedure"></a>표준 절차
+특정 상황에서는 소프트웨어 UI를 사용하지 않고 디바이스를 수동으로 다시 시작해야 할 수 있습니다. 이렇게 하면 디바이스를 초기화/리플래시하지 않고도 발생하는 문제를 해결하는 데 도움이 될 수 있습니다.
+
+### <a name="standard-restart-procedure"></a>표준 다시 시작 절차
 
 1. Type-C 케이블을 뽑아 전원 공급 장치 또는 호스트 PC에서 장치 연결을 해제합니다.
 
@@ -63,7 +69,7 @@ HoloLens 2와 함께 제공된 [충전기와 USB Type-C 케이블](https://www.m
 
    ![HoloLens 2 MicrosoftHoloLensRecovery 디바이스 관리자.](images/MicrosoftHoloLens_DeviceManager.png)
 
-### <a name="hard-reset-procedure"></a>하드 리셋 절차
+### <a name="hard-restart-procedure"></a>하드 다시 시작 절차
 
 표준 초기화 절차가 작동하지 않는 경우에는 하드 리셋 절차를 사용합니다.
 
@@ -92,13 +98,13 @@ HoloLens 2와 함께 제공된 [충전기와 USB Type-C 케이블](https://www.m
 >[!WARNING]
 >장치를 리플래시하면 TPM 초기화 정보를 포함하여 모든 개인 데이터, 앱 및 설정 내용이 지워집니다.
 
-기본적으로 고급 복구 도우미는 최신 기능 릴리스 빌드를 다운로드하도록 설정되어 있습니다. 최신 기능 릴리스에 대해 알아보려면 [HoloLens 2 릴리스 정보](hololens-release-notes.md)를 참조하세요. 최신 HoloLens 2 FFU(Full Flash Update) 패키지를 다운로드하여 고급 복구 도우미를 통해 디바이스를 리플래시하려면 최신 월별 HoloLens 2 이미지를 다운로드합니다[https://aka.ms/hololens2download](https://aka.ms/hololens2download). 이 버전은 일반적으로 사용 가능한 최신 빌드입니다.
+고급 복구 도우미는 기본적으로 최신 기능 릴리스 빌드를 다운로드하도록 설정되어 있습니다. 최신 기능 릴리스에 대한 내용은 [HoloLens 2 릴리스 정보](hololens-release-notes.md)를 참조하세요. 최신 HoloLens 2 FFU(Full Flash Update) 패키지를 다운로드하여 고급 복구 도우미를 통해 디바이스를 리플래시하려면 최신 월별 HoloLens 2 이미지를 다운로드합니다[https://aka.ms/hololens2download](https://aka.ms/hololens2download). 이 버전은 일반적으로 사용 가능한 최신 빌드입니다.
 
 리플래시 절차를 시작하기 전에 앱이 Windows 10 PC에 설치되어 실행 중인지 확인하고 장치를 탐지할 준비가 되었는지 확인합니다. 또한 HoloLens가 최소 40%까지 충전되는지 확인합니다.
 
 ![HoloLens 2 클린 리플래시 스크린샷.](images/ARC1.png)
 
-### <a name="normal-procedure"></a>일반 절차
+### <a name="normal-flashing-procedure"></a>일반 플래시 절차
 
 1. HoloLens 장치가 실행 중일 때 이전에 고급 복구 도우미 앱을 열었던 Windows 10 PC에 연결합니다.
 
@@ -108,7 +114,7 @@ HoloLens 2와 함께 제공된 [충전기와 USB Type-C 케이블](https://www.m
 
 1. 고급 복구 도우미 앱 UI에서 HoloLens 2 장치를 선택하고 지침에 따라 리플래시를 완료합니다.
 
-### <a name="manual-procedure"></a>수동 절차
+### <a name="manual-flashing-mode-procedure"></a>수동 플래시 모드 절차
 
 다음과 같은 경우 디바이스를 복구 모드로 전환해야 할 수 있습니다.
 
@@ -146,7 +152,7 @@ HoloLens 2와 함께 제공된 [충전기와 USB Type-C 케이블](https://www.m
 
 1. ARC가 장치를 탐지하지 못하는 경우 PC의 파일 탐색기를 통해 장치에 연결할 수 있는지 확인합니다. 연결할 수 없는 경우, 다음과 같이 합니다.
 
-    1. 장치에 해당 연결을 사용하지 않도록 설정하는 USB 정책이 있을 수 있습니다. 이 경우 [수동 플래싱 모드](hololens-recovery.md#manual-procedure)를 사용해 보세요.
+    1. 장치에 해당 연결을 사용하지 않도록 설정하는 USB 정책이 있을 수 있습니다. 이 경우 [수동 플래싱 모드](hololens-recovery.md#manual-flashing-mode-procedure)를 사용해 보세요.
     2. 정책이 없으면 다른 USB 케이블을 사용해 보세요.
 
 1. 장치가 [1-3-5-LED 패턴](hololens2-setup.md#lights-to-indicate-problems)을 표시하지 않는지 확인합니다.

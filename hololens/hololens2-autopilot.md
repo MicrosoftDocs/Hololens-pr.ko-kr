@@ -3,7 +3,7 @@ title: HoloLens 2용 Windows Autopilot
 description: HoloLens 2 장치에서 Autopilot을 설정 및 구성하고 문제를 해결하는 방법을 알아봅니다.
 author: qianw211
 ms.author: v-qianwen
-ms.date: 9/8/2021
+ms.date: 10/11/2021
 ms.prod: hololens
 ms.topic: article
 ms.custom:
@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: sekerawa
-ms.openlocfilehash: 10dc251bbeb204a6621ca0891029858c00c467bc
-ms.sourcegitcommit: d09556a101663ef5dfff865d4753e64a41032b78
+ms.openlocfilehash: 05eb629e05395f04ddb8723d58d41db4161896fa
+ms.sourcegitcommit: 39accbc8e35728969c500da052035af4fd317a65
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "128346777"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129964584"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>HoloLens 2용 Windows Autopilot
 
@@ -79,13 +79,13 @@ Surface 장치와 마찬가지로 고객은 Microsoft [클라우드 솔루션 �
 
 **Windows Autopilot 자체 배포 모드 문서의 "[요구 사항](/windows/deployment/windows-autopilot/self-deploying#requirements)" 섹션을 검토합니다.** 사용자 환경은 이러한 요구 사항과 표준 Windows Autopilot 요구 사항을 충족해야 합니다. 문서의 "단계별 안내" 및 "유효성 검사" 섹션은 검토할 필요가 없습니다. 이 문서의 뒷부분에 나오는 절차는 HoloLens와 관련된 해당 단계를 제공합니다.
 
-장치가 아직 Azure AD의 멤버가 아니고 Intune(또는 다른 MDM 시스템)에 등록되지 않았는지 확인합니다. Autopilot 자체 배포 프로세스는 다음 단계를 완료합니다. 모든 장치 관련 정보를 정리하려면 Azure AD 및 Intune 포털 모두에서 **장치** 페이지를 확인하세요. "모든 대상 디바이스를 Autopilot으로 변환" 기능은 현재 HoloLens에서 지원되지 않습니다. 
+장치가 아직 Azure AD의 멤버가 아니고 Intune(또는 다른 MDM 시스템)에 등록되지 않았는지 확인합니다. Autopilot 자체 배포 프로세스는 다음 단계를 완료합니다. 모든 장치 관련 정보를 정리하려면 Azure AD 및 Intune 포털 모두에서 **장치** 페이지를 확인하세요. "모든 대상 디바이스를 Autopilot으로 변환" 기능은 현재 HoloLens에서 지원되지 않습니다.
 
 #### <a name="review-hololens-os-requirements"></a>다음과 같은 HoloLens OS 요구 사항을 검토합니다.
 
 디바이스에서 빌드 버전을 확인하거나 최신 OS로 다시 플래시하려면 [ARC(고급 복구 도우미)](https://www.microsoft.com/p/advanced-recovery-companion/9p74z35sfrs8?rtc=2&activetab=pivot:overviewtab) 및 [디바이스 리플래시 지침](hololens-recovery.md)을 사용합니다. 2020년 9월 말까지 제공되는 디바이스에는 Windows Holographic 버전 1903이 사전 설치되어 있습니다. Autopilot 지원 디바이스가 배송되는지 확인하려면 재판매인에게 문의합니다.
 
- 최소 운영 체제 버전 | 지원되는 기능 | 설명 
+ 최소 운영 체제 버전 | 지원되는 기능 | 설명
  ------ | ------ | ------  
  [Windows Holographic 버전 2004](hololens-release-notes.md#windows-holographic-version-2004)(빌드 19041.1103) 이상 | 1. HoloLens 2의 Autopilot 자체 배포 프로세스 | Autopilot 프로필 다운로드는 이더넷을 통해서만 지원됩니다. HoloLens를 **켜기 전** 에 "USB-C to Ethernet" 어댑터를 사용하여 HoloLens가 이더넷에 연결되어 있는지 확인합니다.  다수의 HoloLens 장치에 대한 Autopilot 롤아웃을 계획하고 있는 경우 어댑터 인프라에 대한 계획을 세우는 것이 좋습니다. USB 허브는 HoloLens에서 지원되지 않는 타사 드라이버를 설치해야 하는 경우가 많으므로 권장하지 않습니다.
  [Windows Holographic 버전 20H2](hololens-release-notes.md#windows-holographic-version-20h2)(빌드 19041.1128) 이상 | 1. Wi-Fi를 통해 Autopilot 프로필 다운로드 <br> 2. Autopilot 지정 테넌트에서 디바이스를 잠그는 [TenantLockdown CSP 및 Autopilot](#tenant-lockdown-csp-and-autopilot) | 원하는 경우 이더넷 어댑터를 계속 사용할 수 있습니다. Wi-Fi를 통해 연결된 장치의 경우 사용자는 다음 작업만 수행해야 합니다. <ul> <li> 벌새 장면을 통해 이동합니다. </li> <li> 언어 및 로캘을 선택합니다. </li> <li> 눈 보정을 실행합니다. </li> <li> 원하는 Wi-Fi 네트워크에 성공적으로 연결합니다. </li> </ul>
@@ -102,7 +102,7 @@ Autopilot이 성공하려면 HoloLens 디바이스를 등록할 수 있는지 �
 
 ### <a name="4-register-devices-in-windows-autopilot"></a>4. Windows Autopilot에서 디바이스 등록
 
-장치를 처음 설치하기 전에 Windows Autopilot에 등록해야 합니다. 
+장치를 처음 설치하기 전에 Windows Autopilot에 등록해야 합니다.
 
 HoloLens 장치를 등록하는 기본 방법은 다음 세 가지가 있습니다.
 
@@ -133,7 +133,7 @@ HoloLens 장치를 등록하는 기본 방법은 다음 세 가지가 있습니�
 
    > [!NOTE]  
    > .zip 파일을 즉시 사용하지 못할 수도 있습니다. 파일이 아직 준비되지 않은 경우 문서 폴더에 HoloLensDiagnostics.temp 파일이 표시될 수 있습니다. 파일 목록을 업데이트하려면 창을 새로 고칩니다.
-    
+
 1. AutopilotDiagnostics.zip 파일의 내용을 추출합니다.
 
 1. 추출된 파일에서 파일 이름 접두사가 "DeviceHash"인 CSV 파일을 찾습니다. 해당 파일을 나중에 액세스할 수 있는 컴퓨터의 드라이브에 복사합니다.  
@@ -280,11 +280,12 @@ HoloLens 2에서 TenantLockdown CSP의 RequireNetworkInOOBE 노드가 true로 �
 
 HoloLens 2에서 TenantLockdown CSP의 RequireNetworkInOOBE 노드가 true로 설정되면 OOBE에서 다음 작업을 수행할 수 없습니다.
 
-- 런타임 프로비전을 사용하여 로컬 사용자 만들기 
-- 런타임 프로비전을 통해 Azure AD 조인 작업 수행 
-- OOBE 환경에서 장치를 소유하는 사용자 선택 
+- 런타임 프로비전을 사용하여 로컬 사용자 만들기
+- 런타임 프로비전을 통해 Azure AD 조인 작업 수행
+- OOBE 환경에서 장치를 소유하는 사용자 선택
 
-#### <a name="how-to-set-this-using-intune"></a>Intune을 사용하여 설정하는 방법은 무엇인가요? 
+#### <a name="how-to-set-this-using-intune"></a>Intune을 사용하여 설정하는 방법은 무엇인가요?
+
 1. 사용자 지정 OMA URI 장치 구성 프로필을 만들고 아래와 같이 RequireNetworkInOOBE 노드에 true를 지정합니다.
 OMA URI 값은 /Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE여야 합니다.
 
@@ -307,13 +308,14 @@ OMA URI 값은 /Vendor/MSFT/TenantLockdown/RequireNetworkInOOBE여야 합니다.
    > [!div class="mx-imgBorder"]
    > ![Intune에서 OMA URI를 통해 RequireNetworkInOOBE를 false로 설정하는 스크린샷.](images/hololens-tenant-lockdown-false.png)
 
-1. 그룹을 만들고 해당 장치 그룹에 장치 구성 프로필을 할당합니다. 
+1. 그룹을 만들고 해당 장치 그룹에 장치 구성 프로필을 할당합니다.
 
 1. 이전 단계에서 만든 그룹의 HoloLens 2 장치 멤버를 만들고 동기화를 시작합니다.
 
 Intune 포털에서 장치 구성이 성공적으로 적용되었는지 확인합니다. 이 장치 구성이 HoloLens 2 장치에 성공적으로 적용되면 TenantLockdown 효과가 비활성화됩니다.
 
-#### <a name="what-would-happen-during-oobe-if-autopilot-profile-is-unassigned-on-a-hololens-after-tenantlockdown-was-set-to-true"></a>TenantLockdown true로 설정된 후 HoloLens에서 Autopilot 프로필이 할당되지 않은 경우 OOBE 중에 무슨 문제가 발생하나요? 
+#### <a name="what-would-happen-during-oobe-if-autopilot-profile-is-unassigned-on-a-hololens-after-tenantlockdown-was-set-to-true"></a>TenantLockdown true로 설정된 후 HoloLens에서 Autopilot 프로필이 할당되지 않은 경우 OOBE 중에 무슨 문제가 발생하나요?
+
 Autopilot 프로필이 다운로드될 때까지 OOBE가 무기한 대기하고 다음 대화 상자가 표시됩니다. TenantLockdown 효과를 제거하려면 먼저 Autopilot만 사용하여 장치를 원래 테넌트에 등록해야 하며, TenantLockdown CSP에서 도입한 제한 사항이 제거되기 전에 이전 단계에서 설명한 대로 RequireNetworkInOOBE를 설정 해제해야 합니다.
 
 ![장치에서 정책이 시행될 때의 장치 내 보기입니다.](images/hololens-autopilot-lockdown.png)
@@ -326,8 +328,25 @@ Autopilot 프로필이 다운로드될 때까지 OOBE가 무기한 대기하고 
 
 ## <a name="known-issues-and-limitations"></a>알려진 문제 및 제한 사항
 
-- MEM에 구성된 디바이스 컨텍스트 기반 응용 프로그램 설치가 HoloLens에 적용되지 않는 문제를 조사 중입니다. [디바이스 컨텍스트 및 사용자 컨텍스트 설치에 대해 자세히 알아보세요.](/mem/intune/apps/apps-windows-10-app-deploy#install-apps-on-windows-10-devices)
-- Wi-Fi를 통해 Autopilot을 설정하는 동안 인터넷 연결이 처음 설정될 때 Autopilot 프로필이 다운로드되지 않는 인스턴스가 있을 수 있습니다. 이 경우 EULA(최종 사용자 사용권 계약)가 표시되며 사용자가 Autopilot이 아닌 설치 환경을 진행할 수 있는 옵션이 있습니다. Autopilot을 사용하여 다시 설정하려면, 장치를 절전 모드로 전환한 다음 전원을 켜고 장치를 다시 부팅하여 다시 시도합니다.
+### <a name="why-do-i-see-0x80180014-during-autopilot"></a>Autopilot 중에 0x80180014가 표시되는 이유는 무엇인가요?
+
+디바이스에서 Autopilot 프로세스 중에 표시되는 오류입니다. 표시된 이 문제는 HoloLens 디바이스에서 다음을 수행한 경우에만 적용됩니다.
+
+1. 이미 Autopilot을 한 번 이상 통과했습니다.
+1. 이제 초기화되고 Autopilot에 다시 사용됩니다.
+
+이 환경은 특정 오류로 인해 실패하는 Autopilot 환경입니다.
+
+![HoloLens Autopilot 실패 오류 코드](images/autopilot-0x80180014-failure.jpg)
+
+이 오류를 해결하려면 어떤 단계를 수행해야 하나요?
+
+1. [Autopilot 디바이스 가져오기 및 등록 문제 해결](/mem/autopilot/troubleshoot-device-enrollment#error-code-0x80180014-when-re-enrolling-using-self-deployment-or-pre-provisioning-mode)의 단계에 따라 Intune에서 디바이스를 제거합니다. (Intune 관리자가 이 작업을 수행해야 합니다.)
+1. 1단계가 완료되면 디바이스를 다시 시작하고 로그인합니다.
+1. **설정** -> **업데이트 및 보안** -> **초기화 및 복구** 로 차례로 이동하여 **시작** 을 선택합니다.
+    1. 2단계와 3단계에서 문제가 있는 경우 [HoloLens 초기화/리플래시](hololens-recovery.md)에서 디바이스를 초기화하는 방법에 대한 대안을 참조하세요.
+
+그러면 AutoPilot이 성공적으로 등록됩니다.
 
 ### <a name="troubleshooting"></a>문제 해결
 

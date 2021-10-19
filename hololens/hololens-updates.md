@@ -8,7 +8,7 @@ ms.author: v-tea
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: high
-ms.date: 10/13/2020
+ms.date: 10/12/2021
 ms.reviewer: jarrettr
 manager: jarrettr
 appliesto:
@@ -19,12 +19,12 @@ ms.custom:
 - CI 115825
 - CI 111456
 - CSSTroubleshooting
-ms.openlocfilehash: 3afe3d2aecd64c2b4724f4805571cb3c46112875
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 854e867238de6c87732970fba75abdc8e1fb2c64
+ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034639"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129924347"
 ---
 # <a name="manage-hololens-updates"></a>HoloLens 업데이트 관리
 
@@ -101,6 +101,24 @@ Intune을 사용하여 비즈니스용 Windows 업데이트를 구성하는 방�
 - [Update/AllowUpdateService](/windows/client-management/mdm/policy-csp-update#update-allowupdateservice)
 - [Update/RequireUpdateApproval](/windows/client-management/mdm/policy-csp-update#update-requireupdateapproval)
 - [Update/UpdateServiceUrl](/windows/client-management/mdm/policy-csp-update#update-updateserviceurl)
+
+#### <a name="improved-update-restart-detection-and-notifications"></a>향상된 업데이트 다시 시작 검색 및 알림
+
+- [Windows Holographic 버전 21H2](hololens-release-notes.md#windows-holographic-version-21h2)에서 도입되었습니다.
+
+HoloLens 디바이스가 사용 중일 때 활성 시간과 설치 시간 정책 사이에서 다시 부팅하지 않도록 방지할 수 있습니다. 그러나 업데이트 채택은 필요한 업데이트의 설치를 완료하기 위해 다시 부팅하지 않는 경우에도 지연됩니다. 이제 IT에서 최종 기한 및 필요한 다시 부팅을 적용하고 업데이트 설치가 적시에 완료되도록 하는 정책이 추가되었습니다. 다시 부팅이 시작되기 전에 사용자는 알림을 받을 수 있으며 IT 정책에 따라 다시 부팅을 지연할 수 있습니다.
+
+추가된 업데이트 정책은 다음과 같습니다.
+
+- [Update/AutoRestartNotificationSchedule](/windows/client-management/mdm/policy-csp-update#update-autorestartnotificationschedule)
+- [Update/AutoRestartRequiredNotificationDismissal](/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
+- [Update/ConfigureDeadlineForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)
+- [Update/ConfigureDeadlineForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
+- [Update/ConfigureDeadlineGracePeriod](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+- [Update/ConfigureDeadlineNoAutoReboot](/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
+- [Update/ScheduleImminentRestartWarning](/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning)
+- [Update/ScheduleRestartWarning](/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)
+- [Update/UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
 
 ### <a name="plan-and-configure-update-rollouts-for-hololens-2"></a>HoloLens 2에 대한 업데이트 실행 계획 및 구성
 

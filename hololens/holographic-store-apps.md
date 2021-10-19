@@ -15,12 +15,12 @@ ms.localizationpriority: high
 appliesto:
 - HoloLens (1st gen)
 - HoloLens 2
-ms.openlocfilehash: f7d4ddf41f02b083000c1e57f5140c38527826d7
-ms.sourcegitcommit: b9cd7ed5edb98249c609b547b90587863ea1cb9e
+ms.openlocfilehash: 4705112ee41ce6de0598358b9c81775f261bb2fa
+ms.sourcegitcommit: 8a3f925d2bda13c095b35f14d80afdd876aa859c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129364414"
+ms.lasthandoff: 10/12/2021
+ms.locfileid: "129800558"
 ---
 # <a name="find-install-and-uninstall-applications-from-the-microsoft-store"></a>Microsoft Store에서 애플리케이션 찾기, 설치 및 제거
 
@@ -74,6 +74,9 @@ HoloLens는 Microsoft Store의 많은 기존 애플리케이션과 HoloLens용�
 1. 애플리케이션 페이지에서 **가져오기** 또는 **설치** 를 선택합니다(구매해야 할 수 있음).
 
 ### <a name="install-microsoft-onedrive-pwa-app"></a>Microsoft OneDrive PWA 앱 설치
+
+> [!NOTE]
+> PWA는 Microsoft Intune/MDM을 통해 관리하거나 배포할 수 없습니다.
 
 필수 조건: 사용자가 이미 HoloLens 2 디바이스를 작업 테넌트에 조인했습니다.
 

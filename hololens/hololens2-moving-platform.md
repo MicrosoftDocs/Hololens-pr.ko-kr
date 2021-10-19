@@ -5,7 +5,7 @@ keywords: 이동 플랫폼, 동적 모션, hololens, 이동 플랫폼 모드
 author: evmill
 ms.author: v-evmill
 ms.reviewer: yabahman
-ms.date: 8/10/2021
+ms.date: 10/12/2021
 ms.prod: hololens
 ms.topic: article
 ms.sitesec: library
@@ -14,19 +14,16 @@ audience: HoloLens
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 81b3231827fce9a2ae2d5e3105800685fedb917b
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 7c636cd97e31c74d4976e71ec3f41ac5afe5bdcc
+ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034561"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129924434"
 ---
 # <a name="moving-platform-mode-on-low-dynamic-motion-moving-platforms"></a>저 동적 모션 이동 플랫폼의 이동 플랫폼 모드
 
-**참가자 빌드 20348.1411** 에서 HoloLens 2의 저 동적 모션 이동 플랫폼 추적을 위한 베타 지원을 추가했습니다. 빌드를 설치하고 이동 플랫폼 모드를 사용하면, 대형 선박 등 이전에는 접근할 수 없었던 환경에서 HoloLens 2를 사용할 수 있습니다. 현재 이 기능은 이러한 특정 이동 플랫폼만 사용하는 것을 목표로 합니다. 다른 환경에서 기능을 사용해도 무방하지만, 이 기능은 우선 이러한 환경에 대한 지원을 추가하는 데 중점을 둡니다.
-
-> [!NOTE]
-> 이 기능은 현재 [Windows 참가자](hololens-insider.md)를 통해서만 사용할 수 있습니다.
+[Windows Holographic 버전 21H2](hololens-release-notes.md#windows-holographic-version-21h2)에서 HoloLens 2의 저 동적 모션 이동 플랫폼 추적에 대한 베타 지원이 추가되었습니다. 빌드를 설치하고 이동 플랫폼 모드를 사용하면, 대형 선박 등 이전에는 접근할 수 없었던 환경에서 HoloLens 2를 사용할 수 있습니다. 현재 이 기능은 이러한 특정 이동 플랫폼만 사용하는 것을 목표로 합니다. 다른 환경에서 기능을 사용해도 무방하지만, 이 기능은 우선 이러한 환경에 대한 지원을 추가하는 데 중점을 둡니다.
 
 ![이동 플랫폼 예.](./images/mpm-compare.gif)
 
@@ -39,8 +36,8 @@ ms.locfileid: "126034561"
 
 HoloLens는 안정적인 홀로그램을 표시하기 위해 [6도의 자유도](https://en.wikipedia.org/wiki/Six_degrees_of_freedom)(X, Y, Z, 변환 및 롤, 피치, 요 회전)로 머리 위치를 추적할 수 있어야 합니다. 이를 위해 HoloLens는 두 개의 개별 소스에서 두 가지 유사한 정보를 추적합니다.
 
-1. 가시광선 카메라 – 환경(예: HoloLens를 사용하는 실제 방)을 추적합니다.
-1. IMU(관성 측정 단위) - 가속도계, 자이로스코프 그리고 지구를 기준으로 상대적인 머리 움직임과 방향을 추적하는 자력계로 구성
+1. **가시광선 카메라.** 이러한 카메라는 HoloLens를 사용하는 실제 방과 같은 환경을 추적합니다.
+1. **IMU(관성 측정 장치).** IMU는 가속도계, 자이로스코프 및 지구를 기준으로 하는 머리 움직임과 방향을 추적하는 자력계로 구성됩니다.
 
 이 두 소스의 정보는 매끄러운 홀로그램을 렌더링하기 위해 낮은 대기 시간과 충분히 높은 빈도로 머리 위치를 추적하기 위해 합성됩니다.
 
@@ -62,10 +59,7 @@ HoloLens는 안정적인 홀로그램을 표시하기 위해 [6도의 자유도]
 
 이동 플랫폼 모드에 대한 베타 지원에는 몇 가지 필수 구성 요소만 필요합니다.
 
-1. [ARC를 통해 최신 참가자 빌드를 플래시](hololens-insider.md#ffu-download-and-flash-directions)하거나 [디바이스를 등록 및 업데이트](hololens-insider.md#start-receiving-insider-builds)하여 20348.1411 이상의 빌드를 설치합니다.
-
-   > [!NOTE]
-   > 이 빌드는 현재 [참가자 개발 채널](hololens-insider.md#start-receiving-insider-builds)에서만 사용할 수 있습니다.
+1. [최신 빌드](https://aka.ms/hololens2download)를 [ARC를 통해](hololens-recovery.md#clean-reflash-the-device) 업데이트하거나 플래시하여 [Windows Holographic 버전 21H2](hololens-release-notes.md#windows-holographic-version-21h2) 이상을 설치합니다.
 
 2. [개발자 모드와 장치 포털](/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)을 사용합니다.
 
@@ -93,7 +87,7 @@ HoloLens는 안정적인 홀로그램을 표시하기 위해 [6도의 자유도]
 
 ## <a name="reporting-issues"></a>문제 보고
 
-위에서 설명한 것처럼 이 기능은 개발자 모드에서만 사용할 수 있는 베타 기능입니다. 즉, 문제가 발생할 수 있습니다. 문제가 발생한 경우 제품을 조사하고 개선할 수 있도록 다음을 진행해주세요.
+위에서 설명한 것처럼 이 기능은 개발자 모드에서만 사용할 수 있는 베타 기능입니다. 즉, 문제가 발생할 수 있습니다. 이 경우 다음과 같이 제품을 조사하고 개선할 수 있습니다.
 
 1. **홀로그램 정확도, 안정성 및 신뢰성** 카테고리 아래의 [피드백 허브](hololens-feedback.md)를 통해 문제를 보고하되, 다음을 포함해주세요.
     1. 예상 동작 및 경험한 동작을 포함한 문제 설명

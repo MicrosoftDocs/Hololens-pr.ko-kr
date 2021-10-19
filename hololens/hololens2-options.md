@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 2da84a11a8f9613999e2b376fefeb6cb2b83cd00
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: 810bcae8b457c2f6efba55162e54bcc8956e6005
+ms.sourcegitcommit: a9a86748afd368f3d316a4d2c978063a0905ad08
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034543"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129949023"
 ---
 # <a name="compare-hololens-2-options"></a>HoloLens 2 옵션 비교
 
@@ -39,6 +39,7 @@ HoloLens는 *홀로그램 기반* 의 혼합 현실 장치로, 공동 작업을 
 | **노이즈 캔슬링 오디오 출력**                        |            |                               |                               |                                                  |               ✔️              |                                |
 | **개발자 자격 <sup>1</sup>**                             |            |                               |                               |                                                  |                              |                ✔️               |
 | **신속한 교체 프로그램 <sup>2</sup>**                          |            |                               |               ✔️               |                         ✔️                        |                              |                                |
+ **수신 보호 등급(IP50, 먼지 보호)**                       |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                ✔️               |
 | **상용 사용 권한**                                |      ✔️     |               ✔️               |               ✔️               |                         ✔️                        |               ✔️              |                                |
 | [**보증**](hololens2-hardware.md#warranty-information)                                             |   1년   |             1년            |             2년            |                      2년                      |            1년 <sup>3</sup>            |             1년             |
 | **장치 구매 한도**                                |    없음    |              없음             |              없음             |                       없음                       |             없음             |       거래당 1개      |
