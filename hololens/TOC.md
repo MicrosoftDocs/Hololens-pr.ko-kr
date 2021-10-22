@@ -108,7 +108,7 @@
 ## [표시](hololens2-display.md)
 ## [구현 및 관리되는 디바이스](hololens2-enterprise-troubleshooting.md#)
 ## [진단 로그 활성화](hololens-diagnostic-logs.md)
-## [HoloLens 2 초기화](hololens-recovery.md)
+## [HoloLens 2 다시 시작, 초기화 또는 복구](hololens-recovery.md)
 
 # 리소스
 ## [HoloLens 2 구입처](hololens2-purchase.md)
@@ -131,7 +131,7 @@
 #### [HoloLens에 대한 사용자 지정 앱 관리](holographic-custom-apps.md)
 #### [지역화된 버전의 HoloLens(1세대) 설치](hololens1-install-localized.md)
 #### [Windows Holographic for Business 기능 잠금 해제](hololens1-upgrade-enterprise.md)
-#### [HoloLens(1세대) 초기화](hololens1-recovery.md)
+#### [HoloLens(1세대) 다시 시작, 초기화 또는 복구](hololens1-recovery.md)
 ### HoloLens(1세대) 보안
 #### [자주 묻는 HoloLens(1세대) 보안 질문](hololens1-faq-security.yml)
 #### [HoloLens(1세대) BitLocker 암호화](hololens1-encryption.md)
