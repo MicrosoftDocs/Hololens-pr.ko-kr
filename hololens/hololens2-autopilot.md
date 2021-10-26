@@ -13,12 +13,12 @@ audience: ITPro
 ms.localizationpriority: high
 keywords: Autopilot
 manager: sekerawa
-ms.openlocfilehash: 05eb629e05395f04ddb8723d58d41db4161896fa
-ms.sourcegitcommit: 39accbc8e35728969c500da052035af4fd317a65
+ms.openlocfilehash: b343e4dc6e217319574efa068cd72c5f5a8675a8
+ms.sourcegitcommit: 38b5e4d92da6fc5d6a6a2ef875644d6db2cce822
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129964584"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130202916"
 ---
 # <a name="windows-autopilot-for-hololens-2"></a>HoloLens 2용 Windows Autopilot
 
@@ -320,12 +320,6 @@ Autopilot 프로필이 다운로드될 때까지 OOBE가 무기한 대기하고 
 
 ![장치에서 정책이 시행될 때의 장치 내 보기입니다.](images/hololens-autopilot-lockdown.png)
 
-#### <a name="why-did-i-not-see-autopilot-experience-even-though-the-autopilot-profile-is-assigned-in-intune"></a>Autopilot 프로필이 Intune에 할당된 경우에도 Autopilot 환경이 표시되지 않는 이유는 무엇인가요?
-
-기본적으로 HoloLens 2는 인터넷을 검색한 후 Autopilot을 검색하기 위해 15초 동안 기다립니다. 15초 이내에 Autopilot 프로필이 검색되지 않으면, 이는 Autopilot이 올바르게 검색되지 않았다는 의미이며 EULA 페이지가 표시됩니다.
-
-디바이스를 다시 부팅한 후 다시 시도하세요. 자세한 내용은 [알려진 문제 및 제한 사항](hololens2-autopilot.md#known-issues-and-limitations) 또는 [문제 해결](hololens2-autopilot.md#troubleshooting)을 참조하세요.
-
 ## <a name="known-issues-and-limitations"></a>알려진 문제 및 제한 사항
 
 ### <a name="why-do-i-see-0x80180014-during-autopilot"></a>Autopilot 중에 0x80180014가 표시되는 이유는 무엇인가요?
@@ -355,6 +349,12 @@ Autopilot 프로필이 다운로드될 때까지 OOBE가 무기한 대기하고 
 - [Windows Autopilot - 알려진 문제](/mem/autopilot/known-issues)
 - [Microsoft Intune에서 iOS 디바이스 등록 문제 해결](/mem/intune/enrollment/troubleshoot-windows-enrollment-errors)
 - [Windows Autopilot - 정책 충돌](/mem/autopilot/policy-conflicts)
+
+#### <a name="why-did-i-not-see-autopilot-experience-even-though-the-autopilot-profile-is-assigned-in-intune"></a>Autopilot 프로필이 Intune에 할당된 경우에도 Autopilot 환경이 표시되지 않는 이유는 무엇인가요?
+
+기본적으로 HoloLens 2는 인터넷을 검색한 후 Autopilot을 검색하기 위해 15초 동안 기다립니다. 15초 이내에 Autopilot 프로필이 검색되지 않으면, 이는 Autopilot이 올바르게 검색되지 않았다는 의미이며 EULA 페이지가 표시됩니다.
+
+디바이스를 다시 부팅한 후 다시 시도하세요. 자세한 내용은 [알려진 문제 및 제한 사항](hololens2-autopilot.md#known-issues-and-limitations)을 참조하세요.
 
 ## <a name="feedback-and-support-for-autopilot"></a>Autopilot에 대한 피드백 및 지원
 

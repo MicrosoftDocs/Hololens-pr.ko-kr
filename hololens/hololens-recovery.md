@@ -1,13 +1,13 @@
 ---
-title: HoloLens 다시 시작, 초기화 또는 복구
+title: HoloLens 2 다시 시작, 초기화 또는 복구
 ms.reviewer: Follow along with our basic and advanced instructions for rebooting or resetting your HoloLens 2 device.
 description: 고급 복구 도우미를 사용하여 이미지를 HoloLens 2로 플래시하는 방법.
 keywords: 사용 방법, 다시 부팅, 초기화, 복구, 하드 리셋, 소프트 리셋, 전원 주기, HoloLens, 종료, acr, 고급 복구 도우미
 ms.prod: hololens
 ms.sitesec: library
 author: mattzmsft
-ms.author: mazeller
-ms.date: 08/30/2021
+ms.author: v-beehanson
+ms.date: 10/15/2021
 ms.custom:
 - CI 111456
 - CSSTroubleshooting
@@ -16,12 +16,12 @@ ms.localizationpriority: high
 manager: jarrettr
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0efcfd0adf9bd380007e5ed4f905cb130b76d4b8
-ms.sourcegitcommit: 19d1abb7589cebf14ba45e830f49224f7b4fcfe9
+ms.openlocfilehash: 9f8969d018059a3b38d2b3001f8bc983b72d58c7
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "130034237"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151641"
 ---
 # <a name="restart-reset-or-recover-hololens-2"></a>HoloLens 2 다시 시작, 초기화 또는 복구
 
@@ -45,7 +45,7 @@ HoloLens 2와 함께 제공된 [충전기와 USB Type-C 케이블](https://www.m
 
    ![HoloLens 2 속성 화면에 배터리 충전 수준이 표시됩니다.](images/ResetRecovery2.png)
 
-장치가 시작 메뉴로 부팅할 수 없는 경우 호스트 PC의 LED 모양과 장치 열거형을 기록해 둡니다. 그런 다음, [문제 해결 가이드](hololens-troubleshooting.md)를 따릅니다. 장치 상태가 문제 해결 가이드에 나열된 상태에 해당하지 않으면 장치를 호스트 PC가 아닌 전원 공급 장치에 연결하고 [하드 리셋 절차](hololens-recovery.md#hard-restart-procedure)를 수행합니다. 장치가 충전될 때까지 1시간 이상 기다립니다.
+장치가 시작 메뉴로 부팅할 수 없는 경우 호스트 PC의 LED 모양과 장치 열거형을 기록해 둡니다. 그런 다음, [문제 해결 가이드](hololens-troubleshooting.md)를 따릅니다. 디바이스 상태가 문제 해결 가이드에 나열된 상태에 해당하지 않으면 디바이스를 호스트 PC가 아닌 전원 공급 장치에 연결하고 [하드 다시 시작 절차](hololens-recovery.md#hard-restart-procedure)를 수행합니다. 장치가 충전될 때까지 1시간 이상 기다립니다.
 
 > [!NOTE]
 > 용어를 정의하면서 시작해 보겠습니다.\
@@ -71,7 +71,7 @@ HoloLens 2와 함께 제공된 [충전기와 USB Type-C 케이블](https://www.m
 
 ### <a name="hard-restart-procedure"></a>하드 다시 시작 절차
 
-표준 초기화 절차가 작동하지 않는 경우에는 하드 리셋 절차를 사용합니다.
+표준 초기화 절차가 작동하지 않는 경우에는 하드 다시 시작 절차를 사용합니다.
 
 1. Type-C 케이블을 뽑아 전원 공급 장치 또는 호스트 PC에서 장치 연결을 해제합니다.
 
@@ -82,6 +82,14 @@ HoloLens 2와 함께 제공된 [충전기와 USB Type-C 케이블](https://www.m
 1. 장치 관리자를 엽니다(Windows 10의 경우 **Windows** 키를 누른 후 **X** 키를 누른 다음 **장치 관리자** 를 선택). 아래 이미지에 표시된 것처럼 장치에서 *Microsoft HoloLens* 로 제대로 열거되는지 확인합니다.
 
    ![HoloLens 2 MicrosoftHoloLensRecovery 디바이스 관리자 2.](images/MicrosoftHoloLens_DeviceManager.png)
+
+## <a name="reset-the-device"></a>디바이스 초기화
+
+헤드셋에서 직접 디바이스를 초기화할 수 있습니다. **설정** 을 선택한 다음, **업데이트 및 보안 > 초기화 및 복구 > 이 디바이스 초기화** 를 선택합니다.
+
+   ![HoloLens 헤드셋 초기화.](images/headset-reset-recovery.png)
+
+이러한 방식으로 초기화하면 모든 사용자 계정이 제거되고 모든 데이터가 지워집니다.
 
 ## <a name="clean-reflash-the-device"></a>장치 클린 리플래시
 

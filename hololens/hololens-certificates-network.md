@@ -13,12 +13,12 @@ audience: ITPro
 manager: yannisle
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 62eedd0c05bb23f11a4e17a97b4ab5441a2931cf
-ms.sourcegitcommit: e9f746aa41139859edc12fbc21f926c9461da4b3
+ms.openlocfilehash: c7c15cc0630f11d1687db19f2e6b28b8347dd4c3
+ms.sourcegitcommit: f105a770814ccd61e88b650448902a03c95b7a3c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "126034260"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151678"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-hololens-2"></a>HoloLens 2에 대한 인증서 및 네트워크 프로필 준비
 
@@ -27,7 +27,7 @@ HoloLens 2를 사용하는 고객에게 인증서 기반 인증은 공통적인 
 HoloLens 2 장치는 일반적으로 Azure AD(Azure Active Directory)에 연결되고 Intune 또는 기타 MDM 공급자가 관리하므로 사용자는 MDM 솔루션에 통합되는 SCEP(단순 인증서 등록 프로토콜) 또는 PKCS(공개 키 암호 표준) 인증서 인프라를 사용하여 관련 인증서를 배포해야 합니다. 
 
 >[!NOTE]
-> MDM 공급자가 없는 경우에도 [Windows 구성 디자이너](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab)의 [프로비전 패키지](hololens-provisioning.md#steps-for-creating-provisioning-packages)나 [인증서 관리자](certificate-manager.md)를 통해 **설정 > 업데이트 및 보안 > 인증서 관리자** 로 이동하여 인증서를 배포할 수 있습니다.
+> MDM 공급자가 없는 경우에도 [Windows 구성 디자이너](https://www.microsoft.com/p/windows-configuration-designer/9nblggh4tx22?rtc=1&activetab=pivot:regionofsystemrequirementstab)의 [프로비전 패키지](hololens-provisioning.md#create-the-provisioning-package)나 [인증서 관리자](certificate-manager.md)를 통해 **설정 > 업데이트 및 보안 > 인증서 관리자** 로 이동하여 인증서를 배포할 수 있습니다.
 
 ## <a name="certificate-requirements"></a>인증서 요구 사항
 SCEP 또는 PKCS 인프라를 통해 인증서를 배포하려면 루트 인증서가 필요합니다. 조직의 다른 응용 프로그램 및 서비스를 이용할 경우에도 HoloLens 2 장치에 루트 인증서를 배포해야 할 수 있습니다. 

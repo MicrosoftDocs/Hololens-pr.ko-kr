@@ -14,12 +14,12 @@ audience: HoloLens
 manager: sekerawa
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 0ee90e8aa89c4121053ff6319ec46f83f01a4a3f
-ms.sourcegitcommit: a9a86748afd368f3d316a4d2c978063a0905ad08
+ms.openlocfilehash: a9f4609f39405b6815fe044cae124bc95365707c
+ms.sourcegitcommit: 38b5e4d92da6fc5d6a6a2ef875644d6db2cce822
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129949040"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "130202865"
 ---
 # <a name="where-to-buy-hololens-2"></a>HoloLens 2 구입처
 
@@ -30,15 +30,23 @@ HoloLens 2는 업계 최고의 솔루션을 통해 몰입형 환경을 제공하
 
 | HoloLens 2 버전| 지원되는 시장 |
 |-------------------------------------------| ----------------------------------------| 
-| HoloLens 2 | 오스트레일리아, 오스트리아, 벨기에, 캐나다, 중국, 덴마크, 핀란드, 프랑스, 독일, 홍콩, 아일랜드, 이탈리아, 일본, 말레이시아, 네덜란드, 뉴질랜드, 노르웨이, 폴란드, 포르투갈, 싱가포르, 대한민국, 스페인, 스웨덴, 스위스, 대만, 태국, 영국, 미국 및 베트남  |
-| HoloLens 2 with Remote Assist | 오스트레일리아, 오스트리아, 벨기에, 캐나다, 덴마크, 핀란드, 프랑스, 독일, 홍콩, 아일랜드, 이탈리아, 일본, 대한민국, 말레이시아, 네덜란드, 뉴질랜드, 노르웨이, 싱가포르, 스페인, 스웨덴, 스위스, 대만, 태국, 영국, 미국 및 베트남  <sup>1</sup> 
-| HoloLens 2 인더스트리얼 버전 *(출시 시)* | 오스트레일리아, 오스트리아, 벨기에, 캐나다, 중국, 덴마크, 핀란드, 프랑스, 독일, 홍콩, 아일랜드, 이탈리아, 일본, 말레이시아, 네덜란드, 뉴질랜드, 노르웨이, 폴란드, 포르투갈, 싱가포르, 대한민국, 스페인, 스웨덴, 스위스, 대만, 태국, 영국, 미국 및 베트남  |
+| HoloLens 2 | 오스트레일리아, 오스트리아, 벨기에, 캐나다, 중국, 덴마크, 핀란드, 프랑스, 독일, 홍콩, 아일랜드, 이탈리아, 일본, 말레이시아, 멕시코, 네덜란드, 뉴질랜드, 노르웨이, 폴란드, 포르투갈, 싱가포르, 남아프리카 공화국, 대한민국, 스페인, 스웨덴, 스위스, 대만, 태국, 영국, 미국 및 베트남  |
+| HoloLens 2 with Remote Assist | 오스트레일리아, 오스트리아, 벨기에, 캐나다, 덴마크, 핀란드, 프랑스, 독일, 홍콩, 아일랜드, 이탈리아, 일본, 대한민국, 말레이시아, 멕시코, 네덜란드, 뉴질랜드, 노르웨이, 싱가포르, 남아프리카 공화국, 스페인, 스웨덴, 스위스, 대만, 태국, 영국, 미국 및 베트남  <sup>1</sup> 
+| HoloLens 2 인더스트리얼 버전 *(출시 시)* | 오스트레일리아, 오스트리아, 벨기에, 캐나다, 중국, 덴마크, 핀란드, 프랑스, 독일, 홍콩, 아일랜드, 이탈리아, 일본, 말레이시아, 멕시코, 네덜란드, 뉴질랜드, 노르웨이, 폴란드, 포르투갈, 싱가포르, 남아프리카 공화국, 대한민국, 스페인, 스웨덴, 스위스, 대만, 태국, 영국, 미국 및 베트남  |
 | HoloLens 2 개발 버전 | 오스트레일리아, 캐나다, 프랑스, 독일, 아일랜드, 이탈리아, 일본, 뉴질랜드, 스위스 및 영국 |
 
 &nbsp;&nbsp;&nbsp;<sup>1</sup> 이 목록은 바뀔 수 있습니다. 업데이트를 다시 확인하세요.
 
 ## <a name="find-an-authorized-hololens-2-reseller"></a>공인 HoloLens 2 재판매인 찾기
 지역별 HoloLens 2 판매 여부 및 구매 옵션은 아래 표를 참조하세요.
+
+### <a name="africa"></a>**아프리카**
+
+| 국가 | ADD | DMP | HoloLens 2 DMP |
+|---------|-----|------|----------------|
+| **남아프리카 공화국** | Tarsus 배포 | Datacentrix | [Datacenttrix - 첨단 하이브리드 IT 시스템 통합업체 및 관리형 서비스 공급자](https://www.datacentrix.co.za/)|
+| || Nulitics Development Company Pty Ltd. | [NULITICS, 증강 현실, 개발, 다양한 통신 서비스](https://nulitics.com/#work-with-us)|
+| | | Crimson Line Networking <br/>cc - t/a Crimson Line - Solving IT |[관리형 클라우드 및 IT 서비스 \| 남아프리카 공화국 \| Crimsonline](https://www.crimsonline.co.za)|
 
 ### <a name="apac"></a>**아시아 태평양**
 
@@ -64,6 +72,13 @@ HoloLens 2는 업계 최고의 솔루션을 통해 몰입형 환경을 제공하
 | **대만** | Systex Software & Service Corporation精誠資訊股份有限公司 | Gina Ko<br><ginako@systex.com><br>Sean Chien<br><seanchien@systex.com> | [HoloLens 2 구입 - Systex Software & Service Corporation精誠資訊股份有限公司](https://tw.systex.com/microsoft-hololens/) | [HoloLens 2 Industrial Edition 구입 - Systex Software & Service Corporation精誠資訊股份有限公司](https://dcsalesportal.com/brands/microsoft/microsoft-hololens/) | 
 | **태국** | Sustainable Solution Co., Ltd. | Vongsakorn Pannate <vongsakorn@sustain-solution.com> | [HoloLens 2 구입 - Sustainable Solution Co., Ltd.](https://hololensthai.com/) | [HoloLens 2 Industrial Edition 구입 - Sustainable Solution Co., Ltd.](https://hololensthai.com/) |
 | **베트남** | CÔNG TY TNHH HIVERLAB VIETNAM | Cincin Phung<br><cincin.phung@hiverlab.com> | [HoloLens 2 구입 - CÔNG TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) | [HoloLens 2 Industrial Edition 구입 - CÔNG TY TNHH HIVERLAB VIETNAM](https://www.hiverlab.com/vn) |
+
+### <a name="south-america"></a>**남아메리카**
+
+| 국가 | ADD | DMP | HoloLens 2 DMP |
+|---------|-----|------|----------------|
+| **멕시코** | Ingram Micro México, S.A. de C.V. | Aevitas S.A. de C.V. | [Aevitas S.A. de C.V.](http://aevitas.com.mx)|
+| | Commercializadora Intcomex, S.A. de C.V.| Equipos Comp. de Occte. S.A. de C.V. | [Productos \| Equipos MCA  S.A. de C.V.](https://equiposmca.com/productos/) |
 
 ### <a name="north-america"></a>**북아메리카**
 
