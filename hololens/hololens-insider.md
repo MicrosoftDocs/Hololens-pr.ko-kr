@@ -11,17 +11,17 @@ ms.custom:
 - CSSTroubleshooting
 ms.localizationpriority: medium
 audience: ITPro
-ms.date: 10/12/2021
+ms.date: 10/19/2021
 ms.reviewer: ''
 manager: ranjibb
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 080eb5949bc80d1ce922d57f099c375668f5633f
-ms.sourcegitcommit: 9574db58592b7302bd2386bdf7fda3f6721de818
+ms.openlocfilehash: 382c979138068ab1d9682ee4e84831accc9e4553
+ms.sourcegitcommit: 73a1555fb8b84f3d20c480282c648d8d800a6c98
 ms.translationtype: MT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129924356"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "130351658"
 ---
 # <a name="insider-preview-for-microsoft-hololens"></a>Microsoft HoloLens에 대한 참가자 미리 보기
 
@@ -29,7 +29,26 @@ HoloLens에 대 한 최신 Insider Preview 빌드를 시작 합니다. 간단 �
 
 ## <a name="windows-insider-release-notes"></a>Windows 참가자 릴리스 정보
 
-모든 최근 참가자 기능이 공개 되었습니다. 이에 대해 자세히 알아보려면 [릴리스 정보 페이지](hololens-release-notes.md) 를 참조 하세요.
+HoloLens에 대 한 새로운 기능 및 수평은 무엇 인가요? HoloLens에 제공 되는 새로운 업데이트를 확인 하세요.
+
+### <a name="colorblind-mode"></a>Colorblind 모드
+
+Insider build 20348.1463에 추가 됨
+
+colorblind 모드는 HoloLens 더 쉽게 액세스할 수 있도록 하는 유용한 기능입니다. 새 색맹인 모드는 설정 앱에서 **설정**  ->  **접근성**  ->  **색 필터** 를 사용 하 여 찾을 수 있습니다. 여러 가지 새 필터를 사용할 수 있습니다. 다음은 사용 가능한 필터 중 일부에 대 한 시각적 예제입니다.
+
+| 끄기 | 회색조로 변환 | Tritanopia |
+|-----|-----------|------------|
+| ![색 필터 해제](images/colorblind-off.png)   | ![색 필터 회색조로 변환](images/colorblind-greyscale.png)         | ![색 필터 tritanopia](images/colorblind-tritanopia.png)          |
+
+### <a name="fixes-and-improvements"></a>수정 사항 및 향상 된 기능
+
+- [전원이 18%로 이동 될 때마다 장치가 갑자기 자동으로 종료](hololens-troubleshooting.md#every-time-the-power-goes-to-18-percent-the-device-suddenly-shuts-down-automatically)되는 알려진 문제를 수정 했습니다.
+- 다운 방향을 검색할 때 플랫폼 전환의 향상 된 기능
+- 업데이트 대화 상자에 대 한 문제를 해결 했습니다.
+- 수신함 Microsoft Edge 브라우저 버전으로 업데이트 되었습니다.
+- 다시 부팅 한 후 선택적 진단 데이터를 설정/해제 해도 원격 분석 설정 페이지에서 선택한 설정이 유지 되지 않는 문제가 해결 되었습니다.
+- 장치에 상대적인 45 각도 각도에서 회전 된 경우 QR 코드가 인식 되지 않는 문제를 해결 하 고 문제를 해결 합니다.
 
 ## <a name="start-receiving-insider-builds"></a>Insider 빌드 수신을 시작 합니다.
 
